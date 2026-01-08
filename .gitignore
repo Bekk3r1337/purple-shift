@@ -1,0 +1,12 @@
+*.rpa
+*.rpyc
+*.save
+*.log
+*.bak
+*.tmp
+*.zip
+*.7z
+*.rar
+__pycache__/
+cache/
+saves/
