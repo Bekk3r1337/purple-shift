@@ -411,11 +411,11 @@ init python:
             "joker": "joker",
             "supervisor": "supervisor",
         }
-        if message_id in route_by_message:
-            ps_add_route(route_by_message[message_id], 1)
+        message_route = message.get("route") or route_by_message.get(message_id)
+        if message_route:
+            ps_add_route(message_route, 1)
 
-        if renpy.loadable("audio/phone_vibrate.ogg"):
-            renpy.sound.play("audio/phone_vibrate.ogg")
+        ps_play_sfx("phone_unlock")
 
         if len(ps_phone_replies) >= 3:
             ps_unlock_achievement("connected")
@@ -490,8 +490,7 @@ init python:
 
         ps_flow_index += 1
 
-        if renpy.loadable("audio/scan_soft.ogg"):
-            renpy.sound.play("audio/scan_soft.ogg")
+        ps_play_sfx("scan_ok")
 
         renpy.restart_interaction()
 
@@ -528,8 +527,7 @@ init python:
         elif len(ps_case_selected) < 3:
             ps_case_selected = ps_case_selected + [item_id]
 
-        if renpy.loadable("audio/radio_click.ogg"):
-            renpy.sound.play("audio/radio_click.ogg")
+        ps_play_sfx("radio")
 
         renpy.restart_interaction()
 
@@ -558,6 +556,7 @@ transform ps_enter_left:
     zoom 0.60
     alpha 0.0
     ease 0.55 xalign 0.22 alpha 1.0
+    function ps_character_breathe
 
 transform ps_enter_right:
     xalign 1.08
@@ -566,6 +565,7 @@ transform ps_enter_right:
     zoom 0.65
     alpha 0.0
     ease 0.55 xalign 0.75 alpha 1.0
+    function ps_character_breathe
 
 transform ps_attention:
     yalign 1.0
@@ -1144,13 +1144,15 @@ label ps_personal_scene:
 
     $ ps_personal_scene_seen = True
     $ ps_personal_target = ps_personal_scene_target()
+    $ ps_play_route_motif(ps_personal_target)
 
     scene bg break_room
     with fade
 
     $ ps_set_ambience("quiet")
+    show screen ps_cinematic_bars
 
-    n "До начала проверки остаётся двенадцать минут."
+    n "До конца смены остаётся двенадцать минут."
     n "В комнате отдыха горит только дальний ряд ламп."
 
     if ps_personal_target == "newbie":
@@ -1163,6 +1165,27 @@ label ps_personal_scene:
         p "Ошибка — это событие. Не человек."
         newb "Я записала."
         newb "Не в ТСД. Себе."
+
+        menu:
+            "Предложить вместе составить её собственную инструкцию":
+                $ ps_add_route("newbie", 2)
+                $ ps_efficiency += 1
+                $ ps_newbie_trust += 1
+
+                p "Давай запишем, что делать, когда экран врёт."
+                newb "Не памятку «как не ошибаться»?"
+                p "Нет. Инструкцию «как доказать, что ошиблась система»."
+                newb "Такую я сохраню."
+
+            "Сказать, что в следующий раз она должна говорить первой":
+                $ ps_add_route("newbie", 2)
+                $ ps_humanity += 1
+                $ ps_team_unity += 1
+
+                p "В следующий раз говоришь первой."
+                newb "А если голос снова пропадёт?"
+                p "Начни с одного слова. Мы подхватим."
+                newb "Тогда слово будет «стоп»."
 
         $ ps_newbie_trust += 2
         $ ps_humanity += 1
@@ -1178,6 +1201,27 @@ label ps_personal_scene:
         p "А теперь?"
         vet "Теперь думаю: опытный первым замечает, когда пора остановиться."
         vet "Не дай им снова перепутать выносливость с расходником."
+
+        menu:
+            "Потребовать, чтобы завтра он не скрывал боль":
+                $ ps_add_route("veteran", 2)
+                $ ps_endurance += 1
+                $ ps_team_unity += 1
+
+                p "Завтра рука заболела — говоришь сразу."
+                vet "Командовать старшими некрасиво."
+                p "Тогда считай это обменом опытом."
+                vet "Ладно. Один раз разрешаю."
+
+            "Попросить показать всю историю заявок":
+                $ ps_add_route("veteran", 2)
+                $ ps_evidence += 1
+                $ ps_integrity += 1
+
+                p "Мне нужны все номера заявок. Не только последняя."
+                vet "Там два года."
+                p "Значит, это уже не случайность."
+                vet "Вот теперь ты понял."
 
         $ ps_endurance += 1
         $ ps_evidence += 1
@@ -1196,6 +1240,26 @@ label ps_personal_scene:
         p "Это сейчас была серьёзная мысль?"
         mem "Никому не рассказывай. Репутация."
 
+        menu:
+            "Пообещать пересчитывать людей вместе с ним":
+                $ ps_add_route("joker", 2)
+                $ ps_team_unity += 2
+
+                p "Если станет тихо — считаем вдвоём."
+                mem "Романтика складского уровня."
+                p "Один, два, три, все на месте."
+                mem "Звучит лучше большинства признаний."
+
+            "Разрешить ему не шутить хотя бы рядом с тобой":
+                $ ps_add_route("joker", 2)
+                $ ps_humanity += 1
+                $ ps_humor += 1
+
+                p "Рядом со мной можешь иногда не держать зал."
+                mem "А если тишина окажется неловкой?"
+                p "Переживём."
+                mem "Опасный уровень доверия."
+
         $ ps_humor += 1
         $ ps_team_unity += 2
         $ ps_key_choices = ps_key_choices + ["Шутник впервые попросил тебя не геройствовать в одиночку."]
@@ -1213,6 +1277,27 @@ label ps_personal_scene:
         p "И ты готов это подписать?"
         sv "Если ты принесёшь факты — да."
 
+        menu:
+            "Напомнить, что его подпись важнее твоих доказательств":
+                $ ps_add_route("supervisor", 2)
+                $ ps_supervisor_respect += 1
+                $ ps_integrity += 1
+
+                p "Факты принесу я. Но приказ и подпись будут твоими."
+                sv "Знаю."
+                p "Хочу услышать это без должности между нами."
+                sv "Решение будет моим."
+
+            "Предложить говорить перед куратором вместе":
+                $ ps_add_route("supervisor", 2)
+                $ ps_team_unity += 1
+                $ ps_evidence += 1
+
+                p "Не второй голос. Два человека с одной хронологией."
+                sv "Он попробует разделить показания."
+                p "Тогда начнём со времени на камерах."
+                sv "Хорошо. Вместе."
+
         $ ps_supervisor_respect += 2
         $ ps_integrity += 1
         $ ps_key_choices = ps_key_choices + ["Супервайзер согласился говорить о причине, а не о виноватом."]
@@ -1221,5 +1306,7 @@ label ps_personal_scene:
 
     with dissolve
 
+    hide screen ps_cinematic_bars
+    $ ps_stop_route_motif()
     $ ps_stop_ambience()
     return

@@ -127,10 +127,35 @@ testsuite purple_shift:
 
 
     testcase trace_archive_screen:
+        $ ps_archive_section = "documents"
         run Show("ps_phone", initial_tab="archive")
         pause until screen "ps_phone"
         assert id "ps_phone_archive_tab"
+        assert id "ps_archive_documents"
+        click id "ps_archive_cgs"
+        assert eval (ps_archive_section == "cgs")
+        click id "ps_archive_music"
+        assert eval (ps_archive_section == "music")
+        click id "ps_archive_routes"
+        assert eval (ps_archive_section == "routes")
+        click id "ps_archive_documents"
+        assert eval (ps_archive_section == "documents")
         run Hide("ps_phone")
+
+
+    testcase living_phone_signal:
+        run Show("ps_phone", initial_tab="signal")
+        pause until screen "ps_phone"
+        assert id "ps_phone_signal_tab"
+        run Hide("ps_phone")
+
+
+    testcase living_inspection_screen:
+        $ ps_begin_inspection("control_scan")
+        run Show("ps_inspection_hotspots", scene_id="control_scan")
+        pause until screen "ps_inspection_hotspots"
+        assert id "ps_inspection_finish"
+        run Hide("ps_inspection_hotspots")
 
 
     testcase trace_gallery_screen:
@@ -157,6 +182,10 @@ testsuite purple_shift:
         assert eval (renpy.has_label("ps_exploration_phase"))
         assert eval (renpy.has_label("ps_route_climax"))
         assert eval (renpy.has_label("ps_storm_teaser"))
+        assert eval (renpy.has_label("ps_run_inspection"))
+        assert eval (renpy.has_label("ps_storm_interference"))
+        assert eval (renpy.has_label("ps_route_afterword"))
+        assert eval (renpy.has_label("ps_route_afterword_end"))
 
 
     testcase all_final_endings:
@@ -349,6 +378,63 @@ testsuite purple_shift:
         assert eval (renpy.loadable("images/cg/storm_signal.jpg"))
 
 
+    testcase living_shift_systems:
+        $ ps_inspection_seen = {}
+        $ ps_storm_fragments = []
+        $ ps_route_points = {"newbie": 0, "veteran": 0, "joker": 0, "supervisor": 0}
+        $ ps_evidence = 0
+        $ ps_integrity = 0
+        $ ps_begin_inspection("control_scan")
+        $ ps_inspect_hotspot("control_scan", "buffer_log")
+        $ ps_inspect_hotspot("control_scan", "violet_frequency")
+
+        assert eval (ps_inspection_can_finish("control_scan"))
+        assert eval ("violet_frequency" in ps_storm_fragments)
+        assert eval (ps_route_points["supervisor"] == 1)
+        assert eval (ps_route_points["joker"] == 1)
+
+        $ ps_storm_decoder_start()
+        $ ps_storm_decoder_choose("violet")
+        $ ps_storm_decoder_choose("silence")
+        $ ps_storm_decoder_choose("echo")
+        $ ps_storm_decoder_choose("violet")
+
+        assert eval (ps_storm_decoder_index == len(ps_storm_decoder_sequence))
+        assert eval (ps_storm_decoder_errors == 0)
+        assert eval (0 <= ps_storm_pressure() <= 100)
+
+
+    testcase living_shift_audio:
+        assert eval (renpy.loadable("audio/live/fluorescent_hum.ogg"))
+        assert eval (renpy.loadable("audio/live/breakroom_hum.ogg"))
+        assert eval (renpy.loadable("audio/live/forklift_distant.ogg"))
+        assert eval (renpy.loadable("audio/live/dock_rain.ogg"))
+        assert eval (renpy.loadable("audio/live/storm_whisper.ogg"))
+        assert eval (renpy.loadable("audio/live/footsteps_concrete.ogg"))
+        assert eval (renpy.loadable("audio/live/scanner_confirm.ogg"))
+        assert eval (renpy.loadable("audio/live/scanner_warning.ogg"))
+        assert eval (renpy.loadable("audio/live/phone_unlock.ogg"))
+        assert eval (renpy.loadable("audio/live/ui_tap.ogg"))
+        assert eval (renpy.loadable("audio/live/paper_rustle.ogg"))
+        assert eval (renpy.loadable("audio/live/emergency_press.ogg"))
+        assert eval (renpy.loadable("audio/live/radio_burst.ogg"))
+        assert eval (renpy.loadable("audio/live/route_newbie_motif.ogg"))
+        assert eval (renpy.loadable("audio/live/route_veteran_motif.ogg"))
+        assert eval (renpy.loadable("audio/live/route_joker_motif.ogg"))
+        assert eval (renpy.loadable("audio/live/route_supervisor_motif.ogg"))
+
+
+    testcase living_shift_messages:
+        $ ps_chapter = 6
+        $ ps_route_points = {"newbie": 10, "veteran": 0, "joker": 0, "supervisor": 0}
+        $ ps_storm_fragments = ["violet_stamp"]
+        $ ps_available_ids = [message["id"] for message in ps_available_messages()]
+
+        assert eval ("newbie_followup" in ps_available_ids)
+        assert eval ("veteran_followup" not in ps_available_ids)
+        assert eval ("v13_unknown" in ps_available_ids)
+
+
     testsuite incident_paths:
 
         testcase every_incident_outcome:
@@ -387,6 +473,25 @@ testsuite purple_shift:
             skip fast until label ps_route_climax_end
 
             assert eval (ps_route_scene_id == route_id)
+
+
+    testsuite route_afterwords:
+
+        testcase every_route_afterword:
+            parameter route_id = [
+                "newbie",
+                "veteran",
+                "joker",
+                "supervisor",
+            ]
+
+            $ ps_route_afterword_seen = False
+            $ ps_route_scene_id = route_id
+
+            run Jump("ps_route_afterword")
+            skip fast until label ps_route_afterword_end
+
+            assert eval (ps_route_afterword_seen)
 
 
     testsuite storm_path:

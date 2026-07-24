@@ -271,15 +271,13 @@ label chapter3_sorting_start:
 
     n "Ты берёшь первый товар."
 
-    if renpy.loadable("audio/scan_soft.ogg"):
-        play sound "audio/scan_soft.ogg"
+    $ ps_play_sfx("scan_ok")
 
     n "Пиип."
     n "Ячейка."
     n "Следующий."
 
-    if renpy.loadable("audio/scan_soft.ogg"):
-        play sound "audio/scan_soft.ogg"
+    $ ps_play_sfx("scan_ok")
 
     n "Пиип."
 
@@ -643,8 +641,7 @@ label chapter3_incident_norm:
     n "Ты берёшь следующую коробку."
     n "Сканируешь."
 
-    if renpy.loadable("audio/scan_soft.ogg"):
-        play sound "audio/scan_soft.ogg"
+    $ ps_play_sfx("scan_ok")
 
     n "Пиип."
 
@@ -692,8 +689,7 @@ label chapter3_after_incident:
     n "Контейнер меняют."
     n "Линия снова запускается."
 
-    if renpy.loadable("audio/scan_soft.ogg"):
-        play sound "audio/scan_soft.ogg"
+    $ ps_play_sfx("scan_ok")
 
     n "Пиип."
     n "Как будто ничего не произошло."

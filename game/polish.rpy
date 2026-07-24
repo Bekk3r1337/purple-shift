@@ -96,7 +96,17 @@ init python:
         (
             "purple_signal",
             "Сектор V",
-            "Найти три следа Фиолетового Шторма за одно прохождение.",
+            "Найти три базовых следа Фиолетового Шторма за одно прохождение.",
+        ),
+        (
+            "observer",
+            "Не проходи мимо",
+            "Осмотреть восемь интерактивных точек склада.",
+        ),
+        (
+            "storm_decoder",
+            "Шторм на линии",
+            "Восстановить скрытую последовательность канала V-13.",
         ),
     ]
 
@@ -242,14 +252,12 @@ init python:
             ps_sort_score += 1
             ps_sort_index += 1
 
-            if renpy.loadable("audio/scan_soft.ogg"):
-                renpy.sound.play("audio/scan_soft.ogg")
+            ps_play_sfx("scan_ok")
         else:
             ps_sort_mistakes += 1
             ps_sort_time = max(0, ps_sort_time - 3)
 
-            if renpy.loadable("audio/error_soft.ogg"):
-                renpy.sound.play("audio/error_soft.ogg")
+            ps_play_sfx("scan_error")
 
         renpy.restart_interaction()
 
@@ -285,14 +293,12 @@ init python:
             ps_signal_score += 1
             ps_signal_index += 1
 
-            if renpy.loadable("audio/scan_soft.ogg"):
-                renpy.sound.play("audio/scan_soft.ogg")
+            ps_play_sfx("scan_ok")
         else:
             ps_signal_mistakes += 1
             ps_signal_time = max(0, ps_signal_time - 3)
 
-            if renpy.loadable("audio/error_soft.ogg"):
-                renpy.sound.play("audio/error_soft.ogg")
+            ps_play_sfx("scan_error")
 
         renpy.restart_interaction()
 
@@ -494,6 +500,8 @@ screen ps_phone(initial_tab="status"):
     zorder 240
     default tab = initial_tab
 
+    on "show" action Function(ps_play_sfx, "phone_unlock")
+
     key "game_menu" action Hide("ps_phone")
     key "K_p" action Hide("ps_phone")
 
@@ -506,6 +514,7 @@ screen ps_phone(initial_tab="status"):
         ysize 940
         padding (42, 32)
         background Solid("#11091dfb")
+        at ps_phone_arrive
 
         vbox:
             spacing 22
@@ -539,7 +548,7 @@ screen ps_phone(initial_tab="status"):
                     text_yalign 0.5
 
             hbox:
-                spacing 12
+                spacing 10
                 xalign 0.5
 
                 textbutton "СОСТОЯНИЕ":
@@ -547,7 +556,7 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "status" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 215
+                    xsize 185
                     ysize 58
                     text_size 19
                     text_xalign 0.5
@@ -558,19 +567,19 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "people" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 215
+                    xsize 185
                     ysize 58
                     text_size 19
                     text_xalign 0.5
                     text_yalign 0.5
 
-                textbutton "СООБЩЕНИЯ":
+                textbutton ("ЧАТЫ ({})".format(ps_unread_message_count()) if ps_unread_message_count() else "ЧАТЫ"):
                     id "ps_phone_messages_tab"
                     action SetScreenVariable("tab", "messages")
                     background Solid("#7442a7" if tab == "messages" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 215
+                    xsize 185
                     ysize 58
                     text_size 19
                     text_xalign 0.5
@@ -582,9 +591,21 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "archive" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 215
+                    xsize 185
                     ysize 58
                     text_size 19
+                    text_xalign 0.5
+                    text_yalign 0.5
+
+                textbutton "V-13":
+                    id "ps_phone_signal_tab"
+                    action SetScreenVariable("tab", "signal")
+                    background Solid("#7442a7" if tab == "signal" else "#291a38")
+                    hover_background Solid("#8d55c4")
+                    text_color "#ffffff"
+                    xsize 185
+                    ysize 58
+                    text_size 18
                     text_xalign 0.5
                     text_yalign 0.5
 
@@ -593,7 +614,7 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "achievements" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 215
+                    xsize 185
                     ysize 58
                     text_size 17
                     text_xalign 0.5
@@ -604,7 +625,7 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "endings" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 215
+                    xsize 185
                     ysize 58
                     text_size 19
                     text_xalign 0.5
@@ -738,6 +759,9 @@ screen ps_phone(initial_tab="status"):
 
                 elif tab == "archive":
                     use ps_archive_panel()
+
+                elif tab == "signal":
+                    use ps_storm_signal_panel()
 
                 elif tab == "achievements":
                     viewport:

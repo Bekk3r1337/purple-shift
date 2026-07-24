@@ -343,7 +343,7 @@ init python:
         if fragment_id not in ps_storm_fragments:
             ps_storm_fragments = ps_storm_fragments + [fragment_id]
             renpy.notify(
-                "Неизвестный сигнал: {}/3".format(len(ps_storm_fragments))
+                "Неизвестный сигнал: {}/5".format(len(ps_storm_fragments))
             )
 
         if len(ps_storm_fragments) >= 3:
@@ -391,6 +391,13 @@ init python:
         document_part = len(persistent.ps_unlocked_documents)
         cg_part = len(persistent.ps_unlocked_cgs)
         route_part = len(persistent.ps_completed_routes)
+        inspection_part = len(
+            getattr(persistent, "ps_inspected_hotspots", []) or []
+        )
+        inspection_total = sum(
+            len(inspection["hotspots"])
+            for inspection in ps_inspection_catalog.values()
+        )
 
         total = (
             len(ps_ending_catalog)
@@ -398,6 +405,7 @@ init python:
             + len(ps_document_catalog)
             + len(ps_cg_catalog)
             + len(ps_route_catalog)
+            + inspection_total
         )
         opened = (
             ending_part
@@ -405,6 +413,7 @@ init python:
             + document_part
             + cg_part
             + route_part
+            + min(inspection_part, inspection_total)
         )
 
         if total <= 0:
@@ -622,6 +631,7 @@ label ps_exploration_phase(day, slots=1):
         call screen ps_warehouse_map(day, ps_exploration_remaining)
         $ ps_selected_zone = _return
         $ ps_record_visit(day, ps_selected_zone)
+        $ ps_set_ambience(ps_zone_soundscape(ps_selected_zone))
         call expression ps_zone_event_label(day, ps_selected_zone)
         $ ps_exploration_remaining -= 1
 
@@ -639,7 +649,6 @@ label ps_show_consequence_echo(day):
 ################################################################################
 
 screen ps_archive_panel():
-    default archive_section = "documents"
 
     vbox:
         spacing 15
@@ -648,7 +657,7 @@ screen ps_archive_panel():
         hbox:
             xfill True
 
-            text "Исследовано: [ps_completion_percent()]%%":
+            text "Исследовано: [ps_completion_percent()]%":
                 color "#ffffff"
                 size 29
 
@@ -676,12 +685,13 @@ screen ps_archive_panel():
                 ("routes", "МАРШРУТЫ"),
             ]:
                 textbutton section_title:
-                    action SetScreenVariable("archive_section", section_id)
+                    id ("ps_archive_" + section_id)
+                    action SetVariable("ps_archive_section", section_id)
                     xsize 285
                     ysize 48
                     background Solid(
                         "#7442a7"
-                        if archive_section == section_id
+                        if ps_archive_section == section_id
                         else "#291a38"
                     )
                     hover_background Solid("#8d55c4")
@@ -699,7 +709,7 @@ screen ps_archive_panel():
                 spacing 12
                 xfill True
 
-                if archive_section == "documents":
+                if ps_archive_section == "documents":
                     for document_id, document_title, document_desc in ps_document_catalog:
                         $ document_open = document_id in persistent.ps_unlocked_documents
 
@@ -739,7 +749,7 @@ screen ps_archive_panel():
                                     )
                                     size 19
 
-                elif archive_section == "cgs":
+                elif ps_archive_section == "cgs":
                     for cg_id, cg_title, cg_path in ps_cg_catalog:
                         $ cg_open = cg_id in persistent.ps_unlocked_cgs
 
@@ -781,7 +791,7 @@ screen ps_archive_panel():
                                         text_xalign 0.5
                                         text_yalign 0.5
 
-                elif archive_section == "music":
+                elif ps_archive_section == "music":
                     for track_id, track_title, track_path, unlock_day in ps_music_catalog:
                         $ track_open = track_id in persistent.ps_unlocked_tracks
 
@@ -2133,6 +2143,8 @@ label ps_route_climax:
     $ ps_route_scene_seen = True
     $ ps_route_scene_id = ps_route_target()
     $ ps_unlock_route(ps_route_scene_id)
+    $ ps_play_route_motif(ps_route_scene_id)
+    show screen ps_cinematic_bars
 
     if ps_route_scene_id == "newbie":
         scene bg break_room
@@ -2154,8 +2166,8 @@ label ps_route_climax:
         n "Внизу нет признания в невнимательности."
         n "Есть время, номер операции и просьба проверить систему."
 
-        scene cg route_newbie
-        with dissolve
+        scene cg route_newbie at ps_cg_reveal
+        with ps_violet_cut
 
         $ ps_unlock_cg("route_newbie", notify=True)
 
@@ -2189,8 +2201,8 @@ label ps_route_climax:
         n "Он снимает бинт."
         n "Запястье всё ещё болит, но сегодня на нём нет следов новой нагрузки."
 
-        scene cg route_veteran
-        with dissolve
+        scene cg route_veteran at ps_cg_reveal
+        with ps_violet_cut
 
         $ ps_unlock_cg("route_veteran", notify=True)
 
@@ -2226,8 +2238,8 @@ label ps_route_climax:
         mem "Если люди смеются, я понимаю, что они ещё здесь."
         mem "А когда никто не отвечает — начинаю считать головы."
 
-        scene cg route_joker
-        with dissolve
+        scene cg route_joker at ps_cg_reveal
+        with ps_violet_cut
 
         $ ps_unlock_cg("route_joker", notify=True)
 
@@ -2262,8 +2274,8 @@ label ps_route_climax:
         n "Не включает."
         n "Просто оставляет там."
 
-        scene cg route_supervisor
-        with dissolve
+        scene cg route_supervisor at ps_cg_reveal
+        with ps_violet_cut
 
         $ ps_unlock_cg("route_supervisor", notify=True)
 
@@ -2284,6 +2296,8 @@ label ps_route_climax_end:
     scene black
     with dissolve
 
+    hide screen ps_cinematic_bars
+    $ ps_stop_route_motif()
     $ ps_stop_ambience()
     return
 
@@ -2302,7 +2316,9 @@ label ps_storm_teaser:
     with fade
 
     play music "audio/night_shift.mp3" fadein 2.0 loop
-    $ ps_set_ambience("quiet")
+    $ ps_set_ambience("service")
+    $ ps_play_sfx("radio")
+    show screen ps_cinematic_bars
 
     n "Экран уже должен погаснуть."
     n "Но где-то за комнатой отдыха щёлкает реле."
@@ -2315,8 +2331,8 @@ label ps_storm_teaser:
     n "Один входящий файл."
     n "V-13 // НАКЛАДНАЯ ПРИНЯТА."
 
-    scene cg storm_signal
-    with dissolve
+    scene cg storm_signal at ps_cg_reveal
+    with ps_violet_cut
 
     n "За технической дверью вспыхивает фиолетовый свет."
     n "Не складской."
@@ -2325,6 +2341,13 @@ label ps_storm_teaser:
     n "На секунду слышен незнакомый голос:"
     n "«Штормовой сектор проснулся»."
 
+    if ps_storm_deep_ready():
+        n "Помехи не обрываются."
+        n "В восстановленном канале появляется вторая строка:"
+        n "«BERRY // STORM. ТОЧКА ВХОДА ПОДТВЕРЖДЕНА»."
+        n "Ты не знаешь, что находится по ту сторону двери."
+        n "Но теперь дверь знает, кто находится по эту."
+
     centered "ФИОЛЕТОВЫЙ ШТОРМ\n\nСИГНАЛ ПРИНЯТ"
 
     n "Потом связь исчезает."
@@ -2332,6 +2355,7 @@ label ps_storm_teaser:
     n "Но теперь ты знаешь: смена была только первой дверью."
 
 label ps_storm_teaser_end:
+    hide screen ps_cinematic_bars
     $ ps_stop_ambience()
     stop music fadeout 2.0
     return

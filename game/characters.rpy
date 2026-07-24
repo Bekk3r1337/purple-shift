@@ -68,29 +68,49 @@ image cur = "images/ch/curator.png"
 ## Позиции персонажей
 ################################################################################
 
+init python:
+    import math
+
+    def ps_character_breathe(trans, shown_time, animation_time):
+        if persistent.ps_reduce_motion:
+            trans.yoffset = 5
+            return None
+
+        trans.yoffset = 3 + math.sin(shown_time * 2.4) * 3
+        return 0.05
+
+
 transform ps_center:
     xalign 0.5
     yalign 1.0
     yoffset 5
     zoom 0.60
+    subpixel True
+    function ps_character_breathe
 
 transform ps_left:
     xalign 0.22
     yalign 1.0
     yoffset 5
     zoom 0.60
+    subpixel True
+    function ps_character_breathe
 
 transform ps_right:
     xalign 0.75
     yalign 1.0
     yoffset 5
     zoom 0.65
+    subpixel True
+    function ps_character_breathe
 
 transform ps_righter:
     xalign 0.55
     yalign 1.0
     yoffset 5
     zoom 0.65
+    subpixel True
+    function ps_character_breathe
 
 transform ps_breathe_bg:
     alpha 0.03

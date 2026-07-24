@@ -125,6 +125,7 @@ label chapter3_day_three:
     with dissolve
 
     call ps_exploration_phase(3, 1)
+    call ps_run_inspection("control_scan")
 
     if persistent.ps_reduce_motion:
         scene bg mezzanine
@@ -139,8 +140,7 @@ label chapter3_day_three:
     n "Линия запускается."
     n "Третий день начинается с обычного звука."
 
-    if renpy.loadable("audio/scan_soft.ogg"):
-        play sound "audio/scan_soft.ogg"
+    $ ps_play_sfx("scan_ok")
 
     n "Пиип."
     n "Система выдаёт контрольную серию."
@@ -540,6 +540,7 @@ label chapter4_day_four:
     with dissolve
 
     call ps_exploration_phase(4, 1)
+    call ps_run_inspection("packing_scan")
 
     scene bg warehouse_cold
     with fade
@@ -808,6 +809,7 @@ label chapter5_day_five:
     with dissolve
 
     call ps_exploration_phase(5, 2)
+    call ps_run_inspection("lift_scan")
 
     if persistent.ps_reduce_motion:
         scene bg packing_zone
@@ -993,8 +995,10 @@ label chapter5_day_five:
             n "Проходя мимо, он не смотрит на тебя."
 
     $ ps_unlock_cg("emergency_stop")
-    scene cg emergency_stop
-    with fade
+    $ ps_play_sfx("emergency")
+    show screen ps_cinematic_bars
+    scene cg emergency_stop at ps_cg_reveal
+    with ps_alarm_cut
 
     n "Красная кнопка всё-таки оказывается быстрее отчёта."
     n "На один короткий момент склад перестаёт быть потоком и снова становится местом, где стоят люди."
@@ -1003,6 +1007,7 @@ label chapter5_day_five:
 
     scene bg warehouse_alert
     with dissolve
+    hide screen ps_cinematic_bars
 
     hide vet
     hide sv
@@ -1069,6 +1074,8 @@ label chapter5_day_five:
 
     hide sv
     with dissolve
+
+    call ps_personal_scene
 
     call screen ps_shift_report(
         "Итоги пятого дня",
@@ -1178,6 +1185,7 @@ label chapter6_day_six:
     with dissolve
 
     call ps_exploration_phase(6, 2)
+    call ps_run_inspection("service_scan")
 
     n "Через два часа тебя вызывают в маленькую комнату у линии."
 
@@ -1223,8 +1231,10 @@ label chapter6_day_six:
     cur "После этого обсудим твоё назначение старшим линии."
 
     $ ps_unlock_cg("report_pressure")
-    scene cg report_pressure
-    with dissolve
+    $ ps_play_sfx("paper")
+    show screen ps_cinematic_bars
+    scene cg report_pressure at ps_cg_reveal
+    with ps_violet_cut
 
     n "Ручка лежит точно напротив тебя."
     n "Будто решение уже принято и осталось только повторить его чернилами."
@@ -1233,6 +1243,7 @@ label chapter6_day_six:
 
     scene bg control_room
     with dissolve
+    hide screen ps_cinematic_bars
 
     show sv stern at ps_left
     show cur at ps_right
@@ -1700,6 +1711,8 @@ label chapter7_day_seven:
         "Автономный поток активен. Ручная остановка доступна старшему линии."
     )
 
+    call ps_storm_interference
+
     play music "audio/night_shift.mp3" fadein 1.0 loop
 
     show mem serious at ps_center
@@ -2004,8 +2017,8 @@ label ending_people:
     n "Потому что теперь знает: рядом кто-то тоже видит."
 
     $ ps_unlock_cg("team_dawn")
-    scene cg team_dawn
-    with fade
+    scene cg team_dawn at ps_cg_reveal
+    with ps_violet_cut
 
     n "Утро за воротами выглядит непривычно."
     n "Никто не торопится первым отвернуться."
@@ -2068,8 +2081,8 @@ label ending_voice:
     n "Даже супервайзер — уже в дверях."
 
     $ ps_unlock_cg("team_dawn")
-    scene cg team_dawn
-    with fade
+    scene cg team_dawn at ps_cg_reveal
+    with ps_violet_cut
 
     n "На рассвете вы впервые выходите не по одному."
 
@@ -2303,6 +2316,8 @@ label ending_common:
     )
 
     call screen ps_ending_epilogue(ps_final_ending)
+
+    call ps_route_afterword
 
     centered "Фиолетовая Смена\n\nСемь дней спустя"
 
