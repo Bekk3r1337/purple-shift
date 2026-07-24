@@ -11,9 +11,23 @@ default ps_humor = 0
 
 default ps_newbie_trust = 0
 default ps_supervisor_respect = 0
+default ps_team_unity = 0
+default ps_integrity = 0
+default ps_evidence = 0
+default ps_burnout = 0
 
 default ps_first_shift_path = "не определён"
 default ps_second_shift_path = "не определён"
+default ps_third_day_path = "не определён"
+default ps_fourth_day_path = "не определён"
+default ps_fifth_day_path = "не определён"
+default ps_sixth_day_path = "не определён"
+default ps_final_choice = "не определён"
+default ps_final_ending = "не определён"
+
+default ps_veteran_safe = True
+default ps_signed_false_report = False
+default ps_accepted_lead_role = False
 default ps_key_choices = []
 default ps_chapter = 1
 
@@ -44,6 +58,74 @@ init python:
         }
 
         return descriptions[route]
+
+    def ps_ending_id():
+        if ps_final_choice == "правда" and ps_evidence >= 3 and ps_integrity >= 3:
+            return "truth"
+
+        if (
+            ps_final_choice == "команда"
+            and ps_humanity >= 10
+            and ps_team_unity >= 5
+            and ps_newbie_trust >= 4
+        ):
+            return "people"
+
+        if (
+            ps_final_choice == "голос"
+            and ps_humor >= 9
+            and ps_team_unity >= 4
+        ):
+            return "voice"
+
+        if (
+            ps_final_choice == "карьера"
+            and ps_efficiency >= 11
+            and ps_supervisor_respect >= 4
+            and not ps_signed_false_report
+        ):
+            return "leader"
+
+        if (
+            ps_final_choice == "карьера"
+            and ps_signed_false_report
+        ):
+            return "employee"
+
+        if ps_final_choice == "уйти" or ps_burnout >= 8:
+            return "exit"
+
+        return "silence"
+
+    def ps_ending_title(ending_id=None):
+        ending_id = ending_id or ps_ending_id()
+
+        titles = {
+            "truth": "Свет над складом",
+            "people": "Смена, в которой остались люди",
+            "voice": "Голос в шуме",
+            "leader": "Старший линии",
+            "employee": "Сотрудник месяца",
+            "exit": "Выход существует",
+            "silence": "Тишина после сигнала",
+        }
+
+        return titles[ending_id]
+
+    def ps_ending_description(ending_id=None):
+        ending_id = ending_id or ps_ending_id()
+
+        descriptions = {
+            "truth": "Ты сохранил доказательства и заставил систему увидеть то, что она прятала.",
+            "people": "Ты доказал, что результат имеет смысл только тогда, когда люди доходят до конца вместе.",
+            "voice": "Ты не победил склад в одиночку — ты дал команде ритм, в котором никто не остался один.",
+            "leader": "Ты принял ответственность и получил участок, не обменяв безопасность на красивую цифру.",
+            "employee": "Твоё имя появилось на фиолетовом экране. Рядом почти никого не осталось.",
+            "exit": "Ты не получил табличку, зато сохранил право решать, кем быть после смены.",
+            "silence": "Система пережила ещё одну ночь. Ответ на главный вопрос остался внутри тебя.",
+        }
+
+        return descriptions[ending_id]
 
 
 ################################################################################
@@ -162,6 +244,92 @@ screen ps_shift_report(title, subtitle):
                 hover_background Solid("#9b5ee0")
                 text_color "#ffffff"
                 text_size 28
+                text_xalign 0.5
+                text_yalign 0.5
+
+
+################################################################################
+## Экран финала
+################################################################################
+
+screen ps_final_report(title, subtitle):
+    modal True
+    zorder 220
+
+    add Solid("#050208ee")
+
+    frame:
+        xalign 0.5
+        yalign 0.5
+        xsize 1260
+        ysize 850
+        padding (76, 58)
+        background Solid("#140922fa")
+
+        vbox:
+            spacing 26
+            xfill True
+
+            text "ФИНАЛ":
+                color "#8d64b8"
+                size 26
+                xalign 0.5
+
+            text title:
+                color "#d2adff"
+                size 55
+                text_align 0.5
+                xalign 0.5
+
+            text subtitle:
+                color "#eee8f7"
+                size 29
+                text_align 0.5
+                xalign 0.5
+
+            null height 6
+
+            frame:
+                xfill True
+                padding (32, 26)
+                background Solid("#211135dd")
+
+                vbox:
+                    spacing 12
+
+                    text "Твой путь: [ps_route_name()]":
+                        color "#ffffff"
+                        size 32
+                        xalign 0.5
+
+                    text "Команда: [ps_team_unity]   Честность: [ps_integrity]   Улики: [ps_evidence]":
+                        color "#cbbce3"
+                        size 24
+                        xalign 0.5
+
+            if ps_key_choices:
+                text "Последнее, что запомнила смена:":
+                    color "#a98fcf"
+                    size 23
+                    xalign 0.5
+
+                for choice in ps_key_choices[-3:]:
+                    text "• [choice]":
+                        color "#e7ddf7"
+                        size 23
+                        xalign 0.5
+                        text_align 0.5
+
+            textbutton "ЗАВЕРШИТЬ ИСТОРИЮ":
+                id "ps_final_continue"
+                action Return()
+                xalign 0.5
+                xsize 500
+                ysize 70
+                background Solid("#6c3aa8")
+                hover_background Solid("#9b5ee0")
+                text_color "#ffffff"
+                text_size 27
                 text_xalign 0.5
                 text_yalign 0.5
 
