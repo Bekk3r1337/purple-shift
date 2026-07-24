@@ -6,9 +6,11 @@ label start:
     scene bg black
     with fade
 
-    centered "Глава 1\nДень первый: Первая смена"
-
-    pause 1.0
+    call screen ps_day_card(
+        1,
+        "Первая смена",
+        "Обычный рабочий день начинается до того, как ты успеваешь к нему подготовиться."
+    )
 
     jump morning_home
 label morning_home:

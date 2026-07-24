@@ -10,9 +10,11 @@ label chapter3_day_three:
     scene black
     with fade
 
-    centered "Глава 3\nДень третий: Чужие цифры"
-
-    pause 1.2
+    call screen ps_day_card(
+        3,
+        "Чужие цифры",
+        "Рейтинг замечает скорость. Архив хранит то, что людям приказали забыть."
+    )
 
     scene bg warehouse_outside
     with dissolve
@@ -132,7 +134,35 @@ label chapter3_day_three:
         play sound "audio/scan_beep.mp3"
 
     n "Пиип."
-    n "Но сегодня ТСД открывает не товар."
+    n "Система выдаёт контрольную серию."
+    n "Шесть товаров."
+    n "Тридцать секунд."
+    n "Ошибка отнимает время."
+
+    $ ps_sort_start()
+    call screen ps_sort_challenge
+    $ ps_sort_result = _return
+
+    if ps_sort_result[0] == len(ps_sort_items) and ps_sort_result[1] == 0:
+        $ ps_efficiency += 2
+        $ ps_unlock_achievement("clean_sort")
+        $ ps_key_choices = ps_key_choices + ["Ты прошёл контрольную серию ТСД без пересорта."]
+        n "Последний товар уходит в правильный сектор."
+        n "Шесть из шести."
+        n "Экран на секунду становится зелёным."
+    elif ps_sort_result[0] >= 4:
+        $ ps_efficiency += 1
+        n "Серия закрывается."
+        n "Не идеально."
+        n "Но очередь не успевает тебя догнать."
+    else:
+        $ ps_endurance += 1
+        $ ps_burnout += 1
+        n "Таймер обнуляется раньше последнего товара."
+        n "ТСД возвращает остаток в очередь."
+        n "Смена запомнила ошибки и не запомнила, как быстро ты пытался их исправить."
+
+    n "После контрольной серии ТСД не возвращается к товару."
     n "На экране появляется запись вчерашнего инцидента."
 
     call screen ps_tsd_alert(
@@ -325,9 +355,11 @@ label chapter4_day_four:
     scene black
     with fade
 
-    centered "Глава 4\nДень четвёртый: Чужая ошибка"
-
-    pause 1.2
+    call screen ps_day_card(
+        4,
+        "Чужая ошибка",
+        "Когда система не может признать сбой, она начинает искать человеческое имя."
+    )
 
     scene bg room_morning
     with dissolve
@@ -504,6 +536,81 @@ label chapter4_day_four:
     n "Люди уже знают про сорок семь единиц."
     n "На складе новости движутся быстрее товара."
 
+    n "Через два часа ТСД разрешает десятиминутный перерыв."
+    n "Сегодня ты впервые сам выбираешь, с кем его провести."
+
+    call screen ps_break_choice
+    $ ps_break_target = _return
+
+    if ps_break_target == "newbie":
+        $ ps_humanity += 1
+        $ ps_newbie_trust += 2
+        $ ps_team_unity += 1
+
+        show newb tired at ps_right
+        with dissolve
+
+        p "Как ты?"
+
+        if ps_fourth_day_path == "оставил виноватой":
+            newb "Уже нормально."
+            n "Опасное слово."
+            p "Прости, что не вмешался."
+            newb "Я запомню."
+            n "Это не прощение."
+            n "Но хотя бы разговор."
+        else:
+            newb "Злюсь."
+            p "Это лучше, чем бояться."
+            newb "Гораздо."
+
+        hide newb
+        with dissolve
+
+    elif ps_break_target == "veteran":
+        $ ps_endurance += 1
+        $ ps_evidence += 1
+
+        show vet neutral at ps_left
+        with dissolve
+
+        p "Что с подъёмником?"
+        vet "Датчик перегруза врёт вторую неделю."
+        vet "Заявку закрывают, потому что после перезапуска ошибка исчезает."
+        p "А неисправность?"
+        vet "Она читать отчёты не умеет."
+        n "Ты сохраняешь номер старой заявки."
+
+        hide vet
+        with dissolve
+
+    elif ps_break_target == "joker":
+        $ ps_humor += 2
+        $ ps_team_unity += 1
+
+        show mem grin at ps_center
+        with dissolve
+
+        mem "У меня важный вопрос."
+        mem "Если склад потерял сорок семь товаров, а потом нашёл — это инвентаризация или квест?"
+        p "Зависит от награды."
+        mem "Награда — ещё одна смена."
+        p "Худший квест."
+        n "Десять минут проходят быстрее."
+
+        hide mem
+        with dissolve
+
+    else:
+        $ ps_endurance += 2
+        $ ps_burnout = max(0, ps_burnout - 1)
+
+        n "Ты садишься у стены."
+        n "Не открываешь рейтинг."
+        n "Не проверяешь сообщения."
+        n "Десять минут склад существует без твоего участия."
+        n "И почему-то не рушится."
+
     show mem grin at ps_left
     with dissolve
 
@@ -585,9 +692,11 @@ label chapter5_day_five:
     scene black
     with fade
 
-    centered "Глава 5\nДень пятый: Предел нагрузки"
-
-    pause 1.2
+    call screen ps_day_card(
+        5,
+        "Предел нагрузки",
+        "У каждого механизма есть допустимый вес. У людей почему-то его не пишут."
+    )
 
     scene bg warehouse_outside
     with dissolve
@@ -892,9 +1001,11 @@ label chapter6_day_six:
     scene black
     with fade
 
-    centered "Глава 6\nДень шестой: Цена подписи"
-
-    pause 1.2
+    call screen ps_day_card(
+        6,
+        "Цена подписи",
+        "Один росчерк может закрыть инцидент. Или открыть настоящую историю."
+    )
 
     scene bg warehouse_outside
     with dissolve
@@ -973,7 +1084,7 @@ label chapter6_day_six:
 
     n "Через два часа тебя вызывают в маленькую комнату у линии."
 
-    scene bg locker_room
+    scene bg control_room
     with fade
 
     show sv neutral at ps_left
@@ -1195,9 +1306,11 @@ label chapter7_day_seven:
     scene black
     with fade
 
-    centered "Глава 7\nДень седьмой: Последняя смена"
-
-    pause 1.5
+    call screen ps_day_card(
+        7,
+        "Последняя смена",
+        "До закрытия периода — шесть часов. До главного решения — одна смена."
+    )
 
     scene bg room_morning
     with dissolve
@@ -1568,6 +1681,34 @@ label chapter7_day_seven:
             n "Ты не бежишь."
             n "Не хлопаешь дверью."
             n "Просто выходишь из потока."
+
+    if ps_final_choice in ("карьера", "голос"):
+        n "Связь всё ещё не работает."
+        n "Последние команды придётся передать вручную."
+
+        $ ps_signal_start()
+        call screen ps_signal_challenge
+        $ ps_signal_result = _return
+
+        if ps_signal_result[0] == len(ps_signal_sequence) and ps_signal_result[1] == 0:
+            $ ps_efficiency += 2
+            $ ps_team_unity += 1
+            $ ps_unlock_achievement("dispatcher")
+            $ ps_key_choices = ps_key_choices + ["Ты без ошибок передал аварийную последовательность."]
+            n "Четыре команды уходят в правильном порядке."
+            n "Линии освобождаются до того, как система успевает вернуться."
+        elif ps_signal_result[0] >= 3:
+            $ ps_endurance += 1
+            n "Одна команда теряется в шуме."
+            n "Но люди переспрашивают."
+            n "Последовательность удаётся закончить."
+        else:
+            $ ps_burnout += 2
+            $ ps_team_unity -= 1
+            n "Сигналы накладываются друг на друга."
+            n "Кто-то останавливается слишком рано."
+            n "Кто-то продолжает дольше, чем нужно."
+            n "Система возвращается раньше, чем вы успеваете договориться."
 
     hide sv
     hide vet
@@ -1976,6 +2117,9 @@ label ending_common:
     with fade
 
     $ ps_final_ending = ps_ending_id()
+    $ ps_unlock_ending(ps_final_ending)
+    $ ps_unlock_achievement("seven_days")
+    $ ps_evaluate_achievements()
 
     call screen ps_final_report(
         ps_ending_title(ps_final_ending),

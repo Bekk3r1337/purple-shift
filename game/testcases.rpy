@@ -63,6 +63,27 @@ testsuite purple_shift:
         assert id "ps_final_continue"
         run Hide("ps_final_report")
 
+        run Show(
+            "ps_day_card",
+            day=3,
+            title="Проверка дня",
+            subtitle="Тестовый экран."
+        )
+
+        pause until screen "ps_day_card"
+        assert id "ps_day_start"
+        run Hide("ps_day_card")
+
+        run Show("ps_phone")
+        pause until screen "ps_phone"
+        assert id "ps_phone_close"
+        run Hide("ps_phone")
+
+        run Show("ps_break_choice")
+        pause until screen "ps_break_choice"
+        assert id "ps_break_newbie"
+        run Hide("ps_break_choice")
+
 
     testcase full_week_labels:
         assert eval (renpy.has_label("chapter3_day_three"))
@@ -110,6 +131,30 @@ testsuite purple_shift:
         $ ps_team_unity = 0
         $ ps_newbie_trust = 0
         assert eval (ps_ending_id() == "silence")
+
+
+    testcase interactive_systems:
+        $ ps_sort_start()
+        $ ps_sort_choose("light")
+        assert eval (ps_sort_index == 1)
+        assert eval (ps_sort_score == 1)
+
+        $ ps_sort_choose("tech")
+        assert eval (ps_sort_mistakes == 1)
+        assert eval (ps_sort_time == 27)
+
+        $ ps_signal_start()
+        $ ps_signal_choose("left")
+        $ ps_signal_choose("buffer")
+        assert eval (ps_signal_index == 2)
+        assert eval (ps_signal_score == 2)
+
+        $ ps_signal_choose("stop")
+        assert eval (ps_signal_mistakes == 1)
+        assert eval (ps_signal_time == 17)
+
+        assert eval (renpy.loadable("images/ch/curator.png"))
+        assert eval (renpy.loadable("images/bg/control_room.jpg"))
 
 
     testsuite incident_paths:

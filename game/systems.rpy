@@ -166,6 +166,8 @@ screen ps_shift_report(title, subtitle):
     modal True
     zorder 200
 
+    on "show" action Function(ps_evaluate_achievements)
+
     add Solid("#07030ddd")
 
     frame:

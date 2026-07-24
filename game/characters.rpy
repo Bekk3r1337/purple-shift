@@ -34,6 +34,7 @@ image bg warehouse_cold = Transform(
     "images/bg/warehouse_inside.jpg",
     matrixcolor=TintMatrix("#87a7c7") * BrightnessMatrix(-0.22)
 )
+image bg control_room = "images/bg/control_room.jpg"
 image bg locker_room = "images/bg/locker_room.jpg"
 image bg black = "images/bg/bg_black.jpg"
 
@@ -42,10 +43,7 @@ image newb worried = "images/ch/nov1.png"
 image newb tired = "images/ch/nov2.png"
 image vet neutral = "images/ch/vet1.png"
 image mem grin = "images/ch/mem1.png"
-image cur = Transform(
-    "images/ch/super1.png",
-    matrixcolor=TintMatrix("#ffb078") * BrightnessMatrix(-0.08)
-)
+image cur = "images/ch/curator.png"
 
 
 ################################################################################

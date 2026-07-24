@@ -68,9 +68,11 @@ label chapter3_second_shift:
     scene bg black
     with fade
 
-    centered "Глава 2\nДень второй: Вторая смена"
-
-    pause 1.2
+    call screen ps_day_card(
+        2,
+        "Вторая смена",
+        "Сегодня ты уже знаешь маршрут. Это не значит, что знаешь, куда он ведёт."
+    )
 
     scene bg room_night
     with dissolve

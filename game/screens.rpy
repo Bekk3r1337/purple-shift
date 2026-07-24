@@ -263,6 +263,8 @@ screen quick_menu():
     zorder 100
     if quick_menu:
 
+        key "K_p" action ToggleScreen("ps_phone")
+
         hbox:
             style_prefix "quick"
 
@@ -271,6 +273,7 @@ screen quick_menu():
             spacing 26
 
             textbutton _("История") action ShowMenu('history')
+            textbutton _("Телефон [P]") action Show("ps_phone")
             textbutton _("Сохранить") action ShowMenu('save')
             textbutton _("Загрузить") action ShowMenu('load')
             textbutton _("Опции") action ShowMenu('preferences')
@@ -323,6 +326,7 @@ screen navigation():
         if main_menu:
 
             textbutton _("Начать") action Start()
+            textbutton _("Коллекция") action Show("ps_phone", initial_tab="endings")
 
         else:
 
