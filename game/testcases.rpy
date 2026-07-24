@@ -115,6 +115,10 @@ testsuite purple_shift:
         $ persistent.ps_minigame_assist = False
 
 
+    testcase desktop_quick_menu:
+        assert eval (renpy.substitute(ps_quick_phone_label) == "Телефон [P]")
+
+
     testcase trace_map_screen:
         run Show("ps_warehouse_map", day=2, remaining=1)
         pause until screen "ps_warehouse_map"

@@ -3,7 +3,7 @@
 ![RenPy](https://img.shields.io/badge/Ren%27Py-Python-blue)
 ![Genre](https://img.shields.io/badge/Genre-Visual%20Novel-purple)
 ![Status](https://img.shields.io/badge/Status-Complete-green)
-![Version](https://img.shields.io/badge/Version-1.3.0-c8a2ff)
+![Version](https://img.shields.io/badge/Version-1.3.1-c8a2ff)
 ![Endings](https://img.shields.io/badge/Endings-7-ff7ad7)
 
 **Purple Shift** — это оригинальная визуальная новелла с аниме-эстетикой и сюжетом, вдохновлённым жизненным опытом и атмосферой склада.

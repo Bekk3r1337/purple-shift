@@ -258,6 +258,8 @@ style choice_button_text is default:
 ## Быстрое меню показывается внутри игры, чтобы обеспечить лёгкий доступ к
 ## внеигровым меню.
 
+define ps_quick_phone_label = _("Телефон [[P]")
+
 screen quick_menu():
 
     zorder 100
@@ -273,7 +275,7 @@ screen quick_menu():
             spacing 26
 
             textbutton _("История") action ShowMenu('history')
-            textbutton _("Телефон [P]") action Show("ps_phone")
+            textbutton ps_quick_phone_label action Show("ps_phone") id "ps_quick_phone"
             textbutton _("Сохранить") action ShowMenu('save')
             textbutton _("Загрузить") action ShowMenu('load')
             textbutton _("Опции") action ShowMenu('preferences')
