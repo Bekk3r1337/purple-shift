@@ -78,6 +78,26 @@ init python:
             "Только факты",
             "Собрать безошибочное дело по происшествию.",
         ),
+        (
+            "wanderer",
+            "Знаю каждый проход",
+            "Посетить все пять зон свободной смены.",
+        ),
+        (
+            "confidant",
+            "Личный маршрут",
+            "Открыть кульминацию отношений с одним из персонажей.",
+        ),
+        (
+            "archive_master",
+            "Полная цепочка",
+            "Собрать все документы архива за несколько прохождений.",
+        ),
+        (
+            "purple_signal",
+            "Сектор V",
+            "Найти три следа Фиолетового Шторма за одно прохождение.",
+        ),
     ]
 
     ps_ending_catalog = [
@@ -527,9 +547,9 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "status" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 245
+                    xsize 215
                     ysize 58
-                    text_size 22
+                    text_size 19
                     text_xalign 0.5
                     text_yalign 0.5
 
@@ -538,9 +558,9 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "people" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 245
+                    xsize 215
                     ysize 58
-                    text_size 22
+                    text_size 19
                     text_xalign 0.5
                     text_yalign 0.5
 
@@ -550,9 +570,21 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "messages" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 245
+                    xsize 215
                     ysize 58
-                    text_size 22
+                    text_size 19
+                    text_xalign 0.5
+                    text_yalign 0.5
+
+                textbutton "АРХИВ":
+                    id "ps_phone_archive_tab"
+                    action SetScreenVariable("tab", "archive")
+                    background Solid("#7442a7" if tab == "archive" else "#291a38")
+                    hover_background Solid("#8d55c4")
+                    text_color "#ffffff"
+                    xsize 215
+                    ysize 58
+                    text_size 19
                     text_xalign 0.5
                     text_yalign 0.5
 
@@ -561,9 +593,9 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "achievements" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 245
+                    xsize 215
                     ysize 58
-                    text_size 22
+                    text_size 17
                     text_xalign 0.5
                     text_yalign 0.5
 
@@ -572,9 +604,9 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "endings" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 245
+                    xsize 215
                     ysize 58
-                    text_size 22
+                    text_size 19
                     text_xalign 0.5
                     text_yalign 0.5
 
@@ -676,8 +708,36 @@ screen ps_phone(initial_tab="status"):
                                 size 24
                                 xalign 0.5
 
+                        frame:
+                            xfill True
+                            padding (22, 13)
+                            background Solid("#1b102bdd")
+
+                            hbox:
+                                spacing 34
+                                xalign 0.5
+
+                                text "Новичок: [ps_route_points.get('newbie', 0)]":
+                                    color "#ff7ad7"
+                                    size 20
+
+                                text "Ветеран: [ps_route_points.get('veteran', 0)]":
+                                    color "#ffd27a"
+                                    size 20
+
+                                text "Шутник: [ps_route_points.get('joker', 0)]":
+                                    color "#7ad7ff"
+                                    size 20
+
+                                text "Супервайзер: [ps_route_points.get('supervisor', 0)]":
+                                    color "#7cff7c"
+                                    size 20
+
                 elif tab == "messages":
                     use ps_phone_messages_panel()
+
+                elif tab == "archive":
+                    use ps_archive_panel()
 
                 elif tab == "achievements":
                     viewport:

@@ -326,7 +326,8 @@ screen navigation():
         if main_menu:
 
             textbutton _("Начать") action Start()
-            textbutton _("Коллекция") action Show("ps_phone", initial_tab="endings")
+            textbutton _("Главы") action ShowMenu("ps_chapter_select")
+            textbutton _("Коллекция") action Show("ps_phone", initial_tab="archive")
 
         else:
 
@@ -409,7 +410,7 @@ screen main_menu():
         xalign 0.08
         yalign 0.5
         xsize 520
-        ysize 650
+        ysize 710
         xpadding 28
         ypadding 28
 
@@ -418,7 +419,8 @@ screen main_menu():
 
             textbutton "Начать" action Start() style "main_menu_button"
             textbutton "Загрузить" action ShowMenu("load")
-            textbutton "Коллекция" action Show("ps_phone", initial_tab="endings")
+            textbutton "Главы" action ShowMenu("ps_chapter_select")
+            textbutton "Коллекция" action Show("ps_phone", initial_tab="archive")
             textbutton "Настройки" action ShowMenu("preferences")
             textbutton "Об игре" action ShowMenu("about")
             textbutton "Помощь" action ShowMenu("help")
@@ -712,6 +714,15 @@ screen file_slots(title):
 
                         text FileSaveName(slot):
                             style "slot_name_text"
+
+                        $ saved_day = FileJson(slot, "ps_day")
+                        $ saved_route = FileJson(slot, "ps_route")
+
+                        if saved_day:
+                            text "День [saved_day] • [saved_route]":
+                                style "slot_name_text"
+                                color "#c99cff"
+                                size 17
 
                         key "save_delete" action FileDelete(slot)
 

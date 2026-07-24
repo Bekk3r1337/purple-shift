@@ -2,6 +2,7 @@
 
 label start:
     $ ps_chapter = 1
+    $ ps_begin_day(1)
 
     scene bg black
     with fade

@@ -405,6 +405,15 @@ init python:
             "Ты ответил на сообщение: {}.".format(message["sender"])
         ]
 
+        route_by_message = {
+            "newbie": "newbie",
+            "veteran": "veteran",
+            "joker": "joker",
+            "supervisor": "supervisor",
+        }
+        if message_id in route_by_message:
+            ps_add_route(route_by_message[message_id], 1)
+
         if renpy.loadable("audio/phone_vibrate.ogg"):
             renpy.sound.play("audio/phone_vibrate.ogg")
 
@@ -426,6 +435,9 @@ init python:
         return None
 
     def ps_personal_scene_target():
+        if hasattr(renpy.store, "ps_route_points"):
+            return ps_route_target()
+
         priorities = [
             ("newbie", ps_newbie_trust + (2 if "newbie" in ps_phone_replies else 0)),
             ("veteran", ps_evidence + ps_integrity + (2 if "veteran" in ps_phone_replies else 0)),

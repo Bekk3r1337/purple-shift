@@ -111,7 +111,36 @@ testsuite purple_shift:
         pause until screen "ps_ending_epilogue"
         assert id "ps_epilogue_continue"
         run Hide("ps_ending_epilogue")
+
         $ persistent.ps_minigame_assist = False
+
+
+    testcase trace_map_screen:
+        run Show("ps_warehouse_map", day=2, remaining=1)
+        pause until screen "ps_warehouse_map"
+        assert id "ps_map_break"
+        run Hide("ps_warehouse_map")
+
+
+    testcase trace_archive_screen:
+        run Show("ps_phone", initial_tab="archive")
+        pause until screen "ps_phone"
+        assert id "ps_phone_archive_tab"
+        run Hide("ps_phone")
+
+
+    testcase trace_gallery_screen:
+        run Show("ps_gallery_viewer", asset_id="route_newbie")
+        pause until screen "ps_gallery_viewer"
+        assert id "ps_gallery_close"
+        run Hide("ps_gallery_viewer")
+
+
+    testcase trace_chapter_screen:
+        run Show("ps_chapter_select_content")
+        pause until screen "ps_chapter_select_content"
+        assert id "ps_chapter_1"
+        run Hide("ps_chapter_select_content")
 
 
     testcase full_week_labels:
@@ -121,6 +150,9 @@ testsuite purple_shift:
         assert eval (renpy.has_label("chapter6_day_six"))
         assert eval (renpy.has_label("chapter7_day_seven"))
         assert eval (renpy.has_label("ending_common"))
+        assert eval (renpy.has_label("ps_exploration_phase"))
+        assert eval (renpy.has_label("ps_route_climax"))
+        assert eval (renpy.has_label("ps_storm_teaser"))
 
 
     testcase all_final_endings:
@@ -242,6 +274,77 @@ testsuite purple_shift:
         assert eval (renpy.loadable("audio/alarm_low.ogg"))
 
 
+    testcase trace_systems:
+        $ ps_exploration_visits = {}
+        $ ps_route_points = {"newbie": 0, "veteran": 0, "joker": 0, "supervisor": 0}
+        $ ps_storm_fragments = []
+        $ ps_consequence_log = []
+        $ ps_newbie_trust = 0
+        $ ps_evidence = 0
+        $ ps_integrity = 0
+        $ ps_humor = 0
+        $ ps_team_unity = 0
+        $ ps_supervisor_respect = 0
+        $ ps_efficiency = 0
+
+        $ ps_record_visit(2, "break")
+        $ ps_record_visit(2, "mezzanine")
+        assert eval (ps_day_zone_visits(2) == ["break", "mezzanine"])
+
+        $ ps_add_route("newbie", 3)
+        assert eval (ps_route_points["newbie"] == 3)
+        assert eval (ps_route_target() == "newbie")
+
+        $ ps_record_consequence("Тестовый след.")
+        $ ps_record_consequence("Тестовый след.")
+        assert eval (ps_consequence_log == ["Тестовый след."])
+
+        $ ps_collect_storm_fragment("violet_stamp")
+        $ ps_collect_storm_fragment("dead_channel")
+        $ ps_collect_storm_fragment("sealed_manifest")
+        assert eval (ps_storm_ready())
+
+        assert eval (ps_zone_event_label(4, "control") == "ps_trace_d4_control")
+        assert eval (0 <= ps_completion_percent() <= 100)
+
+
+    testcase trace_labels:
+        assert eval (renpy.has_label("ps_trace_d2_break"))
+        assert eval (renpy.has_label("ps_trace_d2_mezzanine"))
+        assert eval (renpy.has_label("ps_trace_d2_packing"))
+        assert eval (renpy.has_label("ps_trace_d2_control"))
+        assert eval (renpy.has_label("ps_trace_d2_dock"))
+        assert eval (renpy.has_label("ps_trace_d3_break"))
+        assert eval (renpy.has_label("ps_trace_d3_mezzanine"))
+        assert eval (renpy.has_label("ps_trace_d3_packing"))
+        assert eval (renpy.has_label("ps_trace_d3_control"))
+        assert eval (renpy.has_label("ps_trace_d3_dock"))
+        assert eval (renpy.has_label("ps_trace_d4_break"))
+        assert eval (renpy.has_label("ps_trace_d4_mezzanine"))
+        assert eval (renpy.has_label("ps_trace_d4_packing"))
+        assert eval (renpy.has_label("ps_trace_d4_control"))
+        assert eval (renpy.has_label("ps_trace_d4_dock"))
+        assert eval (renpy.has_label("ps_trace_d5_break"))
+        assert eval (renpy.has_label("ps_trace_d5_mezzanine"))
+        assert eval (renpy.has_label("ps_trace_d5_packing"))
+        assert eval (renpy.has_label("ps_trace_d5_control"))
+        assert eval (renpy.has_label("ps_trace_d5_dock"))
+        assert eval (renpy.has_label("ps_trace_d6_break"))
+        assert eval (renpy.has_label("ps_trace_d6_mezzanine"))
+        assert eval (renpy.has_label("ps_trace_d6_packing"))
+        assert eval (renpy.has_label("ps_trace_d6_control"))
+        assert eval (renpy.has_label("ps_trace_d6_dock"))
+
+
+    testcase trace_assets:
+        assert eval (renpy.loadable("images/bg/service_corridor.jpg"))
+        assert eval (renpy.loadable("images/cg/route_newbie.jpg"))
+        assert eval (renpy.loadable("images/cg/route_veteran.jpg"))
+        assert eval (renpy.loadable("images/cg/route_joker.jpg"))
+        assert eval (renpy.loadable("images/cg/route_supervisor.jpg"))
+        assert eval (renpy.loadable("images/cg/storm_signal.jpg"))
+
+
     testsuite incident_paths:
 
         testcase every_incident_outcome:
@@ -255,6 +358,46 @@ testsuite purple_shift:
             skip fast until label chapter3_after_incident
 
             assert eval (ps_second_shift_path != "не определён")
+
+
+    testsuite route_paths:
+
+        testcase every_route_climax:
+            parameter route_id = [
+                "newbie",
+                "veteran",
+                "joker",
+                "supervisor",
+            ]
+
+            $ ps_route_scene_seen = False
+            $ ps_route_points = {
+                "newbie": 0,
+                "veteran": 0,
+                "joker": 0,
+                "supervisor": 0,
+            }
+            $ ps_route_points[route_id] = 10
+
+            run Jump("ps_route_climax")
+            skip fast until label ps_route_climax_end
+
+            assert eval (ps_route_scene_id == route_id)
+
+
+    testsuite storm_path:
+
+        testcase secret_post_credit:
+            $ ps_storm_fragments = [
+                "violet_stamp",
+                "dead_channel",
+                "sealed_manifest",
+            ]
+
+            run Jump("ps_storm_teaser")
+            skip fast until label ps_storm_teaser_end
+
+            assert eval (persistent.ps_storm_unlocked)
 
 
     testsuite ending_paths:

@@ -6,6 +6,7 @@
 
 label chapter3_day_three:
     $ ps_chapter = 3
+    $ ps_begin_day(3)
 
     scene black
     with fade
@@ -15,6 +16,8 @@ label chapter3_day_three:
         "Чужие цифры",
         "Рейтинг замечает скорость. Архив хранит то, что людям приказали забыть."
     )
+
+    call ps_show_consequence_echo(3)
 
     scene bg warehouse_outside
     with dissolve
@@ -120,6 +123,8 @@ label chapter3_day_three:
 
     hide sv
     with dissolve
+
+    call ps_exploration_phase(3, 1)
 
     if persistent.ps_reduce_motion:
         scene bg mezzanine
@@ -356,6 +361,7 @@ label chapter3_day_three:
 
 label chapter4_day_four:
     $ ps_chapter = 4
+    $ ps_begin_day(4)
 
     scene black
     with fade
@@ -365,6 +371,8 @@ label chapter4_day_four:
         "Чужая ошибка",
         "Когда система не может признать сбой, она начинает искать человеческое имя."
     )
+
+    call ps_show_consequence_echo(4)
 
     scene bg room_morning
     with dissolve
@@ -530,6 +538,8 @@ label chapter4_day_four:
     hide newb
     hide sv
     with dissolve
+
+    call ps_exploration_phase(4, 1)
 
     scene bg warehouse_cold
     with fade
@@ -705,6 +715,7 @@ label chapter4_day_four:
 
 label chapter5_day_five:
     $ ps_chapter = 5
+    $ ps_begin_day(5)
 
     scene black
     with fade
@@ -714,6 +725,8 @@ label chapter5_day_five:
         "Предел нагрузки",
         "У каждого механизма есть допустимый вес. У людей почему-то его не пишут."
     )
+
+    call ps_show_consequence_echo(5)
 
     scene bg warehouse_outside
     with dissolve
@@ -793,6 +806,8 @@ label chapter5_day_five:
 
     hide sv
     with dissolve
+
+    call ps_exploration_phase(5, 2)
 
     if persistent.ps_reduce_motion:
         scene bg packing_zone
@@ -977,6 +992,7 @@ label chapter5_day_five:
 
             n "Проходя мимо, он не смотрит на тебя."
 
+    $ ps_unlock_cg("emergency_stop")
     scene cg emergency_stop
     with fade
 
@@ -1069,6 +1085,7 @@ label chapter5_day_five:
 
 label chapter6_day_six:
     $ ps_chapter = 6
+    $ ps_begin_day(6)
 
     scene black
     with fade
@@ -1078,6 +1095,8 @@ label chapter6_day_six:
         "Цена подписи",
         "Один росчерк может закрыть инцидент. Или открыть настоящую историю."
     )
+
+    call ps_show_consequence_echo(6)
 
     scene bg warehouse_outside
     with dissolve
@@ -1158,9 +1177,11 @@ label chapter6_day_six:
     hide mem
     with dissolve
 
+    call ps_exploration_phase(6, 2)
+
     n "Через два часа тебя вызывают в маленькую комнату у линии."
 
-    call ps_personal_scene
+    call ps_route_climax
 
     scene bg control_room
     with fade
@@ -1201,6 +1222,7 @@ label chapter6_day_six:
 
     cur "После этого обсудим твоё назначение старшим линии."
 
+    $ ps_unlock_cg("report_pressure")
     scene cg report_pressure
     with dissolve
 
@@ -1427,6 +1449,7 @@ label chapter6_day_six:
 
 label chapter7_day_seven:
     $ ps_chapter = 7
+    $ ps_begin_day(7)
 
     scene black
     with fade
@@ -1436,6 +1459,8 @@ label chapter7_day_seven:
         "Последняя смена",
         "До закрытия периода — шесть часов. До главного решения — одна смена."
     )
+
+    call ps_show_consequence_echo(7)
 
     scene bg room_morning
     with dissolve
@@ -1978,6 +2003,7 @@ label ending_people:
     n "Не потому что перестала бояться."
     n "Потому что теперь знает: рядом кто-то тоже видит."
 
+    $ ps_unlock_cg("team_dawn")
     scene cg team_dawn
     with fade
 
@@ -2041,6 +2067,7 @@ label ending_voice:
     n "Даже ветеран."
     n "Даже супервайзер — уже в дверях."
 
+    $ ps_unlock_cg("team_dawn")
     scene cg team_dawn
     with fade
 
@@ -2268,6 +2295,7 @@ label ending_common:
     $ ps_unlock_ending(ps_final_ending)
     $ ps_unlock_achievement("seven_days")
     $ ps_evaluate_achievements()
+    $ ps_finish_run()
 
     call screen ps_final_report(
         ps_ending_title(ps_final_ending),
@@ -2296,5 +2324,8 @@ label ending_common:
 
     hide mem
     with dissolve
+
+    if ps_storm_ready():
+        call ps_storm_teaser
 
     return

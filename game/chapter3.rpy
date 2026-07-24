@@ -64,6 +64,7 @@ label chapter2_hook:
 
 label chapter3_second_shift:
     $ ps_chapter = 2
+    $ ps_begin_day(2)
 
     scene bg black
     with fade
@@ -73,6 +74,8 @@ label chapter3_second_shift:
         "Вторая смена",
         "Сегодня ты уже знаешь маршрут. Это не значит, что знаешь, куда он ведёт."
     )
+
+    call ps_show_consequence_echo(2)
 
     scene bg room_night
     with dissolve
@@ -237,6 +240,8 @@ label chapter3_second_shift:
             newb "Это точно работает?"
             mem "Нет."
             mem "Но выглядит профессионально."
+
+    call ps_exploration_phase(2, 1)
 
     jump chapter3_sorting_start
 
