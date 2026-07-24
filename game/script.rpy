@@ -159,23 +159,27 @@ label first_mistake:
     n "Тебе выдают ТСД."
     n "Он тёплый, как будто до тебя его уже держали сотни рук."
 
-    if renpy.loadable("audio/scan_beep.mp3"):
-        play sound "audio/scan_beep.mp3"
+    if renpy.loadable("audio/scan_soft.ogg"):
+        play sound "audio/scan_soft.ogg"
 
     n "Пиип."
     n "Первый скан проходит. Ты почти радуешься."
 
-    if renpy.loadable("audio/scan_beep.mp3"):
-        play sound "audio/scan_beep.mp3"
+    if renpy.loadable("audio/scan_soft.ogg"):
+        play sound "audio/scan_soft.ogg"
 
     n "Второй скан."
     n "Экран моргает. Секунда. Две."
 
     # глич-эффект
-    scene expression Solid("#ffffff")
-    pause 0.05
-    scene expression Solid("#000000")
-    pause 0.05
+    if persistent.ps_reduce_flashes:
+        scene expression Solid("#3b2945")
+        pause 0.10
+    else:
+        scene expression Solid("#ffffff")
+        pause 0.05
+        scene expression Solid("#000000")
+        pause 0.05
 
     scene bg warehouse_inside
     with fade
@@ -187,8 +191,8 @@ label first_mistake:
     show sv neutral at ps_right
     with dissolve
 
-    if renpy.loadable("audio/oh-oh.mp3"):
-        play sound "audio/oh-oh.mp3"
+    if renpy.loadable("audio/error_soft.ogg"):
+        play sound "audio/error_soft.ogg"
     n "ТСД пищит резко, как будто обвиняет тебя лично."
 
     sv "Стоим."
@@ -319,13 +323,13 @@ label shift_continues:
     # Ритм потока (серия сканов)
     n "Поток начинается."
     n "Коробка. Скан. Переложил."
-    if renpy.loadable("audio/scan_beep.mp3"):
-        play sound "audio/scan_beep.mp3"
+    if renpy.loadable("audio/scan_soft.ogg"):
+        play sound "audio/scan_soft.ogg"
     n "Пиип."
 
     n "Ещё коробка."
-    if renpy.loadable("audio/scan_beep.mp3"):
-        play sound "audio/scan_beep.mp3"
+    if renpy.loadable("audio/scan_soft.ogg"):
+        play sound "audio/scan_soft.ogg"
     n "Пиип."
 
     n "Где-то сзади коротко: «Быстрее!»"
@@ -370,8 +374,8 @@ label help_newbie:
     p "Вот тут. Смотри: сначала это, потом подтверждение."
     n "Ты говоришь максимально спокойно. Даже сам удивляешься."
 
-    if renpy.loadable("audio/scan_beep.mp3"):
-        play sound "audio/scan_beep.mp3"
+    if renpy.loadable("audio/scan_soft.ogg"):
+        play sound "audio/scan_soft.ogg"
 
     newb "…О! Получилось."
     newb "Спасибо."
@@ -398,8 +402,8 @@ label grind_norm:
 
     n "Ты делаешь вид, что не слышишь."
     n "Берёшь. Сканируешь. Кладёшь."
-    if renpy.loadable("audio/scan_beep.mp3"):
-        play sound "audio/scan_beep.mp3"
+    if renpy.loadable("audio/scan_soft.ogg"):
+        play sound "audio/scan_soft.ogg"
     n "Пиип."
 
     n "Новичок рядом шепчет что-то себе под нос."
@@ -517,13 +521,13 @@ label final_stretch:
     n "Просто в какой-то момент ты понимаешь: руки уже работают отдельно от головы."
 
     n "Скан. Переложил."
-    if renpy.loadable("audio/scan_beep.mp3"):
-        play sound "audio/scan_beep.mp3"
+    if renpy.loadable("audio/scan_soft.ogg"):
+        play sound "audio/scan_soft.ogg"
     n "Пиип."
 
     n "Скан. Переложил."
-    if renpy.loadable("audio/scan_beep.mp3"):
-        play sound "audio/scan_beep.mp3"
+    if renpy.loadable("audio/scan_soft.ogg"):
+        play sound "audio/scan_soft.ogg"
     n "Пииип."
 
     n "И вдруг - тишина."
@@ -647,8 +651,8 @@ label ending_light_path:
     p "Давай. Вместе."
 
     n "Вы поднимаете коробки. Руки дрожат, но работают."
-    if renpy.loadable("audio/scan_beep.mp3"):
-        play sound "audio/scan_beep.mp3"
+    if renpy.loadable("audio/scan_soft.ogg"):
+        play sound "audio/scan_soft.ogg"
 
     mem "Опа."
     mem "Сюжетный поворот: командная работа."
@@ -723,8 +727,8 @@ label ending_hard_path:
 
     n "Ты снова в потоке."
     n "Скан. Переложил."
-    if renpy.loadable("audio/scan_beep.mp3"):
-        play sound "audio/scan_beep.mp3"
+    if renpy.loadable("audio/scan_soft.ogg"):
+        play sound "audio/scan_soft.ogg"
     n "Пиип."
 
     n "И ты замечаешь, что внутри стало тише."

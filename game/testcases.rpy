@@ -79,10 +79,39 @@ testsuite purple_shift:
         assert id "ps_phone_close"
         run Hide("ps_phone")
 
+        run Show("ps_phone", initial_tab="messages")
+        pause until screen "ps_phone"
+        assert id "ps_phone_messages_tab"
+        run Hide("ps_phone")
+
         run Show("ps_break_choice")
         pause until screen "ps_break_choice"
         assert id "ps_break_newbie"
         run Hide("ps_break_choice")
+
+        run Show("ps_director_settings")
+        pause until screen "ps_director_settings"
+        assert id "ps_director_close"
+        run Hide("ps_director_settings")
+
+        $ persistent.ps_minigame_assist = True
+        $ ps_flow_start()
+        run Show("ps_flow_challenge")
+        pause until screen "ps_flow_challenge"
+        assert id "ps_flow_safety"
+        run Hide("ps_flow_challenge")
+
+        $ ps_case_start()
+        run Show("ps_case_board")
+        pause until screen "ps_case_board"
+        assert id "ps_case_confirm"
+        run Hide("ps_case_board")
+
+        run Show("ps_ending_epilogue", ending_id="truth")
+        pause until screen "ps_ending_epilogue"
+        assert id "ps_epilogue_continue"
+        run Hide("ps_ending_epilogue")
+        $ persistent.ps_minigame_assist = False
 
 
     testcase full_week_labels:
@@ -155,6 +184,62 @@ testsuite purple_shift:
 
         assert eval (renpy.loadable("images/ch/curator.png"))
         assert eval (renpy.loadable("images/bg/control_room.jpg"))
+
+
+    testcase director_systems:
+        $ ps_phone_replies = {}
+        $ ps_humanity = 0
+        $ ps_newbie_trust = 0
+        $ ps_reply_message("newbie", "support")
+
+        assert eval (ps_phone_replies["newbie"] == "support")
+        assert eval (ps_humanity == 1)
+        assert eval (ps_newbie_trust == 2)
+
+        $ ps_flow_start()
+        $ ps_flow_choose("safety")
+        assert eval (ps_flow_index == 1)
+        assert eval (ps_flow_safety == 2)
+
+        $ ps_flow_choose("result")
+        assert eval (ps_flow_index == 2)
+        assert eval (ps_flow_result == 2)
+        assert eval (ps_flow_mistakes == 0)
+
+        $ ps_case_start()
+        $ ps_case_toggle("terminal")
+        $ ps_case_toggle("camera")
+        $ ps_case_toggle("lift")
+        assert eval (len(ps_case_selected) == 3)
+        assert eval (ps_case_score(ps_case_selected) == 3)
+
+        $ ps_case_toggle("camera")
+        $ ps_case_toggle("rumor")
+        assert eval (ps_case_score(ps_case_selected) == 2)
+
+
+    testcase director_assets:
+        assert eval (renpy.loadable("images/bg/break_room.jpg"))
+        assert eval (renpy.loadable("images/bg/mezzanine.jpg"))
+        assert eval (renpy.loadable("images/bg/packing_zone.jpg"))
+        assert eval (renpy.loadable("images/bg/loading_dock.jpg"))
+
+        assert eval (renpy.loadable("images/ch/mem_serious.png"))
+        assert eval (renpy.loadable("images/ch/vet_concerned.png"))
+        assert eval (renpy.loadable("images/ch/super_stern.png"))
+        assert eval (renpy.loadable("images/ch/nov_relief.png"))
+
+        assert eval (renpy.loadable("images/cg/emergency_stop.jpg"))
+        assert eval (renpy.loadable("images/cg/report_pressure.jpg"))
+        assert eval (renpy.loadable("images/cg/team_dawn.jpg"))
+
+        assert eval (renpy.loadable("audio/scan_soft.ogg"))
+        assert eval (renpy.loadable("audio/error_soft.ogg"))
+        assert eval (renpy.loadable("audio/phone_vibrate.ogg"))
+        assert eval (renpy.loadable("audio/radio_click.ogg"))
+        assert eval (renpy.loadable("audio/conveyor_loop.ogg"))
+        assert eval (renpy.loadable("audio/ventilation_loop.ogg"))
+        assert eval (renpy.loadable("audio/alarm_low.ogg"))
 
 
     testsuite incident_paths:

@@ -63,6 +63,21 @@ init python:
             "Семь дней спустя",
             "Дойти до финала рабочей недели.",
         ),
+        (
+            "connected",
+            "На связи",
+            "Ответить как минимум в трёх переписках.",
+        ),
+        (
+            "flow_keeper",
+            "Живая линия",
+            "Удержать безопасность, результат и команду во время перегруза.",
+        ),
+        (
+            "investigator",
+            "Только факты",
+            "Собрать безошибочное дело по происшествию.",
+        ),
     ]
 
     ps_ending_catalog = [
@@ -207,14 +222,14 @@ init python:
             ps_sort_score += 1
             ps_sort_index += 1
 
-            if renpy.loadable("audio/scan_beep.mp3"):
-                renpy.sound.play("audio/scan_beep.mp3")
+            if renpy.loadable("audio/scan_soft.ogg"):
+                renpy.sound.play("audio/scan_soft.ogg")
         else:
             ps_sort_mistakes += 1
             ps_sort_time = max(0, ps_sort_time - 3)
 
-            if renpy.loadable("audio/oh-oh.mp3"):
-                renpy.sound.play("audio/oh-oh.mp3")
+            if renpy.loadable("audio/error_soft.ogg"):
+                renpy.sound.play("audio/error_soft.ogg")
 
         renpy.restart_interaction()
 
@@ -250,14 +265,14 @@ init python:
             ps_signal_score += 1
             ps_signal_index += 1
 
-            if renpy.loadable("audio/scan_beep.mp3"):
-                renpy.sound.play("audio/scan_beep.mp3")
+            if renpy.loadable("audio/scan_soft.ogg"):
+                renpy.sound.play("audio/scan_soft.ogg")
         else:
             ps_signal_mistakes += 1
             ps_signal_time = max(0, ps_signal_time - 3)
 
-            if renpy.loadable("audio/oh-oh.mp3"):
-                renpy.sound.play("audio/oh-oh.mp3")
+            if renpy.loadable("audio/error_soft.ogg"):
+                renpy.sound.play("audio/error_soft.ogg")
 
         renpy.restart_interaction()
 
@@ -512,8 +527,9 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "status" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 285
+                    xsize 245
                     ysize 58
+                    text_size 22
                     text_xalign 0.5
                     text_yalign 0.5
 
@@ -522,8 +538,21 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "people" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 285
+                    xsize 245
                     ysize 58
+                    text_size 22
+                    text_xalign 0.5
+                    text_yalign 0.5
+
+                textbutton "СООБЩЕНИЯ":
+                    id "ps_phone_messages_tab"
+                    action SetScreenVariable("tab", "messages")
+                    background Solid("#7442a7" if tab == "messages" else "#291a38")
+                    hover_background Solid("#8d55c4")
+                    text_color "#ffffff"
+                    xsize 245
+                    ysize 58
+                    text_size 22
                     text_xalign 0.5
                     text_yalign 0.5
 
@@ -532,8 +561,9 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "achievements" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 285
+                    xsize 245
                     ysize 58
+                    text_size 22
                     text_xalign 0.5
                     text_yalign 0.5
 
@@ -542,8 +572,9 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "endings" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 285
+                    xsize 245
                     ysize 58
+                    text_size 22
                     text_xalign 0.5
                     text_yalign 0.5
 
@@ -644,6 +675,9 @@ screen ps_phone(initial_tab="status"):
                                 color "#d9cae9"
                                 size 24
                                 xalign 0.5
+
+                elif tab == "messages":
+                    use ps_phone_messages_panel()
 
                 elif tab == "achievements":
                     viewport:
@@ -826,6 +860,10 @@ screen ps_sort_challenge():
 
     add Solid("#030507ee")
 
+    $ ps_sort_item = ps_sort_items[
+        min(ps_sort_index, len(ps_sort_items) - 1)
+    ]
+
     if ps_sort_index >= len(ps_sort_items) or ps_sort_time <= 0:
         timer 0.15 action Return((ps_sort_score, ps_sort_mistakes))
     else:
@@ -877,12 +915,12 @@ screen ps_sort_challenge():
                         color "#718079"
                         size 22
 
-                    text "[ps_sort_items[ps_sort_index][0]]":
+                    text "[ps_sort_item[0]]":
                         color "#ffffff"
                         size 53
                         xalign 0.5
 
-                    text "[ps_sort_items[ps_sort_index][2]]":
+                    text "[ps_sort_item[2]]":
                         color "#aab8b0"
                         size 25
                         xalign 0.5

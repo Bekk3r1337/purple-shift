@@ -401,7 +401,7 @@ screen main_menu():
         spacing 6
 
         text "PurpleShift" size 72 color "#8a2fff"
-        text "1.0" size 26 color "#8a7aa8"
+        text "[config.version]" size 26 color "#8a7aa8"
     add Transform(dust, alpha=0.35)
     # --- КНОПКИ слева ---
     frame:
@@ -409,7 +409,7 @@ screen main_menu():
         xalign 0.08
         yalign 0.5
         xsize 520
-        ysize 600
+        ysize 650
         xpadding 28
         ypadding 28
 
@@ -418,6 +418,7 @@ screen main_menu():
 
             textbutton "Начать" action Start() style "main_menu_button"
             textbutton "Загрузить" action ShowMenu("load")
+            textbutton "Коллекция" action Show("ps_phone", initial_tab="endings")
             textbutton "Настройки" action ShowMenu("preferences")
             textbutton "Об игре" action ShowMenu("about")
             textbutton "Помощь" action ShowMenu("help")
@@ -863,6 +864,10 @@ screen preferences():
 
                         textbutton _("Режим тишины"):
                             action Preference("all mute", "toggle")
+                            style "mute_all_button"
+
+                        textbutton _("Постановка и доступность"):
+                            action Show("ps_director_settings")
                             style "mute_all_button"
 
 
@@ -1588,6 +1593,7 @@ screen quick_menu():
             textbutton _("Назад") action Rollback()
             textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Авто") action Preference("auto-forward", "toggle")
+            textbutton _("Телефон") action Show("ps_phone")
             textbutton _("Меню") action ShowMenu()
 
 

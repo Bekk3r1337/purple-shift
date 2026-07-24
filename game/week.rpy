@@ -121,17 +121,21 @@ label chapter3_day_three:
     hide sv
     with dissolve
 
-    scene bg warehouse_inside
+    if persistent.ps_reduce_motion:
+        scene bg mezzanine
+    else:
+        scene bg mezzanine at ps_camera_drift
     with fade
 
     stop music fadeout 1.5
     play music "audio/warehouse_chill.mp3" fadein 2.0 loop
+    $ ps_set_ambience("warehouse")
 
     n "Линия запускается."
     n "Третий день начинается с обычного звука."
 
-    if renpy.loadable("audio/scan_beep.mp3"):
-        play sound "audio/scan_beep.mp3"
+    if renpy.loadable("audio/scan_soft.ogg"):
+        play sound "audio/scan_soft.ogg"
 
     n "Пиип."
     n "Система выдаёт контрольную серию."
@@ -342,6 +346,7 @@ label chapter3_day_three:
         "Цифры запомнили скорость. Люди — то, что ты сделал с исчезнувшей записью."
     )
 
+    $ ps_stop_ambience()
     jump chapter4_day_four
 
 
@@ -531,6 +536,7 @@ label chapter4_day_four:
 
     stop music fadeout 1.5
     play music "audio/warehouse_chill.mp3" fadein 2.0 loop
+    $ ps_set_ambience("warehouse")
 
     n "Четвёртая смена идёт холоднее предыдущих."
     n "Люди уже знают про сорок семь единиц."
@@ -538,6 +544,11 @@ label chapter4_day_four:
 
     n "Через два часа ТСД разрешает десятиминутный перерыв."
     n "Сегодня ты впервые сам выбираешь, с кем его провести."
+
+    scene bg break_room
+    with dissolve
+
+    $ ps_set_ambience("quiet")
 
     call screen ps_break_choice
     $ ps_break_target = _return
@@ -547,7 +558,7 @@ label chapter4_day_four:
         $ ps_newbie_trust += 2
         $ ps_team_unity += 1
 
-        show newb tired at ps_right
+        show newb relief at ps_enter_right
         with dissolve
 
         p "Как ты?"
@@ -571,7 +582,7 @@ label chapter4_day_four:
         $ ps_endurance += 1
         $ ps_evidence += 1
 
-        show vet neutral at ps_left
+        show vet concerned at ps_enter_left
         with dissolve
 
         p "Что с подъёмником?"
@@ -610,6 +621,11 @@ label chapter4_day_four:
         n "Не проверяешь сообщения."
         n "Десять минут склад существует без твоего участия."
         n "И почему-то не рушится."
+
+    scene bg warehouse_cold
+    with dissolve
+
+    $ ps_set_ambience("warehouse")
 
     show mem grin at ps_left
     with dissolve
@@ -679,6 +695,7 @@ label chapter4_day_four:
         "Сегодня ошибка получила лицо. Ты решил, чьё."
     )
 
+    $ ps_stop_ambience()
     jump chapter5_day_five
 
 
@@ -777,18 +794,61 @@ label chapter5_day_five:
     hide sv
     with dissolve
 
-    scene bg warehouse_alert
+    if persistent.ps_reduce_motion:
+        scene bg packing_zone
+    else:
+        scene bg packing_zone at ps_camera_drift
     with fade
 
     stop music fadeout 1.5
     play music "audio/warehouse_chill.mp3" fadein 2.0 loop
+    $ ps_set_ambience("warehouse")
+
+    n "До приёмки ещё не дошёл основной объём, а упаковка уже захлёбывается."
+    n "Рация говорит сразу тремя голосами."
+    n "ТСД предлагает тебе решить, что сейчас важнее."
+
+    $ ps_flow_start()
+    call screen ps_flow_challenge
+    $ ps_flow_outcome = _return
+
+    if ps_flow_safety >= 5 and ps_flow_result >= 2 and ps_flow_people >= 3:
+        $ ps_efficiency += 1
+        $ ps_humanity += 1
+        $ ps_team_unity += 1
+        $ ps_unlock_achievement("flow_keeper")
+        $ ps_key_choices = ps_key_choices + ["Ты удержал живую линию, не превратив людей в расходник."]
+        n "Очередь не исчезает."
+        n "Но перестаёт расти."
+        n "Никто не остаётся один между красным экраном и движущейся лентой."
+    elif ps_flow_result >= 6 and ps_flow_safety < 3:
+        $ ps_efficiency += 2
+        $ ps_integrity -= 1
+        $ ps_burnout += 1
+        n "План начинает догонять норму."
+        n "Зато каждое предупреждение приходится закрывать не читая."
+    elif ps_flow_people >= 3:
+        $ ps_team_unity += 1
+        $ ps_endurance += 1
+        n "Линия идёт медленнее."
+        n "Но люди начинают перехватывать чужие ошибки до того, как те становятся авариями."
+    else:
+        $ ps_burnout += 2
+        $ ps_team_unity -= 1
+        n "Ты выбираешь быстро."
+        n "Слишком быстро, чтобы заметить: некоторые команды противоречат друг другу."
+
+    scene bg warehouse_alert
+    with fade
+
+    $ ps_set_ambience("alert")
 
     n "Первый час подъёмник работает."
     n "Второй — тоже."
     n "На третьем платформа останавливается между уровнями."
 
-    if renpy.loadable("audio/oh-oh.mp3"):
-        play sound "audio/oh-oh.mp3"
+    if renpy.loadable("audio/alarm_low.ogg"):
+        play sound "audio/alarm_low.ogg"
 
     call screen ps_tsd_alert(
         "LIFT-09",
@@ -917,6 +977,17 @@ label chapter5_day_five:
 
             n "Проходя мимо, он не смотрит на тебя."
 
+    scene cg emergency_stop
+    with fade
+
+    n "Красная кнопка всё-таки оказывается быстрее отчёта."
+    n "На один короткий момент склад перестаёт быть потоком и снова становится местом, где стоят люди."
+
+    pause 0.6
+
+    scene bg warehouse_alert
+    with dissolve
+
     hide vet
     hide sv
     hide newb
@@ -988,6 +1059,7 @@ label chapter5_day_five:
         "Механизм достиг предела. Ты решил, должен ли предел быть у людей."
     )
 
+    $ ps_stop_ambience()
     jump chapter6_day_six
 
 
@@ -1020,11 +1092,15 @@ label chapter6_day_six:
 
     n "Склад готовится показать себя человеку, который обычно видит только отчёты."
 
-    scene bg warehouse_inside
+    if persistent.ps_reduce_motion:
+        scene bg warehouse_inside
+    else:
+        scene bg warehouse_inside at ps_camera_drift
     with fade
 
     stop music fadeout 1.5
     play music "audio/night_shift.mp3" fadein 2.0 loop
+    $ ps_set_ambience("warehouse")
 
     show cur at ps_center
     with dissolve
@@ -1084,10 +1160,14 @@ label chapter6_day_six:
 
     n "Через два часа тебя вызывают в маленькую комнату у линии."
 
+    call ps_personal_scene
+
     scene bg control_room
     with fade
 
-    show sv neutral at ps_left
+    $ ps_set_ambience("quiet")
+
+    show sv stern at ps_left
     show cur at ps_right
     with dissolve
 
@@ -1121,11 +1201,55 @@ label chapter6_day_six:
 
     cur "После этого обсудим твоё назначение старшим линии."
 
+    scene cg report_pressure
+    with dissolve
+
+    n "Ручка лежит точно напротив тебя."
+    n "Будто решение уже принято и осталось только повторить его чернилами."
+
+    pause 0.6
+
+    scene bg control_room
+    with dissolve
+
+    show sv stern at ps_left
+    show cur at ps_right
+    with dissolve
+
     if ps_evidence >= 3:
         n "В телефоне лежат фотографии журнала."
         n "Удалённая запись."
         n "Сбой буфера."
         n "Ошибка датчика."
+
+    n "Куратор отодвигает готовый отчёт."
+    n "У тебя есть минута, чтобы собрать собственное дело."
+
+    $ ps_case_start()
+    call screen ps_case_board
+    $ ps_case_selected = _return
+    $ ps_case_result = ps_case_score(ps_case_selected)
+    $ ps_case_completed = True
+
+    if ps_case_result == 3:
+        $ ps_evidence += 2
+        $ ps_integrity += 1
+        $ ps_supervisor_respect += 1
+        $ ps_unlock_achievement("investigator")
+        $ ps_key_choices = ps_key_choices + ["Ты собрал дело только из проверяемых фактов."]
+        n "Три материала."
+        n "Три независимых времени."
+        n "Теперь это не мнение сотрудника, а цепочка событий."
+        sv "Этого достаточно для внутренней проверки."
+    elif ps_case_result == 2:
+        $ ps_evidence += 1
+        n "Два материала подтверждают друг друга."
+        n "Третий оставляет куратору место для сомнения."
+    else:
+        $ ps_supervisor_respect -= 1
+        n "Папка выглядит толстой."
+        n "Но факты в ней не держатся друг за друга."
+        cur "Именно поэтому решения принимают по официальному отчёту."
 
     menu:
         "Исправить отчёт и перечислить нарушения":
@@ -1293,6 +1417,7 @@ label chapter6_day_six:
         "До финала осталась одна смена. Теперь система знает цену твоей подписи."
     )
 
+    $ ps_stop_ambience()
     jump chapter7_day_seven
 
 
@@ -1399,8 +1524,9 @@ label chapter7_day_seven:
 
     stop music fadeout 1.5
     play music "audio/after_shift_ambient.mp3" fadein 2.0 loop
+    $ ps_set_ambience("quiet")
 
-    show newb tired at ps_right
+    show newb relief at ps_enter_right
     show mem grin at ps_center
     with dissolve
 
@@ -1458,11 +1584,15 @@ label chapter7_day_seven:
     hide sv
     with dissolve
 
-    scene bg warehouse_inside
+    if persistent.ps_reduce_motion:
+        scene bg packing_zone
+    else:
+        scene bg packing_zone at ps_camera_drift
     with fade
 
     stop music fadeout 1.5
     play music "audio/warehouse_chill.mp3" fadein 2.0 loop
+    $ ps_set_ambience("warehouse")
 
     n "Первые два часа склад работает почти идеально."
     n "Поток идёт."
@@ -1494,7 +1624,7 @@ label chapter7_day_seven:
         "Перенаправление невозможно. Все доступные линии назначены."
     )
 
-    show sv neutral at ps_left
+    show sv stern at ps_left
     with dissolve
 
     sv "Не останавливаемся."
@@ -1505,7 +1635,7 @@ label chapter7_day_seven:
 
     newb "У меня ячейки не принимают."
 
-    show vet neutral at ps_center
+    show vet concerned at ps_center
     with dissolve
 
     vet "Правый конвейер греется."
@@ -1516,11 +1646,17 @@ label chapter7_day_seven:
     n "Эту фразу ты уже слышал."
     n "Тогда был контейнер."
 
-    if renpy.loadable("audio/oh-oh.mp3"):
-        play sound "audio/oh-oh.mp3"
+    if renpy.loadable("audio/alarm_low.ogg"):
+        play sound "audio/alarm_low.ogg"
 
-    scene bg warehouse_alert
-    with hpunch
+    if persistent.ps_reduce_motion:
+        scene bg warehouse_alert
+        with dissolve
+    else:
+        scene bg warehouse_alert
+        with hpunch
+
+    $ ps_set_ambience("alert")
 
     n "Свет моргает."
     n "Раз."
@@ -1541,7 +1677,7 @@ label chapter7_day_seven:
 
     play music "audio/night_shift.mp3" fadein 1.0 loop
 
-    show mem grin at ps_center
+    show mem serious at ps_center
     with dissolve
 
     mem "Ну."
@@ -1739,7 +1875,7 @@ label chapter7_day_seven:
 ################################################################################
 
 label ending_truth:
-    scene bg warehouse_alert
+    scene bg control_room
     with dissolve
 
     n "Общий экран гаснет."
@@ -1747,7 +1883,7 @@ label ending_truth:
     n "Но вместо рейтинга на нём — журнал."
 
     show cur at ps_right
-    show sv neutral at ps_left
+    show sv stern at ps_left
     with dissolve
 
     cur "Убери это."
@@ -1774,7 +1910,7 @@ label ending_truth:
     n "В настоящих сменах важные решения редко звучат красиво."
     n "Люди просто отходят от конвейера."
 
-    scene bg warehouse_outside
+    scene bg loading_dock
     with fade
 
     n "Проверка длится три недели."
@@ -1797,9 +1933,9 @@ label ending_people:
     n "Рейтинг закрывается."
     n "Твоё имя падает с первого места."
 
-    show newb tired at ps_right
-    show vet neutral at ps_left
-    show mem grin at ps_center
+    show newb relief at ps_right
+    show vet concerned at ps_left
+    show mem serious at ps_center
     with dissolve
 
     newb "Все вышли."
@@ -1810,7 +1946,7 @@ label ending_people:
 
     n "Супервайзер подходит к аварийной кнопке."
 
-    show sv neutral at ps_righter
+    show sv stern at ps_righter
     with dissolve
 
     sv "Остановка обоснована."
@@ -1827,7 +1963,7 @@ label ending_people:
     hide sv
     with dissolve
 
-    scene bg warehouse_outside
+    scene bg loading_dock
     with fade
 
     n "Сотрудником месяца становится человек с другого участка."
@@ -1842,6 +1978,12 @@ label ending_people:
     n "Не потому что перестала бояться."
     n "Потому что теперь знает: рядом кто-то тоже видит."
 
+    scene cg team_dawn
+    with fade
+
+    n "Утро за воротами выглядит непривычно."
+    n "Никто не торопится первым отвернуться."
+
     jump ending_common
 
 
@@ -1854,17 +1996,17 @@ label ending_voice:
     n "Тяжёлый товар остаётся на месте."
     n "Никто не спорит с красным экраном."
 
-    show mem grin at ps_left
+    show mem serious at ps_left
     with dissolve
 
     mem "Левая чистая!"
 
-    show newb tired at ps_right
+    show newb relief at ps_right
     with dissolve
 
     newb "Все на месте!"
 
-    show vet neutral at ps_center
+    show vet concerned at ps_center
     with dissolve
 
     vet "Теперь стоп!"
@@ -1879,7 +2021,7 @@ label ending_voice:
     n "Не из-за одной кнопки."
     n "Потому что вся смена одновременно решила услышать друг друга."
 
-    scene bg locker_room
+    scene bg break_room
     with fade
 
     play music "audio/after_shift_ambient.mp3" fadein 2.0 loop
@@ -1899,11 +2041,16 @@ label ending_voice:
     n "Даже ветеран."
     n "Даже супервайзер — уже в дверях."
 
+    scene cg team_dawn
+    with fade
+
+    n "На рассвете вы впервые выходите не по одному."
+
     jump ending_common
 
 
 label ending_leader:
-    scene bg warehouse_inside
+    scene bg packing_zone
     with dissolve
 
     n "Левая линия принимает поток."
@@ -1914,7 +2061,7 @@ label ending_leader:
     n "Когда связь возвращается, система обнаруживает, что склад не остановился."
     n "И что никто не пострадал."
 
-    show sv neutral at ps_left
+    show sv stern at ps_left
     show cur at ps_right
     with dissolve
 
@@ -1946,7 +2093,7 @@ label ending_leader:
     hide cur
     with dissolve
 
-    scene bg locker_room
+    scene bg loading_dock
     with fade
 
     n "Тебе выдают другой жилет."
@@ -1963,7 +2110,7 @@ label ending_leader:
 
 
 label ending_employee:
-    scene bg warehouse_inside
+    scene bg packing_zone
     with dissolve
 
     n "Ты держишь линию до последней секунды."
@@ -2020,7 +2167,7 @@ label ending_employee:
 
 
 label ending_exit:
-    scene bg warehouse_outside
+    scene bg loading_dock
     with fade
 
     stop music fadeout 1.5
@@ -2077,7 +2224,7 @@ label ending_silence:
     n "Люди отходят по одному."
     n "Линия останавливается сама — после того, как защита наконец замечает перегрев."
 
-    show sv neutral at ps_right
+    show sv stern at ps_right
     with dissolve
 
     sv "Все целы?"
@@ -2092,7 +2239,7 @@ label ending_silence:
 
     n "Опасное слово."
 
-    scene bg locker_room
+    scene bg break_room
     with fade
 
     n "Рейтинг аннулируют из-за технического сбоя."
@@ -2112,6 +2259,7 @@ label ending_silence:
 
 label ending_common:
     stop music fadeout 2.0
+    $ ps_stop_ambience()
 
     scene black
     with fade
@@ -2126,11 +2274,27 @@ label ending_common:
         ps_ending_description(ps_final_ending)
     )
 
+    call screen ps_ending_epilogue(ps_final_ending)
+
     centered "Фиолетовая Смена\n\nСемь дней спустя"
 
     pause 2.0
 
     n "Смена заканчивается."
     n "То, что ты выбрал, остаётся."
+
+    scene bg break_room
+    with fade
+
+    show mem grin at ps_center
+    with dissolve
+
+    mem "Эй."
+    mem "Ты уже можешь закрывать игру."
+    mem "Но раз досидел до конца..."
+    mem "Спасибо, что досмотрели серию до конца!"
+
+    hide mem
+    with dissolve
 
     return

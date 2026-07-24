@@ -36,13 +36,25 @@ image bg warehouse_cold = Transform(
 )
 image bg control_room = "images/bg/control_room.jpg"
 image bg locker_room = "images/bg/locker_room.jpg"
+image bg break_room = "images/bg/break_room.jpg"
+image bg mezzanine = "images/bg/mezzanine.jpg"
+image bg packing_zone = "images/bg/packing_zone.jpg"
+image bg loading_dock = "images/bg/loading_dock.jpg"
 image bg black = "images/bg/bg_black.jpg"
 
+image cg emergency_stop = "images/cg/emergency_stop.jpg"
+image cg report_pressure = "images/cg/report_pressure.jpg"
+image cg team_dawn = "images/cg/team_dawn.jpg"
+
 image sv neutral = "images/ch/super1.png"
+image sv stern = "images/ch/super_stern.png"
 image newb worried = "images/ch/nov1.png"
 image newb tired = "images/ch/nov2.png"
+image newb relief = "images/ch/nov_relief.png"
 image vet neutral = "images/ch/vet1.png"
+image vet concerned = "images/ch/vet_concerned.png"
 image mem grin = "images/ch/mem1.png"
+image mem serious = "images/ch/mem_serious.png"
 image cur = "images/ch/curator.png"
 
 
