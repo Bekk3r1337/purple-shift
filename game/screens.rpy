@@ -224,6 +224,7 @@ screen choice(items):
         for i in items:
             button:
                 action i.action
+                alt i.caption
                 style "ps_choice_button"
 
                 fixed:
