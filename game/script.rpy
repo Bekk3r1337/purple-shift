@@ -6,7 +6,7 @@ label start:
     scene bg black
     with fade
 
-    centered "Глава 1\nПервая смена"
+    centered "Глава 1\nДень первый: Первая смена"
 
     pause 1.0
 
@@ -767,8 +767,6 @@ label ending_hard_path:
     jump chapter2_after_shift
     
 label chapter2_after_shift:
-    $ ps_chapter = 2
-
     scene bg warehouse_inside
     with fade
 
@@ -1198,7 +1196,7 @@ label chapter2_night_home:
     scene black
     with fade
 
-    centered "Глава 2\nПосле смены"
+    centered "День первый\nПосле смены"
 
     pause 1.2
 
