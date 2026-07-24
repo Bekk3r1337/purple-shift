@@ -1,62 +1,15 @@
-﻿# -*- coding: utf-8 -*-
-image bg mainmenu = Solid("#120a1f")
-image ps_bg_base = Solid("#0c0614")        # базовый очень тёмный
-image ps_bg_purple = Solid("#1b0f2a")      # фиолетовый слой
-image ps_bg_soft = Solid("#120a1f")        # мягкое свечение
-image bg room_morning = "images/bg/room_morning.jpg"
-image bg stairwell = "images/bg/stairwell.jpg"
-image bg street_night = "images/bg/street_night.jpg"
-image bg warehouse_outside = "images/bg/warehouse_outside.jpg"
-image bg warehouse_inside = "images/bg/warehouse_inside.jpg"
-image bg locker_room = "images/bg/locker_room.jpg"
-image bg black = "images/bg/bg_black.jpg"
-image sv neutral = "images/ch/super1.png"
-image newb worried = "images/ch/nov1.png"
-image vet neutral = "images/ch/vet1.png"
-image mem grin = "images/ch/mem1.png"
+# -*- coding: utf-8 -*-
 
-transform ps_breathe_bg:
-    alpha 0.03
-    linear 3.0 alpha 0.08
-    linear 3.0 alpha 0.03
-    repeat
-    
-transform ps_center:
-    xalign 0.5
-    yalign 1.0
-    yoffset 5
-    zoom 0.60
-
-transform ps_left:
-    xalign 0.22
-    yalign 1.0
-    yoffset 5
-    zoom 0.60
-
-transform ps_right:
-    xalign 0.75
-    yalign 1.0
-    yoffset 5
-    zoom 0.65
-    
-transform ps_righter:
-    xalign 0.55
-    yalign 1.0
-    yoffset 5
-    zoom 0.65
-
-transform ps_vignette_soft:
-    alpha 0.25
-define p = Character("Сотрудник", color="#c8a2ff")
-define sv = Character("Супервайзер", color="#7CFF7C")
-define n = Character(None)
-define vet = Character("Ветеран", color="#ffd27a")
-define mem = Character("Шутник", color="#7ad7ff")
-define newb = Character("Новичок", color="#ff7ad7")
-
-
-     
 label start:
+    $ ps_chapter = 1
+
+    scene bg black
+    with fade
+
+    centered "Глава 1\nПервая смена"
+
+    pause 1.0
+
     jump morning_home
 label morning_home:
 
@@ -111,17 +64,20 @@ label morning_home:
         "Отшутиться про себя":
             jump mindset_joke
 label mindset_work:
+    $ ps_efficiency += 1
     n "Я пожимаю плечами."
     n "Работа как работа."
     n "Не первая и не последняя."
     jump leaving_home
 
 label mindset_survive:
+    $ ps_endurance += 1
     n "Главное - не думать дальше сегодняшнего дня."
     n "Сегодняшний я ещё вывезу."
     jump leaving_home
 
 label mindset_joke:
+    $ ps_humor += 1
     n "Ну что ж."
     n "Если жизнь - симулятор, то это явно хардкор."
     n "Без обучения."
@@ -177,16 +133,19 @@ label leaving_home:
 
 
 label money:
+    $ ps_efficiency += 1
     n "Ты говоришь это спокойно, будто репетировал."
     sv "Честно. Ладно."
     jump first_mistake
 
 label anchor:
+    $ ps_endurance += 1
     n "Слова выходят тяжелее, чем коробки."
     sv "Понял. Тут многие так."
     jump first_mistake
 
 label joke:
+    $ ps_humor += 1
     p "Я пришёл за романтикой. Фиолетовый свет - как в клубе."
     sv "..."
     sv "Клуб закончится минут через пять. Когда ТСД умрёт."
@@ -226,8 +185,8 @@ label first_mistake:
     show sv neutral at ps_right
     with dissolve
 
-    if renpy.loadable("audio/oh_oh.mp3"):
-        play sound "audio/oh_oh.mp3"
+    if renpy.loadable("audio/oh-oh.mp3"):
+        play sound "audio/oh-oh.mp3"
     n "ТСД пищит резко, как будто обвиняет тебя лично."
 
     sv "Стоим."
@@ -252,6 +211,8 @@ label first_mistake:
             jump mistake_tsd
 
 label mistake_honest:
+    $ ps_endurance += 1
+    $ ps_supervisor_respect += 1
     p "Я не понял, куда нажал..."
     sv "Хорошо."
     sv "Плохая новость: тут некогда понимать."
@@ -268,6 +229,8 @@ label mistake_honest:
             jump after_fix_brave
 
 label mistake_joke:
+    $ ps_humor += 1
+    $ ps_supervisor_respect -= 1
     p "Он просто… нервничает. Как и я."
     sv "Очень смешно."
     sv "Здесь шутки стоят времени."
@@ -277,6 +240,8 @@ label mistake_joke:
     jump after_fix_cold
 
 label mistake_tsd:
+    $ ps_efficiency += 1
+    $ ps_supervisor_respect -= 1
     p "ТСД глючит, честно. Он моргнул сам."
     sv "ТСД глючит всегда."
     sv "Разница в том, в чьих он руках."
@@ -297,6 +262,8 @@ label after_fix:
     jump shift_continues
 
 label after_fix_brave:
+    $ ps_endurance += 1
+    $ ps_supervisor_respect += 1
     p "Можно ещё раз? Я реально хочу не косячить."
     sv "..."
     sv "Ладно. Уважение за попытку."
@@ -363,11 +330,11 @@ label shift_continues:
     n "Где-то спереди ещё короче: «Норма!»"
 
     n "Через пару минут ты ловишь странное чувство."
-    n "Будто ты не человек, а конвеер или робот. Руки всё должны успевать."
+    n "Будто ты не человек, а конвейер или робот. Руки должны всё успевать."
 
     # Новичок рядом косячит
     n "Слева от тебя девчонка-новичок путается с коробками."
-    n "В её руках у неё задрожал ТСД. На секунду она замирает, будто проваливается из  реальности."
+    n "В её руках дрожит ТСД. На секунду она замирает, будто проваливается из реальности."
 
     show newb worried at ps_right
     with dissolve
@@ -391,6 +358,9 @@ label shift_continues:
 
 
 label help_newbie:
+    $ ps_humanity += 2
+    $ ps_newbie_trust += 2
+    $ ps_key_choices = ps_key_choices + ["Ты потерял темп, чтобы помочь новичку."]
     n "Ты наклоняешься ближе к её экрану."
     p "Покажи. Не дёргайся."
     n "Она показывает. Ошибка простая, но в первый раз это как приговор."
@@ -417,6 +387,9 @@ label help_newbie:
 
 
 label grind_norm:
+    $ ps_efficiency += 2
+    $ ps_humanity -= 1
+    $ ps_key_choices = ps_key_choices + ["Ты выбрал норму и не вмешался."]
     # новенькая больше не в фокусе - убираем, чтобы не висела в след. сцене
     hide newb
     with dissolve
@@ -441,6 +414,8 @@ label grind_norm:
 
 
 label take_pause:
+    $ ps_endurance += 2
+    $ ps_key_choices = ps_key_choices + ["Ты позволил себе остановиться и восстановить дыхание."]
     # новенькая не нужна визуально в паузе - прячем
     hide newb
     with dissolve
@@ -586,6 +561,8 @@ label final_stretch:
 
 
 label final_honest:
+    $ ps_endurance += 1
+    $ ps_supervisor_respect += 1
     p "На пределе."
     sv "Понял."
     sv "Не геройствуй."
@@ -600,6 +577,8 @@ label final_honest:
 
 
 label final_hide:
+    $ ps_efficiency += 1
+    $ ps_endurance -= 1
     p "Нормально."
     sv "Нормально - это когда без косяков."
     sv "Погнали темп."
@@ -613,6 +592,7 @@ label final_hide:
 
 
 label final_joke:
+    $ ps_humor += 2
     p "Я в порядке."
     p "Просто морально уже домой вышел."
     sv "Домой выйдешь, когда поток отпустит."
@@ -657,6 +637,10 @@ label final_event:
 
 
 label ending_light_path:
+    $ ps_first_shift_path = "протянул руку"
+    $ ps_humanity += 2
+    $ ps_newbie_trust += 2
+    $ ps_key_choices = ps_key_choices + ["В финале первой смены ты помог восстановить поток."]
     n "Ты делаешь шаг вперёд."
     p "Давай. Вместе."
 
@@ -706,11 +690,19 @@ label ending_light_path:
 
 
 
+    call screen ps_shift_report(
+        "Итоги первой смены",
+        "Ты выжил в потоке и не прошёл мимо чужой ошибки."
+    )
+
     jump chapter2_after_shift
 
 
 
 label ending_hard_path:
+    $ ps_first_shift_path = "сохранил силы"
+    $ ps_endurance += 2
+    $ ps_key_choices = ps_key_choices + ["В финале первой смены ты выбрал сохранить себя."]
     n "Ты остаёшься на месте."
     n "Потому что если сделаешь шаг - можешь рассыпаться."
 
@@ -767,9 +759,15 @@ label ending_hard_path:
     hide newb
     with dissolve
 
+    call screen ps_shift_report(
+        "Итоги первой смены",
+        "Ты сохранил силы. Иногда выживание — тоже честный выбор."
+    )
+
     jump chapter2_after_shift
     
 label chapter2_after_shift:
+    $ ps_chapter = 2
 
     scene bg warehouse_inside
     with fade
@@ -805,6 +803,7 @@ label chapter2_after_shift:
 
 
 label after_shift_ask:
+    $ ps_endurance += 1
     p "С каждым разом легче?"
 
     vet "Нет."
@@ -820,6 +819,7 @@ label after_shift_ask:
 
 
 label after_shift_silent:
+    $ ps_endurance += 1
     n "Ты киваешь."
     n "Слова сейчас тяжелее, чем коробки."
 
@@ -859,6 +859,7 @@ label after_shift_continue:
 
 
 label after_shift_joke:
+    $ ps_humor += 1
     p "А сохранение было?"
 
     mem "Было."
@@ -870,6 +871,7 @@ label after_shift_joke:
 
 
 label after_shift_honest:
+    $ ps_endurance += 1
     p "Если честно - я выжат."
 
     mem "Ага."
@@ -881,6 +883,7 @@ label after_shift_honest:
 
 
 label after_shift_mask:
+    $ ps_efficiency += 1
     p "Нормально."
 
     mem "Опасное слово."
@@ -952,6 +955,7 @@ label chapter2_home:
 
 
 label chapter2_home_phone:
+    $ ps_efficiency += 1
     n "Телефон вибрирует ещё до того, как ты его достаёшь."
     n "Будто он тоже всё знал."
 
@@ -970,6 +974,7 @@ label chapter2_home_phone:
 
 
 label chapter2_home_keep:
+    $ ps_endurance += 1
     n "Ты не достаёшь телефон."
     n "Не потому что сильный."
     n "Потому что сил нет."
@@ -982,6 +987,7 @@ label chapter2_home_keep:
 
 
 label chapter2_home_angry:
+    $ ps_endurance += 1
     n "Внутри поднимается злость."
     n "Не на склад."
     n "Не на людей."
@@ -996,6 +1002,7 @@ label chapter2_home_angry:
 
 
 label chapter2_home_accept:
+    $ ps_efficiency += 1
     n "Ты смотришь на график как на погоду."
     n "Дождь."
     n "Холод."
@@ -1031,9 +1038,6 @@ label chapter2_home_end:
     n "«Я уже привыкаю…»"
     jump chapter2_night_home
 
-    stop music fadeout 2.0
-
-    jump chapter2_next
 label chapter2_observe:
 
     scene bg warehouse_outside
@@ -1076,6 +1080,7 @@ label chapter2_observe:
 
 
 label chapter2_observe_ask:
+    $ ps_humanity += 1
     p "Ты давно здесь?"
 
     mem "Достаточно, чтобы перестать удивляться."
@@ -1088,6 +1093,7 @@ label chapter2_observe_ask:
 
 
 label chapter2_observe_fear:
+    $ ps_endurance += 1
     p "Я не хочу привыкнуть."
 
     mem "Понимаю."
@@ -1101,6 +1107,7 @@ label chapter2_observe_fear:
 
 
 label chapter2_observe_silent:
+    $ ps_endurance += 1
     n "Ты молчишь."
     n "И почему-то это честнее всего."
 
@@ -1135,6 +1142,9 @@ label chapter2_observe_continue:
 
 
 label chapter2_observe_support:
+    $ ps_humanity += 2
+    $ ps_newbie_trust += 2
+    $ ps_key_choices = ps_key_choices + ["После смены ты поддержал новичка."]
     p "Первый раз всегда самый шумный."
     p "Но ты справилась."
 
@@ -1151,6 +1161,7 @@ label chapter2_observe_support:
 
 
 label chapter2_observe_neutral:
+    $ ps_efficiency += 1
     p "Пора домой."
     p "Завтра снова."
 
@@ -1191,13 +1202,11 @@ label chapter2_night_home:
 
     pause 1.2
 
-label chapter2_night_home:
-
     scene bg room_night
     with fade
 
     stop music fadeout 2.0
-    play music "audio/room_night.mp3" fadein 3.0 loop
+    play music "audio/home_ambient.mp3" fadein 3.0 loop
 
     n "Дома тепло."
     n "И от этого становится не легче — просто тише."
@@ -1224,6 +1233,7 @@ label chapter2_night_home:
 
 
 label chapter2_night_wash:
+    $ ps_endurance += 1
 
     n "Ты моешь руки долго."
     n "Слишком долго."
@@ -1241,6 +1251,7 @@ label chapter2_night_wash:
 
 
 label chapter2_night_skip_wash:
+    $ ps_endurance += 1
 
     n "Ты проходишь мимо раковины."
     n "Садишься на край кровати."
@@ -1270,6 +1281,7 @@ label chapter2_night_phone:
 
 
 label chapter2_night_schedule:
+    $ ps_efficiency += 1
 
     n "Ты переворачиваешь телефон."
 
@@ -1290,6 +1302,7 @@ label chapter2_night_schedule:
 
 
 label chapter2_night_denial:
+    $ ps_endurance += 1
 
     n "Ты не берёшь телефон."
     n "Сдвигаешь его чуть дальше, как опасный предмет."
@@ -1326,6 +1339,3 @@ label chapter2_night_end:
     stop music fadeout 2.0
 
     jump chapter2_hook
-
-    return
-
