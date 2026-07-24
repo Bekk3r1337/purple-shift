@@ -23,13 +23,18 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "1.0"
+define config.version = "0.3.0"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
 ## Для отделения абзацев оставляйте между ними пустую строку.
 
 define gui.about = _p("""
+Purple Shift — визуальная новелла о людях внутри бесконечного складского потока.
+
+Версия 0.3.0 включает три главы, систему последствий, отношения с персонажами и несколько сюжетных направлений.
+
+Автор: Bekker (Bekk3r1337)
 """)
 
 
@@ -48,7 +53,7 @@ define build.name = "PurpleShift"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## Чтобы разрешить игроку тестировать громкость на звуковом или голосовом
@@ -209,5 +214,4 @@ init python:
 ## разделённые дробью.
 
 # define build.itch_project = "renpytom/test-project"
-
 
