@@ -276,6 +276,7 @@ init python:
 
     def ps_begin_day(day):
         ps_append_unique_persistent("ps_unlocked_chapters", day)
+        ps_note_story_day(day)
 
         for track_id, track_title, track_path, unlock_day in ps_music_catalog:
             if unlock_day <= day:
@@ -473,6 +474,20 @@ init python:
         global ps_signed_false_report
         global ps_key_choices
         global ps_chapter_replay_mode
+        global ps_route_tendencies
+        global ps_route_turns_seen
+        global ps_route_resolutions_seen
+        global ps_reactive_echoes_seen
+        global ps_team_conflicts_seen
+        global ps_team_conflict_results
+        global ps_investigation_chain
+        global ps_investigation_hypothesis
+        global ps_investigation_result
+        global ps_investigation_complete
+        global ps_storm_mimic_choice
+        global ps_storm_mimic_correct
+        global ps_storm_mimic_seen
+        global ps_zero_shift_seen
 
         ps_humanity = min(11, day + 4)
         ps_endurance = min(10, day + 3)
@@ -496,6 +511,37 @@ init python:
             "Выбор главы восстановил сбалансированный путь до этого дня."
         ]
         ps_chapter_replay_mode = True
+
+        route_seed = 2 if day >= 6 else (1 if day >= 4 else 0)
+        ps_route_tendencies = {
+            route_id: {"growth": route_seed, "shadow": 0}
+            for route_id in ("newbie", "veteran", "joker", "supervisor")
+        }
+        ps_route_turns_seen = (
+            ["3:{}".format(route_id) for route_id in ps_route_tendencies]
+            if day >= 4 else []
+        )
+        if day >= 6:
+            ps_route_turns_seen += [
+                "5:{}".format(route_id) for route_id in ps_route_tendencies
+            ]
+        ps_route_resolutions_seen = []
+        ps_reactive_echoes_seen = [echo_day for echo_day in (4, 5, 6, 7) if echo_day < day]
+        ps_team_conflicts_seen = [conflict_day for conflict_day in (3, 4, 5, 6) if conflict_day < day]
+        ps_team_conflict_results = {
+            3: "listen",
+            4: "lera_first",
+            5: "record_stop",
+            6: "shared_timeline",
+        }
+        ps_investigation_chain = list(ps_investigation_expected) if day >= 7 else []
+        ps_investigation_hypothesis = "systemic" if day >= 7 else None
+        ps_investigation_result = 9 if day >= 7 else 0
+        ps_investigation_complete = day >= 7
+        ps_storm_mimic_choice = "max" if day >= 7 else None
+        ps_storm_mimic_correct = day >= 7
+        ps_storm_mimic_seen = day >= 7
+        ps_zero_shift_seen = False
 
         if day >= 2:
             ps_reveal_character_names()

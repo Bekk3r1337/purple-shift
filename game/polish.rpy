@@ -568,22 +568,24 @@ screen ps_phone(initial_tab="status"):
                 xalign 0.5
 
                 textbutton "СОСТОЯНИЕ":
+                    id "ps_phone_status_tab"
                     action SetScreenVariable("tab", "status")
                     background Solid("#7442a7" if tab == "status" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 185
+                    xsize 160
                     ysize 58
                     text_size 19
                     text_xalign 0.5
                     text_yalign 0.5
 
                 textbutton "ЛЮДИ":
+                    id "ps_phone_people_tab"
                     action SetScreenVariable("tab", "people")
                     background Solid("#7442a7" if tab == "people" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 185
+                    xsize 160
                     ysize 58
                     text_size 19
                     text_xalign 0.5
@@ -595,7 +597,7 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "messages" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 185
+                    xsize 160
                     ysize 58
                     text_size 19
                     text_xalign 0.5
@@ -607,7 +609,7 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "archive" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 185
+                    xsize 160
                     ysize 58
                     text_size 19
                     text_xalign 0.5
@@ -619,29 +621,43 @@ screen ps_phone(initial_tab="status"):
                     background Solid("#7442a7" if tab == "signal" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 185
+                    xsize 160
                     ysize 58
                     text_size 18
                     text_xalign 0.5
                     text_yalign 0.5
 
                 textbutton "ДОСТИЖЕНИЯ":
+                    id "ps_phone_achievements_tab"
                     action SetScreenVariable("tab", "achievements")
                     background Solid("#7442a7" if tab == "achievements" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 185
+                    xsize 160
                     ysize 58
                     text_size 17
                     text_xalign 0.5
                     text_yalign 0.5
 
                 textbutton "ФИНАЛЫ":
+                    id "ps_phone_endings_tab"
                     action SetScreenVariable("tab", "endings")
                     background Solid("#7442a7" if tab == "endings" else "#291a38")
                     hover_background Solid("#8d55c4")
                     text_color "#ffffff"
-                    xsize 185
+                    xsize 160
+                    ysize 58
+                    text_size 19
+                    text_xalign 0.5
+                    text_yalign 0.5
+
+                textbutton "ДЕЛО":
+                    id "ps_phone_case_tab"
+                    action SetScreenVariable("tab", "case")
+                    background Solid("#7442a7" if tab == "case" else "#291a38")
+                    hover_background Solid("#8d55c4")
+                    text_color "#ffffff"
+                    xsize 160
                     ysize 58
                     text_size 19
                     text_xalign 0.5
@@ -757,6 +773,7 @@ screen ps_phone(initial_tab="status"):
                                         size 19
 
                         $ profile = ps_character_profile(person)
+                        $ route_state = ps_route_variant_data(person)
 
                         frame:
                             xfill True
@@ -828,6 +845,30 @@ screen ps_phone(initial_tab="status"):
                                         color "#d8c8e4"
                                         size 22
 
+                                    frame:
+                                        xfill True
+                                        padding (20, 13)
+                                        background Solid("#2a183c")
+
+                                        vbox:
+                                            spacing 5
+
+                                            text "КУДА МЕНЯЕТСЯ МАРШРУТ":
+                                                color route_state["accent"]
+                                                size 17
+
+                                            text route_state["title"]:
+                                                color "#ffffff"
+                                                size 25
+
+                                            text route_state["description"]:
+                                                color "#cfc2d9"
+                                                size 19
+
+                                            text "Опора: [ps_route_tendency(person, 'growth')]  ·  Давление: [ps_route_tendency(person, 'shadow')]":
+                                                color "#aa98bb"
+                                                size 18
+
                                     if ps_relationship_memories:
                                         text "Последний общий момент":
                                             color "#a98bc2"
@@ -842,6 +883,9 @@ screen ps_phone(initial_tab="status"):
 
                 elif tab == "archive":
                     use ps_archive_panel()
+
+                elif tab == "case":
+                    use ps_investigation_archive_panel()
 
                 elif tab == "signal":
                     use ps_storm_signal_panel()

@@ -462,7 +462,11 @@ init 12 python:
         return None if progress >= 1.0 else 0.05
 
     def ps_play_route_motif(route_id):
-        track = ps_route_motifs.get(route_id)
+        variant = ps_route_variant(route_id)
+        track = ps_route_variant_tracks.get(
+            "{}:{}".format(route_id, variant),
+            ps_route_motifs.get(route_id),
+        )
         if track and renpy.loadable(track):
             renpy.music.set_volume(0.30, delay=0.4, channel="motif")
             renpy.music.play(
@@ -533,6 +537,11 @@ init 12 python:
             if message["day"] > ps_chapter:
                 continue
             if message.get("requires_route") not in (None, current_route):
+                continue
+            if (
+                message.get("requires_variant")
+                and ps_route_variant(message.get("route")) != message["requires_variant"]
+            ):
                 continue
             if message.get("requires_storm_any") and not ps_storm_fragments:
                 continue

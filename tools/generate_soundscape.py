@@ -242,6 +242,43 @@ def route_motif(root: float, intervals: tuple[float, ...], seed: int):
     return sample
 
 
+def route_variant_motif(
+    root: float,
+    intervals: tuple[float, ...],
+    seed: int,
+    growth: bool,
+):
+    """Render an evolved route motif without replacing the original identity."""
+
+    noise = smooth_noise(seed, 0.012)
+    detune = 1.006 if growth else 0.982
+
+    def sample(t: float, _: int) -> float:
+        fade = min(1.0, t / 1.35, (12.0 - t) / 1.35)
+        breath = 0.76 + 0.24 * math.sin(TAU * 0.085 * t)
+        value = 0.0
+
+        for index, ratio in enumerate(intervals):
+            frequency = root * ratio
+            gain = 0.037 / (index + 1)
+            value += math.sin(TAU * frequency * t + index * 0.64) * gain
+
+        if growth:
+            # A soft upper answer resolves at the end of every two-bar phrase.
+            answer = max(0.0, math.sin(TAU * 0.125 * t - math.pi / 2)) ** 5
+            value += math.sin(TAU * root * 2.0 * t) * answer * 0.026
+            value += math.sin(TAU * root * 1.5 * t) * 0.012
+        else:
+            # The shadow variant keeps the motif recognizable but never quite settled.
+            pulse = max(0.0, math.sin(TAU * 0.25 * t)) ** 7
+            value += math.sin(TAU * root * 0.5 * detune * t) * pulse * 0.038
+            value += math.sin(TAU * root * detune * t) * 0.014
+
+        return (value * breath + noise() * (0.045 if growth else 0.065)) * max(0.0, fade)
+
+    return sample
+
+
 def main() -> None:
     renders = [
         ("fluorescent_hum.ogg", 16.0, ambience_fluorescent()),
@@ -294,6 +331,14 @@ def main() -> None:
         ("route_veteran_motif.ogg", 12.0, route_motif(130.8, (1.0, 1.2, 1.5), 1451)),
         ("route_joker_motif.ogg", 12.0, route_motif(196.0, (1.0, 1.333, 1.667), 1452)),
         ("route_supervisor_motif.ogg", 12.0, route_motif(146.8, (1.0, 1.26, 1.68), 1453)),
+        ("route_newbie_growth.ogg", 12.0, route_variant_motif(174.6, (1.0, 1.25, 1.5), 1460, True)),
+        ("route_newbie_shadow.ogg", 12.0, route_variant_motif(174.6, (1.0, 1.25, 1.5), 1461, False)),
+        ("route_veteran_growth.ogg", 12.0, route_variant_motif(130.8, (1.0, 1.2, 1.5), 1462, True)),
+        ("route_veteran_shadow.ogg", 12.0, route_variant_motif(130.8, (1.0, 1.2, 1.5), 1463, False)),
+        ("route_joker_growth.ogg", 12.0, route_variant_motif(196.0, (1.0, 1.333, 1.667), 1464, True)),
+        ("route_joker_shadow.ogg", 12.0, route_variant_motif(196.0, (1.0, 1.333, 1.667), 1465, False)),
+        ("route_supervisor_growth.ogg", 12.0, route_variant_motif(146.8, (1.0, 1.26, 1.68), 1466, True)),
+        ("route_supervisor_shadow.ogg", 12.0, route_variant_motif(146.8, (1.0, 1.26, 1.68), 1467, False)),
     ]
 
     for name, duration, sampler in renders:

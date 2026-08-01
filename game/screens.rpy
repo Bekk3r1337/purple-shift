@@ -383,7 +383,8 @@ style navigation_button_text:
 screen main_menu():
 
     tag menu
-    add "images/ui/fon.jpg"
+    $ ps_menu_art = ps_main_menu_art()
+    add ps_menu_art at ps_main_menu_drift
     style_prefix "main_menu"
 
     # --- ФОН (слои, без LinearGradient) ---
@@ -405,6 +406,7 @@ screen main_menu():
 
         text "PurpleShift" size 72 color "#8a2fff"
         text "[config.version]" size 26 color "#8a7aa8"
+        text ps_main_menu_status() size 18 color "#baa9cc" xalign 1.0
     add Transform(dust, alpha=0.35)
     # --- КНОПКИ слева ---
     frame:

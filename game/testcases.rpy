@@ -512,6 +512,103 @@ testsuite purple_shift:
         assert eval (renpy.loadable("images/cg/named_shift.jpg"))
 
 
+    testcase echo_shift_screens:
+        $ ps_investigation_start()
+        run Show("ps_deep_investigation_board")
+        pause until screen "ps_deep_investigation_board"
+        assert id "ps_deep_event_maintenance"
+        assert id "ps_deep_board_undo"
+        assert id "ps_deep_board_confirm"
+        run Hide("ps_deep_investigation_board")
+
+        $ ps_storm_mimic_choice = None
+        run Show("ps_storm_mimic")
+        pause until screen "ps_storm_mimic"
+        assert id "ps_mimic_max"
+        assert id "ps_mimic_confirm"
+        run Hide("ps_storm_mimic")
+
+        $ ps_route_tendencies = {
+            "newbie": {"growth": 2, "shadow": 0},
+            "veteran": {"growth": 0, "shadow": 0},
+            "joker": {"growth": 0, "shadow": 0},
+            "supervisor": {"growth": 0, "shadow": 0},
+        }
+        run Show("ps_route_variant_card", route_id="newbie")
+        pause until screen "ps_route_variant_card"
+        assert id "ps_variant_continue"
+        run Hide("ps_route_variant_card")
+
+        run Show("ps_phone", initial_tab="case")
+        pause until screen "ps_phone"
+        assert id "ps_phone_case_tab"
+        run Hide("ps_phone")
+
+
+    testcase echo_shift_systems:
+        $ ps_route_tendencies = {
+            "newbie": {"growth": 0, "shadow": 0},
+            "veteran": {"growth": 0, "shadow": 0},
+            "joker": {"growth": 0, "shadow": 0},
+            "supervisor": {"growth": 0, "shadow": 0},
+        }
+        $ ps_route_points = {"newbie": 0, "veteran": 0, "joker": 0, "supervisor": 0}
+        $ ps_record_route_tendency("newbie", "growth", 2)
+        assert eval (ps_route_variant("newbie") == "growth")
+        assert eval (ps_route_variant_data("newbie")["title"] == "Собственный голос")
+
+        $ ps_record_route_tendency("newbie", "shadow", 3)
+        assert eval (ps_route_variant("newbie") == "shadow")
+        assert eval (ps_route_variant_data("newbie")["title"] == "Чужая опора")
+
+        $ ps_investigation_chain = list(ps_investigation_expected)
+        $ ps_investigation_hypothesis = "systemic"
+        assert eval (ps_investigation_score() == 9)
+        assert eval (ps_storm_mimic_message("max")["sender"] == "Макс")
+
+
+    testcase faces_shift_messages:
+        $ ps_chapter = 7
+        $ ps_route_points = {"newbie": 10, "veteran": 0, "joker": 0, "supervisor": 0}
+        $ ps_route_tendencies = {
+            "newbie": {"growth": 4, "shadow": 0},
+            "veteran": {"growth": 0, "shadow": 0},
+            "joker": {"growth": 0, "shadow": 0},
+            "supervisor": {"growth": 0, "shadow": 0},
+        }
+        $ ps_variant_message_ids = [message["id"] for message in ps_available_messages()]
+        assert eval ("lera_growth" in ps_variant_message_ids)
+        assert eval ("lera_shadow" not in ps_variant_message_ids)
+
+
+    testcase echo_shift_labels:
+        assert eval (renpy.has_label("ps_route_turning_point"))
+        assert eval (renpy.has_label("ps_team_conflict_scene"))
+        assert eval (renpy.has_label("ps_reactive_echo_scene"))
+        assert eval (renpy.has_label("ps_deep_investigation_scene"))
+        assert eval (renpy.has_label("ps_storm_mimic_scene"))
+        assert eval (renpy.has_label("ps_route_resolution_scene"))
+        assert eval (renpy.has_label("ps_zero_shift"))
+
+
+    testcase faces_shift_assets:
+        assert eval (renpy.loadable("images/cg/team_conflict.jpg"))
+        assert eval (renpy.loadable("images/cg/evidence_timeline.jpg"))
+        assert eval (renpy.loadable("images/cg/mimic_message.jpg"))
+        assert eval (renpy.loadable("images/cg/route_crossroads.jpg"))
+        assert eval (renpy.loadable("images/cg/zero_shift.jpg"))
+        assert eval (renpy.loadable("images/cg/team_reflection.jpg"))
+
+        assert eval (renpy.loadable("audio/live/route_newbie_growth.ogg"))
+        assert eval (renpy.loadable("audio/live/route_newbie_shadow.ogg"))
+        assert eval (renpy.loadable("audio/live/route_veteran_growth.ogg"))
+        assert eval (renpy.loadable("audio/live/route_veteran_shadow.ogg"))
+        assert eval (renpy.loadable("audio/live/route_joker_growth.ogg"))
+        assert eval (renpy.loadable("audio/live/route_joker_shadow.ogg"))
+        assert eval (renpy.loadable("audio/live/route_supervisor_growth.ogg"))
+        assert eval (renpy.loadable("audio/live/route_supervisor_shadow.ogg"))
+
+
     testsuite incident_paths:
 
         testcase every_incident_outcome:
