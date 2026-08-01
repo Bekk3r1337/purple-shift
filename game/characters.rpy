@@ -4,13 +4,21 @@
 ## Персонажи и изображения
 ################################################################################
 
-define p = Character("Сотрудник", color="#c8a2ff")
-define sv = Character("Супервайзер", color="#7CFF7C")
+default ps_player_name = "Сотрудник"
+default ps_newbie_name = "Новичок"
+default ps_veteran_name = "Ветеран"
+default ps_joker_name = "Шутник"
+default ps_supervisor_name = "Супервайзер"
+default ps_curator_name = "Куратор"
+default ps_names_revealed = False
+
+define p = DynamicCharacter("ps_player_name", color="#c8a2ff")
+define sv = DynamicCharacter("ps_supervisor_name", color="#7CFF7C")
 define n = Character(None)
-define vet = Character("Ветеран", color="#ffd27a")
-define mem = Character("Шутник", color="#7ad7ff")
-define newb = Character("Новичок", color="#ff7ad7")
-define cur = Character("Куратор", color="#ff9d66")
+define vet = DynamicCharacter("ps_veteran_name", color="#ffd27a")
+define mem = DynamicCharacter("ps_joker_name", color="#7ad7ff")
+define newb = DynamicCharacter("ps_newbie_name", color="#ff7ad7")
+define cur = DynamicCharacter("ps_curator_name", color="#ff9d66")
 
 image bg mainmenu = Solid("#120a1f")
 image ps_bg_base = Solid("#0c0614")
@@ -51,6 +59,11 @@ image cg route_veteran = "images/cg/route_veteran.jpg"
 image cg route_joker = "images/cg/route_joker.jpg"
 image cg route_supervisor = "images/cg/route_supervisor.jpg"
 image cg storm_signal = "images/cg/storm_signal.jpg"
+image cg team_names = "images/cg/team_names.jpg"
+image cg shift_plan = "images/cg/shift_plan.jpg"
+image cg monitor_guest = "images/cg/monitor_guest.jpg"
+image cg future_message = "images/cg/future_message.jpg"
+image cg named_shift = "images/cg/named_shift.jpg"
 
 image sv neutral = "images/ch/super1.png"
 image sv stern = "images/ch/super_stern.png"

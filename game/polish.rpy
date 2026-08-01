@@ -108,6 +108,21 @@ init python:
             "Шторм на линии",
             "Восстановить скрытую последовательность канала V-13.",
         ),
+        (
+            "names",
+            "По именам",
+            "Узнать людей смены не только по их должностям.",
+        ),
+        (
+            "planner",
+            "Люди — не ресурс",
+            "Самостоятельно составить расстановку ночной смены.",
+        ),
+        (
+            "known_by_storm",
+            "Смена узнала тебя",
+            "Увидеть своё имя на отключённом табло V-13.",
+        ),
     ]
 
     ps_ending_catalog = [
@@ -499,6 +514,7 @@ screen ps_phone(initial_tab="status"):
     modal True
     zorder 240
     default tab = initial_tab
+    default person = "newbie"
 
     on "show" action Function(ps_play_sfx, "phone_unlock")
 
@@ -691,68 +707,135 @@ screen ps_phone(initial_tab="status"):
                                 size 23
 
                 elif tab == "people":
-                    vbox:
-                        spacing 18
+                    hbox:
+                        spacing 22
+                        xfill True
+                        yfill True
 
-                        text "Отношения внутри смены":
-                            color "#ffffff"
-                            size 34
+                        vbox:
+                            spacing 12
+                            xsize 330
 
-                        use ps_relation_row(
-                            "Новичок",
-                            ps_newbie_trust,
-                            "#ff7ad7",
-                            "Доверяет ли она тебе, когда система снова ошибается."
-                        )
+                            text "ЛЮДИ СМЕНЫ":
+                                color "#ffffff"
+                                size 31
 
-                        use ps_relation_row(
-                            "Супервайзер",
-                            ps_supervisor_respect,
-                            "#7cff7c",
-                            "Считает ли он тебя проблемой или человеком, которому можно доверить линию."
-                        )
+                            for route_id, accent in [
+                                ("newbie", "#ff7ad7"),
+                                ("veteran", "#ffd27a"),
+                                ("joker", "#7ad7ff"),
+                                ("supervisor", "#7cff7c"),
+                            ]:
+                                textbutton ps_character_display_name(route_id):
+                                    id ("ps_people_" + route_id)
+                                    action SetScreenVariable("person", route_id)
+                                    xfill True
+                                    ysize 66
+                                    background Solid("#4e2a68" if person == route_id else "#271733")
+                                    hover_background Solid("#694087")
+                                    text_color accent
+                                    text_size 24
+                                    text_xalign 0.08
+                                    text_yalign 0.5
 
-                        use ps_relation_row(
-                            "Команда",
-                            ps_team_unity,
-                            "#7fd9ff",
-                            "Насколько люди готовы действовать вместе без приказа сверху."
-                        )
+                            null height 8
+
+                            frame:
+                                xfill True
+                                padding (18, 15)
+                                background Solid("#211334cc")
+
+                                vbox:
+                                    spacing 7
+
+                                    text "КОМАНДА // [ps_team_unity]":
+                                        color "#89e6c1"
+                                        size 21
+
+                                    text "Виктор: [u'в порядке' if ps_veteran_safe else u'травмирован']":
+                                        color "#d9cae9"
+                                        size 19
+
+                        $ profile = ps_character_profile(person)
 
                         frame:
                             xfill True
-                            padding (26, 18)
-                            background Solid("#211334cc")
+                            yfill True
+                            padding (30, 24)
+                            background Solid("#211334dd")
 
-                            text "Безопасность Ветерана: [u'в порядке' if ps_veteran_safe else u'травмирован']":
-                                color "#d9cae9"
-                                size 24
-                                xalign 0.5
+                            if not ps_names_revealed:
+                                vbox:
+                                    spacing 20
+                                    xalign 0.5
+                                    yalign 0.45
 
-                        frame:
-                            xfill True
-                            padding (22, 13)
-                            background Solid("#1b102bdd")
+                                    text ps_character_display_name(person):
+                                        color "#d9b8ff"
+                                        size 38
+                                        xalign 0.5
 
-                            hbox:
-                                spacing 34
-                                xalign 0.5
+                                    text "Вы пока знаете друг друга только по должностям. Иногда имя — первое настоящее действие против системы, которая видит в людях строки отчёта.":
+                                        color "#bbaaca"
+                                        size 24
+                                        text_align 0.5
+                                        xmaximum 780
+                            else:
+                                vbox:
+                                    spacing 15
 
-                                text "Новичок: [ps_route_points.get('newbie', 0)]":
-                                    color "#ff7ad7"
-                                    size 20
+                                    text profile["full_name"]:
+                                        color "#ffffff"
+                                        size 38
 
-                                text "Ветеран: [ps_route_points.get('veteran', 0)]":
-                                    color "#ffd27a"
-                                    size 20
+                                    text "[profile['role']]  ·  [profile['age']]":
+                                        color "#b99bd4"
+                                        size 22
 
-                                text "Шутник: [ps_route_points.get('joker', 0)]":
-                                    color "#7ad7ff"
-                                    size 20
+                                    frame:
+                                        xfill True
+                                        padding (20, 15)
+                                        background Solid("#2b1940")
 
-                                text "Супервайзер: [ps_route_points.get('supervisor', 0)]":
-                                    color "#7cff7c"
-                                    size 20
+                                        vbox:
+                                            spacing 7
+
+                                            text "ЧТО НЕ ГОВОРИТ ВСЛУХ":
+                                                color "#d49cff"
+                                                size 18
+
+                                            text profile["truth"]:
+                                                color "#eee7f2"
+                                                size 22
+
+                                    frame:
+                                        xfill True
+                                        padding (20, 15)
+                                        background Solid("#251935")
+
+                                        vbox:
+                                            spacing 7
+
+                                            text "ЧЕГО ЖДЁТ ОТ ТЕБЯ":
+                                                color "#8de6c2"
+                                                size 18
+
+                                            text profile["need"]:
+                                                color "#eee7f2"
+                                                size 22
+
+                                    text "Близость маршрута: [ps_route_points.get(person, 0)]":
+                                        color "#d8c8e4"
+                                        size 22
+
+                                    if ps_relationship_memories:
+                                        text "Последний общий момент":
+                                            color "#a98bc2"
+                                            size 18
+
+                                        text ps_relationship_memories[-1]:
+                                            color "#cfc2d9"
+                                            size 20
 
                 elif tab == "messages":
                     use ps_phone_messages_panel()
@@ -885,7 +968,7 @@ screen ps_break_choice():
                 spacing 18
                 xalign 0.5
 
-                textbutton "НОВИЧОК\nПоговорить о недостаче":
+                textbutton "ЛЕРА\nПоговорить о недостаче":
                     id "ps_break_newbie"
                     action Return("newbie")
                     xsize 520
@@ -897,7 +980,7 @@ screen ps_break_choice():
                     text_xalign 0.5
                     text_yalign 0.5
 
-                textbutton "ВЕТЕРАН\nСпросить про подъёмник":
+                textbutton "ВИКТОР\nСпросить про подъёмник":
                     id "ps_break_veteran"
                     action Return("veteran")
                     xsize 520
@@ -909,7 +992,7 @@ screen ps_break_choice():
                     text_xalign 0.5
                     text_yalign 0.5
 
-                textbutton "ШУТНИК\nДать мозгу выдохнуть":
+                textbutton "МАКС\nДать мозгу выдохнуть":
                     id "ps_break_joker"
                     action Return("joker")
                     xsize 520

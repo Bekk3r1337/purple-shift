@@ -7,6 +7,7 @@
 default ps_ambience_zone = None
 default ps_phone_replies = {}
 default ps_message_reads = []
+default ps_phone_selected_message = "system"
 default ps_personal_scene_seen = False
 
 default ps_flow_index = 0
@@ -188,7 +189,7 @@ init python:
             "choices": [
                 ("safety", "Снять коробку с линии", "Безопасность +2", 2, 0, 0),
                 ("result", "Пропустить ради темпа", "Результат +2", -1, 2, 0),
-                ("people", "Позвать Новичка", "Команда +1", 0, 0, 1),
+                ("people", "Позвать Леру", "Команда +1", 0, 0, 1),
             ],
         },
         {
@@ -202,8 +203,8 @@ init python:
             ],
         },
         {
-            "title": "РАЦИЯ // НОВИЧОК",
-            "detail": "Новичок сообщает о неизвестном коде ошибки.",
+            "title": "РАЦИЯ // ЛЕРА",
+            "detail": "Лера сообщает о неизвестном коде ошибки.",
             "ideal": "people",
             "choices": [
                 ("safety", "Поставить её сектор в стоп", "Безопасность +1", 1, -1, 0),
@@ -218,7 +219,7 @@ init python:
             "choices": [
                 ("safety", "Заблокировать подъёмник", "Безопасность +2", 2, -1, 0),
                 ("result", "Закрыть ошибку и продолжить", "Результат +2", -2, 2, 0),
-                ("people", "Отправить туда Ветерана", "Риск для Ветерана", -1, 1, -1),
+                ("people", "Отправить туда Виктора", "Риск для Виктора", -1, 1, -1),
             ],
         },
         {
@@ -610,10 +611,8 @@ screen ps_message_bubble(message_text, outgoing=False):
 
 
 screen ps_phone_messages_panel():
-    default selected_message = "system"
-
     $ available_messages = ps_available_messages()
-    $ selected_data = ps_message_data(selected_message)
+    $ selected_data = ps_message_data(ps_phone_selected_message)
 
     hbox:
         spacing 18
@@ -639,23 +638,63 @@ screen ps_phone_messages_panel():
 
                     for message in available_messages:
                         $ message_unread = message["id"] not in ps_message_reads
+                        $ message_avatar = ps_message_avatar(message)
 
-                        textbutton "[message['sender']]\n[message['preview']]":
+                        button:
+                            id ("ps_message_chat_" + message["id"])
                             action [
-                                SetScreenVariable("selected_message", message["id"]),
+                                SetVariable("ps_phone_selected_message", message["id"]),
                                 Function(ps_read_message, message["id"]),
                             ]
                             xfill True
                             yminimum 86
+                            padding (10, 8)
                             background Solid(
                                 "#533174"
-                                if message["id"] == selected_message
+                                if message["id"] == ps_phone_selected_message
                                 else "#25172f"
                             )
                             hover_background Solid("#6c438d")
-                            text_color ("#ffffff" if message_unread else "#cbbdd8")
-                            text_size 19
-                            text_xalign 0.0
+
+                            hbox:
+                                spacing 12
+
+                                frame:
+                                    xsize 66
+                                    ysize 66
+                                    padding (2, 2)
+                                    background Solid("#160d20")
+
+                                    if message_avatar:
+                                        add message_avatar:
+                                            xalign 0.5
+                                            yalign 0.5
+                                            xysize (62, 62)
+                                            fit "contain"
+                                    else:
+                                        text "•":
+                                            color "#c99cff"
+                                            size 38
+                                            xalign 0.5
+                                            yalign 0.5
+
+                                vbox:
+                                    spacing 5
+                                    yalign 0.5
+                                    xmaximum 260
+
+                                    text message["sender"]:
+                                        color ("#ffffff" if message_unread else "#cbbdd8")
+                                        size 19
+
+                                    text message["preview"]:
+                                        color "#a998b7"
+                                        size 16
+
+                                    if message["id"] in ps_phone_deferred:
+                                        text "ОТВЕТ ОТЛОЖЕН":
+                                            color "#ffd078"
+                                            size 13
 
         frame:
             xsize 1010
@@ -670,9 +709,16 @@ screen ps_phone_messages_panel():
                 hbox:
                     xfill True
 
-                    text "[selected_data['sender']]":
-                        color "#ffffff"
-                        size 29
+                    vbox:
+                        spacing 2
+
+                        text "[selected_data['sender']]":
+                            color "#ffffff"
+                            size 29
+
+                        text "[ps_message_status(selected_data)]":
+                            color "#8f7ca0"
+                            size 16
 
                     text "[selected_data['time']]":
                         color "#806f91"
@@ -690,6 +736,54 @@ screen ps_phone_messages_panel():
 
                         for incoming_line in selected_data["incoming"]:
                             use ps_message_bubble(incoming_line)
+
+                        if selected_data.get("attachment"):
+                            frame:
+                                xalign 0.0
+                                xsize 640
+                                padding (9, 9)
+                                background Solid("#2b1b3c")
+
+                                vbox:
+                                    spacing 7
+
+                                    add selected_data["attachment"]:
+                                        xsize 620
+                                        ysize 220
+                                        fit "cover"
+
+                                    text selected_data.get("attachment_caption", "Вложение"):
+                                        color "#bba9c7"
+                                        size 16
+
+                        if selected_data.get("voice_note"):
+                            frame:
+                                xalign 0.0
+                                xsize 640
+                                padding (15, 12)
+                                background Solid("#2b1b3c")
+
+                                vbox:
+                                    spacing 8
+
+                                    textbutton "▶  ГОЛОСОВОЕ СООБЩЕНИЕ":
+                                        id "ps_message_voice_note"
+                                        action Function(
+                                            ps_play_story_voice,
+                                            selected_data["id"],
+                                        )
+                                        xfill True
+                                        ysize 48
+                                        background Solid("#5a3474")
+                                        hover_background Solid("#8050a1")
+                                        text_color "#ffffff"
+                                        text_size 18
+                                        text_xalign 0.5
+                                        text_yalign 0.5
+
+                                    text selected_data.get("voice_caption", ""):
+                                        color "#bba9c7"
+                                        size 17
 
                         $ chosen_reply = ps_message_reply(selected_data)
 
@@ -717,6 +811,21 @@ screen ps_phone_messages_panel():
                                     text_color "#ffffff"
                                     text_size 20
                                     text_xalign 0.0
+
+                            if selected_data["id"] not in ps_phone_deferred:
+                                textbutton "ОТВЕТИТЬ ПОЗЖЕ":
+                                    id "ps_message_defer"
+                                    action Function(
+                                        ps_defer_message,
+                                        selected_data["id"],
+                                    )
+                                    xfill True
+                                    yminimum 50
+                                    background Solid("#241a2c")
+                                    hover_background Solid("#46334f")
+                                    text_color "#b9a8c7"
+                                    text_size 17
+                                    text_xalign 0.5
 
 
 ################################################################################
@@ -1152,8 +1261,7 @@ label ps_personal_scene:
     $ ps_set_ambience("quiet")
     show screen ps_cinematic_bars
 
-    n "До конца смены остаётся двенадцать минут."
-    n "В комнате отдыха горит только дальний ряд ламп."
+    n "До конца смены остаётся двенадцать минут. В комнате отдыха горит только дальний ряд ламп."
 
     if ps_personal_target == "newbie":
         show newb relief at ps_enter_right
@@ -1163,8 +1271,7 @@ label ps_personal_scene:
         p "За что?"
         newb "За то, что мои ошибки у тебя не превращаются в моё имя."
         p "Ошибка — это событие. Не человек."
-        newb "Я записала."
-        newb "Не в ТСД. Себе."
+        newb "Я записала. Не в ТСД. Себе."
 
         menu:
             "Предложить вместе составить её собственную инструкцию":
@@ -1189,7 +1296,7 @@ label ps_personal_scene:
 
         $ ps_newbie_trust += 2
         $ ps_humanity += 1
-        $ ps_key_choices = ps_key_choices + ["Новичок перестала бояться говорить об ошибках."]
+        $ ps_key_choices = ps_key_choices + ["Лера перестала бояться говорить об ошибках."]
 
         hide newb
 
@@ -1199,8 +1306,7 @@ label ps_personal_scene:
 
         vet "Я раньше думал: опытный — это тот, кто может работать через боль."
         p "А теперь?"
-        vet "Теперь думаю: опытный первым замечает, когда пора остановиться."
-        vet "Не дай им снова перепутать выносливость с расходником."
+        vet "Теперь думаю: опытный первым замечает, когда пора остановиться. Не дай им снова перепутать выносливость с расходником."
 
         menu:
             "Потребовать, чтобы завтра он не скрывал боль":
@@ -1226,7 +1332,7 @@ label ps_personal_scene:
         $ ps_endurance += 1
         $ ps_evidence += 1
         $ ps_team_unity += 1
-        $ ps_key_choices = ps_key_choices + ["Ветеран доверил тебе историю подъёмника."]
+        $ ps_key_choices = ps_key_choices + ["Виктор доверил тебе историю подъёмника."]
 
         hide vet
 
@@ -1235,8 +1341,7 @@ label ps_personal_scene:
         with dissolve
 
         p "Странно видеть тебя без улыбки."
-        mem "Я её на зарядку поставил."
-        mem "Если сегодня всё пойдёт плохо — не пытайся один стать героем."
+        mem "Я её на зарядку поставил. Если сегодня всё пойдёт плохо — не пытайся один стать героем."
         p "Это сейчас была серьёзная мысль?"
         mem "Никому не рассказывай. Репутация."
 
@@ -1262,7 +1367,7 @@ label ps_personal_scene:
 
         $ ps_humor += 1
         $ ps_team_unity += 2
-        $ ps_key_choices = ps_key_choices + ["Шутник впервые попросил тебя не геройствовать в одиночку."]
+        $ ps_key_choices = ps_key_choices + ["Макс впервые попросил тебя не геройствовать в одиночку."]
 
         hide mem
 
@@ -1272,8 +1377,7 @@ label ps_personal_scene:
 
         sv "Куратор спросит, кто виноват."
         p "А ты что ответишь?"
-        sv "Что вопрос неправильный."
-        sv "Нужно спрашивать, почему три предупреждения не остановили линию."
+        sv "Что вопрос неправильный. Нужно спрашивать, почему три предупреждения не остановили линию."
         p "И ты готов это подписать?"
         sv "Если ты принесёшь факты — да."
 
@@ -1300,7 +1404,7 @@ label ps_personal_scene:
 
         $ ps_supervisor_respect += 2
         $ ps_integrity += 1
-        $ ps_key_choices = ps_key_choices + ["Супервайзер согласился говорить о причине, а не о виноватом."]
+        $ ps_key_choices = ps_key_choices + ["Артём согласился говорить о причине, а не о виноватом."]
 
         hide sv
 

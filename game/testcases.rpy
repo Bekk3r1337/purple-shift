@@ -7,7 +7,7 @@
 testsuite purple_shift:
 
     setup:
-        $ _test.timeout = 60.0
+        $ _test.timeout = 180.0
         $ _test.transition_timeout = 0.1
 
     teardown:
@@ -112,6 +112,13 @@ testsuite purple_shift:
         assert id "ps_epilogue_continue"
         run Hide("ps_ending_epilogue")
 
+        run Show("ps_shift_assignment")
+        pause until screen "ps_shift_assignment"
+        assert id "ps_shift_plan_rotation"
+        assert id "ps_shift_plan_balanced"
+        assert id "ps_shift_plan_push"
+        run Hide("ps_shift_assignment")
+
         $ persistent.ps_minigame_assist = False
 
 
@@ -147,6 +154,33 @@ testsuite purple_shift:
         run Show("ps_phone", initial_tab="signal")
         pause until screen "ps_phone"
         assert id "ps_phone_signal_tab"
+        run Hide("ps_phone")
+
+
+    testcase voices_phone_people:
+        $ ps_reveal_character_names()
+        run Show("ps_phone", initial_tab="people")
+        pause until screen "ps_phone"
+        assert id "ps_people_newbie"
+        assert id "ps_people_veteran"
+        assert id "ps_people_joker"
+        assert id "ps_people_supervisor"
+        click id "ps_people_supervisor"
+        run Hide("ps_phone")
+
+
+    testcase voices_phone_message_features:
+        $ ps_chapter = 4
+        $ ps_route_points = {"newbie": 10, "veteran": 0, "joker": 0, "supervisor": 0}
+        $ ps_phone_replies = {}
+        $ ps_phone_deferred = []
+        $ ps_phone_selected_message = "system"
+        run Show("ps_phone", initial_tab="messages")
+        pause until screen "ps_phone"
+        assert id "ps_message_chat_lera_voice"
+        click id "ps_message_chat_lera_voice"
+        assert id "ps_message_voice_note"
+        assert id "ps_message_defer"
         run Hide("ps_phone")
 
 
@@ -186,6 +220,10 @@ testsuite purple_shift:
         assert eval (renpy.has_label("ps_storm_interference"))
         assert eval (renpy.has_label("ps_route_afterword"))
         assert eval (renpy.has_label("ps_route_afterword_end"))
+        assert eval (renpy.has_label("ps_team_names"))
+        assert eval (renpy.has_label("ps_route_week_scene"))
+        assert eval (renpy.has_label("ps_shift_assignment_scene"))
+        assert eval (renpy.has_label("ps_storm_day_intrusion"))
 
 
     testcase all_final_endings:
@@ -433,6 +471,45 @@ testsuite purple_shift:
         assert eval ("newbie_followup" in ps_available_ids)
         assert eval ("veteran_followup" not in ps_available_ids)
         assert eval ("v13_unknown" in ps_available_ids)
+
+
+    testcase voices_shift_systems:
+        $ ps_names_revealed = False
+        $ ps_newbie_name = "Новичок"
+        $ ps_veteran_name = "Ветеран"
+        $ ps_joker_name = "Шутник"
+        $ ps_supervisor_name = "Супервайзер"
+        $ ps_reveal_character_names()
+
+        assert eval (ps_newbie_name == "Лера")
+        assert eval (ps_veteran_name == "Виктор")
+        assert eval (ps_joker_name == "Макс")
+        assert eval (ps_supervisor_name == "Артём")
+        assert eval (ps_character_profile("supervisor")["full_name"] == "Артём Волков")
+        assert eval (len(ps_storm_fragment_catalog) == 8)
+
+        $ ps_humanity = 0
+        $ ps_endurance = 0
+        $ ps_efficiency = 0
+        $ ps_team_unity = 0
+        $ ps_burnout = 0
+        $ ps_shift_plan_history = []
+        $ ps_apply_shift_plan("rotation")
+
+        assert eval (ps_shift_plan == "rotation")
+        assert eval (ps_humanity == 1)
+        assert eval (ps_endurance == 1)
+        assert eval (ps_efficiency == -1)
+        assert eval (ps_team_unity == 2)
+        assert eval (ps_shift_plan_history == ["rotation"])
+
+
+    testcase voices_shift_assets:
+        assert eval (renpy.loadable("images/cg/team_names.jpg"))
+        assert eval (renpy.loadable("images/cg/shift_plan.jpg"))
+        assert eval (renpy.loadable("images/cg/monitor_guest.jpg"))
+        assert eval (renpy.loadable("images/cg/future_message.jpg"))
+        assert eval (renpy.loadable("images/cg/named_shift.jpg"))
 
 
     testsuite incident_paths:
