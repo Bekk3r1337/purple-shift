@@ -224,6 +224,7 @@ screen choice(items):
         for i in items:
             button:
                 action i.action
+                alt i.caption
                 style "ps_choice_button"
 
                 fixed:
@@ -257,10 +258,15 @@ style choice_button_text is default:
 ## Быстрое меню показывается внутри игры, чтобы обеспечить лёгкий доступ к
 ## внеигровым меню.
 
+define ps_quick_phone_label = _("Телефон [[P]")
+
 screen quick_menu():
 
     zorder 100
     if quick_menu:
+
+        key "K_p" action ToggleScreen("ps_phone")
+        key "K_q" action ToggleScreen("ps_shift_pulse")
 
         hbox:
             style_prefix "quick"
@@ -270,6 +276,8 @@ screen quick_menu():
             spacing 26
 
             textbutton _("История") action ShowMenu('history')
+            textbutton _("Смена [[Q]") action Show("ps_shift_pulse") id "ps_quick_shift"
+            textbutton ps_quick_phone_label action Show("ps_phone") id "ps_quick_phone"
             textbutton _("Сохранить") action ShowMenu('save')
             textbutton _("Загрузить") action ShowMenu('load')
             textbutton _("Опции") action ShowMenu('preferences')
@@ -322,6 +330,8 @@ screen navigation():
         if main_menu:
 
             textbutton _("Начать") action Start()
+            textbutton _("Главы") action ShowMenu("ps_chapter_select")
+            textbutton _("Коллекция") action Show("ps_phone", initial_tab="archive")
 
         else:
 
@@ -375,7 +385,8 @@ style navigation_button_text:
 screen main_menu():
 
     tag menu
-    add "images/ui/fon.jpg"
+    $ ps_menu_art = ps_main_menu_art()
+    add ps_menu_art at ps_main_menu_drift
     style_prefix "main_menu"
 
     # --- ФОН (слои, без LinearGradient) ---
@@ -396,7 +407,8 @@ screen main_menu():
         spacing 6
 
         text "PurpleShift" size 72 color "#8a2fff"
-        text "1.0" size 26 color "#8a7aa8"
+        text "[config.version]" size 26 color "#8a7aa8"
+        text ps_main_menu_status() size 18 color "#baa9cc" xalign 1.0
     add Transform(dust, alpha=0.35)
     # --- КНОПКИ слева ---
     frame:
@@ -404,7 +416,7 @@ screen main_menu():
         xalign 0.08
         yalign 0.5
         xsize 520
-        ysize 600
+        ysize 710
         xpadding 28
         ypadding 28
 
@@ -413,6 +425,8 @@ screen main_menu():
 
             textbutton "Начать" action Start() style "main_menu_button"
             textbutton "Загрузить" action ShowMenu("load")
+            textbutton "Главы" action ShowMenu("ps_chapter_select")
+            textbutton "Коллекция" action Show("ps_phone", initial_tab="archive")
             textbutton "Настройки" action ShowMenu("preferences")
             textbutton "Об игре" action ShowMenu("about")
             textbutton "Помощь" action ShowMenu("help")
@@ -707,6 +721,15 @@ screen file_slots(title):
                         text FileSaveName(slot):
                             style "slot_name_text"
 
+                        $ saved_day = FileJson(slot, "ps_day")
+                        $ saved_route = FileJson(slot, "ps_route")
+
+                        if saved_day:
+                            text "День [saved_day] • [saved_route]":
+                                style "slot_name_text"
+                                color "#c99cff"
+                                size 17
+
                         key "save_delete" action FileDelete(slot)
 
             ## Кнопки для доступа к другим страницам.
@@ -858,6 +881,10 @@ screen preferences():
 
                         textbutton _("Режим тишины"):
                             action Preference("all mute", "toggle")
+                            style "mute_all_button"
+
+                        textbutton _("Постановка и доступность"):
+                            action Show("ps_director_settings")
                             style "mute_all_button"
 
 
@@ -1583,6 +1610,8 @@ screen quick_menu():
             textbutton _("Назад") action Rollback()
             textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Авто") action Preference("auto-forward", "toggle")
+            textbutton _("Смена") action Show("ps_shift_pulse")
+            textbutton _("Телефон") action Show("ps_phone")
             textbutton _("Меню") action ShowMenu()
 
 

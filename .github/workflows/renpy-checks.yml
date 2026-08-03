@@ -1,0 +1,65 @@
+name: Ren'Py checks
+
+on:
+  push:
+    branches:
+      - main
+      - "agent/**"
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    env:
+      RENPY_VERSION: "8.5.3"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache Ren'Py SDK
+        id: renpy-cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/renpy-sdk
+          key: renpy-${{ runner.os }}-${{ env.RENPY_VERSION }}
+
+      - name: Download Ren'Py SDK
+        if: steps.renpy-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p "${RUNNER_TEMP}/renpy-sdk"
+          curl --fail --location \
+            "https://www.renpy.org/dl/${RENPY_VERSION}/renpy-${RENPY_VERSION}-sdk.tar.bz2" \
+            --output "${RUNNER_TEMP}/renpy-sdk.tar.bz2"
+          tar --no-same-owner --strip-components=1 \
+            -xjf "${RUNNER_TEMP}/renpy-sdk.tar.bz2" \
+            -C "${RUNNER_TEMP}/renpy-sdk"
+
+      - name: Prepare Ren'Py
+        run: mkdir -p "${HOME}/.renpy/tokens"
+
+      - name: Lint
+        run: |
+          "${RUNNER_TEMP}/renpy-sdk/renpy.sh" \
+            "${GITHUB_WORKSPACE}" \
+            lint \
+            --error-code \
+            --all-problems \
+            --reserved-parameters \
+            --check-unclosed-tags
+
+      - name: Automated tests
+        env:
+          SDL_VIDEODRIVER: dummy
+          SDL_AUDIODRIVER: dummy
+          RENPY_RENDERER: sw
+          RENPY_PERFORMANCE_TEST: "0"
+        run: |
+          "${RUNNER_TEMP}/renpy-sdk/renpy.sh" \
+            "${GITHUB_WORKSPACE}" \
+            test purple_shift \
+            --report-detailed
