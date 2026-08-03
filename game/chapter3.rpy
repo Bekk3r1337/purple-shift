@@ -146,6 +146,7 @@ label chapter3_second_shift:
     with dissolve
 
     call ps_team_names
+    call ps_human_shift_scene(2)
 
     scene bg locker_room
     with fade

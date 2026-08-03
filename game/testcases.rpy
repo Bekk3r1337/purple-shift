@@ -224,6 +224,9 @@ testsuite purple_shift:
         assert eval (renpy.has_label("ps_route_week_scene"))
         assert eval (renpy.has_label("ps_shift_assignment_scene"))
         assert eval (renpy.has_label("ps_storm_day_intrusion"))
+        assert eval (renpy.has_label("ps_human_shift_scene"))
+        assert eval (renpy.has_label("ps_shift_micro_event"))
+        assert eval (renpy.has_label("ps_last_checkpoint_scene"))
 
 
     testcase all_final_endings:
@@ -607,6 +610,50 @@ testsuite purple_shift:
         assert eval (renpy.loadable("audio/live/route_joker_shadow.ogg"))
         assert eval (renpy.loadable("audio/live/route_supervisor_growth.ogg"))
         assert eval (renpy.loadable("audio/live/route_supervisor_shadow.ogg"))
+
+
+    testcase human_remaster_screens:
+        run Show("ps_shift_pulse")
+        pause until screen "ps_shift_pulse"
+        assert id "ps_shift_pulse_close"
+        assert id "ps_remaster_settings_open"
+        run Hide("ps_shift_pulse")
+
+        run Show("ps_remaster_settings")
+        pause until screen "ps_remaster_settings"
+        assert id "ps_remaster_choice_insight"
+        assert id "ps_remaster_high_contrast"
+        assert id "ps_remaster_quiet_interface"
+        assert id "ps_remaster_settings_close"
+        run Hide("ps_remaster_settings")
+
+
+    testcase human_remaster_systems:
+        $ ps_human_memory_log = []
+        $ ps_shift_temperature = 0
+        $ ps_record_human_memory("test_memory", "Тестовая память.", 2)
+        assert eval ("test_memory" in ps_human_memory_log)
+        assert eval (ps_shift_temperature == 2)
+
+        $ ps_micro_events_seen = []
+        $ ps_mark_micro_event("micro_test")
+        assert eval ("micro_test" in ps_micro_events_seen)
+        assert eval (ps_choice_hint("смысл") in ("", "  //  смысл"))
+
+        $ ps_chapter = 7
+        $ ps_remaster_message_ids = [message["id"] for message in ps_available_messages()]
+        assert eval ("shift_kettle" in ps_remaster_message_ids)
+        assert eval ("shift_photo" in ps_remaster_message_ids)
+        assert eval ("shift_gate" in ps_remaster_message_ids)
+
+
+    testcase human_remaster_assets:
+        assert eval (renpy.loadable("images/cg/human_break.jpg"))
+        assert eval (renpy.loadable("images/cg/memory_wall.jpg"))
+        assert eval (renpy.loadable("images/cg/last_checkpoint.jpg"))
+        assert eval ("human_break" in [item[0] for item in ps_cg_catalog])
+        assert eval ("memory_wall" in [item[0] for item in ps_document_catalog])
+        assert eval ("after_noise" in [item[0] for item in ps_achievement_catalog])
 
 
     testsuite incident_paths:

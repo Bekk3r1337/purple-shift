@@ -266,6 +266,7 @@ screen quick_menu():
     if quick_menu:
 
         key "K_p" action ToggleScreen("ps_phone")
+        key "K_q" action ToggleScreen("ps_shift_pulse")
 
         hbox:
             style_prefix "quick"
@@ -275,6 +276,7 @@ screen quick_menu():
             spacing 26
 
             textbutton _("История") action ShowMenu('history')
+            textbutton _("Смена [[Q]") action Show("ps_shift_pulse") id "ps_quick_shift"
             textbutton ps_quick_phone_label action Show("ps_phone") id "ps_quick_phone"
             textbutton _("Сохранить") action ShowMenu('save')
             textbutton _("Загрузить") action ShowMenu('load')
@@ -1608,6 +1610,7 @@ screen quick_menu():
             textbutton _("Назад") action Rollback()
             textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Авто") action Preference("auto-forward", "toggle")
+            textbutton _("Смена") action Show("ps_shift_pulse")
             textbutton _("Телефон") action Show("ps_phone")
             textbutton _("Меню") action ShowMenu()
 

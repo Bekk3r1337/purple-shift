@@ -100,6 +100,7 @@ label chapter3_day_three:
     call ps_route_week_scene(3)
     call ps_route_turning_point(3)
     call ps_team_conflict_scene(3)
+    call ps_shift_micro_event(3)
 
     if persistent.ps_reduce_motion:
         scene bg mezzanine
@@ -443,6 +444,7 @@ label chapter4_day_four:
     call ps_route_week_scene(4)
     call ps_reactive_echo_scene(4)
     call ps_team_conflict_scene(4)
+    call ps_human_shift_scene(4)
 
     scene bg warehouse_cold
     with fade
@@ -686,6 +688,7 @@ label chapter5_day_five:
     call ps_route_turning_point(5)
     call ps_team_conflict_scene(5)
     call ps_storm_day_intrusion(5)
+    call ps_shift_micro_event(5)
 
     if persistent.ps_reduce_motion:
         scene bg packing_zone
@@ -1014,6 +1017,7 @@ label chapter6_day_six:
     call ps_storm_day_intrusion(6)
     call ps_storm_mimic_scene
     call ps_team_conflict_scene(6)
+    call ps_human_shift_scene(6)
 
     scene bg control_room
     with fade
@@ -1465,6 +1469,10 @@ label chapter7_day_seven:
     call ps_route_week_scene(7)
     call ps_reactive_echo_scene(7)
     call ps_route_resolution_scene
+    call ps_shift_micro_event(7)
+
+    scene bg control_room
+    with dissolve
 
     play music "audio/night_shift.mp3" fadein 1.0 loop
 
@@ -1962,6 +1970,8 @@ label ending_common:
     call screen ps_ending_epilogue(ps_final_ending)
 
     call ps_route_afterword
+
+    call ps_last_checkpoint_scene
 
     if ps_team_unity >= 5:
         $ ps_unlock_cg("team_reflection")
