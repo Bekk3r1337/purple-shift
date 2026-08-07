@@ -18,6 +18,7 @@ label chapter3_day_three:
     )
 
     call ps_show_consequence_echo(3)
+    call ps2_pre_shift(3)
 
     scene bg warehouse_outside
     with dissolve
@@ -101,6 +102,8 @@ label chapter3_day_three:
     call ps_route_turning_point(3)
     call ps_team_conflict_scene(3)
     call ps_shift_micro_event(3)
+    call ps2_shift_event(3)
+    call ps2_storm_echo(3)
 
     if persistent.ps_reduce_motion:
         scene bg mezzanine
@@ -275,6 +278,8 @@ label chapter3_day_three:
 
     n "До закрытия периода четыре дня. Сначала ты пытался понять правила склада; теперь склад проверяет, сколько давления ты примешь за норму."
 
+    call ps2_after_shift(3)
+
     call screen ps_shift_report(
         "Итоги третьего дня",
         "Цифры запомнили скорость. Люди — то, что ты сделал с исчезнувшей записью."
@@ -342,6 +347,8 @@ label chapter4_day_four:
             p "Поговори с супервайзером. Я не могу решать всё."
             newb "Да. Конечно."
             n "Переписка заканчивается слишком быстро."
+
+    call ps2_pre_shift(4)
 
     scene bg locker_room
     with fade
@@ -445,6 +452,8 @@ label chapter4_day_four:
     call ps_reactive_echo_scene(4)
     call ps_team_conflict_scene(4)
     call ps_human_shift_scene(4)
+    call ps2_shift_event(4)
+    call ps2_storm_echo(4)
 
     scene bg warehouse_cold
     with fade
@@ -584,6 +593,8 @@ label chapter4_day_four:
     else:
         n "Твоё имя двигается вверх и вниз. Будто система тоже не может решить, чего ты стоишь."
 
+    call ps2_after_shift(4)
+
     call screen ps_shift_report(
         "Итоги четвёртого дня",
         "Сегодня ошибка получила лицо. Ты решил, чьё."
@@ -611,6 +622,7 @@ label chapter5_day_five:
     )
 
     call ps_show_consequence_echo(5)
+    call ps2_pre_shift(5)
 
     scene bg warehouse_outside
     with dissolve
@@ -689,6 +701,8 @@ label chapter5_day_five:
     call ps_team_conflict_scene(5)
     call ps_storm_day_intrusion(5)
     call ps_shift_micro_event(5)
+    call ps2_shift_event(5)
+    call ps2_storm_echo(5)
 
     if persistent.ps_reduce_motion:
         scene bg packing_zone
@@ -916,6 +930,7 @@ label chapter5_day_five:
     with dissolve
 
     call ps_personal_scene
+    call ps2_after_shift(5)
 
     call screen ps_shift_report(
         "Итоги пятого дня",
@@ -944,6 +959,7 @@ label chapter6_day_six:
     )
 
     call ps_show_consequence_echo(6)
+    call ps2_pre_shift(6)
 
     scene bg warehouse_outside
     with dissolve
@@ -1018,6 +1034,8 @@ label chapter6_day_six:
     call ps_storm_mimic_scene
     call ps_team_conflict_scene(6)
     call ps_human_shift_scene(6)
+    call ps2_shift_event(6)
+    call ps2_storm_echo(6)
 
     scene bg control_room
     with fade
@@ -1244,6 +1262,8 @@ label chapter6_day_six:
 
     n "Рейтинг обновляется в предпоследний раз. Завтра останется одна строка. Одно имя."
 
+    call ps2_after_shift(6)
+
     call screen ps_shift_report(
         "Итоги шестого дня",
         "До финала осталась одна смена. Теперь система знает цену твоей подписи."
@@ -1318,6 +1338,8 @@ label chapter7_day_seven:
             $ ps_endurance += 2
             $ ps_burnout -= 1
             n "Шестьдесят секунд ты никому ничего не должен. Потом встаёшь. Это маленькая победа."
+
+    call ps2_pre_shift(7)
 
     scene bg street_night
     with fade
@@ -1470,6 +1492,7 @@ label chapter7_day_seven:
     call ps_reactive_echo_scene(7)
     call ps_route_resolution_scene
     call ps_shift_micro_event(7)
+    call ps2_final_convergence
 
     scene bg control_room
     with dissolve
@@ -1972,6 +1995,8 @@ label ending_common:
     call ps_route_afterword
 
     call ps_last_checkpoint_scene
+
+    call ps2_extended_epilogue
 
     if ps_team_unity >= 5:
         $ ps_unlock_cg("team_reflection")

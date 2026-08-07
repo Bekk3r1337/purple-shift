@@ -76,6 +76,8 @@ label mindset_joke:
     jump leaving_home
     
 label leaving_home:
+    call ps2_pre_shift(1)
+
     scene bg stairwell
     with dissolve
     stop music fadeout 2.0
@@ -514,6 +516,9 @@ label final_joke:
 
 
 label final_event:
+    call ps2_shift_event(1)
+    call ps2_storm_echo(1)
+
     n "И вот оно. Финальный сюрприз."
 
     n "Рядом кто-то резко дёргает коробку, и она срывается. Глухой удар. Потом - второй."
@@ -1096,6 +1101,8 @@ label chapter2_night_end:
     n "Перед тем как выключиться, ты думаешь:"
     n "«Я справлюсь.» И сразу — второй мыслью:"
     n "«А если это и есть то самое привыкание?»"
+
+    call ps2_after_shift(1)
 
     stop music fadeout 2.0
 

@@ -656,6 +656,98 @@ testsuite purple_shift:
         assert eval ("after_noise" in [item[0] for item in ps_achievement_catalog])
 
 
+    testcase beyond_shift_screens:
+        $ ps2_decision_map = [{
+            "key": "1:до смены:test",
+            "day": 1,
+            "phase": "до смены",
+            "id": "test",
+            "title": "Тестовый выбор",
+            "consequence": "Тестовое последствие.",
+        }]
+
+        run Show("ps2_journal")
+        pause until screen "ps2_journal"
+        assert id "ps2_journal_close"
+        assert id "ps2_journal_map"
+        run Hide("ps2_journal")
+
+        run Show("ps2_decision_map")
+        pause until screen "ps2_decision_map"
+        assert id "ps2_map_close"
+        run Hide("ps2_decision_map")
+
+        run Show("ps2_final_matrix")
+        pause until screen "ps2_final_matrix"
+        assert id "ps2_final_continue"
+        run Hide("ps2_final_matrix")
+
+        run Show("ps_phone", initial_tab="status")
+        pause until screen "ps_phone"
+        assert id "ps2_phone_journal"
+        assert id "ps2_phone_map"
+        run Hide("ps_phone")
+
+
+    testcase beyond_shift_systems:
+        $ ps2_fatigue = 0
+        $ ps2_pressure = 0
+        $ ps2_resolve = 0
+        $ ps2_team_trust = 0
+        $ ps2_team_fear = 0
+        $ ps2_team_fracture = 0
+        $ ps2_team_aid = 0
+        $ ps_team_unity = 0
+        $ ps_burnout = 0
+        $ ps2_decision_map = []
+        $ ps2_day_intentions = {}
+        $ ps_consequence_log = []
+
+        $ ps2_apply(ps2_fatigue=2, ps2_resolve=3, ps2_team_trust=2)
+        assert eval (ps2_fatigue == 2)
+        assert eval (ps2_resolve == 3)
+        assert eval (ps2_team_trust == 2)
+
+        $ ps2_set_intention(3, "люди")
+        assert eval (ps2_day_intentions[3] == "люди")
+
+        $ ps2_record_decision(3, "до смены", "people", "Замечать людей", "Тестовый след 2.0.")
+        $ ps2_record_decision(3, "до смены", "people", "Замечать людей", "Тестовый след 2.0.")
+        assert eval (len(ps2_decision_map) == 1)
+        assert eval (ps2_decision_map[0]["day"] == 3)
+        assert eval (0 <= ps2_collective_score() <= 24)
+        assert eval (ps2_storm_stage() in (0, 1, 2, 3))
+
+        $ ps_prepare_chapter(7)
+        assert eval (ps2_resolve == 7)
+        assert eval (ps2_team_trust == 6)
+        assert eval (len(ps2_decision_map) == 6)
+
+
+    testcase beyond_shift_content:
+        assert eval (renpy.has_label("ps2_pre_shift"))
+        assert eval (renpy.has_label("ps2_shift_event"))
+        assert eval (renpy.has_label("ps2_after_shift"))
+        assert eval (renpy.has_label("ps2_route_crisis"))
+        assert eval (renpy.has_label("ps2_storm_echo"))
+        assert eval (renpy.has_label("ps2_final_convergence"))
+        assert eval (renpy.has_label("ps2_extended_epilogue"))
+        assert eval (renpy.has_label("ps2_new_shift_plus_start"))
+
+        assert eval ("ps2_self_day1" in [item["id"] for item in ps_message_catalog])
+        assert eval ("ps2_future_self" in [item["id"] for item in ps_message_catalog])
+        assert eval ("beyond_shift" in [item[0] for item in ps_achievement_catalog])
+        assert eval ("decision_map" in [item[0] for item in ps_document_catalog])
+
+
+    testcase beyond_shift_assets:
+        assert eval (renpy.loadable("images/cg/ps2_platform.png"))
+        assert eval (renpy.loadable("images/cg/ps2_badge.png"))
+        assert eval (renpy.loadable("images/cg/ps2_morning.png"))
+        assert eval (renpy.loadable("images/cg/ps2_afterimage.png"))
+        assert eval ("ps2_platform" in [item[0] for item in ps_cg_catalog])
+
+
     testsuite incident_paths:
 
         testcase every_incident_outcome:

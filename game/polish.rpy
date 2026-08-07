@@ -722,6 +722,51 @@ screen ps_phone(initial_tab="status"):
                                 color "#ff8d92"
                                 size 23
 
+                        frame:
+                            xfill True
+                            padding (22, 15)
+                            background Solid("#221431cc")
+
+                            hbox:
+                                spacing 22
+                                xalign 0.5
+
+                                vbox:
+                                    spacing 4
+                                    xsize 720
+
+                                    text "[ps2_hero_title()]":
+                                        color "#dcbcff"
+                                        size 24
+
+                                    text "[ps2_collective_title()]":
+                                        color "#92dfc3"
+                                        size 21
+
+                                textbutton "ЛИЧНЫЙ ДНЕВНИК":
+                                    id "ps2_phone_journal"
+                                    action Show("ps2_journal")
+                                    xsize 310
+                                    ysize 58
+                                    background Solid("#60378a")
+                                    hover_background Solid("#8851bd")
+                                    text_color "#ffffff"
+                                    text_size 20
+                                    text_xalign 0.5
+                                    text_yalign 0.5
+
+                                textbutton "КАРТА РЕШЕНИЙ":
+                                    id "ps2_phone_map"
+                                    action Show("ps2_decision_map")
+                                    xsize 300
+                                    ysize 58
+                                    background Solid("#33213f")
+                                    hover_background Solid("#57366d")
+                                    text_color "#ffffff"
+                                    text_size 20
+                                    text_xalign 0.5
+                                    text_yalign 0.5
+
                 elif tab == "people":
                     hbox:
                         spacing 22

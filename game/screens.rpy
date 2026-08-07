@@ -330,6 +330,9 @@ screen navigation():
         if main_menu:
 
             textbutton _("Начать") action Start()
+            if persistent.ps2_new_shift_plus_unlocked:
+                textbutton _("Новая смена+") action Start("ps2_new_shift_plus_start")
+                textbutton _("Карта решений") action Show("ps2_decision_map")
             textbutton _("Главы") action ShowMenu("ps_chapter_select")
             textbutton _("Коллекция") action Show("ps_phone", initial_tab="archive")
 
@@ -424,6 +427,9 @@ screen main_menu():
             spacing 18
 
             textbutton "Начать" action Start() style "main_menu_button"
+            if persistent.ps2_new_shift_plus_unlocked:
+                textbutton "Новая смена+" action Start("ps2_new_shift_plus_start")
+                textbutton "Карта решений" action Show("ps2_decision_map")
             textbutton "Загрузить" action ShowMenu("load")
             textbutton "Главы" action ShowMenu("ps_chapter_select")
             textbutton "Коллекция" action Show("ps_phone", initial_tab="archive")

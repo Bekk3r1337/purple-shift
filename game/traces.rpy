@@ -488,6 +488,20 @@ init python:
         global ps_storm_mimic_correct
         global ps_storm_mimic_seen
         global ps_zero_shift_seen
+        global ps2_fatigue
+        global ps2_pressure
+        global ps2_resolve
+        global ps2_team_trust
+        global ps2_team_fear
+        global ps2_team_fracture
+        global ps2_team_aid
+        global ps2_day_intentions
+        global ps2_after_choices
+        global ps2_decision_map
+        global ps2_scenes_seen
+        global ps2_silences
+        global ps2_final_preparation
+        global ps2_route_crisis_result
 
         ps_humanity = min(11, day + 4)
         ps_endurance = min(10, day + 3)
@@ -542,6 +556,41 @@ init python:
         ps_storm_mimic_correct = day >= 7
         ps_storm_mimic_seen = day >= 7
         ps_zero_shift_seen = False
+
+        ps2_fatigue = min(8, max(1, day - 1))
+        ps2_pressure = min(8, max(1, day - 2))
+        ps2_resolve = min(8, max(2, day))
+        ps2_team_trust = min(7, max(1, day - 1))
+        ps2_team_fear = min(5, max(0, day - 3))
+        ps2_team_fracture = min(3, max(0, day - 5))
+        ps2_team_aid = min(7, max(1, day - 2))
+        ps2_day_intentions = {
+            previous_day: "люди"
+            for previous_day in range(1, day)
+        }
+        ps2_after_choices = {
+            previous_day: "разговор"
+            for previous_day in range(1, day)
+        }
+        ps2_decision_map = [
+            {
+                "key": "{}:восстановлено:chapter".format(previous_day),
+                "day": previous_day,
+                "phase": "восстановлено",
+                "id": "chapter",
+                "title": "Сбалансированный путь",
+                "consequence": "Выбор главы восстановил человеческий путь до этого дня.",
+            }
+            for previous_day in range(1, day)
+        ]
+        ps2_scenes_seen = [
+            "{}_{}".format(phase, previous_day)
+            for previous_day in range(1, day)
+            for phase in ("pre", "shift", "after")
+        ]
+        ps2_silences = []
+        ps2_final_preparation = None
+        ps2_route_crisis_result = None
 
         if day >= 2:
             ps_reveal_character_names()

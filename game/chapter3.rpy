@@ -80,6 +80,8 @@ label chapter3_second_shift:
 
     n "На экране телефона горит подтверждённая смена. Назад кнопки нет."
 
+    call ps2_pre_shift(2)
+
     scene bg stairwell
     with dissolve
 
@@ -200,6 +202,8 @@ label chapter3_second_shift:
 
     call ps_exploration_phase(2, 1)
     call ps_route_week_scene(2)
+    call ps2_shift_event(2)
+    call ps2_storm_echo(2)
 
     jump chapter3_sorting_start
 
@@ -707,6 +711,8 @@ label chapter3_shift_end:
     n "На улице холодно. Фиолетовая линия остаётся за спиной."
 
     n "После первой смены казалось, что ты начинаешь привыкать. После второй приходит другая мысль: здесь тебя уже заметили."
+
+    call ps2_after_shift(2)
 
     call screen ps_shift_report(
         "Итоги второго дня",
