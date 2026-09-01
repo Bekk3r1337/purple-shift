@@ -502,6 +502,10 @@ init python:
         global ps2_silences
         global ps2_final_preparation
         global ps2_route_crisis_result
+        global ps21_route_day6_choice
+        global ps21_route_final_action
+        global ps21_route_outcome
+        global ps21_route_memory
 
         ps_humanity = min(11, day + 4)
         ps_endurance = min(10, day + 3)
@@ -591,6 +595,10 @@ init python:
         ps2_silences = []
         ps2_final_preparation = None
         ps2_route_crisis_result = None
+        ps21_route_day6_choice = None
+        ps21_route_final_action = None
+        ps21_route_outcome = None
+        ps21_route_memory = []
 
         if day >= 2:
             ps_reveal_character_names()
@@ -1333,8 +1341,7 @@ label ps_trace_d2_control:
 
     $ ps_set_ambience("quiet")
 
-    n "Диспетчерская пуста. Один монитор оставлен на журнале передачи смен. В 02:14 участок отмечен жёлтым."
-    n "Причина остановки удалена, но подпись осталась."
+    n "Диспетчерская пуста. Один монитор оставлен на журнале передачи смен. В 02:14 участок отмечен жёлтым. Причина остановки удалена, но подпись осталась."
 
     menu:
         "Сохранить номер передачи и время":
@@ -1707,8 +1714,7 @@ label ps_trace_d4_packing:
             $ ps_integrity += 1
             $ ps_record_consequence("Ты связал недостачу с массовым сбоем привязки.")
 
-            n "Номера складываются в простую цепочку. Не кража. Не невнимательность."
-            n "Ошибка системы, которую оказалось удобнее назвать человеком."
+            n "Номера складываются в простую цепочку. Не кража. Не невнимательность. Ошибка системы, которую оказалось удобнее назвать человеком."
 
         "Сразу отнести этикетку Новичку":
             $ ps_add_route("newbie", 2)
@@ -2055,8 +2061,7 @@ label ps_trace_d6_mezzanine:
 
     $ ps_set_ambience("quiet")
 
-    n "За старой панелью лежит чёрный пластиковый конверт. На нём тот же знак, что был на пломбе. Внутри — накладная V-13."
-    n "Пункт назначения: «Штормовой сектор»."
+    n "За старой панелью лежит чёрный пластиковый конверт. На нём тот же знак, что был на пломбе. Внутри — накладная V-13. Пункт назначения: «Штормовой сектор»."
 
     menu:
         "Сохранить накладную и не сообщать системе":

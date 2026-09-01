@@ -7,6 +7,9 @@
 *.zip
 *.7z
 *.rar
+log.txt
+traceback.txt
+errors.txt
 __pycache__/
 cache/
 saves/

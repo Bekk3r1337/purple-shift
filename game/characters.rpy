@@ -67,13 +67,17 @@ image cg named_shift = "images/cg/named_shift.jpg"
 
 image sv neutral = "images/ch/super1.png"
 image sv stern = "images/ch/super_stern.png"
+image sv conflicted = "images/ch/super_conflicted.png"
 image newb worried = "images/ch/nov1.png"
 image newb tired = "images/ch/nov2.png"
 image newb relief = "images/ch/nov_relief.png"
+image newb determined = "images/ch/nov_determined.png"
 image vet neutral = "images/ch/vet1.png"
 image vet concerned = "images/ch/vet_concerned.png"
+image vet injured = "images/ch/vet_injured.png"
 image mem grin = "images/ch/mem1.png"
 image mem serious = "images/ch/mem_serious.png"
+image mem open = "images/ch/mem_open.png"
 image cur = "images/ch/curator.png"
 
 
