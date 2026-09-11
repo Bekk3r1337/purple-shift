@@ -306,6 +306,9 @@ screen ps_shift_pulse():
                     text ps_person_route_memory(ps_route_target()):
                         color "#ddd4e3"
                         size 21
+                    text "Личных исходов открыто: [len(persistent.ps21_route_outcomes)] / 8":
+                        color "#a99ab4"
+                        size 18
                     if ps_human_memory_log and not persistent.ps_quiet_interface:
                         text "Последние человеческие следы: [', '.join(ps_human_memory_log[-3:])]":
                             color "#aa9bb5"
@@ -324,7 +327,7 @@ screen ps_shift_pulse():
                     text_color "#ffffff"
                     text_size 22
 
-                textbutton "НАСТРОЙКИ 1.9":
+                textbutton "ИНТЕРФЕЙС":
                     id "ps_remaster_settings_open"
                     action Show("ps_remaster_settings")
                     xsize 340
@@ -378,7 +381,7 @@ screen ps_remaster_settings():
             spacing 20
             xfill True
 
-            text "РЕМАСТЕР 1.9 // ВОСПРИЯТИЕ":
+            text "ДОСТУПНОСТЬ И ОТОБРАЖЕНИЕ":
                 color "#d2a7ff"
                 size 35
                 xalign 0.5

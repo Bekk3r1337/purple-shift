@@ -1,0 +1,89 @@
+name: Build desktop release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      RENPY_VERSION: "8.5.3"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache Ren'Py SDK
+        id: renpy-cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/renpy-sdk
+          key: renpy-${{ runner.os }}-${{ env.RENPY_VERSION }}
+
+      - name: Download Ren'Py SDK
+        if: steps.renpy-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p "${RUNNER_TEMP}/renpy-sdk"
+          curl --fail --location \
+            "https://www.renpy.org/dl/${RENPY_VERSION}/renpy-${RENPY_VERSION}-sdk.tar.bz2" \
+            --output "${RUNNER_TEMP}/renpy-sdk.tar.bz2"
+          tar --no-same-owner --strip-components=1 \
+            -xjf "${RUNNER_TEMP}/renpy-sdk.tar.bz2" \
+            -C "${RUNNER_TEMP}/renpy-sdk"
+
+      - name: Prepare Ren'Py
+        run: mkdir -p "${HOME}/.renpy/tokens"
+
+      - name: Lint
+        run: |
+          "${RUNNER_TEMP}/renpy-sdk/renpy.sh" \
+            "${GITHUB_WORKSPACE}" \
+            lint \
+            --error-code \
+            --all-problems \
+            --reserved-parameters \
+            --check-unclosed-tags
+
+      - name: Automated tests
+        env:
+          SDL_VIDEODRIVER: dummy
+          SDL_AUDIODRIVER: dummy
+          RENPY_RENDERER: sw
+          RENPY_PERFORMANCE_TEST: "0"
+        run: |
+          "${RUNNER_TEMP}/renpy-sdk/renpy.sh" \
+            "${GITHUB_WORKSPACE}" \
+            test purple_shift \
+            --report-detailed
+
+      - name: Build Windows and Linux package
+        run: |
+          mkdir -p "${GITHUB_WORKSPACE}/dist"
+          "${RUNNER_TEMP}/renpy-sdk/renpy.sh" \
+            "${RUNNER_TEMP}/renpy-sdk/launcher" \
+            distribute \
+            "${GITHUB_WORKSPACE}" \
+            --destination "${GITHUB_WORKSPACE}/dist" \
+            --package pc \
+            --no-update
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PurpleShift-${{ github.ref_name }}-pc
+          path: dist/*
+          if-no-files-found: error
+
+      - name: Attach package to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: dist/*

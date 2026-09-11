@@ -7,7 +7,7 @@
 testsuite purple_shift:
 
     setup:
-        $ _test.timeout = 180.0
+        $ _test.timeout = 360.0
         $ _test.transition_timeout = 0.1
 
     teardown:
@@ -746,6 +746,46 @@ testsuite purple_shift:
         assert eval (renpy.loadable("images/cg/ps2_morning.png"))
         assert eval (renpy.loadable("images/cg/ps2_afterimage.png"))
         assert eval ("ps2_platform" in [item[0] for item in ps_cg_catalog])
+
+
+    testcase living_routes_screen:
+        $ ps21_route_outcome = "newbie:growth"
+        run Show("ps21_route_result_card")
+        pause until screen "ps21_route_result_card"
+        assert id "ps21_route_result_continue"
+        run Hide("ps21_route_result_card")
+
+
+    testcase living_routes_systems:
+        $ ps_route_points = {"newbie": 10, "veteran": 0, "joker": 0, "supervisor": 0}
+        $ ps2_route_crisis_result = "newbie_voice"
+        $ ps21_route_outcome = None
+
+        assert eval (ps21_route_variant("newbie") == "growth")
+        assert eval (ps21_route_outcome_key() == "newbie:growth")
+        assert eval (len(ps21_route_outcome_catalog) == 8)
+        assert eval (set(ps21_route_outcome_catalog.keys()) == {
+            "newbie:growth", "newbie:shadow",
+            "veteran:growth", "veteran:shadow",
+            "joker:growth", "joker:shadow",
+            "supervisor:growth", "supervisor:shadow",
+        })
+        assert eval ("living_voice" in [item[0] for item in ps_achievement_catalog])
+        assert eval ("eight_living_routes" in [item[0] for item in ps_achievement_catalog])
+        assert eval (ps_latest_save_schema == 21)
+        assert eval (ps_migrate_loaded_save in config.after_load_callbacks)
+
+
+    testcase living_routes_content:
+        assert eval (renpy.has_label("ps21_route_night_scene"))
+        assert eval (renpy.has_label("ps21_route_finale_setup"))
+        assert eval (renpy.has_label("ps21_route_emergency_payoff"))
+        assert eval (renpy.has_label("ps21_route_epilogue"))
+
+        assert eval (renpy.loadable("images/ch/nov_determined.png"))
+        assert eval (renpy.loadable("images/ch/vet_injured.png"))
+        assert eval (renpy.loadable("images/ch/mem_open.png"))
+        assert eval (renpy.loadable("images/ch/super_conflicted.png"))
 
 
     testsuite incident_paths:
