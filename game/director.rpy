@@ -1404,7 +1404,7 @@ label ps_personal_scene:
 
         $ ps_supervisor_respect += 2
         $ ps_integrity += 1
-        $ ps_key_choices = ps_key_choices + ["Артём согласился говорить о причине, а не о виноватом."]
+        $ ps_key_choices = ps_key_choices + ["Артём перевёл разговор с поиска виноватого на причину аварии."]
 
         hide sv
 

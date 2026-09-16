@@ -55,7 +55,7 @@ init 45 python:
     ps21_achievements = [
         (
             "living_voice",
-            "Не должность, а человек",
+            "Человек за бейджем",
             "Довести один маршрут до личной развязки в аварии.",
         ),
         (
@@ -184,10 +184,10 @@ label ps21_route_night_scene:
                 $ ps21_route_day6_choice = "voice"
                 $ ps2_route_crisis_result = "newbie_voice"
                 $ ps2_apply(ps_newbie_trust=2, ps2_team_trust=2, ps2_resolve=1)
-                $ ps_record_route_tendency("newbie", "growth", 2, "Лера попросила не разрешение, а поддержку рядом.")
+                $ ps_record_route_tendency("newbie", "growth", 2, "Лера сама приняла решение и попросила тебя остаться рядом.")
                 $ ps2_record_decision(6, "после смены", "lera_voice", "Не перехватывать рацию", "Лера готовится остановить опасную линию своим решением.")
                 p "Хорошо. Ты называешь причину и даёшь стоп. Я проверяю, чтобы команду услышали."
-                newb "Вот. Так нормально. Рядом, а не вместо меня."
+                newb "Вот. Так нормально. Ты рядом и не пытаешься сделать всё за меня."
 
             "Пообещать, что завтра всё скажешь за неё":
                 $ ps21_route_day6_choice = "cover"
