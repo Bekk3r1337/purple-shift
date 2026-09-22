@@ -100,12 +100,12 @@ screen say(who, what):
 
     window:
         id "window"
-        background Solid("#00000044")
+        background None
         xfill True
         yalign 1.0
-        ysize 260                      # <- высота нижней плашки (меньше = меньше закрывает фон)
-        xpadding 70
-        ypadding 35
+        ysize 286
+        xpadding 112
+        ypadding 46
 
         if who is not None:
             window:
@@ -216,26 +216,33 @@ style input:
 screen choice(items):
     style_prefix "ps_choice"
 
-    add Solid("#000000") alpha 0.10
-    add "images/ui/v2/choice_overlay.png"
+    add Solid("#030106") alpha 0.18
 
-    vbox:
+    frame:
         xalign 0.5
-        yalign 0.72
-        spacing 18
+        yalign 0.69
+        xsize 1260
+        padding (28, 26)
+        background Solid("#090511d9")
 
-        for i in items:
-            button:
-                action i.action
-                alt i.caption
-                style "ps_choice_button"
+        vbox:
+            xfill True
+            spacing 14
 
-                fixed:
-                    xsize 1180
-                    ysize 84
+            for i in items:
+                button:
+                    action i.action
+                    alt i.caption
+                    style "ps_choice_button"
+                    xfill True
 
-                    add Solid("#c8a2ff") xsize 6 ysize 84 xpos 0 ypos 0
-                    text i.caption style "ps_choice_button_text" xpos 18 yalign 0.5
+                    fixed:
+                        xfill True
+                        ysize 86
+
+                        add Solid("#b96cff") xsize 4 ysize 86 xpos 0 ypos 0
+                        add Solid("#6f38a6") xsize 2 ysize 44 xpos 1218 ypos 21
+                        text i.caption style "ps_choice_button_text" xpos 26 xsize 1140 yalign 0.5
 
 
 style choice_vbox is vbox
@@ -266,7 +273,7 @@ define ps_quick_phone_label = _("Телефон [[P]")
 screen quick_menu():
 
     zorder 100
-    if quick_menu:
+    if quick_menu and not renpy.get_screen("choice"):
 
         key "K_p" action ToggleScreen("ps_phone")
         key "K_q" action ToggleScreen("ps_shift_pulse")
@@ -388,6 +395,27 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
+screen ps_main_menu_item(label, action):
+    button:
+        action action
+        xsize 430
+        ysize 66
+        background Solid("#0a0610c8")
+        hover_background Solid("#2b1744e8")
+        padding (0, 0)
+
+        fixed:
+            xfill True
+            yfill True
+            add Solid("#9a57dc") xsize 4 ysize 66 xpos 0 ypos 0
+            add Solid("#5b2f83") xsize 2 ysize 32 xpos 414 ypos 17
+            text label:
+                xpos 28
+                yalign 0.5
+                size 29
+                color "#eee8ff"
+                hover_color "#ffffff"
+
 screen main_menu():
 
     tag menu
@@ -413,13 +441,13 @@ screen main_menu():
 
     # --- ЛОГО справа снизу ---
     vbox:
-        xalign 0.95
-        yalign 0.92
+        xalign 0.92
+        yalign 0.91
         spacing 6
 
-        text "PurpleShift" size 72 color "#8a2fff"
-        text "[config.version]" size 26 color "#8a7aa8"
-        text ps_main_menu_status() size 18 color "#baa9cc" xalign 1.0
+        text "PURPLE SHIFT" size 58 color "#a85cff"
+        text "[config.version]" size 24 color "#a997bd" xalign 1.0
+        text ps_main_menu_status() size 17 color "#c7b7d8" xalign 1.0
     add Transform(dust, alpha=0.35)
     # --- КНОПКИ слева ---
     frame:
@@ -434,17 +462,17 @@ screen main_menu():
         vbox:
             spacing 18
 
-            textbutton "Начать" action Start() style "main_menu_button"
+            use ps_main_menu_item("Начать", Start())
             if persistent.ps2_new_shift_plus_unlocked:
-                textbutton "Новая смена+" action Start("ps2_new_shift_plus_start")
-                textbutton "Карта решений" action Show("ps2_decision_map")
-            textbutton "Загрузить" action ShowMenu("load")
-            textbutton "Главы" action ShowMenu("ps_chapter_select")
-            textbutton "Коллекция" action Show("ps_phone", initial_tab="archive")
-            textbutton "Настройки" action ShowMenu("preferences")
-            textbutton "Об игре" action ShowMenu("about")
-            textbutton "Помощь" action ShowMenu("help")
-            textbutton "Выход" action Quit(confirm=True)
+                use ps_main_menu_item("Новая смена+", Start("ps2_new_shift_plus_start"))
+                use ps_main_menu_item("Карта решений", Show("ps2_decision_map"))
+            use ps_main_menu_item("Загрузить", ShowMenu("load"))
+            use ps_main_menu_item("Главы", ShowMenu("ps_chapter_select"))
+            use ps_main_menu_item("Коллекция", Show("ps_phone", initial_tab="archive"))
+            use ps_main_menu_item("Настройки", ShowMenu("preferences"))
+            use ps_main_menu_item("Об игре", ShowMenu("about"))
+            use ps_main_menu_item("Помощь", ShowMenu("help"))
+            use ps_main_menu_item("Выход", Quit(confirm=True))
 
 
 style main_menu_frame is empty
@@ -1722,19 +1750,21 @@ style slider_slider:
 
 # --- Purple Shift choice styles ---
 style ps_choice_button is button:
-    background Frame(Solid("#120a1f"), 0, 0)
-    hover_background Frame(Solid("#2a1840"), 0, 0)
-    xpadding 22
-    ypadding 16
+    background Solid("#130a20e8")
+    hover_background Solid("#321a4ae8")
+    insensitive_background Solid("#0b0711aa")
+    xpadding 0
+    ypadding 0
 
 style ps_choice_button_hover is ps_choice_button:
     background Solid("#2a1840")
 
 style ps_choice_button_text is button_text:
-    color "#e9e3ff"
+    color "#eee8ff"
     hover_color "#ffffff"
-    size 30
-    xalign 0.0   
+    size 29
+    xalign 0.0
+    text_align 0.0   
    
 style ps_choice_button_text_hover is ps_choice_button_text:
     color "#ffffff"
@@ -1752,10 +1782,10 @@ style main_menu_vbox is vbox:
 style main_menu_button is button:
     xsize 420
     ysize 64
-    background Solid("#00000066")
-    hover_background Solid("#3a1b5a99")
-    insensitive_background Solid("#00000033")
-    left_padding 22
+    background Solid("#0a0610c8")
+    hover_background Solid("#2b1744e8")
+    insensitive_background Solid("#08050a88")
+    left_padding 28
     right_padding 22
     top_padding 14
     bottom_padding 14

@@ -103,15 +103,15 @@ define gui.textbox_height = 210
 define gui.textbox_yalign = 1.0
 ## --- Dialogue tuning ---
 define gui.dialogue_text_color = "#efeaff"
-define gui.dialogue_text_size = 34
+define gui.dialogue_text_size = 31
 define gui.textbox_xpadding = 40
 define gui.textbox_ypadding = 24
 define gui.name_text_color = "#1a1026"
-define gui.name_text_size = 40
-define gui.dialogue_xpos = 70
-define gui.dialogue_ypos = 60
-define gui.dialogue_width = 1800
-define gui.dialogue_height = 260
+define gui.name_text_size = 36
+define gui.dialogue_xpos = 92
+define gui.dialogue_ypos = 68
+define gui.dialogue_width = 1670
+define gui.dialogue_height = 238
 
 ## Местоположение имени говорящего персонажа по отношению к текстовому окну.
 ## Это могут быть целые значения в пикселях слева и сверху от начала окна или
