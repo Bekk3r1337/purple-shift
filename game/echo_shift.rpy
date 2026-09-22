@@ -1344,6 +1344,7 @@ label ps_storm_mimic_scene:
     $ ps_storm_mimic_seen = True
     $ ps_storm_mimic_choice = None
     $ ps_unlock_cg("mimic_message")
+    $ ps_unlock_cg("v13_false_memory")
     $ ps_set_ambience("service")
     $ ps_play_sfx("radio")
 
@@ -1489,6 +1490,7 @@ label ps_zero_shift:
     $ persistent.ps_true_shift_unlocked = True
     $ renpy.save_persistent()
     $ ps_unlock_cg("zero_shift", notify=True)
+    $ ps_unlock_cg("zero_shift_v2", notify=False)
     $ ps_collect_document("zero_roster")
     $ ps_unlock_achievement("zero_shift")
     $ ps_record_storm_transmission("zero_shift")
