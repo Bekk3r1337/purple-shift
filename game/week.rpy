@@ -1477,6 +1477,7 @@ label chapter7_day_seven:
         "Автономный поток активен. Ручная остановка доступна старшему линии."
     )
 
+    $ ps_unlock_cg("storm_first_contact", True)
     show screen ps_cinematic_bars
     scene cg storm_first_contact at ps_cg_reveal
     with ps_violet_cut
