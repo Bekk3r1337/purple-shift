@@ -7,8 +7,8 @@ import json
 import mimetypes
 import os
 import shutil
-import time
 import threading
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
@@ -29,7 +29,10 @@ ROOT = HERE.parent.parent
 MANIFEST_PATH = HERE / "tasks.json"
 STYLE_PATH = HERE / "style_bible.txt"
 ENV_PATH = HERE / ".env"
+
 OUTPUT_ROOT = ROOT / "art_output"
+MASTER_ROOT = OUTPUT_ROOT / "master"
+GAME_READY_ROOT = OUTPUT_ROOT / "game_ready"
 BACKUP_ROOT = ROOT / "art_backup"
 LOG_PATH = OUTPUT_ROOT / "generation_log.jsonl"
 
@@ -37,12 +40,31 @@ SUPPORTED_IMAGES = {".png", ".jpg", ".jpeg", ".webp"}
 
 GENAPI_BASE = "https://api.gen-api.ru/api/v1"
 GENAPI_NETWORK = "gpt-image-2-5"
-DEFAULT_MODEL = "sunburst"
-FAST_MODEL = "flare"
+MODEL = "sunburst"
+
+# OVERDRIVE SETTINGS
+QUALITY = "max"
 POLL_SECONDS = 5
-POLL_TIMEOUT_SECONDS = 15 * 60
-DEFAULT_WORKERS = 5
+POLL_TIMEOUT_SECONDS = 20 * 60
+
+CHAR_WORKERS = 5
+SCENE_WORKERS = 3
+
+# GenAPI-safe request sizes
+REQUEST_SIZE_CH = "1024x1536"
+REQUEST_SIZE_BG_CG = "1920x1080"
+
+# Master sizes
+MASTER_SIZE_CH = (2048, 3072)
+MASTER_SIZE_BG_CG = (3840, 2160)
+
 LOG_LOCK = threading.Lock()
+
+CATEGORY_DIRS = {
+    "ch": ROOT / "game" / "images" / "ch",
+    "bg": ROOT / "game" / "images" / "bg",
+    "cg": ROOT / "game" / "images" / "cg",
+}
 
 CHARACTER_CANONICAL = {
     "nov": "game/images/ch/nov_relief.png",
@@ -52,32 +74,31 @@ CHARACTER_CANONICAL = {
     "curator": "game/images/ch/curator.png",
 }
 
-CATEGORY_DIRS = {
-    "ch": ROOT / "game" / "images" / "ch",
-    "bg": ROOT / "game" / "images" / "bg",
-    "cg": ROOT / "game" / "images" / "cg",
-}
-
 CATEGORY_PROMPTS = {
     "ch": (
-        "IDENTITY-LOCKED sprite remaster. REFERENCE 1 is the canonical identity anchor for this exact character. "
-        "If REFERENCE 2 is present, use it ONLY for the target pose/expression/variant; do not borrow a new face from it. "
-        "The output must unmistakably be the same person as REFERENCE 1: same face geometry, eyes, nose, jaw, hair, "
-        "apparent age, body proportions, work uniform design and silhouette. Preserve the target sprite's pose and emotion. "
-        "Do not beautify, age up/down, masculinize/feminize, photorealize, redesign or change hairstyle/clothes. "
-        "Only improve drawing cleanliness, anatomy, hands, fabric rendering, line confidence and subtle lighting. "
-        "Full-body 2D visual-novel sprite, transparent background."
+        "IDENTITY-LOCKED visual novel sprite remaster. "
+        "REFERENCE 1 is the canonical identity anchor and must define the exact character identity. "
+        "If REFERENCE 2 is present, use it only for the target pose, gesture, clothing folds and emotion. "
+        "The output must unmistakably be the same person as REFERENCE 1: same face geometry, eye shape, nose, jaw, "
+        "hairline, hairstyle, apparent age, body proportions, uniform design and silhouette. "
+        "Do not redesign, beautify, age up/down, photorealize, change ethnicity, change hairstyle, or change clothing. "
+        "Preserve the intended emotion and pose. Improve only drawing polish, anatomy, hands, rendering quality, "
+        "fabric detail, line confidence and subtle lighting. "
+        "Create a clean 2D semi-realistic anime / visual novel full-body sprite on a transparent background."
     ),
     "bg": (
-        "Create a production-quality cinematic remaster of this exact visual-novel background. "
-        "Preserve the same location, camera angle, architecture, layout and story-readable landmarks. "
-        "Improve perspective, materials, industrial detail, lighting and atmosphere. No people, no text, no logos."
+        "Create a premium master-quality remaster of this exact visual-novel background. "
+        "Preserve the same location, camera angle, architecture, industrial layout and story-important landmarks. "
+        "Keep it as polished 2D semi-realistic anime / cinematic VN background art, not photorealistic and not 3D. "
+        "Improve perspective, materials, atmosphere, lighting and environmental storytelling. "
+        "No people, no text, no logos."
     ),
     "cg": (
-        "Create a production-quality cinematic remaster of this exact visual-novel CG. "
-        "Preserve the scene, characters, story beat, composition and emotional meaning. "
-        "Improve anatomy, facial consistency, environment detail, lighting, depth and cinematic polish. "
-        "Do not add text, captions or watermarks."
+        "Create a premium master-quality remaster of this exact visual-novel CG. "
+        "Preserve the scene, composition, emotional meaning, characters and story beat. "
+        "Keep it as polished 2D semi-realistic anime / cinematic VN illustration, not photorealistic and not 3D. "
+        "Improve anatomy, faces, hands, lighting, scene coherence, atmosphere and cinematic polish. "
+        "No subtitles, no text, no watermarks."
     ),
 }
 
@@ -100,8 +121,6 @@ def ensure_api_key() -> str:
     if key:
         return key
 
-    # Migration for the first version of the art pipeline:
-    # the user may already have stored a GenAPI key under OPENAI_API_KEY.
     legacy = os.environ.get("OPENAI_API_KEY", "").strip()
     if legacy:
         ENV_PATH.write_text(f"GENAPI_API_KEY={legacy}\n", encoding="utf-8")
@@ -175,8 +194,12 @@ def output_format_for(path: Path, category: str) -> str:
     return "png"
 
 
-def api_size_for(category: str) -> str:
-    return "1024x1536" if category == "ch" else "1920x1080"
+def request_size_for(category: str) -> str:
+    return REQUEST_SIZE_CH if category == "ch" else REQUEST_SIZE_BG_CG
+
+
+def master_size_for_category(category: str) -> tuple[int, int]:
+    return MASTER_SIZE_CH if category == "ch" else MASTER_SIZE_BG_CG
 
 
 def character_identity_refs(source: Path, rel: str) -> list[str]:
@@ -200,73 +223,13 @@ def character_identity_refs(source: Path, rel: str) -> list[str]:
     return [anchor, rel]
 
 
-def auto_remaster_tasks(category: str) -> list[dict]:
-    source_dir = CATEGORY_DIRS[category]
-    tasks = []
-    for source in image_files(source_dir):
-        rel = source.relative_to(ROOT).as_posix()
-
-        if category == "ch":
-            # Keep the failed first-pass remasters untouched for comparison.
-            # The locked pass goes to a new folder and always uses one canonical
-            # face anchor for every expression of the same character.
-            target = (OUTPUT_ROOT / "remaster_locked" / category / source.name).relative_to(ROOT).as_posix()
-            refs = character_identity_refs(source, rel)
-        else:
-            target = (OUTPUT_ROOT / "remaster" / category / source.name).relative_to(ROOT).as_posix()
-            refs = [rel]
-
-        task = {
-            "id": f"remaster-{category}-{source.stem}",
-            "category": category,
-            "mode": "edit",
-            "refs": refs,
-            "target": target,
-            "apply_to": rel,
-            "prompt": CATEGORY_PROMPTS[category],
-            "size": api_size_for(category),
-            "quality": "high",
-            "background": "transparent" if category == "ch" else "opaque",
-            "output_format": output_format_for(source, category),
-            "preserve_reference_size": True,
-        }
-
-        if category == "ch" and source.stem.lower() == "vet_injured":
-            task["safe_refs"] = [
-                "game/images/ch/vet1.png",
-                "game/images/ch/vet_concerned.png",
-            ]
-            task["safe_prompt"] = (
-                CATEGORY_PROMPTS["ch"]
-                + " Create a non-graphic fatigued variant with subtle wrist/hand discomfort only. "
-                  "No blood, no wounds, no bruises, no exposed injury, no medical trauma."
-            )
-
-        tasks.append(task)
-    return tasks
-
-
-def curated_tasks(category: str | None = None) -> list[dict]:
-    manifest = load_manifest()
-    tasks = [t for t in manifest.get("tasks", []) if t.get("enabled", True)]
-    if category:
-        tasks = [t for t in tasks if t.get("category") == category]
-    return tasks
-
-
-def compose_prompt(task: dict) -> str:
-    style = load_style()
-    specific = task.get("prompt", "").strip()
-    return f"{style}\n\nTASK:\n{specific}".strip()
-
-
 def source_reference_size(task: dict) -> tuple[int, int] | None:
     if Image is None or not task.get("preserve_reference_size"):
         return None
     refs = task.get("refs") or []
     if not refs:
         return None
-    ref = ROOT / refs[0]
+    ref = ROOT / refs[-1]
     if not ref.exists():
         return None
     try:
@@ -276,42 +239,84 @@ def source_reference_size(task: dict) -> tuple[int, int] | None:
         return None
 
 
-def final_size_for(task: dict) -> tuple[int, int] | None:
-    explicit = task.get("final_size")
+def game_ready_size_for(task: dict) -> tuple[int, int] | None:
+    explicit = task.get("game_ready_size")
     if explicit and isinstance(explicit, list) and len(explicit) == 2:
         return int(explicit[0]), int(explicit[1])
+
     ref_size = source_reference_size(task)
     if ref_size:
         return ref_size
+
     if task.get("category") in {"bg", "cg"}:
         return 1920, 1080
+
     return None
 
 
-def normalize_image(path: Path, task: dict) -> None:
+def compose_prompt(task: dict) -> str:
+    style = load_style()
+    specific = task.get("prompt", "").strip()
+    return f"{style}\n\nTASK:\n{specific}".strip()
+
+
+def make_output_paths(task: dict) -> tuple[Path, Path]:
+    category = task["category"]
+    source_name = Path(task["apply_to"]).name if task.get("apply_to") else Path(task["target"]).name
+
+    if task.get("category") == "ch":
+        master_path = MASTER_ROOT / category / source_name
+        game_ready_path = GAME_READY_ROOT / category / source_name
+    else:
+        target_name = Path(task["target"]).name
+        master_path = MASTER_ROOT / category / target_name
+        game_ready_path = GAME_READY_ROOT / category / target_name
+
+    return master_path, game_ready_path
+
+
+def normalize_and_save_versions(raw_path: Path, task: dict, master_path: Path, game_ready_path: Path) -> None:
     if Image is None:
+        master_path.parent.mkdir(parents=True, exist_ok=True)
+        game_ready_path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(raw_path, master_path)
+        shutil.copy2(raw_path, game_ready_path)
         return
-    final_size = final_size_for(task)
-    if not final_size:
-        return
-    with Image.open(path) as im:
-        if im.size == final_size:
-            return
-        if im.mode not in {"RGB", "RGBA"}:
-            im = im.convert("RGBA" if task.get("background") == "transparent" else "RGB")
-        resized = im.resize(final_size, Image.Resampling.LANCZOS)
-        fmt = task.get("output_format", "png")
-        save_format = {"jpeg": "JPEG", "jpg": "JPEG", "webp": "WEBP"}.get(fmt, "PNG")
-        kwargs = {"quality": 95} if save_format in {"JPEG", "WEBP"} else {}
-        if save_format == "JPEG" and resized.mode == "RGBA":
-            resized = resized.convert("RGB")
-        resized.save(path, format=save_format, **kwargs)
 
+    category = task["category"]
+    output_format = task.get("output_format", "png")
+    save_format = {"jpeg": "JPEG", "jpg": "JPEG", "webp": "WEBP"}.get(output_format, "PNG")
+    save_kwargs = {"quality": 95} if save_format in {"JPEG", "WEBP"} else {}
 
-def path_to_data_uri(path: Path) -> str:
-    mime = mimetypes.guess_type(path.name)[0] or "application/octet-stream"
-    encoded = base64.b64encode(path.read_bytes()).decode("ascii")
-    return f"data:{mime};base64,{encoded}"
+    master_size = master_size_for_category(category)
+    ready_size = game_ready_size_for(task)
+
+    with Image.open(raw_path) as im:
+        if category == "ch":
+            target_mode = "RGBA"
+        else:
+            target_mode = "RGB"
+
+        if im.mode != target_mode:
+            im = im.convert(target_mode)
+
+        # MASTER
+        master_img = im.resize(master_size, Image.Resampling.LANCZOS)
+        master_path.parent.mkdir(parents=True, exist_ok=True)
+        if save_format == "JPEG" and master_img.mode == "RGBA":
+            master_img = master_img.convert("RGB")
+        master_img.save(master_path, format=save_format, **save_kwargs)
+
+        # GAME READY
+        game_ready_path.parent.mkdir(parents=True, exist_ok=True)
+        if ready_size:
+            ready_img = im.resize(ready_size, Image.Resampling.LANCZOS)
+        else:
+            ready_img = im.copy()
+
+        if save_format == "JPEG" and ready_img.mode == "RGBA":
+            ready_img = ready_img.convert("RGB")
+        ready_img.save(game_ready_path, format=save_format, **save_kwargs)
 
 
 def extract_result_items(data: dict) -> list:
@@ -332,11 +337,11 @@ def extract_result_items(data: dict) -> list:
     return []
 
 
-def resolve_result_bytes(item, api_key: str) -> bytes:
+def resolve_result_bytes(item) -> bytes:
     if isinstance(item, dict):
         for key in ("url", "image_url", "output", "result"):
             if item.get(key):
-                return resolve_result_bytes(item[key], api_key)
+                return resolve_result_bytes(item[key])
         for key in ("b64_json", "base64", "data"):
             value = item.get(key)
             if isinstance(value, str) and value:
@@ -384,26 +389,11 @@ def wait_for_result(request_id: str | int, api_key: str, label: str = "") -> dic
             print(f"  [{label}] GenAPI: {status or 'processing'}")
         time.sleep(POLL_SECONDS)
 
-    raise TimeoutError("GenAPI не завершил генерацию за 15 минут.")
+    raise TimeoutError("GenAPI не завершил генерацию за 20 минут.")
 
 
-def call_genapi(api_key: str, task: dict, model: str, quality_override: str | None = None) -> dict:
+def call_genapi(api_key: str, task: dict) -> dict:
     prompt = compose_prompt(task)
-    quality = quality_override or task.get("quality", "high")
-
-    # callback_url intentionally omitted: we use GenAPI long-polling by request_id.
-    # Passing null is rejected by the network validator.
-    payload = {
-        "is_sync": False,
-        "prompt": prompt,
-        "model": model,
-        "quality": quality,
-        "image_size": task.get("size", "1024x1024"),
-        "background": task.get("background", "auto"),
-        "num_images": 1,
-        "output_format": task.get("output_format", "png"),
-    }
-
     refs = [ROOT / p for p in task.get("refs", [])]
     missing = [str(p) for p in refs if not p.exists()]
     if missing:
@@ -412,9 +402,6 @@ def call_genapi(api_key: str, task: dict, model: str, quality_override: str | No
     endpoint = f"{GENAPI_BASE}/networks/{GENAPI_NETWORK}"
 
     if refs:
-        # GenAPI documents files_array inputs as multipart/form-data.
-        # image_urls[] makes the field arrive as a real array instead of a JSON
-        # string/data-URI value, which the GPT Image 2.5 validator rejects.
         files = []
         handles = []
         try:
@@ -427,13 +414,14 @@ def call_genapi(api_key: str, task: dict, model: str, quality_override: str | No
             form = {
                 "is_sync": "false",
                 "prompt": prompt,
-                "model": model,
-                "quality": quality,
+                "model": MODEL,
+                "quality": QUALITY,
                 "image_size": task.get("size", "1024x1024"),
                 "background": task.get("background", "auto"),
                 "num_images": "1",
                 "output_format": task.get("output_format", "png"),
             }
+
             response = requests.post(
                 endpoint,
                 data=form,
@@ -445,6 +433,16 @@ def call_genapi(api_key: str, task: dict, model: str, quality_override: str | No
             for handle in handles:
                 handle.close()
     else:
+        payload = {
+            "is_sync": False,
+            "prompt": prompt,
+            "model": MODEL,
+            "quality": QUALITY,
+            "image_size": task.get("size", "1024x1024"),
+            "background": task.get("background", "auto"),
+            "num_images": 1,
+            "output_format": task.get("output_format", "png"),
+        }
         response = requests.post(
             endpoint,
             json=payload,
@@ -472,15 +470,28 @@ def call_genapi(api_key: str, task: dict, model: str, quality_override: str | No
     return wait_for_result(request_id, api_key, task.get("id", "task"))
 
 
-def save_genapi_result(data: dict, target: Path, task: dict, api_key: str) -> None:
+def save_genapi_result(data: dict, task: dict) -> tuple[Path, Path]:
     items = extract_result_items(data)
     if not items:
         raise RuntimeError(f"GenAPI не вернул изображение: {data}")
 
-    image_bytes = resolve_result_bytes(items[0], api_key)
-    target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_bytes(image_bytes)
-    normalize_image(target, task)
+    image_bytes = resolve_result_bytes(items[0])
+
+    tmp_dir = OUTPUT_ROOT / "_tmp"
+    tmp_dir.mkdir(parents=True, exist_ok=True)
+    tmp_path = tmp_dir / f"{task['id']}.{task.get('output_format', 'png')}"
+
+    tmp_path.write_bytes(image_bytes)
+
+    master_path, game_ready_path = make_output_paths(task)
+    normalize_and_save_versions(tmp_path, task, master_path, game_ready_path)
+
+    try:
+        tmp_path.unlink(missing_ok=True)
+    except Exception:
+        pass
+
+    return master_path, game_ready_path
 
 
 def append_log(record: dict) -> None:
@@ -490,20 +501,88 @@ def append_log(record: dict) -> None:
             f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 
-def run_one_task(task: dict, api_key: str, model: str, quality_override: str | None, force: bool) -> dict:
-    target = ROOT / task["target"]
-    task_id = task.get("id", "task")
+def auto_remaster_tasks(category: str) -> list[dict]:
+    source_dir = CATEGORY_DIRS[category]
+    tasks = []
 
-    if target.exists() and not force:
-        return {"task": task_id, "status": "skip", "target": str(target.relative_to(ROOT)), "seconds": 0.0, "error": None}
+    for source in image_files(source_dir):
+        rel = source.relative_to(ROOT).as_posix()
+        if category == "ch":
+            refs = character_identity_refs(source, rel)
+        else:
+            refs = [rel]
+
+        task = {
+            "id": f"remaster-{category}-{source.stem}",
+            "category": category,
+            "mode": "edit",
+            "refs": refs,
+            "target": rel,
+            "apply_to": rel,
+            "prompt": CATEGORY_PROMPTS[category],
+            "size": request_size_for(category),
+            "quality": QUALITY,
+            "background": "transparent" if category == "ch" else "opaque",
+            "output_format": output_format_for(source, category),
+            "preserve_reference_size": True,
+        }
+
+        if category == "ch" and source.stem.lower() == "vet_injured":
+            task["safe_refs"] = [
+                "game/images/ch/vet1.png",
+                "game/images/ch/vet_concerned.png",
+            ]
+            task["safe_prompt"] = (
+                CATEGORY_PROMPTS["ch"]
+                + " Create a non-graphic fatigued variant with subtle wrist or hand discomfort only. "
+                  "No blood, no wounds, no bruises, no exposed injury, no medical trauma."
+            )
+
+        tasks.append(task)
+
+    return tasks
+
+
+def curated_tasks(category: str | None = None) -> list[dict]:
+    manifest = load_manifest()
+    tasks = [t for t in manifest.get("tasks", []) if t.get("enabled", True)]
+
+    prepared = []
+    for t in tasks:
+        if category and t.get("category") != category:
+            continue
+
+        task = dict(t)
+        cat = task["category"]
+        task["size"] = request_size_for(cat)
+        task["quality"] = QUALITY
+        prepared.append(task)
+
+    return prepared
+
+
+def run_one_task(task: dict, api_key: str) -> dict:
+    task_id = task.get("id", "task")
+    master_path, game_ready_path = make_output_paths(task)
+
+    if game_ready_path.exists():
+        return {
+            "task": task_id,
+            "status": "skip",
+            "master_path": str(master_path.relative_to(ROOT)),
+            "game_ready_path": str(game_ready_path.relative_to(ROOT)),
+            "seconds": 0.0,
+            "error": None,
+        }
 
     started = time.time()
     status = "ok"
     error = None
+
     try:
         print(f"  START [{task_id}]")
         try:
-            result = call_genapi(api_key, task, model=model, quality_override=quality_override)
+            result = call_genapi(api_key, task)
         except Exception as first_exc:
             message = str(first_exc).lower()
             safe_refs = task.get("safe_refs")
@@ -512,13 +591,16 @@ def run_one_task(task: dict, api_key: str, model: str, quality_override: str | N
                 safe_task = dict(task)
                 safe_task["refs"] = safe_refs
                 safe_task["prompt"] = task.get("safe_prompt", task.get("prompt", ""))
-                result = call_genapi(api_key, safe_task, model=model, quality_override=quality_override)
+                result = call_genapi(api_key, safe_task)
                 task = safe_task
             else:
                 raise
 
-        save_genapi_result(result, target, task, api_key)
-        print(f"  OK    [{task_id}] -> {target.relative_to(ROOT)}")
+        master_path, game_ready_path = save_genapi_result(result, task)
+        print(f"  OK    [{task_id}]")
+        print(f"        master:     {master_path.relative_to(ROOT)}")
+        print(f"        game_ready: {game_ready_path.relative_to(ROOT)}")
+
     except Exception as exc:
         status = "error"
         error = repr(exc)
@@ -528,9 +610,11 @@ def run_one_task(task: dict, api_key: str, model: str, quality_override: str | N
         "time": datetime.now().isoformat(timespec="seconds"),
         "task": task_id,
         "status": status,
-        "target": task.get("target"),
+        "master_path": str(master_path.relative_to(ROOT)),
+        "game_ready_path": str(game_ready_path.relative_to(ROOT)),
         "provider": "genapi",
-        "model": f"{GENAPI_NETWORK}:{model}",
+        "model": f"{GENAPI_NETWORK}:{MODEL}",
+        "quality": QUALITY,
         "seconds": round(time.time() - started, 2),
         "error": error,
     }
@@ -538,33 +622,41 @@ def run_one_task(task: dict, api_key: str, model: str, quality_override: str | N
     return record
 
 
-def run_tasks(
-    tasks: list[dict],
-    model: str,
-    quality_override: str | None,
-    force: bool,
-    dry_run: bool,
-    workers: int = DEFAULT_WORKERS,
-) -> None:
+def workers_for_category(category: str) -> int:
+    return CHAR_WORKERS if category == "ch" else SCENE_WORKERS
+
+
+def run_tasks(tasks: list[dict], category: str, dry_run: bool = False, workers: int | None = None) -> None:
     if not tasks:
         print("Нет задач.")
         return
 
+    if workers is None:
+        workers = workers_for_category(category)
     workers = max(1, min(int(workers), 10))
 
     print(f"\nЗадач: {len(tasks)}")
+    print("Режим: OVERDRIVE")
     print("Провайдер: GenAPI")
-    print(f"Модель: GPT Image 2.5 / {model}")
+    print(f"Модель: {MODEL}")
+    print(f"Качество: {QUALITY}")
     print(f"Параллельно: до {workers} генераций")
-    if quality_override:
-        print(f"Качество override: {quality_override}")
+
+    if category == "ch":
+        print(f"Request size: {REQUEST_SIZE_CH}")
+        print(f"Master size:  {MASTER_SIZE_CH[0]}x{MASTER_SIZE_CH[1]}")
+    else:
+        print(f"Request size: {REQUEST_SIZE_BG_CG}")
+        print(f"Master size:  {MASTER_SIZE_BG_CG[0]}x{MASTER_SIZE_BG_CG[1]}")
 
     if dry_run:
         for i, task in enumerate(tasks, 1):
+            master_path, game_ready_path = make_output_paths(task)
             print(f"\n[{i}/{len(tasks)}] {task['id']}")
-            print(f"  mode={task.get('mode', 'generate')} target={task.get('target')}")
             print(f"  refs={task.get('refs', [])}")
-            print(f"  size={task.get('size')} quality={task.get('quality')} background={task.get('background')}")
+            print(f"  request_size={task.get('size')}")
+            print(f"  master={master_path.relative_to(ROOT)}")
+            print(f"  game_ready={game_ready_path.relative_to(ROOT)}")
             print("  prompt:", compose_prompt(task)[:700].replace("\n", " "), "...")
         return
 
@@ -576,9 +668,9 @@ def run_tasks(
 
     runnable = []
     for task in tasks:
-        target = ROOT / task["target"]
-        if target.exists() and not force:
-            print(f"  SKIP  [{task['id']}] уже существует {target.relative_to(ROOT)}")
+        _, game_ready_path = make_output_paths(task)
+        if game_ready_path.exists():
+            print(f"  SKIP  [{task['id']}] уже существует {game_ready_path.relative_to(ROOT)}")
         else:
             runnable.append(task)
 
@@ -588,11 +680,13 @@ def run_tasks(
 
     ok = 0
     errors = 0
+
     with ThreadPoolExecutor(max_workers=min(workers, len(runnable))) as pool:
         future_map = {
-            pool.submit(run_one_task, task, api_key, model, quality_override, force): task
+            pool.submit(run_one_task, task, api_key): task
             for task in runnable
         }
+
         for future in as_completed(future_map):
             try:
                 record = future.result()
@@ -614,13 +708,15 @@ def apply_outputs(tasks: list[dict]) -> None:
         apply_to = task.get("apply_to")
         if not apply_to:
             continue
-        src = ROOT / task["target"]
+
+        _, src = make_output_paths(task)
         dst = ROOT / apply_to
+
         if src.exists():
             candidates.append((task, src, dst))
 
     if not candidates:
-        print("Нет готовых файлов для применения.")
+        print("Нет готовых game_ready файлов для применения.")
         return
 
     print(f"\nБудут заменены {len(candidates)} файлов в game/images.")
@@ -637,6 +733,7 @@ def apply_outputs(tasks: list[dict]) -> None:
             backup = backup_dir / dst.relative_to(ROOT)
             backup.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(dst, backup)
+
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dst)
         print(f"  APPLY {task['id']} -> {dst.relative_to(ROOT)}")
@@ -644,54 +741,65 @@ def apply_outputs(tasks: list[dict]) -> None:
     print(f"Backup: {backup_dir.relative_to(ROOT)}")
 
 
-def choose_model() -> str:
-    raw = input("Модель GenAPI: [1] Sunburst quality  [2] Flare faster  (Enter=1): ").strip()
-    return FAST_MODEL if raw == "2" else DEFAULT_MODEL
-
-
 def confirm_generation(tasks: list[dict]) -> bool:
     print(f"Подготовлено задач: {len(tasks)}")
-    print("Генерация использует платный GenAPI. Уже существующие результаты будут пропущены.")
+    print("Режим OVERDRIVE - Sunburst + MAX quality + high-resolution master files.")
+    print("Это дорогой режим. Уже существующие результаты будут пропущены.")
     answer = input("Запустить? [y/N]: ").strip().lower()
     return answer in {"y", "yes", "д", "да"}
 
 
 def menu() -> None:
     while True:
-        print("\n" + "=" * 72)
-        print(" PURPLE SHIFT - GPT IMAGE 2.5 / GenAPI ART PIPELINE")
-        print("=" * 72)
+        print("\n" + "=" * 78)
+        print(" PURPLE SHIFT - GPT IMAGE 2.5 / GenAPI OVERDRIVE PIPELINE")
+        print("=" * 78)
         print("1. Показать план curated-артов без генерации")
-        print("2. Ремастер персонажей с жёсткой фиксацией лиц (5 параллельно)")
-        print("3. Ремастер всех фонов")
-        print("4. Ремастер всех CG")
-        print("5. Сгенерировать новые curated-арты")
+        print("2. Ремастер персонажей - OVERDRIVE (Sunburst, max, 5 параллельно)")
+        print("3. Ремастер фонов - OVERDRIVE (Sunburst, max, 3 параллельно)")
+        print("4. Ремастер CG - OVERDRIVE (Sunburst, max, 3 параллельно)")
+        print("5. Сгенерировать curated-арты - OVERDRIVE")
         print("6. ПОЛНЫЙ ПРОГОН: персонажи + фоны + CG + curated")
-        print("7. Применить готовые ремастеры в игру (с backup)")
+        print("7. Применить готовые game_ready ремастеры в игру (с backup)")
         print("8. Выйти")
         choice = input("\nВыбор: ").strip()
 
         if choice == "1":
-            run_tasks(curated_tasks(), DEFAULT_MODEL, None, False, True, DEFAULT_WORKERS)
+            run_tasks(curated_tasks(), "cg", dry_run=True, workers=SCENE_WORKERS)
             continue
         if choice == "8":
             return
 
         if choice == "2":
+            category = "ch"
             tasks = auto_remaster_tasks("ch")
         elif choice == "3":
+            category = "bg"
             tasks = auto_remaster_tasks("bg")
         elif choice == "4":
+            category = "cg"
             tasks = auto_remaster_tasks("cg")
         elif choice == "5":
+            category = "cg"
             tasks = curated_tasks()
         elif choice == "6":
-            tasks = (
-                auto_remaster_tasks("ch")
-                + auto_remaster_tasks("bg")
-                + auto_remaster_tasks("cg")
-                + curated_tasks()
+            if confirm_generation([]) is False:
+                pass
+            all_tasks = (
+                [("ch", auto_remaster_tasks("ch"))]
+                + [("bg", auto_remaster_tasks("bg"))]
+                + [("cg", auto_remaster_tasks("cg"))]
+                + [("curated", curated_tasks())]
             )
+
+            print("\nСтарт полного прогона пакетами:")
+            for cat_name, batch in all_tasks:
+                if not batch:
+                    continue
+                real_cat = "ch" if cat_name == "ch" else "cg"
+                print(f"\n=== Пакет: {cat_name} ===")
+                run_tasks(batch, real_cat, dry_run=False, workers=workers_for_category(real_cat))
+            continue
         elif choice == "7":
             all_tasks = auto_remaster_tasks("ch") + auto_remaster_tasks("bg") + auto_remaster_tasks("cg")
             apply_outputs(all_tasks)
@@ -701,26 +809,23 @@ def menu() -> None:
             continue
 
         if confirm_generation(tasks):
-            run_tasks(tasks, choose_model(), None, False, False, DEFAULT_WORKERS)
+            run_tasks(tasks, category, dry_run=False, workers=workers_for_category(category))
 
 
 def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Purple Shift GPT Image 2.5 art pipeline via GenAPI")
+    p = argparse.ArgumentParser(description="Purple Shift GPT Image 2.5 OVERDRIVE art pipeline via GenAPI")
     p.add_argument("--menu", action="store_true")
     p.add_argument("--category", choices=["ch", "bg", "cg", "curated", "all"])
-    p.add_argument("--model", default=DEFAULT_MODEL, choices=[DEFAULT_MODEL, FAST_MODEL])
-    p.add_argument("--quality", choices=["low", "medium", "high", "xhigh", "max"])
-    p.add_argument("--force", action="store_true")
     p.add_argument("--dry-run", action="store_true")
-    p.add_argument("--task", help="Запустить одну curated-задачу по id")
     p.add_argument("--apply", choices=["ch", "bg", "cg", "all"])
-    p.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="Одновременных генераций (1-10, по умолчанию 5)")
+    p.add_argument("--workers", type=int, default=None, help="Одновременных генераций")
     return p.parse_args()
 
 
 def main() -> None:
     args = parse_args()
-    if args.menu or (not args.category and not args.task and not args.apply):
+
+    if args.menu or (not args.category and not args.apply):
         menu()
         return
 
@@ -732,18 +837,23 @@ def main() -> None:
         apply_outputs(tasks)
         return
 
-    if args.task:
-        tasks = [t for t in curated_tasks() if t.get("id") == args.task]
-        if not tasks:
-            raise SystemExit(f"Не найдена задача: {args.task}")
+    if args.category == "ch":
+        run_tasks(auto_remaster_tasks("ch"), "ch", dry_run=args.dry_run, workers=args.workers)
+    elif args.category == "bg":
+        run_tasks(auto_remaster_tasks("bg"), "bg", dry_run=args.dry_run, workers=args.workers)
+    elif args.category == "cg":
+        run_tasks(auto_remaster_tasks("cg"), "cg", dry_run=args.dry_run, workers=args.workers)
     elif args.category == "curated":
-        tasks = curated_tasks()
+        run_tasks(curated_tasks(), "cg", dry_run=args.dry_run, workers=args.workers)
     elif args.category == "all":
-        tasks = auto_remaster_tasks("ch") + auto_remaster_tasks("bg") + auto_remaster_tasks("cg") + curated_tasks()
-    else:
-        tasks = auto_remaster_tasks(args.category)
-
-    run_tasks(tasks, args.model, args.quality, args.force, args.dry_run, args.workers)
+        print("=== CHARACTERS ===")
+        run_tasks(auto_remaster_tasks("ch"), "ch", dry_run=args.dry_run, workers=args.workers or CHAR_WORKERS)
+        print("\n=== BACKGROUNDS ===")
+        run_tasks(auto_remaster_tasks("bg"), "bg", dry_run=args.dry_run, workers=args.workers or SCENE_WORKERS)
+        print("\n=== CG ===")
+        run_tasks(auto_remaster_tasks("cg"), "cg", dry_run=args.dry_run, workers=args.workers or SCENE_WORKERS)
+        print("\n=== CURATED ===")
+        run_tasks(curated_tasks(), "cg", dry_run=args.dry_run, workers=args.workers or SCENE_WORKERS)
 
 
 if __name__ == "__main__":
