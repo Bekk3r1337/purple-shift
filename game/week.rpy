@@ -468,6 +468,15 @@ label chapter4_day_four:
     with dissolve
 
     $ ps_set_ambience("quiet")
+    $ ps_unlock_cg("breakroom_preconflict")
+
+    show screen ps_cinematic_bars
+    scene cg breakroom_preconflict at ps_cg_reveal
+    with dissolve
+    n "В комнате отдыха все оказываются за одним столом. Никто не спорит, но пауза между фразами уже звучит как начало разговора."
+    scene bg break_room
+    with dissolve
+    hide screen ps_cinematic_bars
 
     call screen ps_break_choice
     $ ps_break_target = _return
@@ -748,6 +757,17 @@ label chapter5_day_five:
 
     n "Первый час подъёмник работает. Второй — тоже. На третьем платформа останавливается между уровнями."
 
+    $ ps_unlock_cg("conveyor_incident")
+    show screen ps_cinematic_bars
+    scene cg conveyor_incident at ps_cg_reveal
+    with ps_alarm_cut
+    show vfx light_pulse at ps_vp2_vfx_flash
+    n "Линия продолжает двигаться ещё несколько секунд, хотя подъёмник уже стоит. Виктор тянет Леру назад от края платформы."
+    hide vfx light_pulse
+    scene bg warehouse_alert
+    with dissolve
+    hide screen ps_cinematic_bars
+
     if renpy.loadable("audio/alarm_low.ogg"):
         play sound "audio/alarm_low.ogg"
 
@@ -861,11 +881,17 @@ label chapter5_day_five:
 
             n "Проходя мимо, он не смотрит на тебя."
 
+    $ ps_unlock_cg("artem_emergency_stop")
     $ ps_unlock_cg("emergency_stop")
     $ ps_play_sfx("emergency")
     show screen ps_cinematic_bars
-    scene cg emergency_stop at ps_cg_reveal
+    scene cg artem_emergency_stop at ps_cg_reveal
     with ps_alarm_cut
+
+    n "Артём задерживает ладонь над аварийной кнопкой всего на секунду. Потом нажимает."
+
+    scene cg emergency_stop at ps_cg_reveal
+    with dissolve
 
     n "После нажатия красной кнопки платформа замирает. Люди отходят от неё и пересчитываются по участкам."
 
@@ -893,6 +919,15 @@ label chapter5_day_five:
 
     scene bg locker_room
     with fade
+
+    $ ps_unlock_cg("lera_locker_alone")
+    show screen ps_cinematic_bars
+    scene cg lera_locker_alone at ps_cg_reveal
+    with dissolve
+    n "На минуту Лера остаётся одна у шкафчиков. В металлической дверце за её плечом держится тонкий фиолетовый отблеск, хотя лампы над ней белые."
+    scene bg locker_room
+    with dissolve
+    hide screen ps_cinematic_bars
 
     show newb tired at ps_left
     with dissolve
@@ -1025,6 +1060,17 @@ label chapter6_day_six:
     call ps_run_inspection("service_scan")
     call ps_reactive_echo_scene(6)
 
+    $ ps_unlock_cg("first_impossible_reflection")
+    show screen ps_cinematic_bars
+    scene cg first_impossible_reflection at ps_cg_reveal
+    with ps_violet_cut
+    show vfx memory_fracture at ps_vp2_vfx_memory
+    n "По пути обратно отражение в тёмном стекле запаздывает на полшага. Когда ты останавливаешься, оно ещё мгновение продолжает идти."
+    hide vfx memory_fracture
+    scene bg service_corridor
+    with dissolve
+    hide screen ps_cinematic_bars
+
     n "Через два часа тебя вызывают в маленькую комнату у линии."
 
     call ps_route_climax
@@ -1039,6 +1085,15 @@ label chapter6_day_six:
     with fade
 
     $ ps_set_ambience("quiet")
+    $ ps_unlock_cg("artem_curator_private")
+
+    show screen ps_cinematic_bars
+    scene cg artem_curator_private at ps_cg_reveal
+    with dissolve
+    n "Перед тем как войти, ты успеваешь увидеть Артёма и Куратора без свидетелей. Артём говорит тихо; Куратор отвечает ещё тише."
+    scene bg control_room
+    with dissolve
+    hide screen ps_cinematic_bars
 
     show sv tired at ps_left
     show cur stern at ps_right
@@ -1478,10 +1533,18 @@ label chapter7_day_seven:
     )
 
     $ ps_unlock_cg("storm_first_contact", True)
+    $ ps_unlock_cg("viktor_protective_moment")
     show screen ps_cinematic_bars
     scene cg storm_first_contact at ps_cg_reveal
     with ps_violet_cut
+    show vfx violet_seam at ps_vp2_vfx_soft
     n "Лера первой замечает, что это уже не обычный сбой: фиолетовый разрез света остаётся на месте, даже когда лампы гаснут."
+    hide vfx violet_seam
+
+    scene cg viktor_protective_moment at ps_cg_reveal
+    with dissolve
+    n "Когда разрез света дёргается ближе к линии, Виктор без раздумий оттаскивает Леру на шаг назад."
+
     scene bg warehouse_storm
     with dissolve
     hide screen ps_cinematic_bars
@@ -1976,6 +2039,16 @@ label ending_common:
     $ ps_evaluate_achievements()
     $ ps_finish_run()
 
+    if ps_final_ending != "exit":
+        $ ps_unlock_cg("empty_shift_aftershock")
+        show screen ps_cinematic_bars
+        scene cg empty_shift_aftershock at ps_cg_reveal
+        with fade
+        n "Когда шум стихает, склад впервые за неделю кажется по-настоящему пустым. На мокром металле всё ещё остаётся неправильный фиолетовый отблеск."
+        hide screen ps_cinematic_bars
+        scene black
+        with dissolve
+
     call screen ps_final_report(
         ps_ending_title(ps_final_ending),
         ps_ending_description(ps_final_ending)
@@ -1992,8 +2065,14 @@ label ending_common:
     call ps2_extended_epilogue
 
     if ps_team_unity >= 5:
+        $ ps_unlock_cg("team_after_gates")
         $ ps_unlock_cg("team_reflection")
         show screen ps_cinematic_bars
+
+        scene cg team_after_gates at ps_cg_reveal
+        with dissolve
+        n "За воротами никто не расходится сразу. Четверо стоят под холодным светом и впервые не ждут команды, чтобы решить, куда идти дальше."
+
         scene cg team_reflection at ps_cg_reveal
         with ps_violet_cut
         n "В стекле диспетчерской отражается вся смена. Когда Лера отходит за курткой, Макс придерживает дверь, а остальные ждут её у выхода."

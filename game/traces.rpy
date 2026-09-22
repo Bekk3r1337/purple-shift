@@ -786,6 +786,9 @@ label ps_show_consequence_echo(day):
 
 screen ps_archive_panel():
 
+    add Transform("images/ui/v2/gallery_bg.jpg", alpha=0.18)
+    add Solid("#08030f66")
+
     vbox:
         spacing 15
         xfill True

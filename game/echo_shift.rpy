@@ -407,6 +407,7 @@ screen ps_deep_investigation_board():
 
     add "bg control_room" at ps_cinematic_background
     add Solid("#06030be8")
+    use ps_vp2_terminal_fx(0.24)
 
     frame:
         xalign 0.5
@@ -570,6 +571,7 @@ screen ps_storm_mimic():
     add "images/cg/mimic_message.jpg" at ps_cinematic_background:
         alpha 0.24
     add Solid("#7d34a838") at ps_signal_breathe
+    use ps_vp2_terminal_fx(0.34)
 
     frame:
         xalign 0.5
@@ -1345,19 +1347,28 @@ label ps_storm_mimic_scene:
     $ ps_storm_mimic_choice = None
     $ ps_unlock_cg("mimic_message")
     $ ps_unlock_cg("v13_false_memory")
+    $ ps_unlock_cg("max_terminal_night")
     $ ps_set_ambience("service")
     $ ps_play_sfx("radio")
 
     show screen ps_cinematic_bars
     scene cg v13_false_memory at ps_cg_reveal
     with ps_violet_cut
+    show vfx memory_fracture at ps_vp2_vfx_memory
 
     n "На долю секунды память подсовывает лишнего человека в знакомой сцене. Отводишь взгляд — и остаётся только экран телефона."
+    hide vfx memory_fracture
+
+    scene cg max_terminal_night at ps_cg_reveal
+    with dissolve
+    n "На одном из восстановленных кадров Макс сидит у терминала один. На его лице впервые нет привычной шутки."
 
     scene cg mimic_message at ps_cg_reveal
     with dissolve
+    show vfx glitch_overlay at ps_vp2_vfx_soft
 
     n "Телефон показывает четыре сообщения с разницей в одну минуту. Все отправлены с настоящих контактов. Но одно просит человека сделать именно то, чего он боялся всю неделю."
+    hide vfx glitch_overlay
 
     hide screen ps_cinematic_bars
     call screen ps_storm_mimic

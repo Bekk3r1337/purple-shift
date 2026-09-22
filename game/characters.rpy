@@ -26,22 +26,13 @@ image ps_bg_purple = Solid("#1b0f2a")
 image ps_bg_soft = Solid("#120a1f")
 
 image bg room_morning = "images/bg/room_morning.jpg"
-image bg room_night = Transform(
-    "images/bg/room_morning.jpg",
-    matrixcolor=TintMatrix("#7770aa") * BrightnessMatrix(-0.35)
-)
+image bg room_night = "images/bg/room_night.jpg"
 image bg stairwell = "images/bg/stairwell.jpg"
 image bg street_night = "images/bg/street_night.jpg"
 image bg warehouse_outside = "images/bg/warehouse_outside.jpg"
 image bg warehouse_inside = "images/bg/warehouse_inside.jpg"
-image bg warehouse_alert = Transform(
-    "images/bg/warehouse_inside.jpg",
-    matrixcolor=TintMatrix("#b984d6") * BrightnessMatrix(-0.12)
-)
-image bg warehouse_cold = Transform(
-    "images/bg/warehouse_inside.jpg",
-    matrixcolor=TintMatrix("#87a7c7") * BrightnessMatrix(-0.22)
-)
+image bg warehouse_alert = "images/bg/warehouse_alert.jpg"
+image bg warehouse_cold = "images/bg/warehouse_cold.jpg"
 image bg control_room = "images/bg/control_room.jpg"
 image bg locker_room = "images/bg/locker_room.jpg"
 image bg break_room = "images/bg/break_room.jpg"
