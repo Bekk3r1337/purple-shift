@@ -106,7 +106,7 @@ screen say(who, what):
             id "who"
             style "ps_speaker_name"
             xpos 124
-            ypos 650
+            ypos 720
             xanchor 0.0
             yanchor 0.5
             text_align 0.0
@@ -228,10 +228,10 @@ screen choice(items):
 
     add Solid("#030106") alpha 0.08
 
-    # The generated art is the button frame. Only keep as many rails as there
-    # are options; the clickable/text layer itself stays completely transparent.
+    # The generated art is the button frame. Crop it just below the last
+    # requested rail so an empty next rail never leaks into shorter menus.
     $ ps_choice_slots = min(max(len(items), 1), 4)
-    $ ps_choice_crop_h = {1: 370, 2: 540, 3: 710, 4: 1080}[ps_choice_slots]
+    $ ps_choice_crop_h = {1: 372, 2: 534, 3: 696, 4: 1080}[ps_choice_slots]
     add Transform(
         "images/ui/v2/choice_overlay.png",
         crop=(0, 0, 1920, ps_choice_crop_h),
@@ -247,18 +247,23 @@ screen choice(items):
                 alt i.caption
                 style "ps_choice_button"
                 xpos 300
-                ypos ps_choice_centers[ps_choice_index]
+                ypos ps_choice_centers[ps_choice_index] - 62
                 xanchor 0.0
-                yanchor 0.5
+                yanchor 0.0
                 xsize 1260
-                ysize 108
+                ysize 124
 
-                text i.caption:
-                    style "ps_choice_button_text"
-                    xpos 24
-                    xanchor 0.0
-                    yalign 0.5
-                    xsize 1160
+                fixed:
+                    xsize 1260
+                    ysize 124
+
+                    text i.caption:
+                        style "ps_choice_button_text"
+                        xpos 30
+                        ypos 62
+                        xanchor 0.0
+                        yanchor 0.5
+                        xsize 1140
 
 
 style choice_vbox is vbox
@@ -1777,12 +1782,11 @@ style ps_choice_button is button:
 style ps_choice_button_hover is ps_choice_button:
     background None
 
-style ps_choice_button_text is button_text:
+style ps_choice_button_text is text:
     color "#eee8ff"
     hover_color "#ffffff"
     insensitive_color "#9d8cad"
     size 29
-    xalign 0.0
     text_align 0.0
     outlines [(1, "#3f2362aa", 0, 0)]
 
