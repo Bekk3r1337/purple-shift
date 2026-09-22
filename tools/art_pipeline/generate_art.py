@@ -851,14 +851,15 @@ def menu() -> None:
             category = "cg"
             tasks = curated_tasks()
         elif choice == "6":
-            if confirm_generation([]) is False:
-                pass
             all_tasks = (
                 [("ch", auto_remaster_tasks("ch"))]
                 + [("bg", auto_remaster_tasks("bg"))]
                 + [("cg", auto_remaster_tasks("cg"))]
                 + [("curated", curated_tasks())]
             )
+            total_tasks = sum(len(batch) for _, batch in all_tasks)
+            if not confirm_generation([None] * total_tasks):
+                continue
 
             print("\nСтарт полного прогона пакетами:")
             for cat_name, batch in all_tasks:
