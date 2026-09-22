@@ -157,6 +157,20 @@ image cg storm_first_contact = ConditionSwitch(
     "True", "images/cg/storm_signal.jpg",
 )
 
+init 35 python:
+    ps_curated_cgs = [
+        ("team_break_cinematic", "Пять минут вместе", "images/cg/team_break_cinematic.jpg"),
+        ("v13_false_memory", "Лишний человек", "images/cg/v13_false_memory.jpg"),
+        ("zero_shift_v2", "Нулевая смена - ремастер", "images/cg/zero_shift_v2.jpg"),
+        ("storm_first_contact", "Первый разрез Шторма", "images/cg/storm_first_contact.jpg"),
+    ]
+
+    if "ps_cg_catalog" in globals():
+        known_cg_ids = {item[0] for item in ps_cg_catalog}
+        for cg_item in ps_curated_cgs:
+            if cg_item[0] not in known_cg_ids:
+                ps_cg_catalog.append(cg_item)
+
 
 ################################################################################
 ## Позиции персонажей
