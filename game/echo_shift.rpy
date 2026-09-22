@@ -1349,6 +1349,7 @@ label ps_storm_mimic_scene:
     $ ps_unlock_cg("v13_false_memory")
     $ ps_unlock_cg("max_terminal_night")
     $ ps_set_ambience("service")
+    $ ps_play_ost("v13_memory", fadein=0.8)
     $ ps_play_sfx("radio")
 
     show screen ps_cinematic_bars

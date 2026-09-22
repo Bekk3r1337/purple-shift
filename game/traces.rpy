@@ -2387,7 +2387,7 @@ label ps_storm_teaser:
     scene bg service_corridor
     with fade
 
-    play music "audio/night_shift.mp3" fadein 2.0 loop
+    $ ps_play_ost("ordinary_shift", fadein=2.0)
     $ ps_set_ambience("service")
     $ ps_play_sfx("radio")
     show screen ps_cinematic_bars
