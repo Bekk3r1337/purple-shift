@@ -3,7 +3,8 @@ PURPLE SHIFT VISUAL BIBLE
 Create artwork for a serious modern cinematic visual novel set around a contemporary warehouse and the anomalous Purple Storm.
 
 Core style:
-- polished semi-realistic anime / cinematic visual-novel illustration
+- polished 2D semi-realistic anime / cinematic visual-novel illustration
+- clearly illustrated artwork, never live-action photography, never photorealistic portraiture, never 3D render
 - grounded modern Russian / Eastern European urban-industrial reality
 - believable warehouse architecture, practical work clothing and real materials
 - expressive but natural faces; avoid generic glossy AI-anime look
@@ -12,19 +13,28 @@ Core style:
 - purple is an anomaly accent, not a permanent neon wash over everything
 - ordinary reality should remain readable and believable so the Storm feels intrusive
 
+Character continuity is mandatory:
+- the same named character must keep the same face geometry across every sprite and CG
+- preserve eye shape, nose, jaw, hairstyle, hairline, apparent age, body proportions and uniform design
+- never turn one expression variant into a different-looking person
+- never age a character up or down
+- never change ethnicity, hairstyle, facial structure or wardrobe unless a task explicitly requests it
+- when multiple references of one character are supplied, REFERENCE 1 is the canonical identity anchor
+- additional references are pose/expression/context references only
+- improve rendering without redesigning the person
+- all cast members must share one coherent 2D visual-novel rendering language
+
 Purple Storm language:
 - subtle impossible violet light, spatial seams, refraction, memory-like afterimages and wrong reflections
 - occasional "impossible extra element" motifs, but never random fantasy magic clutter
 - no medieval fantasy, no magical armor, no cyberpunk city redesign, no sci-fi spacesuits
 - V-13 visuals may feel archival, surveillance-like and slightly wrong, but remain grounded in the warehouse world
 
-Continuity rules:
-- preserve recurring character identity across every image
-- when references are supplied, treat face, hair, body proportions, clothing and silhouette as canonical
-- do not change a character's apparent age, ethnicity, hairstyle or wardrobe unless the task explicitly asks for it
+Environment continuity:
 - preserve location layout and major landmarks when a background reference is supplied
+- do not change camera geography unless explicitly requested
 - do not add text, subtitles, logos, signatures or watermarks unless explicitly requested
 - no decorative borders
 
 Production target:
-The result should look like a consistent commercial visual novel, not a collection of unrelated AI generations.
+The result should look like one consistent commercial visual novel made by one art team, not a collection of unrelated AI generations.

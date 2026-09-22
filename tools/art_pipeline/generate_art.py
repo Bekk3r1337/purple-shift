@@ -8,6 +8,8 @@ import mimetypes
 import os
 import shutil
 import time
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
 
@@ -39,6 +41,16 @@ DEFAULT_MODEL = "sunburst"
 FAST_MODEL = "flare"
 POLL_SECONDS = 5
 POLL_TIMEOUT_SECONDS = 15 * 60
+DEFAULT_WORKERS = 5
+LOG_LOCK = threading.Lock()
+
+CHARACTER_CANONICAL = {
+    "nov": "game/images/ch/nov_relief.png",
+    "vet": "game/images/ch/vet1.png",
+    "mem": "game/images/ch/mem_serious.png",
+    "super": "game/images/ch/super_stern.png",
+    "curator": "game/images/ch/curator.png",
+}
 
 CATEGORY_DIRS = {
     "ch": ROOT / "game" / "images" / "ch",
@@ -48,10 +60,13 @@ CATEGORY_DIRS = {
 
 CATEGORY_PROMPTS = {
     "ch": (
-        "Create a production-quality remaster of this exact visual-novel character sprite. "
-        "Preserve identity, face shape, hair, clothing, body proportions, pose intent and emotion. "
-        "Improve anatomy, line confidence, material rendering, facial detail and lighting consistency. "
-        "Full-body sprite, clean silhouette, transparent background. Do not redesign the character."
+        "IDENTITY-LOCKED sprite remaster. REFERENCE 1 is the canonical identity anchor for this exact character. "
+        "If REFERENCE 2 is present, use it ONLY for the target pose/expression/variant; do not borrow a new face from it. "
+        "The output must unmistakably be the same person as REFERENCE 1: same face geometry, eyes, nose, jaw, hair, "
+        "apparent age, body proportions, work uniform design and silhouette. Preserve the target sprite's pose and emotion. "
+        "Do not beautify, age up/down, masculinize/feminize, photorealize, redesign or change hairstyle/clothes. "
+        "Only improve drawing cleanliness, anatomy, hands, fabric rendering, line confidence and subtle lighting. "
+        "Full-body 2D visual-novel sprite, transparent background."
     ),
     "bg": (
         "Create a production-quality cinematic remaster of this exact visual-novel background. "
@@ -164,17 +179,48 @@ def api_size_for(category: str) -> str:
     return "1024x1536" if category == "ch" else "1920x1080"
 
 
+def character_identity_refs(source: Path, rel: str) -> list[str]:
+    stem = source.stem.lower()
+    if stem.startswith("nov"):
+        key = "nov"
+    elif stem.startswith("vet"):
+        key = "vet"
+    elif stem.startswith("mem"):
+        key = "mem"
+    elif stem.startswith("super"):
+        key = "super"
+    elif stem.startswith("curator"):
+        key = "curator"
+    else:
+        return [rel]
+
+    anchor = CHARACTER_CANONICAL[key]
+    if anchor == rel:
+        return [anchor]
+    return [anchor, rel]
+
+
 def auto_remaster_tasks(category: str) -> list[dict]:
     source_dir = CATEGORY_DIRS[category]
     tasks = []
     for source in image_files(source_dir):
         rel = source.relative_to(ROOT).as_posix()
-        target = (OUTPUT_ROOT / "remaster" / category / source.name).relative_to(ROOT).as_posix()
+
+        if category == "ch":
+            # Keep the failed first-pass remasters untouched for comparison.
+            # The locked pass goes to a new folder and always uses one canonical
+            # face anchor for every expression of the same character.
+            target = (OUTPUT_ROOT / "remaster_locked" / category / source.name).relative_to(ROOT).as_posix()
+            refs = character_identity_refs(source, rel)
+        else:
+            target = (OUTPUT_ROOT / "remaster" / category / source.name).relative_to(ROOT).as_posix()
+            refs = [rel]
+
         tasks.append({
             "id": f"remaster-{category}-{source.stem}",
             "category": category,
             "mode": "edit",
-            "refs": [rel],
+            "refs": refs,
             "target": target,
             "apply_to": rel,
             "prompt": CATEGORY_PROMPTS[category],
@@ -303,7 +349,7 @@ def resolve_result_bytes(item, api_key: str) -> bytes:
         raise RuntimeError("GenAPI вернул результат в неизвестном формате") from exc
 
 
-def wait_for_result(request_id: str | int, api_key: str) -> dict:
+def wait_for_result(request_id: str | int, api_key: str, label: str = "") -> dict:
     deadline = time.time() + POLL_TIMEOUT_SECONDS
     url = f"{GENAPI_BASE}/request/get/{request_id}"
 
@@ -320,9 +366,9 @@ def wait_for_result(request_id: str | int, api_key: str) -> dict:
 
         progress = data.get("progress")
         if progress is not None:
-            print(f"  GenAPI: {status or 'processing'}, {progress}%")
+            print(f"  [{label}] GenAPI: {status or 'processing'}, {progress}%")
         else:
-            print(f"  GenAPI: {status or 'processing'}")
+            print(f"  [{label}] GenAPI: {status or 'processing'}")
         time.sleep(POLL_SECONDS)
 
     raise TimeoutError("GenAPI не завершил генерацию за 15 минут.")
@@ -409,8 +455,8 @@ def call_genapi(api_key: str, task: dict, model: str, quality_override: str | No
     if not request_id:
         raise RuntimeError(f"GenAPI не вернул request_id: {data}")
 
-    print(f"  GenAPI request_id: {request_id}")
-    return wait_for_result(request_id, api_key)
+    print(f"  [{task.get('id', 'task')}] GenAPI request_id: {request_id}")
+    return wait_for_result(request_id, api_key, task.get("id", "task"))
 
 
 def save_genapi_result(data: dict, target: Path, task: dict, api_key: str) -> None:
@@ -426,18 +472,63 @@ def save_genapi_result(data: dict, target: Path, task: dict, api_key: str) -> No
 
 def append_log(record: dict) -> None:
     OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
-    with LOG_PATH.open("a", encoding="utf-8") as f:
-        f.write(json.dumps(record, ensure_ascii=False) + "\n")
+    with LOG_LOCK:
+        with LOG_PATH.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 
-def run_tasks(tasks: list[dict], model: str, quality_override: str | None, force: bool, dry_run: bool) -> None:
+def run_one_task(task: dict, api_key: str, model: str, quality_override: str | None, force: bool) -> dict:
+    target = ROOT / task["target"]
+    task_id = task.get("id", "task")
+
+    if target.exists() and not force:
+        return {"task": task_id, "status": "skip", "target": str(target.relative_to(ROOT)), "seconds": 0.0, "error": None}
+
+    started = time.time()
+    status = "ok"
+    error = None
+    try:
+        print(f"  START [{task_id}]")
+        result = call_genapi(api_key, task, model=model, quality_override=quality_override)
+        save_genapi_result(result, target, task, api_key)
+        print(f"  OK    [{task_id}] -> {target.relative_to(ROOT)}")
+    except Exception as exc:
+        status = "error"
+        error = repr(exc)
+        print(f"  ERROR [{task_id}]: {exc}")
+
+    record = {
+        "time": datetime.now().isoformat(timespec="seconds"),
+        "task": task_id,
+        "status": status,
+        "target": task.get("target"),
+        "provider": "genapi",
+        "model": f"{GENAPI_NETWORK}:{model}",
+        "seconds": round(time.time() - started, 2),
+        "error": error,
+    }
+    append_log(record)
+    return record
+
+
+def run_tasks(
+    tasks: list[dict],
+    model: str,
+    quality_override: str | None,
+    force: bool,
+    dry_run: bool,
+    workers: int = DEFAULT_WORKERS,
+) -> None:
     if not tasks:
         print("Нет задач.")
         return
 
+    workers = max(1, min(int(workers), 10))
+
     print(f"\nЗадач: {len(tasks)}")
-    print(f"Провайдер: GenAPI")
+    print("Провайдер: GenAPI")
     print(f"Модель: GPT Image 2.5 / {model}")
+    print(f"Параллельно: до {workers} генераций")
     if quality_override:
         print(f"Качество override: {quality_override}")
 
@@ -456,35 +547,38 @@ def run_tasks(tasks: list[dict], model: str, quality_override: str | None, force
     api_key = ensure_api_key()
     validate_key(api_key)
 
-    for i, task in enumerate(tasks, 1):
+    runnable = []
+    for task in tasks:
         target = ROOT / task["target"]
-        print(f"\n[{i}/{len(tasks)}] {task['id']}")
         if target.exists() and not force:
-            print(f"  SKIP: уже существует {target.relative_to(ROOT)}")
-            continue
+            print(f"  SKIP  [{task['id']}] уже существует {target.relative_to(ROOT)}")
+        else:
+            runnable.append(task)
 
-        started = time.time()
-        status = "ok"
-        error = None
-        try:
-            result = call_genapi(api_key, task, model=model, quality_override=quality_override)
-            save_genapi_result(result, target, task, api_key)
-            print(f"  OK -> {target.relative_to(ROOT)}")
-        except Exception as exc:
-            status = "error"
-            error = repr(exc)
-            print(f"  ERROR: {exc}")
+    if not runnable:
+        print("Все результаты уже существуют.")
+        return
 
-        append_log({
-            "time": datetime.now().isoformat(timespec="seconds"),
-            "task": task.get("id"),
-            "status": status,
-            "target": task.get("target"),
-            "provider": "genapi",
-            "model": f"{GENAPI_NETWORK}:{model}",
-            "seconds": round(time.time() - started, 2),
-            "error": error,
-        })
+    ok = 0
+    errors = 0
+    with ThreadPoolExecutor(max_workers=min(workers, len(runnable))) as pool:
+        future_map = {
+            pool.submit(run_one_task, task, api_key, model, quality_override, force): task
+            for task in runnable
+        }
+        for future in as_completed(future_map):
+            try:
+                record = future.result()
+                if record["status"] == "ok":
+                    ok += 1
+                elif record["status"] == "error":
+                    errors += 1
+            except Exception as exc:
+                errors += 1
+                task = future_map[future]
+                print(f"  ERROR [{task.get('id', 'task')}]: {exc}")
+
+    print(f"\nГотово. Успешно: {ok}, ошибок: {errors}.")
 
 
 def apply_outputs(tasks: list[dict]) -> None:
@@ -541,7 +635,7 @@ def menu() -> None:
         print(" PURPLE SHIFT - GPT IMAGE 2.5 / GenAPI ART PIPELINE")
         print("=" * 72)
         print("1. Показать план curated-артов без генерации")
-        print("2. Ремастер всех персонажей")
+        print("2. Ремастер персонажей с жёсткой фиксацией лиц (5 параллельно)")
         print("3. Ремастер всех фонов")
         print("4. Ремастер всех CG")
         print("5. Сгенерировать новые curated-арты")
@@ -551,7 +645,7 @@ def menu() -> None:
         choice = input("\nВыбор: ").strip()
 
         if choice == "1":
-            run_tasks(curated_tasks(), DEFAULT_MODEL, None, False, True)
+            run_tasks(curated_tasks(), DEFAULT_MODEL, None, False, True, DEFAULT_WORKERS)
             continue
         if choice == "8":
             return
@@ -580,7 +674,7 @@ def menu() -> None:
             continue
 
         if confirm_generation(tasks):
-            run_tasks(tasks, choose_model(), None, False, False)
+            run_tasks(tasks, choose_model(), None, False, False, DEFAULT_WORKERS)
 
 
 def parse_args() -> argparse.Namespace:
@@ -593,6 +687,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--dry-run", action="store_true")
     p.add_argument("--task", help="Запустить одну curated-задачу по id")
     p.add_argument("--apply", choices=["ch", "bg", "cg", "all"])
+    p.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="Одновременных генераций (1-10, по умолчанию 5)")
     return p.parse_args()
 
 
@@ -621,7 +716,7 @@ def main() -> None:
     else:
         tasks = auto_remaster_tasks(args.category)
 
-    run_tasks(tasks, args.model, args.quality, args.force, args.dry_run)
+    run_tasks(tasks, args.model, args.quality, args.force, args.dry_run, args.workers)
 
 
 if __name__ == "__main__":
