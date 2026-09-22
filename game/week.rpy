@@ -51,7 +51,7 @@ label chapter3_day_three:
 
     mem "Я слишком ценный специалист. Меня берегут от ответственности."
 
-    show vet neutral at ps_right
+    show vet warm at ps_right
     with dissolve
 
     vet "Не слушай. Его от ответственности уже ничего не спасёт."
@@ -477,7 +477,7 @@ label chapter4_day_four:
         $ ps_newbie_trust += 2
         $ ps_team_unity += 1
 
-        show newb relief at ps_enter_right
+        show newb neutral at ps_enter_right
         with dissolve
 
         p "Как ты?"
@@ -489,6 +489,8 @@ label chapter4_day_four:
             newb "Я запомню."
             n "Лера не отвечает, но и не уходит до конца перерыва."
         else:
+            show newb angry at ps_enter_right
+            with dissolve
             newb "Злюсь."
             p "Это лучше, чем бояться."
             newb "Гораздо."
@@ -979,7 +981,7 @@ label chapter6_day_six:
     $ ps_set_ambience("warehouse")
     $ ps_set_curator_name()
 
-    show cur at ps_center
+    show cur smile at ps_center
     with dissolve
 
     n "Морозов стоит перед экраном рейтинга в чистом пальто и с гостевым пропуском поверх рубашки."
@@ -1038,8 +1040,8 @@ label chapter6_day_six:
 
     $ ps_set_ambience("quiet")
 
-    show sv stern at ps_left
-    show cur at ps_right
+    show sv tired at ps_left
+    show cur stern at ps_right
     with dissolve
 
     n "На столе три листа. Контейнер. Недостача. Подъёмник."
@@ -1484,14 +1486,14 @@ label chapter7_day_seven:
     call ps2_final_convergence
     call ps21_route_finale_setup
 
-    scene bg control_room
+    scene bg control_room_storm
     with dissolve
 
     play music "audio/night_shift.mp3" fadein 1.0 loop
 
-    show sv stern at ps_left
-    show newb worried at ps_right
-    show mem serious at ps_center
+    show sv tired at ps_left
+    show newb scared at ps_right
+    show mem nervous at ps_center
     with dissolve
 
     mem "Ну. Финальный босс всё-таки пришёл."
@@ -1650,13 +1652,13 @@ label chapter7_day_seven:
 ################################################################################
 
 label ending_truth:
-    scene bg control_room
+    scene bg control_room_storm
     with dissolve
 
     n "Общий экран гаснет. Потом включается снова. Но вместо рейтинга на нём — журнал."
 
-    show cur at ps_right
-    show sv stern at ps_left
+    show cur stern at ps_right
+    show sv soft at ps_left
     with dissolve
 
     cur "Убери это."
@@ -1740,12 +1742,12 @@ label ending_people:
 
 
 label ending_voice:
-    scene bg warehouse_alert
+    scene bg warehouse_storm
     with dissolve
 
     n "Команды повторяют от человека к человеку. Правую линию освобождают. Тяжёлый товар остаётся на месте. Никто не спорит с красным экраном."
 
-    show mem serious at ps_left
+    show mem angry at ps_left
     with dissolve
 
     mem "Левая чистая!"
