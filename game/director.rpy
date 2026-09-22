@@ -553,7 +553,7 @@ init python:
 transform ps_enter_left:
     xalign -0.08
     yalign 1.0
-    yoffset 188
+    yoffset 360
     zoom 0.71
     alpha 0.0
     ease 0.55 xalign 0.23 alpha 1.0
@@ -562,7 +562,7 @@ transform ps_enter_left:
 transform ps_enter_right:
     xalign 1.08
     yalign 1.0
-    yoffset 188
+    yoffset 360
     zoom 0.73
     alpha 0.0
     ease 0.55 xalign 0.77 alpha 1.0
