@@ -377,6 +377,8 @@ init 18 python:
         )
 
     def ps_main_menu_art():
+        if persistent.ps_true_shift_unlocked and renpy.loadable("images/cg/zero_shift_v2.jpg"):
+            return "images/cg/zero_shift_v2.jpg"
         if persistent.ps_true_shift_unlocked and renpy.loadable("images/cg/zero_shift.jpg"):
             return "images/cg/zero_shift.jpg"
         if persistent.ps_storm_decoded and renpy.loadable("images/cg/named_shift.jpg"):
@@ -1342,12 +1344,18 @@ label ps_storm_mimic_scene:
     $ ps_storm_mimic_seen = True
     $ ps_storm_mimic_choice = None
     $ ps_unlock_cg("mimic_message")
+    $ ps_unlock_cg("v13_false_memory")
     $ ps_set_ambience("service")
     $ ps_play_sfx("radio")
 
     show screen ps_cinematic_bars
-    scene cg mimic_message at ps_cg_reveal
+    scene cg v13_false_memory at ps_cg_reveal
     with ps_violet_cut
+
+    n "На долю секунды память подсовывает лишнего человека в знакомой сцене. Отводишь взгляд — и остаётся только экран телефона."
+
+    scene cg mimic_message at ps_cg_reveal
+    with dissolve
 
     n "Телефон показывает четыре сообщения с разницей в одну минуту. Все отправлены с настоящих контактов. Но одно просит человека сделать именно то, чего он боялся всю неделю."
 
@@ -1482,6 +1490,7 @@ label ps_zero_shift:
     $ persistent.ps_true_shift_unlocked = True
     $ renpy.save_persistent()
     $ ps_unlock_cg("zero_shift", notify=True)
+    $ ps_unlock_cg("zero_shift_v2", notify=False)
     $ ps_collect_document("zero_roster")
     $ ps_unlock_achievement("zero_shift")
     $ ps_record_storm_transmission("zero_shift")
@@ -1521,7 +1530,7 @@ label ps_zero_shift:
     n "За бетонной дверью щёлкает реле. По очереди загораются пять индикаторов — ровно столько, сколько людей стоит в коридоре."
 
     show screen ps_cinematic_bars
-    scene cg zero_shift at ps_cg_reveal
+    scene cg zero_shift_v2 at ps_cg_reveal
     with ps_violet_cut
 
     n "На старом табло появляются фамилии сотрудников, которых давно нет в графике. Последняя строка остаётся пустой, пока ты не подходишь ближе. Система вписывает твоё имя и задаёт первый вопрос без готового ответа: «КТО ПЕРЕДАСТ ЭТУ СМЕНУ?»"

@@ -66,6 +66,26 @@ CATEGORY_DIRS = {
     "cg": ROOT / "game" / "images" / "cg",
 }
 
+CURATED_PROMOTION = [
+    ("ch", "nov_neutral.png"),
+    ("ch", "nov_angry.png"),
+    ("ch", "nov_scared.png"),
+    ("ch", "vet_tired.png"),
+    ("ch", "vet_warm.png"),
+    ("ch", "mem_nervous.png"),
+    ("ch", "mem_angry.png"),
+    ("ch", "super_tired.png"),
+    ("ch", "super_soft.png"),
+    ("ch", "curator_stern.png"),
+    ("ch", "curator_smile.png"),
+    ("bg", "warehouse_storm.jpg"),
+    ("bg", "control_room_storm.jpg"),
+    ("cg", "team_break_cinematic.jpg"),
+    ("cg", "v13_false_memory.jpg"),
+    ("cg", "zero_shift_v2.jpg"),
+    ("cg", "storm_first_contact.jpg"),
+]
+
 CHARACTER_CANONICAL = {
     "nov": "game/images/ch/nov_relief.png",
     "vet": "game/images/ch/vet1.png",
@@ -741,6 +761,50 @@ def apply_outputs(tasks: list[dict]) -> None:
     print(f"Backup: {backup_dir.relative_to(ROOT)}")
 
 
+def promote_curated_outputs() -> None:
+    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    backup_dir = BACKUP_ROOT / stamp / "curated"
+    promoted = 0
+    missing = []
+
+    print("\nПроверяю 17 curated-артов...")
+
+    for category, filename in CURATED_PROMOTION:
+        candidates = [
+            GAME_READY_ROOT / category / filename,
+            OUTPUT_ROOT / "curated" / category / filename,
+            MASTER_ROOT / category / filename,
+        ]
+        src = next((p for p in candidates if p.exists()), None)
+        dst = ROOT / "game" / "images" / category / filename
+
+        if src is None:
+            missing.append(f"{category}/{filename}")
+            print(f"  MISSING {category}/{filename}")
+            continue
+
+        if dst.exists():
+            backup = backup_dir / dst.relative_to(ROOT)
+            backup.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(dst, backup)
+
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src, dst)
+        promoted += 1
+        print(f"  INSTALL {src.relative_to(ROOT)} -> {dst.relative_to(ROOT)}")
+
+    print(f"\nУстановлено curated-артов: {promoted}/17.")
+    if missing:
+        print("Не найдены:")
+        for item in missing:
+            print(f"  - {item}")
+        print("Их можно догенерировать пунктом 5, затем снова запустить установку.")
+    else:
+        print("Все 17 curated-артов установлены в game/images и готовы к коммиту.")
+    if promoted and backup_dir.exists():
+        print(f"Backup: {backup_dir.relative_to(ROOT)}")
+
+
 def confirm_generation(tasks: list[dict]) -> bool:
     print(f"Подготовлено задач: {len(tasks)}")
     print("Режим OVERDRIVE - Sunburst + MAX quality + high-resolution master files.")
@@ -762,6 +826,7 @@ def menu() -> None:
         print("6. ПОЛНЫЙ ПРОГОН: персонажи + фоны + CG + curated")
         print("7. Применить готовые game_ready ремастеры в игру (с backup)")
         print("8. Выйти")
+        print("9. Установить 17 curated-артов в игру")
         choice = input("\nВыбор: ").strip()
 
         if choice == "1":
@@ -769,6 +834,9 @@ def menu() -> None:
             continue
         if choice == "8":
             return
+        if choice == "9":
+            promote_curated_outputs()
+            continue
 
         if choice == "2":
             category = "ch"
@@ -783,14 +851,15 @@ def menu() -> None:
             category = "cg"
             tasks = curated_tasks()
         elif choice == "6":
-            if confirm_generation([]) is False:
-                pass
             all_tasks = (
                 [("ch", auto_remaster_tasks("ch"))]
                 + [("bg", auto_remaster_tasks("bg"))]
                 + [("cg", auto_remaster_tasks("cg"))]
                 + [("curated", curated_tasks())]
             )
+            total_tasks = sum(len(batch) for _, batch in all_tasks)
+            if not confirm_generation([None] * total_tasks):
+                continue
 
             print("\nСтарт полного прогона пакетами:")
             for cat_name, batch in all_tasks:
@@ -818,6 +887,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--category", choices=["ch", "bg", "cg", "curated", "all"])
     p.add_argument("--dry-run", action="store_true")
     p.add_argument("--apply", choices=["ch", "bg", "cg", "all"])
+    p.add_argument("--promote-curated", action="store_true", help="Установить 17 curated-артов из art_output в game/images")
     p.add_argument("--workers", type=int, default=None, help="Одновременных генераций")
     return p.parse_args()
 
@@ -825,8 +895,12 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
 
-    if args.menu or (not args.category and not args.apply):
+    if args.menu or (not args.category and not args.apply and not args.promote_curated):
         menu()
+        return
+
+    if args.promote_curated:
+        promote_curated_outputs()
         return
 
     if args.apply:
