@@ -504,7 +504,7 @@ label ps_human_shift_scene(day):
         $ ps_unlock_cg("human_break", True)
 
         show screen ps_cinematic_bars
-        scene cg human_break at ps_memory_reveal
+        scene cg team_break_cinematic at ps_memory_reveal
         with ps_violet_cut
 
         n "В комнате отдыха впервые собираются все четверо. Их свёл вместе обычный чайник: он закипел ровно тогда, когда у каждого нашлось пять свободных минут."
