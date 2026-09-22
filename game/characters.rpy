@@ -80,82 +80,39 @@ image mem serious = "images/ch/mem_serious.png"
 image mem open = "images/ch/mem_open.png"
 image cur = "images/ch/curator.png"
 
-# Curated OVERDRIVE art. Every image has a safe fallback so the script stays
-# playable even before the generated file is promoted from art_output.
-image newb neutral = ConditionSwitch(
-    "renpy.loadable('images/ch/nov_neutral.png')", "images/ch/nov_neutral.png",
-    "True", "images/ch/nov_relief.png",
-)
-image newb angry = ConditionSwitch(
-    "renpy.loadable('images/ch/nov_angry.png')", "images/ch/nov_angry.png",
-    "True", "images/ch/nov_determined.png",
-)
-image newb scared = ConditionSwitch(
-    "renpy.loadable('images/ch/nov_scared.png')", "images/ch/nov_scared.png",
-    "True", "images/ch/nov1.png",
-)
+# Curated OVERDRIVE art.
+# Register optional assets from Python so Ren'Py lint does not treat
+# not-yet-promoted generated files as hard missing dependencies.
+init -5 python:
+    def ps_optional_art(preferred, fallback):
+        def _pick(st, at):
+            path = preferred if renpy.loadable(preferred) else fallback
+            return renpy.displayable(path), None
+        return renpy.display.layout.DynamicDisplayable(_pick)
 
-image vet tired = ConditionSwitch(
-    "renpy.loadable('images/ch/vet_tired.png')", "images/ch/vet_tired.png",
-    "True", "images/ch/vet_concerned.png",
-)
-image vet warm = ConditionSwitch(
-    "renpy.loadable('images/ch/vet_warm.png')", "images/ch/vet_warm.png",
-    "True", "images/ch/vet1.png",
-)
+    renpy.image("newb neutral", ps_optional_art("images/ch/nov_neutral.png", "images/ch/nov_relief.png"))
+    renpy.image("newb angry", ps_optional_art("images/ch/nov_angry.png", "images/ch/nov_determined.png"))
+    renpy.image("newb scared", ps_optional_art("images/ch/nov_scared.png", "images/ch/nov1.png"))
 
-image mem nervous = ConditionSwitch(
-    "renpy.loadable('images/ch/mem_nervous.png')", "images/ch/mem_nervous.png",
-    "True", "images/ch/mem_serious.png",
-)
-image mem angry = ConditionSwitch(
-    "renpy.loadable('images/ch/mem_angry.png')", "images/ch/mem_angry.png",
-    "True", "images/ch/mem_serious.png",
-)
+    renpy.image("vet tired", ps_optional_art("images/ch/vet_tired.png", "images/ch/vet_concerned.png"))
+    renpy.image("vet warm", ps_optional_art("images/ch/vet_warm.png", "images/ch/vet1.png"))
 
-image sv tired = ConditionSwitch(
-    "renpy.loadable('images/ch/super_tired.png')", "images/ch/super_tired.png",
-    "True", "images/ch/super_conflicted.png",
-)
-image sv soft = ConditionSwitch(
-    "renpy.loadable('images/ch/super_soft.png')", "images/ch/super_soft.png",
-    "True", "images/ch/super_conflicted.png",
-)
+    renpy.image("mem nervous", ps_optional_art("images/ch/mem_nervous.png", "images/ch/mem_serious.png"))
+    renpy.image("mem angry", ps_optional_art("images/ch/mem_angry.png", "images/ch/mem_serious.png"))
 
-image cur stern = ConditionSwitch(
-    "renpy.loadable('images/ch/curator_stern.png')", "images/ch/curator_stern.png",
-    "True", "images/ch/curator.png",
-)
-image cur smile = ConditionSwitch(
-    "renpy.loadable('images/ch/curator_smile.png')", "images/ch/curator_smile.png",
-    "True", "images/ch/curator.png",
-)
+    renpy.image("sv tired", ps_optional_art("images/ch/super_tired.png", "images/ch/super_conflicted.png"))
+    renpy.image("sv soft", ps_optional_art("images/ch/super_soft.png", "images/ch/super_conflicted.png"))
 
-image bg warehouse_storm = ConditionSwitch(
-    "renpy.loadable('images/bg/warehouse_storm.jpg')", "images/bg/warehouse_storm.jpg",
-    "True", "images/bg/warehouse_inside.jpg",
-)
-image bg control_room_storm = ConditionSwitch(
-    "renpy.loadable('images/bg/control_room_storm.jpg')", "images/bg/control_room_storm.jpg",
-    "True", "images/bg/control_room.jpg",
-)
+    renpy.image("cur stern", ps_optional_art("images/ch/curator_stern.png", "images/ch/curator.png"))
+    renpy.image("cur smile", ps_optional_art("images/ch/curator_smile.png", "images/ch/curator.png"))
 
-image cg team_break_cinematic = ConditionSwitch(
-    "renpy.loadable('images/cg/team_break_cinematic.jpg')", "images/cg/team_break_cinematic.jpg",
-    "True", "images/cg/human_break.jpg",
-)
-image cg v13_false_memory = ConditionSwitch(
-    "renpy.loadable('images/cg/v13_false_memory.jpg')", "images/cg/v13_false_memory.jpg",
-    "True", "images/cg/memory_wall.jpg",
-)
-image cg zero_shift_v2 = ConditionSwitch(
-    "renpy.loadable('images/cg/zero_shift_v2.jpg')", "images/cg/zero_shift_v2.jpg",
-    "True", "images/cg/zero_shift.jpg",
-)
-image cg storm_first_contact = ConditionSwitch(
-    "renpy.loadable('images/cg/storm_first_contact.jpg')", "images/cg/storm_first_contact.jpg",
-    "True", "images/cg/storm_signal.jpg",
-)
+    renpy.image("bg warehouse_storm", ps_optional_art("images/bg/warehouse_storm.jpg", "images/bg/warehouse_inside.jpg"))
+    renpy.image("bg control_room_storm", ps_optional_art("images/bg/control_room_storm.jpg", "images/bg/control_room.jpg"))
+
+    renpy.image("cg team_break_cinematic", ps_optional_art("images/cg/team_break_cinematic.jpg", "images/cg/human_break.jpg"))
+    renpy.image("cg v13_false_memory", ps_optional_art("images/cg/v13_false_memory.jpg", "images/cg/memory_wall.jpg"))
+    renpy.image("cg zero_shift_v2", ps_optional_art("images/cg/zero_shift_v2.jpg", "images/cg/zero_shift.jpg"))
+    renpy.image("cg storm_first_contact", ps_optional_art("images/cg/storm_first_contact.jpg", "images/cg/storm_signal.jpg"))
 
 init 35 python:
     ps_curated_cgs = [
