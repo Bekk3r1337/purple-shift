@@ -128,41 +128,40 @@ init python:
     import math
 
     def ps_character_breathe(trans, shown_time, animation_time):
-        # Keep feet locked to the floor. Previous vertical bobbing made the
-        # full-body sprites look like they were floating above the scene.
-        trans.yoffset = 36
+        # Do not overwrite the transform's baseline. This function used to
+        # force yoffset every frame, which cancelled all grounding fixes.
         return None
 
 
 transform ps_center:
     xalign 0.5
     yalign 1.0
-    yoffset 36
-    zoom 0.56
+    yoffset 188
+    zoom 0.71
     subpixel True
     function ps_character_breathe
 
 transform ps_left:
-    xalign 0.21
+    xalign 0.23
     yalign 1.0
-    yoffset 36
-    zoom 0.56
+    yoffset 188
+    zoom 0.71
     subpixel True
     function ps_character_breathe
 
 transform ps_right:
     xalign 0.77
     yalign 1.0
-    yoffset 36
-    zoom 0.58
+    yoffset 188
+    zoom 0.73
     subpixel True
     function ps_character_breathe
 
 transform ps_righter:
-    xalign 0.58
+    xalign 0.60
     yalign 1.0
-    yoffset 36
-    zoom 0.58
+    yoffset 188
+    zoom 0.73
     subpixel True
     function ps_character_breathe
 
