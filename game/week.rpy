@@ -1368,7 +1368,7 @@ label chapter7_day_seven:
 
     mem "Не говори так. В хоррорах после этой фразы всегда выключается свет."
 
-    show vet neutral at ps_left
+    show vet tired at ps_left
     with dissolve
 
     vet "Свет не выключится. Здесь генератор."
