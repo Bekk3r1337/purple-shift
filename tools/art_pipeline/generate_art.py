@@ -4,22 +4,22 @@ import argparse
 import base64
 import getpass
 import json
+import mimetypes
 import os
 import shutil
 import time
-from contextlib import ExitStack
 from datetime import datetime
 from pathlib import Path
+
+try:
+    import requests
+except ImportError:
+    requests = None
 
 try:
     from PIL import Image
 except ImportError:
     Image = None
-
-try:
-    from openai import OpenAI
-except ImportError:
-    OpenAI = None
 
 
 HERE = Path(__file__).resolve().parent
@@ -32,8 +32,13 @@ BACKUP_ROOT = ROOT / "art_backup"
 LOG_PATH = OUTPUT_ROOT / "generation_log.jsonl"
 
 SUPPORTED_IMAGES = {".png", ".jpg", ".jpeg", ".webp"}
-DEFAULT_MODEL = "gpt-image-2.5-sunburst"
-FAST_MODEL = "gpt-image-2.5-flare"
+
+GENAPI_BASE = "https://api.gen-api.ru/api/v1"
+GENAPI_NETWORK = "gpt-image-2-5"
+DEFAULT_MODEL = "sunburst"
+FAST_MODEL = "flare"
+POLL_SECONDS = 5
+POLL_TIMEOUT_SECONDS = 15 * 60
 
 CATEGORY_DIRS = {
     "ch": ROOT / "game" / "images" / "ch",
@@ -75,19 +80,55 @@ def load_env() -> None:
 
 def ensure_api_key() -> str:
     load_env()
-    key = os.environ.get("OPENAI_API_KEY", "").strip()
+
+    key = os.environ.get("GENAPI_API_KEY", "").strip()
     if key:
         return key
 
-    print("\nДля генерации нужен OpenAI API key.")
-    print("Ключ будет сохранён только локально в tools/art_pipeline/.env и игнорируется Git.")
-    key = getpass.getpass("OPENAI_API_KEY: ").strip()
+    # Migration for the first version of the art pipeline:
+    # the user may already have stored a GenAPI key under OPENAI_API_KEY.
+    legacy = os.environ.get("OPENAI_API_KEY", "").strip()
+    if legacy:
+        ENV_PATH.write_text(f"GENAPI_API_KEY={legacy}\n", encoding="utf-8")
+        os.environ["GENAPI_API_KEY"] = legacy
+        print("Найден сохранённый ключ. Переключил локальный .env на GenAPI.")
+        return legacy
+
+    print("\nДля генерации нужен API-ключ GenAPI.")
+    print("Ключ сохранится только локально в tools/art_pipeline/.env и игнорируется Git.")
+    key = getpass.getpass("GENAPI_API_KEY: ").strip()
     if not key:
         raise SystemExit("Ключ не введён.")
 
-    ENV_PATH.write_text(f"OPENAI_API_KEY={key}\n", encoding="utf-8")
-    os.environ["OPENAI_API_KEY"] = key
+    ENV_PATH.write_text(f"GENAPI_API_KEY={key}\n", encoding="utf-8")
+    os.environ["GENAPI_API_KEY"] = key
     return key
+
+
+def headers_for(api_key: str) -> dict[str, str]:
+    return {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {api_key}",
+    }
+
+
+def validate_key(api_key: str) -> None:
+    response = requests.get(
+        f"{GENAPI_BASE}/user",
+        headers=headers_for(api_key),
+        timeout=30,
+    )
+    if response.status_code == 401:
+        raise RuntimeError("GenAPI отклонил API-ключ (401). Проверь ключ в личном кабинете GenAPI.")
+    response.raise_for_status()
+
+    data = response.json()
+    balance = data.get("balance")
+    if balance is not None:
+        print(f"GenAPI подключён. Баланс: {balance} ₽")
+    else:
+        print("GenAPI подключён.")
 
 
 def load_style() -> str:
@@ -118,7 +159,7 @@ def output_format_for(path: Path, category: str) -> str:
 
 
 def api_size_for(category: str) -> str:
-    return "1024x1536" if category == "ch" else "2048x1152"
+    return "1024x1536" if category == "ch" else "1920x1080"
 
 
 def auto_remaster_tasks(category: str) -> list[dict]:
@@ -206,42 +247,144 @@ def normalize_image(path: Path, task: dict) -> None:
         resized.save(path, format=save_format, **kwargs)
 
 
-def save_result(result, target: Path, task: dict) -> None:
-    if not getattr(result, "data", None):
-        raise RuntimeError("API не вернул изображение")
-    encoded = result.data[0].b64_json
-    if not encoded:
-        raise RuntimeError("API вернул пустой b64_json")
-    target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_bytes(base64.b64decode(encoded))
-    normalize_image(target, task)
+def path_to_data_uri(path: Path) -> str:
+    mime = mimetypes.guess_type(path.name)[0] or "application/octet-stream"
+    encoded = base64.b64encode(path.read_bytes()).decode("ascii")
+    return f"data:{mime};base64,{encoded}"
 
 
-def call_api(client: OpenAI, task: dict, model: str, quality_override: str | None = None):
+def extract_result_items(data: dict) -> list:
+    result = data.get("result")
+    if isinstance(result, list) and result:
+        return result
+
+    output = data.get("output")
+    if isinstance(output, list) and output:
+        return output
+    if isinstance(output, str) and output:
+        return [output]
+
+    full = data.get("full_response")
+    if isinstance(full, list) and full:
+        return full
+
+    return []
+
+
+def resolve_result_bytes(item, api_key: str) -> bytes:
+    if isinstance(item, dict):
+        for key in ("url", "image_url", "output", "result"):
+            if item.get(key):
+                return resolve_result_bytes(item[key], api_key)
+        for key in ("b64_json", "base64", "data"):
+            value = item.get(key)
+            if isinstance(value, str) and value:
+                try:
+                    return base64.b64decode(value)
+                except Exception:
+                    pass
+
+    if not isinstance(item, str):
+        raise RuntimeError(f"Неизвестный формат результата GenAPI: {type(item).__name__}")
+
+    if item.startswith("data:") and ";base64," in item:
+        return base64.b64decode(item.split(";base64,", 1)[1])
+
+    if item.startswith("http://") or item.startswith("https://"):
+        response = requests.get(item, timeout=120)
+        response.raise_for_status()
+        return response.content
+
+    try:
+        return base64.b64decode(item, validate=True)
+    except Exception as exc:
+        raise RuntimeError("GenAPI вернул результат в неизвестном формате") from exc
+
+
+def wait_for_result(request_id: str | int, api_key: str) -> dict:
+    deadline = time.time() + POLL_TIMEOUT_SECONDS
+    url = f"{GENAPI_BASE}/request/get/{request_id}"
+
+    while time.time() < deadline:
+        response = requests.get(url, headers=headers_for(api_key), timeout=30)
+        response.raise_for_status()
+        data = response.json()
+        status = str(data.get("status", "")).lower()
+
+        if status == "success":
+            return data
+        if status in {"error", "failed", "failure", "cancelled", "canceled"}:
+            raise RuntimeError(f"GenAPI завершил задачу со статусом {status}: {data}")
+
+        progress = data.get("progress")
+        if progress is not None:
+            print(f"  GenAPI: {status or 'processing'}, {progress}%")
+        else:
+            print(f"  GenAPI: {status or 'processing'}")
+        time.sleep(POLL_SECONDS)
+
+    raise TimeoutError("GenAPI не завершил генерацию за 15 минут.")
+
+
+def call_genapi(api_key: str, task: dict, model: str, quality_override: str | None = None) -> dict:
     prompt = compose_prompt(task)
     quality = quality_override or task.get("quality", "high")
-    kwargs = {
-        "model": model,
+
+    payload = {
+        "callback_url": None,
+        "is_sync": False,
         "prompt": prompt,
-        "size": task.get("size", "auto"),
+        "model": model,
         "quality": quality,
+        "image_size": task.get("size", "1024x1024"),
         "background": task.get("background", "auto"),
+        "num_images": 1,
         "output_format": task.get("output_format", "png"),
     }
 
-    mode = task.get("mode", "generate")
     refs = [ROOT / p for p in task.get("refs", [])]
-
-    if mode == "edit":
+    if refs:
         missing = [str(p) for p in refs if not p.exists()]
         if missing:
             raise FileNotFoundError("Не найдены референсы: " + ", ".join(missing))
-        with ExitStack() as stack:
-            opened = [stack.enter_context(open(p, "rb")) for p in refs]
-            image_arg = opened[0] if len(opened) == 1 else opened
-            return client.images.edit(image=image_arg, **kwargs)
+        payload["image_urls"] = [path_to_data_uri(p) for p in refs]
 
-    return client.images.generate(**kwargs)
+    response = requests.post(
+        f"{GENAPI_BASE}/networks/{GENAPI_NETWORK}",
+        json=payload,
+        headers=headers_for(api_key),
+        timeout=120,
+    )
+
+    if response.status_code == 401:
+        raise RuntimeError("GenAPI отклонил API-ключ (401).")
+    if response.status_code == 422:
+        raise RuntimeError(f"GenAPI не принял параметры задачи: {response.text}")
+    response.raise_for_status()
+
+    data = response.json()
+    status = str(data.get("status", "")).lower()
+
+    if status == "success" and extract_result_items(data):
+        return data
+
+    request_id = data.get("request_id") or data.get("id")
+    if not request_id:
+        raise RuntimeError(f"GenAPI не вернул request_id: {data}")
+
+    print(f"  GenAPI request_id: {request_id}")
+    return wait_for_result(request_id, api_key)
+
+
+def save_genapi_result(data: dict, target: Path, task: dict, api_key: str) -> None:
+    items = extract_result_items(data)
+    if not items:
+        raise RuntimeError(f"GenAPI не вернул изображение: {data}")
+
+    image_bytes = resolve_result_bytes(items[0], api_key)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_bytes(image_bytes)
+    normalize_image(target, task)
 
 
 def append_log(record: dict) -> None:
@@ -256,7 +399,8 @@ def run_tasks(tasks: list[dict], model: str, quality_override: str | None, force
         return
 
     print(f"\nЗадач: {len(tasks)}")
-    print(f"Модель: {model}")
+    print(f"Провайдер: GenAPI")
+    print(f"Модель: GPT Image 2.5 / {model}")
     if quality_override:
         print(f"Качество override: {quality_override}")
 
@@ -269,11 +413,11 @@ def run_tasks(tasks: list[dict], model: str, quality_override: str | None, force
             print("  prompt:", compose_prompt(task)[:700].replace("\n", " "), "...")
         return
 
-    if OpenAI is None:
-        raise SystemExit("Пакет openai не установлен. Запусти GENERATE_ART.bat ещё раз.")
+    if requests is None:
+        raise SystemExit("Пакет requests не установлен. Запусти GENERATE_ART.bat ещё раз.")
 
     api_key = ensure_api_key()
-    client = OpenAI(api_key=api_key)
+    validate_key(api_key)
 
     for i, task in enumerate(tasks, 1):
         target = ROOT / task["target"]
@@ -286,8 +430,8 @@ def run_tasks(tasks: list[dict], model: str, quality_override: str | None, force
         status = "ok"
         error = None
         try:
-            result = call_api(client, task, model=model, quality_override=quality_override)
-            save_result(result, target, task)
+            result = call_genapi(api_key, task, model=model, quality_override=quality_override)
+            save_genapi_result(result, target, task, api_key)
             print(f"  OK -> {target.relative_to(ROOT)}")
         except Exception as exc:
             status = "error"
@@ -299,7 +443,8 @@ def run_tasks(tasks: list[dict], model: str, quality_override: str | None, force
             "task": task.get("id"),
             "status": status,
             "target": task.get("target"),
-            "model": model,
+            "provider": "genapi",
+            "model": f"{GENAPI_NETWORK}:{model}",
             "seconds": round(time.time() - started, 2),
             "error": error,
         })
@@ -342,13 +487,13 @@ def apply_outputs(tasks: list[dict]) -> None:
 
 
 def choose_model() -> str:
-    raw = input("Модель: [1] Sunburst quality  [2] Flare faster  (Enter=1): ").strip()
+    raw = input("Модель GenAPI: [1] Sunburst quality  [2] Flare faster  (Enter=1): ").strip()
     return FAST_MODEL if raw == "2" else DEFAULT_MODEL
 
 
 def confirm_generation(tasks: list[dict]) -> bool:
     print(f"Подготовлено задач: {len(tasks)}")
-    print("Генерация использует платный OpenAI API. Уже существующие результаты будут пропущены.")
+    print("Генерация использует платный GenAPI. Уже существующие результаты будут пропущены.")
     answer = input("Запустить? [y/N]: ").strip().lower()
     return answer in {"y", "yes", "д", "да"}
 
@@ -356,7 +501,7 @@ def confirm_generation(tasks: list[dict]) -> bool:
 def menu() -> None:
     while True:
         print("\n" + "=" * 72)
-        print(" PURPLE SHIFT - GPT IMAGE 2.5 ART PIPELINE")
+        print(" PURPLE SHIFT - GPT IMAGE 2.5 / GenAPI ART PIPELINE")
         print("=" * 72)
         print("1. Показать план curated-артов без генерации")
         print("2. Ремастер всех персонажей")
@@ -402,11 +547,11 @@ def menu() -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Purple Shift GPT Image 2.5 art pipeline")
+    p = argparse.ArgumentParser(description="Purple Shift GPT Image 2.5 art pipeline via GenAPI")
     p.add_argument("--menu", action="store_true")
     p.add_argument("--category", choices=["ch", "bg", "cg", "curated", "all"])
     p.add_argument("--model", default=DEFAULT_MODEL, choices=[DEFAULT_MODEL, FAST_MODEL])
-    p.add_argument("--quality", choices=["low", "medium", "high", "xhigh", "max", "auto"])
+    p.add_argument("--quality", choices=["low", "medium", "high", "xhigh", "max"])
     p.add_argument("--force", action="store_true")
     p.add_argument("--dry-run", action="store_true")
     p.add_argument("--task", help="Запустить одну curated-задачу по id")
