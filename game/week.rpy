@@ -1457,10 +1457,10 @@ label chapter7_day_seven:
         play sound "audio/alarm_low.ogg"
 
     if persistent.ps_reduce_motion:
-        scene bg warehouse_alert
+        scene bg warehouse_storm
         with dissolve
     else:
-        scene bg warehouse_alert
+        scene bg warehouse_storm
         with hpunch
 
     $ ps_set_ambience("alert")
@@ -1476,6 +1476,14 @@ label chapter7_day_seven:
         "СВЯЗЬ С СИСТЕМОЙ ПОТЕРЯНА",
         "Автономный поток активен. Ручная остановка доступна старшему линии."
     )
+
+    show screen ps_cinematic_bars
+    scene cg storm_first_contact at ps_cg_reveal
+    with ps_violet_cut
+    n "Лера первой замечает, что это уже не обычный сбой: фиолетовый разрез света остаётся на месте, даже когда лампы гаснут."
+    scene bg warehouse_storm
+    with dissolve
+    hide screen ps_cinematic_bars
 
     call ps_storm_interference
     call ps_storm_day_intrusion(7)
