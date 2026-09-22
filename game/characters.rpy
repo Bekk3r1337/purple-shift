@@ -128,43 +128,41 @@ init python:
     import math
 
     def ps_character_breathe(trans, shown_time, animation_time):
-        if persistent.ps_reduce_motion:
-            trans.yoffset = 5
-            return None
-
-        trans.yoffset = 3 + math.sin(shown_time * 2.4) * 3
-        return 0.05
+        # Keep feet locked to the floor. Previous vertical bobbing made the
+        # full-body sprites look like they were floating above the scene.
+        trans.yoffset = 36
+        return None
 
 
 transform ps_center:
     xalign 0.5
     yalign 1.0
-    yoffset 5
-    zoom 0.60
+    yoffset 36
+    zoom 0.56
     subpixel True
     function ps_character_breathe
 
 transform ps_left:
-    xalign 0.22
+    xalign 0.21
     yalign 1.0
-    yoffset 5
-    zoom 0.60
+    yoffset 36
+    zoom 0.56
     subpixel True
     function ps_character_breathe
 
 transform ps_right:
-    xalign 0.75
+    xalign 0.77
     yalign 1.0
-    yoffset 5
-    zoom 0.65
+    yoffset 36
+    zoom 0.58
     subpixel True
     function ps_character_breathe
 
 transform ps_righter:
-    xalign 0.55
+    xalign 0.58
     yalign 1.0
-    yoffset 5
-    zoom 0.65
+    yoffset 36
+    zoom 0.58
     subpixel True
     function ps_character_breathe
 
