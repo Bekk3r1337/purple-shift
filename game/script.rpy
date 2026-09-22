@@ -26,7 +26,7 @@ label morning_home:
 
     scene bg black
     with fade
-    play music "audio/home_ambient.mp3" fadein 3.0 loop
+    $ ps_play_ost("before_shift", fadein=3.0)
 
     n "Будильник вибрирует где-то под подушкой. Ты находишь телефон не с первого раза и ещё несколько секунд лежишь с закрытыми глазами. Сегодня снова на смену."
 
@@ -70,13 +70,13 @@ label leaving_home:
     n "Ты умываешься, натягиваешь одежду и на автомате проверяешь телефон, ключи и пропуск. Дверь закрывается тихо."
     scene bg street_night
     with fade
-    play music "audio/city_night.mp3" fadein 2.0 loop
+    $ ps_play_ost("city_night", fadein=2.0)
     n "На улице начинает светать. Автобус почти пустой, и всю дорогу ты стараешься не уснуть."
 
     scene bg warehouse_outside
     with fade
     stop music fadeout 2.0
-    play music "audio/night_shift.mp3" fadein 3.0 loop
+    $ ps_play_ost("ordinary_shift", fadein=3.0)
 
     # на всякий случай чистим экран от возможных "хвостов"
     hide sv
@@ -147,7 +147,7 @@ label first_mistake:
     with fade
 
     stop music fadeout 2.0
-    play music "audio/warehouse_chill.mp3" fadein 2.0 loop
+    $ ps_play_ost("cold_line", fadein=2.0)
 
     # сцена сменилась - показываем супервайзера заново
     show sv neutral at ps_right
@@ -611,7 +611,7 @@ label chapter2_after_shift:
     with fade
 
     stop music fadeout 2.0
-    play music "audio/after_shift_ambient.mp3" fadein 3.0 loop
+    $ ps_play_ost("after_shift", fadein=3.0)
 
     n "Лента замедляется, и Артём отправляет людей в раздевалку. Пальцы ещё повторяют движение сканера, пока ты убираешь ТСД."
 
@@ -731,7 +731,7 @@ label chapter2_home:
     with fade
 
     stop music fadeout 2.0
-    play music "audio/night_walk.mp3" fadein 3.0 loop
+    $ ps_play_ost("walk_to_shift", fadein=3.0)
 
     n "Двери склада остаются позади. Ты идёшь к остановке почти автоматически, разминая затёкшие пальцы."
 
@@ -803,7 +803,7 @@ label chapter2_observe:
     with fade
 
     stop music fadeout 2.0
-    play music "audio/after_shift_ambient.mp3" fadein 2.5 loop
+    $ ps_play_ost("after_shift", fadein=2.5)
 
     n "Ты задерживаешься у выхода, чтобы спокойно отдышаться перед дорогой. Одна лампа в фиолетовой вывеске мигает через раз."
 
@@ -929,7 +929,7 @@ label chapter2_night_home:
     with fade
 
     stop music fadeout 2.0
-    play music "audio/home_ambient.mp3" fadein 3.0 loop
+    $ ps_play_ost("before_shift", fadein=3.0)
 
     n "Дома тепло и непривычно тихо."
 

@@ -23,7 +23,7 @@ label chapter3_day_three:
     scene bg warehouse_outside
     with dissolve
 
-    play music "audio/night_walk.mp3" fadein 2.0 loop
+    $ ps_play_ost("walk_to_shift", fadein=2.0)
 
     n "На третий день ты проходишь знакомый поворот, переход и серую дверь почти не глядя. Только у входа вспоминаешь вчерашнее сообщение."
 
@@ -40,7 +40,7 @@ label chapter3_day_three:
     with fade
 
     stop music fadeout 1.5
-    play music "audio/after_shift_ambient.mp3" fadein 2.0 loop
+    $ ps_play_ost("after_shift", fadein=2.0)
 
     show mem grin at ps_left
     with dissolve
@@ -112,7 +112,7 @@ label chapter3_day_three:
     with fade
 
     stop music fadeout 1.5
-    play music "audio/warehouse_chill.mp3" fadein 2.0 loop
+    $ ps_play_ost("cold_line", fadein=2.0)
     $ ps_set_ambience("warehouse")
 
     n "Линия запускается. Третий день начинается с обычного звука."
@@ -310,7 +310,7 @@ label chapter4_day_four:
     scene bg room_morning
     with dissolve
 
-    play music "audio/home_ambient.mp3" fadein 2.0 loop
+    $ ps_play_ost("before_shift", fadein=2.0)
 
     n "Сообщение Леры будит тебя раньше будильника."
 
@@ -353,7 +353,7 @@ label chapter4_day_four:
     with fade
 
     stop music fadeout 1.5
-    play music "audio/after_shift_ambient.mp3" fadein 2.0 loop
+    $ ps_play_ost("after_shift", fadein=2.0)
 
     show newb worried at ps_left
     show sv neutral at ps_right
@@ -457,7 +457,7 @@ label chapter4_day_four:
     with fade
 
     stop music fadeout 1.5
-    play music "audio/warehouse_chill.mp3" fadein 2.0 loop
+    $ ps_play_ost("cold_line", fadein=2.0)
     $ ps_set_ambience("warehouse")
 
     n "К началу смены про сорок семь единиц знают уже на соседнем участке. Каждый пересказывает историю немного по-своему."
@@ -636,7 +636,7 @@ label chapter5_day_five:
     scene bg warehouse_outside
     with dissolve
 
-    play music "audio/night_shift.mp3" fadein 2.0 loop
+    $ ps_play_ost("ordinary_shift", fadein=2.0)
 
     n "На пятый день идёт дождь. У входа все по очереди вытирают обувь об один и тот же мокрый коврик."
 
@@ -720,7 +720,7 @@ label chapter5_day_five:
     with fade
 
     stop music fadeout 1.5
-    play music "audio/warehouse_chill.mp3" fadein 2.0 loop
+    $ ps_play_ost("cold_line", fadein=2.0)
     $ ps_set_ambience("warehouse")
 
     n "Основной объём ещё не дошёл до приёмки, а на упаковке уже копится очередь. В рации одновременно спорят три участка, на ТСД мигают новые задачи."
@@ -753,6 +753,7 @@ label chapter5_day_five:
     scene bg warehouse_alert
     with fade
 
+    $ ps_play_ost("red_button", fadein=0.7)
     $ ps_set_ambience("alert")
 
     n "Первый час подъёмник работает. Второй — тоже. На третьем платформа останавливается между уровнями."
@@ -999,7 +1000,7 @@ label chapter6_day_six:
     scene bg warehouse_outside
     with dissolve
 
-    play music "audio/city_night.mp3" fadein 2.0 loop
+    $ ps_play_ost("city_night", fadein=2.0)
 
     n "На шестой день у входа непривычно чисто. Лужи отогнали от дверей, старые палеты убрали, перегоревшую букву в вывеске заменили."
 
@@ -1012,7 +1013,7 @@ label chapter6_day_six:
     with fade
 
     stop music fadeout 1.5
-    play music "audio/night_shift.mp3" fadein 2.0 loop
+    $ ps_play_ost("ordinary_shift", fadein=2.0)
     $ ps_set_ambience("warehouse")
     $ ps_set_curator_name()
 
@@ -1084,6 +1085,7 @@ label chapter6_day_six:
     scene bg control_room
     with fade
 
+    $ ps_play_ost("human_pressure", fadein=1.2)
     $ ps_set_ambience("quiet")
     $ ps_unlock_cg("artem_curator_private")
 
@@ -1245,7 +1247,7 @@ label chapter6_day_six:
     with fade
 
     stop music fadeout 1.5
-    play music "audio/warehouse_chill.mp3" fadein 2.0 loop
+    $ ps_play_ost("cold_line", fadein=2.0)
 
     show newb tired at ps_right
     with dissolve
@@ -1344,7 +1346,7 @@ label chapter7_day_seven:
     scene bg room_morning
     with dissolve
 
-    play music "audio/home_ambient.mp3" fadein 2.0 loop
+    $ ps_play_ost("before_shift", fadein=2.0)
 
     n "На седьмой день будильник всё-таки орёт. Ты выключаешь его с первого движения."
 
@@ -1394,7 +1396,7 @@ label chapter7_day_seven:
     with fade
 
     stop music fadeout 1.5
-    play music "audio/night_walk.mp3" fadein 2.0 loop
+    $ ps_play_ost("walk_to_shift", fadein=2.0)
 
     n "Ты выходишь на нужной остановке, проходишь через пустую парковку и автоматически достаёшь пропуск ещё до турникета."
 
@@ -1412,7 +1414,7 @@ label chapter7_day_seven:
     with fade
 
     stop music fadeout 1.5
-    play music "audio/after_shift_ambient.mp3" fadein 2.0 loop
+    $ ps_play_ost("after_shift", fadein=2.0)
     $ ps_set_ambience("quiet")
 
     show newb relief at ps_enter_right
@@ -1467,7 +1469,7 @@ label chapter7_day_seven:
     with fade
 
     stop music fadeout 1.5
-    play music "audio/warehouse_chill.mp3" fadein 2.0 loop
+    $ ps_play_ost("cold_line", fadein=2.0)
     $ ps_set_ambience("warehouse")
 
     n "Первые два часа проходят без остановок. Ячейки принимают товар, очередь на табло уменьшается."
@@ -1523,6 +1525,7 @@ label chapter7_day_seven:
     n "Свет моргает. Раз. Два. Фиолетовые лампы остаются гореть, когда белые гаснут."
 
     stop music fadeout 0.5
+    $ ps_play_ost("purple_intrusion", fadein=0.35)
 
     n "Конвейер не останавливается. ТСД один за другим уходят в красный экран. Табло продолжает считать, хотя люди больше не понимают, куда идёт товар."
 
@@ -1561,7 +1564,7 @@ label chapter7_day_seven:
     scene bg control_room_storm
     with dissolve
 
-    play music "audio/night_shift.mp3" fadein 1.0 loop
+    $ ps_play_ost("ordinary_shift", fadein=1.0)
 
     show sv tired at ps_left
     show newb scared at ps_right
@@ -1844,7 +1847,7 @@ label ending_voice:
     scene bg break_room
     with fade
 
-    play music "audio/after_shift_ambient.mp3" fadein 2.0 loop
+    $ ps_play_ost("after_shift", fadein=2.0)
 
     n "В рейтинге ты остаёшься третьим. На доске нет твоей фотографии."
 
@@ -1964,7 +1967,7 @@ label ending_exit:
     with fade
 
     stop music fadeout 1.5
-    play music "audio/city_night.mp3" fadein 2.0 loop
+    $ ps_play_ost("city_night", fadein=2.0)
 
     n "Дверь закрывается за спиной. Через стену по-прежнему слышен конвейер."
 
@@ -2034,6 +2037,7 @@ label ending_common:
     with fade
 
     $ ps_final_ending = ps_ending_id()
+    $ ps_play_ost("seven_days_later", fadein=2.0)
     $ ps_unlock_ending(ps_final_ending)
     $ ps_unlock_achievement("seven_days")
     $ ps_evaluate_achievements()

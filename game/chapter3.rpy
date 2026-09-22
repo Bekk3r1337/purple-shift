@@ -66,7 +66,7 @@ label chapter3_second_shift:
     scene bg room_night
     with dissolve
 
-    play music "audio/home_ambient.mp3" fadein 2.5 loop
+    $ ps_play_ost("before_shift", fadein=2.5)
 
     n "Вечер приходит слишком быстро. Ты просыпаешься за минуту до будильника и успеваешь выключить его до первого сигнала."
 
@@ -93,7 +93,7 @@ label chapter3_second_shift:
     with fade
 
     stop music fadeout 2.0
-    play music "audio/night_walk.mp3" fadein 2.0 loop
+    $ ps_play_ost("walk_to_shift", fadein=2.0)
 
     n "На остановке люди едут домой с пакетами и рюкзаками. Тебе нужен автобус в обратную сторону."
 
@@ -101,7 +101,7 @@ label chapter3_second_shift:
     with fade
 
     stop music fadeout 2.0
-    play music "audio/night_shift.mp3" fadein 2.5 loop
+    $ ps_play_ost("ordinary_shift", fadein=2.5)
 
     n "Фиолетовая вывеска видна ещё из автобуса. На этот раз ты сразу идёшь к нужному входу и не ищешь раздевалку по указателям."
 
@@ -210,7 +210,7 @@ label chapter3_sorting_start:
     with fade
 
     stop music fadeout 2.0
-    play music "audio/warehouse_chill.mp3" fadein 2.5 loop
+    $ ps_play_ost("cold_line", fadein=2.5)
 
     show vet neutral at ps_left
     show mem grin at ps_center
@@ -484,7 +484,7 @@ label chapter3_incident_stop:
         sv "В следующий раз сначала кричишь. Но кнопку нажал правильно."
         $ ps_supervisor_respect += 1
 
-    play music "audio/warehouse_chill.mp3" fadein 1.5 loop
+    $ ps_play_ost("cold_line", fadein=1.5)
 
     jump chapter3_after_incident
 
@@ -619,7 +619,7 @@ label chapter3_supervisor_talk:
     with fade
 
     stop music fadeout 2.0
-    play music "audio/after_shift_ambient.mp3" fadein 2.0 loop
+    $ ps_play_ost("after_shift", fadein=2.0)
 
     show sv neutral at ps_right
     with dissolve
@@ -723,7 +723,7 @@ label chapter4_hook:
     with fade
 
     stop music fadeout 2.0
-    play music "audio/city_night.mp3" fadein 2.0 loop
+    $ ps_play_ost("city_night", fadein=2.0)
 
     n "Телефон вибрирует у самого выхода."
 
