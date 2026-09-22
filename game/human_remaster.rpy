@@ -502,6 +502,7 @@ label ps_human_shift_scene(day):
     if day == 4:
         $ ps_mark_human_scene(ps_human_scene_id)
         $ ps_unlock_cg("human_break", True)
+        $ ps_unlock_cg("team_break_cinematic", True)
 
         show screen ps_cinematic_bars
         scene cg team_break_cinematic at ps_memory_reveal
