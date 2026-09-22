@@ -228,42 +228,80 @@ screen choice(items):
 
     add Solid("#030106") alpha 0.08
 
-    # The generated art is the button frame. Crop it just below the last
-    # requested rail so an empty next rail never leaks into shorter menus.
-    $ ps_choice_slots = min(max(len(items), 1), 4)
-    $ ps_choice_crop_h = {1: 372, 2: 534, 3: 696, 4: 1080}[ps_choice_slots]
-    add Transform(
-        "images/ui/v2/choice_overlay.png",
-        crop=(0, 0, 1920, ps_choice_crop_h),
+    # IMPORTANT:
+    # choice_overlay.png was authored as four independent visual rails inside
+    # one 1920x1080 canvas. Cropping the whole canvas by height always leaks a
+    # piece of the next rail because the decorations overlap vertically.
+    #
+    # Render every rail as its own slice instead. The coordinates below were
+    # measured from the actual 1920x1080 artwork/screenshot, so text and hitboxes
+    # share the same real centre as the corresponding decorative frame.
+    $ ps_choice_rails = (
+        (220, 207, 333),
+        (427, 188, 521),
+        (615, 188, 709),
+        (803, 194, 897),
     )
 
-    # Exact visual centres of the four authored rails in choice_overlay.png.
-    $ ps_choice_centers = (285, 446, 607, 768)
+    if len(items) <= 4:
 
-    for ps_choice_index, i in enumerate(items):
-        if ps_choice_index < 4:
+        for ps_choice_index, i in enumerate(items):
+            $ ps_rail_top, ps_rail_h, ps_rail_center = ps_choice_rails[ps_choice_index]
+
+            # Only this rail is drawn. Unused rails literally do not exist on
+            # screen, so 3 options can never reveal a fourth decorative strip.
+            add Transform(
+                "images/ui/v2/choice_overlay.png",
+                crop=(0, ps_rail_top, 1920, ps_rail_h),
+            ):
+                xpos 0
+                ypos ps_rail_top
+
+            # Invisible hitbox + text placed at the measured centre of the rail.
             button:
                 action i.action
                 alt i.caption
                 style "ps_choice_button"
-                xpos 300
-                ypos ps_choice_centers[ps_choice_index] - 62
+                xpos 272
+                ypos ps_rail_center - 66
                 xanchor 0.0
                 yanchor 0.0
-                xsize 1260
-                ysize 124
+                xsize 1290
+                ysize 132
 
                 fixed:
-                    xsize 1260
-                    ysize 124
+                    xsize 1290
+                    ysize 132
 
                     text i.caption:
                         style "ps_choice_button_text"
-                        xpos 30
-                        ypos 62
+                        xpos 38
+                        ypos 66
                         xanchor 0.0
                         yanchor 0.5
-                        xsize 1140
+                        xsize 1170
+
+    else:
+        # Safety fallback for an unexpected menu with more than four options.
+        # Do not hide choices just because the authored overlay only has 4 rails.
+        frame:
+            xalign 0.5
+            yalign 0.5
+            xsize 1320
+            padding (28, 28)
+            background Solid("#090511e8")
+
+            vbox:
+                xfill True
+                spacing 12
+
+                for i in items:
+                    textbutton i.caption:
+                        action i.action
+                        alt i.caption
+                        style "ps_choice_fallback_button"
+                        text_style "ps_choice_fallback_button_text"
+                        xfill True
 
 
 style choice_vbox is vbox
@@ -1793,6 +1831,18 @@ style ps_choice_button_text is text:
 style ps_choice_button_text_hover is ps_choice_button_text:
     color "#ffffff"
     outlines [(2, "#8e4ed6aa", 0, 0)]
+
+style ps_choice_fallback_button is button:
+    background Solid("#130a20e8")
+    hover_background Solid("#321a4ae8")
+    xpadding 24
+    ypadding 18
+
+style ps_choice_fallback_button_text is button_text:
+    color "#eee8ff"
+    hover_color "#ffffff"
+    size 28
+    text_align 0.0
 
 # --- PurpleShift main menu styles ---
 
