@@ -106,7 +106,7 @@ screen say(who, what):
             id "who"
             style "ps_speaker_name"
             xpos 124
-            ypos 628
+            ypos 650
             xanchor 0.0
             yanchor 0.5
             text_align 0.0
@@ -228,47 +228,37 @@ screen choice(items):
 
     add Solid("#030106") alpha 0.08
 
-    # Keep the generated artwork, but crop away rails that are not needed.
-    # 3 choices now show exactly 3 decorative rails, 2 choices show 2, etc.
+    # The generated art is the button frame. Only keep as many rails as there
+    # are options; the clickable/text layer itself stays completely transparent.
     $ ps_choice_slots = min(max(len(items), 1), 4)
-    $ ps_choice_crop_h = {1: 390, 2: 545, 3: 700, 4: 1080}[ps_choice_slots]
+    $ ps_choice_crop_h = {1: 370, 2: 540, 3: 710, 4: 1080}[ps_choice_slots]
     add Transform(
         "images/ui/v2/choice_overlay.png",
         crop=(0, 0, 1920, ps_choice_crop_h),
     )
 
-    $ ps_choice_h = 84
-    $ ps_choice_gap = 68
-    $ ps_choice_top = 246
+    # Exact visual centres of the four authored rails in choice_overlay.png.
+    $ ps_choice_centers = (285, 446, 607, 768)
 
-    vbox:
-        xalign 0.5
-        ypos ps_choice_top
-        yanchor 0.0
-        spacing ps_choice_gap
-
-        for i in items:
+    for ps_choice_index, i in enumerate(items):
+        if ps_choice_index < 4:
             button:
                 action i.action
                 alt i.caption
                 style "ps_choice_button"
-                xsize 1220
-                ysize ps_choice_h
+                xpos 300
+                ypos ps_choice_centers[ps_choice_index]
+                xanchor 0.0
+                yanchor 0.5
+                xsize 1260
+                ysize 108
 
-                fixed:
-                    xsize 1220
-                    ysize ps_choice_h
-
-                    add Solid("#100719e8") xsize 1220 ysize ps_choice_h
-                    add Solid("#bb6dff") xsize 4 ysize ps_choice_h xpos 0 ypos 0
-                    add Solid("#70409d") xsize 2 ysize 44 xpos 1206 ypos 20
-
-                    text i.caption:
-                        style "ps_choice_button_text"
-                        xpos 28
-                        xanchor 0.0
-                        xsize 1148
-                        yalign 0.5
+                text i.caption:
+                    style "ps_choice_button_text"
+                    xpos 24
+                    xanchor 0.0
+                    yalign 0.5
+                    xsize 1160
 
 
 style choice_vbox is vbox
@@ -1777,24 +1767,28 @@ style slider_slider:
 
 # --- Purple Shift choice styles ---
 style ps_choice_button is button:
-    background Solid("#130a20e8")
-    hover_background Solid("#321a4ae8")
-    insensitive_background Solid("#0b0711aa")
+    background None
+    hover_background None
+    insensitive_background None
     xpadding 0
     ypadding 0
+    focus_mask None
 
 style ps_choice_button_hover is ps_choice_button:
-    background Solid("#2a1840")
+    background None
 
 style ps_choice_button_text is button_text:
     color "#eee8ff"
     hover_color "#ffffff"
+    insensitive_color "#9d8cad"
     size 29
     xalign 0.0
-    text_align 0.0   
-   
+    text_align 0.0
+    outlines [(1, "#3f2362aa", 0, 0)]
+
 style ps_choice_button_text_hover is ps_choice_button_text:
     color "#ffffff"
+    outlines [(2, "#8e4ed6aa", 0, 0)]
 
 # --- PurpleShift main menu styles ---
 
