@@ -407,6 +407,7 @@ screen ps_deep_investigation_board():
 
     add "bg control_room" at ps_cinematic_background
     add Solid("#06030be8")
+    use ps_vp2_terminal_fx(0.24)
 
     frame:
         xalign 0.5
@@ -570,6 +571,7 @@ screen ps_storm_mimic():
     add "images/cg/mimic_message.jpg" at ps_cinematic_background:
         alpha 0.24
     add Solid("#7d34a838") at ps_signal_breathe
+    use ps_vp2_terminal_fx(0.34)
 
     frame:
         xalign 0.5
