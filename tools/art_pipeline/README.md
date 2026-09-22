@@ -1,4 +1,4 @@
-# Purple Shift - GPT Image 2.5 Art Pipeline
+# Purple Shift - GPT Image 2.5 Art Pipeline via GenAPI
 
 One-click local art generation/remaster pipeline for the Ren'Py project.
 
@@ -6,15 +6,20 @@ One-click local art generation/remaster pipeline for the Ren'Py project.
 
 Double-click `GENERATE_ART.bat` in the repository root.
 
-On the first real generation the launcher asks for `OPENAI_API_KEY`. The key is saved only in `tools/art_pipeline/.env`, which is ignored by Git.
+The pipeline uses **GenAPI** and its `gpt-image-2-5` network. On the first real generation it asks for `GENAPI_API_KEY`. The key is saved only in `tools/art_pipeline/.env`, which is ignored by Git.
+
+If an older version of this pipeline already saved your GenAPI key as `OPENAI_API_KEY`, the script automatically migrates that local value to `GENAPI_API_KEY`.
 
 ## What it can do
 
 - remaster every existing character sprite using the sprite itself as the identity reference;
 - remaster every background while preserving location/camera/layout;
 - remaster every existing CG while preserving the scene and composition;
-- generate curated new expressions, Storm variants and new cinematic CGs from `tasks.json`;
+- generate curated new expressions, Storm variants and cinematic CGs from `tasks.json`;
 - use GPT Image 2.5 Sunburst by default or Flare for a faster pass;
+- send multiple local references through GenAPI;
+- poll GenAPI automatically until the generation is finished;
+- validate the GenAPI key before spending money and display the current balance when available;
 - skip outputs that already exist, so a stopped batch can be resumed;
 - write generated candidates to `art_output/` instead of overwriting the game;
 - apply remasters from the menu only after review, with automatic originals backup in `art_backup/`.
@@ -43,7 +48,8 @@ python tools\art_pipeline\generate_art.py --apply all
 Model override:
 
 ```bat
-python tools\art_pipeline\generate_art.py --category cg --model gpt-image-2.5-flare
+python tools\art_pipeline\generate_art.py --category cg --model flare
+python tools\art_pipeline\generate_art.py --category cg --model sunburst
 ```
 
 Quality override:

@@ -4,7 +4,7 @@ chcp 65001 >nul
 cd /d "%~dp0"
 
 echo ================================================================
-echo  Purple Shift - GPT Image 2.5 Art Pipeline
+echo  Purple Shift - GPT Image 2.5 via GenAPI
 echo ================================================================
 echo.
 
@@ -22,10 +22,10 @@ if not errorlevel 1 (
     set "PY=python"
 )
 
-%PY% -c "import openai, PIL" >nul 2>nul
+%PY% -c "import requests, PIL" >nul 2>nul
 if errorlevel 1 (
     echo Installing required Python packages...
-    %PY% -m pip install --upgrade openai pillow
+    %PY% -m pip install --upgrade requests pillow
     if errorlevel 1 (
         echo [ERROR] Failed to install dependencies.
         pause
