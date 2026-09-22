@@ -98,6 +98,25 @@ screen say(who, what):
 
     add "images/ui/v2/dialog_overlay.png"
 
+    # The generated HUD has a dedicated upper-left name plate.
+    # Keep the speaker name out of the dialogue body so the artwork reads as
+    # one coherent interface instead of two stacked text boxes.
+    if who is not None:
+        window:
+            id "namebox"
+            background None
+            xpos 108
+            ypos 672
+            xsize 520
+            ysize 66
+            padding (0, 0)
+
+            text who:
+                id "who"
+                style "say_label"
+                xalign 0.0
+                yalign 0.5
+
     window:
         id "window"
         background None
@@ -106,12 +125,6 @@ screen say(who, what):
         ysize 286
         xpadding 112
         ypadding 46
-
-        if who is not None:
-            window:
-                id "namebox"
-                style "namebox"
-                text who id "who"
 
         text what id "what"
 
@@ -216,33 +229,44 @@ style input:
 screen choice(items):
     style_prefix "ps_choice"
 
-    add Solid("#030106") alpha 0.18
+    add Solid("#030106") alpha 0.08
 
-    frame:
+    # Restore the authored Visual Pass 2 selection frame. The artwork contains
+    # four rails; shorter menus are bottom-aligned into those rails.
+    add "images/ui/v2/choice_overlay.png"
+
+    $ ps_choice_h = 96
+    $ ps_choice_gap = 18
+    $ ps_choice_slot = ps_choice_h + ps_choice_gap
+    $ ps_choice_top = 334 + max(0, 4 - len(items)) * ps_choice_slot
+
+    vbox:
         xalign 0.5
-        yalign 0.69
-        xsize 1260
-        padding (28, 26)
-        background Solid("#090511d9")
+        ypos ps_choice_top
+        spacing ps_choice_gap
 
-        vbox:
-            xfill True
-            spacing 14
+        for i in items:
+            button:
+                action i.action
+                alt i.caption
+                style "ps_choice_button"
+                xsize 1220
+                ysize ps_choice_h
 
-            for i in items:
-                button:
-                    action i.action
-                    alt i.caption
-                    style "ps_choice_button"
-                    xfill True
+                fixed:
+                    xsize 1220
+                    ysize ps_choice_h
 
-                    fixed:
-                        xfill True
-                        ysize 86
+                    add Solid("#100719d8") xsize 1220 ysize ps_choice_h
+                    add Solid("#bb6dff") xsize 4 ysize ps_choice_h xpos 0 ypos 0
+                    add Solid("#70409d") xsize 2 ysize 50 xpos 1206 ypos 23
 
-                        add Solid("#b96cff") xsize 4 ysize 86 xpos 0 ypos 0
-                        add Solid("#6f38a6") xsize 2 ysize 44 xpos 1218 ypos 21
-                        text i.caption style "ps_choice_button_text" xpos 26 xsize 1140 yalign 0.5
+                    text i.caption:
+                        style "ps_choice_button_text"
+                        xpos 28
+                        xanchor 0.0
+                        xsize 1148
+                        yalign 0.5
 
 
 style choice_vbox is vbox
@@ -405,16 +429,17 @@ screen ps_main_menu_item(label, action):
         padding (0, 0)
 
         fixed:
-            xfill True
-            yfill True
+            xsize 430
+            ysize 66
+
             add Solid("#9a57dc") xsize 4 ysize 66 xpos 0 ypos 0
             add Solid("#5b2f83") xsize 2 ysize 32 xpos 414 ypos 17
+
             text label:
+                style "ps_main_menu_item_text"
                 xpos 28
+                xanchor 0.0
                 yalign 0.5
-                size 29
-                color "#eee8ff"
-                hover_color "#ffffff"
 
 screen main_menu():
 
@@ -451,16 +476,16 @@ screen main_menu():
     add Transform(dust, alpha=0.35)
     # --- КНОПКИ слева ---
     frame:
-        background Solid("#00000040")
-        xalign 0.08
-        yalign 0.5
-        xsize 520
-        ysize 710
-        xpadding 28
-        ypadding 28
+        background None
+        xpos 56
+        ypos 158
+        xsize 470
+        ysize 760
+        padding (0, 0)
 
         vbox:
-            spacing 18
+            xalign 0.0
+            spacing 16
 
             use ps_main_menu_item("Начать", Start())
             if persistent.ps2_new_shift_plus_unlocked:
@@ -1770,6 +1795,13 @@ style ps_choice_button_text_hover is ps_choice_button_text:
     color "#ffffff"
 
 # --- PurpleShift main menu styles ---
+
+style ps_main_menu_item_text is text:
+    color "#eee8ff"
+    hover_color "#ffffff"
+    size 29
+    xalign 0.0
+    text_align 0.0
 
 style main_menu_frame is default:
     background Solid("#00000000")
