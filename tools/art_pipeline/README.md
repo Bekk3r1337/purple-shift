@@ -12,13 +12,14 @@ If an older version of this pipeline already saved your GenAPI key as `OPENAI_AP
 
 ## What it can do
 
-- remaster every existing character sprite using the sprite itself as the identity reference;
+- remaster every existing character sprite with a per-character canonical identity anchor plus the target expression/pose reference;
 - remaster every background while preserving location/camera/layout;
 - remaster every existing CG while preserving the scene and composition;
 - generate curated new expressions, Storm variants and cinematic CGs from `tasks.json`;
 - use GPT Image 2.5 Sunburst by default or Flare for a faster pass;
 - send multiple local references through GenAPI;
 - poll GenAPI automatically until the generation is finished;
+- run up to 5 image generations in parallel by default (configurable with `--workers`);
 - validate the GenAPI key before spending money and display the current balance when available;
 - skip outputs that already exist, so a stopped batch can be resumed;
 - write generated candidates to `art_output/` instead of overwriting the game;
@@ -56,4 +57,23 @@ Quality override:
 
 ```bat
 python tools\art_pipeline\generate_art.py --category cg --quality xhigh
+```
+
+
+## Character identity lock
+
+The first remaster pass could drift because every expression was edited independently. The locked pass now uses one canonical reference for each recurring character:
+
+- Lera: `nov_relief.png`
+- Viktor: `vet1.png`
+- Max: `mem_serious.png`
+- Artem: `super_stern.png`
+- Curator: `curator.png`
+
+For non-canonical expressions, reference #1 is always the identity anchor and reference #2 is the original expression/pose. Locked results are written to `art_output/remaster_locked/ch/`, so the earlier first-pass files remain available for comparison.
+
+Parallelism can be changed from the command line:
+
+```bat
+python tools\art_pipeline\generate_art.py --category ch --workers 5
 ```
