@@ -13,3 +13,8 @@ errors.txt
 __pycache__/
 cache/
 saves/
+
+# Local GPT Image art pipeline output/secrets
+art_output/
+art_backup/
+tools/art_pipeline/.env
