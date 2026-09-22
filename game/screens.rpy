@@ -96,9 +96,11 @@ style frame:
 
 screen say(who, what):
 
+    add "images/ui/v2/dialog_overlay.png"
+
     window:
         id "window"
-        background Solid("#00000099")  # <- прозрачность, 66 можно менять
+        background Solid("#00000044")
         xfill True
         yalign 1.0
         ysize 260                      # <- высота нижней плашки (меньше = меньше закрывает фон)
@@ -214,7 +216,8 @@ style input:
 screen choice(items):
     style_prefix "ps_choice"
 
-    add Solid("#000000") alpha 0.15
+    add Solid("#000000") alpha 0.10
+    add "images/ui/v2/choice_overlay.png"
 
     vbox:
         xalign 0.5
@@ -389,7 +392,12 @@ screen main_menu():
 
     tag menu
     $ ps_menu_art = ps_main_menu_art()
-    add ps_menu_art at ps_main_menu_drift
+
+    add "images/ui/v2/main_menu_bg.jpg"
+    if ps_menu_art != "images/ui/fon.jpg":
+        add Transform(ps_menu_art, alpha=0.42) at ps_main_menu_drift
+    add "images/ui/v2/main_menu_overlay.png"
+
     style_prefix "main_menu"
 
     # --- ФОН (слои, без LinearGradient) ---
@@ -477,11 +485,14 @@ style main_menu_version:
 ## экран предназначен для использования с одним или несколькими дочерними
 ## элементами, которые трансклюдируются (помещаются) внутрь него.
 
-screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+screen game_menu(title, scroll=None, yinitial=0.0, spacing=0, background=None):
 
     style_prefix "game_menu"
 
-    if main_menu:
+    if background is not None:
+        add background
+        add Solid("#05020899")
+    elif main_menu:
         add gui.main_menu_background
     else:
         add gui.game_menu_background
@@ -680,7 +691,7 @@ screen file_slots(title):
 
     default page_name_value = FilePageNameInputValue(pattern=_("{} страница"), auto=_("Автосохранения"), quick=_("Быстрые сохранения"))
 
-    use game_menu(title):
+    use game_menu(title, background="images/ui/v2/save_load_bg.jpg"):
 
         fixed:
 
@@ -813,7 +824,11 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Панель управления сменой"), scroll="viewport"):
+    use game_menu(
+        _("Панель управления сменой"),
+        scroll="viewport",
+        background="images/ui/v2/preferences_bg.jpg",
+    ):
 
         vbox:
 
