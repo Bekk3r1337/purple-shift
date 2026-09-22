@@ -136,7 +136,7 @@ init python:
 transform ps_center:
     xalign 0.5
     yalign 1.0
-    yoffset 188
+    yoffset 360
     zoom 0.71
     subpixel True
     function ps_character_breathe
@@ -144,7 +144,7 @@ transform ps_center:
 transform ps_left:
     xalign 0.23
     yalign 1.0
-    yoffset 188
+    yoffset 360
     zoom 0.71
     subpixel True
     function ps_character_breathe
@@ -152,7 +152,7 @@ transform ps_left:
 transform ps_right:
     xalign 0.77
     yalign 1.0
-    yoffset 188
+    yoffset 360
     zoom 0.73
     subpixel True
     function ps_character_breathe
@@ -160,7 +160,7 @@ transform ps_right:
 transform ps_righter:
     xalign 0.60
     yalign 1.0
-    yoffset 188
+    yoffset 360
     zoom 0.73
     subpixel True
     function ps_character_breathe

@@ -96,34 +96,20 @@ style frame:
 
 screen say(who, what):
 
-    # Opaque dialogue bed hides the lower half of character sprites so they read
-    # as grounded VN portraits instead of full-body figures standing in front of
-    # the HUD. The authored frame is drawn on top.
-    add Solid("#080510dc"):
-        xpos 72
-        ypos 664
-        xsize 1776
-        ysize 300
-
     add "images/ui/v2/dialog_overlay.png"
 
-    # Speaker name lives directly in the empty upper-left tab of the frame.
-    # A fixed container avoids inheriting namebox offsets that previously pushed
-    # the label off the left edge.
+    # Put the speaker directly into the authored name tab. Do not use the
+    # legacy namebox style here - it carries positional alignment that can push
+    # the label away from the artwork.
     if who is not None:
-        fixed:
-            xpos 94
-            ypos 598
-            xsize 560
-            ysize 78
-
-            text who:
-                id "who"
-                style "say_label"
-                xpos 28
-                xanchor 0.0
-                yalign 0.5
-                text_align 0.0
+        text who:
+            id "who"
+            style "ps_speaker_name"
+            xpos 124
+            ypos 628
+            xanchor 0.0
+            yanchor 0.5
+            text_align 0.0
 
     window:
         id "window"
@@ -182,6 +168,9 @@ style say_label:
     xalign gui.name_xalign
     yalign 0.5
 
+style ps_speaker_name is text:
+    properties gui.text_properties("name", accent=True)
+
 style say_dialogue:
     properties gui.text_properties("dialogue")
 
@@ -239,9 +228,14 @@ screen choice(items):
 
     add Solid("#030106") alpha 0.08
 
-    # Restore the authored Visual Pass 2 selection frame. The artwork contains
-    # four rails; shorter menus are bottom-aligned into those rails.
-    add "images/ui/v2/choice_overlay.png"
+    # Keep the generated artwork, but crop away rails that are not needed.
+    # 3 choices now show exactly 3 decorative rails, 2 choices show 2, etc.
+    $ ps_choice_slots = min(max(len(items), 1), 4)
+    $ ps_choice_crop_h = {1: 390, 2: 545, 3: 700, 4: 1080}[ps_choice_slots]
+    add Transform(
+        "images/ui/v2/choice_overlay.png",
+        crop=(0, 0, 1920, ps_choice_crop_h),
+    )
 
     $ ps_choice_h = 84
     $ ps_choice_gap = 68
