@@ -123,7 +123,6 @@ screen say(who, what):
                 xpos 28
                 xanchor 0.0
                 yalign 0.5
-                xalign 0.0
                 text_align 0.0
 
     window:
