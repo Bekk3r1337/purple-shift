@@ -997,8 +997,7 @@
         "game/images/cg/storm_signal.jpg",
         "game/images/cg/storm_first_contact.jpg"
       ],
-      "target": "art_output/visual_pass_2/vfx/violet_seam.png",
-      "prompt": "Full-screen transparent VFX plate: one subtle but striking violet spatial seam/tear in reality. Refracted space, wrong industrial light and unstable geometry, not fantasy fire, lightning or magical sparkles. Keep most of canvas transparent.",
+      "target": "art_output/visual_pass_2/vfx/violet_seam.png",      "prompt": "Full-screen transparent VFX plate: one subtle but striking violet spatial seam/tear in reality. Refracted space, wrong industrial light and unstable geometry, not fantasy fire, lightning or magical sparkles. Keep most of canvas transparent.",
       "quality": "max",
       "background": "transparent",
       "output_format": "png",
