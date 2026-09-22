@@ -395,6 +395,27 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
+screen ps_main_menu_item(label, action):
+    button:
+        action action
+        xsize 430
+        ysize 66
+        background Solid("#0a0610c8")
+        hover_background Solid("#2b1744e8")
+        padding (0, 0)
+
+        fixed:
+            xfill True
+            yfill True
+            add Solid("#9a57dc") xsize 4 ysize 66 xpos 0 ypos 0
+            add Solid("#5b2f83") xsize 2 ysize 32 xpos 414 ypos 17
+            text label:
+                xpos 28
+                yalign 0.5
+                size 29
+                color "#eee8ff"
+                hover_color "#ffffff"
+
 screen main_menu():
 
     tag menu
@@ -420,13 +441,13 @@ screen main_menu():
 
     # --- ЛОГО справа снизу ---
     vbox:
-        xalign 0.95
-        yalign 0.92
+        xalign 0.92
+        yalign 0.91
         spacing 6
 
-        text "PurpleShift" size 72 color "#8a2fff"
-        text "[config.version]" size 26 color "#8a7aa8"
-        text ps_main_menu_status() size 18 color "#baa9cc" xalign 1.0
+        text "PURPLE SHIFT" size 58 color "#a85cff"
+        text "[config.version]" size 24 color "#a997bd" xalign 1.0
+        text ps_main_menu_status() size 17 color "#c7b7d8" xalign 1.0
     add Transform(dust, alpha=0.35)
     # --- КНОПКИ слева ---
     frame:
@@ -441,17 +462,17 @@ screen main_menu():
         vbox:
             spacing 18
 
-            textbutton "Начать" action Start() style "main_menu_button"
+            use ps_main_menu_item("Начать", Start())
             if persistent.ps2_new_shift_plus_unlocked:
-                textbutton "Новая смена+" action Start("ps2_new_shift_plus_start")
-                textbutton "Карта решений" action Show("ps2_decision_map")
-            textbutton "Загрузить" action ShowMenu("load")
-            textbutton "Главы" action ShowMenu("ps_chapter_select")
-            textbutton "Коллекция" action Show("ps_phone", initial_tab="archive")
-            textbutton "Настройки" action ShowMenu("preferences")
-            textbutton "Об игре" action ShowMenu("about")
-            textbutton "Помощь" action ShowMenu("help")
-            textbutton "Выход" action Quit(confirm=True)
+                use ps_main_menu_item("Новая смена+", Start("ps2_new_shift_plus_start"))
+                use ps_main_menu_item("Карта решений", Show("ps2_decision_map"))
+            use ps_main_menu_item("Загрузить", ShowMenu("load"))
+            use ps_main_menu_item("Главы", ShowMenu("ps_chapter_select"))
+            use ps_main_menu_item("Коллекция", Show("ps_phone", initial_tab="archive"))
+            use ps_main_menu_item("Настройки", ShowMenu("preferences"))
+            use ps_main_menu_item("Об игре", ShowMenu("about"))
+            use ps_main_menu_item("Помощь", ShowMenu("help"))
+            use ps_main_menu_item("Выход", Quit(confirm=True))
 
 
 style main_menu_frame is empty
