@@ -795,15 +795,15 @@ label ps2_after_shift(day):
     if day in (1, 2, 3):
         scene bg street_night
         with fade
-        play music "audio/night_walk.mp3" fadein 1.5 loop
+        $ ps_play_ost("walk_to_shift", fadein=1.5)
     elif day in (4, 5):
         scene bg break_room
         with fade
-        play music "audio/after_shift_ambient.mp3" fadein 1.5 loop
+        $ ps_play_ost("after_shift", fadein=1.5)
     else:
         scene bg warehouse_outside
         with fade
-        play music "audio/city_night.mp3" fadein 1.5 loop
+        $ ps_play_ost("city_night", fadein=1.5)
 
     if day == 1:
         n "После проходной приложение просит оценить смену пятью звёздами. В форме есть поле для комментария."
