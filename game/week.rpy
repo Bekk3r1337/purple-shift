@@ -753,6 +753,7 @@ label chapter5_day_five:
     scene bg warehouse_alert
     with fade
 
+    $ ps_play_ost("red_button", fadein=0.7)
     $ ps_set_ambience("alert")
 
     n "Первый час подъёмник работает. Второй — тоже. На третьем платформа останавливается между уровнями."
@@ -1084,6 +1085,7 @@ label chapter6_day_six:
     scene bg control_room
     with fade
 
+    $ ps_play_ost("human_pressure", fadein=1.2)
     $ ps_set_ambience("quiet")
     $ ps_unlock_cg("artem_curator_private")
 
@@ -1523,6 +1525,7 @@ label chapter7_day_seven:
     n "Свет моргает. Раз. Два. Фиолетовые лампы остаются гореть, когда белые гаснут."
 
     stop music fadeout 0.5
+    $ ps_play_ost("purple_intrusion", fadein=0.35)
 
     n "Конвейер не останавливается. ТСД один за другим уходят в красный экран. Табло продолжает считать, хотя люди больше не понимают, куда идёт товар."
 
@@ -2034,6 +2037,7 @@ label ending_common:
     with fade
 
     $ ps_final_ending = ps_ending_id()
+    $ ps_play_ost("seven_days_later", fadein=2.0)
     $ ps_unlock_ending(ps_final_ending)
     $ ps_unlock_achievement("seven_days")
     $ ps_evaluate_achievements()
