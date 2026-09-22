@@ -96,26 +96,35 @@ style frame:
 
 screen say(who, what):
 
+    # Opaque dialogue bed hides the lower half of character sprites so they read
+    # as grounded VN portraits instead of full-body figures standing in front of
+    # the HUD. The authored frame is drawn on top.
+    add Solid("#080510dc"):
+        xpos 72
+        ypos 664
+        xsize 1776
+        ysize 300
+
     add "images/ui/v2/dialog_overlay.png"
 
-    # The generated HUD has a dedicated upper-left name plate.
-    # Keep the speaker name out of the dialogue body so the artwork reads as
-    # one coherent interface instead of two stacked text boxes.
+    # Speaker name lives directly in the empty upper-left tab of the frame.
+    # A fixed container avoids inheriting namebox offsets that previously pushed
+    # the label off the left edge.
     if who is not None:
-        window:
-            id "namebox"
-            background None
-            xpos 108
-            ypos 672
-            xsize 520
-            ysize 66
-            padding (0, 0)
+        fixed:
+            xpos 94
+            ypos 598
+            xsize 560
+            ysize 78
 
             text who:
                 id "who"
                 style "say_label"
-                xalign 0.0
+                xpos 28
+                xanchor 0.0
                 yalign 0.5
+                xalign 0.0
+                text_align 0.0
 
     window:
         id "window"
@@ -235,14 +244,14 @@ screen choice(items):
     # four rails; shorter menus are bottom-aligned into those rails.
     add "images/ui/v2/choice_overlay.png"
 
-    $ ps_choice_h = 96
-    $ ps_choice_gap = 18
-    $ ps_choice_slot = ps_choice_h + ps_choice_gap
-    $ ps_choice_top = 334 + max(0, 4 - len(items)) * ps_choice_slot
+    $ ps_choice_h = 84
+    $ ps_choice_gap = 68
+    $ ps_choice_top = 246
 
     vbox:
         xalign 0.5
         ypos ps_choice_top
+        yanchor 0.0
         spacing ps_choice_gap
 
         for i in items:
@@ -257,9 +266,9 @@ screen choice(items):
                     xsize 1220
                     ysize ps_choice_h
 
-                    add Solid("#100719d8") xsize 1220 ysize ps_choice_h
+                    add Solid("#100719e8") xsize 1220 ysize ps_choice_h
                     add Solid("#bb6dff") xsize 4 ysize ps_choice_h xpos 0 ypos 0
-                    add Solid("#70409d") xsize 2 ysize 50 xpos 1206 ypos 23
+                    add Solid("#70409d") xsize 2 ysize 44 xpos 1206 ypos 20
 
                     text i.caption:
                         style "ps_choice_button_text"
