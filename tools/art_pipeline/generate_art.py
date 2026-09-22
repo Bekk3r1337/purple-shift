@@ -216,7 +216,7 @@ def auto_remaster_tasks(category: str) -> list[dict]:
             target = (OUTPUT_ROOT / "remaster" / category / source.name).relative_to(ROOT).as_posix()
             refs = [rel]
 
-        tasks.append({
+        task = {
             "id": f"remaster-{category}-{source.stem}",
             "category": category,
             "mode": "edit",
@@ -229,7 +229,20 @@ def auto_remaster_tasks(category: str) -> list[dict]:
             "background": "transparent" if category == "ch" else "opaque",
             "output_format": output_format_for(source, category),
             "preserve_reference_size": True,
-        })
+        }
+
+        if category == "ch" and source.stem.lower() == "vet_injured":
+            task["safe_refs"] = [
+                "game/images/ch/vet1.png",
+                "game/images/ch/vet_concerned.png",
+            ]
+            task["safe_prompt"] = (
+                CATEGORY_PROMPTS["ch"]
+                + " Create a non-graphic fatigued variant with subtle wrist/hand discomfort only. "
+                  "No blood, no wounds, no bruises, no exposed injury, no medical trauma."
+            )
+
+        tasks.append(task)
     return tasks
 
 
@@ -489,7 +502,21 @@ def run_one_task(task: dict, api_key: str, model: str, quality_override: str | N
     error = None
     try:
         print(f"  START [{task_id}]")
-        result = call_genapi(api_key, task, model=model, quality_override=quality_override)
+        try:
+            result = call_genapi(api_key, task, model=model, quality_override=quality_override)
+        except Exception as first_exc:
+            message = str(first_exc).lower()
+            safe_refs = task.get("safe_refs")
+            if safe_refs and ("модера" in message or "moderation" in message):
+                print(f"  RETRY [{task_id}] moderation-safe reference set")
+                safe_task = dict(task)
+                safe_task["refs"] = safe_refs
+                safe_task["prompt"] = task.get("safe_prompt", task.get("prompt", ""))
+                result = call_genapi(api_key, safe_task, model=model, quality_override=quality_override)
+                task = safe_task
+            else:
+                raise
+
         save_genapi_result(result, target, task, api_key)
         print(f"  OK    [{task_id}] -> {target.relative_to(ROOT)}")
     except Exception as exc:
