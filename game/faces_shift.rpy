@@ -16,9 +16,9 @@ image cg team_reflection = "images/cg/team_reflection.jpg"
 transform ps_close_left:
     xalign 0.20
     yalign 1.0
-    yoffset 36
+    yoffset 206
     xoffset -55
-    zoom 0.66
+    zoom 0.80
     alpha 0.0
     subpixel True
     ease 0.42 xoffset 0 alpha 1.0
@@ -27,9 +27,9 @@ transform ps_close_left:
 transform ps_close_right:
     xalign 0.78
     yalign 1.0
-    yoffset 36
+    yoffset 206
     xoffset 55
-    zoom 0.68
+    zoom 0.82
     alpha 0.0
     subpixel True
     ease 0.42 xoffset 0 alpha 1.0
