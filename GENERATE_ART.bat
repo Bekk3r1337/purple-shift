@@ -9,11 +9,11 @@ echo ================================================================
 echo.
 
 where py >nul 2>nul
-if %errorlevel%==0 (
+if not errorlevel 1 (
     set "PY=py -3"
 ) else (
     where python >nul 2>nul
-    if not %errorlevel%==0 (
+    if errorlevel 1 (
         echo [ERROR] Python 3 not found.
         echo Install Python 3.10+ and enable "Add Python to PATH".
         pause
@@ -23,10 +23,10 @@ if %errorlevel%==0 (
 )
 
 %PY% -c "import openai, PIL" >nul 2>nul
-if not %errorlevel%==0 (
+if errorlevel 1 (
     echo Installing required Python packages...
     %PY% -m pip install --upgrade openai pillow
-    if not %errorlevel%==0 (
+    if errorlevel 1 (
         echo [ERROR] Failed to install dependencies.
         pause
         exit /b 1
