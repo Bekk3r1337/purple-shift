@@ -86,6 +86,15 @@ CURATED_PROMOTION = [
     ("cg", "storm_first_contact.jpg"),
 ]
 
+VISUAL_PASS_2_BATCHES = ("ui", "bg_variants", "consistency", "extra_cg", "vfx")
+VISUAL_PASS_2_LABELS = {
+    "ui": "UI / меню",
+    "bg_variants": "Уникальные варианты фонов",
+    "consistency": "Consistency-pass персонажей",
+    "extra_cg": "Дополнительные сюжетные CG",
+    "vfx": "VFX / Storm overlays",
+}
+
 CHARACTER_CANONICAL = {
     "nov": "game/images/ch/nov_relief.png",
     "vet": "game/images/ch/vet1.png",
@@ -282,17 +291,18 @@ def compose_prompt(task: dict) -> str:
 
 def make_output_paths(task: dict) -> tuple[Path, Path]:
     category = task["category"]
-    source_name = Path(task["apply_to"]).name if task.get("apply_to") else Path(task["target"]).name
+    filename = Path(task.get("apply_to") or task["target"]).name
 
-    if task.get("category") == "ch":
-        master_path = MASTER_ROOT / category / source_name
-        game_ready_path = GAME_READY_ROOT / category / source_name
+    output_group = str(task.get("output_group") or "").strip()
+    if output_group:
+        group_root = OUTPUT_ROOT / output_group
+        master_root = group_root / "master"
+        game_ready_root = group_root / "game_ready"
     else:
-        target_name = Path(task["target"]).name
-        master_path = MASTER_ROOT / category / target_name
-        game_ready_path = GAME_READY_ROOT / category / target_name
+        master_root = MASTER_ROOT
+        game_ready_root = GAME_READY_ROOT
 
-    return master_path, game_ready_path
+    return master_root / category / filename, game_ready_root / category / filename
 
 
 def normalize_and_save_versions(raw_path: Path, task: dict, master_path: Path, game_ready_path: Path) -> None:
@@ -308,14 +318,17 @@ def normalize_and_save_versions(raw_path: Path, task: dict, master_path: Path, g
     save_format = {"jpeg": "JPEG", "jpg": "JPEG", "webp": "WEBP"}.get(output_format, "PNG")
     save_kwargs = {"quality": 95} if save_format in {"JPEG", "WEBP"} else {}
 
-    master_size = master_size_for_category(category)
+    explicit_master = task.get("master_size")
+    if isinstance(explicit_master, list) and len(explicit_master) == 2:
+        master_size = (int(explicit_master[0]), int(explicit_master[1]))
+    else:
+        master_size = master_size_for_category(category)
+
     ready_size = game_ready_size_for(task)
 
     with Image.open(raw_path) as im:
-        if category == "ch":
-            target_mode = "RGBA"
-        else:
-            target_mode = "RGB"
+        wants_alpha = category == "ch" or task.get("background") == "transparent"
+        target_mode = "RGBA" if wants_alpha else "RGB"
 
         if im.mode != target_mode:
             im = im.convert(target_mode)
@@ -563,13 +576,15 @@ def auto_remaster_tasks(category: str) -> list[dict]:
     return tasks
 
 
-def curated_tasks(category: str | None = None) -> list[dict]:
+def manifest_tasks(category: str | None = None, batch: str | None = None) -> list[dict]:
     manifest = load_manifest()
     tasks = [t for t in manifest.get("tasks", []) if t.get("enabled", True)]
 
     prepared = []
     for t in tasks:
         if category and t.get("category") != category:
+            continue
+        if batch and t.get("batch") != batch:
             continue
 
         task = dict(t)
@@ -579,6 +594,15 @@ def curated_tasks(category: str | None = None) -> list[dict]:
         prepared.append(task)
 
     return prepared
+
+
+def curated_tasks(category: str | None = None) -> list[dict]:
+    return manifest_tasks(category=category)
+
+
+def visual_pass_2_tasks(batch: str | None = None) -> list[dict]:
+    tasks = manifest_tasks(batch=batch)
+    return [t for t in tasks if t.get("output_group") == "visual_pass_2"]
 
 
 def run_one_task(task: dict, api_key: str) -> dict:
@@ -662,12 +686,10 @@ def run_tasks(tasks: list[dict], category: str, dry_run: bool = False, workers: 
     print(f"Качество: {QUALITY}")
     print(f"Параллельно: до {workers} генераций")
 
-    if category == "ch":
-        print(f"Request size: {REQUEST_SIZE_CH}")
-        print(f"Master size:  {MASTER_SIZE_CH[0]}x{MASTER_SIZE_CH[1]}")
-    else:
-        print(f"Request size: {REQUEST_SIZE_BG_CG}")
-        print(f"Master size:  {MASTER_SIZE_BG_CG[0]}x{MASTER_SIZE_BG_CG[1]}")
+    categories = sorted({task.get("category", "?") for task in tasks})
+    print("Категории:", ", ".join(categories))
+    print("Request size: определяется для каждой задачи")
+    print("Master: до 3840x2160 для сцен/UI/VFX и 2048x3072 для спрайтов")
 
     if dry_run:
         for i, task in enumerate(tasks, 1):
@@ -805,6 +827,78 @@ def promote_curated_outputs() -> None:
         print(f"Backup: {backup_dir.relative_to(ROOT)}")
 
 
+def visual_pass_2_destination(task: dict) -> Path:
+    batch = task.get("batch")
+    filename = Path(task["target"]).name
+
+    if batch == "ui":
+        return ROOT / "game" / "images" / "ui" / "v2" / filename
+    if batch == "bg_variants":
+        return ROOT / "game" / "images" / "bg" / filename
+    if batch == "consistency":
+        return ROOT / "game" / "images" / "ch" / filename
+    if batch == "extra_cg":
+        return ROOT / "game" / "images" / "cg" / filename
+    if batch == "vfx":
+        return ROOT / "game" / "images" / "vfx" / filename
+
+    raise ValueError(f"Неизвестный batch Visual Pass 2: {batch}")
+
+
+def promote_visual_pass_2_outputs() -> None:
+    tasks = visual_pass_2_tasks()
+    if not tasks:
+        print("В tasks.json нет задач Visual Pass 2.")
+        return
+
+    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    backup_dir = BACKUP_ROOT / stamp / "visual_pass_2"
+    promoted = 0
+    missing = []
+
+    print(f"\nУстановка Visual Pass 2: {len(tasks)} файлов...")
+
+    for task in tasks:
+        _, src = make_output_paths(task)
+        dst = visual_pass_2_destination(task)
+
+        if not src.exists():
+            missing.append(task["id"])
+            print(f"  MISSING [{task['id']}] {src.relative_to(ROOT)}")
+            continue
+
+        if dst.exists():
+            backup = backup_dir / dst.relative_to(ROOT)
+            backup.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(dst, backup)
+
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src, dst)
+        promoted += 1
+        print(f"  INSTALL [{task['id']}] -> {dst.relative_to(ROOT)}")
+
+    print(f"\nУстановлено Visual Pass 2: {promoted}/{len(tasks)}.")
+    if missing:
+        print("Не найдены результаты:")
+        for task_id in missing:
+            print(f"  - {task_id}")
+        print("Догенерируй отсутствующий пакет и снова запусти установку.")
+    else:
+        print("Все файлы Visual Pass 2 перенесены в game/images и готовы к коммиту.")
+
+    if promoted and backup_dir.exists():
+        print(f"Backup: {backup_dir.relative_to(ROOT)}")
+
+
+def run_visual_pass_2_batch(batch: str, dry_run: bool = False) -> None:
+    tasks = visual_pass_2_tasks(batch)
+    if not tasks:
+        print(f"Нет задач пакета {batch}.")
+        return
+    workers = CHAR_WORKERS if batch == "consistency" else SCENE_WORKERS
+    run_tasks(tasks, "ch" if batch == "consistency" else "cg", dry_run=dry_run, workers=workers)
+
+
 def confirm_generation(tasks: list[dict]) -> bool:
     print(f"Подготовлено задач: {len(tasks)}")
     print("Режим OVERDRIVE - Sunburst + MAX quality + high-resolution master files.")
@@ -816,78 +910,88 @@ def confirm_generation(tasks: list[dict]) -> bool:
 def menu() -> None:
     while True:
         print("\n" + "=" * 78)
-        print(" PURPLE SHIFT - GPT IMAGE 2.5 / GenAPI OVERDRIVE PIPELINE")
+        print(" PURPLE SHIFT - GPT IMAGE 2.5 / GenAPI OVERDRIVE")
         print("=" * 78)
-        print("1. Показать план curated-артов без генерации")
-        print("2. Ремастер персонажей - OVERDRIVE (Sunburst, max, 5 параллельно)")
-        print("3. Ремастер фонов - OVERDRIVE (Sunburst, max, 3 параллельно)")
-        print("4. Ремастер CG - OVERDRIVE (Sunburst, max, 3 параллельно)")
-        print("5. Сгенерировать curated-арты - OVERDRIVE")
-        print("6. ПОЛНЫЙ ПРОГОН: персонажи + фоны + CG + curated")
-        print("7. Применить готовые game_ready ремастеры в игру (с backup)")
-        print("8. Выйти")
-        print("9. Установить 17 curated-артов в игру")
+        print("1. VISUAL PASS 2 - СГЕНЕРИРОВАТЬ ВСЁ (46 задач)")
+        print("2. Visual Pass 2 - UI / меню (8)")
+        print("3. Visual Pass 2 - уникальные фоны (3)")
+        print("4. Visual Pass 2 - consistency персонажей (20)")
+        print("5. Visual Pass 2 - дополнительные CG (10)")
+        print("6. Visual Pass 2 - VFX / Storm overlays (5)")
+        print("7. Показать план Visual Pass 2 без генерации")
+        print("8. Установить готовый Visual Pass 2 в game/images")
+        print("9. Выйти")
+        print("")
+        print("10. Legacy - ремастер персонажей")
+        print("11. Legacy - ремастер фонов")
+        print("12. Legacy - ремастер CG")
+        print("13. Legacy - установить старые 17 curated-артов")
         choice = input("\nВыбор: ").strip()
 
-        if choice == "1":
-            run_tasks(curated_tasks(), "cg", dry_run=True, workers=SCENE_WORKERS)
-            continue
-        if choice == "8":
-            return
         if choice == "9":
-            promote_curated_outputs()
+            return
+
+        if choice == "1":
+            tasks = visual_pass_2_tasks()
+            if confirm_generation(tasks):
+                for batch in VISUAL_PASS_2_BATCHES:
+                    print(f"\n=== {VISUAL_PASS_2_LABELS[batch]} ===")
+                    run_visual_pass_2_batch(batch)
             continue
 
         if choice == "2":
-            category = "ch"
-            tasks = auto_remaster_tasks("ch")
+            batch = "ui"
         elif choice == "3":
-            category = "bg"
-            tasks = auto_remaster_tasks("bg")
+            batch = "bg_variants"
         elif choice == "4":
-            category = "cg"
-            tasks = auto_remaster_tasks("cg")
+            batch = "consistency"
         elif choice == "5":
-            category = "cg"
-            tasks = curated_tasks()
+            batch = "extra_cg"
         elif choice == "6":
-            all_tasks = (
-                [("ch", auto_remaster_tasks("ch"))]
-                + [("bg", auto_remaster_tasks("bg"))]
-                + [("cg", auto_remaster_tasks("cg"))]
-                + [("curated", curated_tasks())]
-            )
-            total_tasks = sum(len(batch) for _, batch in all_tasks)
-            if not confirm_generation([None] * total_tasks):
-                continue
-
-            print("\nСтарт полного прогона пакетами:")
-            for cat_name, batch in all_tasks:
-                if not batch:
-                    continue
-                real_cat = "ch" if cat_name == "ch" else "cg"
-                print(f"\n=== Пакет: {cat_name} ===")
-                run_tasks(batch, real_cat, dry_run=False, workers=workers_for_category(real_cat))
-            continue
+            batch = "vfx"
         elif choice == "7":
-            all_tasks = auto_remaster_tasks("ch") + auto_remaster_tasks("bg") + auto_remaster_tasks("cg")
-            apply_outputs(all_tasks)
+            tasks = visual_pass_2_tasks()
+            run_tasks(tasks, "cg", dry_run=True, workers=SCENE_WORKERS)
+            continue
+        elif choice == "8":
+            promote_visual_pass_2_outputs()
+            continue
+        elif choice == "10":
+            tasks = auto_remaster_tasks("ch")
+            if confirm_generation(tasks):
+                run_tasks(tasks, "ch", workers=CHAR_WORKERS)
+            continue
+        elif choice == "11":
+            tasks = auto_remaster_tasks("bg")
+            if confirm_generation(tasks):
+                run_tasks(tasks, "bg", workers=SCENE_WORKERS)
+            continue
+        elif choice == "12":
+            tasks = auto_remaster_tasks("cg")
+            if confirm_generation(tasks):
+                run_tasks(tasks, "cg", workers=SCENE_WORKERS)
+            continue
+        elif choice == "13":
+            promote_curated_outputs()
             continue
         else:
             print("Неизвестный пункт.")
             continue
 
+        tasks = visual_pass_2_tasks(batch)
         if confirm_generation(tasks):
-            run_tasks(tasks, category, dry_run=False, workers=workers_for_category(category))
+            run_visual_pass_2_batch(batch)
 
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Purple Shift GPT Image 2.5 OVERDRIVE art pipeline via GenAPI")
     p.add_argument("--menu", action="store_true")
     p.add_argument("--category", choices=["ch", "bg", "cg", "curated", "all"])
+    p.add_argument("--visual-batch", choices=[*VISUAL_PASS_2_BATCHES, "all"])
     p.add_argument("--dry-run", action="store_true")
     p.add_argument("--apply", choices=["ch", "bg", "cg", "all"])
-    p.add_argument("--promote-curated", action="store_true", help="Установить 17 curated-артов из art_output в game/images")
+    p.add_argument("--promote-curated", action="store_true", help="Установить старые 17 curated-артов")
+    p.add_argument("--promote-vp2", action="store_true", help="Установить Visual Pass 2 в game/images")
     p.add_argument("--workers", type=int, default=None, help="Одновременных генераций")
     return p.parse_args()
 
@@ -895,12 +999,32 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
 
-    if args.menu or (not args.category and not args.apply and not args.promote_curated):
+    if args.menu or (
+        not args.category
+        and not args.visual_batch
+        and not args.apply
+        and not args.promote_curated
+        and not args.promote_vp2
+    ):
         menu()
+        return
+
+    if args.promote_vp2:
+        promote_visual_pass_2_outputs()
         return
 
     if args.promote_curated:
         promote_curated_outputs()
+        return
+
+    if args.visual_batch:
+        if args.visual_batch == "all":
+            for batch in VISUAL_PASS_2_BATCHES:
+                run_visual_pass_2_batch(batch, dry_run=args.dry_run)
+        else:
+            tasks = visual_pass_2_tasks(args.visual_batch)
+            workers = args.workers or (CHAR_WORKERS if args.visual_batch == "consistency" else SCENE_WORKERS)
+            run_tasks(tasks, "ch" if args.visual_batch == "consistency" else "cg", dry_run=args.dry_run, workers=workers)
         return
 
     if args.apply:
