@@ -105,12 +105,14 @@ def ensure_api_key() -> str:
     return key
 
 
-def headers_for(api_key: str) -> dict[str, str]:
-    return {
+def headers_for(api_key: str, *, json_content: bool = True) -> dict[str, str]:
+    headers = {
         "Accept": "application/json",
-        "Content-Type": "application/json",
         "Authorization": f"Bearer {api_key}",
     }
+    if json_content:
+        headers["Content-Type"] = "application/json"
+    return headers
 
 
 def validate_key(api_key: str) -> None:
@@ -330,8 +332,9 @@ def call_genapi(api_key: str, task: dict, model: str, quality_override: str | No
     prompt = compose_prompt(task)
     quality = quality_override or task.get("quality", "high")
 
+    # callback_url intentionally omitted: we use GenAPI long-polling by request_id.
+    # Passing null is rejected by the network validator.
     payload = {
-        "callback_url": None,
         "is_sync": False,
         "prompt": prompt,
         "model": model,
@@ -343,18 +346,52 @@ def call_genapi(api_key: str, task: dict, model: str, quality_override: str | No
     }
 
     refs = [ROOT / p for p in task.get("refs", [])]
-    if refs:
-        missing = [str(p) for p in refs if not p.exists()]
-        if missing:
-            raise FileNotFoundError("Не найдены референсы: " + ", ".join(missing))
-        payload["image_urls"] = [path_to_data_uri(p) for p in refs]
+    missing = [str(p) for p in refs if not p.exists()]
+    if missing:
+        raise FileNotFoundError("Не найдены референсы: " + ", ".join(missing))
 
-    response = requests.post(
-        f"{GENAPI_BASE}/networks/{GENAPI_NETWORK}",
-        json=payload,
-        headers=headers_for(api_key),
-        timeout=120,
-    )
+    endpoint = f"{GENAPI_BASE}/networks/{GENAPI_NETWORK}"
+
+    if refs:
+        # GenAPI documents files_array inputs as multipart/form-data.
+        # image_urls[] makes the field arrive as a real array instead of a JSON
+        # string/data-URI value, which the GPT Image 2.5 validator rejects.
+        files = []
+        handles = []
+        try:
+            for ref in refs:
+                handle = open(ref, "rb")
+                handles.append(handle)
+                mime = mimetypes.guess_type(ref.name)[0] or "application/octet-stream"
+                files.append(("image_urls[]", (ref.name, handle, mime)))
+
+            form = {
+                "is_sync": "false",
+                "prompt": prompt,
+                "model": model,
+                "quality": quality,
+                "image_size": task.get("size", "1024x1024"),
+                "background": task.get("background", "auto"),
+                "num_images": "1",
+                "output_format": task.get("output_format", "png"),
+            }
+            response = requests.post(
+                endpoint,
+                data=form,
+                files=files,
+                headers=headers_for(api_key, json_content=False),
+                timeout=180,
+            )
+        finally:
+            for handle in handles:
+                handle.close()
+    else:
+        response = requests.post(
+            endpoint,
+            json=payload,
+            headers=headers_for(api_key),
+            timeout=120,
+        )
 
     if response.status_code == 401:
         raise RuntimeError("GenAPI отклонил API-ключ (401).")
