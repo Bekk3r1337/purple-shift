@@ -1,244 +1,1114 @@
 {
-  "version": 1,
-  "notes": "Curated NEW assets. Existing sprites/backgrounds/CG can be batch-remastered automatically by generate_art.py.",
+  "version": 2,
+  "notes": "Purple Shift Visual Pass 2: UI/menu art, true background variants, character consistency refinement, extra cinematic CGs and transparent VFX. All tasks use output_group=visual_pass_2 so they do not collide with previous generations.",
   "tasks": [
     {
-      "id": "lera-neutral",
+      "id": "ui-main-menu-bg",
       "enabled": true,
-      "category": "ch",
+      "batch": "ui",
+      "output_group": "visual_pass_2",
+      "category": "ui",
       "mode": "edit",
-      "refs": ["game/images/ch/nov_relief.png", "game/images/ch/nov_determined.png"],
-      "target": "art_output/curated/ch/nov_neutral.png",
-      "prompt": "Lera. Create a canonical neutral everyday expression: attentive, slightly tired after work, calm mouth, direct natural gaze. Preserve her exact identity and outfit from the references. Full-body transparent sprite.",
-      "size": "1024x1536",
-      "quality": "high",
-      "background": "transparent",
-      "output_format": "png",
-      "preserve_reference_size": true
+      "refs": [
+        "game/images/bg/warehouse_inside.jpg",
+        "game/images/cg/storm_signal.jpg"
+      ],
+      "target": "art_output/visual_pass_2/ui/main_menu_bg.jpg",
+      "prompt": "Premium cinematic main-menu background for Purple Shift. Dark late-evening industrial warehouse, quiet and uneasy, practical overhead lights, wet concrete reflections, conveyor silhouettes and soft haze, with restrained violet Purple Storm anomaly far in the background. Leave broad clean negative space for the logo and vertical menu. Atmospheric but not cluttered. Grounded corporate-industrial reality touched by something impossible. No characters, text, logos or watermark.",
+      "quality": "max",
+      "background": "opaque",
+      "output_format": "jpeg",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
     },
     {
-      "id": "lera-angry",
+      "id": "ui-main-menu-overlay",
       "enabled": true,
-      "category": "ch",
+      "batch": "ui",
+      "output_group": "visual_pass_2",
+      "category": "ui",
       "mode": "edit",
-      "refs": ["game/images/ch/nov_determined.png", "game/images/ch/nov1.png"],
-      "target": "art_output/curated/ch/nov_angry.png",
-      "prompt": "Lera. Controlled anger and disbelief during a workplace conflict, tense eyebrows and jaw, not screaming. Preserve identity and outfit exactly. Full-body transparent sprite.",
-      "size": "1024x1536",
-      "quality": "high",
+      "refs": [
+        "game/images/ui/fon.jpg",
+        "game/images/cg/storm_signal.jpg"
+      ],
+      "target": "art_output/visual_pass_2/ui/main_menu_overlay.png",
+      "prompt": "Full-screen transparent main-menu overlay for Purple Shift. Modern minimal cinematic VN interface: smoked dark glass, subtle violet edge light, extremely restrained technical glitch accents, fine industrial linework and spacious framing for logo and vertical menu. No words or icons. Keep most of the canvas transparent.",
+      "quality": "max",
       "background": "transparent",
       "output_format": "png",
-      "preserve_reference_size": true
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
     },
     {
-      "id": "lera-scared",
+      "id": "ui-dialog-overlay",
       "enabled": true,
-      "category": "ch",
+      "batch": "ui",
+      "output_group": "visual_pass_2",
+      "category": "ui",
       "mode": "edit",
-      "refs": ["game/images/ch/nov1.png", "game/images/ch/nov2.png"],
-      "target": "art_output/curated/ch/nov_scared.png",
-      "prompt": "Lera. Quiet genuine fear after witnessing something impossible, widened eyes and restrained tension, no melodrama. Preserve identity and outfit exactly. Full-body transparent sprite.",
-      "size": "1024x1536",
-      "quality": "high",
+      "refs": [
+        "game/images/ui/fon.jpg"
+      ],
+      "target": "art_output/visual_pass_2/ui/dialog_overlay.png",
+      "prompt": "Full-screen transparent dialogue HUD overlay for Purple Shift. Wide lower dialogue frame plus compact nameplate region, smoked acrylic/dark glass, restrained violet technical accents and subtle warehouse-system motifs. Elegant, cinematic and highly readable. No text or portraits. Transparent background only.",
+      "quality": "max",
       "background": "transparent",
       "output_format": "png",
-      "preserve_reference_size": true
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
     },
     {
-      "id": "viktor-tired",
+      "id": "ui-choice-overlay",
       "enabled": true,
-      "category": "ch",
+      "batch": "ui",
+      "output_group": "visual_pass_2",
+      "category": "ui",
       "mode": "edit",
-      "refs": ["game/images/ch/vet1.png", "game/images/ch/vet_concerned.png"],
-      "target": "art_output/curated/ch/vet_tired.png",
-      "prompt": "Viktor. Deep end-of-shift fatigue while remaining composed and reliable; heavier eyelids, relaxed shoulders, subtle exhaustion. Preserve exact identity and clothing. Full-body transparent sprite.",
-      "size": "1024x1536",
-      "quality": "high",
+      "refs": [
+        "game/images/ui/fon.jpg",
+        "game/images/cg/evidence_timeline.jpg"
+      ],
+      "target": "art_output/visual_pass_2/ui/choice_overlay.png",
+      "prompt": "Full-screen transparent visual novel choice-menu overlay for Purple Shift. 3 to 5 clean horizontal choice zones integrated into a subtle cinematic industrial interface, dark translucent glass, fine violet separators and restrained anomaly interference. No text. Preserve a large transparent area behind the choices.",
+      "quality": "max",
       "background": "transparent",
       "output_format": "png",
-      "preserve_reference_size": true
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
     },
     {
-      "id": "viktor-warm",
+      "id": "ui-save-load-bg",
       "enabled": true,
-      "category": "ch",
+      "batch": "ui",
+      "output_group": "visual_pass_2",
+      "category": "ui",
       "mode": "edit",
-      "refs": ["game/images/ch/vet1.png", "game/images/ch/vet_concerned.png"],
-      "target": "art_output/curated/ch/vet_warm.png",
-      "prompt": "Viktor. Rare warm reassuring expression, small sincere smile, calm eyes, understated and believable. Preserve exact identity and clothing. Full-body transparent sprite.",
-      "size": "1024x1536",
-      "quality": "high",
+      "refs": [
+        "game/images/cg/memory_wall.jpg",
+        "game/images/cg/evidence_timeline.jpg"
+      ],
+      "target": "art_output/visual_pass_2/ui/save_load_bg.jpg",
+      "prompt": "Premium save/load menu background for Purple Shift. Archival warehouse admin area with shelves, plastic containers, folders, old monitors and industrial lamps. Theme: memory, evidence and archived shifts. Calm low-detail zones for save-slot thumbnails and metadata. Polished 2D semi-realistic anime/cinematic VN. No characters or readable text.",
+      "quality": "max",
+      "background": "opaque",
+      "output_format": "jpeg",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "ui-preferences-bg",
+      "enabled": true,
+      "batch": "ui",
+      "output_group": "visual_pass_2",
+      "category": "ui",
+      "mode": "edit",
+      "refs": [
+        "game/images/bg/control_room.jpg",
+        "game/images/cg/monitor_guest.jpg"
+      ],
+      "target": "art_output/visual_pass_2/ui/preferences_bg.jpg",
+      "prompt": "Premium settings/preferences background for Purple Shift. Quiet warehouse control-room corner with screens, terminal glow, cables, dark industrial surfaces and restrained violet reflections. Broad clean low-detail zones for sliders, toggles and labels. Technical, calm and slightly ominous. No characters or readable text.",
+      "quality": "max",
+      "background": "opaque",
+      "output_format": "jpeg",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "ui-gallery-bg",
+      "enabled": true,
+      "batch": "ui",
+      "output_group": "visual_pass_2",
+      "category": "ui",
+      "mode": "edit",
+      "refs": [
+        "game/images/cg/memory_wall.jpg",
+        "game/images/cg/team_reflection.jpg"
+      ],
+      "target": "art_output/visual_pass_2/ui/gallery_bg.jpg",
+      "prompt": "Premium CG/gallery background for Purple Shift. Dim evidence-and-memory wall in a warehouse administration area, photographs, taped notes, monitor reflections and empty frames, restrained violet anomaly traces. Leave a broad central area for a grid of gallery thumbnails. No readable text or people.",
+      "quality": "max",
+      "background": "opaque",
+      "output_format": "jpeg",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "ui-terminal-overlay",
+      "enabled": true,
+      "batch": "ui",
+      "output_group": "visual_pass_2",
+      "category": "ui",
+      "mode": "edit",
+      "refs": [
+        "game/images/cg/monitor_guest.jpg",
+        "game/images/cg/mimic_message.jpg"
+      ],
+      "target": "art_output/visual_pass_2/ui/terminal_overlay.png",
+      "prompt": "Full-screen transparent terminal/V-13 interface overlay for Purple Shift. Thin diagnostic brackets, scanning regions, subtle violet signal corruption, restrained frame markers and industrial terminal styling. No readable text or fake code. Must work over control-room and anomaly scenes without hiding them.",
+      "quality": "max",
       "background": "transparent",
       "output_format": "png",
-      "preserve_reference_size": true
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
     },
     {
-      "id": "max-nervous",
+      "id": "bg-room-night-premium",
       "enabled": true,
-      "category": "ch",
-      "mode": "edit",
-      "refs": ["game/images/ch/mem1.png", "game/images/ch/mem_serious.png"],
-      "target": "art_output/curated/ch/mem_nervous.png",
-      "prompt": "Max. Humor mask slipping into nervous uncertainty; crooked almost-smile, tense eyes, trying to joke but clearly worried. Preserve exact identity and clothing. Full-body transparent sprite.",
-      "size": "1024x1536",
-      "quality": "high",
-      "background": "transparent",
-      "output_format": "png",
-      "preserve_reference_size": true
-    },
-    {
-      "id": "max-angry",
-      "enabled": true,
-      "category": "ch",
-      "mode": "edit",
-      "refs": ["game/images/ch/mem_serious.png", "game/images/ch/mem_open.png"],
-      "target": "art_output/curated/ch/mem_angry.png",
-      "prompt": "Max. Serious anger with no joking facade, controlled but sharp gaze, clenched jaw. Preserve exact identity and clothing. Full-body transparent sprite.",
-      "size": "1024x1536",
-      "quality": "high",
-      "background": "transparent",
-      "output_format": "png",
-      "preserve_reference_size": true
-    },
-    {
-      "id": "artem-tired",
-      "enabled": true,
-      "category": "ch",
-      "mode": "edit",
-      "refs": ["game/images/ch/super1.png", "game/images/ch/super_conflicted.png"],
-      "target": "art_output/curated/ch/super_tired.png",
-      "prompt": "Artem. Supervisor after prolonged pressure: exhausted but still holding authority, tired eyes, subtle tension, posture slightly less rigid. Preserve exact identity and clothing. Full-body transparent sprite.",
-      "size": "1024x1536",
-      "quality": "high",
-      "background": "transparent",
-      "output_format": "png",
-      "preserve_reference_size": true
-    },
-    {
-      "id": "artem-soft",
-      "enabled": true,
-      "category": "ch",
-      "mode": "edit",
-      "refs": ["game/images/ch/super1.png", "game/images/ch/super_conflicted.png"],
-      "target": "art_output/curated/ch/super_soft.png",
-      "prompt": "Artem. Guard briefly lowered in a private human conversation, subtle softness and relief without losing his reserved personality. Preserve exact identity and clothing. Full-body transparent sprite.",
-      "size": "1024x1536",
-      "quality": "high",
-      "background": "transparent",
-      "output_format": "png",
-      "preserve_reference_size": true
-    },
-    {
-      "id": "curator-stern",
-      "enabled": true,
-      "category": "ch",
-      "mode": "edit",
-      "refs": ["game/images/ch/curator.png"],
-      "target": "art_output/curated/ch/curator_stern.png",
-      "prompt": "Curator. Cold professional pressure, restrained stern expression, assessing the employee rather than shouting. Preserve exact identity, hairstyle and clothing. Full-body transparent sprite.",
-      "size": "1024x1536",
-      "quality": "high",
-      "background": "transparent",
-      "output_format": "png",
-      "preserve_reference_size": true
-    },
-    {
-      "id": "curator-smile",
-      "enabled": true,
-      "category": "ch",
-      "mode": "edit",
-      "refs": ["game/images/ch/curator.png"],
-      "target": "art_output/curated/ch/curator_smile.png",
-      "prompt": "Curator. Polite controlled corporate smile that feels slightly unsettling, professional and believable, not villainous caricature. Preserve exact identity and clothing. Full-body transparent sprite.",
-      "size": "1024x1536",
-      "quality": "high",
-      "background": "transparent",
-      "output_format": "png",
-      "preserve_reference_size": true
-    },
-    {
-      "id": "bg-warehouse-storm",
-      "enabled": true,
+      "batch": "bg_variants",
+      "output_group": "visual_pass_2",
       "category": "bg",
       "mode": "edit",
-      "refs": ["game/images/bg/warehouse_inside.jpg", "game/images/cg/storm_signal.jpg"],
-      "target": "art_output/curated/bg/warehouse_storm.jpg",
-      "prompt": "Same warehouse interior and camera geography, but during an early Purple Storm intrusion. Mostly normal industrial lighting with localized impossible violet refraction, one or two subtle spatial seams and wrong reflections. No characters, no text.",
-      "size": "1920x1080",
-      "quality": "high",
+      "refs": [
+        "game/images/bg/room_morning.jpg"
+      ],
+      "target": "art_output/visual_pass_2/bg/room_night.jpg",
+      "prompt": "Premium true night version of the exact room in REFERENCE 1. Preserve camera angle, geometry, furniture placement and recognizable details. Late night with cool exterior moonlight, dim practical interior light, lived-in quiet atmosphere and deep readable shadows. Do not merely tint: genuinely relight the same location. No characters or text.",
+      "quality": "max",
       "background": "opaque",
       "output_format": "jpeg",
-      "final_size": [1920, 1080]
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
     },
     {
-      "id": "bg-control-storm",
+      "id": "bg-warehouse-alert-premium",
       "enabled": true,
+      "batch": "bg_variants",
+      "output_group": "visual_pass_2",
       "category": "bg",
       "mode": "edit",
-      "refs": ["game/images/bg/control_room.jpg", "game/images/cg/monitor_guest.jpg"],
-      "target": "art_output/curated/bg/control_room_storm.jpg",
-      "prompt": "Same control room, late shift, monitors and practical equipment intact. Add a restrained V-13 / Purple Storm intrusion through reflections and display glow, keeping the room realistic and readable. No readable text, no people.",
-      "size": "1920x1080",
-      "quality": "high",
+      "refs": [
+        "game/images/bg/warehouse_inside.jpg",
+        "game/images/cg/storm_signal.jpg"
+      ],
+      "target": "art_output/visual_pass_2/bg/warehouse_alert.jpg",
+      "prompt": "Premium emergency-alert state of the exact warehouse in REFERENCE 1. Preserve camera, conveyor layout, architecture and all major landmarks. Emergency practical lighting, controlled red warning accents mixed with restrained violet anomaly reflections, operational disruption and strong tension while remaining realistic. No fantasy destruction, characters or text.",
+      "quality": "max",
       "background": "opaque",
       "output_format": "jpeg",
-      "final_size": [1920, 1080]
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
     },
     {
-      "id": "cg-team-break",
+      "id": "bg-warehouse-cold-premium",
       "enabled": true,
-      "category": "cg",
+      "batch": "bg_variants",
+      "output_group": "visual_pass_2",
+      "category": "bg",
       "mode": "edit",
-      "refs": ["game/images/bg/break_room.jpg", "game/images/ch/nov_relief.png", "game/images/ch/vet1.png", "game/images/ch/mem1.png", "game/images/ch/super_conflicted.png"],
-      "target": "art_output/curated/cg/team_break_cinematic.jpg",
-      "prompt": "Cinematic group CG during a rare quiet break: Lera, Viktor, Max and Artem together in the break room after a hard shift. Natural tired body language, subtle warmth, no posed promotional lineup. Preserve all four identities from references. 16:9 visual-novel CG.",
-      "size": "1920x1080",
-      "quality": "high",
+      "refs": [
+        "game/images/bg/warehouse_inside.jpg"
+      ],
+      "target": "art_output/visual_pass_2/bg/warehouse_cold.jpg",
+      "prompt": "Premium cold-state version of the exact warehouse in REFERENCE 1. Preserve camera, layout, architecture and landmarks. Pale blue-gray industrial ambience, drained warmth, sterile air, subtle haze, quiet oppressive emptiness and realistic cold practical lighting. Do not merely tint: genuinely relight the same physical location. No characters or text.",
+      "quality": "max",
       "background": "opaque",
       "output_format": "jpeg",
-      "final_size": [1920, 1080]
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
     },
     {
-      "id": "cg-v13-memory-wrong",
+      "id": "consistency-lera-worried",
       "enabled": true,
-      "category": "cg",
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
       "mode": "edit",
-      "refs": ["game/images/cg/memory_wall.jpg", "game/images/cg/mimic_message.jpg", "game/images/ch/nov1.png", "game/images/ch/vet_concerned.png", "game/images/ch/mem_serious.png", "game/images/ch/super_stern.png"],
-      "target": "art_output/curated/cg/v13_false_memory.jpg",
-      "prompt": "A disturbing V-13 false-memory CG: looks like a plausible remembered warehouse moment with Lera, Viktor, Max and Artem, but one subtle impossible extra human silhouette/reflection appears where no one should be. Keep the anomaly easy to miss at first glance. Preserve identities. No readable text.",
-      "size": "1920x1080",
-      "quality": "xhigh",
-      "background": "opaque",
-      "output_format": "jpeg",
-      "final_size": [1920, 1080]
+      "refs": [
+        "game/images/ch/nov_relief.png",
+        "game/images/ch/nov1.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/nov1.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Lera worried: tense, uncertain, trying to keep composure; restrained fear rather than melodrama.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
     },
     {
-      "id": "cg-zero-shift-remake",
+      "id": "consistency-lera-tired",
       "enabled": true,
-      "category": "cg",
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
       "mode": "edit",
-      "refs": ["game/images/cg/zero_shift.jpg", "game/images/bg/warehouse_inside.jpg", "game/images/cg/storm_signal.jpg"],
-      "target": "art_output/curated/cg/zero_shift_v2.jpg",
-      "prompt": "Premium cinematic reinterpretation of the Zero Shift ending. Preserve the original story beat and recognizable warehouse reality, but make the impossible extra-state motif visually precise: one spatially impossible additional element, subtle Purple Storm memory echoes, eerie stillness rather than explosive fantasy. No text.",
-      "size": "1920x1080",
-      "quality": "xhigh",
-      "background": "opaque",
-      "output_format": "jpeg",
-      "final_size": [1920, 1080]
+      "refs": [
+        "game/images/ch/nov_relief.png",
+        "game/images/ch/nov2.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/nov2.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Lera tired: end-of-shift fatigue, heavier eyelids and posture.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
     },
     {
-      "id": "cg-storm-first-contact",
+      "id": "consistency-lera-angry",
       "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/nov_relief.png",
+        "game/images/ch/nov_angry.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/nov_angry.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Lera controlled anger: tense brows and jaw, workplace frustration, not shouting.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-lera-determined",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/nov_relief.png",
+        "game/images/ch/nov_determined.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/nov_determined.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Lera determined: steady gaze, resolved posture, quiet courage.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-lera-neutral",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/nov_relief.png",
+        "game/images/ch/nov_neutral.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/nov_neutral.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Lera neutral everyday state: attentive, slightly tired, calm mouth and natural gaze.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-lera-scared",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/nov_relief.png",
+        "game/images/ch/nov_scared.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/nov_scared.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Lera scared: genuine quiet fear after something impossible, widened eyes and restrained tension.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-viktor-concerned",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/vet1.png",
+        "game/images/ch/vet_concerned.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/vet_concerned.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Viktor concerned: experienced, composed, quietly worried and protective.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-viktor-injured",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/vet1.png",
+        "game/images/ch/vet_injured.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/vet_injured.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Viktor fatigued after strain: subtle guarded wrist/hand discomfort only, composed and non-graphic.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true,
+      "safe_refs": [
+        "game/images/ch/vet1.png",
+        "game/images/ch/vet_concerned.png"
+      ],
+      "safe_prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Viktor fatigued after strain with subtle guarded wrist or hand discomfort only. No blood, wounds, bruises, exposed injury or medical trauma."
+    },
+    {
+      "id": "consistency-viktor-tired",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/vet1.png",
+        "game/images/ch/vet_tired.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/vet_tired.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Viktor deeply tired but reliable: heavy eyelids, relaxed shoulders, quiet exhaustion.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-viktor-warm",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/vet1.png",
+        "game/images/ch/vet_warm.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/vet_warm.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Viktor rare warm expression: small sincere smile, calm reassuring eyes, understated.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-max-grin",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/mem_serious.png",
+        "game/images/ch/mem1.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/mem1.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Max joking/grinning: quick humor, lively expression, grounded.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-max-open",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/mem_serious.png",
+        "game/images/ch/mem_open.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/mem_open.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Max emotionally open: joking mask lowered, honest and vulnerable without melodrama.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-max-angry",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/mem_serious.png",
+        "game/images/ch/mem_angry.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/mem_angry.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Max serious anger: no playful mask, sharp gaze, restrained intensity.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-max-nervous",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/mem_serious.png",
+        "game/images/ch/mem_nervous.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/mem_nervous.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Max nervous: trying to joke through discomfort, tense eyes and unstable half-smile.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-artem-neutral",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/super_stern.png",
+        "game/images/ch/super1.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/super1.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Artem neutral supervisor state: controlled, professional, mildly tired, natural authority.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-artem-conflicted",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/super_stern.png",
+        "game/images/ch/super_conflicted.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/super_conflicted.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Artem conflicted: authority under moral pressure, subtle hesitation and tension.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-artem-soft",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/super_stern.png",
+        "game/images/ch/super_soft.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/super_soft.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Artem rare softness: guard lowered briefly, restrained relief, still reserved.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-artem-tired",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/super_stern.png",
+        "game/images/ch/super_tired.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/super_tired.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Artem exhausted but still in charge: tired eyes, reduced rigidity, prolonged pressure.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-curator-smile",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/curator.png",
+        "game/images/ch/curator_smile.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/curator_smile.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Curator controlled corporate smile: polite, professional and slightly unsettling.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "consistency-curator-stern",
+      "enabled": true,
+      "batch": "consistency",
+      "output_group": "visual_pass_2",
+      "category": "ch",
+      "mode": "edit",
+      "refs": [
+        "game/images/ch/curator.png",
+        "game/images/ch/curator_stern.png"
+      ],
+      "target": "art_output/visual_pass_2/ch/curator_stern.png",
+      "prompt": "IDENTITY-LOCKED consistency refinement. REFERENCE 1 is the canonical identity anchor and must define the exact person. REFERENCE 2, when present, is only the target pose/expression reference. Keep the same face geometry, eyes, nose, jaw, hairline, hairstyle, apparent age, body proportions, workwear design, silhouette and overall identity. Do not redesign, beautify, age up/down, photorealize, change ethnicity, hairstyle, clothing or body type. Preserve the intended pose and emotion. Improve only consistency, anatomy, hands, rendering clarity, line confidence, fabric detail and subtle cinematic lighting. Polished 2D semi-realistic anime / cinematic visual novel sprite. Full-body transparent PNG. Curator stern: cold professional pressure, assessing rather than shouting.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        2048,
+        3072
+      ],
+      "preserve_reference_size": true
+    },
+    {
+      "id": "cg-breakroom-preconflict",
+      "enabled": true,
+      "batch": "extra_cg",
+      "output_group": "visual_pass_2",
       "category": "cg",
       "mode": "edit",
-      "refs": ["game/images/bg/warehouse_inside.jpg", "game/images/cg/storm_signal.jpg", "game/images/ch/nov1.png"],
-      "target": "art_output/curated/cg/storm_first_contact.jpg",
-      "prompt": "Lera's first unmistakable encounter with the Purple Storm inside the warehouse. Cinematic over-the-shoulder or three-quarter composition, ordinary warehouse still dominant, localized impossible violet seam/refraction ahead of her, genuine restrained fear. Preserve Lera identity. No text.",
-      "size": "1920x1080",
-      "quality": "xhigh",
+      "refs": [
+        "game/images/bg/break_room.jpg",
+        "game/images/ch/nov_neutral.png",
+        "game/images/ch/vet_tired.png",
+        "game/images/ch/mem_nervous.png",
+        "game/images/ch/super_tired.png"
+      ],
+      "target": "art_output/visual_pass_2/cg/breakroom_preconflict.jpg",
+      "prompt": "Cinematic group CG shortly before a team conflict escalates. Lera, Viktor, Max and Artem in the break room after a hard shift. Exhausted silence, interpersonal tension, everyone still pretending things are under control. Natural imperfect body language, not a promotional lineup. Preserve all four identities exactly. No text.",
+      "quality": "max",
       "background": "opaque",
       "output_format": "jpeg",
-      "final_size": [1920, 1080]
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "cg-conveyor-incident",
+      "enabled": true,
+      "batch": "extra_cg",
+      "output_group": "visual_pass_2",
+      "category": "cg",
+      "mode": "edit",
+      "refs": [
+        "game/images/bg/warehouse_inside.jpg",
+        "game/images/ch/nov_scared.png",
+        "game/images/ch/vet_concerned.png",
+        "game/images/cg/emergency_stop.jpg"
+      ],
+      "target": "art_output/visual_pass_2/cg/conveyor_incident.jpg",
+      "prompt": "Cinematic warehouse incident during a late shift. Lera and Viktor react to a serious conveyor/system failure while the industrial line behind them continues moving in a subtly wrong way. Grounded workplace emergency turning uncanny. Preserve both identities exactly. No text.",
+      "quality": "max",
+      "background": "opaque",
+      "output_format": "jpeg",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "cg-artem-curator-private",
+      "enabled": true,
+      "batch": "extra_cg",
+      "output_group": "visual_pass_2",
+      "category": "cg",
+      "mode": "edit",
+      "refs": [
+        "game/images/bg/control_room.jpg",
+        "game/images/ch/super_tired.png",
+        "game/images/ch/curator_stern.png"
+      ],
+      "target": "art_output/visual_pass_2/cg/artem_curator_private.jpg",
+      "prompt": "Cinematic private conversation between Artem and the Curator in the control room. Institutional pressure, hierarchy, fatigue and restrained manipulation. Artem is exhausted and tense; the Curator is controlled and unreadable. Natural staging, not a posed face-off. Preserve identities exactly. No text.",
+      "quality": "max",
+      "background": "opaque",
+      "output_format": "jpeg",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "cg-lera-locker-alone",
+      "enabled": true,
+      "batch": "extra_cg",
+      "output_group": "visual_pass_2",
+      "category": "cg",
+      "mode": "edit",
+      "refs": [
+        "game/images/bg/locker_room.jpg",
+        "game/images/ch/nov2.png",
+        "game/images/cg/storm_signal.jpg"
+      ],
+      "target": "art_output/visual_pass_2/cg/lera_locker_alone.jpg",
+      "prompt": "Cinematic CG of Lera alone in the dim locker room after a difficult shift. Isolation, emotional overload and exhaustion, a private moment where she no longer performs strength for anyone. A subtle violet anomaly reflection appears where it should not. Preserve Lera exactly. No text.",
+      "quality": "max",
+      "background": "opaque",
+      "output_format": "jpeg",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "cg-first-impossible-reflection",
+      "enabled": true,
+      "batch": "extra_cg",
+      "output_group": "visual_pass_2",
+      "category": "cg",
+      "mode": "edit",
+      "refs": [
+        "game/images/bg/service_corridor.jpg",
+        "game/images/ch/nov_neutral.png",
+        "game/images/cg/storm_signal.jpg"
+      ],
+      "target": "art_output/visual_pass_2/cg/first_impossible_reflection.jpg",
+      "prompt": "Cinematic CG of the first clearly impossible reflection. Lera sees herself in glass or polished metal, but the reflection's posture or timing is subtly wrong and one violet seam exists only inside the reflection. Eerie and easy to miss at first glance. Preserve Lera exactly. No text.",
+      "quality": "max",
+      "background": "opaque",
+      "output_format": "jpeg",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "cg-max-terminal-night",
+      "enabled": true,
+      "batch": "extra_cg",
+      "output_group": "visual_pass_2",
+      "category": "cg",
+      "mode": "edit",
+      "refs": [
+        "game/images/bg/control_room.jpg",
+        "game/images/ch/mem_nervous.png",
+        "game/images/cg/monitor_guest.jpg"
+      ],
+      "target": "art_output/visual_pass_2/cg/max_terminal_night.jpg",
+      "prompt": "Cinematic CG of Max alone at a warehouse terminal late at night. His humor mask is gone; uncertainty and fear are visible. Monitor glow and reflections suggest the system is behaving incorrectly, but keep the anomaly restrained. Preserve Max exactly. No readable screen text.",
+      "quality": "max",
+      "background": "opaque",
+      "output_format": "jpeg",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "cg-viktor-protective-moment",
+      "enabled": true,
+      "batch": "extra_cg",
+      "output_group": "visual_pass_2",
+      "category": "cg",
+      "mode": "edit",
+      "refs": [
+        "game/images/bg/warehouse_storm.jpg",
+        "game/images/ch/vet_concerned.png",
+        "game/images/ch/nov_scared.png",
+        "game/images/cg/storm_first_contact.jpg"
+      ],
+      "target": "art_output/visual_pass_2/cg/viktor_protective_moment.jpg",
+      "prompt": "Cinematic CG where Viktor instinctively shields or pulls Lera away during a sudden dangerous anomaly event. Grounded human protective reaction, urgency and trust, no superhero pose. Purple Storm distortion stays localized and physically strange. Preserve both identities exactly. No text.",
+      "quality": "max",
+      "background": "opaque",
+      "output_format": "jpeg",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "cg-empty-shift-aftershock",
+      "enabled": true,
+      "batch": "extra_cg",
+      "output_group": "visual_pass_2",
+      "category": "cg",
+      "mode": "edit",
+      "refs": [
+        "game/images/bg/warehouse_storm.jpg",
+        "game/images/cg/storm_signal.jpg",
+        "game/images/cg/team_dawn.jpg"
+      ],
+      "target": "art_output/visual_pass_2/cg/empty_shift_aftershock.jpg",
+      "prompt": "Cinematic aftermath CG of the warehouse immediately after a major shift event. Empty conveyor lines, abandoned stations, emergency lights, scattered ordinary work items and near-total silence. Very subtle Purple Storm residue and one spatially wrong detail. No visible characters or only tiny distant silhouettes. No text.",
+      "quality": "max",
+      "background": "opaque",
+      "output_format": "jpeg",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "cg-artem-emergency-stop",
+      "enabled": true,
+      "batch": "extra_cg",
+      "output_group": "visual_pass_2",
+      "category": "cg",
+      "mode": "edit",
+      "refs": [
+        "game/images/cg/emergency_stop.jpg",
+        "game/images/ch/super_tired.png",
+        "game/images/bg/warehouse_inside.jpg"
+      ],
+      "target": "art_output/visual_pass_2/cg/artem_emergency_stop.jpg",
+      "prompt": "Cinematic CG of Artem at the emergency stop during the final crisis. He is caught between an order from above and the people on the line, hand near the stop control, exhausted but decisive. Realistic warehouse emergency lighting and restrained anomaly glow. Preserve Artem exactly. No text.",
+      "quality": "max",
+      "background": "opaque",
+      "output_format": "jpeg",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "cg-team-after-gates",
+      "enabled": true,
+      "batch": "extra_cg",
+      "output_group": "visual_pass_2",
+      "category": "cg",
+      "mode": "edit",
+      "refs": [
+        "game/images/bg/warehouse_outside.jpg",
+        "game/images/cg/last_checkpoint.jpg",
+        "game/images/ch/nov_relief.png",
+        "game/images/ch/vet_warm.png",
+        "game/images/ch/mem_open.png",
+        "game/images/ch/super_soft.png"
+      ],
+      "target": "art_output/visual_pass_2/cg/team_after_gates.jpg",
+      "prompt": "Cinematic epilogue CG outside the warehouse gates after the shift. Lera, Viktor, Max and Artem linger together in cold damp night air, tired and emotionally changed, deciding whether to walk together or separate. Natural loose grouping, wet pavement, practical street lighting, faint violet afterglow. Preserve identities exactly. No text.",
+      "quality": "max",
+      "background": "opaque",
+      "output_format": "jpeg",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "vfx-violet-seam",
+      "enabled": true,
+      "batch": "vfx",
+      "output_group": "visual_pass_2",
+      "category": "vfx",
+      "mode": "edit",
+      "refs": [
+        "game/images/cg/storm_signal.jpg",
+        "game/images/cg/storm_first_contact.jpg"
+      ],
+      "target": "art_output/visual_pass_2/vfx/violet_seam.png",
+      "prompt": "Full-screen transparent VFX plate: one subtle but striking violet spatial seam/tear in reality. Refracted space, wrong industrial light and unstable geometry, not fantasy fire, lightning or magical sparkles. Keep most of canvas transparent.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "vfx-glitch-overlay",
+      "enabled": true,
+      "batch": "vfx",
+      "output_group": "visual_pass_2",
+      "category": "vfx",
+      "mode": "edit",
+      "refs": [
+        "game/images/cg/mimic_message.jpg",
+        "game/images/cg/monitor_guest.jpg"
+      ],
+      "target": "art_output/visual_pass_2/vfx/glitch_overlay.png",
+      "prompt": "Full-screen transparent cinematic glitch overlay. Restrained scanline distortion, frame tearing, signal noise, duplicated edges and violet system corruption. Subtle enough for dialogue and character art to remain readable. No text or fake code.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "vfx-light-pulse",
+      "enabled": true,
+      "batch": "vfx",
+      "output_group": "visual_pass_2",
+      "category": "vfx",
+      "mode": "edit",
+      "refs": [
+        "game/images/cg/storm_signal.jpg"
+      ],
+      "target": "art_output/visual_pass_2/vfx/light_pulse.png",
+      "prompt": "Full-screen transparent anomaly light-pulse plate: soft intense violet-white bloom, refracted industrial light and a directional burst for scene transitions/anomaly spikes. Keep most of the image transparent. No fantasy particles or text.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "vfx-memory-fracture",
+      "enabled": true,
+      "batch": "vfx",
+      "output_group": "visual_pass_2",
+      "category": "vfx",
+      "mode": "edit",
+      "refs": [
+        "game/images/cg/v13_false_memory.jpg",
+        "game/images/cg/memory_wall.jpg"
+      ],
+      "target": "art_output/visual_pass_2/vfx/memory_fracture.png",
+      "prompt": "Full-screen transparent memory-fracture overlay. Layered ghost afterimages, subtle duplicated contours, wrong-perspective fragments and cracked-reflection logic without literal glass shards everywhere. Memory distortion, not physical destruction. Restrained violet edges.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "vfx-terminal-interference",
+      "enabled": true,
+      "batch": "vfx",
+      "output_group": "visual_pass_2",
+      "category": "vfx",
+      "mode": "edit",
+      "refs": [
+        "game/images/cg/monitor_guest.jpg",
+        "game/images/cg/mimic_message.jpg"
+      ],
+      "target": "art_output/visual_pass_2/vfx/terminal_interference.png",
+      "prompt": "Full-screen transparent terminal/surveillance interference overlay. Faint scan noise, frame jitter, monitor ghosting, diagnostic edge distortion and restrained violet technical corruption. Must preserve readability. No readable text or fake code.",
+      "quality": "max",
+      "background": "transparent",
+      "output_format": "png",
+      "master_size": [
+        3840,
+        2160
+      ],
+      "game_ready_size": [
+        1920,
+        1080
+      ]
     }
   ]
 }
