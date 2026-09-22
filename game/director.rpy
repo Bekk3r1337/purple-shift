@@ -553,19 +553,19 @@ init python:
 transform ps_enter_left:
     xalign -0.08
     yalign 1.0
-    yoffset 5
-    zoom 0.60
+    yoffset 36
+    zoom 0.56
     alpha 0.0
-    ease 0.55 xalign 0.22 alpha 1.0
+    ease 0.55 xalign 0.21 alpha 1.0
     function ps_character_breathe
 
 transform ps_enter_right:
     xalign 1.08
     yalign 1.0
-    yoffset 5
-    zoom 0.65
+    yoffset 36
+    zoom 0.58
     alpha 0.0
-    ease 0.55 xalign 0.75 alpha 1.0
+    ease 0.55 xalign 0.77 alpha 1.0
     function ps_character_breathe
 
 transform ps_attention:
