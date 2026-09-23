@@ -838,381 +838,381 @@ translate english chapter3_incident_norm_5f55c1f5:
 translate english chapter3_incident_norm_4efba44d:
 
     # p "Ты сказал продолжать."
-    p "Ты сказал продолжать."
+    p "You told us to keep going."
 
 # game/chapter3.rpy:553
 translate english chapter3_incident_norm_b72487bb:
 
     # sv "Я сказал не терять темп. Думать я не запрещал."
-    sv "Я сказал не терять темп. Думать я не запрещал."
+    sv "I said not to lose pace. I never told you to stop thinking."
 
 # game/chapter3.rpy:555
 translate english chapter3_incident_norm_34d7b4ab:
 
     # n "Лера отводит взгляд. Красная цифра на табло растёт."
-    n "Лера отводит взгляд. Красная цифра на табло растёт."
+    n "Lera looks away. The red number on the board keeps climbing."
 
 # game/chapter3.rpy:568
 translate english chapter3_after_incident_a00eca84:
 
     # n "Контейнер меняют. Линия снова запускается."
-    n "Контейнер меняют. Линия снова запускается."
+    n "The container is replaced. The line starts again."
 
 # game/chapter3.rpy:572
 translate english chapter3_after_incident_e29b909f:
 
     # n "Первый скан после запуска звучит особенно громко. Через минуту линия снова работает в обычном темпе."
-    n "Первый скан после запуска звучит особенно громко. Через минуту линия снова работает в обычном темпе."
+    n "The first scan after restart sounds unusually loud. A minute later, the line is back to its normal pace."
 
 # game/chapter3.rpy:578
 translate english chapter3_after_incident_70a51008:
 
     # newb "Если бы ты не нажал…"
-    newb "Если бы ты не нажал…"
+    newb "If you hadn't pressed it..."
 
 # game/chapter3.rpy:579
 translate english chapter3_after_incident_a7a38db5:
 
     # p "Но я нажал."
-    p "Но я нажал."
+    p "But I did."
 
 # game/chapter3.rpy:580
 translate english chapter3_after_incident_dbf4bf41:
 
     # newb "Да. Спасибо."
-    newb "Да. Спасибо."
+    newb "Yeah. Thank you."
 
 # game/chapter3.rpy:582
 translate english chapter3_after_incident_80b9b2a3:
 
     # newb "Я думала, сейчас все просто отойдут."
-    newb "Я думала, сейчас все просто отойдут."
+    newb "I thought everyone would just step away."
 
 # game/chapter3.rpy:583
 translate english chapter3_after_incident_c2455dc6:
 
     # p "Тогда бы оно упало."
-    p "Тогда бы оно упало."
+    p "Then it would have fallen."
 
 # game/chapter3.rpy:584
 translate english chapter3_after_incident_164cc20e:
 
     # newb "Не контейнер. Я про людей."
-    newb "Не контейнер. Я про людей."
+    newb "Not the container. I mean the people."
 
 # game/chapter3.rpy:586
 translate english chapter3_after_incident_f1c5ad7c:
 
     # newb "Я видела, что он падает. Но продолжила."
-    newb "Я видела, что он падает. Но продолжила."
+    newb "I saw it falling. And I kept working."
 
 # game/chapter3.rpy:587
 translate english chapter3_after_incident_517b8c48:
 
     # p "Я тоже."
-    p "Я тоже."
+    p "Me too."
 
 # game/chapter3.rpy:588
 translate english chapter3_after_incident_18a9480f:
 
     # n "Она кивает, потому что добавить нечего."
-    n "Она кивает, потому что добавить нечего."
+    n "She nods because there is nothing else to add."
 
 # game/chapter3.rpy:593
 translate english chapter3_after_incident_b94895ea:
 
     # n "До конца смены остаётся час. Ты несколько раз смотришь на табло, но минуты там почти не меняются."
-    n "До конца смены остаётся час. Ты несколько раз смотришь на табло, но минуты там почти не меняются."
+    n "There is an hour left in the shift. You check the board several times, but the minutes barely seem to move."
 
 # game/chapter3.rpy:598
 translate english chapter3_after_incident_2583e9eb:
 
     # vet "От коробок спина болит. К этому хотя бы готов."
-    vet "От коробок спина болит. К этому хотя бы готов."
+    vet "Your back hurts from the boxes. At least you expected that."
 
 # game/chapter3.rpy:600
 translate english chapter3_after_incident_e441e0fe:
 
     # p "А почему?"
-    p "А почему?"
+    p "Why?"
 
 # game/chapter3.rpy:602
 translate english chapter3_after_incident_a891d068:
 
     # vet "Хуже, когда привыкаешь ко всему подряд: к чужой ошибке, к боли, к контейнеру на боку. Потом уже поздно разбираться, где надо было остановиться."
-    vet "Хуже, когда привыкаешь ко всему подряд: к чужой ошибке, к боли, к контейнеру на боку. Потом уже поздно разбираться, где надо было остановиться."
+    vet "It's worse when you get used to everything: someone else's mistake, pain, a container leaning sideways. By then it's too late to figure out where you should have stopped."
 
 # game/chapter3.rpy:610
 translate english chapter3_after_incident_6b69e7d0:
 
     # sv "После смены на минуту останься."
-    sv "После смены на минуту останься."
+    sv "Stay for a minute after the shift."
 
 # game/chapter3.rpy:612
 translate english chapter3_after_incident_0c0c3282:
 
     # n "Он уже отворачивается, поэтому спросить, зачем, ты не успеваешь."
-    n "Он уже отворачивается, поэтому спросить, зачем, ты не успеваешь."
+    n "He is already turning away, so you do not get the chance to ask why."
 
 # game/chapter3.rpy:627
 translate english chapter3_supervisor_talk_c3edf266:
 
     # sv "Вторая смена. Уже видно, как ты работаешь."
-    sv "Вторая смена. Уже видно, как ты работаешь."
+    sv "Second shift. I can already see how you work."
 
 # game/chapter3.rpy:630
 translate english chapter3_supervisor_talk_6aac54ab:
 
     # sv "Ты не зависаешь. И не ждёшь, пока проблему решит кто-то другой. Такие нужны."
-    sv "Ты не зависаешь. И не ждёшь, пока проблему решит кто-то другой. Такие нужны."
+    sv "You don't freeze. And you don't wait for someone else to solve the problem. We need people like that."
 
 # game/chapter3.rpy:632
 translate english chapter3_supervisor_talk_0be50e4c:
 
     # sv "Темп у тебя есть. Но склад — не только цифры. Если рядом падает контейнер, норма его не поднимет."
-    sv "Темп у тебя есть. Но склад — не только цифры. Если рядом падает контейнер, норма его не поднимет."
+    sv "You have pace. But the warehouse is not just numbers. If a container falls beside you, the target won't pick it back up."
 
 # game/chapter3.rpy:634
 translate english chapter3_supervisor_talk_998d2023:
 
     # sv "Ты много смотришь по сторонам. Это хорошо, пока твой сектор не остаётся без рук."
-    sv "Ты много смотришь по сторонам. Это хорошо, пока твой сектор не остаётся без рук."
+    sv "You watch what is happening around you a lot. That's good, as long as your own sector isn't left without hands."
 
 # game/chapter3.rpy:636
 translate english chapter3_supervisor_talk_f2031727:
 
     # sv "Поэтому вопрос. Ты здесь кем хочешь стать?"
-    sv "Поэтому вопрос. Ты здесь кем хочешь стать?"
+    sv "So here's the question. What do you want to become here?"
 
 # game/chapter3.rpy:642
 translate english chapter3_supervisor_talk_fac92d74:
 
     # p "Хочу, чтобы рядом со мной не боялись просить помощи."
-    p "Хочу, чтобы рядом со мной не боялись просить помощи."
+    p "I want people around me not to be afraid to ask for help."
 
 # game/chapter3.rpy:643
 translate english chapter3_supervisor_talk_234af957:
 
     # sv "Тогда следи, чтобы помощь не оставляла без рук твой сектор."
-    sv "Тогда следи, чтобы помощь не оставляла без рук твой сектор."
+    sv "Then make sure helping others does not leave your own sector without hands."
 
 # game/chapter3.rpy:649
 translate english chapter3_supervisor_talk_275c4b9f:
 
     # p "Хочу научиться отвечать за участок."
-    p "Хочу научиться отвечать за участок."
+    p "I want to learn how to take responsibility for a section."
 
 # game/chapter3.rpy:650
 translate english chapter3_supervisor_talk_3f8e9510:
 
     # sv "Конкретно. Посмотрим на следующей смене."
-    sv "Конкретно. Посмотрим на следующей смене."
+    sv "Specific. We'll see how you do next shift."
 
 # game/chapter3.rpy:655
 translate english chapter3_supervisor_talk_0c5948ea:
 
     # p "Хочу заметить, если эта работа начнёт меня ломать."
-    p "Хочу заметить, если эта работа начнёт меня ломать."
+    p "I want to notice if this job starts breaking me."
 
 # game/chapter3.rpy:656
 translate english chapter3_supervisor_talk_cb3964c3:
 
     # sv "Тогда не ври себе про усталость. Это проще сказать, чем сделать."
-    sv "Тогда не ври себе про усталость. Это проще сказать, чем сделать."
+    sv "Then don't lie to yourself about being tired. Easier said than done."
 
 # game/chapter3.rpy:661
 translate english chapter3_supervisor_talk_1b23620c:
 
     # p "Хочу хотя бы не разучиться шутить."
-    p "Хочу хотя бы не разучиться шутить."
+    p "At least I don't want to forget how to joke."
 
 # game/chapter3.rpy:662
 translate english chapter3_supervisor_talk_db763573:
 
     # sv "Макс уже занял эту должность."
-    sv "Макс уже занял эту должность."
+    sv "Max already has that position."
 
 # game/chapter3.rpy:663
 translate english chapter3_supervisor_talk_59a93360:
 
     # p "Будет конкуренция."
-    p "Будет конкуренция."
+    p "Then he'll have competition."
 
 # game/chapter3.rpy:664
 translate english chapter3_supervisor_talk_6db157e8:
 
     # sv "Иди переодевайся."
-    sv "Иди переодевайся."
+    sv "Go get changed."
 
 # game/chapter3.rpy:673
 translate english chapter3_shift_end_b25d60c9:
 
     # n "Раздевалка постепенно пустеет. Сегодня ты двигаешься медленнее. Но уже не потерянно."
-    n "Раздевалка постепенно пустеет. Сегодня ты двигаешься медленнее. Но уже не потерянно."
+    n "The locker room slowly empties. Today you move more slowly, but no longer like someone who is lost."
 
 # game/chapter3.rpy:678
 translate english chapter3_shift_end_dfc990ac:
 
     # mem "Ну что. Второй уровень пройден."
-    mem "Ну что. Второй уровень пройден."
+    mem "Well. Level two cleared."
 
 # game/chapter3.rpy:680
 translate english chapter3_shift_end_0a321576:
 
     # p "А босс где?"
-    p "А босс где?"
+    p "Where's the boss?"
 
 # game/chapter3.rpy:682
 translate english chapter3_shift_end_4030aa72:
 
     # mem "Босс — это график. Его нельзя победить. Только временно закрыть."
-    mem "Босс — это график. Его нельзя победить. Только временно закрыть."
+    mem "The boss is the schedule. You can't beat it. You can only close it for a while."
 
 # game/chapter3.rpy:687
 translate english chapter3_shift_end_55c46d3d:
 
     # vet "Завтра увидимся."
-    vet "Завтра увидимся."
+    vet "See you tomorrow."
 
 # game/chapter3.rpy:690
 translate english chapter3_shift_end_5e368ba3:
 
     # vet "И подумай про контейнер. Не чтобы винить себя. Чтобы в следующий раз решить раньше."
-    vet "И подумай про контейнер. Не чтобы винить себя. Чтобы в следующий раз решить раньше."
+    vet "And think about the container. Not to blame yourself. So next time you decide sooner."
 
 # game/chapter3.rpy:692
 translate english chapter3_shift_end_73387d86:
 
     # vet "Сегодня нормально сделал. Только не думай, что теперь всегда обязан спасать всех."
-    vet "Сегодня нормально сделал. Только не думай, что теперь всегда обязан спасать всех."
+    vet "You did fine today. Just don't start thinking you always have to save everyone."
 
 # game/chapter3.rpy:694
 translate english chapter3_shift_end_215fe9b4:
 
     # n "Виктор стягивает перчатку, морщится и разминает пальцы."
-    n "Виктор стягивает перчатку, морщится и разминает пальцы."
+    n "Viktor pulls off his glove, winces, and flexes his fingers."
 
 # game/chapter3.rpy:703
 translate english chapter3_shift_end_4844194d:
 
     # n "На улице холодно. Фиолетовая линия остаётся за спиной."
-    n "На улице холодно. Фиолетовая линия остаётся за спиной."
+    n "It is cold outside. The violet line stays behind you."
 
 # game/chapter3.rpy:705
 translate english chapter3_shift_end_fe9eda6d:
 
     # n "Вчера твоего имени никто не знал. Сегодня Артём попросил остаться после смены, а Лера ждала у турникета."
-    n "Вчера твоего имени никто не знал. Сегодня Артём попросил остаться после смены, а Лера ждала у турникета."
+    n "Yesterday nobody knew your name. Today Artyom asked you to stay after the shift, and Lera was waiting by the turnstile."
 
 # game/chapter3.rpy:728
 translate english chapter4_hook_21ac3003:
 
     # n "Телефон вибрирует у самого выхода."
-    n "Телефон вибрирует у самого выхода."
+    n "Your phone buzzes just as you reach the exit."
 
 # game/chapter3.rpy:731
 translate english chapter4_hook_26cae6d1:
 
     # n "Сообщение от супервайзера:"
-    n "Сообщение от супервайзера:"
+    n "A message from the supervisor:"
 
 # game/chapter3.rpy:732
 translate english chapter4_hook_d1fdeceb:
 
     # sv "На следующей смене подойдёшь раньше. Есть разговор про участок."
-    sv "На следующей смене подойдёшь раньше. Есть разговор про участок."
+    sv "Come in early next shift. We need to talk about the section."
 
 # game/chapter3.rpy:733
 translate english chapter4_hook_913bf358:
 
     # n "Под сообщением — файл. «Чек-лист старшего линии»."
-    n "Под сообщением — файл. «Чек-лист старшего линии»."
+    n "A file is attached to the message: \"Line Lead Checklist.\""
 
 # game/chapter3.rpy:735
 translate english chapter4_hook_042e7329:
 
     # n "Сообщение от новичка:"
-    n "Сообщение от новичка:"
+    n "A message from the newcomer:"
 
 # game/chapter3.rpy:736
 translate english chapter4_hook_6e99cc46:
 
     # newb "Спасибо за сегодня. Я, кажется, завтра снова выйду."
-    newb "Спасибо за сегодня. Я, кажется, завтра снова выйду."
+    newb "Thanks for today. I think I'm coming back tomorrow."
 
 # game/chapter3.rpy:737
 translate english chapter4_hook_38de49b9:
 
     # n "Следом приходит ещё одно."
-    n "Следом приходит ещё одно."
+    n "Another message follows."
 
 # game/chapter3.rpy:738
 translate english chapter4_hook_f5f228ea:
 
     # newb "Только никому не говори, что мне уже не так страшно."
-    newb "Только никому не говори, что мне уже не так страшно."
+    newb "Just don't tell anyone I'm not as scared anymore."
 
 # game/chapter3.rpy:740
 translate english chapter4_hook_926c13c9:
 
     # n "Системное уведомление:"
-    n "Системное уведомление:"
+    n "System notification:"
 
 # game/chapter3.rpy:741
 translate english chapter4_hook_16ccfa61:
 
     # n "«Высокий показатель обработки. Вам доступна дополнительная смена». Ниже большая фиолетовая кнопка. «Принять»."
-    n "«Высокий показатель обработки. Вам доступна дополнительная смена». Ниже большая фиолетовая кнопка. «Принять»."
+    n "\"High processing score. An extra shift is available.\" Below it is a large violet button: \"Accept.\""
 
 # game/chapter3.rpy:743
 translate english chapter4_hook_eb292adf:
 
     # n "Номер неизвестен. Сообщение короткое:"
-    n "Номер неизвестен. Сообщение короткое:"
+    n "Unknown number. The message is brief:"
 
 # game/chapter3.rpy:744
 translate english chapter4_hook_bcbade23:
 
     # n "«Ты видел, что сегодня было с контейнером?» «Это не первый раз»."
-    n "«Ты видел, что сегодня было с контейнером?» «Это не первый раз»."
+    n "\"Did you see what happened with the container today?\" \"This isn't the first time.\""
 
 # game/chapter3.rpy:746
 translate english chapter4_hook_108cfedf:
 
     # n "Ты останавливаешься под фонарём. Склад позади продолжает гудеть."
-    n "Ты останавливаешься под фонарём. Склад позади продолжает гудеть."
+    n "You stop beneath a streetlight. The warehouse keeps humming behind you."
 
 # game/chapter3.rpy:748
 translate english chapter4_hook_1d8cf7c5:
 
     # n "Смена закончилась. До конца недели — пять дней."
-    n "Смена закончилась. До конца недели — пять дней."
+    n "The shift is over. Five days remain in the week."
 
 translate english strings:
 
     # game/chapter3.rpy:19
-    old "Подтвердить смену сразу"
-    new "Подтвердить смену сразу"
+    old "Confirm the shift immediately"
+    new "Confirm the shift immediately"
 
     # game/chapter3.rpy:24
-    old "Отложить телефон и дать себе ещё десять минут"
-    new "Отложить телефон и дать себе ещё десять минут"
+    old "Put the phone down and give yourself ten more minutes"
+    new "Put the phone down and give yourself ten more minutes"
 
     # game/chapter3.rpy:29
-    old "Ответить новичку"
-    new "Ответить новичку"
+    old "Reply to the newcomer"
+    new "Reply to the newcomer"
 
     # game/chapter3.rpy:179
-    old "Предложить работать рядом"
-    new "Предложить работать рядом"
+    old "Suggest working side by side"
+    new "Suggest working side by side"
 
     # game/chapter3.rpy:186
-    old "Сказать, что каждый отвечает за свой ТСД"
-    new "Сказать, что каждый отвечает за свой ТСД"
+    old "Say that everyone is responsible for their own scanner"
+    new "Say that everyone is responsible for their own scanner"
 
     # game/chapter3.rpy:192
-    old "Снять напряжение шуткой"
-    new "Снять напряжение шуткой"
+    old "Break the tension with a joke"
+    new "Break the tension with a joke"
 
     # game/chapter3.rpy:248
     old "Позвать супервайзера и сразу показать ошибку"
