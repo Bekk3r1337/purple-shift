@@ -13,6 +13,8 @@ init python:
         persistent.ps_language_chosen = True
         persistent.ps_language_code = "english" if language == "english" else "russian"
         renpy.change_language(language, force=True, rebuild=True)
+        if "ps_sync_character_names" in globals():
+            ps_sync_character_names()
         renpy.save_persistent()
         renpy.restart_interaction()
 
