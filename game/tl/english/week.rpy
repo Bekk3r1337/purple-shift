@@ -4,661 +4,661 @@
 translate english chapter3_day_three_eaa2d3a5:
 
     # n "На третий день ты проходишь знакомый поворот, переход и серую дверь почти не глядя. Только у входа вспоминаешь вчерашнее сообщение."
-    n "На третий день ты проходишь знакомый поворот, переход и серую дверь почти не глядя. Только у входа вспоминаешь вчерашнее сообщение."
+    n "On Day Three, you pass the familiar turn, walkway, and gray door almost without looking. Only at the entrance do you remember yesterday's message."
 
 # game/week.rpy:31
 translate english chapter3_day_three_ef4f0339:
 
     # n "В телефоне всё ещё лежит файл «Чек-лист старшего линии». Сорок семь пунктов: запуск, остановка, отчёты, штрафы. Про разговор с испуганным человеком — ничего."
-    n "В телефоне всё ещё лежит файл «Чек-лист старшего линии». Сорок семь пунктов: запуск, остановка, отчёты, штрафы. Про разговор с испуганным человеком — ничего."
+    n "The file \"Line Lead Checklist\" is still on your phone. Forty-seven items: startup, shutdown, reports, penalties. Nothing about talking to a frightened person."
 
 # game/week.rpy:33
 translate english chapter3_day_three_92feac09:
 
     # n "Лера уже отметилась в приложении. Рядом с её именем зелёная точка: сегодня она пришла раньше тебя."
-    n "Лера уже отметилась в приложении. Рядом с её именем зелёная точка: сегодня она пришла раньше тебя."
+    n "Lera has already checked in through the app. A green dot sits beside her name: today she arrived before you."
 
 # game/week.rpy:35
 translate english chapter3_day_three_6a765d4d:
 
     # n "Фиолетовая кнопка дополнительной смены всё ещё горит. Под ней обещают повышающий коэффициент, но точной суммы нет."
-    n "Фиолетовая кнопка дополнительной смены всё ещё горит. Под ней обещают повышающий коэффициент, но точной суммы нет."
+    n "The violet extra-shift button is still glowing. It promises a higher rate, but gives no exact amount."
 
 # game/week.rpy:37
 translate english chapter3_day_three_23980810:
 
     # n "Неизвестный номер больше не писал. Ты перечитал фразу «Это не первый раз» уже трижды."
-    n "Неизвестный номер больше не писал. Ты перечитал фразу «Это не первый раз» уже трижды."
+    n "The unknown number has not written again. You have reread the line \"This isn't the first time\" three times already."
 
 # game/week.rpy:48
 translate english chapter3_day_three_c8bef2c1:
 
     # mem "Третий день. Поздравляю: теперь ты достаточно опытный, чтобы обучать тех, кто пришёл пять минут назад."
-    mem "Третий день. Поздравляю: теперь ты достаточно опытный, чтобы обучать тех, кто пришёл пять минут назад."
+    mem "Day Three. Congratulations: you're now experienced enough to train anyone who arrived five minutes after you."
 
 # game/week.rpy:50
 translate english chapter3_day_three_3e298d98:
 
     # p "А сам?"
-    p "А сам?"
+    p "And you?"
 
 # game/week.rpy:52
 translate english chapter3_day_three_be755af6:
 
     # mem "Я слишком ценный специалист. Меня берегут от ответственности."
-    mem "Я слишком ценный специалист. Меня берегут от ответственности."
+    mem "I'm too valuable a specialist. They protect me from responsibility."
 
 # game/week.rpy:57
 translate english chapter3_day_three_c9121eec:
 
     # vet "Не слушай. Его от ответственности уже ничего не спасёт."
-    vet "Не слушай. Его от ответственности уже ничего не спасёт."
+    vet "Don't listen to him. Nothing can save him from responsibility now."
 
 # game/week.rpy:59
 translate english chapter3_day_three_750a60dc:
 
     # n "Виктор задерживается рядом, пока Макс убирает вещи в шкафчик."
-    n "Виктор задерживается рядом, пока Макс убирает вещи в шкафчик."
+    n "Viktor lingers nearby while Max puts his things into a locker."
 
 # game/week.rpy:62
 translate english chapter3_day_three_67327a34:
 
     # vet "Про контейнер думал?"
-    vet "Про контейнер думал?"
+    vet "Been thinking about the container?"
 
 # game/week.rpy:63
 translate english chapter3_day_three_c08a0f38:
 
     # p "Думал."
-    p "Думал."
+    p "I have."
 
 # game/week.rpy:64
 translate english chapter3_day_three_95ebed91:
 
     # vet "Хорошо. Значит, не зря упал."
-    vet "Хорошо. Значит, не зря упал."
+    vet "Good. Then it didn't fall for nothing."
 
 # game/week.rpy:66
 translate english chapter3_day_three_725c89e3:
 
     # vet "После вчерашнего тебя будут проверять."
-    vet "После вчерашнего тебя будут проверять."
+    vet "After yesterday, they'll be watching you."
 
 # game/week.rpy:67
 translate english chapter3_day_three_8f1dffd5:
 
     # p "За то, что сделал правильно?"
-    p "За то, что сделал правильно?"
+    p "For doing the right thing?"
 
 # game/week.rpy:68
 translate english chapter3_day_three_be324a32:
 
     # vet "За самовольную остановку. Правильной её назовут, только если это удобно в отчёте."
-    vet "За самовольную остановку. Правильной её назовут, только если это удобно в отчёте."
+    vet "For stopping the line without permission. They'll call it the right thing only if that looks good in the report."
 
 # game/week.rpy:77
 translate english chapter3_day_three_b71c9f54:
 
     # sv "Перед запуском — минута внимания. В конце недели закрывают месячный рейтинг. Лучший показатель получит премию и отметку «Сотрудник месяца»."
-    sv "Перед запуском — минута внимания. В конце недели закрывают месячный рейтинг. Лучший показатель получит премию и отметку «Сотрудник месяца»."
+    sv "One minute before startup. The monthly ranking closes at the end of the week. The top score gets a bonus and the title \"Employee of the Month.\""
 
 # game/week.rpy:79
 translate english chapter3_day_three_1c91de22:
 
     # n "На стене загорается экран с фамилиями, процентами и зелёными или красными стрелками."
-    n "На стене загорается экран с фамилиями, процентами и зелёными или красными стрелками."
+    n "A wall display lights up with surnames, percentages, and green or red arrows."
 
 # game/week.rpy:81
 translate english chapter3_day_three_2f9b3773:
 
     # sv "Скорость, ошибки, соблюдение операций — считается всё."
-    sv "Скорость, ошибки, соблюдение операций — считается всё."
+    sv "Speed, mistakes, procedure compliance - everything counts."
 
 # game/week.rpy:83
 translate english chapter3_day_three_df4b018e:
 
     # mem "Кроме желания жить."
-    mem "Кроме желания жить."
+    mem "Except the desire to stay alive."
 
 # game/week.rpy:85
 translate english chapter3_day_three_82acfa45:
 
     # sv "Оно в KPI не входит."
-    sv "Оно в KPI не входит."
+    sv "That's not in the KPI."
 
 # game/week.rpy:87
 translate english chapter3_day_three_e9a47c6a:
 
     # n "Твоё имя появляется в нижней части списка. В графах пока прочерки: двух смен для рейтинга мало."
-    n "Твоё имя появляется в нижней части списка. В графах пока прочерки: двух смен для рейтинга мало."
+    n "Your name appears near the bottom of the list. The columns still contain dashes: two shifts are not enough for a ranking."
 
 # game/week.rpy:90
 translate english chapter3_day_three_06541abf:
 
     # sv "У тебя хороший старт. Не испорть."
-    sv "У тебя хороший старт. Не испорть."
+    sv "You've got a good start. Don't ruin it."
 
 # game/week.rpy:92
 translate english chapter3_day_three_b69e3f74:
 
     # sv "Ты часто отвлекаешься на чужие участки. В рейтинге помощь не всегда видна."
-    sv "Ты часто отвлекаешься на чужие участки. В рейтинге помощь не всегда видна."
+    sv "You often get distracted by other sections. The ranking does not always see help."
 
 # game/week.rpy:94
 translate english chapter3_day_three_418e3168:
 
     # sv "Неделя покажет."
-    sv "Неделя покажет."
+    sv "The week will tell."
 
 # game/week.rpy:118
 translate english chapter3_day_three_59bdae1e:
 
     # n "Линия запускается. Третий день начинается с обычного звука."
-    n "Линия запускается. Третий день начинается с обычного звука."
+    n "The line starts. Day Three begins with the usual sound."
 
 # game/week.rpy:122
 translate english chapter3_day_three_f8d01881:
 
     # n "Пиип. Система выдаёт контрольную серию: шесть товаров, тридцать секунд, каждая ошибка отнимает время."
-    n "Пиип. Система выдаёт контрольную серию: шесть товаров, тридцать секунд, каждая ошибка отнимает время."
+    n "Beep. The system assigns a control series: six items, thirty seconds, every mistake costs time."
 
 # game/week.rpy:132
 translate english chapter3_day_three_3143b860:
 
     # n "Последний товар уходит в правильный сектор. Шесть из шести. Экран на секунду становится зелёным."
-    n "Последний товар уходит в правильный сектор. Шесть из шести. Экран на секунду становится зелёным."
+    n "The final item goes to the correct sector. Six out of six. The screen turns green for one second."
 
 # game/week.rpy:135
 translate english chapter3_day_three_6d96d63b:
 
     # n "Серия закрывается с огрехами, но очередь не успевает тебя догнать."
-    n "Серия закрывается с огрехами, но очередь не успевает тебя догнать."
+    n "The series closes with a few rough edges, but the queue never catches up with you."
 
 # game/week.rpy:139
 translate english chapter3_day_three_a6c04957:
 
     # n "Таймер обнуляется раньше последнего товара. ТСД возвращает остаток в очередь и добавляет две ошибки в статистику."
-    n "Таймер обнуляется раньше последнего товара. ТСД возвращает остаток в очередь и добавляет две ошибки в статистику."
+    n "The timer hits zero before the last item. The scanner sends the remainder back to the queue and adds two mistakes to your stats."
 
 # game/week.rpy:141
 translate english chapter3_day_three_d7767198:
 
     # n "После контрольной серии ТСД не возвращается к товару. На экране появляется запись вчерашнего инцидента."
-    n "После контрольной серии ТСД не возвращается к товару. На экране появляется запись вчерашнего инцидента."
+    n "After the control series, the scanner does not return to the item screen. Yesterday's incident record appears instead."
 
 # game/week.rpy:149
 translate english chapter3_day_three_24a1abd0:
 
     # n "Ты обновляешь экран. Ничего. Вчера коробки падали на пол, а в журнале смена закрыта без происшествий."
-    n "Ты обновляешь экран. Ничего. Вчера коробки падали на пол, а в журнале смена закрыта без происшествий."
+    n "You refresh the screen. Nothing. Yesterday boxes hit the floor, but the shift log says the night closed without incidents."
 
 # game/week.rpy:154
 translate english chapter3_day_three_2fc0ff90:
 
     # newb "Ты тоже это видишь?"
-    newb "Ты тоже это видишь?"
+    newb "You see this too?"
 
 # game/week.rpy:156
 translate english chapter3_day_three_b0060fdd:
 
     # p "Вижу."
-    p "Вижу."
+    p "I see it."
 
 # game/week.rpy:159
 translate english chapter3_day_three_aa211b0c:
 
     # newb "Но ты нажимал кнопку. Она должна была записаться."
-    newb "Но ты нажимал кнопку. Она должна была записаться."
+    newb "But you pressed the button. It should be in the log."
 
 # game/week.rpy:161
 translate english chapter3_day_three_3889f3c7:
 
     # newb "Мы все там были. Почему написано, что ничего не случилось?"
-    newb "Мы все там были. Почему написано, что ничего не случилось?"
+    newb "We were all there. Why does it say nothing happened?"
 
 # game/week.rpy:163
 translate english chapter3_day_three_e0395f1a:
 
     # newb "Коробки упали. Я их потом собирала."
-    newb "Коробки упали. Я их потом собирала."
+    newb "The boxes fell. I picked them up afterward."
 
 # game/week.rpy:168
 translate english chapter3_day_three_08895876:
 
     # vet "Потому что с происшествием показатели хуже. Запись убрали — отчёт снова чистый."
-    vet "Потому что с происшествием показатели хуже. Запись убрали — отчёт снова чистый."
+    vet "Because an incident makes the numbers look worse. Remove the record and the report is clean again."
 
 # game/week.rpy:170
 translate english chapter3_day_three_889f28dc:
 
     # p "Ты знал?"
-    p "Ты знал?"
+    p "You knew?"
 
 # game/week.rpy:172
 translate english chapter3_day_three_9def3c5d:
 
     # vet "Я видел такое."
-    vet "Я видел такое."
+    vet "I've seen it before."
 
 # game/week.rpy:174
 translate english chapter3_day_three_722e6f6a:
 
     # n "Телефон в кармане коротко вибрирует. Неизвестный номер:"
-    n "Телефон в кармане коротко вибрирует. Неизвестный номер:"
+    n "Your phone buzzes briefly in your pocket. Unknown number:"
 
 # game/week.rpy:175
 translate english chapter3_day_three_02494d1c:
 
     # n "«Открой архив операций. Смена 02:14. Пока его тоже не почистили»."
-    n "«Открой архив операций. Смена 02:14. Пока его тоже не почистили»."
+    n "\"Open the operations archive. Shift 02:14. Before they clean that too.\""
 
 # game/week.rpy:184
 translate english chapter3_day_three_71c8d74f:
 
     # n "Ты делаешь снимок экрана. Потом ещё один. В архиве находится строка STOP-04. Время совпадает. Статус: «Удалено оператором участка»."
-    n "Ты делаешь снимок экрана. Потом ещё один. В архиве находится строка STOP-04. Время совпадает. Статус: «Удалено оператором участка»."
+    n "You take a screenshot. Then another. In the archive you find the line STOP-04. The time matches. Status: \"Deleted by section operator.\""
 
 # game/week.rpy:186
 translate english chapter3_day_three_9e6d48a5:
 
     # newb "Теперь это хотя бы не исчезнет совсем."
-    newb "Теперь это хотя бы не исчезнет совсем."
+    newb "At least now it won't disappear completely."
 
 # game/week.rpy:187
 translate english chapter3_day_three_6fb50c02:
 
     # vet "Скинь копию куда-нибудь ещё. Рабочий телефон могут попросить показать."
-    vet "Скинь копию куда-нибудь ещё. Рабочий телефон могут попросить показать."
+    vet "Send a copy somewhere else. They may ask to inspect your work phone."
 
 # game/week.rpy:196
 translate english chapter3_day_three_b3ddd382:
 
     # p "Событие удалено. Кем и почему?"
-    p "Событие удалено. Кем и почему?"
+    p "The event was deleted. By whom, and why?"
 
 # game/week.rpy:201
 translate english chapter3_day_three_fae4aea6:
 
     # sv "Техническая корректировка."
-    sv "Техническая корректировка."
+    sv "Technical adjustment."
 
 # game/week.rpy:203
 translate english chapter3_day_three_064ca809:
 
     # p "Контейнер тоже был технической корректировкой?"
-    p "Контейнер тоже был технической корректировкой?"
+    p "Was the container a technical adjustment too?"
 
 # game/week.rpy:205
 translate english chapter3_day_three_0c6824d1:
 
     # n "Артём переводит взгляд с Виктора на Леру, потом снова на тебя."
-    n "Артём переводит взгляд с Виктора на Леру, потом снова на тебя."
+    n "Artyom looks from Viktor to Lera, then back to you."
 
 # game/week.rpy:207
 translate english chapter3_day_three_87ba9873:
 
     # sv "Работайте. После смены проверю."
-    sv "Работайте. После смены проверю."
+    sv "Work. I'll check after the shift."
 
 # game/week.rpy:212
 translate english chapter3_day_three_db52eae1:
 
     # vet "Теперь он знает, что ты заметил."
-    vet "Теперь он знает, что ты заметил."
+    vet "Now he knows you noticed."
 
 # game/week.rpy:213
 translate english chapter3_day_three_69630f41:
 
     # p "Это плохо?"
-    p "Это плохо?"
+    p "Is that bad?"
 
 # game/week.rpy:214
 translate english chapter3_day_three_21eac0d6:
 
     # vet "Смотря кто удалил запись."
-    vet "Смотря кто удалил запись."
+    vet "Depends on who deleted the record."
 
 # game/week.rpy:223
 translate english chapter3_day_three_6753dde8:
 
     # n "Ты закрываешь окно. На его месте появляется очередь товаров. Зелёная цифра растёт."
-    n "Ты закрываешь окно. На его месте появляется очередь товаров. Зелёная цифра растёт."
+    n "You close the window. The item queue replaces it. The green number keeps rising."
 
 # game/week.rpy:225
 translate english chapter3_day_three_521c259a:
 
     # newb "И всё?"
-    newb "И всё?"
+    newb "That's it?"
 
 # game/week.rpy:227
 translate english chapter3_day_three_7033fd2e:
 
     # p "У нас работа."
-    p "У нас работа."
+    p "We have work to do."
 
 # game/week.rpy:229
 translate english chapter3_day_three_066ba6a1:
 
     # n "Она медленно кивает. Виктор смотрит на тебя, затем молча возвращается к своей ячейке."
-    n "Она медленно кивает. Виктор смотрит на тебя, затем молча возвращается к своей ячейке."
+    n "She nods slowly. Viktor looks at you, then silently returns to his bin."
 
 # game/week.rpy:235
 translate english chapter3_day_three_5c911148:
 
     # n "К середине смены таблицу обсуждают на каждом участке. Одни обновляют её каждые пять минут. Другие говорят, что им всё равно, и проверяют ещё чаще."
-    n "К середине смены таблицу обсуждают на каждом участке. Одни обновляют её каждые пять минут. Другие говорят, что им всё равно, и проверяют ещё чаще."
+    n "By the middle of the shift, every section is talking about the ranking. Some refresh it every five minutes. Others say they do not care and check even more often."
 
 # game/week.rpy:240
 translate english chapter3_day_three_2eec277e:
 
     # mem "Ты уже на четырнадцатом месте. Ещё немного — и твою фотографию повесят там, где никто не смотрит."
-    mem "Ты уже на четырнадцатом месте. Ещё немного — и твою фотографию повесят там, где никто не смотрит."
+    mem "You're already in fourteenth place. A little more and they'll hang your photo somewhere nobody looks."
 
 # game/week.rpy:248
 translate english chapter3_day_three_0bc31c6f:
 
     # p "Попробую войти в десятку."
-    p "Попробую войти в десятку."
+    p "I'll try to make the top ten."
 
 # game/week.rpy:249
 translate english chapter3_day_three_cf70b918:
 
     # n "Ты сокращаешь паузы. Пропускаешь воду. К концу часа твоё имя поднимается на девятое место."
-    n "Ты сокращаешь паузы. Пропускаешь воду. К концу часа твоё имя поднимается на девятое место."
+    n "You shorten your breaks. Skip water. By the end of the hour, your name rises to ninth place."
 
 # game/week.rpy:250
 translate english chapter3_day_three_bb3cc3bb:
 
     # mem "Поздравляю. Теперь тебя официально можно эксплуатировать эффективнее."
-    mem "Поздравляю. Теперь тебя официально можно эксплуатировать эффективнее."
+    mem "Congratulations. They can officially exploit you more efficiently now."
 
 # game/week.rpy:256
 translate english chapter3_day_three_6b3097fe:
 
     # p "Останусь в своём темпе."
-    p "Останусь в своём темпе."
+    p "I'll keep my own pace."
 
 # game/week.rpy:257
 translate english chapter3_day_three_5d2a62d0:
 
     # n "Ты не попадаешь в десятку. Зато дважды ловишь чужую ошибку до того, как она становится проблемой."
-    n "Ты не попадаешь в десятку. Зато дважды ловишь чужую ошибку до того, как она становится проблемой."
+    n "You do not make the top ten. But twice you catch someone else's mistake before it becomes a problem."
 
 # game/week.rpy:263
 translate english chapter3_day_three_d8e5c3d9:
 
     # p "Предлагаю новый показатель. Кто дольше всех смотрел на рейтинг и не заплакал."
-    p "Предлагаю новый показатель. Кто дольше всех смотрел на рейтинг и не заплакал."
+    p "I propose a new metric: who stared at the ranking longest without crying."
 
 # game/week.rpy:264
 translate english chapter3_day_three_198a1139:
 
     # mem "Я снимаюсь. У меня непереносимость управленческой аналитики."
-    mem "Я снимаюсь. У меня непереносимость управленческой аналитики."
+    mem "I'm withdrawing. I have an intolerance to management analytics."
 
 # game/week.rpy:265
 translate english chapter3_day_three_096801ac:
 
     # n "Смеются даже с соседней линии. Кто-то наконец закрывает таблицу на общем экране."
-    n "Смеются даже с соседней линии. Кто-то наконец закрывает таблицу на общем экране."
+    n "Even the neighboring line laughs. Someone finally closes the ranking on the shared screen."
 
 # game/week.rpy:270
 translate english chapter3_day_three_4b50b711:
 
     # n "Под конец смены ТСД снова вибрирует."
-    n "Под конец смены ТСД снова вибрирует."
+    n "Near the end of the shift, the scanner vibrates again."
 
 # game/week.rpy:278
 translate english chapter3_day_three_a6dcc7df:
 
     # n "До закрытия периода четыре дня. Твоё имя уже появилось в таблице, а запись о падающем контейнере из журнала исчезла."
-    n "До закрытия периода четыре дня. Твоё имя уже появилось в таблице, а запись о падающем контейнере из журнала исчезла."
+    n "Four days remain until the period closes. Your name is already in the ranking, while the record of the falling container has vanished from the log."
 
 # game/week.rpy:315
 translate english chapter4_day_four_8fd8c4ed:
 
     # n "Сообщение Леры будит тебя раньше будильника."
-    n "Сообщение Леры будит тебя раньше будильника."
+    n "Lera's message wakes you before the alarm."
 
 # game/week.rpy:317
 translate english chapter4_day_four_74a8410f:
 
     # newb "Меня вызывают раньше. Пишут, что вчера на моём аккаунте недостача. Сорок семь единиц."
-    newb "Меня вызывают раньше. Пишут, что вчера на моём аккаунте недостача. Сорок семь единиц."
+    newb "They're calling me in early. They say my account has a shortage from yesterday. Forty-seven units."
 
 # game/week.rpy:319
 translate english chapter4_day_four_16436e81:
 
     # n "Сорок семь — то же число, что было в удалённом журнале."
-    n "Сорок семь — то же число, что было в удалённом журнале."
+    n "Forty-seven - the same number that was in the deleted log."
 
 # game/week.rpy:322
 translate english chapter4_day_four_a43da013:
 
     # n "На сохранённом снимке архива сбой привязки начинается сразу после удаления STOP-04."
-    n "На сохранённом снимке архива сбой привязки начинается сразу после удаления STOP-04."
+    n "In the saved archive screenshot, the binding failure begins immediately after STOP-04 is deleted."
 
 # game/week.rpy:324
 translate english chapter4_day_four_680988d8:
 
     # n "Ты помнишь этот экран, но снимка у тебя нет."
-    n "Ты помнишь этот экран, но снимка у тебя нет."
+    n "You remember that screen, but you do not have a screenshot."
 
 # game/week.rpy:331
 translate english chapter4_day_four_000629d7:
 
     # p "Ничего не подписывай. Я скоро буду."
-    p "Ничего не подписывай. Я скоро буду."
+    p "Don't sign anything. I'll be there soon."
 
 # game/week.rpy:332
 translate english chapter4_day_four_f0b7224b:
 
     # newb "Хорошо."
-    newb "Хорошо."
+    newb "Okay."
 
 # game/week.rpy:333
 translate english chapter4_day_four_1ad77849:
 
     # n "Лера отвечает сразу. Следом присылает фотографию объяснительной."
-    n "Лера отвечает сразу. Следом присылает фотографию объяснительной."
+    n "Lera replies immediately. Then she sends a photo of the written statement."
 
 # game/week.rpy:338
 translate english chapter4_day_four_0098c456:
 
     # p "Пришли номер операции и время. Проверим цепочку."
-    p "Пришли номер операции и время. Проверим цепочку."
+    p "Send me the operation number and time. We'll check the chain."
 
 # game/week.rpy:339
 translate english chapter4_day_four_15fa2f9b:
 
     # newb "Сейчас."
-    newb "Сейчас."
+    newb "One second."
 
 # game/week.rpy:340
 translate english chapter4_day_four_9fdea214:
 
     # n "Через минуту она присылает номер, время и снимок объяснительной."
-    n "Через минуту она присылает номер, время и снимок объяснительной."
+    n "A minute later, she sends the number, the time, and a photo of the statement."
 
 # game/week.rpy:346
 translate english chapter4_day_four_ca4a8b28:
 
     # p "Поговори с супервайзером. Я не могу решать всё."
-    p "Поговори с супервайзером. Я не могу решать всё."
+    p "Talk to the supervisor. I can't decide everything."
 
 # game/week.rpy:347
 translate english chapter4_day_four_aaecc9d0:
 
     # newb "Да. Конечно."
-    newb "Да. Конечно."
+    newb "Yeah. Of course."
 
 # game/week.rpy:348
 translate english chapter4_day_four_883e7d23:
 
     # n "Лера больше ничего не пишет."
-    n "Лера больше ничего не пишет."
+    n "Lera does not write anything else."
 
 # game/week.rpy:362
 translate english chapter4_day_four_e189539c:
 
     # sv "Сорок семь единиц прошли под твоим аккаунтом. Ячейка назначения пустая."
-    sv "Сорок семь единиц прошли под твоим аккаунтом. Ячейка назначения пустая."
+    sv "Forty-seven units passed through your account. The destination bin is blank."
 
 # game/week.rpy:364
 translate english chapter4_day_four_51433ee7:
 
     # newb "У меня завис ТСД."
-    newb "У меня завис ТСД."
+    newb "My scanner froze."
 
 # game/week.rpy:366
 translate english chapter4_day_four_39e98426:
 
     # sv "У всех зависает. Недостача почему-то одна."
-    sv "У всех зависает. Недостача почему-то одна."
+    sv "Everyone's freezes. Somehow there's only one shortage."
 
 # game/week.rpy:368
 translate english chapter4_day_four_ebe24171:
 
     # n "На столе лежит бланк объяснительной. Причину уже напечатали за Леру: «Ошибка допущена по невнимательности сотрудника»."
-    n "На столе лежит бланк объяснительной. Причину уже напечатали за Леру: «Ошибка допущена по невнимательности сотрудника»."
+    n "A written-statement form lies on the table. The cause has already been printed for Lera: \"Error caused by employee inattention.\""
 
 # game/week.rpy:371
 translate english chapter4_day_four_ecf611d9:
 
     # n "В твоём телефоне есть другая версия событий."
-    n "В твоём телефоне есть другая версия событий."
+    n "Your phone contains another version of events."
 
 # game/week.rpy:382
 translate english chapter4_day_four_40940d59:
 
     # p "Вот номер операции. Она прошла сразу после того, как из журнала удалили STOP-04."
-    p "Вот номер операции. Она прошла сразу после того, как из журнала удалили STOP-04."
+    p "Here's the operation number. It happened right after STOP-04 was deleted from the log."
 
 # game/week.rpy:385
 translate english chapter4_day_four_cfcd7d78:
 
     # p "И вот снимок архива."
-    p "И вот снимок архива."
+    p "And here's the archive screenshot."
 
 # game/week.rpy:386
 translate english chapter4_day_four_9e2b3132:
 
     # n "Артём долго смотрит на экран."
-    n "Артём долго смотрит на экран."
+    n "Artyom studies the screen for a long time."
 
 # game/week.rpy:387
 translate english chapter4_day_four_d6edeb0d:
 
     # sv "Откуда это у тебя?"
-    sv "Откуда это у тебя?"
+    sv "Where did you get this?"
 
 # game/week.rpy:388
 translate english chapter4_day_four_01897e45:
 
     # p "Из системы."
-    p "Из системы."
+    p "From the system."
 
 # game/week.rpy:389
 translate english chapter4_day_four_c9b7b802:
 
     # sv "Я вижу. Спрашиваю — зачем сохранил?"
-    sv "Я вижу. Спрашиваю — зачем сохранил?"
+    sv "I can see that. I'm asking why you saved it."
 
 # game/week.rpy:390
 translate english chapter4_day_four_54c64d02:
 
     # p "Потому что запись уже один раз удалили."
-    p "Потому что запись уже один раз удалили."
+    p "Because the record had already been deleted once."
 
 # game/week.rpy:394
 translate english chapter4_day_four_c239660d:
 
     # sv "Слов недостаточно."
-    sv "Слов недостаточно."
+    sv "Words aren't enough."
 
 # game/week.rpy:395
 translate english chapter4_day_four_18f5f09a:
 
     # p "Тогда проверьте резервный журнал."
-    p "Тогда проверьте резервный журнал."
+    p "Then check the backup log."
 
 # game/week.rpy:396
 translate english chapter4_day_four_cb0981d4:
 
     # n "Артём ничего не отвечает, но бланк отодвигает."
-    n "Артём ничего не отвечает, но бланк отодвигает."
+    n "Artyom says nothing, but pushes the form aside."
 
 # game/week.rpy:398
 translate english chapter4_day_four_783d1c47:
 
     # sv "Объяснительную пока не подписываем. Я подниму операции."
-    sv "Объяснительную пока не подписываем. Я подниму операции."
+    sv "Don't sign the statement yet. I'll pull the operation records."
 
 # game/week.rpy:399
 translate english chapter4_day_four_127e8478:
 
     # newb "Спасибо."
-    newb "Спасибо."
+    newb "Thank you."
 
 # game/week.rpy:410
 translate english chapter4_day_four_37d4b980:
 
     # p "Дайте ТСД."
-    p "Дайте ТСД."
+    p "Give me the scanner."
 
 # game/week.rpy:411
 translate english chapter4_day_four_3c969dfe:
 
     # n "Ты открываешь историю. Сверяешь время. Сорок семь товаров ушли в буферную ячейку. После ночной перезагрузки она перестала отображаться."
-    n "Ты открываешь историю. Сверяешь время. Сорок семь товаров ушли в буферную ячейку. После ночной перезагрузки она перестала отображаться."
+    n "You open the history and compare the times. Forty-seven items went to a buffer bin. After the overnight reboot, the bin stopped appearing in the system."
 
 # game/week.rpy:413
 translate english chapter4_day_four_626c023a:
 
     # p "Товары на месте. Пропала ссылка на ячейку."
-    p "Товары на месте. Пропала ссылка на ячейку."
+    p "The items are still there. The link to the bin disappeared."
 
 # game/week.rpy:415
 translate english chapter4_day_four_7a16fd61:
 
     # sv "Уверен?"
-    sv "Уверен?"
+    sv "Are you sure?"
 
 # game/week.rpy:417
 translate english chapter4_day_four_3a4a730f:
 
     # p "Откройте буфер B-04."
-    p "Откройте буфер B-04."
+    p "Open buffer B-04."
 
 # game/week.rpy:419
 translate english chapter4_day_four_c6d79ab2:
 
     # n "Через минуту приходит подтверждение. Все сорок семь единиц на месте."
-    n "Через минуту приходит подтверждение. Все сорок семь единиц на месте."
+    n "A minute later, confirmation comes in. All forty-seven units are there."
 
 # game/week.rpy:421
 translate english chapter4_day_four_0b27ae3d:
 
     # sv "Хорошая работа."
-    sv "Хорошая работа."
+    sv "Good work."
 
 # game/week.rpy:422
 translate english chapter4_day_four_dadf3cbb:
 
     # newb "То есть… я ничего не потеряла?"
-    newb "То есть… я ничего не потеряла?"
+    newb "So... I didn't lose anything?"
 
 # game/week.rpy:423
 translate english chapter4_day_four_59ce641b:
 
     # p "Нет."
-    p "Нет."
+    p "No."
 
 # game/week.rpy:424
 translate english chapter4_day_four_cc60bc40:
 
     # p "Нет. Можешь выдохнуть."
-    p "Нет. Можешь выдохнуть."
+    p "No. You can breathe now."
 
 # game/week.rpy:435
 translate english chapter4_day_four_b9ac95c6:
@@ -874,7 +874,7 @@ translate english chapter4_day_four_0c4bc1fe:
 translate english chapter4_day_four_ce9d6275:
 
     # mem "Нет."
-    mem "Нет."
+    mem "No."
 
 # game/week.rpy:568
 translate english chapter4_day_four_7ece26af:
@@ -1870,7 +1870,7 @@ translate english chapter6_day_six_b54f13f4:
 translate english chapter6_day_six_f0b7224b:
 
     # newb "Хорошо."
-    newb "Хорошо."
+    newb "Okay."
 
 # game/week.rpy:1277
 translate english chapter6_day_six_ab11936c:
@@ -2992,7 +2992,7 @@ translate english ending_silence_cc4a2afd:
 translate english ending_silence_9620b63f:
 
     # sv "Хорошо."
-    sv "Хорошо."
+    sv "Okay."
 
 # game/week.rpy:2018
 translate english ending_silence_87423205:
