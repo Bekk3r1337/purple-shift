@@ -138,10 +138,10 @@ init -5 python:
     }
 
     def ps_language_is_english():
-        return (
-            getattr(renpy.game.preferences, "language", None) == "english"
-            or getattr(persistent, "ps_language_code", None) == "english"
-        )
+        language_code = getattr(persistent, "ps_language_code", None)
+        if language_code in ("english", "russian"):
+            return language_code == "english"
+        return getattr(renpy.game.preferences, "language", None) == "english"
 
     def ps_default_player_name():
         return "Employee" if ps_language_is_english() else "Сотрудник"
