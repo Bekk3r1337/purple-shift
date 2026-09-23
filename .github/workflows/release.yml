@@ -79,7 +79,7 @@ jobs:
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v4
         with:
-          name: PurpleShift-${{ github.ref_name }}-pc
+          name: PurpleShift-windows-build-pc
           path: dist/*
           if-no-files-found: error
 
