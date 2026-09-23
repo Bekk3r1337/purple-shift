@@ -1,585 +1,877 @@
 # Dynamic English strings used by Python data and screen parameters.
-\ntranslate english strings:
-\n    old "Как к тебе обращаться?"
+
+translate english strings:
+
+    old "Как к тебе обращаться?"
     new "What should I call you?"
-\n    old "Сотрудник"
+
+    old "Сотрудник"
     new "Employee"
-\n    old "Новичок"
+
+    old "Новичок"
     new "Newcomer"
-\n    old "Ветеран"
+
+    old "Ветеран"
     new "Veteran"
-\n    old "Шутник"
+
+    old "Шутник"
     new "Joker"
-\n    old "Супервайзер"
+
+    old "Супервайзер"
     new "Supervisor"
-\n    old "Куратор"
+
+    old "Куратор"
     new "Curator"
-\n    old "Лера"
+
+    old "Лера"
     new "Lera"
-\n    old "Виктор"
+
+    old "Виктор"
     new "Viktor"
-\n    old "Макс"
+
+    old "Макс"
     new "Max"
-\n    old "Артём"
+
+    old "Артём"
     new "Artyom"
-\n    old "Морозов"
+
+    old "Морозов"
     new "Morozov"
-\n    old "Валерия Мельникова"
+
+    old "Валерия Мельникова"
     new "Valeria Melnikova"
-\n    old "Виктор Савельев"
+
+    old "Виктор Савельев"
     new "Viktor Savelyev"
-\n    old "Максим Орлов"
+
+    old "Максим Орлов"
     new "Maxim Orlov"
-\n    old "Артём Волков"
+
+    old "Артём Волков"
     new "Artyom Volkov"
-\n    old "новичок сортировки"
+
+    old "новичок сортировки"
     new "sorting newcomer"
-\n    old "ветеран ночной смены"
+
+    old "ветеран ночной смены"
     new "night-shift veteran"
-\n    old "сортировщик и голос линии"
+
+    old "сортировщик и голос линии"
     new "sorter and voice of the line"
-\n    old "супервайзер участка"
+
+    old "супервайзер участка"
     new "section supervisor"
-\n    old "22 года"
+
+    old "22 года"
     new "22 years old"
-\n    old "46 лет"
+
+    old "46 лет"
     new "46 years old"
-\n    old "29 лет"
+
+    old "29 лет"
     new "29 years old"
-\n    old "35 лет"
+
+    old "35 лет"
     new "35 years old"
-\n    old "Больше самой ошибки она боится чужой формулировки, которая может навсегда стать её характеристикой."
+
+    old "Больше самой ошибки она боится чужой формулировки, которая может навсегда стать её характеристикой."
     new "More than the mistake itself, she fears someone else's wording becoming a permanent label attached to her."
-\n    old "Ей нужен человек, рядом с которым она сможет говорить сама - без опеки и готовых ответов за неё."
+
+    old "Ей нужен человек, рядом с которым она сможет говорить сама - без опеки и готовых ответов за неё."
     new "She needs someone beside whom she can speak for herself, without being sheltered or given ready-made answers."
-\n    old "Он знает склад лучше инструкций и слишком долго считал боль обычной частью опыта."
+
+    old "Он знает склад лучше инструкций и слишком долго считал боль обычной частью опыта."
     new "He knows the warehouse better than the manuals and spent too long treating pain as a normal part of experience."
-\n    old "Ему нужно разрешить другим остановить его раньше, чем привычка снова окажется сильнее тела."
+
+    old "Ему нужно разрешить другим остановить его раньше, чем привычка снова окажется сильнее тела."
     new "He needs to let others stop him before habit overrules his body again."
-\n    old "Шутками он проверяет, отвечает ли ещё смена. Тишина пугает его сильнее любой аварии."
+
+    old "Шутками он проверяет, отвечает ли ещё смена. Тишина пугает его сильнее любой аварии."
     new "He uses jokes to check whether the shift still answers back. Silence scares him more than any accident."
-\n    old "Ему нужен собеседник, рядом с которым не обязательно развлекать всех, чтобы остаться нужным."
+
+    old "Ему нужен собеседник, рядом с которым не обязательно развлекать всех, чтобы остаться нужным."
     new "He needs someone around whom he does not have to entertain everyone just to feel needed."
-\n    old "Он вырос из той же линии и теперь каждый день выбирает, кого защищать: людей, цифры или собственное место."
+
+    old "Он вырос из той же линии и теперь каждый день выбирает, кого защищать: людей, цифры или собственное место."
     new "He came up from the same line and now chooses every day what to protect: people, numbers, or his own position."
-\n    old "Ему нужен второй голос, который не позволит превратить ответственность в удобную подпись."
+
+    old "Ему нужен второй голос, который не позволит превратить ответственность в удобную подпись."
     new "He needs a second voice that will not let responsibility turn into a convenient signature."
-\n    old "Человек в потоке"
+
+    old "Человек в потоке"
     new "Human in the Flow"
-\n    old "Опора смены"
+
+    old "Опора смены"
     new "Shift Anchor"
-\n    old "Тащер системы"
+
+    old "Тащер системы"
     new "System Runner"
-\n    old "Голос в шуме"
+
+    old "Голос в шуме"
     new "Voice in the Noise"
-\n    old "Ты следишь за тем, что происходит с людьми рядом."
+
+    old "Ты следишь за тем, что происходит с людьми рядом."
     new "You pay attention to what is happening to the people around you."
-\n    old "В трудный момент на тебя можно положиться."
+
+    old "В трудный момент на тебя можно положиться."
     new "When things get hard, people can rely on you."
-\n    old "Ты быстро разбираешься в правилах и держишь темп."
+
+    old "Ты быстро разбираешься в правилах и держишь темп."
     new "You learn the rules quickly and keep the pace."
-\n    old "Твои шутки помогают команде пережить тяжёлую смену."
+
+    old "Твои шутки помогают команде пережить тяжёлую смену."
     new "Your jokes help the team survive a hard shift."
-\n    old "Смена действует как команда"
+
+    old "Смена действует как команда"
     new "The shift acts as a team"
-\n    old "Люди учатся замечать друг друга"
+
+    old "Люди учатся замечать друг друга"
     new "People are learning to notice each other"
-\n    old "Смена держится, но трещины видны"
+
+    old "Смена держится, но трещины видны"
     new "The shift is holding, but the cracks show"
-\n    old "Каждый пытается выбраться один"
+
+    old "Каждый пытается выбраться один"
     new "Everyone is trying to get out alone"
-\n    old "На грани срыва"
+
+    old "На грани срыва"
     new "On the verge of breaking"
-\n    old "Боится, но всё равно говорит"
+
+    old "Боится, но всё равно говорит"
     new "Afraid, but still speaks up"
-\n    old "Тело дошло, внимание отстаёт"
+
+    old "Тело дошло, внимание отстаёт"
     new "The body made it; attention is lagging behind"
-\n    old "Начинает выбирать сам"
+
+    old "Начинает выбирать сам"
     new "Starting to choose for himself"
-\n    old "Пока учится слышать себя"
+
+    old "Пока учится слышать себя"
     new "Still learning to listen to himself"
-\n    old "Лера больше не просит разрешения сообщить об ошибке."
+
+    old "Лера больше не просит разрешения сообщить об ошибке."
     new "Lera no longer asks permission to report an error."
-\n    old "Виктор впервые записывает боль раньше, чем она становится травмой."
+
+    old "Виктор впервые записывает боль раньше, чем она становится травмой."
     new "For the first time, Viktor records pain before it becomes an injury."
-\n    old "Макс всё ещё шутит, но теперь умеет закончить фразу без улыбки."
+
+    old "Макс всё ещё шутит, но теперь умеет закончить фразу без улыбки."
     new "Max still jokes, but now he can finish a sentence without smiling."
-\n    old "Артём учится произносить решение от своего имени, не прячась за регламент."
+
+    old "Артём учится произносить решение от своего имени, не прячась за регламент."
     new "Artyom is learning to state a decision in his own name instead of hiding behind procedure."
-\n    old "Смена помнит людей по именам."
+
+    old "Смена помнит людей по именам."
     new "The shift remembers people by name."
-\n    old "не определено"
+
+    old "не определено"
     new "undecided"
-\n    old "Отношения уже меняются, но смена ещё не знает, во что они превратятся."
+
+    old "Отношения уже меняются, но смена ещё не знает, во что они превратятся."
     new "The relationship is already changing, but the shift does not yet know what it will become."
-\n    old "самостоятельность"
+
+    old "самостоятельность"
     new "independence"
-\n    old "зависимость"
+
+    old "зависимость"
     new "dependence"
-\n    old "доверие"
+
+    old "доверие"
     new "trust"
-\n    old "геройство"
+
+    old "геройство"
     new "heroics"
-\n    old "честность"
+
+    old "честность"
     new "honesty"
-\n    old "избегание"
+
+    old "избегание"
     new "avoidance"
-\n    old "ответственность"
+
+    old "ответственность"
     new "responsibility"
-\n    old "контроль"
+
+    old "контроль"
     new "control"
-\n    old "Лера просит о поддержке, но оставляет решение и слова за собой."
+
+    old "Лера просит о поддержке, но оставляет решение и слова за собой."
     new "Lera asks for support while keeping the decision and the words her own."
-\n    old "Лера всё чаще смотрит на тебя раньше, чем успевает услышать себя."
+
+    old "Лера всё чаще смотрит на тебя раньше, чем успевает услышать себя."
     new "Lera looks to you more and more often before she has time to hear herself."
-\n    old "Виктор учится включать остановку в опыт, не считая её поражением."
+
+    old "Виктор учится включать остановку в опыт, не считая её поражением."
     new "Viktor is learning to treat stopping as part of experience rather than defeat."
-\n    old "Виктор продолжает доказывать телом то, что давно знает головой."
+
+    old "Виктор продолжает доказывать телом то, что давно знает головой."
     new "Viktor keeps proving with his body what he has long understood in his head."
-\n    old "Макс остаётся рядом, даже когда не может спрятаться за удачной репликой."
+
+    old "Макс остаётся рядом, даже когда не может спрятаться за удачной репликой."
     new "Max stays close even when he cannot hide behind a good line."
-\n    old "Макс превращает любой страх в номер, пока никто не успел спросить всерьёз."
+
+    old "Макс превращает любой страх в номер, пока никто не успел спросить всерьёз."
     new "Max turns every fear into a performance before anyone can ask seriously."
-\n    old "Артём принимает решения своим именем и не прячет людей за формулировками."
+
+    old "Артём принимает решения своим именем и не прячет людей за формулировками."
     new "Artyom makes decisions in his own name and does not hide people behind wording."
-\n    old "Артём защищает смену так жёстко, что перестаёт слышать саму смену."
+
+    old "Артём защищает смену так жёстко, что перестаёт слышать саму смену."
     new "Artyom protects the shift so rigidly that he stops hearing the shift itself."
-\n    old "НУЛЕВАЯ СМЕНА ОТКРЫТА"
+
+    old "НУЛЕВАЯ СМЕНА ОТКРЫТА"
     new "ZERO SHIFT UNLOCKED"
-\n    old "КАНАЛ V-13 ВОССТАНОВЛЕН"
+
+    old "КАНАЛ V-13 ВОССТАНОВЛЕН"
     new "V-13 CHANNEL RESTORED"
-\n    old "СМЕНА ПОМНИТ ПРОХОЖДЕНИЕ"
+
+    old "СМЕНА ПОМНИТ ПРОХОЖДЕНИЕ"
     new "THE SHIFT REMEMBERS THIS RUN"
-\n    old "ДО НАЧАЛА СМЕНЫ"
+
+    old "ДО НАЧАЛА СМЕНЫ"
     new "BEFORE THE SHIFT"
-\n    old "источник не определён"
+
+    old "источник не определён"
     new "source unknown"
-\n    old "рабочий канал"
+
+    old "рабочий канал"
     new "work channel"
-\n    old "Ответ отложен"
+
+    old "Ответ отложен"
     new "Reply postponed"
-\n    old "Первая есть"
+
+    old "Первая есть"
     new "First One Done"
-\n    old "Завершить первый рабочий день."
+
+    old "Завершить первый рабочий день."
     new "Complete the first working day."
-\n    old "Остановить линию до того, как опасность станет происшествием."
+
+    old "Остановить линию до того, как опасность станет происшествием."
     new "Stop the line before a hazard becomes an incident."
-\n    old "Склад помнит"
+
+    old "Склад помнит"
     new "The Warehouse Remembers"
-\n    old "Собрать не меньше трёх доказательств."
+
+    old "Собрать не меньше трёх доказательств."
     new "Collect at least three pieces of evidence."
-\n    old "Одна смена"
+
+    old "Одна смена"
     new "One Shift"
-\n    old "Поднять единство команды до пяти."
+
+    old "Поднять единство команды до пяти."
     new "Raise team unity to five."
-\n    old "Свой маршрут"
+
+    old "Свой маршрут"
     new "Your Own Route"
-\n    old "Развить одну из характеристик до двенадцати."
+
+    old "Развить одну из характеристик до двенадцати."
     new "Raise one attribute to twelve."
-\n    old "Без пересорта"
+
+    old "Без пересорта"
     new "No Mis-sort"
-\n    old "Пройти проверку ТСД без единой ошибки."
+
+    old "Пройти проверку ТСД без единой ошибки."
     new "Complete the scanner check without a single mistake."
-\n    old "Ручное управление"
+
+    old "Ручное управление"
     new "Manual Control"
-\n    old "Без ошибок передать команды при отказе системы."
+
+    old "Без ошибок передать команды при отказе системы."
     new "Transmit the commands without mistakes during a system failure."
-\n    old "Дойти до финала рабочей недели."
+
+    old "Дойти до финала рабочей недели."
     new "Reach the end of the working week."
-\n    old "На связи"
+
+    old "На связи"
     new "Connected"
-\n    old "Ответить как минимум в трёх переписках."
+
+    old "Ответить как минимум в трёх переписках."
     new "Reply in at least three conversations."
-\n    old "Живая линия"
+
+    old "Живая линия"
     new "Living Line"
-\n    old "Удержать безопасность, результат и команду во время перегруза."
+
+    old "Удержать безопасность, результат и команду во время перегруза."
     new "Preserve safety, output, and the team during overload."
-\n    old "Только факты"
+
+    old "Только факты"
     new "Facts Only"
-\n    old "Собрать безошибочное дело по происшествию."
+
+    old "Собрать безошибочное дело по происшествию."
     new "Build a flawless incident case."
-\n    old "Знаю каждый проход"
+
+    old "Знаю каждый проход"
     new "Know Every Passage"
-\n    old "Посетить все пять зон свободной смены."
+
+    old "Посетить все пять зон свободной смены."
     new "Visit all five free-shift zones."
-\n    old "Личный маршрут"
+
+    old "Личный маршрут"
     new "Personal Route"
-\n    old "Открыть кульминацию отношений с одним из персонажей."
+
+    old "Открыть кульминацию отношений с одним из персонажей."
     new "Unlock the relationship climax with one character."
-\n    old "Полная цепочка"
+
+    old "Полная цепочка"
     new "Complete Chain"
-\n    old "Собрать все документы архива за несколько прохождений."
+
+    old "Собрать все документы архива за несколько прохождений."
     new "Collect every archive document across multiple playthroughs."
-\n    old "Сектор V"
+
+    old "Сектор V"
     new "Sector V"
-\n    old "Найти три базовых следа Фиолетового Шторма за одно прохождение."
+
+    old "Найти три базовых следа Фиолетового Шторма за одно прохождение."
     new "Find three basic traces of the Purple Storm in one playthrough."
-\n    old "Не проходи мимо"
+
+    old "Не проходи мимо"
     new "Don't Walk Past"
-\n    old "Осмотреть восемь интерактивных точек склада."
+
+    old "Осмотреть восемь интерактивных точек склада."
     new "Inspect eight interactive warehouse points."
-\n    old "Шторм на линии"
+
+    old "Шторм на линии"
     new "Storm on the Line"
-\n    old "Восстановить скрытую последовательность канала V-13."
+
+    old "Восстановить скрытую последовательность канала V-13."
     new "Restore the hidden V-13 channel sequence."
-\n    old "По именам"
+
+    old "По именам"
     new "By Name"
-\n    old "Узнать людей смены не только по их должностям."
+
+    old "Узнать людей смены не только по их должностям."
     new "Learn the people on the shift as more than their job titles."
-\n    old "Люди - не ресурс"
+
+    old "Люди - не ресурс"
     new "People Are Not a Resource"
-\n    old "Самостоятельно составить расстановку ночной смены."
+
+    old "Самостоятельно составить расстановку ночной смены."
     new "Create the night-shift staffing plan yourself."
-\n    old "Смена узнала тебя"
+
+    old "Смена узнала тебя"
     new "The Shift Recognized You"
-\n    old "Увидеть своё имя на отключённом табло V-13."
+
+    old "Увидеть своё имя на отключённом табло V-13."
     new "See your own name on the powered-off V-13 display."
-\n    old "Свет над складом"
+
+    old "Свет над складом"
     new "Light Above the Warehouse"
-\n    old "Сделать скрытые нарушения видимыми."
+
+    old "Сделать скрытые нарушения видимыми."
     new "Make hidden violations visible."
-\n    old "Смена, в которой остались люди"
+
+    old "Смена, в которой остались люди"
     new "The Shift Where People Remained"
-\n    old "Поставить команду выше последней зелёной цифры."
+
+    old "Поставить команду выше последней зелёной цифры."
     new "Put the team above the final green number."
-\n    old "Собрать людей в единый ритм."
+
+    old "Собрать людей в единый ритм."
     new "Bring people into a shared rhythm."
-\n    old "Старший линии"
+
+    old "Старший линии"
     new "Line Lead"
-\n    old "Принять ответственность, не продав безопасность."
+
+    old "Принять ответственность, не продав безопасность."
     new "Take responsibility without selling out safety."
-\n    old "Сотрудник месяца"
+
+    old "Сотрудник месяца"
     new "Employee of the Month"
-\n    old "Получить первое место и увидеть его настоящую цену."
+
+    old "Получить первое место и увидеть его настоящую цену."
     new "Take first place and see its real cost."
-\n    old "Выход существует"
+
+    old "Выход существует"
     new "The Exit Exists"
-\n    old "Уйти до того, как смена заберёт право решать."
+
+    old "Уйти до того, как смена заберёт право решать."
     new "Leave before the shift takes away your right to choose."
-\n    old "Тишина после сигнала"
+
+    old "Тишина после сигнала"
     new "Silence After the Signal"
-\n    old "Закончить неделю без окончательного ответа."
+
+    old "Закончить неделю без окончательного ответа."
     new "Finish the week without a final answer."
-\n    old "Футболка"
+
+    old "Футболка"
     new "T-shirt"
-\n    old "Набор кружек"
+
+    old "Набор кружек"
     new "Mug set"
-\n    old "Пауэрбанк"
+
+    old "Пауэрбанк"
     new "Power bank"
-\n    old "Плед"
+
+    old "Плед"
     new "Throw blanket"
-\n    old "Стеклянная ваза"
+
+    old "Стеклянная ваза"
     new "Glass vase"
-\n    old "Наушники"
+
+    old "Наушники"
     new "Headphones"
-\n    old "Мягкая упаковка"
+
+    old "Мягкая упаковка"
     new "Soft packaging"
-\n    old "Хрупкий товар"
+
+    old "Хрупкий товар"
     new "Fragile item"
-\n    old "Электроника"
+
+    old "Электроника"
     new "Electronics"
-\n    old "A-12\\nМЯГКОЕ"
+
+    old "A-12\\nМЯГКОЕ"
     new "A-12\\nSOFT"
-\n    old "F-07\\nХРУПКОЕ"
+
+    old "F-07\\nХРУПКОЕ"
     new "F-07\\nFRAGILE"
-\n    old "T-03\\nТЕХНИКА"
+
+    old "T-03\\nТЕХНИКА"
     new "T-03\\nTECH"
-\n    old "ЛЕВАЯ ЛИНИЯ"
+
+    old "ЛЕВАЯ ЛИНИЯ"
     new "LEFT LINE"
-\n    old "БУФЕР B-04"
+
+    old "БУФЕР B-04"
     new "BUFFER B-04"
-\n    old "ПРАВАЯ ЛИНИЯ"
+
+    old "ПРАВАЯ ЛИНИЯ"
     new "RIGHT LINE"
-\n    old "ОБЩИЙ СТОП"
+
+    old "ОБЩИЙ СТОП"
     new "FULL STOP"
-\n    old "ПРАВАЯ"
+
+    old "ПРАВАЯ"
     new "RIGHT"
-\n    old "СТОП"
+
+    old "СТОП"
     new "STOP"
-\n    old "ЛЕВАЯ"
+
+    old "ЛЕВАЯ"
     new "LEFT"
-\n    old "БУФЕР"
+
+    old "БУФЕР"
     new "BUFFER"
-\n    old "ЧАТЫ ({})"
+
+    old "ЧАТЫ ({})"
     new "CHATS ({})"
-\n    old "Первая смена"
+
+    old "Первая смена"
     new "First Shift"
-\n    old "Новая работа начинается с будильника в 06:12 и сорока минут на сборы."
+
+    old "Новая работа начинается с будильника в 06:12 и сорока минут на сборы."
     new "A new job begins with a 06:12 alarm and forty minutes to get ready."
-\n    old "Вторая смена"
+
+    old "Вторая смена"
     new "Second Shift"
-\n    old "Дорогу до склада ты уже запомнил. Всё остальное придётся учить заново."
+
+    old "Дорогу до склада ты уже запомнил. Всё остальное придётся учить заново."
     new "You already know the road to the warehouse. Everything else has to be learned again."
-\n    old "Чужие цифры"
+
+    old "Чужие цифры"
     new "Someone Else's Numbers"
-\n    old "На табло считают скорость. Из журнала исчезла вчерашняя остановка."
+
+    old "На табло считают скорость. Из журнала исчезла вчерашняя остановка."
     new "The board measures speed. Yesterday's stop has vanished from the log."
-\n    old "Чужая ошибка"
+
+    old "Чужая ошибка"
     new "Someone Else's Mistake"
-\n    old "В системе недостача. В объяснительной уже напечатано имя Леры."
+
+    old "В системе недостача. В объяснительной уже напечатано имя Леры."
     new "The system shows a shortage. Lera's name is already printed on the statement."
-\n    old "Предел нагрузки"
+
+    old "Предел нагрузки"
     new "Load Limit"
-\n    old "Датчик перегруза сломан. Приёмку всё равно решили запускать."
+
+    old "Датчик перегруза сломан. Приёмку всё равно решили запускать."
     new "The overload sensor is broken. Receiving is being started anyway."
-\n    old "Цена подписи"
+
+    old "Цена подписи"
     new "The Price of a Signature"
-\n    old "В отчёте всё штатно. Для закрытия не хватает только твоей подписи."
+
+    old "В отчёте всё штатно. Для закрытия не хватает только твоей подписи."
     new "The report says everything was routine. All it needs to close is your signature."
-\n    old "Последняя смена"
+
+    old "Последняя смена"
     new "Final Shift"
-\n    old "Через шесть часов закроют рейтинг и назовут нового старшего линии."
+
+    old "Через шесть часов закроют рейтинг и назовут нового старшего линии."
     new "In six hours, the ranking will close and a new line lead will be named."
-\n
+
+
     old "Человечность"
     new "Humanity"
-\n    old "Выносливость"
+
+    old "Выносливость"
     new "Endurance"
-\n    old "Эффективность"
+
+    old "Эффективность"
     new "Efficiency"
-\n    old "Юмор"
+
+    old "Юмор"
     new "Humor"
-\n    old "Итоги первой смены"
+
+    old "Итоги первой смены"
     new "First Shift Results"
-\n    old "Ты выжил в потоке и не прошёл мимо чужой ошибки."
+
+    old "Ты выжил в потоке и не прошёл мимо чужой ошибки."
     new "You survived the flow and did not ignore someone else's mistake."
-\n    old "Ты сохранил силы. Иногда выживание - тоже честный выбор."
+
+    old "Ты сохранил силы. Иногда выживание - тоже честный выбор."
     new "You preserved your strength. Sometimes survival is an honest choice too."
-\n    old "Итоги второго дня"
+
+    old "Итоги второго дня"
     new "Day Two Results"
-\n    old "Вторая смена закончена. То, что ты сделал у контейнера, заметили все."
+
+    old "Вторая смена закончена. То, что ты сделал у контейнера, заметили все."
     new "The second shift is over. Everyone noticed what you did at the container."
-\n    old "Итоги третьего дня"
+
+    old "Итоги третьего дня"
     new "Day Three Results"
-\n    old "Третий день закончен. У тебя есть выбор - хранить копию записи или сделать вид, что её не было."
+
+    old "Третий день закончен. У тебя есть выбор - хранить копию записи или сделать вид, что её не было."
     new "Day Three is over. You can keep a copy of the record or pretend it never existed."
-\n    old "Итоги четвёртого дня"
+
+    old "Итоги четвёртого дня"
     new "Day Four Results"
-\n    old "Недостача нашлась. Вопрос в том, кто остался виноватым в отчёте."
+
+    old "Недостача нашлась. Вопрос в том, кто остался виноватым в отчёте."
     new "The shortage was found. The question is who remained guilty in the report."
-\n    old "Итоги пятого дня"
+
+    old "Итоги пятого дня"
     new "Day Five Results"
-\n    old "Подъёмник остановлен. Вопрос в том, успели ли вы сделать это до травмы."
+
+    old "Подъёмник остановлен. Вопрос в том, успели ли вы сделать это до травмы."
     new "The lift was stopped. The question is whether you did it before someone got hurt."
-\n    old "Итоги шестого дня"
+
+    old "Итоги шестого дня"
     new "Day Six Results"
-\n    old "До конца недели одна смена. Отчёт пока открыт - или уже подписан тобой."
+
+    old "До конца недели одна смена. Отчёт пока открыт - или уже подписан тобой."
     new "One shift remains in the week. The report is still open - or already signed by you."
-\n    old "Люди держат смену вместе"
+
+    old "Люди держат смену вместе"
     new "People are holding the shift together"
-\n    old "Должности начинают становиться именами"
+
+    old "Должности начинают становиться именами"
     new "Job titles are becoming names"
-\n    old "Шум стал громче людей"
+
+    old "Шум стал громче людей"
     new "The noise has become louder than the people"
-\n    old "Смена пока присматривается к тебе"
+
+    old "Смена пока присматривается к тебе"
     new "The shift is still watching you"
-\n    old "Значимые мелочи появятся здесь после разговоров и бытовых остановок."
+
+    old "Значимые мелочи появятся здесь после разговоров и бытовых остановок."
     new "Meaningful small moments will appear here after conversations and everyday pauses."
-\n    old "Запомнено человеческих моментов: {}. Последние решения возвращаются не только цифрами, но и поведением команды."
+
+    old "Запомнено человеческих моментов: {}. Последние решения возвращаются не только цифрами, но и поведением команды."
     new "Human moments remembered: {}. Recent decisions return not only as numbers, but through the team's behavior."
-\n    old "КОМАНДА"
+
+    old "КОМАНДА"
     new "TEAM"
-\n    old "ЧЕСТНОСТЬ"
+
+    old "ЧЕСТНОСТЬ"
     new "INTEGRITY"
-\n    old "УЛИКИ"
+
+    old "УЛИКИ"
     new "EVIDENCE"
-\n    old "ВЫГОРАНИЕ"
+
+    old "ВЫГОРАНИЕ"
     new "BURNOUT"
-\n    old "ТЕПЛО СМЕНЫ"
+
+    old "ТЕПЛО СМЕНЫ"
     new "SHIFT WARMTH"
-\n    old "ОТКРЫТО CG"
+
+    old "ОТКРЫТО CG"
     new "CG UNLOCKED"
-\n    old "ПОЯСНЕНИЯ К ВЫБОРАМ"
+
+    old "ПОЯСНЕНИЯ К ВЫБОРАМ"
     new "CHOICE INSIGHT"
-\n    old "Показывать рядом с новыми решениями их смысл, но не точные очки."
+
+    old "Показывать рядом с новыми решениями их смысл, но не точные очки."
     new "Show the meaning of new choices without revealing exact points."
-\n    old "ВЫСОКИЙ КОНТРАСТ"
+
+    old "ВЫСОКИЙ КОНТРАСТ"
     new "HIGH CONTRAST"
-\n    old "Затемнить панели и усилить разделение текста и фона."
+
+    old "Затемнить панели и усилить разделение текста и фона."
     new "Darken panels and increase separation between text and background."
-\n    old "ТИХИЙ ИНТЕРФЕЙС"
+
+    old "ТИХИЙ ИНТЕРФЕЙС"
     new "QUIET INTERFACE"
-\n    old "Скрыть лишний статусный шум на новых экранах."
+
+    old "Скрыть лишний статусный шум на новых экранах."
     new "Hide extra status noise on the newer screens."
-\n    old "Менять позиции каждые сорок минут"
+
+    old "Менять позиции каждые сорок минут"
     new "Rotate positions every forty minutes"
-\n    old "На сложном секторе Лера работает в паре, Виктор чередует подъёмник с другими позициями, Макс остаётся там, откуда слышно всю линию."
+
+    old "На сложном секторе Лера работает в паре, Виктор чередует подъёмник с другими позициями, Макс остаётся там, откуда слышно всю линию."
     new "Lera works the difficult section with a partner, Viktor rotates between the lift and other positions, and Max stays where he can hear the whole line."
-\n    old "Каждого поставить туда, где он сильнее"
+
+    old "Каждого поставить туда, где он сильнее"
     new "Put everyone where they are strongest"
-\n    old "План будет идти ровнее, но усталость спрячется за привычными движениями."
+
+    old "План будет идти ровнее, но усталость спрячется за привычными движениями."
     new "The plan will run more smoothly, but fatigue will hide behind familiar motions."
-\n    old "Сильных - на узкие места"
+
+    old "Сильных - на узкие места"
     new "Put the strongest people at the bottlenecks"
-\n    old "Табло быстро позеленеет. Люди - не обязательно."
+
+    old "Табло быстро позеленеет. Люди - не обязательно."
     new "The board will turn green quickly. The people may not."
-\n    old "Свой голос"
+
+    old "Свой голос"
     new "Her Own Voice"
-\n    old "Лера остановила опасный участок сама, а ты не перехватил у неё рацию."
+
+    old "Лера остановила опасный участок сама, а ты не перехватил у неё рацию."
     new "Lera stopped the dangerous section herself, and you did not take the radio from her."
-\n    old "Голос напрокат"
+
+    old "Голос напрокат"
     new "A Borrowed Voice"
-\n    old "Лера снова дождалась, пока решение за неё произнесёт кто-то другой."
+
+    old "Лера снова дождалась, пока решение за неё произнесёт кто-то другой."
     new "Lera once again waited for someone else to say the decision for her."
-\n    old "Опыт остановиться"
+
+    old "Опыт остановиться"
     new "Knowing When to Stop"
-\n    old "Виктор передал смене главное правило: боль и перегрев не нужно терпеть до аварии."
+
+    old "Виктор передал смене главное правило: боль и перегрев не нужно терпеть до аварии."
     new "Viktor passed on the most important rule: pain and overheating do not need to be endured until an accident."
-\n    old "Последний на ногах"
+
+    old "Последний на ногах"
     new "Last One Standing"
-\n    old "Виктор снова стал человеком, которого берегут только после того, как он сломался."
+
+    old "Виктор снова стал человеком, которого берегут только после того, как он сломался."
     new "Viktor once again became someone people protect only after he has already broken down."
-\n    old "Без заготовленной шутки"
+
+    old "Без заготовленной шутки"
     new "Without a Prepared Joke"
-\n    old "Макс сначала признал страх, а уже потом помог остальным не поддаться панике."
+
+    old "Макс сначала признал страх, а уже потом помог остальным не поддаться панике."
     new "Max admitted his fear first, then helped everyone else resist panic."
-\n    old "Ведущий остаётся"
+
+    old "Ведущий остаётся"
     new "The Host Stays"
-\n    old "Смена услышала шутку и не услышала человека, который её произнёс."
+
+    old "Смена услышала шутку и не услышала человека, который её произнёс."
     new "The shift heard the joke and missed the person who said it."
-\n    old "Решение Артёма"
+
+    old "Решение Артёма"
     new "Artyom's Decision"
-\n    old "Артём остановил линию от своего имени и сам записал причину в журнал."
+
+    old "Артём остановил линию от своего имени и сам записал причину в журнал."
     new "Artyom stopped the line in his own name and recorded the reason himself."
-\n    old "Так распорядились"
+
+    old "Так распорядились"
     new "Orders From Above"
-\n    old "Артём снова спрятал своё решение между должностью, приказом и общей подписью."
+
+    old "Артём снова спрятал своё решение между должностью, приказом и общей подписью."
     new "Artyom hid his decision again behind his title, an order, and a collective signature."
-\n    old "Маршрут продолжается"
+
+    old "Маршрут продолжается"
     new "The Route Continues"
-\n    old "Последствие ещё не определилось."
+
+    old "Последствие ещё не определилось."
     new "The consequence has not taken shape yet."
-\n    old "Человек за бейджем"
+
+    old "Человек за бейджем"
     new "The Person Behind the Badge"
-\n    old "Довести один маршрут до личной развязки в аварии."
+
+    old "Довести один маршрут до личной развязки в аварии."
     new "Bring one character route to a personal outcome during the emergency."
-\n    old "Восемь способов измениться"
+
+    old "Восемь способов измениться"
     new "Eight Ways to Change"
-\n    old "Открыть рост и тень всех четырёх маршрутов."
+
+    old "Открыть рост и тень всех четырёх маршрутов."
     new "Unlock both growth and shadow for all four routes."
-\n    old "ДЕНЬ −9"
+
+    old "ДЕНЬ −9"
     new "DAY -9"
-\n    old "ДЕНЬ 3"
+
+    old "ДЕНЬ 3"
     new "DAY 3"
-\n    old "ДЕНЬ 4"
+
+    old "ДЕНЬ 4"
     new "DAY 4"
-\n    old "ДЕНЬ 6"
+
+    old "ДЕНЬ 6"
     new "DAY 6"
-\n    old "БЕЗ ДАТЫ"
+
+    old "БЕЗ ДАТЫ"
     new "UNDATED"
-\n    old "Заявку LIFT-09 закрыли без подписи техника."
+
+    old "Заявку LIFT-09 закрыли без подписи техника."
     new "The LIFT-09 ticket was closed without a technician's signature."
-\n    old "Табло меняет места людей после каждой операции."
+
+    old "Табло меняет места людей после каждой операции."
     new "The board changes people's positions after every operation."
-\n    old "Запись исчезла после ночной синхронизации."
+
+    old "Запись исчезла после ночной синхронизации."
     new "The record vanished after the overnight synchronization."
-\n    old "Кто-то слышал, что Лера перепутала участок."
+
+    old "Кто-то слышал, что Лера перепутала участок."
     new "Someone heard that Lera mixed up the section."
-\n    old "Сорок семь товаров прошли через общий буфер."
+
+    old "Сорок семь товаров прошли через общий буфер."
     new "Forty-seven items passed through the shared buffer."
-\n    old "В отчёте заранее появилась «ошибка сотрудника»."
+
+    old "В отчёте заранее появилась «ошибка сотрудника»."
     new "The report already contained an \"employee error\" before the review."
-\n    old "ЕДИНИЧНАЯ ОШИБКА"
+
+    old "ЕДИНИЧНАЯ ОШИБКА"
     new "ISOLATED ERROR"
-\n    old "Недостача началась с неверного действия одного сотрудника."
+
+    old "Недостача началась с неверного действия одного сотрудника."
     new "The shortage began with one employee's incorrect action."
-\n    old "СИСТЕМНАЯ ЦЕПОЧКА"
+
+    old "СИСТЕМНАЯ ЦЕПОЧКА"
     new "SYSTEMIC CHAIN"
-\n    old "Ремонт отменили, запись удалили, а ответственность подготовили заранее."
+
+    old "Ремонт отменили, запись удалили, а ответственность подготовили заранее."
     new "The repair was cancelled, the record was deleted, and blame was prepared in advance."
-\n    old "ВМЕШАТЕЛЬСТВО V-13"
+
+    old "ВМЕШАТЕЛЬСТВО V-13"
     new "V-13 INTERFERENCE"
-\n    old "Любое несоответствие объясняется закрытым сектором."
+
+    old "Любое несоответствие объясняется закрытым сектором."
     new "Every inconsistency is explained by the closed sector."
-\n    old "Если завтра снова начнут с готового ответа, я сначала назову время и операцию."
+
+    old "Если завтра снова начнут с готового ответа, я сначала назову время и операцию."
     new "If they start with a ready-made answer again tomorrow, I'll state the time and operation first."
-\n    old "Бирку не снимай. Сначала фото, потом блокировка, потом разговор."
+
+    old "Бирку не снимай. Сначала фото, потом блокировка, потом разговор."
     new "Don't remove the tag. Photo first, then lockout, then the conversation."
-\n    old "Всё нормально. Не ищи меня и никого не пересчитывай. Я уже ушёл один."
+
+    old "Всё нормально. Не ищи меня и никого не пересчитывай. Я уже ушёл один."
     new "Everything is fine. Don't look for me and don't count anyone. I already left alone."
-\n    old "Черновик не подписывай. Я сам назову Морозову причину остановки."
+
+    old "Черновик не подписывай. Я сам назову Морозову причину остановки."
     new "Don't sign the draft. I'll tell Morozov the reason for the stop myself."
-\n    old "Ночная // общий чат"
+
+    old "Ночная // общий чат"
     new "Night Shift // group chat"
-\n    old "4 участника"
+
+    old "4 участника"
     new "4 participants"
-\n    old "Лера: Я ничего не подписала."
+
+    old "Лера: Я ничего не подписала."
     new "Lera: I didn't sign anything."
-\n    old "Лера: Я ничего не подписала. Сказала, что дождусь остальных."
+
+    old "Лера: Я ничего не подписала. Сказала, что дождусь остальных."
     new "Lera: I didn't sign anything. I said I'd wait for the others."
-\n    old "Макс: Отлично. Коллективное ожидание официально началось."
+
+    old "Макс: Отлично. Коллективное ожидание официально началось."
     new "Max: Excellent. Collective waiting has officially begun."
-\n    old "Виктор: Скинь номер операции. Без фамилий и лишних слов."
+
+    old "Виктор: Скинь номер операции. Без фамилий и лишних слов."
     new "Viktor: Send the operation number. No surnames, no extra words."
-\n    old "Артём: В диспетчерскую не заходите по одному. Встретимся у линии."
+
+    old "Артём: В диспетчерскую не заходите по одному. Встретимся у линии."
     new "Artyom: Don't go into the control room alone. Meet at the line."
-\n    old "Разбираем вместе. Никто не идёт объясняться в одиночку."
+
+    old "Разбираем вместе. Никто не идёт объясняться в одиночку."
     new "We handle it together. Nobody goes in to explain themselves alone."
-\n    old "Лера: Тогда я дождусь вас у турникета."
+
+    old "Лера: Тогда я дождусь вас у турникета."
     new "Lera: Then I'll wait for you by the turnstile."
-\n    old "Пришлите лог, время и список операций. Сначала восстановим цепочку."
+
+    old "Пришлите лог, время и список операций. Сначала восстановим цепочку."
     new "Send the log, the time, and the operation list. First we'll reconstruct the chain."
-\n    old "Артём: Уже выгружаю журнал. Это правильный порядок."
+
+    old "Артём: Уже выгружаю журнал. Это правильный порядок."
     new "Artyom: Exporting the log now. That's the right order."
-\n    old "Голосовое · 0:18"
+
+    old "Голосовое · 0:18"
     new "Voice message · 0:18"
-\n    old "была недавно"
+
+    old "была недавно"
     new "last seen recently"
-\n    old "«Я переписала памятку. Сначала мои действия, потом отдельно - что показал ТСД. Так понятнее.»"
+
+    old "«Я переписала памятку. Сначала мои действия, потом отдельно - что показал ТСД. Так понятнее.»"
     new "\"I rewrote the memo. First my actions, then separately what the scanner showed. It's clearer this way.\""
-\n    old "Я всё-таки записала вчерашнюю ошибку. По шагам, с кодом и временем."
+
+    old "Я всё-таки записала вчерашнюю ошибку. По шагам, с кодом и временем."
     new "I wrote down yesterday's error after all. Step by step, with the code and time."
-\n    old "Голосовое сообщение · 0:18"
+
+    old "Голосовое сообщение · 0:18"
     new "Voice message · 0:18"
-\n    old "Вот это уже твоя инструкция. Здесь всё по шагам."
+
+    old "Вот это уже твоя инструкция. Здесь всё по шагам."
     new "Now this is your own procedure. Everything is laid out step by step."
-\n    old "Да. В этот раз я хотя бы понимаю, что произошло."
+
+    old "Да. В этот раз я хотя бы понимаю, что произошло."
     new "Yeah. This time I at least understand what happened."
-\n    old "Сохрани. Покажем её тому, кто придёт после нас."
+
+    old "Сохрани. Покажем её тому, кто придёт после нас."
     new "Save it. We'll show it to whoever comes after us."
-\n    old "После нас. Звучит так, будто мы уже старенькие."
+
+    old "После нас. Звучит так, будто мы уже старенькие."
     new "After us. Sounds like we're old-timers already."
-\n    old "Фото: старая бирка LIFT-09"
+
+    old "Фото: старая бирка LIFT-09"
     new "Photo: old LIFT-09 tag"
-\n    old "Снимок старой сервисной бирки"
+
+    old "Снимок старой сервисной бирки"
     new "Photo of the old service tag"
-\n    old "Нашёл старое фото. Эту бирку меняли уже дважды, а дату проверки каждый раз оставляли прежней."
+
+    old "Нашёл старое фото. Эту бирку меняли уже дважды, а дату проверки каждый раз оставляли прежней."
     new "Found an old photo. This tag has been replaced twice, but they kept the same inspection date every time."
-\n    old "Не пересылай в рабочий чат. Пока просто сохрани оригинал."
+
+    old "Не пересылай в рабочий чат. Пока просто сохрани оригинал."
     new "Don't forward it to the work chat. Just keep the original for now."
-\n    old "Сохраню оригинал и копию с датой получения."
+
+    old "Сохраню оригинал и копию с датой получения."
     new "I'll keep the original and a copy with the date received."
-\n    old "Правильно. И копию мне пришли."
+
+    old "Правильно. И копию мне пришли."
     new "Good. Send me a copy too."
-\n    old "Почему ты столько времени хранил это один?"
+
+    old "Почему ты столько времени хранил это один?"
     new "Why did you keep this to yourself for so long?"
-\n    old "Потому что привык. Это не значит, что правильно."
+
+    old "Потому что привык. Это не значит, что правильно."
     new "Because I got used to it. That doesn't make it right."
-\n    old "Сообщение удалено"
+
+    old "Сообщение удалено"
     new "Message deleted"
-\n    old "Сообщение удалено."
+
+    old "Сообщение удалено."
     new "Message deleted."
-\n    old "Ладно, короткая версия: если сегодня будет совсем не смешно, просто не уходи молча."
+
+    old "Ладно, короткая версия: если сегодня будет совсем не смешно, просто не уходи молча."
     new "Fine, short version: if nothing feels funny today, just don't leave without saying anything."
-\n    old "Никаких гарантий. Но постараюсь написать прямо."
+
+    old "Никаких гарантий. Но постараюсь написать прямо."
     new "No promises. But I'll try to say it directly."
-\n    old "Если станет плохо, напиши прямо. Я пойму без шутки."
+
+    old "Если станет плохо, напиши прямо. Я пойму без шутки."
     new "If it gets bad, say it directly. I'll understand without the joke."
-\n    old "Вот это уже звучит страшно. Договорились."
+
+    old "Вот это уже звучит страшно. Договорились."
     new "Now that sounds scary. Deal."
-\n    old "Черновик расстановки на линию"
+
+    old "Черновик расстановки на линию"
     new "Draft line staffing plan"
-\n    old "Черновик без подписи"
+
+    old "Черновик без подписи"
     new "Unsigned draft"
-\n    old "Посмотри расстановку до запуска. Если оставить как есть, Виктор снова окажется у подъёмника на всю ночь."
+
+    old "Посмотри расстановку до запуска. Если оставить как есть, Виктор снова окажется у подъёмника на всю ночь."
     new "Check the staffing before startup. If we leave it as is, Viktor will be stuck at the lift all night again."
-\n    old "Я могу поменять план, но тогда куратор спросит, почему просела скорость."
+
+    old "Я могу поменять план, но тогда куратор спросит, почему просела скорость."
     new "I can change the plan, but then the Curator will ask why the speed dropped."
-\n    old "Ставим ротацию. Причину указываем прямо: риск повторения LIFT-09."
+
+    old "Ставим ротацию. Причину указываем прямо: риск повторения LIFT-09."
     new "We rotate. State the reason directly: risk of another LIFT-09 incident."
-\n    old "Хорошо. Если спросят, отвечать будем вдвоём."
+
+    old "Хорошо. Если спросят, отвечать будем вдвоём."
     new "Good. If they ask, we'll answer together."
-\n    old "Я скажу, что вижу. Но решение и подпись должны быть твоими."
+
+    old "Я скажу, что вижу. Но решение и подпись должны быть твоими."
     new "I'll tell you what I see. But the decision and signature need to be yours."
-\n    old "Так и будет. Решение подпишу сам."
+
+    old "Так и будет. Решение подпишу сам."
     new "That's how it'll be. I'll sign the decision myself."
