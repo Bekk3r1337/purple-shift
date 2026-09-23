@@ -301,16 +301,20 @@ init 15 python:
         ps_curator_name = "Морозов"
 
     def ps_character_profile(route_id):
-        return ps_character_profiles.get(route_id, ps_character_profiles["newbie"])
+        profile = dict(ps_character_profiles.get(route_id, ps_character_profiles["newbie"]))
+        for field in ("name", "full_name", "role", "age", "truth", "need"):
+            profile[field] = _(profile[field])
+        return profile
 
     def ps_character_display_name(route_id):
         if not ps_names_revealed:
-            return {
+            value = {
                 "newbie": ps_newbie_name,
                 "veteran": ps_veteran_name,
                 "joker": ps_joker_name,
                 "supervisor": ps_supervisor_name,
             }.get(route_id, "Сотрудник")
+            return _(value)
         return ps_character_profile(route_id)["name"]
 
     def ps_add_relationship_memory(text):
@@ -370,7 +374,7 @@ init 15 python:
             ps_record_consequence(
                 "Ты отложил ответ в чате. Для собеседника пауза тоже стала ответом."
             )
-        renpy.notify("Ответ отложен")
+        renpy.notify(_("Ответ отложен"))
         renpy.restart_interaction()
 
     def ps_message_avatar(message):
@@ -382,8 +386,8 @@ init 15 python:
 
     def ps_message_status(message):
         if message["id"] == "v13_unknown":
-            return "источник не определён"
-        return message.get("status", "рабочий канал")
+            return _("источник не определён")
+        return _(message.get("status", "рабочий канал"))
 
 
 ################################################################################
