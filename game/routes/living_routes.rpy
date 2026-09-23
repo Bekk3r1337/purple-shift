@@ -94,10 +94,11 @@ init 45 python:
         return "{}:{}".format(ps_route_target(), ps21_route_variant())
 
     def ps21_route_outcome_data():
-        return ps21_route_outcome_catalog.get(
+        title, description = ps21_route_outcome_catalog.get(
             ps21_route_outcome_key(),
             ("Маршрут продолжается", "Последствие ещё не определилось."),
         )
+        return _(title), _(description)
 
     def ps21_unlock_route_outcome(outcome_key):
         outcomes = list(persistent.ps21_route_outcomes or [])
