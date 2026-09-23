@@ -994,31 +994,31 @@ translate english ps_storm_mimic_scene_e49d88be:
 translate english ps_route_resolution_scene_8303b680:
 
     # newb "Я уже отправила свою хронологию. Не тебе на проверку — сразу в дело."
-    newb "Я уже отправила свою хронологию. Не тебе на проверку — сразу в дело."
+    newb "I've already submitted my timeline. Not to you for review - straight into the case."
 
 # game/echo_shift.rpy:1431
 translate english ps_route_resolution_scene_ea64bf7e:
 
     # p "Страшно?"
-    p "Страшно?"
+    p "Scared?"
 
 # game/echo_shift.rpy:1432
 translate english ps_route_resolution_scene_9545e0b7:
 
     # newb "Да. Руки до сих пор дрожат. Но текст я отправила сама."
-    newb "Да. Руки до сих пор дрожат. Но текст я отправила сама."
+    newb "Yes. My hands are still shaking. But I sent the text myself."
 
 # game/echo_shift.rpy:1435
 translate english ps_route_resolution_scene_dd06d9ea:
 
     # newb "Я написала черновик. Посмотришь и отправишь от своего имени? Твоим словам поверят быстрее."
-    newb "Я написала черновик. Посмотришь и отправишь от своего имени? Твоим словам поверят быстрее."
+    newb "I wrote a draft. Will you review it and send it under your name? They'll believe your words faster."
 
 # game/echo_shift.rpy:1436
 translate english ps_route_resolution_scene_48044946:
 
     # p "А твоим?"
-    p "А твоим?"
+    p "What about yours?"
 
 # game/echo_shift.rpy:1437
 translate english ps_route_resolution_scene_0703ab8b:
