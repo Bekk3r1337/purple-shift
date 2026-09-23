@@ -680,7 +680,7 @@ screen ps_warehouse_map(day, remaining):
                                 xysize=(420, 205),
                             )
 
-                            text zone["title"]:
+                            text _(zone["title"]):
                                 color (
                                     zone["accent"]
                                     if not zone_visited
@@ -689,9 +689,9 @@ screen ps_warehouse_map(day, remaining):
                                 size 27
 
                             text (
-                                zone["subtitle"]
+                                _(zone["subtitle"])
                                 if not zone_visited
-                                else "Событие этой зоны уже прожито."
+                                else _("Событие этой зоны уже прожито.")
                             ):
                                 color (
                                     "#c7bbd3"
@@ -742,7 +742,7 @@ screen ps_consequence_echo(day):
                     padding (26, 18)
                     background Solid("#25163ae8")
 
-                    text "• [consequence]":
+                    text ("• " + _(consequence)):
                         color "#ded4e9"
                         size 24
 
@@ -823,7 +823,7 @@ screen ps_archive_panel():
                 ("music", "МУЗЫКА"),
                 ("routes", "МАРШРУТЫ"),
             ]:
-                textbutton section_title:
+                textbutton _(section_title):
                     id ("ps_archive_" + section_id)
                     action SetVariable("ps_archive_section", section_id)
                     xsize 285
@@ -865,9 +865,9 @@ screen ps_archive_panel():
                                 spacing 5
 
                                 text (
-                                    document_title
+                                    _(document_title)
                                     if document_open
-                                    else "ЗАКРЫТЫЙ ДОКУМЕНТ"
+                                    else _("ЗАКРЫТЫЙ ДОКУМЕНТ")
                                 ):
                                     color (
                                         "#d7b4ff"
@@ -877,9 +877,9 @@ screen ps_archive_panel():
                                     size 24
 
                                 text (
-                                    document_desc
+                                    _(document_desc)
                                     if document_open
-                                    else "Исследуй склад между сюжетными сценами."
+                                    else _("Исследуй склад между сюжетными сценами.")
                                 ):
                                     color (
                                         "#b9a8ca"
@@ -905,7 +905,7 @@ screen ps_archive_panel():
                             hbox:
                                 xfill True
 
-                                text (cg_title if cg_open else "Неизвестный кадр"):
+                                text (_(cg_title) if cg_open else _("Неизвестный кадр")):
                                     color (
                                         "#d7b4ff"
                                         if cg_open
@@ -948,9 +948,9 @@ screen ps_archive_panel():
                                 xfill True
 
                                 text (
-                                    track_title
+                                    _(track_title)
                                     if track_open
-                                    else "Неизвестная композиция"
+                                    else _("Неизвестная композиция")
                                 ):
                                     color (
                                         "#d7b4ff"
@@ -1007,9 +1007,9 @@ screen ps_archive_panel():
                                 spacing 5
 
                                 text (
-                                    route_title
+                                    _(route_title)
                                     if route_open
-                                    else "Неизвестный маршрут"
+                                    else _("Неизвестный маршрут")
                                 ):
                                     color (
                                         route_accent
@@ -1019,9 +1019,9 @@ screen ps_archive_panel():
                                     size 24
 
                                 text (
-                                    route_desc
+                                    _(route_desc)
                                     if route_open
-                                    else "Проведи больше свободного времени с одним персонажем."
+                                    else _("Проведи больше свободного времени с одним персонажем.")
                                 ):
                                     color (
                                         "#b9a8ca"
@@ -1060,7 +1060,7 @@ screen ps_gallery_viewer(asset_id):
         hbox:
             xfill True
 
-            text gallery_title:
+            text _(gallery_title):
                 color "#ffffff"
                 size 27
                 yalign 0.5
