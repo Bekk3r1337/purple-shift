@@ -490,147 +490,147 @@ translate english ps2_extended_epilogue_41520af4:
 translate english ps2_extended_epilogue_96c8eb34:
 
     # n "После финала все разошлись по своим остановкам. Общий чат постепенно замолчал."
-    n "После финала все разошлись по своим остановкам. Общий чат постепенно замолчал."
+    n "After the ending, everyone went to their own stops. The group chat gradually fell silent."
 
 # game/beyond_shift.rpy:1002
 translate english ps2_extended_epilogue_490a9d93:
 
     # n "Страх никуда не исчез, но теперь ты говоришь о нём до того, как руки начинают дрожать."
-    n "Страх никуда не исчез, но теперь ты говоришь о нём до того, как руки начинают дрожать."
+    n "The fear did not disappear, but now you talk about it before your hands begin to shake."
 
 # game/beyond_shift.rpy:1004
 translate english ps2_extended_epilogue_f0f2fc6b:
 
     # n "Через несколько дней ты впервые отменяешь лишнюю смену из-за усталости и не придумываешь другую причину."
-    n "Через несколько дней ты впервые отменяешь лишнюю смену из-за усталости и не придумываешь другую причину."
+    n "A few days later, for the first time, you cancel an extra shift because you are tired and do not invent another excuse."
 
 # game/beyond_shift.rpy:1006
 translate english ps2_extended_epilogue_d89ffc81:
 
     # n "После недели у тебя всё ещё нет готового решения. Зато ты больше не принимаешь первый ответ из приложения."
-    n "После недели у тебя всё ещё нет готового решения. Зато ты больше не принимаешь первый ответ из приложения."
+    n "After the week, you still do not have a ready answer. But you no longer accept the first answer the app gives you."
 
 # game/beyond_shift.rpy:1008
 translate english ps2_extended_epilogue_42b4369e:
 
     # centered "Открыто: Новая смена+\nКарта прошлой недели сохранена"
-    centered "Открыто: Новая смена+\nКарта прошлой недели сохранена"
+    centered "Unlocked: New Shift+\\nLast week's decision map has been saved"
 
 translate english strings:
 
     # game/beyond_shift.rpy:660
-    old "Следить, не нужна ли кому помощь"
-    new "Следить, не нужна ли кому помощь"
+    old "Watch for anyone who might need help"
+    new "Watch for anyone who might need help"
 
     # game/beyond_shift.rpy:666
-    old "Записывать коды, время и имена"
-    new "Записывать коды, время и имена"
+    old "Record codes, times, and names"
+    new "Record codes, times, and names"
 
     # game/beyond_shift.rpy:672
-    old "Сосредоточиться на плане"
-    new "Сосредоточиться на плане"
+    old "Focus on the target"
+    new "Focus on the target"
 
     # game/beyond_shift.rpy:678
-    old "Следить за своим состоянием"
-    new "Следить за своим состоянием"
+    old "Pay attention to your own condition"
+    new "Pay attention to your own condition"
 
     # game/beyond_shift.rpy:694
-    old "Остановить её рукой и самому потерять темп"
-    new "Остановить её рукой и самому потерять темп"
+    old "Stop her by hand and lose pace yourself"
+    new "Stop her by hand and lose pace yourself"
 
     # game/beyond_shift.rpy:701
-    old "Громко предупредить и не выходить из своего сектора"
-    new "Громко предупредить и не выходить из своего сектора"
+    old "Warn her loudly without leaving your sector"
+    new "Warn her loudly without leaving your sector"
 
     # game/beyond_shift.rpy:710
-    old "Снять коробку и оформить ручную проверку"
-    new "Снять коробку и оформить ручную проверку"
+    old "Pull the box and open a manual inspection"
+    new "Pull the box and open a manual inspection"
 
     # game/beyond_shift.rpy:715
-    old "Вернуть коробку в поток и запомнить номер"
-    new "Вернуть коробку в поток и запомнить номер"
+    old "Return the box to the flow and remember its number"
+    new "Return the box to the flow and remember its number"
 
     # game/beyond_shift.rpy:724
-    old "Отдать ему часть своих закрытых операций"
-    new "Отдать ему часть своих закрытых операций"
+    old "Credit him with some of your completed operations"
+    new "Credit him with some of your completed operations"
 
     # game/beyond_shift.rpy:730
-    old "Потребовать исправить учёт официально"
-    new "Потребовать исправить учёт официально"
+    old "Demand an official correction to the records"
+    new "Demand an official correction to the records"
 
     # game/beyond_shift.rpy:740
-    old "Не дать ей подписать документ без журнала"
-    new "Не дать ей подписать документ без журнала"
+    old "Do not let her sign the document without the log"
+    new "Do not let her sign the document without the log"
 
     # game/beyond_shift.rpy:747
-    old "Попросить подписать, но добавить собственное примечание"
-    new "Попросить подписать, но добавить собственное примечание"
+    old "Ask her to sign, but add her own note"
+    new "Ask her to sign, but add her own note"
 
     # game/beyond_shift.rpy:756
-    old "Заблокировать подъёмник до осмотра"
-    new "Заблокировать подъёмник до осмотра"
+    old "Lock out the lift until it is inspected"
+    new "Lock out the lift until it is inspected"
 
     # game/beyond_shift.rpy:763
-    old "Провести одну последнюю разгрузку вручную"
-    new "Провести одну последнюю разгрузку вручную"
+    old "Complete one final unload manually"
+    new "Complete one final unload manually"
 
     # game/beyond_shift.rpy:772
-    old "Отказаться и приложить историю предупреждений"
-    new "Отказаться и приложить историю предупреждений"
+    old "Refuse and attach the warning history"
+    new "Refuse and attach the warning history"
 
     # game/beyond_shift.rpy:778
-    old "Подписать формулировку и потребовать ремонт после смены"
-    new "Подписать формулировку и потребовать ремонт после смены"
+    old "Accept the wording and demand repairs after the shift"
+    new "Accept the wording and demand repairs after the shift"
 
     # game/beyond_shift.rpy:811
-    old "Записать честно: «Я испугался, но вернулся к людям»"
-    new "Записать честно: «Я испугался, но вернулся к людям»"
+    old "Write it honestly: \"I got scared, but I went back to help\""
+    new "Write it honestly: \"I got scared, but I went back to help\""
 
     # game/beyond_shift.rpy:817
-    old "Закрыть приложение и ничего не оценивать"
-    new "Закрыть приложение и ничего не оценивать"
+    old "Close the app without leaving a rating"
+    new "Close the app without leaving a rating"
 
     # game/beyond_shift.rpy:827
-    old "Сесть рядом и разобрать момент без оправданий"
-    new "Сесть рядом и разобрать момент без оправданий"
+    old "Sit beside her and go over the moment without excuses"
+    new "Sit beside her and go over the moment without excuses"
 
     # game/beyond_shift.rpy:834
-    old "Дать ей тишину и написать позже"
-    new "Дать ей тишину и написать позже"
+    old "Give her space and message her later"
+    new "Give her space and message her later"
 
     # game/beyond_shift.rpy:844
-    old "Спросить, что он хотел доказать снимком"
-    new "Спросить, что он хотел доказать снимком"
+    old "Ask what he wanted to prove with the screenshot"
+    new "Ask what he wanted to prove with the screenshot"
 
     # game/beyond_shift.rpy:851
-    old "Сделать общее фото вместо рейтинга"
-    new "Сделать общее фото вместо рейтинга"
+    old "Take a group photo instead of the rankings"
+    new "Take a group photo instead of the rankings"
 
     # game/beyond_shift.rpy:861
-    old "Забрать копию в архив дела"
-    new "Забрать копию в архив дела"
+    old "Keep the copy in the case archive"
+    new "Keep the copy in the case archive"
 
     # game/beyond_shift.rpy:867
-    old "Порвать копию, чтобы её не использовали против Леры"
-    new "Порвать копию, чтобы её не использовали против Леры"
+    old "Destroy the copy so it cannot be used against Lera"
+    new "Destroy the copy so it cannot be used against Lera"
 
     # game/beyond_shift.rpy:876
-    old "Настоять, чтобы он оформил травму сейчас"
-    new "Настоять, чтобы он оформил травму сейчас"
+    old "Insist that he report the injury now"
+    new "Insist that he report the injury now"
 
     # game/beyond_shift.rpy:884
-    old "Пообещать заменить его завтра на тяжёлом секторе"
-    new "Пообещать заменить его завтра на тяжёлом секторе"
+    old "Promise to cover his heavy section tomorrow"
+    new "Promise to cover his heavy section tomorrow"
 
     # game/beyond_shift.rpy:939
-    old "Показать команде всё до начала смены"
-    new "Показать команде всё до начала смены"
+    old "Show the team everything before the shift starts"
+    new "Show the team everything before the shift starts"
 
     # game/beyond_shift.rpy:945
-    old "Собрать простой план: стоп, пересчёт, выход"
-    new "Собрать простой план: стоп, пересчёт, выход"
+    old "Make a simple plan: stop, count, evacuate"
+    new "Make a simple plan: stop, count, evacuate"
 
     # game/beyond_shift.rpy:953
-    old "Ничего не говорить и взять ответственность на себя"
-    new "Ничего не говорить и взять ответственность на себя"
+    old "Say nothing and take responsibility yourself"
+    new "Say nothing and take responsibility yourself"
 
