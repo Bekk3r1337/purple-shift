@@ -331,8 +331,8 @@ init python:
     def ps_route_title(route_id):
         for item_id, title, description, accent in ps_route_catalog:
             if item_id == route_id:
-                return title
-        return _("Маршрут смены")
+                return ps_runtime_text(title)
+        return ps_runtime_text("Маршрут смены")
 
     def ps_record_consequence(text):
         global ps_consequence_log
@@ -356,7 +356,7 @@ init python:
                 for item in ps_document_catalog
                 if item[0] == document_id
             )
-            renpy.notify(_("Архив пополнен: {}").format(title))
+            renpy.notify(_("Архив пополнен: {}").format(ps_runtime_text(title)))
 
         if len(persistent.ps_unlocked_documents) >= len(ps_document_catalog):
             ps_unlock_achievement("archive_master")
@@ -390,7 +390,7 @@ init python:
                 for item in ps_cg_catalog
                 if item[0] == cg_id
             )
-            renpy.notify(_("Открыт CG: {}").format(title))
+            renpy.notify(_("Открыт CG: {}").format(ps_runtime_text(title)))
         return unlocked
 
     def ps_unlock_route(route_id):
