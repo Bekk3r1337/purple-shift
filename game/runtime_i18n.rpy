@@ -235,6 +235,16 @@ init -5 python:
     def ps_runtime_text(value):
         if value is None:
             return ""
+        if not isinstance(value, str):
+            return value
         if not ps_language_is_english():
             return value
-        return PS_RUNTIME_EN.get(value, _(value))
+
+        # Dynamic Python catalogs are created during init and can keep their
+        # Russian source values after a language switch. Translate explicitly
+        # against the English string table instead of relying on the current
+        # interpolation context of _().
+        return PS_RUNTIME_EN.get(
+            value,
+            renpy.translate_string(value, "english"),
+        )
