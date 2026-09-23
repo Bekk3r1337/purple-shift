@@ -1013,5 +1013,5 @@ label ps2_new_shift_plus_start:
     $ ps2_new_shift_plus_active = True
     $ ps2_pressure = 1
     $ ps2_resolve = 1
-    $ ps_key_choices = ps_key_choices + ["Ты вернулся в смену с памятью о предыдущей неделе."]
+    $ ps_key_choices = ps_key_choices + [_("Ты вернулся в смену с памятью о предыдущей неделе.")]
     jump start
