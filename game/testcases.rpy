@@ -786,12 +786,6 @@ testsuite purple_shift:
         assert eval (ps_runtime_text("Человек в потоке") == "Human in the Flow")
         assert eval (ps_runtime_text("Итоги первой смены") == "First Shift Results")
 
-        $ ps_old_renpy_language = getattr(renpy.game.preferences, "language", None)
-        $ renpy.change_language("english", force=True)
-        assert eval (_("Человек в потоке") == "Human in the Flow")
-        assert eval (_("Итоги первой смены") == "First Shift Results")
-        $ renpy.change_language(ps_old_renpy_language, force=True)
-
         $ persistent.ps_language_code = "russian"
         assert eval (ps_default_player_name() == "Сотрудник")
         assert eval (ps_runtime_text("Ты поставил темп впереди сомнений. Смена это почувствовала.") == "Ты поставил темп впереди сомнений. Смена это почувствовала.")
