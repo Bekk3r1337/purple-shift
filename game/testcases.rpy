@@ -785,6 +785,39 @@ testsuite purple_shift:
         assert eval (ps_migrate_loaded_save in config.after_load_callbacks)
 
 
+    testcase english_dynamic_localization:
+        $ ps_old_language_code = getattr(persistent, "ps_language_code", "russian")
+        $ ps_old_renpy_language = getattr(renpy.game.preferences, "language", None)
+        $ persistent.ps_language_code = "english"
+        $ renpy.change_language("english", force=True, rebuild=True)
+        $ ps_chapter = 7
+
+        $ ps_english_messages = [ps_message_data(message["id"]) for message in ps_message_catalog]
+        $ ps_english_message_texts = [value for message in ps_english_messages for value in ([message.get("sender", ""), message.get("preview", ""), message.get("status", ""), message.get("attachment_caption", ""), message.get("voice_caption", "")] + list(message.get("incoming", [])) + [field for reply in message.get("replies", []) for field in (reply.get("title", ""), reply.get("answer", ""), reply.get("reaction", ""))])]
+        $ ps_english_message_cyrillic = [value for value in ps_english_message_texts if value and any("\u0400" <= char <= "\u04ff" for char in value)]
+        $ print("ENGLISH_MESSAGE_CYRILLIC_LEAKS:", repr(ps_english_message_cyrillic))
+        assert eval (not ps_english_message_cyrillic)
+
+        $ ps_english_archive_texts = [ps_runtime_text(title) for _item_id, title, _path in ps_cg_catalog] + [ps_runtime_text(title) for _item_id, title, _desc in ps_document_catalog] + [ps_runtime_text(desc) for _item_id, _title, desc in ps_document_catalog] + [ps_runtime_text(title) for _item_id, title, _desc in ps_achievement_catalog] + [ps_runtime_text(desc) for _item_id, _title, desc in ps_achievement_catalog]
+        $ ps_english_archive_cyrillic = [value for value in ps_english_archive_texts if value and any("\u0400" <= char <= "\u04ff" for char in value)]
+        $ print("ENGLISH_ARCHIVE_CYRILLIC_LEAKS:", repr(ps_english_archive_cyrillic))
+        assert eval (not ps_english_archive_cyrillic)
+
+        $ ps_english_ending_texts = [ps_ending_title(ending_id) for ending_id in ("truth", "people", "voice", "leader", "employee", "exit", "silence")] + [ps_ending_description(ending_id) for ending_id in ("truth", "people", "voice", "leader", "employee", "exit", "silence")]
+        assert eval (not any(any("\u0400" <= char <= "\u04ff" for char in value) for value in ps_english_ending_texts if value))
+
+        $ ps_english_inspection_texts = [ps_runtime_text(inspection["title"]) for inspection in ps_inspection_catalog.values()] + [ps_runtime_text(inspection["subtitle"]) for inspection in ps_inspection_catalog.values()] + [ps_runtime_text(hotspot["title"]) for inspection in ps_inspection_catalog.values() for hotspot in inspection["hotspots"]] + [ps_runtime_text(hotspot["detail"]) for inspection in ps_inspection_catalog.values() for hotspot in inspection["hotspots"]]
+        assert eval (not any(any("\u0400" <= char <= "\u04ff" for char in value) for value in ps_english_inspection_texts if value))
+
+        assert eval (ps_runtime_text("БЕЗ ТАЙМЕРА") == "NO TIMER")
+        assert eval (ps_runtime_text("РЕКОМЕНДОВАНО // ") == "RECOMMENDED // ")
+        assert eval (ps_runtime_text("НАДЁЖНО // ") == "RELIABLE // ")
+        assert eval (ps_runtime_text("ТЕЛЕФОН") == "PHONE")
+
+        $ renpy.change_language(ps_old_renpy_language, force=True, rebuild=True)
+        $ persistent.ps_language_code = ps_old_language_code
+
+
     testcase runtime_i18n_helpers:
         $ ps_old_language_code = getattr(persistent, "ps_language_code", "russian")
         $ persistent.ps_language_code = "english"

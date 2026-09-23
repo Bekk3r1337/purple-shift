@@ -115,7 +115,7 @@ init python:
             "silence": "Тишина после сигнала",
         }
 
-        return _(titles[ending_id])
+        return ps_runtime_text(titles[ending_id])
 
     def ps_ending_description(ending_id=None):
         ending_id = ending_id or ps_ending_id()
@@ -130,7 +130,7 @@ init python:
             "silence": "Рейтинг аннулирован. Решение о следующей смене пока не принято.",
         }
 
-        return _(descriptions[ending_id])
+        return ps_runtime_text(descriptions[ending_id])
 
 
 ################################################################################
@@ -380,14 +380,14 @@ screen ps_tsd_alert(code, message, hint):
                 padding (35, 30)
                 background Solid("#090b0ddd")
 
-                text _(message):
+                text ps_runtime_text(message):
                     color "#ffffff"
                     size 40
                     text_align 0.5
                     xalign 0.5
                     yalign 0.5
 
-            text _(hint):
+            text ps_runtime_text(hint):
                 color "#aeb5ba"
                 size 25
                 text_align 0.5

@@ -98,7 +98,7 @@ init 45 python:
             ps21_route_outcome_key(),
             ("Маршрут продолжается", "Последствие ещё не определилось."),
         )
-        return _(title), _(description)
+        return ps_runtime_text(title), ps_runtime_text(description)
 
     def ps21_unlock_route_outcome(outcome_key):
         outcomes = list(persistent.ps21_route_outcomes or [])

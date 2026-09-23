@@ -331,8 +331,8 @@ init python:
     def ps_route_title(route_id):
         for item_id, title, description, accent in ps_route_catalog:
             if item_id == route_id:
-                return title
-        return _("Маршрут смены")
+                return ps_runtime_text(title)
+        return ps_runtime_text("Маршрут смены")
 
     def ps_record_consequence(text):
         global ps_consequence_log
@@ -356,7 +356,7 @@ init python:
                 for item in ps_document_catalog
                 if item[0] == document_id
             )
-            renpy.notify(_("Архив пополнен: {}").format(title))
+            renpy.notify(_("Архив пополнен: {}").format(ps_runtime_text(title)))
 
         if len(persistent.ps_unlocked_documents) >= len(ps_document_catalog):
             ps_unlock_achievement("archive_master")
@@ -390,7 +390,7 @@ init python:
                 for item in ps_cg_catalog
                 if item[0] == cg_id
             )
-            renpy.notify(_("Открыт CG: {}").format(title))
+            renpy.notify(_("Открыт CG: {}").format(ps_runtime_text(title)))
         return unlocked
 
     def ps_unlock_route(route_id):
@@ -680,7 +680,7 @@ screen ps_warehouse_map(day, remaining):
                                 xysize=(420, 205),
                             )
 
-                            text _(zone["title"]):
+                            text ps_runtime_text(zone["title"]):
                                 color (
                                     zone["accent"]
                                     if not zone_visited
@@ -689,7 +689,7 @@ screen ps_warehouse_map(day, remaining):
                                 size 27
 
                             text (
-                                _(zone["subtitle"])
+                                ps_runtime_text(zone["subtitle"])
                                 if not zone_visited
                                 else _("Событие этой зоны уже прожито.")
                             ):
@@ -823,7 +823,7 @@ screen ps_archive_panel():
                 ("music", "МУЗЫКА"),
                 ("routes", "МАРШРУТЫ"),
             ]:
-                textbutton _(section_title):
+                textbutton ps_runtime_text(section_title):
                     id ("ps_archive_" + section_id)
                     action SetVariable("ps_archive_section", section_id)
                     xsize 285
@@ -865,7 +865,7 @@ screen ps_archive_panel():
                                 spacing 5
 
                                 text (
-                                    _(document_title)
+                                    ps_runtime_text(document_title)
                                     if document_open
                                     else _("ЗАКРЫТЫЙ ДОКУМЕНТ")
                                 ):
@@ -877,7 +877,7 @@ screen ps_archive_panel():
                                     size 24
 
                                 text (
-                                    _(document_desc)
+                                    ps_runtime_text(document_desc)
                                     if document_open
                                     else _("Исследуй склад между сюжетными сценами.")
                                 ):
@@ -905,7 +905,7 @@ screen ps_archive_panel():
                             hbox:
                                 xfill True
 
-                                text (_(cg_title) if cg_open else _("Неизвестный кадр")):
+                                text (ps_runtime_text(cg_title) if cg_open else ps_runtime_text("Неизвестный кадр")):
                                     color (
                                         "#d7b4ff"
                                         if cg_open
@@ -948,7 +948,7 @@ screen ps_archive_panel():
                                 xfill True
 
                                 text (
-                                    _(track_title)
+                                    ps_runtime_text(track_title)
                                     if track_open
                                     else _("Неизвестная композиция")
                                 ):
@@ -1007,7 +1007,7 @@ screen ps_archive_panel():
                                 spacing 5
 
                                 text (
-                                    _(route_title)
+                                    ps_runtime_text(route_title)
                                     if route_open
                                     else _("Неизвестный маршрут")
                                 ):
@@ -1019,7 +1019,7 @@ screen ps_archive_panel():
                                     size 24
 
                                 text (
-                                    _(route_desc)
+                                    ps_runtime_text(route_desc)
                                     if route_open
                                     else _("Проведи больше свободного времени с одним персонажем.")
                                 ):
@@ -1060,7 +1060,7 @@ screen ps_gallery_viewer(asset_id):
         hbox:
             xfill True
 
-            text _(gallery_title):
+            text ps_runtime_text(gallery_title):
                 color "#ffffff"
                 size 27
                 yalign 0.5

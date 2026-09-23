@@ -241,9 +241,9 @@ init 18 python:
         else:
             data = dict(ps_route_variant_catalog[route_id][variant])
 
-        data["title"] = _(data["title"])
-        data["short"] = _(data["short"])
-        data["description"] = _(data["description"])
+        data["title"] = ps_runtime_text(data["title"])
+        data["short"] = ps_runtime_text(data["short"])
+        data["description"] = ps_runtime_text(data["description"])
         return data
 
     def ps_route_variant_key(route_id):
@@ -464,7 +464,7 @@ screen ps_deep_investigation_board():
                                 text "[index + 1]. [event['stamp']]":
                                     color event["accent"]
                                     size 18
-                                text _(event["title"]):
+                                text ps_runtime_text(event["title"]):
                                     color "#ffffff"
                                     size 22
                         else:
@@ -497,7 +497,7 @@ screen ps_deep_investigation_board():
 
                             hbox:
                                 xfill True
-                                text _(event["stamp"]):
+                                text ps_runtime_text(event["stamp"]):
                                     color event["accent"]
                                     size 17
                                 text (_("ФАКТ") if confirmed else _("НЕ ПОДТВЕРЖДЕНО")):
@@ -505,11 +505,11 @@ screen ps_deep_investigation_board():
                                     size 15
                                     xalign 1.0
 
-                            text _(event["title"]):
+                            text ps_runtime_text(event["title"]):
                                 color ("#ffffff" if not selected else "#625a68")
                                 size 23
 
-                            text _(event["detail"]):
+                            text ps_runtime_text(event["detail"]):
                                 color ("#c9bdcf" if not selected else "#625a68")
                                 size 18
 
@@ -518,7 +518,7 @@ screen ps_deep_investigation_board():
                 xalign 0.5
 
                 for hypothesis_id, hypothesis_title, hypothesis_detail in ps_investigation_hypotheses:
-                    textbutton _(hypothesis_title):
+                    textbutton ps_runtime_text(hypothesis_title):
                         id ("ps_deep_hypothesis_" + hypothesis_id)
                         action SetVariable("ps_investigation_hypothesis", hypothesis_id)
                         xsize 520
@@ -621,7 +621,7 @@ screen ps_storm_mimic():
 
                             hbox:
                                 xfill True
-                                text _(message["sender"]):
+                                text ps_runtime_text(message["sender"]):
                                     color "#ffffff"
                                     size 24
                                 text message["time"]:
@@ -629,7 +629,7 @@ screen ps_storm_mimic():
                                     size 19
                                     xalign 1.0
 
-                            text _(message["text"]):
+                            text ps_runtime_text(message["text"]):
                                 color "#d8cede"
                                 size 21
 

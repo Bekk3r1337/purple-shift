@@ -363,7 +363,7 @@ init 20 python:
     def ps_investigation_hypothesis_title():
         for hypothesis_id, title, detail in ps_investigation_hypotheses:
             if hypothesis_id == ps_investigation_hypothesis:
-                return _(title)
+                return ps_runtime_text(title)
         return _("Версия не выбрана")
 
     def ps_investigation_result_caption():
@@ -407,10 +407,10 @@ screen ps_investigation_archive_panel():
                             text "[index + 1] // [event['stamp']]":
                                 color event["accent"]
                                 size 17
-                            text _(event["title"]):
+                            text ps_runtime_text(event["title"]):
                                 color "#ffffff"
                                 size 21
-                            text _(event["detail"]):
+                            text ps_runtime_text(event["detail"]):
                                 color "#bfb1c6"
                                 size 16
                     else:

@@ -303,7 +303,7 @@ init 15 python:
     def ps_character_profile(route_id):
         profile = dict(ps_character_profiles.get(route_id, ps_character_profiles["newbie"]))
         for field in ("name", "full_name", "role", "age", "truth", "need"):
-            profile[field] = _(profile[field])
+            profile[field] = ps_runtime_text(profile[field])
         return profile
 
     def ps_character_display_name(route_id):
@@ -314,7 +314,7 @@ init 15 python:
                 "joker": ps_joker_name,
                 "supervisor": ps_supervisor_name,
             }.get(route_id, "Сотрудник")
-            return _(value)
+            return ps_runtime_text(value)
         return ps_character_profile(route_id)["name"]
 
     def ps_add_relationship_memory(text):
@@ -390,7 +390,7 @@ init 15 python:
     def ps_message_status(message):
         if message["id"] == "v13_unknown":
             return _("источник не определён")
-        return _(message.get("status", "рабочий канал"))
+        return ps_runtime_text(message.get("status", "рабочий канал"))
 
 
 ################################################################################
@@ -784,12 +784,12 @@ screen ps_shift_assignment():
                             spacing 18
                             xfill True
 
-                            text _(plan["title"]):
+                            text ps_runtime_text(plan["title"]):
                                 color plan["accent"]
                                 size 34
                                 xalign 0.5
 
-                            text _(plan["subtitle"]):
+                            text ps_runtime_text(plan["subtitle"]):
                                 color "#ffffff"
                                 size 23
                                 xalign 0.5
@@ -797,7 +797,7 @@ screen ps_shift_assignment():
 
                             null height 12
 
-                            text _(plan["detail"]):
+                            text ps_runtime_text(plan["detail"]):
                                 color "#c6b7cf"
                                 size 21
                                 text_align 0.0
