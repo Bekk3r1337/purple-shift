@@ -630,7 +630,7 @@ init 12 python:
     def ps_storm_fragment_title(fragment_id):
         for item_id, title, description in ps_storm_fragment_catalog:
             if item_id == fragment_id:
-                return _(title)
+                return ps_runtime_text(title)
         return _("Неизвестный след")
 
     def ps_storm_pressure():
@@ -762,11 +762,11 @@ screen ps_inspection_hotspots(scene_id):
         vbox:
             spacing 7
 
-            text _(inspection["title"]):
+            text ps_runtime_text(inspection["title"]):
                 color "#e0b5ff"
                 size 31
 
-            text _(inspection["subtitle"]):
+            text ps_runtime_text(inspection["subtitle"]):
                 color "#c4b3d1"
                 size 20
 
@@ -814,11 +814,11 @@ screen ps_inspection_hotspots(scene_id):
                 if ps_inspection_focus:
                     $ focused = ps_inspection_hotspot(scene_id, ps_inspection_focus)
 
-                    text _(focused["title"]):
+                    text ps_runtime_text(focused["title"]):
                         color "#ffffff"
                         size 29
 
-                    text _(focused["detail"]):
+                    text ps_runtime_text(focused["detail"]):
                         color "#cbbbd6"
                         size 22
                 else:
@@ -936,11 +936,11 @@ screen ps_storm_signal_panel():
                                 vbox:
                                     spacing 4
 
-                                    text (_(fragment_title) if fragment_open else _("НЕИЗВЕСТНЫЙ СЛЕД")):
+                                    text (ps_runtime_text(fragment_title) if fragment_open else ps_runtime_text("НЕИЗВЕСТНЫЙ СЛЕД")):
                                         color ("#ddaaff" if fragment_open else "#625a69")
                                         size 22
 
-                                    text (_(fragment_desc) if fragment_open else _("Нет данных")):
+                                    text (ps_runtime_text(fragment_desc) if fragment_open else ps_runtime_text("Нет данных")):
                                         color ("#b9a8c7" if fragment_open else "#554f59")
                                         size 18
 
@@ -1081,7 +1081,7 @@ screen ps_storm_decoder():
                                 size 18
                                 xalign 0.5
 
-                            text _(sequence_item[1]):
+                            text ps_runtime_text(sequence_item[1]):
                                 color "#ffffff"
                                 size 20
                                 xalign 0.5
@@ -1094,7 +1094,7 @@ screen ps_storm_decoder():
                 xalign 0.5
 
                 for channel_id, channel_title in ps_storm_decoder_buttons:
-                    textbutton _(channel_title):
+                    textbutton ps_runtime_text(channel_title):
                         action Function(ps_storm_decoder_choose, channel_id)
                         xsize 370
                         ysize 150
