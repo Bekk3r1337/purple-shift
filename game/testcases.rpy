@@ -785,6 +785,10 @@ testsuite purple_shift:
         assert eval (ps_runtime_text("Перехватить движение") == "Stop the Motion")
         assert eval (ps_runtime_text("Человек в потоке") == "Human in the Flow")
         assert eval (ps_runtime_text("Итоги первой смены") == "First Shift Results")
+        assert eval (ps_runtime_text("Ты выбрал норму и не вмешался.") == "You chose to follow the quota and did not intervene.")
+        assert eval (ps_runtime_text("В финале первой смены ты помог восстановить поток.") == "At the end of the first shift, you helped restore the flow.")
+        assert eval (ps_runtime_text("Твой путь") == "Your path")
+        assert eval (ps_runtime_text("ПРИНЯТЬ") == "ACCEPT")
 
         $ persistent.ps_language_code = "russian"
         assert eval (ps_default_player_name() == "Сотрудник")
