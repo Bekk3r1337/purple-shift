@@ -516,64 +516,64 @@ translate english strings:
 
     # game/routes/living_routes.rpy:183
     old "Договориться, что она останавливает участок сама"
-    new "Договориться, что она останавливает участок сама"
+    new "Agree that she will stop the section herself"
 
     # game/routes/living_routes.rpy:192
     old "Пообещать, что завтра всё скажешь за неё"
-    new "Пообещать, что завтра всё скажешь за неё"
+    new "Promise to speak for her tomorrow"
 
     # game/routes/living_routes.rpy:212
     old "Попросить Виктора завтра самому объявить предел"
-    new "Попросить Виктора завтра самому объявить предел"
+    new "Ask Viktor to be the one who calls his limit tomorrow"
 
     # game/routes/living_routes.rpy:222
     old "Сказать, что без него смена всё равно не справится"
-    new "Сказать, что без него смена всё равно не справится"
+    new "Tell him the shift still won't manage without him"
 
     # game/routes/living_routes.rpy:242
     old "Договориться: сначала честная фраза, потом юмор"
-    new "Договориться: сначала честная фраза, потом юмор"
+    new "Agree: honesty first, joke second"
 
     # game/routes/living_routes.rpy:251
     old "Попросить его любой ценой удержать настроение"
-    new "Попросить его любой ценой удержать настроение"
+    new "Ask him to keep everyone's spirits up at any cost"
 
     # game/routes/living_routes.rpy:271
     old "Потребовать, чтобы он назвал решение своим"
-    new "Потребовать, чтобы он назвал решение своим"
+    new "Insist that he own the decision"
 
     # game/routes/living_routes.rpy:280
     old "Предложить общую подпись, чтобы разделить удар"
-    new "Предложить общую подпись, чтобы разделить удар"
+    new "Offer a joint signature to share the impact"
 
     # game/routes/living_routes.rpy:359
     old "Оставить команду Лере и прикрыть эвакуацию"
-    new "Оставить команду Лере и прикрыть эвакуацию"
+    new "Leave command to Lera and cover the evacuation"
 
     # game/routes/living_routes.rpy:367
     old "Забрать рацию и отдать команду самому"
-    new "Забрать рацию и отдать команду самому"
+    new "Take the radio and give the order yourself"
 
     # game/routes/living_routes.rpy:381
     old "Доверить Виктору объявить техническую остановку"
-    new "Доверить Виктору объявить техническую остановку"
+    new "Trust Viktor to call the technical shutdown"
 
     # game/routes/living_routes.rpy:389
     old "Попросить Виктора отключить привод вручную"
-    new "Попросить Виктора отключить привод вручную"
+    new "Ask Viktor to shut the drive down manually"
 
     # game/routes/living_routes.rpy:404
     old "Принять честность и вместе дать простые команды"
-    new "Принять честность и вместе дать простые команды"
+    new "Accept the honesty and give simple commands together"
 
     # game/routes/living_routes.rpy:412
     old "Попросить Макса срочно разрядить панику"
-    new "Попросить Макса срочно разрядить панику"
+    new "Ask Max to defuse the panic immediately"
 
     # game/routes/living_routes.rpy:427
     old "Попросить Артёма оставить в журнале своё решение"
-    new "Попросить Артёма оставить в журнале своё решение"
+    new "Ask Artyom to keep his decision under his own name in the log"
 
     # game/routes/living_routes.rpy:436
     old "Согласиться оформить решение как коллективное"
-    new "Согласиться оформить решение как коллективное"
+    new "Agree to record the decision as collective"
