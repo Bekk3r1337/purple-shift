@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2026-09-23 08:18
+# TODO: Translation updated at 2026-09-23 08:18
 
 translate english strings:
 
@@ -37,4 +37,3 @@ translate english strings:
     # game/screens.rpy:1242
     old "Page Down"
     new "Page Down"
-

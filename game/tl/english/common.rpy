@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2026-09-23 08:18
+# TODO: Translation updated at 2026-09-23 08:18
 
 translate english strings:
 
@@ -1265,4 +1265,3 @@ translate english strings:
     # renpy/common/_errorhandling.rpym:892
     old "Parsing the script failed."
     new "Parsing the script failed."
-

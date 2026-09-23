@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2026-09-23 08:18
+# TODO: Translation updated at 2026-09-23 08:18
 
 # game/living_shift.rpy:1145
 translate english ps_storm_interference_60c9f085:
@@ -137,8 +137,6 @@ translate english ps_route_afterword_5f0a95e6:
 
     # sv "Что неисправный подъёмник создаёт риски быстрее. Первый раз написал это без чужого имени."
     sv "That a faulty lift creates risks faster. First time I wrote that without hiding behind someone else's name."
-
-# TODO: Translation updated at 2026-09-23 09:09
 
 translate english strings:
 
@@ -433,4 +431,3 @@ translate english strings:
     # game/living_shift.rpy:634
     old "Неизвестный след"
     new "Неизвестный след"
-

@@ -774,12 +774,6 @@ translate english ps_reactive_echo_scene_da8718d0:
     # sv "Теперь - да. Я добавил отдельную причину: «остановлено сотрудником до происшествия»."
     sv "Now it does. I added a separate reason: \"stopped by employee before incident.\""
 
-# game/echo_shift.rpy:1194
-translate english ps_reactive_echo_scene_ffaf7c16:
-
-    # vet "Вчера мы вытянули норму. Сегодня на тот же участок поставили ещё один контейнер и подняли скорость. Вот какой вывод сделали."
-    vet "Yesterday we hit the target. Today they put another container on the same section and increased the speed. That's the lesson they learned."
-
 # game/echo_shift.rpy:1205
 translate english ps_reactive_echo_scene_61b4739e:
 
@@ -917,12 +911,6 @@ translate english ps_deep_investigation_scene_e62c4cf6:
 
     # n "Два события подтверждены. Для остальных куратор требует отдельный источник и точное время."
     n "Two events are confirmed. For the others, the Curator demands a separate source and an exact time."
-
-# game/echo_shift.rpy:1332
-translate english ps_deep_investigation_scene_a81226c1:
-
-    # p "Все события выглядят подозрительно."
-    p "Every event looks suspicious."
 
 # game/echo_shift.rpy:1333
 translate english ps_deep_investigation_scene_4f0f341c:
@@ -1199,12 +1187,6 @@ translate english ps_zero_shift_5c52457f:
 
     # n "Четыре голоса за спиной отвечают не одновременно, но одним решением."
     n "Four voices behind you answer at different moments, but with one decision."
-
-# game/echo_shift.rpy:1554
-translate english ps_zero_shift_44d1cde6:
-
-    # p "Сначала открой дверь."
-    p "Open the door first."
 
 # game/echo_shift.rpy:1555
 translate english ps_zero_shift_a957f46b:
@@ -1570,14 +1552,14 @@ translate english ps_route_turning_point_b353d7f7:
 # game/echo_shift.rpy:1194
 translate english ps_reactive_echo_scene_b668ca4e:
 
-    # newb "Сегодня у контейнера сразу позвали людей. Никто даже не начал искать виноватого."
-    newb "Сегодня у контейнера сразу позвали людей. Никто даже не начал искать виноватого."
+    # vet "Вчера мы вытянули норму. Сегодня на тот же участок поставили ещё один контейнер и подняли скорость. Вот какой вывод сделали."
+    vet "Yesterday we hit the target. Today they put another container on the same section and increased the speed. That's the lesson they learned."
 
 # game/echo_shift.rpy:1332
 translate english ps_deep_investigation_scene_67ab79d5:
 
-    # cur "Разрыв, в который вы поместили удобное объяснение."
-    cur "Разрыв, в который вы поместили удобное объяснение."
+    # p "Все события выглядят подозрительно."
+    p "Every event looks suspicious."
 
 # game/echo_shift.rpy:1442
 translate english ps_route_resolution_scene_48044946:
@@ -1588,12 +1570,11 @@ translate english ps_route_resolution_scene_48044946:
 # game/echo_shift.rpy:1554
 translate english ps_zero_shift_393c0a98:
 
-    # n "На старом табло появляются фамилии сотрудников, которых давно нет в графике. Последняя строка остаётся пустой, пока ты не подходишь ближе. Система вписывает твоё имя и задаёт первый вопрос без готового ответа: «КТО ПЕРЕДАСТ ЭТУ СМЕНУ?»"
-    n "На старом табло появляются фамилии сотрудников, которых давно нет в графике. Последняя строка остаётся пустой, пока ты не подходишь ближе. Система вписывает твоё имя и задаёт первый вопрос без готового ответа: «КТО ПЕРЕДАСТ ЭТУ СМЕНУ?»"
+    # p "Сначала открой дверь."
+    p "Open the door first."
 
 # game/echo_shift.rpy:1563
 translate english ps_zero_shift_3920775d:
 
     # centered "PURPLE SHIFT\n\nНУЛЕВАЯ СМЕНА ОТКРЫТА"
     centered "PURPLE SHIFT\n\nНУЛЕВАЯ СМЕНА ОТКРЫТА"
-

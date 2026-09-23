@@ -930,4 +930,3 @@ translate english ps_route_week_scene_50853714:
 
     # mem "Опасное предложение, [ps_player_name]. Ещё привыкну."
     mem "Опасное предложение, [ps_player_name]. Ещё привыкну."
-
