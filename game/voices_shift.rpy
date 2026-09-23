@@ -291,14 +291,14 @@ init 15 python:
         global ps_supervisor_name
 
         ps_names_revealed = True
-        ps_newbie_name = "Лера"
-        ps_veteran_name = "Виктор"
-        ps_joker_name = "Макс"
-        ps_supervisor_name = "Артём"
+        ps_newbie_name = _("Лера")
+        ps_veteran_name = _("Виктор")
+        ps_joker_name = _("Макс")
+        ps_supervisor_name = _("Артём")
 
     def ps_set_curator_name():
         global ps_curator_name
-        ps_curator_name = "Морозов"
+        ps_curator_name = _("Морозов")
 
     def ps_character_profile(route_id):
         profile = dict(ps_character_profiles.get(route_id, ps_character_profiles["newbie"]))
@@ -408,16 +408,16 @@ label ps_team_names:
     with dissolve
 
     newb "Мы второй день рядом, а я для всех всё ещё Новичок. Я Лера. Валерия - это если опять понадобится объяснительная."
-    $ ps_newbie_name = "Лера"
+    $ ps_newbie_name = _("Лера")
 
     mem "Макс. Просто Макс. «Шутник» - это должность без доплаты и права на отпуск."
-    $ ps_joker_name = "Макс"
+    $ ps_joker_name = _("Макс")
 
     show vet neutral at ps_center
     with dissolve
 
     vet "Виктор."
-    $ ps_veteran_name = "Виктор"
+    $ ps_veteran_name = _("Виктор")
 
     mem "Ты мог хотя бы фамилию добавить. Для торжественности."
     vet "Савельев. Теперь торжественно иди переодеваться."
@@ -426,7 +426,7 @@ label ps_team_names:
     with dissolve
 
     sv "Артём Волков. Раз уж у нас вечер знакомств - закончите его до запуска линии."
-    $ ps_supervisor_name = "Артём"
+    $ ps_supervisor_name = _("Артём")
 
     p "А я - [ps_player_name]."
     newb "Вот. Теперь хотя бы знаем, как друг друга звать."
