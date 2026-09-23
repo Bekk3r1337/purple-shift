@@ -30,8 +30,8 @@ init python:
         global ps_curator_name
 
         # Keep custom player names untouched, but localize the untouched default.
-        if ps_player_name in (_("Сотрудник"), "Employee"):
-            ps_player_name = _(_("Сотрудник"))
+        if ps_player_name in ("Сотрудник", "Employee"):
+            ps_player_name = ps_default_player_name()
 
         if ps_names_revealed:
             ps_newbie_name = _("Лера")
@@ -39,15 +39,15 @@ init python:
             ps_joker_name = _("Макс")
             ps_supervisor_name = _("Артём")
         else:
-            ps_newbie_name = _(_("Новичок"))
-            ps_veteran_name = _(_("Ветеран"))
-            ps_joker_name = _(_("Шутник"))
-            ps_supervisor_name = _(_("Супервайзер"))
+            ps_newbie_name = _("Новичок")
+            ps_veteran_name = _("Ветеран")
+            ps_joker_name = _("Шутник")
+            ps_supervisor_name = _("Супервайзер")
 
         if ps_curator_name in ("Морозов", "Morozov"):
             ps_curator_name = _("Морозов")
         else:
-            ps_curator_name = _(_("Куратор"))
+            ps_curator_name = _("Куратор")
 
 image bg mainmenu = Solid("#120a1f")
 image ps_bg_base = Solid("#0c0614")
