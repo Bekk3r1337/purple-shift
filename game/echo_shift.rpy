@@ -231,14 +231,20 @@ init 18 python:
     def ps_route_variant_data(route_id):
         variant = ps_route_variant(route_id)
         if variant == "undecided":
-            return {
+            data = {
                 "title": "Развилка ещё впереди",
                 "short": "не определено",
                 "description": "Отношения уже меняются, но смена ещё не знает, во что они превратятся.",
                 "accent": "#b9a8c8",
                 "track": ps_route_motifs.get(route_id),
             }
-        return ps_route_variant_catalog[route_id][variant]
+        else:
+            data = dict(ps_route_variant_catalog[route_id][variant])
+
+        data["title"] = _(data["title"])
+        data["short"] = _(data["short"])
+        data["description"] = _(data["description"])
+        return data
 
     def ps_route_variant_key(route_id):
         variant = ps_route_variant(route_id)
@@ -389,12 +395,12 @@ init 18 python:
 
     def ps_main_menu_status():
         if persistent.ps_true_shift_unlocked:
-            return "НУЛЕВАЯ СМЕНА ОТКРЫТА"
+            return _("НУЛЕВАЯ СМЕНА ОТКРЫТА")
         if persistent.ps_storm_decoded:
-            return "КАНАЛ V-13 ВОССТАНОВЛЕН"
+            return _("КАНАЛ V-13 ВОССТАНОВЛЕН")
         if persistent.ps_total_runs > 0:
-            return "СМЕНА ПОМНИТ ПРОХОЖДЕНИЕ"
-        return "ДО НАЧАЛА СМЕНЫ"
+            return _("СМЕНА ПОМНИТ ПРОХОЖДЕНИЕ")
+        return _("ДО НАЧАЛА СМЕНЫ")
 
 
 ################################################################################
