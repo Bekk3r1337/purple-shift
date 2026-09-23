@@ -801,14 +801,14 @@ translate english strings:
 # game/voices_shift.rpy:410
 translate english ps_team_names_96a73346:
 
-    # newb "Мы второй день рядом, а я для всех всё ещё Новичок. Я Лера. Валерия - это если опять понадобится объяснительная."
-    newb "Мы второй день рядом, а я для всех всё ещё Новичок. Я Лера. Валерия - это если опять понадобится объяснительная."
+    # newb "We've been working side by side for two days and I'm still just Newcomer to everyone. I'm Lera. Valeria if I ever need another written statement."
+    newb "We've been working side by side for two days and I'm still just Newcomer to everyone. I'm Lera. Valeria if I ever need another written statement."
 
 # game/voices_shift.rpy:413
 translate english ps_team_names_7a017e44:
 
-    # mem "Макс. Просто Макс. «Шутник» - это должность без доплаты и права на отпуск."
-    mem "Макс. Просто Макс. «Шутник» - это должность без доплаты и права на отпуск."
+    # mem "Max. Just Max. Joker is a position with no extra pay and no vacation entitlement."
+    mem "Max. Just Max. Joker is a position with no extra pay and no vacation entitlement."
 
 # game/voices_shift.rpy:428
 translate english ps_team_names_1c0e6c68:
@@ -819,26 +819,26 @@ translate english ps_team_names_1c0e6c68:
 # game/voices_shift.rpy:431
 translate english ps_team_names_1c8aa9ad:
 
-    # p "А я - [ps_player_name]."
-    p "А я - [ps_player_name]."
+    # p "And I'm [ps_player_name]."
+    p "And I'm [ps_player_name]."
 
 # game/voices_shift.rpy:473
 translate english ps_route_week_scene_43a4ec67:
 
-    # p "Договорились."
+    # p "Deal."
     p "Deal."
 
 # game/voices_shift.rpy:474
 translate english ps_route_week_scene_f4599050:
 
-    # newb "Я больше не хочу писать просто «ошиблась». Потом выходит, что всё случилось из-за меня, а что делал ТСД - уже неважно."
-    newb "Я больше не хочу писать просто «ошиблась». Потом выходит, что всё случилось из-за меня, а что делал ТСД - уже неважно."
+    # newb "I don't want to write just 'made a mistake' anymore. Then it looks like everything happened because of me, and what the scanner did stops mattering."
+    newb "I don't want to write just 'made a mistake' anymore. Then it looks like everything happened because of me, and what the scanner did stops mattering."
 
 # game/voices_shift.rpy:476
 translate english ps_route_week_scene_2615077c:
 
-    # newb "Поможешь проверить? Не исправлять за меня - просто проверить."
-    newb "Поможешь проверить? Не исправлять за меня - просто проверить."
+    # newb "Will you help me check it? Not correct it for me - just check."
+    newb "Will you help me check it? Not correct it for me - just check."
 
 # game/voices_shift.rpy:502
 translate english ps_route_week_scene_033b9084:
@@ -849,50 +849,50 @@ translate english ps_route_week_scene_033b9084:
 # game/voices_shift.rpy:601
 translate english ps_route_week_scene_1677cd43:
 
-    # vet "Когда-то я подписал похожую бумагу. Не потому что был виноват - просто хотел домой и думал, что одна подпись ничего не изменит."
-    vet "Когда-то я подписал похожую бумагу. Не потому что был виноват - просто хотел домой и думал, что одна подпись ничего не изменит."
+    # vet "I signed a similar paper once. Not because I was guilty - I just wanted to go home and thought one signature would change nothing."
+    vet "I signed a similar paper once. Not because I was guilty - I just wanted to go home and thought one signature would change nothing."
 
 # game/voices_shift.rpy:626
 translate english ps_route_week_scene_6b74c0fd:
 
-    # p "А от Леры - согласие с тем, что уже решили."
-    p "А от Леры - согласие с тем, что уже решили."
+    # p "And from Lera - agreement with what they'd already decided."
+    p "And from Lera - agreement with what they'd already decided."
 
 # game/voices_shift.rpy:679
 translate english ps_route_week_scene_3e1edc31:
 
-    # p "Если решение примешь ты - останусь."
-    p "Если решение примешь ты - останусь."
+    # p "If you make the decision yourself - I'll stay."
+    p "If you make the decision yourself - I'll stay."
 
 # game/voices_shift.rpy:702
 translate english ps_route_week_scene_fc6ce7b7:
 
-    # vet "Если начну геройствовать - напомни про старого дурака."
-    vet "Если начну геройствовать - напомни про старого дурака."
+    # vet "If I start playing hero - remind me about that old fool."
+    vet "If I start playing hero - remind me about that old fool."
 
 # game/voices_shift.rpy:721
 translate english ps_route_week_scene_e2758318:
 
-    # sv "Через минуту мне придётся отдать приказ. Если он будет неправильным - останови меня."
-    sv "Через минуту мне придётся отдать приказ. Если он будет неправильным - останови меня."
+    # sv "In a minute I'll have to give an order. If it's the wrong one - stop me."
+    sv "In a minute I'll have to give an order. If it's the wrong one - stop me."
 
 # game/voices_shift.rpy:723
 translate english ps_route_week_scene_c96513ca:
 
-    # sv "При всех. Если я снова начну повторять куратора - тем более."
-    sv "При всех. Если я снова начну повторять куратора - тем более."
+    # sv "In front of everyone. Especially if I start repeating the Curator again."
+    sv "In front of everyone. Especially if I start repeating the Curator again."
 
 # game/voices_shift.rpy:924
 translate english ps_storm_day_intrusion_3c1a204f:
 
-    # n "Последним появляется твоё имя - [ps_player_name]. Вместо номера участка под ним короткое сообщение: «СМЕНА УЗНАЛА ТЕБЯ»."
-    n "Последним появляется твоё имя - [ps_player_name]. Вместо номера участка под ним короткое сообщение: «СМЕНА УЗНАЛА ТЕБЯ»."
+    # n "Your name appears last - [ps_player_name]. Instead of a section number, a short message appears beneath it: 'THE SHIFT RECOGNIZES YOU.'"
+    n "Your name appears last - [ps_player_name]. Instead of a section number, a short message appears beneath it: 'THE SHIFT RECOGNIZES YOU.'"
 
 # game/voices_shift.rpy:933
 translate english ps_storm_day_intrusion_caa973dd:
 
-    # sv "Отключаем табло физически. Если система хочет говорить - пусть сначала переживёт выдернутый кабель."
-    sv "Отключаем табло физически. Если система хочет говорить - пусть сначала переживёт выдернутый кабель."
+    # sv "We disconnect the board physically. If the system wants to talk - let it survive an unplugged cable first."
+    sv "We disconnect the board physically. If the system wants to talk - let it survive an unplugged cable first."
 
 translate english strings:
 
@@ -916,17 +916,17 @@ translate english strings:
 # game/voices_shift.rpy:432
 translate english ps_team_names_b1a770b3:
 
-    # newb "Вот. Теперь хотя бы знаем, как друг друга звать."
-    newb "Вот. Теперь хотя бы знаем, как друг друга звать."
+    # newb "There. Now we at least know what to call each other."
+    newb "There. Now we at least know what to call each other."
 
 # game/voices_shift.rpy:477
 translate english ps_route_week_scene_50ba0100:
 
-    # p "Договорились."
-    p "Договорились."
+    # p "Deal."
+    p "Deal."
 
 # game/voices_shift.rpy:506
 translate english ps_route_week_scene_50853714:
 
-    # mem "Опасное предложение, [ps_player_name]. Ещё привыкну."
-    mem "Опасное предложение, [ps_player_name]. Ещё привыкну."
+    # mem "Dangerous offer, [ps_player_name]. I might get used to it."
+    mem "Dangerous offer, [ps_player_name]. I might get used to it."
