@@ -464,3 +464,297 @@ translate english strings:
 
     old "Так и будет. Решение подпишу сам."
     new "That's how it'll be. I'll sign the decision myself."
+
+    # English coverage audit - dynamic runtime catalogs and chat strings.
+
+    old "«Иду. Не начинайте финал без меня.»"
+    new "\"I'm coming. Don't start the finale without me.\""
+
+    old "«Принесу бутылку. Без служебной записки.»"
+    new "\"I'll bring a bottle. No incident report.\""
+
+    old "«Ставьте таймер. В этот раз будут все.»"
+    new "\"Set a timer. Everyone will be in it this time.\""
+
+    old "БЕЗ ТАЙМЕРА"
+    new "NO TIMER"
+
+    old "В чате появляются четыре коротких плюса."
+    new "Four short plus signs appear in the chat."
+
+    old "Виктор: давно пора."
+    new "Viktor: about time."
+
+    old "До, внутри и после"
+    new "Before, During, and After"
+
+    old "Доверие, страх, раскол и взаимовыручка. Четыре показателя, которых нет в официальной панели."
+    new "Trust, fear, fracture, and mutual support. Four metrics that do not exist on the official dashboard."
+
+    old "Дойти с командой до последней развилки за проходной."
+    new "Reach the final crossroads beyond the checkpoint with the team."
+
+    old "Допишу после смены, если останутся силы."
+    new "I'll finish this after the shift if I have any energy left."
+
+    old "Жилет, который стал тяжелее"
+    new "The Vest That Grew Heavier"
+
+    old "Журналы восстановили, оборудование отправили на проверку, а твои показания вошли в дело."
+    new "The logs were restored, the equipment was sent for inspection, and your testimony became part of the case."
+
+    old "Завершить историю с полной картой решений."
+    new "Finish the story with a complete map of your decisions."
+
+    old "Записи после проходной"
+    new "Notes Beyond the Checkpoint"
+
+    old "Зачем я сюда пришёл?"
+    new "Why did I come here?"
+
+    old "Зачем я сюда пришёл? Из-за денег. Пока этого ответа достаточно."
+    new "Why did I come here? For the money. For now, that answer is enough."
+
+    old "Иду. Не начинайте финальную сцену без меня."
+    new "I'm coming. Don't start the final scene without me."
+
+    old "Карта семи дней"
+    new "Seven-Day Map"
+
+    old "Карта собирает след решений: кого они защитили, чего стоили и кто их запомнил."
+    new "The map traces your decisions: who they protected, what they cost, and who remembered them."
+
+    old "Команды передавали от участка к участку, пока всех не пересчитали."
+    new "Commands were relayed from section to section until everyone was accounted for."
+
+    old "Короткие мысли, набранные тогда, когда рабочий день закончился, а смена внутри ещё нет."
+    new "Short thoughts typed after the workday ended, while the shift inside you had not."
+
+    old "Кто вчера вышел с линии последним? В табеле все закрыты одновременно."
+    new "Who left the line last yesterday? The time sheet shows everyone clocking out at the same time."
+
+    old "Кто вышел с линии последним?"
+    new "Who left the line last?"
+
+    old "Кто успеет - просто дойдём до остановки вместе."
+    new "Whoever can make it - we'll just walk to the bus stop together."
+
+    old "Кто это отправил?"
+    new "Who sent this?"
+
+    old "Лера говорит, что видела человека у дальнего схода уже после сигнала."
+    new "Lera says she saw someone by the far chute after the signal."
+
+    old "Лера предлагает поставить таймер. Виктор предлагает считать отсутствующего официально присутствующим."
+    new "Lera suggests using a timer. Viktor suggests officially counting the missing person as present."
+
+    old "Лера присылает фотографию экрана ТСД."
+    new "Lera sends a photo of the scanner screen."
+
+    old "Лера просит никого не включать его пустым. Артём неожиданно прислал инструкцию из двух слов: «Налей воду»."
+    new "Lera asks everyone not to turn it on empty. Artyom unexpectedly sends a two-word instruction: \"Add water.\""
+
+    old "Лера: сохраню оригинал. Даже если Макс моргнёт."
+    new "Lera: I'll save the original. Even if Max blinks."
+
+    old "Макс: поздно, дело уже передано в отдел особо горячих кружек."
+    new "Max: too late, the case has already gone to the Department of Extremely Hot Mugs."
+
+    old "Макс: режиссёр просил передать, что бюджет на второй дубль закончился."
+    new "Max: the director asked me to tell you the budget for a second take is gone."
+
+    old "Макс: тогда завтра без зрительного зала."
+    new "Max: then tomorrow, no audience."
+
+    old "Маленькие остановки"
+    new "Small Pauses"
+
+    old "Можно рассказать несмешно. Я всё равно прочитаю."
+    new "You can tell it without making it funny. I'll read it anyway."
+
+    old "НАДЁЖНО // "
+    new "RELIABLE // "
+
+    old "На общем фото опять не хватает одного человека."
+    new "The group photo is missing someone again."
+
+    old "На общем фото опять не хватает того, кто держал телефон."
+    new "The group photo is missing the person who held the phone again."
+
+    old "Нас здесь было больше одного"
+    new "There Was More Than One of Us Here"
+
+    old "Начать «Новую смену+» и заметить первый повтор."
+    new "Start New Shift+ and notice the first repetition."
+
+    old "Не подписывай пустой отчёт."
+    new "Do not sign a blank report."
+
+    old "Не пройти мимо трёх бытовых событий смены."
+    new "Do not walk past three small everyday moments of the shift."
+
+    old "Не расходиться сразу."
+    new "Do not split up right away."
+
+    old "Не сейчас. Сегодня нужно просто дойти."
+    new "Not now. Today I just need to make it through."
+
+    old "Не собрание. Просто убедимся, что вышли все."
+    new "Not a meeting. We'll just make sure everyone got out."
+
+    old "Не удалять. Даже если вечером ответ будет неприятным."
+    new "Do not delete this. Even if the answer feels unpleasant tonight."
+
+    old "Не уйду. Но и ты не исчезай в шутках."
+    new "I won't leave. But don't disappear into jokes either."
+
+    old "Неформальный отчёт смены"
+    new "Unofficial Shift Report"
+
+    old "Остановка после шума"
+    new "The Stop After the Noise"
+
+    old "Остаться с командой, когда разговор больше ничего не решает."
+    new "Stay with the team when talking can no longer solve anything."
+
+    old "Переписка остаётся открытой до утра."
+    new "The conversation remains open until morning."
+
+    old "По ту сторону смены"
+    new "Beyond the Shift"
+
+    old "Помнить целиком"
+    new "Remember the Whole Thing"
+
+    old "После проходной"
+    new "Beyond the Checkpoint"
+
+    old "После проходной не расходиться сразу."
+    new "Do not split up right after the checkpoint."
+
+    old "После шума"
+    new "After the Noise"
+
+    old "Правда без удобного ответа"
+    new "Truth Without an Easy Answer"
+
+    old "Принесу воду. И давайте хотя бы чайник не превращать в расследование."
+    new "I'll bring water. And let's at least not turn the kettle into an investigation."
+
+    old "Принять решение, которое помогло людям не сразу."
+    new "Make a decision whose benefit to people is not immediate."
+
+    old "Пришлите время и сектор. Без этого сообщение исчезнет как слух."
+    new "Send the time and section. Without that, this message will disappear like a rumor."
+
+    old "Прожить все три стороны одного рабочего дня."
+    new "Experience all three sides of a single workday."
+
+    old "Пять минут без должностей"
+    new "Five Minutes Without Job Titles"
+
+    old "РЕКОМЕНДОВАНО // "
+    new "RECOMMENDED // "
+
+    old "Рейтинг аннулирован. Решение о следующей смене пока не принято."
+    new "The ranking was voided. No decision has been made about the next shift yet."
+
+    old "Рядом с номерами смены от руки записано, кто боится высоты, кому нельзя перегружать кисть и кто всегда забывает поесть."
+    new "Beside the shift numbers, handwritten notes say who is afraid of heights, who must not strain a wrist, and who always forgets to eat."
+
+    old "Сегодня после стопа пересчитаемся сами. Не по табелю."
+    new "After the stop today, we'll count everyone ourselves. Not by the time sheet."
+
+    old "Следом: «Неважно. Завтра расскажу смешно»."
+    new "Then: \"Never mind. I'll make it funny tomorrow.\""
+
+    old "Сначала пересчитаемся. Потом каждый решит, куда идти."
+    new "First we count everyone. Then each person decides where to go."
+
+    old "Снимок появляется в папке, которой нет в телефоне."
+    new "The screenshot appears in a folder that does not exist on the phone."
+
+    old "Собрать смену, в которой взаимовыручка сильнее страха и раскола."
+    new "Build a shift where mutual support is stronger than fear and division."
+
+    old "Собрать стену недели из фактов и человеческих последствий."
+    new "Build the week's wall from facts and human consequences."
+
+    old "Сообщение отмечается прочитанным вчера."
+    new "The message is marked as read yesterday."
+
+    old "Ставьте таймер. Десять секунд хватит, чтобы никто не остался за кадром."
+    new "Set a timer. Ten seconds is enough to keep everyone in the frame."
+
+    old "Стена одной недели"
+    new "One Week on the Wall"
+
+    old "ТЕЛЕФОН"
+    new "PHONE"
+
+    old "Табель с человеческими пометками"
+    new "Time Sheet with Human Notes"
+
+    old "Текст удалён."
+    new "Text deleted."
+
+    old "Ты занял первое место. Виктор травмирован, а Лера может не выйти завтра."
+    new "You took first place. Viktor is injured, and Lera may not show up tomorrow."
+
+    old "Ты остановил поток и вывел людей до перегрева линии."
+    new "You stopped the flow and got people out before the line overheated."
+
+    old "Ты сохранил рабочую линию и получил должность вместе с правом остановки."
+    new "You kept the line running and got the position along with the authority to stop it."
+
+    old "Ты уже видел, что бывает, когда все ждут чужой команды."
+    new "You have already seen what happens when everyone waits for someone else to give the order."
+
+    old "Ты ушёл до конца смены и больше не подтвердил следующий выход."
+    new "You left before the shift ended and never confirmed another shift."
+
+    old "У проходной ждём пять минут."
+    new "Wait five minutes by the checkpoint."
+
+    old "У проходной ждём пять минут. Без повестки и без обязательного присутствия."
+    new "Wait five minutes by the checkpoint. No agenda and no mandatory attendance."
+
+    old "Утро без будильника"
+    new "A Morning Without an Alarm"
+
+    old "Факты, решения и имена собраны рядом: происшествие больше нельзя отделить от людей, которые его пережили."
+    new "Facts, decisions, and names are gathered side by side: the incident can no longer be separated from the people who lived through it."
+
+    old "Чайник снова выключили раньше времени."
+    new "The kettle was switched off too early again."
+
+    old "Чайник снова выключили раньше времени. Макс обвиняет автоматику, Виктор - Макса."
+    new "The kettle was switched off too early again. Max blames the automation; Viktor blames Max."
+
+    old "Черновик сохранён."
+    new "Draft saved."
+
+    old "Черновики"
+    new "Drafts"
+
+    old "Что запомнила смена"
+    new "What the Shift Remembered"
+
+    old "Я"
+    new "Me"
+
+    old "Я это уже слышал"
+    new "I Have Heard This Before"
+
+    old "говорит о собственном действии"
+    new "speaks about her own action"
+
+    old "держится фактов и порядка"
+    new "sticks to facts and sequence"
+
+    old "оставляет решение за собой"
+    new "keeps the decision in his own hands"
+
+    old "просит именно то, чего Макс боится"
+    new "asks for exactly what Max fears"
+
