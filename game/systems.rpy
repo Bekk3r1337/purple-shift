@@ -36,28 +36,33 @@ init python:
     def ps_clamp(value, low=0, high=12):
         return max(low, min(high, value))
 
-    def ps_route_name():
+    def ps_route_id():
         scores = [
-            ("Человек в потоке", ps_humanity),
-            ("Опора смены", ps_endurance),
-            ("Тащер системы", ps_efficiency),
-            ("Голос в шуме", ps_humor),
+            ("humanity", ps_humanity),
+            ("endurance", ps_endurance),
+            ("efficiency", ps_efficiency),
+            ("humor", ps_humor),
         ]
-
         scores.sort(key=lambda item: item[1], reverse=True)
         return scores[0][0]
 
-    def ps_route_description():
-        route = ps_route_name()
-
-        descriptions = {
-            "Человек в потоке": "Ты следишь за тем, что происходит с людьми рядом.",
-            "Опора смены": "В трудный момент на тебя можно положиться.",
-            "Тащер системы": "Ты быстро разбираешься в правилах и держишь темп.",
-            "Голос в шуме": "Твои шутки помогают команде пережить тяжёлую смену.",
+    def ps_route_name():
+        names = {
+            "humanity": "Человек в потоке",
+            "endurance": "Опора смены",
+            "efficiency": "Тащер системы",
+            "humor": "Голос в шуме",
         }
+        return _(names[ps_route_id()])
 
-        return descriptions[route]
+    def ps_route_description():
+        descriptions = {
+            "humanity": "Ты следишь за тем, что происходит с людьми рядом.",
+            "endurance": "В трудный момент на тебя можно положиться.",
+            "efficiency": "Ты быстро разбираешься в правилах и держишь темп.",
+            "humor": "Твои шутки помогают команде пережить тяжёлую смену.",
+        }
+        return _(descriptions[ps_route_id()])
 
     def ps_ending_id():
         if ps_final_choice == "правда" and ps_evidence >= 3 and ps_integrity >= 3:
