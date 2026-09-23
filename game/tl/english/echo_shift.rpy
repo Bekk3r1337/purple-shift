@@ -1,0 +1,1364 @@
+﻿# TODO: Translation updated at 2026-09-23 08:18
+
+# game/echo_shift.rpy:735
+translate english ps_route_turning_point_1ec065d4:
+
+    # n "Перед разговором о рейтинге Лера несколько раз проговаривает первую фразу. Каждый раз начинает увереннее и всё равно обрывает себя на середине."
+    n "Перед разговором о рейтинге Лера несколько раз проговаривает первую фразу. Каждый раз начинает увереннее и всё равно обрывает себя на середине."
+
+# game/echo_shift.rpy:736
+translate english ps_route_turning_point_43aaefec:
+
+    # newb "Если я снова застряну, что ты сделаешь?"
+    newb "Если я снова застряну, что ты сделаешь?"
+
+# game/echo_shift.rpy:743
+translate english ps_route_turning_point_e498bcc5:
+
+    # p "Начнёшь ты. Если тебя перебьют, я попрошу дать тебе закончить."
+    p "Начнёшь ты. Если тебя перебьют, я попрошу дать тебе закончить."
+
+# game/echo_shift.rpy:744
+translate english ps_route_turning_point_3a788136:
+
+    # newb "То есть ошибиться в формулировке мне тоже разрешается?"
+    newb "То есть ошибиться в формулировке мне тоже разрешается?"
+
+# game/echo_shift.rpy:745
+translate english ps_route_turning_point_54faf34b:
+
+    # p "Да. Это твой разговор."
+    p "Да. Это твой разговор."
+
+# game/echo_shift.rpy:746
+translate english ps_route_turning_point_1d68948a:
+
+    # newb "Хорошо. Тогда не подсказывай раньше времени."
+    newb "Хорошо. Тогда не подсказывай раньше времени."
+
+# game/echo_shift.rpy:752
+translate english ps_route_turning_point_0ecc8c59:
+
+    # p "Посмотри на меня — и я продолжу. Не будем давать им время задавить тебя."
+    p "Посмотри на меня — и я продолжу. Не будем давать им время задавить тебя."
+
+# game/echo_shift.rpy:753
+translate english ps_route_turning_point_610288bc:
+
+    # newb "Спасибо. Только я тогда, наверное, опять ничего не скажу."
+    newb "Спасибо. Только я тогда, наверное, опять ничего не скажу."
+
+# game/echo_shift.rpy:754
+translate english ps_route_turning_point_99512fa6:
+
+    # p "Сейчас важнее результат."
+    p "Сейчас важнее результат."
+
+# game/echo_shift.rpy:755
+translate english ps_route_turning_point_8a4ba267:
+
+    # n "Лера быстро кивает и убирает лист с заготовленной первой фразой в карман."
+    n "Лера быстро кивает и убирает лист с заготовленной первой фразой в карман."
+
+# game/echo_shift.rpy:763
+translate english ps_route_turning_point_73d5f4ac:
+
+    # n "Виктор держит кружку двумя руками. Когда думает, что ты отвернулся, переносит её в левую — правое запястье снова отзывается болью."
+    n "Виктор держит кружку двумя руками. Когда думает, что ты отвернулся, переносит её в левую — правое запястье снова отзывается болью."
+
+# game/echo_shift.rpy:764
+translate english ps_route_turning_point_d44e2d7e:
+
+    # vet "Не смотри так. До конца смены дотяну."
+    vet "Не смотри так. До конца смены дотяну."
+
+# game/echo_shift.rpy:771
+translate english ps_route_turning_point_609d8d7c:
+
+    # p "Скажи Артёму сейчас. Тогда успеем переставить людей до запуска."
+    p "Скажи Артёму сейчас. Тогда успеем переставить людей до запуска."
+
+# game/echo_shift.rpy:772
+translate english ps_route_turning_point_b1998778:
+
+    # vet "Двадцать лет опыта, а докладывать приходится о запястье."
+    vet "Двадцать лет опыта, а докладывать приходится о запястье."
+
+# game/echo_shift.rpy:773
+translate english ps_route_turning_point_2cc5e7ff:
+
+    # p "Зато не после медпункта."
+    p "Зато не после медпункта."
+
+# game/echo_shift.rpy:774
+translate english ps_route_turning_point_ba4bad15:
+
+    # vet "Ладно. Идём вместе, но говорить буду я."
+    vet "Ладно. Идём вместе, но говорить буду я."
+
+# game/echo_shift.rpy:780
+translate english ps_route_turning_point_c4e7824c:
+
+    # p "Закроем участок и поменяемся до следующего запуска. Артёму пока не скажем."
+    p "Закроем участок и поменяемся до следующего запуска. Артёму пока не скажем."
+
+# game/echo_shift.rpy:781
+translate english ps_route_turning_point_21c75868:
+
+    # vet "Вот это деловой разговор."
+    vet "Вот это деловой разговор."
+
+# game/echo_shift.rpy:782
+translate english ps_route_turning_point_702e261c:
+
+    # n "Виктор кивает и снова берёт кружку правой рукой."
+    n "Виктор кивает и снова берёт кружку правой рукой."
+
+# game/echo_shift.rpy:790
+translate english ps_route_turning_point_33e2dd0f:
+
+    # n "Макс сидит напротив и крутит бумажный стакан. Обычно к этому моменту он успевает дать стакану имя и должность. Сегодня — ничего."
+    n "Макс сидит напротив и крутит бумажный стакан. Обычно к этому моменту он успевает дать стакану имя и должность. Сегодня — ничего."
+
+# game/echo_shift.rpy:791
+translate english ps_route_turning_point_03afaa9b:
+
+    # mem "Ты сейчас обязан спросить, почему я молчу. По сценарию."
+    mem "Ты сейчас обязан спросить, почему я молчу. По сценарию."
+
+# game/echo_shift.rpy:798
+translate english ps_route_turning_point_db277723:
+
+    # p "Не обязан. Можем просто досидеть перерыв."
+    p "Не обязан. Можем просто досидеть перерыв."
+
+# game/echo_shift.rpy:799
+translate english ps_route_turning_point_2888ee16:
+
+    # mem "А если будет неловко?"
+    mem "А если будет неловко?"
+
+# game/echo_shift.rpy:800
+translate english ps_route_turning_point_faabc447:
+
+    # p "Значит, две минуты будет неловко."
+    p "Значит, две минуты будет неловко."
+
+# game/echo_shift.rpy:801
+translate english ps_route_turning_point_18ec34ca:
+
+    # n "Макс ставит стакан на стол. Первые полминуты ёрзает, затем откидывается на спинку стула."
+    n "Макс ставит стакан на стол. Первые полминуты ёрзает, затем откидывается на спинку стула."
+
+# game/echo_shift.rpy:806
+translate english ps_route_turning_point_3f75b9f4:
+
+    # p "Народ скис. Дай им что-нибудь своё, пока все не начали слушать вентиляцию."
+    p "Народ скис. Дай им что-нибудь своё, пока все не начали слушать вентиляцию."
+
+# game/echo_shift.rpy:807
+translate english ps_route_turning_point_2fec540b:
+
+    # mem "Значит, артист всё-таки нужен."
+    mem "Значит, артист всё-таки нужен."
+
+# game/echo_shift.rpy:808
+translate english ps_route_turning_point_1e17ef94:
+
+    # n "Через минуту из комнаты снова слышен смех. Только Макс смеётся на долю секунды позже остальных."
+    n "Через минуту из комнаты снова слышен смех. Только Макс смеётся на долю секунды позже остальных."
+
+# game/echo_shift.rpy:816
+translate english ps_route_turning_point_48cb669e:
+
+    # n "Артём показывает тебе список ручных исправлений. Внизу четыре его подписи и ни одного имени человека, чьё решение он исправлял."
+    n "Артём показывает тебе список ручных исправлений. Внизу четыре его подписи и ни одного имени человека, чьё решение он исправлял."
+
+# game/echo_shift.rpy:817
+translate english ps_route_turning_point_d27063fb:
+
+    # sv "Если оставить фамилии, начнут таскать людей по кабинетам. Я закрыл всё собой."
+    sv "Если оставить фамилии, начнут таскать людей по кабинетам. Я закрыл всё собой."
+
+# game/echo_shift.rpy:824
+translate english ps_route_turning_point_16eb7145:
+
+    # p "Ты подписал исправления, но людям не объяснил, что поменял и почему."
+    p "Ты подписал исправления, но людям не объяснил, что поменял и почему."
+
+# game/echo_shift.rpy:825
+translate english ps_route_turning_point_80b1db1f:
+
+    # sv "И получить право спорить?"
+    sv "И получить право спорить?"
+
+# game/echo_shift.rpy:826
+translate english ps_route_turning_point_863abf75:
+
+    # p "Иначе они повторят то же самое завтра."
+    p "Иначе они повторят то же самое завтра."
+
+# game/echo_shift.rpy:827
+translate english ps_route_turning_point_9776cdbf:
+
+    # sv "На планёрке разберу каждое исправление. Сам."
+    sv "На планёрке разберу каждое исправление. Сам."
+
+# game/echo_shift.rpy:833
+translate english ps_route_turning_point_21b7f92e:
+
+    # p "Тогда не оставляй пространство для случайных решений. Один порядок, одна ответственность."
+    p "Тогда не оставляй пространство для случайных решений. Один порядок, одна ответственность."
+
+# game/echo_shift.rpy:834
+translate english ps_route_turning_point_8f66da99:
+
+    # sv "Меньше ошибок."
+    sv "Меньше ошибок."
+
+# game/echo_shift.rpy:835
+translate english ps_route_turning_point_e6ba7264:
+
+    # p "И меньше вопросов."
+    p "И меньше вопросов."
+
+# game/echo_shift.rpy:836
+translate english ps_route_turning_point_6c13407b:
+
+    # n "Артём убирает список в папку и ставит сверху новый бланк запрета ручных исправлений."
+    n "Артём убирает список в папку и ставит сверху новый бланк запрета ручных исправлений."
+
+# game/echo_shift.rpy:848
+translate english ps_route_turning_point_3838fb18:
+
+    # newb "В диспетчерской снова приготовили формулировку. Если пойду одна, голос может дрогнуть. Если пойдёшь первым ты, они опять решат, что я ничего не понимаю."
+    newb "В диспетчерской снова приготовили формулировку. Если пойду одна, голос может дрогнуть. Если пойдёшь первым ты, они опять решат, что я ничего не понимаю."
+
+# game/echo_shift.rpy:855
+translate english ps_route_turning_point_322b8bbd:
+
+    # p "Документы несёшь ты. Начинаешь с времени операции. Я войду следом и останусь рядом."
+    p "Документы несёшь ты. Начинаешь с времени операции. Я войду следом и останусь рядом."
+
+# game/echo_shift.rpy:856
+translate english ps_route_turning_point_c4a34b23:
+
+    # newb "Не впереди?"
+    newb "Не впереди?"
+
+# game/echo_shift.rpy:857
+translate english ps_route_turning_point_87e3daa4:
+
+    # p "Не впереди."
+    p "Не впереди."
+
+# game/echo_shift.rpy:858
+translate english ps_route_turning_point_67b45fa3:
+
+    # newb "Тогда пошли, пока я не придумала причину передумать."
+    newb "Тогда пошли, пока я не придумала причину передумать."
+
+# game/echo_shift.rpy:864
+translate english ps_route_turning_point_addf9457:
+
+    # p "Я начну с журналов и объясню цепочку. Ты подтвердишь детали."
+    p "Я начну с журналов и объясню цепочку. Ты подтвердишь детали."
+
+# game/echo_shift.rpy:865
+translate english ps_route_turning_point_7becb671:
+
+    # newb "Хорошо. Так безопаснее."
+    newb "Хорошо. Так безопаснее."
+
+# game/echo_shift.rpy:866
+translate english ps_route_turning_point_496c6f7f:
+
+    # n "Она отдаёт тебе папку и идёт следом в диспетчерскую."
+    n "Она отдаёт тебе папку и идёт следом в диспетчерскую."
+
+# game/echo_shift.rpy:874
+translate english ps_route_turning_point_7209d466:
+
+    # vet "Бирку повесили, но ручной режим оставили. Могу показать, как закончить партию без датчика. Потом точно блокируем."
+    vet "Бирку повесили, но ручной режим оставили. Могу показать, как закончить партию без датчика. Потом точно блокируем."
+
+# game/echo_shift.rpy:881
+translate english ps_route_turning_point_a3cdfdbb:
+
+    # p "Нет. Передай ключ Артёму сам. Не мне и не технику — сам."
+    p "Нет. Передай ключ Артёму сам. Не мне и не технику — сам."
+
+# game/echo_shift.rpy:882
+translate english ps_route_turning_point_f2195f72:
+
+    # vet "Чтобы потом не забрать обратно?"
+    vet "Чтобы потом не забрать обратно?"
+
+# game/echo_shift.rpy:883
+translate english ps_route_turning_point_584a9e90:
+
+    # p "Чтобы потом самому не включить его ещё раз."
+    p "Чтобы потом самому не включить его ещё раз."
+
+# game/echo_shift.rpy:884
+translate english ps_route_turning_point_7fe69650:
+
+    # vet "Убедил. Неси журнал блокировки."
+    vet "Убедил. Неси журнал блокировки."
+
+# game/echo_shift.rpy:890
+translate english ps_route_turning_point_e4b15179:
+
+    # p "Покажи один раз. Закрываем партию и сразу блокируем."
+    p "Покажи один раз. Закрываем партию и сразу блокируем."
+
+# game/echo_shift.rpy:891
+translate english ps_route_turning_point_3c72a8bd:
+
+    # vet "Так мы и в прошлый раз говорили. Один запуск."
+    vet "Так мы и в прошлый раз говорили. Один запуск."
+
+# game/echo_shift.rpy:892
+translate english ps_route_turning_point_b27aff3b:
+
+    # n "Он уже тянется к панели, пока произносит это."
+    n "Он уже тянется к панели, пока произносит это."
+
+# game/echo_shift.rpy:900
+translate english ps_route_turning_point_bc98168f:
+
+    # mem "Я пересчитал людей три раза. Все на месте, но мозг требует четвёртый. Можно я просто пошучу, и мы сделаем вид, что это нормально?"
+    mem "Я пересчитал людей три раза. Все на месте, но мозг требует четвёртый. Можно я просто пошучу, и мы сделаем вид, что это нормально?"
+
+# game/echo_shift.rpy:907
+translate english ps_route_turning_point_c81cf68f:
+
+    # p "Сначала пересчитаем вместе. Потом ты скажешь, чего именно боишься."
+    p "Сначала пересчитаем вместе. Потом ты скажешь, чего именно боишься."
+
+# game/echo_shift.rpy:908
+translate english ps_route_turning_point_e674335a:
+
+    # mem "Вот так сразу? Без разогрева?"
+    mem "Вот так сразу? Без разогрева?"
+
+# game/echo_shift.rpy:909
+translate english ps_route_turning_point_11d7bbf8:
+
+    # p "Без."
+    p "Без."
+
+# game/echo_shift.rpy:910
+translate english ps_route_turning_point_75f19650:
+
+    # mem "Боюсь, что однажды не досчитаюсь и никто даже не заметит, когда это случилось."
+    mem "Боюсь, что однажды не досчитаюсь и никто даже не заметит, когда это случилось."
+
+# game/echo_shift.rpy:915
+translate english ps_route_turning_point_375d2740:
+
+    # p "Четвёртая проверка платная. С каждого по одному печенью."
+    p "Четвёртая проверка платная. С каждого по одному печенью."
+
+# game/echo_shift.rpy:916
+translate english ps_route_turning_point_d49ad5be:
+
+    # mem "Наконец разумный регламент."
+    mem "Наконец разумный регламент."
+
+# game/echo_shift.rpy:917
+translate english ps_route_turning_point_c30a6932:
+
+    # n "Макс улыбается. Проверять людей он всё равно не прекращает."
+    n "Макс улыбается. Проверять людей он всё равно не прекращает."
+
+# game/echo_shift.rpy:925
+translate english ps_route_turning_point_bd535cbb:
+
+    # sv "Перед запуском я хочу запретить любые ручные решения без моего подтверждения. После прошлой ночи это единственный способ удержать линию."
+    sv "Перед запуском я хочу запретить любые ручные решения без моего подтверждения. После прошлой ночи это единственный способ удержать линию."
+
+# game/echo_shift.rpy:932
+translate english ps_route_turning_point_1c044862:
+
+    # p "Если человек видит опасность, он должен дать стоп сразу. Пока дождётся тебя, будет поздно."
+    p "Если человек видит опасность, он должен дать стоп сразу. Пока дождётся тебя, будет поздно."
+
+# game/echo_shift.rpy:933
+translate english ps_route_turning_point_5f87a6a3:
+
+    # sv "Будут лишние остановки."
+    sv "Будут лишние остановки."
+
+# game/echo_shift.rpy:934
+translate english ps_route_turning_point_5dd5cd5a:
+
+    # p "Лишнюю запустим снова после проверки."
+    p "Лишнюю запустим снова после проверки."
+
+# game/echo_shift.rpy:935
+translate english ps_route_turning_point_9b0373c5:
+
+    # sv "Хорошо. Стоп — общий. Запуск — через меня."
+    sv "Хорошо. Стоп — общий. Запуск — через меня."
+
+# game/echo_shift.rpy:941
+translate english ps_route_turning_point_b353d7f7:
+
+    # p "После аварии импровизация опаснее задержки. Все решения идут через тебя."
+    p "После аварии импровизация опаснее задержки. Все решения идут через тебя."
+
+# game/echo_shift.rpy:942
+translate english ps_route_turning_point_ceb1a75d:
+
+    # sv "Тогда мне нужен доступ ко всем терминалам."
+    sv "Тогда мне нужен доступ ко всем терминалам."
+
+# game/echo_shift.rpy:943
+translate english ps_route_turning_point_b5d4fb6a:
+
+    # p "Получишь."
+    p "Получишь."
+
+# game/echo_shift.rpy:944
+translate english ps_route_turning_point_b2d92d0c:
+
+    # n "Артём отключает ручной стоп на остальных терминалах. Теперь кнопка остаётся только у него."
+    n "Артём отключает ручной стоп на остальных терминалах. Теперь кнопка остаётся только у него."
+
+# game/echo_shift.rpy:970
+translate english ps_team_conflict_scene_d7877f90:
+
+    # mem "Красная стрелка рядом с Лерой — просто система наконец выбрала фирменный цвет тревоги."
+    mem "Красная стрелка рядом с Лерой — просто система наконец выбрала фирменный цвет тревоги."
+
+# game/echo_shift.rpy:971
+translate english ps_team_conflict_scene_31beefcd:
+
+    # newb "Можешь хотя бы раз не делать из меня объявление для всей комнаты?"
+    newb "Можешь хотя бы раз не делать из меня объявление для всей комнаты?"
+
+# game/echo_shift.rpy:972
+translate english ps_team_conflict_scene_6354a376:
+
+    # mem "Я хотел, чтобы стало легче."
+    mem "Я хотел, чтобы стало легче."
+
+# game/echo_shift.rpy:973
+translate english ps_team_conflict_scene_9a96986c:
+
+    # newb "Тебе стало."
+    newb "Тебе стало."
+
+# game/echo_shift.rpy:981
+translate english ps_team_conflict_scene_74ea0000:
+
+    # p "Макс, подожди. Лера ещё не закончила."
+    p "Макс, подожди. Лера ещё не закончила."
+
+# game/echo_shift.rpy:982
+translate english ps_team_conflict_scene_4c3932a1:
+
+    # newb "Если я смеюсь вместе со всеми, это не всегда значит, что мне смешно. Иногда просто не хочется портить вам перерыв."
+    newb "Если я смеюсь вместе со всеми, это не всегда значит, что мне смешно. Иногда просто не хочется портить вам перерыв."
+
+# game/echo_shift.rpy:983
+translate english ps_team_conflict_scene_4180fff4:
+
+    # mem "Понял. Прости. Без второй попытки пошутить."
+    mem "Понял. Прости. Без второй попытки пошутить."
+
+# game/echo_shift.rpy:991
+translate english ps_team_conflict_scene_ba83d0ff:
+
+    # p "У меня сегодня тоже красная. Можно собирать комплект."
+    p "У меня сегодня тоже красная. Можно собирать комплект."
+
+# game/echo_shift.rpy:992
+translate english ps_team_conflict_scene_055da138:
+
+    # mem "Вот, уже командная символика."
+    mem "Вот, уже командная символика."
+
+# game/echo_shift.rpy:993
+translate english ps_team_conflict_scene_fd515c48:
+
+    # n "Комната смеётся. Лера тоже улыбается, но больше в разговор не возвращается."
+    n "Комната смеётся. Лера тоже улыбается, но больше в разговор не возвращается."
+
+# game/echo_shift.rpy:1000
+translate english ps_team_conflict_scene_7333bb81:
+
+    # p "Хватит. Не каждый чужой страх обязан становиться твоим материалом."
+    p "Хватит. Не каждый чужой страх обязан становиться твоим материалом."
+
+# game/echo_shift.rpy:1001
+translate english ps_team_conflict_scene_ab301a8a:
+
+    # mem "Принял."
+    mem "Принял."
+
+# game/echo_shift.rpy:1002
+translate english ps_team_conflict_scene_ff5b41fb:
+
+    # n "Он замолкает. Лера кивает тебе и начинает складывать обёртки со стола."
+    n "Он замолкает. Лера кивает тебе и начинает складывать обёртки со стола."
+
+# game/echo_shift.rpy:1014
+translate english ps_team_conflict_scene_1b9a3419:
+
+    # sv "Я начну разговор. Сначала журнал, потом Лера подтвердит последовательность."
+    sv "Я начну разговор. Сначала журнал, потом Лера подтвердит последовательность."
+
+# game/echo_shift.rpy:1015
+translate english ps_team_conflict_scene_38772753:
+
+    # newb "Я могу начать сама."
+    newb "Я могу начать сама."
+
+# game/echo_shift.rpy:1016
+translate english ps_team_conflict_scene_a2da73f4:
+
+    # sv "Можешь. Но они начнут с недостачи и поведут разговор так, будто причина уже известна."
+    sv "Можешь. Но они начнут с недостачи и поведут разговор так, будто причина уже известна."
+
+# game/echo_shift.rpy:1024
+translate english ps_team_conflict_scene_9d658c29:
+
+    # p "Пусть начинает Лера. Если формулировку исказят, тогда подключишься ты."
+    p "Пусть начинает Лера. Если формулировку исказят, тогда подключишься ты."
+
+# game/echo_shift.rpy:1025
+translate english ps_team_conflict_scene_203c21eb:
+
+    # sv "Рискованно."
+    sv "Рискованно."
+
+# game/echo_shift.rpy:1026
+translate english ps_team_conflict_scene_77940605:
+
+    # newb "Зато это будет мой риск."
+    newb "Зато это будет мой риск."
+
+# game/echo_shift.rpy:1027
+translate english ps_team_conflict_scene_303cbec6:
+
+    # sv "Хорошо. Я не перебиваю."
+    sv "Хорошо. Я не перебиваю."
+
+# game/echo_shift.rpy:1034
+translate english ps_team_conflict_scene_894be926:
+
+    # p "Начинай с журналов. Нам нельзя потерять разговор из-за первой формулировки."
+    p "Начинай с журналов. Нам нельзя потерять разговор из-за первой формулировки."
+
+# game/echo_shift.rpy:1035
+translate english ps_team_conflict_scene_565c6576:
+
+    # sv "Именно."
+    sv "Именно."
+
+# game/echo_shift.rpy:1036
+translate english ps_team_conflict_scene_e60384df:
+
+    # newb "Тогда скажите, когда мне можно будет говорить."
+    newb "Тогда скажите, когда мне можно будет говорить."
+
+# game/echo_shift.rpy:1044
+translate english ps_team_conflict_scene_2d4d5045:
+
+    # p "Начну я. У меня вся хронология, и меня пока не записали в виноватые."
+    p "Начну я. У меня вся хронология, и меня пока не записали в виноватые."
+
+# game/echo_shift.rpy:1045
+translate english ps_team_conflict_scene_eea8c961:
+
+    # sv "Практично."
+    sv "Практично."
+
+# game/echo_shift.rpy:1046
+translate english ps_team_conflict_scene_32c1d1c3:
+
+    # n "Лера открывает рот, затем закрывает. Артём передаёт тебе папку."
+    n "Лера открывает рот, затем закрывает. Артём передаёт тебе папку."
+
+# game/echo_shift.rpy:1065
+translate english ps_team_conflict_scene_949923da:
+
+    # vet "Ручной режим работает. Я закрою остаток и потом отдам ключ."
+    vet "Ручной режим работает. Я закрою остаток и потом отдам ключ."
+
+# game/echo_shift.rpy:1066
+translate english ps_team_conflict_scene_1937cb2c:
+
+    # sv "Нет. Ты отдашь ключ сейчас."
+    sv "Нет. Ты отдашь ключ сейчас."
+
+# game/echo_shift.rpy:1067
+translate english ps_team_conflict_scene_f6b97c9c:
+
+    # vet "А ты закроешь остаток чем — должностной инструкцией?"
+    vet "А ты закроешь остаток чем — должностной инструкцией?"
+
+# game/echo_shift.rpy:1068
+translate english ps_team_conflict_scene_18f762db:
+
+    # sv "Если понадобится, остановлю участок."
+    sv "Если понадобится, остановлю участок."
+
+# game/echo_shift.rpy:1077
+translate english ps_team_conflict_scene_6cebb808:
+
+    # p "Останавливаем. Виктор передаёт ключ, Артём записывает LIFT-09 причиной. Оба ставите имена."
+    p "Останавливаем. Виктор передаёт ключ, Артём записывает LIFT-09 причиной. Оба ставите имена."
+
+# game/echo_shift.rpy:1078
+translate english ps_team_conflict_scene_ef9b97bb:
+
+    # vet "Чтобы никто не оказался крайним?"
+    vet "Чтобы никто не оказался крайним?"
+
+# game/echo_shift.rpy:1079
+translate english ps_team_conflict_scene_58b0007e:
+
+    # sv "Чтобы решение не исчезло."
+    sv "Чтобы решение не исчезло."
+
+# game/echo_shift.rpy:1087
+translate english ps_team_conflict_scene_87c29982:
+
+    # p "Одна партия. Артём стоит у панели, Виктор не подходит к механизму. После — полная блокировка."
+    p "Одна партия. Артём стоит у панели, Виктор не подходит к механизму. После — полная блокировка."
+
+# game/echo_shift.rpy:1088
+translate english ps_team_conflict_scene_46a17a67:
+
+    # vet "Договорились."
+    vet "Договорились."
+
+# game/echo_shift.rpy:1089
+translate english ps_team_conflict_scene_5d6c785c:
+
+    # sv "Мне не нравится."
+    sv "Мне не нравится."
+
+# game/echo_shift.rpy:1090
+translate english ps_team_conflict_scene_12354516:
+
+    # p "Мне тоже. Поэтому это не станет новой нормой."
+    p "Мне тоже. Поэтому это не станет новой нормой."
+
+# game/echo_shift.rpy:1098
+translate english ps_team_conflict_scene_31382336:
+
+    # p "Ключ Артёму. Сейчас."
+    p "Ключ Артёму. Сейчас."
+
+# game/echo_shift.rpy:1099
+translate english ps_team_conflict_scene_42b678b5:
+
+    # vet "Уже двое начальников. Удобно."
+    vet "Уже двое начальников. Удобно."
+
+# game/echo_shift.rpy:1100
+translate english ps_team_conflict_scene_f8f68087:
+
+    # n "Он отдаёт ключ и уходит к своему участку, не дожидаясь ответа."
+    n "Он отдаёт ключ и уходит к своему участку, не дожидаясь ответа."
+
+# game/echo_shift.rpy:1113
+translate english ps_team_conflict_scene_c83a60fc:
+
+    # newb "Мы зайдём вместе."
+    newb "Мы зайдём вместе."
+
+# game/echo_shift.rpy:1114
+translate english ps_team_conflict_scene_076129e3:
+
+    # vet "Нет. Если придём толпой, Морозов назовёт это давлением."
+    vet "Нет. Если придём толпой, Морозов назовёт это давлением."
+
+# game/echo_shift.rpy:1115
+translate english ps_team_conflict_scene_9743edc6:
+
+    # mem "А если по одному, он назовёт это четырьмя удобными версиями."
+    mem "А если по одному, он назовёт это четырьмя удобными версиями."
+
+# game/echo_shift.rpy:1116
+translate english ps_team_conflict_scene_cc7e3284:
+
+    # newb "Тогда что делать?"
+    newb "Тогда что делать?"
+
+# game/echo_shift.rpy:1127
+translate english ps_team_conflict_scene_7a3270e9:
+
+    # p "Сверяем время и документы вместе. В кабинете каждый говорит только о том, что видел сам."
+    p "Сверяем время и документы вместе. В кабинете каждый говорит только о том, что видел сам."
+
+# game/echo_shift.rpy:1128
+translate english ps_team_conflict_scene_21c8721c:
+
+    # vet "Не хор. Последовательность."
+    vet "Не хор. Последовательность."
+
+# game/echo_shift.rpy:1129
+translate english ps_team_conflict_scene_6def44a0:
+
+    # newb "И никто не заканчивает чужое предложение."
+    newb "И никто не заканчивает чужое предложение."
+
+# game/echo_shift.rpy:1130
+translate english ps_team_conflict_scene_987c9191:
+
+    # mem "Это явно было адресовано мне. Согласен."
+    mem "Это явно было адресовано мне. Согласен."
+
+# game/echo_shift.rpy:1138
+translate english ps_team_conflict_scene_de2dd0f5:
+
+    # p "Дайте мне материалы. Я изложу общую версию, чтобы он не растащил её на противоречия."
+    p "Дайте мне материалы. Я изложу общую версию, чтобы он не растащил её на противоречия."
+
+# game/echo_shift.rpy:1139
+translate english ps_team_conflict_scene_9c151d0b:
+
+    # newb "А мы?"
+    newb "А мы?"
+
+# game/echo_shift.rpy:1140
+translate english ps_team_conflict_scene_d54bb804:
+
+    # p "Подтвердите, если спросят."
+    p "Подтвердите, если спросят."
+
+# game/echo_shift.rpy:1141
+translate english ps_team_conflict_scene_1f13c57a:
+
+    # n "Лера первой кладёт документы на стол. После неё остальные молча добавляют свои."
+    n "Лера первой кладёт документы на стол. После неё остальные молча добавляют свои."
+
+# game/echo_shift.rpy:1147
+translate english ps_team_conflict_scene_e3668900:
+
+    # p "По одному. Так ни у кого не будет причины говорить, что мы договорились."
+    p "По одному. Так ни у кого не будет причины говорить, что мы договорились."
+
+# game/echo_shift.rpy:1148
+translate english ps_team_conflict_scene_cb97560d:
+
+    # vet "Логично."
+    vet "Логично."
+
+# game/echo_shift.rpy:1149
+translate english ps_team_conflict_scene_cac94a5d:
+
+    # mem "И очень удобно тому, кто задаёт вопросы."
+    mem "И очень удобно тому, кто задаёт вопросы."
+
+# game/echo_shift.rpy:1150
+translate english ps_team_conflict_scene_1ed5eb99:
+
+    # n "Спор заканчивается, согласия всё равно нет."
+    n "Спор заканчивается, согласия всё равно нет."
+
+# game/echo_shift.rpy:1180
+translate english ps_reactive_echo_scene_25b711d5:
+
+    # sv "После твоей остановки люди начали раньше сообщать о заторах. Цифры просели на три минуты, зато сегодня никто не полез разгребать контейнер руками."
+    sv "После твоей остановки люди начали раньше сообщать о заторах. Цифры просели на три минуты, зато сегодня никто не полез разгребать контейнер руками."
+
+# game/echo_shift.rpy:1181
+translate english ps_reactive_echo_scene_8d6c4f33:
+
+    # p "А в отчёте это указали?"
+    p "А в отчёте это указали?"
+
+# game/echo_shift.rpy:1182
+translate english ps_reactive_echo_scene_da8718d0:
+
+    # sv "Теперь — да. Я добавил отдельную причину: «остановлено сотрудником до происшествия»."
+    sv "Теперь — да. Я добавил отдельную причину: «остановлено сотрудником до происшествия»."
+
+# game/echo_shift.rpy:1188
+translate english ps_reactive_echo_scene_b668ca4e:
+
+    # newb "Сегодня у контейнера сразу позвали людей. Никто даже не начал искать виноватого."
+    newb "Сегодня у контейнера сразу позвали людей. Никто даже не начал искать виноватого."
+
+# game/echo_shift.rpy:1194
+translate english ps_reactive_echo_scene_ffaf7c16:
+
+    # vet "Вчера мы вытянули норму. Сегодня на тот же участок поставили ещё один контейнер и подняли скорость. Вот какой вывод сделали."
+    vet "Вчера мы вытянули норму. Сегодня на тот же участок поставили ещё один контейнер и подняли скорость. Вот какой вывод сделали."
+
+# game/echo_shift.rpy:1205
+translate english ps_reactive_echo_scene_61b4739e:
+
+    # newb "Вчера я начала сама. Сегодня в служебной записке впервые есть моя фраза. Раньше начальник пересказывал всё за меня."
+    newb "Вчера я начала сама. Сегодня в служебной записке впервые есть моя фраза. Раньше начальник пересказывал всё за меня."
+
+# game/echo_shift.rpy:1211
+translate english ps_reactive_echo_scene_43ae4748:
+
+    # newb "Мне прислали протокол. Там написано, что я «подтвердила изложенную версию». Формально правда. Только моей версии там нет."
+    newb "Мне прислали протокол. Там написано, что я «подтвердила изложенную версию». Формально правда. Только моей версии там нет."
+
+# game/echo_shift.rpy:1223
+translate english ps_reactive_echo_scene_3c7a4330:
+
+    # vet "Ротация сработала. Рука ноет меньше, чем обычно."
+    vet "Ротация сработала. Рука ноет меньше, чем обычно."
+
+# game/echo_shift.rpy:1224
+translate english ps_reactive_echo_scene_e8dc7b30:
+
+    # newb "А я впервые дошла до конца смены и не перестала понимать, что сканирую."
+    newb "А я впервые дошла до конца смены и не перестала понимать, что сканирую."
+
+# game/echo_shift.rpy:1231
+translate english ps_reactive_echo_scene_6976bc20:
+
+    # sv "План закрыли. Виктор после смены не смог сразу снять перчатку. В отчёте обе строки зелёные."
+    sv "План закрыли. Виктор после смены не смог сразу снять перчатку. В отчёте обе строки зелёные."
+
+# game/echo_shift.rpy:1232
+translate english ps_reactive_echo_scene_7b0e969c:
+
+    # p "Значит, проверять людей через час было поздно."
+    p "Значит, проверять людей через час было поздно."
+
+# game/echo_shift.rpy:1238
+translate english ps_reactive_echo_scene_d85d5d38:
+
+    # mem "Хвост выбили за сорок минут. Потом два часа никто не разговаривал — воздуха не хватало. Зато план зелёный."
+    mem "Хвост выбили за сорок минут. Потом два часа никто не разговаривал — воздуха не хватало. Зато план зелёный."
+
+# game/echo_shift.rpy:1252
+translate english ps_reactive_echo_scene_43009be0:
+
+    # newb "Сегодня не жди от меня сигнала. Если что-то будет не так, я скажу первой. Ты всё равно услышишь."
+    newb "Сегодня не жди от меня сигнала. Если что-то будет не так, я скажу первой. Ты всё равно услышишь."
+
+# game/echo_shift.rpy:1254
+translate english ps_reactive_echo_scene_72be3f91:
+
+    # newb "Перед запуском скажи, куда мне встать и что отвечать, если вызовут. Когда ты уже решил, у меня хотя бы не дрожат руки."
+    newb "Перед запуском скажи, куда мне встать и что отвечать, если вызовут. Когда ты уже решил, у меня хотя бы не дрожат руки."
+
+# game/echo_shift.rpy:1260
+translate english ps_reactive_echo_scene_ca2c823f:
+
+    # vet "Ключ от подъёмника у Артёма. Странное чувство: впервые пришёл на смену и заранее знаю, чего делать не буду."
+    vet "Ключ от подъёмника у Артёма. Странное чувство: впервые пришёл на смену и заранее знаю, чего делать не буду."
+
+# game/echo_shift.rpy:1262
+translate english ps_reactive_echo_scene_4fa484a7:
+
+    # vet "Если линия встанет, сначала зови меня. После финала можете читать лекции про безопасность сколько угодно."
+    vet "Если линия встанет, сначала зови меня. После финала можете читать лекции про безопасность сколько угодно."
+
+# game/echo_shift.rpy:1268
+translate english ps_reactive_echo_scene_f483d618:
+
+    # mem "Мне страшно. Всё, сказал. Теперь можем работать без обязательной шутки в конце."
+    mem "Мне страшно. Всё, сказал. Теперь можем работать без обязательной шутки в конце."
+
+# game/echo_shift.rpy:1270
+translate english ps_reactive_echo_scene_9d59ac36:
+
+    # mem "Последняя смена! Сегодня шутки бесплатные, паника по подписке, исчезновения только после согласования."
+    mem "Последняя смена! Сегодня шутки бесплатные, паника по подписке, исчезновения только после согласования."
+
+# game/echo_shift.rpy:1276
+translate english ps_reactive_echo_scene_ef89fd0d:
+
+    # sv "Общий стоп доступен каждому. Лишнюю остановку потом объясним. При опасности не ждите меня."
+    sv "Общий стоп доступен каждому. Лишнюю остановку потом объясним. При опасности не ждите меня."
+
+# game/echo_shift.rpy:1278
+translate english ps_reactive_echo_scene_59df64e4:
+
+    # sv "Никаких решений без моего подтверждения. Сегодня я отвечаю за каждый запуск и каждую остановку."
+    sv "Никаких решений без моего подтверждения. Сегодня я отвечаю за каждый запуск и каждую остановку."
+
+# game/echo_shift.rpy:1298
+translate english ps_deep_investigation_scene_93d90884:
+
+    # n "Фотографии и выписки уже в папке. Ты раскладываешь их по времени и проверяешь, где не хватает номера операции или подписи."
+    n "Фотографии и выписки уже в папке. Ты раскладываешь их по времени и проверяешь, где не хватает номера операции или подписи."
+
+# game/echo_shift.rpy:1318
+translate english ps_deep_investigation_scene_6270e960:
+
+    # p "Ремонт отменили за девять дней до нашей смены. Остановку удалили после синхронизации. Недостачу провели через общий буфер. И только потом подготовили причину про сотрудника."
+    p "Ремонт отменили за девять дней до нашей смены. Остановку удалили после синхронизации. Недостачу провели через общий буфер. И только потом подготовили причину про сотрудника."
+
+# game/echo_shift.rpy:1319
+translate english ps_deep_investigation_scene_152ab552:
+
+    # cur "Ты называешь это системой?"
+    cur "Ты называешь это системой?"
+
+# game/echo_shift.rpy:1320
+translate english ps_deep_investigation_scene_300d447e:
+
+    # p "Я называю это хронологией. Система — ваше слово."
+    p "Я называю это хронологией. Система — ваше слово."
+
+# game/echo_shift.rpy:1321
+translate english ps_deep_investigation_scene_0b281db5:
+
+    # sv "Все четыре события подтверждаются независимо."
+    sv "Все четыре события подтверждаются независимо."
+
+# game/echo_shift.rpy:1325
+translate english ps_deep_investigation_scene_3ab092fa:
+
+    # p "Часть событий связана. Но между удалённой записью и готовым отчётом остаётся разрыв."
+    p "Часть событий связана. Но между удалённой записью и готовым отчётом остаётся разрыв."
+
+# game/echo_shift.rpy:1326
+translate english ps_deep_investigation_scene_67ab79d5:
+
+    # cur "Разрыв, в который вы поместили удобное объяснение."
+    cur "Разрыв, в который вы поместили удобное объяснение."
+
+# game/echo_shift.rpy:1327
+translate english ps_deep_investigation_scene_95eb91bc:
+
+    # sv "Или место, где нам не дали доступ к журналу."
+    sv "Или место, где нам не дали доступ к журналу."
+
+# game/echo_shift.rpy:1328
+translate english ps_deep_investigation_scene_e62c4cf6:
+
+    # n "Два события подтверждены. Для остальных куратор требует отдельный источник и точное время."
+    n "Два события подтверждены. Для остальных куратор требует отдельный источник и точное время."
+
+# game/echo_shift.rpy:1332
+translate english ps_deep_investigation_scene_a81226c1:
+
+    # p "Все события выглядят подозрительно."
+    p "Все события выглядят подозрительно."
+
+# game/echo_shift.rpy:1333
+translate english ps_deep_investigation_scene_4f0f341c:
+
+    # cur "Подозрение — не последовательность. Вы принесли четыре отдельных тревоги и назвали их причиной."
+    cur "Подозрение — не последовательность. Вы принесли четыре отдельных тревоги и назвали их причиной."
+
+# game/echo_shift.rpy:1334
+translate english ps_deep_investigation_scene_2e2730be:
+
+    # n "На доске много связей, но ты не можешь назвать источник ни для одной из них."
+    n "На доске много связей, но ты не можешь назвать источник ни для одной из них."
+
+# game/echo_shift.rpy:1360
+translate english ps_storm_mimic_scene_99523810:
+
+    # n "На долю секунды память подсовывает лишнего человека в знакомой сцене. Отводишь взгляд — и остаётся только экран телефона."
+    n "На долю секунды память подсовывает лишнего человека в знакомой сцене. Отводишь взгляд — и остаётся только экран телефона."
+
+# game/echo_shift.rpy:1365
+translate english ps_storm_mimic_scene_eaec00f6:
+
+    # n "На одном из восстановленных кадров Макс сидит у терминала один. На его лице впервые нет привычной шутки."
+    n "На одном из восстановленных кадров Макс сидит у терминала один. На его лице впервые нет привычной шутки."
+
+# game/echo_shift.rpy:1371
+translate english ps_storm_mimic_scene_24570150:
+
+    # n "Телефон показывает четыре сообщения с разницей в одну минуту. Все отправлены с настоящих контактов. Но одно просит человека сделать именно то, чего он боялся всю неделю."
+    n "Телефон показывает четыре сообщения с разницей в одну минуту. Все отправлены с настоящих контактов. Но одно просит человека сделать именно то, чего он боялся всю неделю."
+
+# game/echo_shift.rpy:1383
+translate english ps_storm_mimic_scene_3b837a82:
+
+    # n "Ты нажимаешь на сообщение Макса. Его время меняется первым: 06:13 превращается в --:--. Текст распадается на отдельные буквы. Под ними появляется новая строка: «ГОЛОС ОПРЕДЕЛЁН ПО ПАМЯТИ СМЕНЫ»."
+    n "Ты нажимаешь на сообщение Макса. Его время меняется первым: 06:13 превращается в --:--. Текст распадается на отдельные буквы. Под ними появляется новая строка: «ГОЛОС ОПРЕДЕЛЁН ПО ПАМЯТИ СМЕНЫ»."
+
+# game/echo_shift.rpy:1384
+translate english ps_storm_mimic_scene_66246f39:
+
+    # mem "Я бы никогда не попросил никого не считать людей. Даже подделывать меня надо внимательнее."
+    mem "Я бы никогда не попросил никого не считать людей. Даже подделывать меня надо внимательнее."
+
+# game/echo_shift.rpy:1389
+translate english ps_storm_mimic_scene_e49d88be:
+
+    # n "Отмеченное сообщение гаснет. Через секунду возвращается с обычным временем и отметкой «прочитано». Настоящий автор отвечает коротко: «Это был я». Поддельный голос остаётся в списке."
+    n "Отмеченное сообщение гаснет. Через секунду возвращается с обычным временем и отметкой «прочитано». Настоящий автор отвечает коротко: «Это был я». Поддельный голос остаётся в списке."
+
+# game/echo_shift.rpy:1430
+translate english ps_route_resolution_scene_8303b680:
+
+    # newb "Я уже отправила свою хронологию. Не тебе на проверку — сразу в дело."
+    newb "Я уже отправила свою хронологию. Не тебе на проверку — сразу в дело."
+
+# game/echo_shift.rpy:1431
+translate english ps_route_resolution_scene_ea64bf7e:
+
+    # p "Страшно?"
+    p "Страшно?"
+
+# game/echo_shift.rpy:1432
+translate english ps_route_resolution_scene_9545e0b7:
+
+    # newb "Да. Руки до сих пор дрожат. Но текст я отправила сама."
+    newb "Да. Руки до сих пор дрожат. Но текст я отправила сама."
+
+# game/echo_shift.rpy:1435
+translate english ps_route_resolution_scene_dd06d9ea:
+
+    # newb "Я написала черновик. Посмотришь и отправишь от своего имени? Твоим словам поверят быстрее."
+    newb "Я написала черновик. Посмотришь и отправишь от своего имени? Твоим словам поверят быстрее."
+
+# game/echo_shift.rpy:1436
+translate english ps_route_resolution_scene_48044946:
+
+    # p "А твоим?"
+    p "А твоим?"
+
+# game/echo_shift.rpy:1437
+translate english ps_route_resolution_scene_0703ab8b:
+
+    # newb "Я пока всё равно жду, что ты скажешь: правильно или нет."
+    newb "Я пока всё равно жду, что ты скажешь: правильно или нет."
+
+# game/echo_shift.rpy:1438
+translate english ps_route_resolution_scene_6b85035c:
+
+    # n "Она протягивает тебе телефон с открытым черновиком и кнопкой отправки."
+    n "Она протягивает тебе телефон с открытым черновиком и кнопкой отправки."
+
+# game/echo_shift.rpy:1447
+translate english ps_route_resolution_scene_49382c5d:
+
+    # vet "Я поставил себя на выходной. Сам. Без твоего приказа и без справки после падения."
+    vet "Я поставил себя на выходной. Сам. Без твоего приказа и без справки после падения."
+
+# game/echo_shift.rpy:1448
+translate english ps_route_resolution_scene_5b289f90:
+
+    # p "Склад переживёт?"
+    p "Склад переживёт?"
+
+# game/echo_shift.rpy:1449
+translate english ps_route_resolution_scene_0e2a4e37:
+
+    # vet "Теперь это его проблема."
+    vet "Теперь это его проблема."
+
+# game/echo_shift.rpy:1452
+translate english ps_route_resolution_scene_2280c7aa:
+
+    # vet "После финального запуска уйду. До него не трогай меня и не смотри на руку."
+    vet "После финального запуска уйду. До него не трогай меня и не смотри на руку."
+
+# game/echo_shift.rpy:1453
+translate english ps_route_resolution_scene_4e0f5d74:
+
+    # p "Ты ведь сам просил остановить тебя."
+    p "Ты ведь сам просил остановить тебя."
+
+# game/echo_shift.rpy:1454
+translate english ps_route_resolution_scene_d6d25e86:
+
+    # vet "Просил. А теперь прошу дать закончить. Видишь, какой я последовательный."
+    vet "Просил. А теперь прошу дать закончить. Видишь, какой я последовательный."
+
+# game/echo_shift.rpy:1455
+translate english ps_route_resolution_scene_a2624d68:
+
+    # n "Он натягивает перчатку поверх бинта и прячет руку в карман."
+    n "Он натягивает перчатку поверх бинта и прячет руку в карман."
+
+# game/echo_shift.rpy:1464
+translate english ps_route_resolution_scene_9ef5974e:
+
+    # mem "Я не придумал, как сделать это смешным. Поэтому скажу как есть: если вы уйдёте, я не хочу оставаться здесь один."
+    mem "Я не придумал, как сделать это смешным. Поэтому скажу как есть: если вы уйдёте, я не хочу оставаться здесь один."
+
+# game/echo_shift.rpy:1465
+translate english ps_route_resolution_scene_e5ca67c8:
+
+    # p "Вот и не оставайся."
+    p "Вот и не оставайся."
+
+# game/echo_shift.rpy:1466
+translate english ps_route_resolution_scene_4127f7ca:
+
+    # mem "Невероятно короткий сценарий. Работает лучше моих."
+    mem "Невероятно короткий сценарий. Работает лучше моих."
+
+# game/echo_shift.rpy:1469
+translate english ps_route_resolution_scene_d7db3d33:
+
+    # mem "После смены устрою прощальный стендап. Тема вечера: «Как потерять всех коллег и всё равно закрыть план»."
+    mem "После смены устрою прощальный стендап. Тема вечера: «Как потерять всех коллег и всё равно закрыть план»."
+
+# game/echo_shift.rpy:1470
+translate english ps_route_resolution_scene_8d10478a:
+
+    # p "Макс."
+    p "Макс."
+
+# game/echo_shift.rpy:1471
+translate english ps_route_resolution_scene_bd852209:
+
+    # mem "Не сейчас. Если перестану говорить, придётся услышать ответ."
+    mem "Не сейчас. Если перестану говорить, придётся услышать ответ."
+
+# game/echo_shift.rpy:1472
+translate english ps_route_resolution_scene_99ae2298:
+
+    # n "Макс улыбается и сразу начинает говорить быстрее."
+    n "Макс улыбается и сразу начинает говорить быстрее."
+
+# game/echo_shift.rpy:1481
+translate english ps_route_resolution_scene_27972617:
+
+    # sv "Я открыл общий стоп всем терминалам. После смены за это придётся отвечать."
+    sv "Я открыл общий стоп всем терминалам. После смены за это придётся отвечать."
+
+# game/echo_shift.rpy:1482
+translate english ps_route_resolution_scene_9fafc453:
+
+    # p "Своим именем?"
+    p "Своим именем?"
+
+# game/echo_shift.rpy:1483
+translate english ps_route_resolution_scene_1fefbd33:
+
+    # sv "Да. В журнале уже стоит: Артём Волков."
+    sv "Да. В журнале уже стоит: Артём Волков."
+
+# game/echo_shift.rpy:1486
+translate english ps_route_resolution_scene_6c6ae5cf:
+
+    # sv "До конца смены все команды идут через меня. Даже если я ошибусь, линия хотя бы ошибётся один раз, а не четырьмя разными способами."
+    sv "До конца смены все команды идут через меня. Даже если я ошибусь, линия хотя бы ошибётся один раз, а не четырьмя разными способами."
+
+# game/echo_shift.rpy:1487
+translate english ps_route_resolution_scene_43d7f123:
+
+    # p "А если тебя не будет рядом?"
+    p "А если тебя не будет рядом?"
+
+# game/echo_shift.rpy:1488
+translate english ps_route_resolution_scene_2cd67021:
+
+    # sv "Значит, никто ничего не запускает."
+    sv "Значит, никто ничего не запускает."
+
+# game/echo_shift.rpy:1489
+translate english ps_route_resolution_scene_f10a9261:
+
+    # n "На остальных терминалах кнопка запуска становится серой. Теперь без Артёма линию не включит никто."
+    n "На остальных терминалах кнопка запуска становится серой. Теперь без Артёма линию не включит никто."
+
+# game/echo_shift.rpy:1515
+translate english ps_zero_shift_5162fb84:
+
+    # centered "ПОСЛЕ ТИТРОВ\n\nНУЛЕВАЯ СМЕНА"
+    centered "ПОСЛЕ ТИТРОВ\n\nНУЛЕВАЯ СМЕНА"
+
+# game/echo_shift.rpy:1520
+translate english ps_zero_shift_409961d3:
+
+    # n "Проходная уже закрыла вашу неделю, но телефон показывает незавершённую операцию. Время начала — 00:00. Время окончания отсутствует. В карточке нет номера сотрудника. Только строка: «СМЕНА 0 // НЕ ПЕРЕДАНА»."
+    n "Проходная уже закрыла вашу неделю, но телефон показывает незавершённую операцию. Время начала — 00:00. Время окончания отсутствует. В карточке нет номера сотрудника. Только строка: «СМЕНА 0 // НЕ ПЕРЕДАНА»."
+
+# game/echo_shift.rpy:1527
+translate english ps_zero_shift_249963f4:
+
+    # newb "Сообщение пришло всем. На этот раз текст одинаковый."
+    newb "Сообщение пришло всем. На этот раз текст одинаковый."
+
+# game/echo_shift.rpy:1528
+translate english ps_zero_shift_7f17901e:
+
+    # vet "Значит, либо настоящее, либо научилось не ошибаться."
+    vet "Значит, либо настоящее, либо научилось не ошибаться."
+
+# game/echo_shift.rpy:1529
+translate english ps_zero_shift_eae06ae2:
+
+    # mem "Очень успокаивающий выбор из двух вариантов."
+    mem "Очень успокаивающий выбор из двух вариантов."
+
+# game/echo_shift.rpy:1537
+translate english ps_zero_shift_45e25d1c:
+
+    # sv "Я нашёл старый журнал. До введения ночного рейтинга здесь была смена, которую выводили между закрытием одного отчётного дня и началом другого."
+    sv "Я нашёл старый журнал. До введения ночного рейтинга здесь была смена, которую выводили между закрытием одного отчётного дня и началом другого."
+
+# game/echo_shift.rpy:1538
+translate english ps_zero_shift_52f65b3e:
+
+    # p "Нулевая?"
+    p "Нулевая?"
+
+# game/echo_shift.rpy:1539
+translate english ps_zero_shift_e8d50f04:
+
+    # sv "В документах её нет. Но все отменённые заявки проходили через её код. V-13 был не сектором. Сначала это был номер смены."
+    sv "В документах её нет. Но все отменённые заявки проходили через её код. V-13 был не сектором. Сначала это был номер смены."
+
+# game/echo_shift.rpy:1542
+translate english ps_zero_shift_a0a2c8c7:
+
+    # n "За бетонной дверью щёлкает реле. По очереди загораются пять индикаторов — ровно столько, сколько людей стоит в коридоре."
+    n "За бетонной дверью щёлкает реле. По очереди загораются пять индикаторов — ровно столько, сколько людей стоит в коридоре."
+
+# game/echo_shift.rpy:1548
+translate english ps_zero_shift_393c0a98:
+
+    # n "На старом табло появляются фамилии сотрудников, которых давно нет в графике. Последняя строка остаётся пустой, пока ты не подходишь ближе. Система вписывает твоё имя и задаёт первый вопрос без готового ответа: «КТО ПЕРЕДАСТ ЭТУ СМЕНУ?»"
+    n "На старом табло появляются фамилии сотрудников, которых давно нет в графике. Последняя строка остаётся пустой, пока ты не подходишь ближе. Система вписывает твоё имя и задаёт первый вопрос без готового ответа: «КТО ПЕРЕДАСТ ЭТУ СМЕНУ?»"
+
+# game/echo_shift.rpy:1551
+translate english ps_zero_shift_f75aa139:
+
+    # p "Мы. По очереди. Каждый — только то, что видел сам."
+    p "Мы. По очереди. Каждый — только то, что видел сам."
+
+# game/echo_shift.rpy:1552
+translate english ps_zero_shift_5c52457f:
+
+    # n "Четыре голоса за спиной отвечают не одновременно, но одним решением."
+    n "Четыре голоса за спиной отвечают не одновременно, но одним решением."
+
+# game/echo_shift.rpy:1554
+translate english ps_zero_shift_44d1cde6:
+
+    # p "Сначала открой дверь."
+    p "Сначала открой дверь."
+
+# game/echo_shift.rpy:1555
+translate english ps_zero_shift_a957f46b:
+
+    # n "Замок отвечает зелёным светом и приглашает продолжить спор с другой стороны."
+    n "Замок отвечает зелёным светом и приглашает продолжить спор с другой стороны."
+
+# game/echo_shift.rpy:1557
+translate english ps_zero_shift_3920775d:
+
+    # centered "PURPLE SHIFT\n\nНУЛЕВАЯ СМЕНА ОТКРЫТА"
+    centered "PURPLE SHIFT\n\nНУЛЕВАЯ СМЕНА ОТКРЫТА"
+
+translate english strings:
+
+    # game/echo_shift.rpy:739
+    old "Попросить её начать самой и вмешаться только при необходимости"
+    new "Попросить её начать самой и вмешаться только при необходимости"
+
+    # game/echo_shift.rpy:748
+    old "Предложить дать знак и сразу взять разговор на себя"
+    new "Предложить дать знак и сразу взять разговор на себя"
+
+    # game/echo_shift.rpy:767
+    old "Попросить сообщить о боли Артёму сейчас"
+    new "Попросить сообщить о боли Артёму сейчас"
+
+    # game/echo_shift.rpy:776
+    old "Согласиться закончить участок и никому не говорить"
+    new "Согласиться закончить участок и никому не говорить"
+
+    # game/echo_shift.rpy:794
+    old "Остаться рядом без требования развлекать тебя"
+    new "Остаться рядом без требования развлекать тебя"
+
+    # game/echo_shift.rpy:803
+    old "Попросить его вернуть настроение команде"
+    new "Попросить его вернуть настроение команде"
+
+    # game/echo_shift.rpy:820
+    old "Потребовать назвать решения своими именами"
+    new "Потребовать назвать решения своими именами"
+
+    # game/echo_shift.rpy:829
+    old "Предложить жёстче контролировать решения команды"
+    new "Предложить жёстче контролировать решения команды"
+
+    # game/echo_shift.rpy:851
+    old "Отдать Лере документы и войти следом"
+    new "Отдать Лере документы и войти следом"
+
+    # game/echo_shift.rpy:860
+    old "Войти первым и представить её версию"
+    new "Войти первым и представить её версию"
+
+    # game/echo_shift.rpy:877
+    old "Попросить Виктора самому передать ключ блокировки"
+    new "Попросить Виктора самому передать ключ блокировки"
+
+    # game/echo_shift.rpy:886
+    old "Попросить показать ручной режим в последний раз"
+    new "Попросить показать ручной режим в последний раз"
+
+    # game/echo_shift.rpy:903
+    old "Пересчитать вместе и спросить прямо, страшно ли ему"
+    new "Пересчитать вместе и спросить прямо, страшно ли ему"
+
+    # game/echo_shift.rpy:912
+    old "Подыграть и вернуть привычную шутку"
+    new "Подыграть и вернуть привычную шутку"
+
+    # game/echo_shift.rpy:928
+    old "Потребовать право команды остановить опасную операцию"
+    new "Потребовать право команды остановить опасную операцию"
+
+    # game/echo_shift.rpy:937
+    old "Поддержать единый центр управления"
+    new "Поддержать единый центр управления"
+
+    # game/echo_shift.rpy:976
+    old "Дать Лере договорить, а Макса попросить услышать ответ"
+    new "Дать Лере договорить, а Макса попросить услышать ответ"
+
+    # game/echo_shift.rpy:985
+    old "Поддержать шутку, чтобы снять напряжение"
+    new "Поддержать шутку, чтобы снять напряжение"
+
+    # game/echo_shift.rpy:995
+    old "Резко оборвать Макса"
+    new "Резко оборвать Макса"
+
+    # game/echo_shift.rpy:1019
+    old "Попросить Артёма сначала выслушать Леру"
+    new "Попросить Артёма сначала выслушать Леру"
+
+    # game/echo_shift.rpy:1029
+    old "Согласиться с планом Артёма"
+    new "Согласиться с планом Артёма"
+
+    # game/echo_shift.rpy:1038
+    old "Самому представить общую версию"
+    new "Самому представить общую версию"
+
+    # game/echo_shift.rpy:1071
+    old "Остановить участок и записать причину вместе"
+    new "Остановить участок и записать причину вместе"
+
+    # game/echo_shift.rpy:1081
+    old "Дать Виктору закончить одну партию под контролем Артёма"
+    new "Дать Виктору закончить одну партию под контролем Артёма"
+
+    # game/echo_shift.rpy:1092
+    old "Поддержать приказ Артёма без обсуждения"
+    new "Поддержать приказ Артёма без обсуждения"
+
+    # game/echo_shift.rpy:1119
+    old "Собрать одну хронологию, но дать каждому говорить за себя"
+    new "Собрать одну хронологию, но дать каждому говорить за себя"
+
+    # game/echo_shift.rpy:1132
+    old "Взять общий разговор на себя"
+    new "Взять общий разговор на себя"
+
+    # game/echo_shift.rpy:1143
+    old "Попросить всех говорить отдельно"
+    new "Попросить всех говорить отдельно"
+
