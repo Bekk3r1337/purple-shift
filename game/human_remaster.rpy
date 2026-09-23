@@ -318,7 +318,7 @@ screen ps_shift_pulse():
                 spacing 14
                 xalign 0.5
 
-                textbutton "ТЕЛЕФОН":
+                textbutton _("ТЕЛЕФОН"):
                     action [Hide("ps_shift_pulse"), Show("ps_phone")]
                     xsize 300
                     ysize 60
