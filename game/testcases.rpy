@@ -793,7 +793,9 @@ testsuite purple_shift:
 
         $ ps_english_messages = [ps_message_data(message["id"]) for message in ps_message_catalog]
         $ ps_english_message_texts = [value for message in ps_english_messages for value in ([message.get("sender", ""), message.get("preview", ""), message.get("status", ""), message.get("attachment_caption", ""), message.get("voice_caption", "")] + list(message.get("incoming", [])) + [field for reply in message.get("replies", []) for field in (reply.get("title", ""), reply.get("answer", ""), reply.get("reaction", ""))])]
-        assert eval (not any(any("\u0400" <= char <= "\u04ff" for char in value) for value in ps_english_message_texts if value))
+        $ ps_english_message_cyrillic = [value for value in ps_english_message_texts if value and any("\u0400" <= char <= "\u04ff" for char in value)]
+        $ print("ENGLISH_MESSAGE_CYRILLIC_LEAKS:", repr(ps_english_message_cyrillic))
+        assert eval (not ps_english_message_cyrillic)
 
         $ ps_english_archive_texts = [_(title) for _item_id, title, _path in ps_cg_catalog] + [_(title) for _item_id, title, _desc in ps_document_catalog] + [_(desc) for _item_id, _title, desc in ps_document_catalog] + [_(title) for _item_id, title, _desc in ps_achievement_catalog] + [_(desc) for _item_id, _title, desc in ps_achievement_catalog]
         assert eval (not any(any("\u0400" <= char <= "\u04ff" for char in value) for value in ps_english_archive_texts if value))
