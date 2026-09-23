@@ -2,36 +2,6 @@
 
 translate english strings:
 
-    old "Новичок"
-    new "Newcomer"
-
-    old "Ветеран"
-    new "Veteran"
-
-    old "Шутник"
-    new "Joker"
-
-    old "Супервайзер"
-    new "Supervisor"
-
-    old "Куратор"
-    new "Curator"
-
-    old "Лера"
-    new "Lera"
-
-    old "Виктор"
-    new "Viktor"
-
-    old "Макс"
-    new "Max"
-
-    old "Артём"
-    new "Artyom"
-
-    old "Морозов"
-    new "Morozov"
-
     old "Валерия Мельникова"
     new "Valeria Melnikova"
 
@@ -113,33 +83,6 @@ translate english strings:
     old "Твои шутки помогают команде пережить тяжёлую смену."
     new "Your jokes help the team survive a hard shift."
 
-    old "Смена действует как команда"
-    new "The shift acts as a team"
-
-    old "Люди учатся замечать друг друга"
-    new "People are learning to notice each other"
-
-    old "Смена держится, но трещины видны"
-    new "The shift is holding, but the cracks show"
-
-    old "Каждый пытается выбраться один"
-    new "Everyone is trying to get out alone"
-
-    old "На грани срыва"
-    new "On the verge of breaking"
-
-    old "Боится, но всё равно говорит"
-    new "Afraid, but still speaks up"
-
-    old "Тело дошло, внимание отстаёт"
-    new "The body made it; attention is lagging behind"
-
-    old "Начинает выбирать сам"
-    new "Starting to choose for himself"
-
-    old "Пока учится слышать себя"
-    new "Still learning to listen to himself"
-
     old "Лера больше не просит разрешения сообщить об ошибке."
     new "Lera no longer asks permission to report an error."
 
@@ -212,18 +155,6 @@ translate english strings:
     old "рабочий канал"
     new "work channel"
 
-    old "Вторая смена"
-    new "Second Shift"
-
-    old "Дорогу до склада ты уже запомнил. Всё остальное придётся учить заново."
-    new "You already know the road to the warehouse. Everything else has to be learned again."
-
-
-    old "Итоги второго дня"
-    new "Day Two Results"
-
-    old "Вторая смена закончена. То, что ты сделал у контейнера, заметили все."
-    new "The second shift is over. Everyone noticed what you did at the container."
 
     old "КОМАНДА"
     new "TEAM"
