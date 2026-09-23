@@ -307,23 +307,23 @@ init 40 python:
     def ps2_collective_title():
         score = ps2_collective_score()
         if score >= 18:
-            return "Смена действует как команда"
+            return _("Смена действует как команда")
         if score >= 12:
-            return "Люди учатся замечать друг друга"
+            return _("Люди учатся замечать друг друга")
         if score >= 7:
-            return "Смена держится, но трещины видны"
-        return "Каждый пытается выбраться один"
+            return _("Смена держится, но трещины видны")
+        return _("Каждый пытается выбраться один")
 
     def ps2_hero_title():
         if ps2_pressure >= 9 and ps2_fatigue >= 8:
-            return "На грани срыва"
+            return _("На грани срыва")
         if ps2_resolve >= 8 and ps2_pressure >= 6:
-            return "Боится, но всё равно говорит"
+            return _("Боится, но всё равно говорит")
         if ps2_fatigue >= 8:
-            return "Тело дошло, внимание отстаёт"
+            return _("Тело дошло, внимание отстаёт")
         if ps2_resolve >= 6:
-            return "Начинает выбирать сам"
-        return "Пока учится слышать себя"
+            return _("Начинает выбирать сам")
+        return _("Пока учится слышать себя")
 
     def ps2_storm_stage():
         value = ps2_pressure + ps2_team_fear + len(ps_storm_fragments)
@@ -343,7 +343,7 @@ init 40 python:
             "joker": "Макс всё ещё шутит, но теперь умеет закончить фразу без улыбки.",
             "supervisor": "Артём учится произносить решение от своего имени, не прячась за регламент.",
         }
-        return route_names.get(route, "Смена помнит людей по именам.")
+        return _(route_names.get(route, "Смена помнит людей по именам."))
 
     def ps2_finish_run():
         persistent.ps2_new_shift_plus_unlocked = True
