@@ -1416,131 +1416,131 @@ translate english strings:
 
     # game/echo_shift.rpy:398
     old "НУЛЕВАЯ СМЕНА ОТКРЫТА"
-    new "НУЛЕВАЯ СМЕНА ОТКРЫТА"
+    new "ZERO SHIFT UNLOCKED"
 
     # game/echo_shift.rpy:400
     old "КАНАЛ V-13 ВОССТАНОВЛЕН"
-    new "КАНАЛ V-13 ВОССТАНОВЛЕН"
+    new "V-13 CHANNEL RESTORED"
 
     # game/echo_shift.rpy:402
     old "СМЕНА ПОМНИТ ПРОХОЖДЕНИЕ"
-    new "СМЕНА ПОМНИТ ПРОХОЖДЕНИЕ"
+    new "THE SHIFT REMEMBERS THIS RUN"
 
     # game/echo_shift.rpy:403
     old "ДО НАЧАЛА СМЕНЫ"
-    new "ДО НАЧАЛА СМЕНЫ"
+    new "BEFORE THE SHIFT"
 
     # game/echo_shift.rpy:745
     old "Попросить её начать самой и вмешаться только при необходимости"
-    new "Попросить её начать самой и вмешаться только при необходимости"
+    new "Ask her to start herself and step in only if necessary"
 
     # game/echo_shift.rpy:754
     old "Предложить дать знак и сразу взять разговор на себя"
-    new "Предложить дать знак и сразу взять разговор на себя"
+    new "Offer her a signal and take over the conversation immediately"
 
     # game/echo_shift.rpy:773
     old "Попросить сообщить о боли Артёму сейчас"
-    new "Попросить сообщить о боли Артёму сейчас"
+    new "Ask her to tell Artyom about the pain now"
 
     # game/echo_shift.rpy:782
     old "Согласиться закончить участок и никому не говорить"
-    new "Согласиться закончить участок и никому не говорить"
+    new "Agree to finish the section and tell nobody"
 
     # game/echo_shift.rpy:800
     old "Остаться рядом без требования развлекать тебя"
-    new "Остаться рядом без требования развлекать тебя"
+    new "Stay beside him without expecting him to entertain you"
 
     # game/echo_shift.rpy:809
     old "Попросить его вернуть настроение команде"
-    new "Попросить его вернуть настроение команде"
+    new "Ask him to lift the team's mood"
 
     # game/echo_shift.rpy:826
     old "Потребовать назвать решения своими именами"
-    new "Потребовать назвать решения своими именами"
+    new "Insist on naming the decisions for what they are"
 
     # game/echo_shift.rpy:835
     old "Предложить жёстче контролировать решения команды"
-    new "Предложить жёстче контролировать решения команды"
+    new "Suggest tighter control over the team's decisions"
 
     # game/echo_shift.rpy:857
     old "Отдать Лере документы и войти следом"
-    new "Отдать Лере документы и войти следом"
+    new "Give Lera the documents and follow her in"
 
     # game/echo_shift.rpy:866
     old "Войти первым и представить её версию"
-    new "Войти первым и представить её версию"
+    new "Go in first and present her version"
 
     # game/echo_shift.rpy:883
     old "Попросить Виктора самому передать ключ блокировки"
-    new "Попросить Виктора самому передать ключ блокировки"
+    new "Ask Viktor to hand over the lockout key himself"
 
     # game/echo_shift.rpy:892
     old "Попросить показать ручной режим в последний раз"
-    new "Попросить показать ручной режим в последний раз"
+    new "Ask him to demonstrate manual mode one last time"
 
     # game/echo_shift.rpy:909
     old "Пересчитать вместе и спросить прямо, страшно ли ему"
-    new "Пересчитать вместе и спросить прямо, страшно ли ему"
+    new "Count together and ask directly whether he is scared"
 
     # game/echo_shift.rpy:918
     old "Подыграть и вернуть привычную шутку"
-    new "Подыграть и вернуть привычную шутку"
+    new "Play along and bring back the usual joke"
 
     # game/echo_shift.rpy:934
     old "Потребовать право команды остановить опасную операцию"
-    new "Потребовать право команды остановить опасную операцию"
+    new "Demand that the team have the right to stop a dangerous operation"
 
     # game/echo_shift.rpy:943
     old "Поддержать единый центр управления"
-    new "Поддержать единый центр управления"
+    new "Support a single control authority"
 
     # game/echo_shift.rpy:982
     old "Дать Лере договорить, а Макса попросить услышать ответ"
-    new "Дать Лере договорить, а Макса попросить услышать ответ"
+    new "Let Lera finish and ask Max to listen to the answer"
 
     # game/echo_shift.rpy:991
     old "Поддержать шутку, чтобы снять напряжение"
-    new "Поддержать шутку, чтобы снять напряжение"
+    new "Join the joke to ease the tension"
 
     # game/echo_shift.rpy:1001
     old "Резко оборвать Макса"
-    new "Резко оборвать Макса"
+    new "Cut Max off sharply"
 
     # game/echo_shift.rpy:1025
     old "Попросить Артёма сначала выслушать Леру"
-    new "Попросить Артёма сначала выслушать Леру"
+    new "Ask Artyom to hear Lera out first"
 
     # game/echo_shift.rpy:1035
     old "Согласиться с планом Артёма"
-    new "Согласиться с планом Артёма"
+    new "Agree with Artyom's plan"
 
     # game/echo_shift.rpy:1044
     old "Самому представить общую версию"
-    new "Самому представить общую версию"
+    new "Present the common version yourself"
 
     # game/echo_shift.rpy:1077
     old "Остановить участок и записать причину вместе"
-    new "Остановить участок и записать причину вместе"
+    new "Stop the section and record the reason together"
 
     # game/echo_shift.rpy:1087
     old "Дать Виктору закончить одну партию под контролем Артёма"
-    new "Дать Виктору закончить одну партию под контролем Артёма"
+    new "Let Viktor finish one batch under Artyom's supervision"
 
     # game/echo_shift.rpy:1098
     old "Поддержать приказ Артёма без обсуждения"
-    new "Поддержать приказ Артёма без обсуждения"
+    new "Back Artyom's order without discussion"
 
     # game/echo_shift.rpy:1125
     old "Собрать одну хронологию, но дать каждому говорить за себя"
-    new "Собрать одну хронологию, но дать каждому говорить за себя"
+    new "Build one timeline, but let everyone speak for themselves"
 
     # game/echo_shift.rpy:1138
     old "Взять общий разговор на себя"
-    new "Взять общий разговор на себя"
+    new "Take over the whole conversation"
 
     # game/echo_shift.rpy:1149
     old "Попросить всех говорить отдельно"
-    new "Попросить всех говорить отдельно"
+    new "Ask everyone to speak separately"
 # TODO: Translation updated at 2026-09-23 09:17
 
 # game/echo_shift.rpy:947
