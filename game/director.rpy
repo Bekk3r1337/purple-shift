@@ -362,9 +362,31 @@ init python:
         renpy.save_persistent()
         renpy.restart_interaction()
 
+    def ps_localize_message(message):
+        localized = dict(message)
+
+        for field in ("sender", "preview", "status", "attachment_caption", "voice_caption"):
+            if localized.get(field):
+                localized[field] = _(localized[field])
+
+        localized["incoming"] = [
+            _(line) for line in localized.get("incoming", [])
+        ]
+
+        localized_replies = []
+        for reply in localized.get("replies", []):
+            item = dict(reply)
+            for field in ("title", "answer", "reaction"):
+                if item.get(field):
+                    item[field] = _(item[field])
+            localized_replies.append(item)
+        localized["replies"] = localized_replies
+
+        return localized
+
     def ps_available_messages():
         return [
-            message
+            ps_localize_message(message)
             for message in ps_message_catalog
             if message["day"] <= ps_chapter
         ]
@@ -372,8 +394,8 @@ init python:
     def ps_message_data(message_id):
         for message in ps_message_catalog:
             if message["id"] == message_id:
-                return message
-        return ps_message_catalog[0]
+                return ps_localize_message(message)
+        return ps_localize_message(ps_message_catalog[0])
 
     def ps_read_message(message_id):
         global ps_message_reads
@@ -605,7 +627,7 @@ screen ps_message_bubble(message_text, outgoing=False):
         padding (20, 13)
         background Solid("#633b83" if outgoing else "#2b1b3c")
 
-        text message_text:
+        text _(message_text):
             color "#ffffff"
             size 21
 
@@ -683,11 +705,11 @@ screen ps_phone_messages_panel():
                                     yalign 0.5
                                     xmaximum 260
 
-                                    text message["sender"]:
+                                    text _(message["sender"]):
                                         color ("#ffffff" if message_unread else "#cbbdd8")
                                         size 19
 
-                                    text message["preview"]:
+                                    text _(message["preview"]):
                                         color "#a998b7"
                                         size 16
 
@@ -752,7 +774,7 @@ screen ps_phone_messages_panel():
                                         ysize 220
                                         fit "cover"
 
-                                    text selected_data.get("attachment_caption", "Вложение"):
+                                    text _(selected_data.get("attachment_caption", "Вложение")):
                                         color "#bba9c7"
                                         size 16
 
@@ -781,7 +803,7 @@ screen ps_phone_messages_panel():
                                         text_xalign 0.5
                                         text_yalign 0.5
 
-                                    text selected_data.get("voice_caption", ""):
+                                    text _(selected_data.get("voice_caption", "")):
                                         color "#bba9c7"
                                         size 17
 
@@ -798,7 +820,7 @@ screen ps_phone_messages_panel():
                                 size 19
 
                             for reply in selected_data["replies"]:
-                                textbutton reply["title"]:
+                                textbutton _(reply["title"]):
                                     action Function(
                                         ps_reply_message,
                                         selected_data["id"],
