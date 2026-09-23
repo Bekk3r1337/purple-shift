@@ -1,0 +1,230 @@
+name: Restore English translations from baseline
+
+on:
+  push:
+    branches:
+      - agent/full-en-localization
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/full-en-localization
+          fetch-depth: 0
+
+      - name: Restore translated bodies onto current RenPy IDs
+        env:
+          BASELINE: "8f386f717833e76e60cdedd1782888dc7dea1b69"
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os, re, subprocess
+
+          BASE = os.environ["BASELINE"]
+          CYR = re.compile(r"[А-Яа-яЁё]")
+          LOC = re.compile(r"^# (game/[^\n]+:\d+)\s*$")
+          HEAD = re.compile(r"^translate english (?!strings\s*:)([^:]+):\s*$")
+          OLD = re.compile(r'^(\s*)old\s+"((?:\\.|[^"\\])*)"\s*$')
+          NEW = re.compile(r'^(\s*)new\s+"((?:\\.|[^"\\])*)"\s*$')
+
+          def norm(s):
+              return s.replace("—", "-").replace("–", "-")
+
+          def git_show(path):
+              p = subprocess.run(
+                  ["git", "show", f"{BASE}:{path.as_posix()}"],
+                  text=True, capture_output=True, encoding="utf-8"
+              )
+              return p.stdout if p.returncode == 0 else None
+
+          def parse_stmt(lines):
+              out = []
+              i = 0
+              while i + 1 < len(lines):
+                  ml = LOC.match(lines[i])
+                  mh = HEAD.match(lines[i + 1]) if ml else None
+                  if not (ml and mh):
+                      i += 1
+                      continue
+                  j = i + 2
+                  while j < len(lines):
+                      if LOC.match(lines[j]) and j + 1 < len(lines) and HEAD.match(lines[j + 1]):
+                          break
+                      if lines[j].startswith("translate english strings:"):
+                          break
+                      j += 1
+                  out.append({
+                      "loc": ml.group(1), "id": mh.group(1),
+                      "start": i, "header": i + 1, "end": j,
+                      "body": lines[i + 2:j],
+                  })
+                  i = j
+              return out
+
+          def parse_strings(lines):
+              out = []
+              for i in range(len(lines) - 2):
+                  ml = LOC.match(lines[i])
+                  if not ml:
+                      continue
+                  mo = OLD.match(lines[i + 1])
+                  mn = NEW.match(lines[i + 2])
+                  if mo and mn:
+                      out.append({
+                          "loc": ml.group(1), "start": i,
+                          "old": mo.group(2), "new": mn.group(2),
+                          "new_indent": mn.group(1),
+                      })
+              return out
+
+          changed_files = 0
+          stmt_restored = 0
+          str_restored = 0
+
+          for path in sorted(Path("game/tl/english").rglob("*.rpy")):
+              base_text = git_show(path)
+              if base_text is None:
+                  continue
+
+              current_text = path.read_text(encoding="utf-8-sig")
+              cur_lines = current_text.splitlines()
+              base_lines = base_text.splitlines()
+
+              base_blocks = parse_stmt(base_lines)
+              cur_blocks = parse_stmt(cur_lines)
+              base_by = {}
+              cur_by = {}
+              for b in base_blocks:
+                  base_by.setdefault(b["loc"], []).append(b)
+              for b in cur_blocks:
+                  cur_by.setdefault(b["loc"], []).append(b)
+
+              stmt_remove_starts = set()
+              stmt_replace = {}
+              for loc, bases in base_by.items():
+                  currents = cur_by.get(loc, [])
+                  if not currents:
+                      continue
+                  base_ids = {b["id"] for b in bases}
+                  newer = [b for b in currents if b["id"] not in base_ids]
+
+                  if len(newer) >= len(bases):
+                      targets = newer[-len(bases):]
+                  else:
+                      # If the ID did not change, preserve the matching block.
+                      targets = []
+                      used = set()
+                      for bb in bases:
+                          same = next((cb for cb in currents if cb["id"] == bb["id"] and cb["start"] not in used), None)
+                          if same:
+                              targets.append(same); used.add(same["start"])
+                      for cb in currents:
+                          if len(targets) >= len(bases):
+                              break
+                          if cb["start"] not in used:
+                              targets.append(cb); used.add(cb["start"])
+
+                  for bb, cb in zip(bases, targets):
+                      body = [norm(x) for x in bb["body"]]
+                      stmt_replace[cb["start"]] = body
+                      stmt_restored += 1
+
+                  target_starts = {b["start"] for b in targets}
+                  # Remove only obsolete baseline-ID blocks when a regenerated
+                  # replacement exists at this source location.
+                  if newer:
+                      for cb in currents:
+                          if cb["start"] not in target_starts and cb["id"] in base_ids:
+                              stmt_remove_starts.add(cb["start"])
+
+              start_map = {b["start"]: b for b in cur_blocks}
+              rebuilt = []
+              i = 0
+              while i < len(cur_lines):
+                  b = start_map.get(i)
+                  if b is None:
+                      rebuilt.append(cur_lines[i]); i += 1; continue
+                  if i in stmt_remove_starts:
+                      i = b["end"]
+                      while i < len(cur_lines) and not cur_lines[i].strip():
+                          i += 1
+                      continue
+                  rebuilt.append(cur_lines[b["start"]])
+                  rebuilt.append(cur_lines[b["header"]])
+                  rebuilt.extend(stmt_replace.get(i, b["body"]))
+                  i = b["end"]
+              cur_lines = rebuilt
+
+              # Restore translated string values. Older hand-edited generated
+              # files sometimes had the source 'old' value translated too.
+              # The refreshed stub has the correct Russian old value, so pair
+              # by source location and copy only the English new value.
+              base_entries = parse_strings(base_lines)
+              cur_entries = parse_strings(cur_lines)
+              base_s = {}
+              cur_s = {}
+              for e in base_entries:
+                  base_s.setdefault(e["loc"], []).append(e)
+              for e in cur_entries:
+                  cur_s.setdefault(e["loc"], []).append(e)
+
+              remove_lines = set()
+              replace_line = {}
+              for loc, bases in base_s.items():
+                  currents = cur_s.get(loc, [])
+                  if not currents:
+                      continue
+                  russian_targets = [e for e in currents if CYR.search(e["old"])]
+                  if len(russian_targets) < len(bases):
+                      continue
+                  targets = russian_targets[-len(bases):]
+                  for bb, target in zip(bases, targets):
+                      translated = norm(bb["new"])
+                      indent = target["new_indent"]
+                      translated_escaped = translated.replace("\\", "\\\\").replace('"', '\\"')
+                      replace_line[target["start"] + 2] = f'{indent}new "{translated_escaped}"'
+                      str_restored += 1
+
+                      # Remove obsolete generated entry whose old/new reflect
+                      # the previously mistranslated source key.
+                      old_norm = norm(bb["old"])
+                      for ce in currents:
+                          if ce["start"] == target["start"]:
+                              continue
+                          if norm(ce["old"]) == old_norm and norm(ce["new"]) == norm(bb["new"]):
+                              remove_lines.update({ce["start"], ce["start"] + 1, ce["start"] + 2})
+
+              final_lines = []
+              for idx, line in enumerate(cur_lines):
+                  if idx in remove_lines:
+                      continue
+                  final_lines.append(replace_line.get(idx, line))
+
+              final_text = "\n".join(final_lines).rstrip() + "\n"
+              if final_text != current_text:
+                  path.write_text(final_text, encoding="utf-8")
+                  changed_files += 1
+                  print(path)
+
+          print(f"Changed files: {changed_files}")
+          print(f"Restored statement blocks: {stmt_restored}")
+          print(f"Restored string values: {str_restored}")
+          PY
+
+      - name: Commit restored translations
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add game/tl/english
+          if git diff --cached --quiet; then
+            echo "No baseline translations needed restoration."
+            exit 0
+          fi
+          git commit -m "fix(i18n): restore English translations onto current RenPy IDs"
+          git push origin HEAD:agent/full-en-localization
