@@ -742,7 +742,7 @@ screen ps_consequence_echo(day):
                     padding (26, 18)
                     background Solid("#25163ae8")
 
-                    text ("• " + _(consequence)):
+                    text ("• " + ps_runtime_text(consequence)):
                         color "#ded4e9"
                         size 24
 

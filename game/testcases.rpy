@@ -776,6 +776,21 @@ testsuite purple_shift:
         assert eval (ps_migrate_loaded_save in config.after_load_callbacks)
 
 
+    testcase runtime_i18n_helpers:
+        $ ps_old_language_code = getattr(persistent, "ps_language_code", "russian")
+        $ persistent.ps_language_code = "english"
+
+        assert eval (ps_default_player_name() == "Employee")
+        assert eval (ps_runtime_text("Ты поставил темп впереди сомнений. Смена это почувствовала.") == "You put pace ahead of doubt. The shift felt it.")
+        assert eval (ps_runtime_text("Перехватить движение") == "Stop the Motion")
+
+        $ persistent.ps_language_code = "russian"
+        assert eval (ps_default_player_name() == "Сотрудник")
+        assert eval (ps_runtime_text("Ты поставил темп впереди сомнений. Смена это почувствовала.") == "Ты поставил темп впереди сомнений. Смена это почувствовала.")
+
+        $ persistent.ps_language_code = ps_old_language_code
+
+
     testcase living_routes_content:
         assert eval (renpy.has_label("ps21_route_night_scene"))
         assert eval (renpy.has_label("ps21_route_finale_setup"))
