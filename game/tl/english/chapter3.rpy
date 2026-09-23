@@ -4,493 +4,493 @@
 translate english chapter2_hook_57b3886c:
 
     # n "Телефон коротко вибрирует и вытаскивает тебя из сна. На экране новое назначение: «Зона сортировки. Явка — 20:00. Подтвердить смену»."
-    n "Телефон коротко вибрирует и вытаскивает тебя из сна. На экране новое назначение: «Зона сортировки. Явка — 20:00. Подтвердить смену»."
+    n "The phone buzzes briefly and pulls you out of sleep. A new assignment is on the screen: \"Sorting Zone. Report at 20:00. Confirm shift.\""
 
 # game/chapter3.rpy:14
 translate english chapter2_hook_ea4ae265:
 
     # n "Под уведомлением висит ещё одно сообщение."
-    n "Под уведомлением висит ещё одно сообщение."
+    n "Another message sits below the notification."
 
 # game/chapter3.rpy:15
 translate english chapter2_hook_4ed0f6df:
 
     # newb "Привет… Это я, с первой смены. Ты завтра будешь?"
-    newb "Привет… Это я, с первой смены. Ты завтра будешь?"
+    newb "Hi... It's me, from the first shift. Will you be there tomorrow?"
 
 # game/chapter3.rpy:16
 translate english chapter2_hook_89511fe5:
 
     # n "Под сообщением появляется надпись «печатает…», пропадает и появляется снова."
-    n "Под сообщением появляется надпись «печатает…», пропадает и появляется снова."
+    n "The \"typing...\" indicator appears under the message, disappears, then appears again."
 
 # game/chapter3.rpy:22
 translate english chapter2_hook_140d1e1d:
 
     # n "Палец нажимает кнопку раньше, чем ты успеваешь передумать. На экране появляется зелёная галочка: смена подтверждена."
-    n "Палец нажимает кнопку раньше, чем ты успеваешь передумать. На экране появляется зелёная галочка: смена подтверждена."
+    n "Your finger presses the button before you can change your mind. A green check mark appears: shift confirmed."
 
 # game/chapter3.rpy:27
 translate english chapter2_hook_e3fa5ade:
 
     # n "Ты ставишь таймер на десять минут и переворачиваешь телефон экраном вниз. Подтвердить успеешь после сигнала."
-    n "Ты ставишь таймер на десять минут и переворачиваешь телефон экраном вниз. Подтвердить успеешь после сигнала."
+    n "You set a ten-minute timer and turn the phone face down. You can confirm after it rings."
 
 # game/chapter3.rpy:33
 translate english chapter2_hook_912f5858:
 
     # p "Буду. Если снова что-то зависнет — не стой одна."
-    p "Буду. Если снова что-то зависнет — не стой одна."
+    p "I will. If something freezes again, don't stand there alone."
 
 # game/chapter3.rpy:34
 translate english chapter2_hook_127e8478:
 
     # newb "Спасибо."
-    newb "Спасибо."
+    newb "Thanks."
 
 # game/chapter3.rpy:35
 translate english chapter2_hook_fd037b15:
 
     # n "Ответ приходит почти мгновенно. Похоже, она всё это время смотрела на экран."
-    n "Ответ приходит почти мгновенно. Похоже, она всё это время смотрела на экран."
+    n "The reply comes almost instantly. It looks like she had been staring at the screen the whole time."
 
 # game/chapter3.rpy:42
 translate english chapter2_hook_e3eebe5a:
 
     # n "Ты снова засыпаешь. Телефон остаётся лежать рядом, экраном вверх."
-    n "Ты снова засыпаешь. Телефон остаётся лежать рядом, экраном вверх."
+    n "You fall asleep again. The phone stays beside you, screen up."
 
 # game/chapter3.rpy:71
 translate english chapter3_second_shift_81608657:
 
     # n "Вечер приходит слишком быстро. Ты просыпаешься за минуту до будильника и успеваешь выключить его до первого сигнала."
-    n "Вечер приходит слишком быстро. Ты просыпаешься за минуту до будильника и успеваешь выключить его до первого сигнала."
+    n "Evening comes too quickly. You wake one minute before the alarm and switch it off before the first sound."
 
 # game/chapter3.rpy:74
 translate english chapter3_second_shift_e2b306ab:
 
     # n "Ты вспоминаешь коробки на полу и тихое «спасибо» Леры."
-    n "Ты вспоминаешь коробки на полу и тихое «спасибо» Леры."
+    n "You remember the boxes on the floor and Lera's quiet \"thank you.\""
 
 # game/chapter3.rpy:76
 translate english chapter3_second_shift_b2cd9514:
 
     # n "Ты вспоминаешь, как Лера осталась поднимать коробки, а ты продолжил работать. Вчера на это не было времени. Сейчас — есть."
-    n "Ты вспоминаешь, как Лера осталась поднимать коробки, а ты продолжил работать. Вчера на это не было времени. Сейчас — есть."
+    n "You remember Lera staying behind to pick up the boxes while you kept working. Yesterday there was no time to think about it. Now there is."
 
 # game/chapter3.rpy:78
 translate english chapter3_second_shift_98b49dcb:
 
     # n "На экране телефона по-прежнему горит: «Смена подтверждена»."
-    n "На экране телефона по-прежнему горит: «Смена подтверждена»."
+    n "The phone still reads: \"Shift confirmed.\""
 
 # game/chapter3.rpy:85
 translate english chapter3_second_shift_300263b8:
 
     # n "Дверь закрывается."
-    n "Дверь закрывается."
+    n "The door closes."
 
 # game/chapter3.rpy:90
 translate english chapter3_second_shift_b5f7ff3e:
 
     # n "Вчера приходилось сверяться с картой. Сегодня ты сворачиваешь к остановке, даже не достав телефон."
-    n "Вчера приходилось сверяться с картой. Сегодня ты сворачиваешь к остановке, даже не достав телефон."
+    n "Yesterday you had to check the map. Today you turn toward the stop without even taking out your phone."
 
 # game/chapter3.rpy:98
 translate english chapter3_second_shift_88d80da8:
 
     # n "На остановке люди едут домой с пакетами и рюкзаками. Тебе нужен автобус в обратную сторону."
-    n "На остановке люди едут домой с пакетами и рюкзаками. Тебе нужен автобус в обратную сторону."
+    n "People at the stop are heading home with shopping bags and backpacks. Your bus goes the other way."
 
 # game/chapter3.rpy:106
 translate english chapter3_second_shift_cab75dbe:
 
     # n "Фиолетовая вывеска видна ещё из автобуса. На этот раз ты сразу идёшь к нужному входу и не ищешь раздевалку по указателям."
-    n "Фиолетовая вывеска видна ещё из автобуса. На этот раз ты сразу идёшь к нужному входу и не ищешь раздевалку по указателям."
+    n "You can see the violet sign from the bus. This time you go straight to the right entrance and do not need signs to find the locker room."
 
 # game/chapter3.rpy:111
 translate english chapter3_second_shift_93eda831:
 
     # vet "Вернулся."
-    vet "Вернулся."
+    vet "Came back."
 
 # game/chapter3.rpy:113
 translate english chapter3_second_shift_6c1e0113:
 
     # p "Похоже на то."
-    p "Похоже на то."
+    p "Looks like it."
 
 # game/chapter3.rpy:115
 translate english chapter3_second_shift_26bdc412:
 
     # vet "Значит, руки утром разогнулись. После первой смены уже хорошо."
-    vet "Значит, руки утром разогнулись. После первой смены уже хорошо."
+    vet "So your hands could still straighten out this morning. That's good after a first shift."
 
 # game/chapter3.rpy:120
 translate english chapter3_second_shift_5e513b77:
 
     # mem "А я считаю. Сегодня у нас юбилей. Два дня без побега."
-    mem "А я считаю. Сегодня у нас юбилей. Два дня без побега."
+    mem "I'm counting it. Today is an anniversary: two days without running away."
 
 # game/chapter3.rpy:123
 translate english chapter3_second_shift_2849023c:
 
     # p "Подожди поздравлять. Я ещё ворота вижу."
-    p "Подожди поздравлять. Я ещё ворота вижу."
+    p "Hold the congratulations. I can still see the gate."
 
 # game/chapter3.rpy:124
 translate english chapter3_second_shift_53c773fc:
 
     # mem "Вот. Уже местный."
-    mem "Вот. Уже местный."
+    mem "See? Already a local."
 
 # game/chapter3.rpy:126
 translate english chapter3_second_shift_64c15fc6:
 
     # n "Ты улыбаешься чуть увереннее, чем вчера."
-    n "Ты улыбаешься чуть увереннее, чем вчера."
+    n "You smile a little more confidently than yesterday."
 
 # game/chapter3.rpy:131
 translate english chapter3_second_shift_8f290364:
 
     # n "Лера стоит у турникета с бумажным стаканом. Под глазами тени; пока охранник проверяет пропуск, она дважды зевает."
-    n "Лера стоит у турникета с бумажным стаканом. Под глазами тени; пока охранник проверяет пропуск, она дважды зевает."
+    n "Lera is standing by the turnstile with a paper cup. There are shadows under her eyes; while the guard checks her pass, she yawns twice."
 
 # game/chapter3.rpy:134
 translate english chapter3_second_shift_cc1b91a4:
 
     # newb "Ты пришёл."
-    newb "Ты пришёл."
+    newb "You came."
 
 # game/chapter3.rpy:135
 translate english chapter3_second_shift_b7a2e852:
 
     # p "Я же написал."
-    p "Я же написал."
+    p "I said I would."
 
 # game/chapter3.rpy:136
 translate english chapter3_second_shift_4f0453a7:
 
     # n "Она кивает. Плечи опускаются на пару сантиметров."
-    n "Она кивает. Плечи опускаются на пару сантиметров."
+    n "She nods. Her shoulders drop a couple of centimeters."
 
 # game/chapter3.rpy:138
 translate english chapter3_second_shift_14ed9f35:
 
     # newb "Привет."
-    newb "Привет."
+    newb "Hi."
 
 # game/chapter3.rpy:139
 translate english chapter3_second_shift_a7fb9004:
 
     # p "Привет."
-    p "Привет."
+    p "Hi."
 
 # game/chapter3.rpy:140
 translate english chapter3_second_shift_29c21466:
 
     # n "После приветствия оба смотрят на турникет. Разговор на этом заканчивается."
-    n "После приветствия оба смотрят на турникет. Разговор на этом заканчивается."
+    n "After the greeting, both of you look at the turnstile. That is the end of the conversation."
 
 # game/chapter3.rpy:153
 translate english chapter3_second_shift_839fb72e:
 
     # n "В раздевалке громче, чем вчера, и теперь в общем гуле ты уже различаешь голоса."
-    n "В раздевалке громче, чем вчера, и теперь в общем гуле ты уже различаешь голоса."
+    n "The locker room is louder than yesterday, and now you can pick out familiar voices in the noise."
 
 # game/chapter3.rpy:158
 translate english chapter3_second_shift_7258ebcc:
 
     # sv "Слушаем. На сортировке хвост — тридцать тысяч единиц сверх плана. Часть людей уже перекинули туда."
-    sv "Слушаем. На сортировке хвост — тридцать тысяч единиц сверх плана. Часть людей уже перекинули туда."
+    sv "Listen up. Sorting has a backlog - thirty thousand units over plan. Some people have already been moved there."
 
 # game/chapter3.rpy:160
 translate english chapter3_second_shift_1e313ea3:
 
     # mem "Слово «перекинули» всегда звучит так, будто мы коробки."
-    mem "Слово «перекинули» всегда звучит так, будто мы коробки."
+    mem "The word \"moved\" always makes it sound like we're boxes."
 
 # game/chapter3.rpy:162
 translate english chapter3_second_shift_b119b9d9:
 
     # sv "Сегодня без обучения. Кто вчера понял — работает. Кто не понял — понимает по ходу."
-    sv "Сегодня без обучения. Кто вчера понял — работает. Кто не понял — понимает по ходу."
+    sv "No training today. If you understood yesterday, you work. If you didn't, you figure it out as you go."
 
 # game/chapter3.rpy:164
 translate english chapter3_second_shift_4597f5e1:
 
     # n "Его взгляд на секунду задерживается на тебе."
-    n "Его взгляд на секунду задерживается на тебе."
+    n "His gaze lingers on you for a second."
 
 # game/chapter3.rpy:167
 translate english chapter3_second_shift_a73e6c0a:
 
     # sv "Ты вчера спрашивал, если не понимал. Продолжай."
-    sv "Ты вчера спрашивал, если не понимал. Продолжай."
+    sv "Yesterday you asked when you didn't understand. Keep doing that."
 
 # game/chapter3.rpy:169
 translate english chapter3_second_shift_a7a6c0d1:
 
     # sv "И без историй про глючный ТСД."
-    sv "И без историй про глючный ТСД."
+    sv "And no stories about the scanner glitching."
 
 # game/chapter3.rpy:171
 translate english chapter3_second_shift_57bc082d:
 
     # sv "Вопросы — до запуска линии."
-    sv "Вопросы — до запуска линии."
+    sv "Questions before the line starts."
 
 # game/chapter3.rpy:176
 translate english chapter3_second_shift_4b00b2be:
 
     # n "Лера поправляет одну перчатку, потом вторую и снова возвращается к первой."
-    n "Лера поправляет одну перчатку, потом вторую и снова возвращается к первой."
+    n "Lera adjusts one glove, then the other, then goes back to the first."
 
 # game/chapter3.rpy:182
 translate english chapter3_second_shift_2524a12c:
 
     # p "Давай встанем рядом. Если ТСД снова зависнет, быстрее разберёмся."
-    p "Давай встанем рядом. Если ТСД снова зависнет, быстрее разберёмся."
+    p "Let's stand next to each other. If the scanner freezes again, we'll sort it out faster."
 
 # game/chapter3.rpy:183
 translate english chapter3_second_shift_ff5a9568:
 
     # newb "Давай."
-    newb "Давай."
+    newb "Let's."
 
 # game/chapter3.rpy:184
 translate english chapter3_second_shift_5d0a571a:
 
     # mem "Командный режим разблокирован."
-    mem "Командный режим разблокирован."
+    mem "Team mode unlocked."
 
 # game/chapter3.rpy:188
 translate english chapter3_second_shift_7d63ae37:
 
     # p "Главное — следи за своим экраном. Тут каждый вытягивает свой участок."
-    p "Главное — следи за своим экраном. Тут каждый вытягивает свой участок."
+    p "Just watch your own screen. Everyone carries their own section here."
 
 # game/chapter3.rpy:189
 translate english chapter3_second_shift_42897426:
 
     # newb "Поняла."
-    newb "Поняла."
+    newb "Got it."
 
 # game/chapter3.rpy:190
 translate english chapter3_second_shift_800b0fe3:
 
     # n "Она быстро кивает и начинает проверять заряд ТСД."
-    n "Она быстро кивает и начинает проверять заряд ТСД."
+    n "She nods quickly and checks the scanner battery."
 
 # game/chapter3.rpy:195
 translate english chapter3_second_shift_0c035ae2:
 
     # p "Если что — делаем умное лицо. Система боится уверенных."
-    p "Если что — делаем умное лицо. Система боится уверенных."
+    p "If anything happens, look confident. The system is afraid of confident people."
 
 # game/chapter3.rpy:196
 translate english chapter3_second_shift_b45e39ee:
 
     # newb "Это точно работает?"
-    newb "Это точно работает?"
+    newb "Does that actually work?"
 
 # game/chapter3.rpy:197
 translate english chapter3_second_shift_ce9d6275:
 
     # mem "Нет."
-    mem "Нет."
+    mem "No."
 
 # game/chapter3.rpy:198
 translate english chapter3_second_shift_8b4e0f52:
 
     # mem "Но выглядит профессионально."
-    mem "Но выглядит профессионально."
+    mem "But it looks professional."
 
 # game/chapter3.rpy:220
 translate english chapter3_sorting_start_16aa3767:
 
     # n "На сортировке коробки приходят партиями: сначала пусто, потом сразу двадцать штук."
-    n "На сортировке коробки приходят партиями: сначала пусто, потом сразу двадцать штук."
+    n "At sorting, the boxes arrive in waves: nothing for a while, then twenty at once."
 
 # game/chapter3.rpy:222
 translate english chapter3_sorting_start_66584368:
 
     # vet "Не смотри на весь объём. Смотри на следующую вещь."
-    vet "Не смотри на весь объём. Смотри на следующую вещь."
+    vet "Don't look at the whole volume. Look at the next item."
 
 # game/chapter3.rpy:224
 translate english chapter3_sorting_start_1d6a6f76:
 
     # mem "Я тоже так делаю. Особенно когда открываю график на неделю."
-    mem "Я тоже так делаю. Особенно когда открываю график на неделю."
+    mem "I do the same thing. Especially when I open the weekly schedule."
 
 # game/chapter3.rpy:226
 translate english chapter3_sorting_start_213cee2c:
 
     # n "Ты берёшь первый товар."
-    n "Ты берёшь первый товар."
+    n "You pick up the first item."
 
 # game/chapter3.rpy:230
 translate english chapter3_sorting_start_e9747b95:
 
     # n "Пиип."
-    n "Пиип."
+    n "Beep."
 
 # game/chapter3.rpy:231
 translate english chapter3_sorting_start_5fb01c5d:
 
     # n "Ячейка. Следующий."
-    n "Ячейка. Следующий."
+    n "Bin. Next."
 
 # game/chapter3.rpy:235
 translate english chapter3_sorting_start_e9747b95_1:
 
     # n "Пиип."
-    n "Пиип."
+    n "Beep."
 
 # game/chapter3.rpy:237
 translate english chapter3_sorting_start_bc31b139:
 
     # n "На третьем скане экран краснеет."
-    n "На третьем скане экран краснеет."
+    n "On the third scan, the screen turns red."
 
 # game/chapter3.rpy:245
 translate english chapter3_sorting_start_b196c474:
 
     # n "Красный экран уже не парализует. Ты вспоминаешь, где вчера открывали меню ошибок."
-    n "Красный экран уже не парализует. Ты вспоминаешь, где вчера открывали меню ошибок."
+    n "The red screen no longer freezes you. You remember where you opened the error menu yesterday."
 
 # game/chapter3.rpy:262
 translate english chapter3_error_supervisor_2dd620da:
 
     # p "Ошибка E-17. Ячейки нет."
-    p "Ошибка E-17. Ячейки нет."
+    p "Error E-17. Bin not found."
 
 # game/chapter3.rpy:267
 translate english chapter3_error_supervisor_35ebb590:
 
     # sv "Хорошо, что не подтвердил вслепую. Отводишь в проблемный поток. Красная зона справа."
-    sv "Хорошо, что не подтвердил вслепую. Отводишь в проблемный поток. Красная зона справа."
+    sv "Good thing you didn't confirm blindly. Send it to the problem flow. Red zone on the right."
 
 # game/chapter3.rpy:270
 translate english chapter3_error_supervisor_33a14dac:
 
     # sv "Вчерашнее запомнил."
-    sv "Вчерашнее запомнил."
+    sv "I remembered yesterday."
 
 # game/chapter3.rpy:272
 translate english chapter3_error_supervisor_95f51635:
 
     # sv "Один раз показываю."
-    sv "Один раз показываю."
+    sv "I show you once."
 
 # game/chapter3.rpy:274
 translate english chapter3_error_supervisor_af270c35:
 
     # n "На этот раз ты успеваешь проследить: открыть задачу, выбрать причину, отправить товар в красную зону."
-    n "На этот раз ты успеваешь проследить: открыть задачу, выбрать причину, отправить товар в красную зону."
+    n "This time you follow every step: open the task, choose a reason, send the item to the red zone."
 
 # game/chapter3.rpy:286
 translate english chapter3_error_veteran_682bd52a:
 
     # p "Покажешь, куда это?"
-    p "Покажешь, куда это?"
+    p "Will you show me where this goes?"
 
 # game/chapter3.rpy:288
 translate english chapter3_error_veteran_8d7ac517:
 
     # vet "Покажу. Смотри, почему коробка уходит вправо. Кнопку потом сам найдёшь."
-    vet "Покажу. Смотри, почему коробка уходит вправо. Кнопку потом сам найдёшь."
+    vet "I will. Watch why the box goes right. You can find the button yourself afterward."
 
 # game/chapter3.rpy:290
 translate english chapter3_error_veteran_6f830022:
 
     # n "Он не торопит и ждёт, пока ты сам повторишь все действия."
-    n "Он не торопит и ждёт, пока ты сам повторишь все действия."
+    n "He does not rush you and waits until you repeat every step yourself."
 
 # game/chapter3.rpy:292
 translate english chapter3_error_veteran_41d47f50:
 
     # mem "Осторожно. На территории склада замечено обучение."
-    mem "Осторожно. На территории склада замечено обучение."
+    mem "Careful. Training has been detected on warehouse property."
 
 # game/chapter3.rpy:301
 translate english chapter3_error_self_5f549eda:
 
     # n "Ты открываешь меню, ошибаешься пунктом, возвращаешься и находишь проблемный поток."
-    n "Ты открываешь меню, ошибаешься пунктом, возвращаешься и находишь проблемный поток."
+    n "You open the menu, choose the wrong item, go back, and find the problem flow."
 
 # game/chapter3.rpy:304
 translate english chapter3_error_self_1ea6c33d:
 
     # n "Получилось со второго нажатия и своими руками."
-    n "Получилось со второго нажатия и своими руками."
+    n "Second try, and you did it yourself."
 
 # game/chapter3.rpy:305
 translate english chapter3_error_self_1614d899:
 
     # mem "Самостоятельность. Опасный симптом. Скоро дадут больше работы."
-    mem "Самостоятельность. Опасный симптом. Скоро дадут больше работы."
+    mem "Independence. Dangerous symptom. They'll give you more work soon."
 
 # game/chapter3.rpy:307
 translate english chapter3_error_self_56373a12:
 
     # n "Экран снова моргает красным."
-    n "Экран снова моргает красным."
+    n "The screen flashes red again."
 
 # game/chapter3.rpy:308
 translate english chapter3_error_self_d0ae8593:
 
     # vet "Не воюй с ТСД. Он всё равно не почувствует вины."
-    vet "Не воюй с ТСД. Он всё равно не почувствует вины."
+    vet "Don't fight the scanner. It won't feel guilty anyway."
 
 # game/chapter3.rpy:309
 translate english chapter3_error_self_9a57e9ac:
 
     # n "Виктор показывает нужный пункт."
-    n "Виктор показывает нужный пункт."
+    n "Viktor points out the right option."
 
 # game/chapter3.rpy:315
 translate english chapter3_error_resolved_3ac16d7a:
 
     # n "Ты ставишь проблемную коробку в красную зону и берёшь следующую."
-    n "Ты ставишь проблемную коробку в красную зону и берёшь следующую."
+    n "You place the problem box in the red zone and take the next one."
 
 # game/chapter3.rpy:317
 translate english chapter3_error_resolved_26a624b6:
 
     # n "Через десять минут ты уже не помнишь, сколько коробок прошло через руки."
-    n "Через десять минут ты уже не помнишь, сколько коробок прошло через руки."
+    n "Ten minutes later, you no longer remember how many boxes have passed through your hands."
 
 # game/chapter3.rpy:324
 translate english chapter3_error_resolved_6e2c71f6:
 
     # n "На табло горит отставание. Сначала минус восемь процентов. Потом минус одиннадцать."
-    n "На табло горит отставание. Сначала минус восемь процентов. Потом минус одиннадцать."
+    n "The board shows the delay. First minus eight percent. Then minus eleven."
 
 # game/chapter3.rpy:329
 translate english chapter3_error_resolved_1892784f:
 
     # sv "Внимание. Линия просела. До перерыва возвращаем темп."
-    sv "Внимание. Линия просела. До перерыва возвращаем темп."
+    sv "Attention. The line is behind. We recover pace before the break."
 
 # game/chapter3.rpy:331
 translate english chapter3_error_resolved_54403207:
 
     # n "В ответ только пищат сканеры. Люди на линии ускоряются."
-    n "В ответ только пищат сканеры. Люди на линии ускоряются."
+    n "Only scanners beep in response. People on the line speed up."
 
 # game/chapter3.rpy:333
 translate english chapter3_error_resolved_b160f49a:
 
     # sv "Ты. Сектор рядом с новичком тоже забираешь."
-    sv "Ты. Сектор рядом с новичком тоже забираешь."
+    sv "You. Take the section next to the newcomer too."
 
 # game/chapter3.rpy:339
 translate english chapter3_error_resolved_089c5727:
 
     # p "Почему только на двоих? Если хвост общий — давайте раскидаем на линию."
-    p "Почему только на двоих? Если хвост общий — давайте раскидаем на линию."
+    p "Why put it on just two people? If the backlog is shared, spread it across the line."
 
 # game/chapter3.rpy:340
 translate english chapter3_error_resolved_3e469b66:
@@ -790,7 +790,7 @@ translate english chapter3_incident_norm_ce943dce:
 translate english chapter3_incident_norm_e9747b95:
 
     # n "Пиип."
-    n "Пиип."
+    n "Beep."
 
 # game/chapter3.rpy:534
 translate english chapter3_incident_norm_85c0bcc7:
