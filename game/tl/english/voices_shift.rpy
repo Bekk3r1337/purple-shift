@@ -3,13 +3,13 @@
 # game/voices_shift.rpy:406
 translate english ps_team_names_75580843:
 
-    # newb "We've been working side by side for two days and I'm still just Newcomer to everyone. I'm Lera. Valeria if I ever need another written statement."
+    # newb "Мы второй день рядом, а я для всех всё ещё Новичок. Я Лера. Валерия - это если опять понадобится объяснительная."
     newb "We've been working side by side for two days and I'm still just \"Newcomer\" to everyone. I'm Lera. Valeria if I ever need another written statement."
 
 # game/voices_shift.rpy:409
 translate english ps_team_names_35258f20:
 
-    # mem "Max. Just Max. Joker is a position with no extra pay and no vacation entitlement."
+    # mem "Макс. Просто Макс. «Шутник» - это должность без доплаты и права на отпуск."
     mem "Max. Just Max. \"Joker\" is a position with no extra pay and no vacation entitlement."
 
 # game/voices_shift.rpy:415
@@ -39,7 +39,7 @@ translate english ps_team_names_4d93ac8f:
 # game/voices_shift.rpy:427
 translate english ps_team_names_441a2a50:
 
-    # p "And I'm [ps_player_name]."
+    # p "А я - [ps_player_name]."
     p "And I'm [ps_player_name]."
 
 # game/voices_shift.rpy:469
@@ -51,7 +51,7 @@ translate english ps_route_week_scene_d7e5c8da:
 # game/voices_shift.rpy:470
 translate english ps_route_week_scene_049b8c7e:
 
-    # newb "I don't want to write just 'made a mistake' anymore. Then it looks like everything happened because of me, and what the scanner did stops mattering."
+    # newb "Я больше не хочу писать просто «ошиблась». Потом выходит, что всё случилось из-за меня, а что делал ТСД - уже неважно."
     newb "I don't want to write just \"made a mistake\" anymore. Then it looks like everything happened because of me, and what the scanner did stops mattering."
 
 # game/voices_shift.rpy:471
@@ -63,7 +63,7 @@ translate english ps_route_week_scene_a4c3abd3:
 # game/voices_shift.rpy:472
 translate english ps_route_week_scene_1cea23c6:
 
-    # newb "Will you help me check it? Not correct it for me - just check."
+    # newb "Поможешь проверить? Не исправлять за меня - просто проверить."
     newb "Will you help me check it? Not correct it for me - just check."
 
 # game/voices_shift.rpy:482
@@ -321,7 +321,7 @@ translate english ps_route_week_scene_3f7a644e:
 # game/voices_shift.rpy:597
 translate english ps_route_week_scene_915956c0:
 
-    # vet "I signed a similar paper once. Not because I was guilty - I just wanted to go home and thought one signature would change nothing."
+    # vet "Когда-то я подписал похожую бумагу. Не потому что был виноват - просто хотел домой и думал, что одна подпись ничего не изменит."
     vet "I signed a similar paper once. Not because I was guilty - I just wanted to go home and thought one signature would change nothing."
 
 # game/voices_shift.rpy:598
@@ -387,7 +387,7 @@ translate english ps_route_week_scene_b2a744ba:
 # game/voices_shift.rpy:622
 translate english ps_route_week_scene_648839ae:
 
-    # p "And from Lera - agreement with what they've already decided."
+    # p "А от Леры - согласие с тем, что уже решили."
     p "And from Lera - agreement with what they've already decided."
 
 # game/voices_shift.rpy:623
@@ -453,7 +453,7 @@ translate english ps_route_week_scene_51609be3:
 # game/voices_shift.rpy:652
 translate english ps_route_week_scene_50ba0100_1:
 
-    # p "Deal."
+    # p "Договорились."
     p "Deal."
 
 # game/voices_shift.rpy:660
@@ -507,7 +507,7 @@ translate english ps_route_week_scene_58210ab4:
 # game/voices_shift.rpy:675
 translate english ps_route_week_scene_68ca0847:
 
-    # p "If you make the decision yourself - I'll stay."
+    # p "Если решение примешь ты - останусь."
     p "If you make the decision yourself - I'll stay."
 
 # game/voices_shift.rpy:687
@@ -543,7 +543,7 @@ translate english ps_route_week_scene_8f03764a:
 # game/voices_shift.rpy:698
 translate english ps_route_week_scene_93eb27ed:
 
-    # vet "If I start playing hero - remind me about that old fool."
+    # vet "Если начну геройствовать - напомни про старого дурака."
     vet "If I start playing hero, remind me about that old fool."
 
 # game/voices_shift.rpy:699
@@ -585,7 +585,7 @@ translate english ps_route_week_scene_88befc24:
 # game/voices_shift.rpy:717
 translate english ps_route_week_scene_64c8c6cb:
 
-    # sv "In a minute I'll have to give an order. If it's the wrong one - stop me."
+    # sv "Через минуту мне придётся отдать приказ. Если он будет неправильным - останови меня."
     sv "In a minute I'll have to give an order. If it's the wrong one, stop me."
 
 # game/voices_shift.rpy:718
@@ -597,7 +597,7 @@ translate english ps_route_week_scene_89a85d87:
 # game/voices_shift.rpy:719
 translate english ps_route_week_scene_7d09ca89:
 
-    # sv "In front of everyone. Especially if I start repeating the Curator again."
+    # sv "При всех. Если я снова начну повторять куратора - тем более."
     sv "In front of everyone. Especially if I start repeating the Curator again."
 
 # game/voices_shift.rpy:720
@@ -759,7 +759,7 @@ translate english ps_storm_day_intrusion_86351deb:
 # game/voices_shift.rpy:920
 translate english ps_storm_day_intrusion_0038a4a6:
 
-    # n "Your name appears last - [ps_player_name]. Instead of a section number, a short message appears beneath it: 'THE SHIFT RECOGNIZES YOU.'"
+    # n "Последним появляется твоё имя - [ps_player_name]. Вместо номера участка под ним короткое сообщение: «СМЕНА УЗНАЛА ТЕБЯ»."
     n "Your name appears last - [ps_player_name]. Instead of a section number, a short message appears beneath it: \"THE SHIFT RECOGNIZES YOU.\""
 
 # game/voices_shift.rpy:923
@@ -783,7 +783,7 @@ translate english ps_storm_day_intrusion_416908b8:
 # game/voices_shift.rpy:929
 translate english ps_storm_day_intrusion_6750274f:
 
-    # sv "We disconnect the board physically. If the system wants to talk - let it survive an unplugged cable first."
+    # sv "Отключаем табло физически. Если система хочет говорить - пусть сначала переживёт выдернутый кабель."
     sv "We disconnect the board physically. If the system wants to talk, let it survive an unplugged cable first."
 
 translate english strings:
@@ -813,7 +813,7 @@ translate english ps_team_names_7a017e44:
 # game/voices_shift.rpy:428
 translate english ps_team_names_1c0e6c68:
 
-    # newb "There. Now we at least know what to call each other."
+    # newb "Вот. Теперь хотя бы знаем, как друг друга звать."
     newb "There. Now we at least know what to call each other."
 
 # game/voices_shift.rpy:431
@@ -843,7 +843,7 @@ translate english ps_route_week_scene_2615077c:
 # game/voices_shift.rpy:502
 translate english ps_route_week_scene_033b9084:
 
-    # mem "Dangerous offer, [ps_player_name]. I might get used to it."
+    # mem "Опасное предложение, [ps_player_name]. Ещё привыкну."
     mem "Dangerous offer, [ps_player_name]. I might get used to it."
 
 # game/voices_shift.rpy:601
