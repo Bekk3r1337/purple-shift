@@ -343,7 +343,7 @@ init 40 python:
             "joker": "Макс всё ещё шутит, но теперь умеет закончить фразу без улыбки.",
             "supervisor": "Артём учится произносить решение от своего имени, не прячась за регламент.",
         }
-        return _(route_names.get(route, "Смена помнит людей по именам."))
+        return ps_runtime_text(route_names.get(route, "Смена помнит людей по именам."))
 
     def ps2_finish_run():
         persistent.ps2_new_shift_plus_unlocked = True
