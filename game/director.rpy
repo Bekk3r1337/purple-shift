@@ -367,10 +367,10 @@ init python:
 
         for field in ("sender", "preview", "status", "attachment_caption", "voice_caption"):
             if localized.get(field):
-                localized[field] = _(localized[field])
+                localized[field] = ps_runtime_text(localized[field])
 
         localized["incoming"] = [
-            _(line) for line in localized.get("incoming", [])
+            ps_runtime_text(line) for line in localized.get("incoming", [])
         ]
 
         localized_replies = []
@@ -378,7 +378,7 @@ init python:
             item = dict(reply)
             for field in ("title", "answer", "reaction"):
                 if item.get(field):
-                    item[field] = _(item[field])
+                    item[field] = ps_runtime_text(item[field])
             localized_replies.append(item)
         localized["replies"] = localized_replies
 
@@ -627,7 +627,7 @@ screen ps_message_bubble(message_text, outgoing=False):
         padding (20, 13)
         background Solid("#633b83" if outgoing else "#2b1b3c")
 
-        text _(message_text):
+        text ps_runtime_text(message_text):
             color "#ffffff"
             size 21
 
@@ -705,11 +705,11 @@ screen ps_phone_messages_panel():
                                     yalign 0.5
                                     xmaximum 260
 
-                                    text _(message["sender"]):
+                                    text ps_runtime_text(message["sender"]):
                                         color ("#ffffff" if message_unread else "#cbbdd8")
                                         size 19
 
-                                    text _(message["preview"]):
+                                    text ps_runtime_text(message["preview"]):
                                         color "#a998b7"
                                         size 16
 
@@ -774,7 +774,7 @@ screen ps_phone_messages_panel():
                                         ysize 220
                                         fit "cover"
 
-                                    text _(selected_data.get("attachment_caption", "Вложение")):
+                                    text ps_runtime_text(selected_data.get("attachment_caption", "Вложение")):
                                         color "#bba9c7"
                                         size 16
 
@@ -803,7 +803,7 @@ screen ps_phone_messages_panel():
                                         text_xalign 0.5
                                         text_yalign 0.5
 
-                                    text _(selected_data.get("voice_caption", "")):
+                                    text ps_runtime_text(selected_data.get("voice_caption", "")):
                                         color "#bba9c7"
                                         size 17
 
@@ -820,7 +820,7 @@ screen ps_phone_messages_panel():
                                 size 19
 
                             for reply in selected_data["replies"]:
-                                textbutton _(reply["title"]):
+                                textbutton ps_runtime_text(reply["title"]):
                                     action Function(
                                         ps_reply_message,
                                         selected_data["id"],
@@ -1064,12 +1064,12 @@ screen ps_flow_challenge():
                         color "#81728e"
                         size 19
 
-                    text _(flow_event["title"]):
+                    text ps_runtime_text(flow_event["title"]):
                         color "#ffffff"
                         size 42
                         xalign 0.5
 
-                    text _(flow_event["detail"]):
+                    text ps_runtime_text(flow_event["detail"]):
                         color "#c7bacf"
                         size 25
                         xalign 0.5
@@ -1086,9 +1086,9 @@ screen ps_flow_challenge():
 
                     textbutton (
                         (_("РЕКОМЕНДОВАНО // ") if recommended else u"")
-                        + _(choice[1])
+                        + ps_runtime_text(choice[1])
                         + u"\n"
-                        + _(choice[2])
+                        + ps_runtime_text(choice[2])
                     ):
                         id ("ps_flow_" + choice[0])
                         action Function(ps_flow_choose, choice[0])
@@ -1171,9 +1171,9 @@ screen ps_case_board():
 
                     textbutton (
                         (_("НАДЁЖНО // ") if reliable_hint else u"")
-                        + _(item_title)
+                        + ps_runtime_text(item_title)
                         + u"\n"
-                        + _(item_desc)
+                        + ps_runtime_text(item_desc)
                     ):
                         action Function(ps_case_toggle, item_id)
                         xsize 630
@@ -1255,13 +1255,13 @@ screen ps_ending_epilogue(ending_id):
             spacing 16
             xfill True
 
-            text _(epilogue["tag"]):
+            text ps_runtime_text(epilogue["tag"]):
                 color epilogue["accent"]
                 size 24
                 kerning 3
                 xalign 0.5
 
-            text _(epilogue["line"]):
+            text ps_runtime_text(epilogue["line"]):
                 color "#ffffff"
                 size 34
                 text_align 0.5
