@@ -757,4 +757,17 @@ translate english strings:
 
     old "просит именно то, чего Макс боится"
     new "asks for exactly what Max fears"
+    # Character display names assigned dynamically after the introductions.
+
+    old "Лера"
+    new "Lera"
+
+    old "Виктор"
+    new "Viktor"
+
+    old "Макс"
+    new "Max"
+
+    old "Артём"
+    new "Artyom"
 
