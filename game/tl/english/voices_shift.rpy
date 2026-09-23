@@ -550,267 +550,267 @@ translate english ps_route_week_scene_635e49bc:
 translate english ps_route_week_scene_0a07b040:
 
     # vet "Если привод снова нагреется, я к нему не полезу. Сам. Можешь записать."
-    vet "Если привод снова нагреется, я к нему не полезу. Сам. Можешь записать."
+    vet "If the drive overheats again, I won't go near it. My choice. You can write that down."
 
 # game/voices_shift.rpy:697
 translate english ps_route_week_scene_8f03764a:
 
     # p "Справишься?"
-    p "Справишься?"
+    p "Can you do that?"
 
 # game/voices_shift.rpy:698
 translate english ps_route_week_scene_93eb27ed:
 
     # vet "Если начну геройствовать — напомни про старого дурака."
-    vet "Если начну геройствовать — напомни про старого дурака."
+    vet "If I start playing hero, remind me about that old fool."
 
 # game/voices_shift.rpy:699
 translate english ps_route_week_scene_1981b109:
 
     # p "Про какого именно?"
-    p "Про какого именно?"
+    p "Which one?"
 
 # game/voices_shift.rpy:700
 translate english ps_route_week_scene_45374885:
 
     # vet "Вот поэтому ты мне и нравишься."
-    vet "Вот поэтому ты мне и нравишься."
+    vet "That's why I like you."
 
 # game/voices_shift.rpy:707
 translate english ps_route_week_scene_afa89f62:
 
     # mem "Я сейчас очень хочу пошутить и закрыть тему."
-    mem "Я сейчас очень хочу пошутить и закрыть тему."
+    mem "I really want to make a joke right now and close the subject."
 
 # game/voices_shift.rpy:708
 translate english ps_route_week_scene_58422acc:
 
     # p "Можешь не делать."
-    p "Можешь не делать."
+    p "You don't have to."
 
 # game/voices_shift.rpy:709
 translate english ps_route_week_scene_92066e01:
 
     # mem "Тогда скажу прямо: мне страшно. Но уходить одному страшнее."
-    mem "Тогда скажу прямо: мне страшно. Но уходить одному страшнее."
+    mem "Then I'll say it plainly: I'm scared. But leaving alone scares me more."
 
 # game/voices_shift.rpy:710
 translate english ps_route_week_scene_88befc24:
 
     # p "Один и не пойдёшь."
-    p "Один и не пойдёшь."
+    p "You won't be going alone."
 
 # game/voices_shift.rpy:717
 translate english ps_route_week_scene_64c8c6cb:
 
     # sv "Через минуту мне придётся отдать приказ. Если он будет неправильным — останови меня."
-    sv "Через минуту мне придётся отдать приказ. Если он будет неправильным — останови меня."
+    sv "In a minute I'll have to give an order. If it's the wrong one, stop me."
 
 # game/voices_shift.rpy:718
 translate english ps_route_week_scene_89a85d87:
 
     # p "При всех?"
-    p "При всех?"
+    p "In front of everyone?"
 
 # game/voices_shift.rpy:719
 translate english ps_route_week_scene_7d09ca89:
 
     # sv "При всех. Если я снова начну повторять куратора — тем более."
-    sv "При всех. Если я снова начну повторять куратора — тем более."
+    sv "In front of everyone. Especially if I start repeating the Curator again."
 
 # game/voices_shift.rpy:720
 translate english ps_route_week_scene_12b5d38c:
 
     # p "Тогда говори."
-    p "Тогда говори."
+    p "Then say it."
 
 # game/voices_shift.rpy:823
 translate english ps_shift_assignment_scene_ff50c3d1:
 
     # sv "В ночную не вышли трое. Куратор план не снял и написал: «Перераспределить ресурс». Людей осталось вот столько."
-    sv "В ночную не вышли трое. Куратор план не снял и написал: «Перераспределить ресурс». Людей осталось вот столько."
+    sv "Three people did not show for the night shift. The Curator kept the target and wrote: \"Reallocate resources.\" This is how many people we have left."
 
 # game/voices_shift.rpy:824
 translate english ps_shift_assignment_scene_1d1c167f:
 
     # p "Кто где стоит сейчас?"
-    p "Кто где стоит сейчас?"
+    p "Where is everyone right now?"
 
 # game/voices_shift.rpy:825
 translate english ps_shift_assignment_scene_7cf533c1:
 
     # sv "Лера на сложной упаковке, Виктор у подъёмника, Макс закрывает два схода. В таком составе первый час план вытянем. Дальше кто-нибудь посыплется."
-    sv "Лера на сложной упаковке, Виктор у подъёмника, Макс закрывает два схода. В таком составе первый час план вытянем. Дальше кто-нибудь посыплется."
+    sv "Lera is on difficult packing, Viktor is at the lift, Max is covering two chutes. With this setup we can hold the target for an hour. After that, someone will break down."
 
 # game/voices_shift.rpy:831
 translate english ps_shift_assignment_scene_1231828e:
 
     # p "Делаем ротацию. Каждые сорок минут меняемся, сложные позиции никто не тащит всю ночь."
-    p "Делаем ротацию. Каждые сорок минут меняемся, сложные позиции никто не тащит всю ночь."
+    p "We rotate. Switch every forty minutes. Nobody carries a hard position all night."
 
 # game/voices_shift.rpy:832
 translate english ps_shift_assignment_scene_1270adcc:
 
     # sv "План просядет на запуске."
-    sv "План просядет на запуске."
+    sv "The target will dip at startup."
 
 # game/voices_shift.rpy:833
 translate english ps_shift_assignment_scene_95bcf7aa:
 
     # p "Зато через четыре часа у людей ещё останутся силы."
-    p "Зато через четыре часа у людей ещё останутся силы."
+    p "But four hours later, people will still have some strength left."
 
 # game/voices_shift.rpy:834
 translate english ps_shift_assignment_scene_4a4a389a:
 
     # sv "Записываю: ротация из-за нехватки людей."
-    sv "Записываю: ротация из-за нехватки людей."
+    sv "Logging it: rotation due to understaffing."
 
 # game/voices_shift.rpy:837
 translate english ps_shift_assignment_scene_7a894417:
 
     # p "Расставляем по опыту, но через час проверяем каждого лично. Не по табло."
-    p "Расставляем по опыту, но через час проверяем каждого лично. Не по табло."
+    p "Assign by experience, but in an hour we check every person directly. Not by the board."
 
 # game/voices_shift.rpy:838
 translate english ps_shift_assignment_scene_567d0448:
 
     # sv "Компромисс."
-    sv "Компромисс."
+    sv "Compromise."
 
 # game/voices_shift.rpy:839
 translate english ps_shift_assignment_scene_7db596b8:
 
     # p "Пока да. Если через час кто-то не тянет, меняем схему."
-    p "Пока да. Если через час кто-то не тянет, меняем схему."
+    p "For now. If someone can't keep up in an hour, we change the plan."
 
 # game/voices_shift.rpy:840
 translate english ps_shift_assignment_scene_8c07466c:
 
     # sv "Хорошо. Через час встречаемся у линии."
-    sv "Хорошо. Через час встречаемся у линии."
+    sv "All right. We meet at the line in an hour."
 
 # game/voices_shift.rpy:843
 translate english ps_shift_assignment_scene_20e1f497:
 
     # p "Сильных ставим на узкие места. Сначала выбиваем хвост."
-    p "Сильных ставим на узкие места. Сначала выбиваем хвост."
+    p "Put the strongest people at the bottlenecks. Clear the backlog first."
 
 # game/voices_shift.rpy:844
 translate english ps_shift_assignment_scene_9be4d20f:
 
     # sv "Быстро. И опасно."
-    sv "Быстро. И опасно."
+    sv "Fast. And dangerous."
 
 # game/voices_shift.rpy:845
 translate english ps_shift_assignment_scene_5d04a6d7:
 
     # p "Знаю."
-    p "Знаю."
+    p "I know."
 
 # game/voices_shift.rpy:846
 translate english ps_shift_assignment_scene_37025799:
 
     # sv "Тогда через час сам проверишь Виктора и Макса."
-    sv "Тогда через час сам проверишь Виктора и Макса."
+    sv "Then in an hour you personally check Viktor and Max."
 
 # game/voices_shift.rpy:882
 translate english ps_storm_day_intrusion_e1eabd0b:
 
     # n "На одном из мониторов открывается камера упаковки. Изображение отстаёт на несколько секунд: ты видишь, как сам входишь в кадр, хотя стоишь в диспетчерской."
-    n "На одном из мониторов открывается камера упаковки. Изображение отстаёт на несколько секунд: ты видишь, как сам входишь в кадр, хотя стоишь в диспетчерской."
+    n "One of the monitors opens the packing camera. The image lags by several seconds: you see yourself enter the frame even though you are standing in the control room."
 
 # game/voices_shift.rpy:883
 translate english ps_storm_day_intrusion_f32287ef:
 
     # n "Следом появляется ещё одна фигура в фиолетовой форме. Она идёт рядом, но на настоящей линии проход пуст."
-    n "Следом появляется ещё одна фигура в фиолетовой форме. Она идёт рядом, но на настоящей линии проход пуст."
+    n "Another figure in a violet uniform appears beside you. It walks alongside your image, but the real passage on the line is empty."
 
 # game/voices_shift.rpy:888
 translate english ps_storm_day_intrusion_dee0ce79:
 
     # sv "Эта камера отключена с прошлого месяца."
-    sv "Эта камера отключена с прошлого месяца."
+    sv "That camera has been offline since last month."
 
 # game/voices_shift.rpy:889
 translate english ps_storm_day_intrusion_3040f0e8:
 
     # p "Тогда кто сейчас смотрит на нас?"
-    p "Тогда кто сейчас смотрит на нас?"
+    p "Then who is watching us right now?"
 
 # game/voices_shift.rpy:890
 translate english ps_storm_day_intrusion_1b2965d1:
 
     # sv "Не знаю. И впервые не собираюсь писать в отчёте, что это «техническая корректировка»."
-    sv "Не знаю. И впервые не собираюсь писать в отчёте, что это «техническая корректировка»."
+    sv "I don't know. And for once I'm not going to write \"technical adjustment\" in the report."
 
 # game/voices_shift.rpy:893
 translate english ps_storm_day_intrusion_bed49c6f:
 
     # p "Ты это тоже видишь?"
-    p "Ты это тоже видишь?"
+    p "You see that too?"
 
 # game/voices_shift.rpy:894
 translate english ps_storm_day_intrusion_14b7a781:
 
     # n "Человек рядом отвечает не сразу. За это время фигура на экране успевает повернуть голову прямо к камере."
-    n "Человек рядом отвечает не сразу. За это время фигура на экране успевает повернуть голову прямо к камере."
+    n "The person beside you does not answer immediately. In that time, the figure on the screen turns its head directly toward the camera."
 
 # game/voices_shift.rpy:906
 translate english ps_storm_day_intrusion_ccd3abf1:
 
     # n "Телефон вибрирует до того, как приходит сообщение. На экране стоит завтрашняя дата и одна строка: «[ps_player_name], не позволяй им запускать линию после общего стопа»."
-    n "Телефон вибрирует до того, как приходит сообщение. На экране стоит завтрашняя дата и одна строка: «[ps_player_name], не позволяй им запускать линию после общего стопа»."
+    n "The phone vibrates before the message arrives. Tomorrow's date is on the screen, followed by one line: \"[ps_player_name], don't let them restart the line after the full stop.\""
 
 # game/voices_shift.rpy:907
 translate english ps_storm_day_intrusion_41a71ad6:
 
     # n "Через секунду дата становится сегодняшней, а сообщение исчезает из списка. В уведомлениях остаётся только пустое место."
-    n "Через секунду дата становится сегодняшней, а сообщение исчезает из списка. В уведомлениях остаётся только пустое место."
+    n "A second later, the date becomes today's, and the message disappears from the list. Only an empty space remains in notifications."
 
 # game/voices_shift.rpy:919
 translate english ps_storm_day_intrusion_86351deb:
 
     # n "Во время общего сбоя табло по очереди выводит имена людей на линии: ЛЕРА. ВИКТОР. МАКС. АРТЁМ."
-    n "Во время общего сбоя табло по очереди выводит имена людей на линии: ЛЕРА. ВИКТОР. МАКС. АРТЁМ."
+    n "During the full outage, the board displays the names of the people on the line one by one: LERA. VIKTOR. MAX. ARTYOM."
 
 # game/voices_shift.rpy:920
 translate english ps_storm_day_intrusion_0038a4a6:
 
     # n "Последним появляется твоё имя — [ps_player_name]. Вместо номера участка под ним короткое сообщение: «СМЕНА УЗНАЛА ТЕБЯ»."
-    n "Последним появляется твоё имя — [ps_player_name]. Вместо номера участка под ним короткое сообщение: «СМЕНА УЗНАЛА ТЕБЯ»."
+    n "Your name appears last - [ps_player_name]. Instead of a section number, a short message appears beneath it: \"THE SHIFT RECOGNIZES YOU.\""
 
 # game/voices_shift.rpy:923
 translate english ps_storm_day_intrusion_5177c70e:
 
     # newb "Раньше система видела во мне только ошибку. Почему сейчас она знает наши имена?"
-    newb "Раньше система видела во мне только ошибку. Почему сейчас она знает наши имена?"
+    newb "The system used to see nothing in me but an error. Why does it know our names now?"
 
 # game/voices_shift.rpy:925
 translate english ps_storm_day_intrusion_547576b7:
 
     # vet "Не отвечай ей. Всё, что зовёт тебя по имени из выключенного табло, может подождать."
-    vet "Не отвечай ей. Всё, что зовёт тебя по имени из выключенного табло, может подождать."
+    vet "Don't answer it. Anything calling you by name from a powered-off board can wait."
 
 # game/voices_shift.rpy:927
 translate english ps_storm_day_intrusion_416908b8:
 
     # mem "Я хотел пошутить, но, кажется, оно именно этого и ждёт."
-    mem "Я хотел пошутить, но, кажется, оно именно этого и ждёт."
+    mem "I wanted to make a joke, but I think that's exactly what it's waiting for."
 
 # game/voices_shift.rpy:929
 translate english ps_storm_day_intrusion_6750274f:
 
     # sv "Отключаем табло физически. Если система хочет говорить — пусть сначала переживёт выдернутый кабель."
-    sv "Отключаем табло физически. Если система хочет говорить — пусть сначала переживёт выдернутый кабель."
+    sv "We disconnect the board physically. If the system wants to talk, let it survive an unplugged cable first."
 
 translate english strings:
 
     # game/voices_shift.rpy:580
-    old "Дать Лере говорить самой и остаться рядом"
-    new "Дать Лере говорить самой и остаться рядом"
+    old "Let Lera speak for herself and stay beside her"
+    new "Let Lera speak for herself and stay beside her"
 
     # game/voices_shift.rpy:587
-    old "Сразу взять разговор на себя"
-    new "Сразу взять разговор на себя"
+    old "Take over the conversation immediately"
+    new "Take over the conversation immediately"
 
