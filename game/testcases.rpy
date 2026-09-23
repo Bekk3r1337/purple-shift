@@ -506,6 +506,15 @@ testsuite purple_shift:
         assert eval (ps_team_unity == 2)
         assert eval (ps_shift_plan_history == ["rotation"])
 
+        # Regression: the old route-climax state is a boolean named
+        # ps_route_scene_seen. It must never shadow the week-scene helper.
+        $ ps_route_scene_seen = False
+        $ ps_route_week_seen = []
+        assert eval (ps_has_seen_route_scene(2, "newbie") == False)
+        $ ps_mark_route_scene(2, "newbie")
+        assert eval (ps_has_seen_route_scene(2, "newbie") == True)
+        assert eval (ps_route_scene_seen == False)
+
 
     testcase voices_shift_assets:
         assert eval (renpy.loadable("images/cg/team_names.jpg"))

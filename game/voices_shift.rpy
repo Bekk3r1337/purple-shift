@@ -322,7 +322,10 @@ init 15 python:
         if text not in ps_relationship_memories:
             ps_relationship_memories = ps_relationship_memories + [text]
 
-    def ps_route_scene_seen(day, route_id):
+    def ps_has_seen_route_scene(day, route_id):
+        # Do not reuse the legacy store name ps_route_scene_seen here.
+        # Old saves may contain a boolean under that name, which shadows a
+        # Python function after loading and causes "'bool' object is not callable".
         return "{}:{}".format(day, route_id) in ps_route_week_seen
 
     def ps_mark_route_scene(day, route_id):
@@ -457,7 +460,7 @@ label ps_team_names:
 label ps_route_week_scene(day):
     $ ps_week_route = ps_route_target()
 
-    if ps_route_scene_seen(day, ps_week_route):
+    if ps_has_seen_route_scene(day, ps_week_route):
         return
 
     $ ps_mark_route_scene(day, ps_week_route)

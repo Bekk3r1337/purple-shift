@@ -282,26 +282,51 @@ screen choice(items):
                         xsize 1170
 
     else:
-        # Safety fallback for an unexpected menu with more than four options.
-        # Do not hide choices just because the authored overlay only has 4 rails.
+        # Five-option finale menus used to fall back to plain black bars.
+        # Keep every option visible, but render a compact Purple Shift rail set
+        # that still fits cleanly inside the 1080p composition.
         frame:
             xalign 0.5
             yalign 0.5
-            xsize 1320
-            padding (28, 28)
-            background Solid("#090511e8")
+            xsize 1500
+            padding (34, 32)
+            background Solid("#090511dc")
 
             vbox:
                 xfill True
-                spacing 12
+                spacing 14
 
                 for i in items:
-                    textbutton i.caption:
+                    button:
                         action i.action
                         alt i.caption
                         style "ps_choice_fallback_button"
-                        text_style "ps_choice_fallback_button_text"
                         xfill True
+                        ysize 110
+
+                        fixed:
+                            xfill True
+                            ysize 110
+
+                            add Solid("#8e4ed6"):
+                                xpos 0
+                                ypos 0
+                                xsize 5
+                                ysize 110
+
+                            add Solid("#1a0d29e8"):
+                                xpos 5
+                                ypos 0
+                                xsize 1427
+                                ysize 110
+
+                            text i.caption:
+                                style "ps_choice_fallback_button_text"
+                                xpos 34
+                                ypos 55
+                                xanchor 0.0
+                                yanchor 0.5
+                                xsize 1320
 
 
 style choice_vbox is vbox
@@ -1849,16 +1874,20 @@ style ps_choice_button_text_hover is ps_choice_button_text:
     outlines [(2, "#8e4ed6aa", 0, 0)]
 
 style ps_choice_fallback_button is button:
-    background Solid("#130a20e8")
-    hover_background Solid("#321a4ae8")
-    xpadding 24
-    ypadding 18
+    background Solid("#130a20d8")
+    hover_background Solid("#3a2053e8")
+    insensitive_background Solid("#0b0711aa")
+    xpadding 0
+    ypadding 0
+    focus_mask None
 
-style ps_choice_fallback_button_text is button_text:
+style ps_choice_fallback_button_text is text:
     color "#eee8ff"
     hover_color "#ffffff"
-    size 28
+    insensitive_color "#9d8cad"
+    size 29
     text_align 0.0
+    outlines [(1, "#3f2362aa", 0, 0)]
 
 # --- PurpleShift main menu styles ---
 
