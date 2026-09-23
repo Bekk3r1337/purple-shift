@@ -197,17 +197,17 @@ init 25 python:
 
     def ps_shift_pulse_title():
         if ps_shift_temperature >= 6 and ps_team_unity >= 5:
-            return "Люди держат смену вместе"
+            return _("Люди держат смену вместе")
         if ps_shift_temperature >= 3:
-            return "Должности начинают становиться именами"
+            return _("Должности начинают становиться именами")
         if ps_burnout >= 7:
-            return "Шум стал громче людей"
-        return "Смена пока присматривается к тебе"
+            return _("Шум стал громче людей")
+        return _("Смена пока присматривается к тебе")
 
     def ps_shift_pulse_caption():
         if not ps_human_memory_log:
-            return "Значимые мелочи появятся здесь после разговоров и бытовых остановок."
-        return "Запомнено человеческих моментов: {}. Последние решения возвращаются не только цифрами, но и поведением команды.".format(len(ps_human_memory_log))
+            return _("Значимые мелочи появятся здесь после разговоров и бытовых остановок.")
+        return _("Запомнено человеческих моментов: {}. Последние решения возвращаются не только цифрами, но и поведением команды.").format(len(ps_human_memory_log))
 
     def ps_toggle_choice_insight():
         persistent.ps_choice_insight = not persistent.ps_choice_insight
@@ -349,7 +349,7 @@ screen ps_remaster_metric(title, value, accent, maximum=12):
             spacing 9
             hbox:
                 xfill True
-                text title:
+                text _(title):
                     color "#c8bbd0"
                     size 18
                 text "[value]":
@@ -440,13 +440,13 @@ screen ps_remaster_toggle(title, description, enabled, action, button_id):
             xfill True
             vbox:
                 spacing 5
-                text title:
+                text _(title):
                     color "#ffffff"
                     size 24
-                text description:
+                text _(description):
                     color "#c7bacd"
                     size 18
-            text ("ВКЛ" if enabled else "ВЫКЛ"):
+            text (_("ВКЛ") if enabled else _("ВЫКЛ")):
                 color ("#8ee3bc" if enabled else "#8d8195")
                 size 24
                 xalign 1.0
