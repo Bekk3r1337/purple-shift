@@ -941,7 +941,7 @@ screen preferences():
                     textbutton _("Русский"):
                         action Function(ps_select_language, None)
                         selected (_preferences.language is None)
-                    textbutton "English":
+                    textbutton "English (Beta)":
                         action Function(ps_select_language, "english")
                         selected (_preferences.language == "english")
 
