@@ -17,8 +17,8 @@ label start:
 
     call screen ps_day_card(
         1,
-        "Первая смена",
-        "Новая работа начинается с будильника в 06:12 и сорока минут на сборы."
+        _("Первая смена"),
+        _("Новая работа начинается с будильника в 06:12 и сорока минут на сборы.")
     )
 
     jump morning_home
@@ -302,7 +302,7 @@ label shift_continues:
 label help_newbie:
     $ ps_humanity += 2
     $ ps_newbie_trust += 2
-    $ ps_key_choices = ps_key_choices + ["Ты потерял темп, чтобы помочь новичку."]
+    $ ps_key_choices = ps_key_choices + [_("Ты потерял темп, чтобы помочь новичку.")]
     n "Ты наклоняешься ближе к её экрану."
     p "Покажи. Не дёргайся."
     n "Она показывает экран. Ошибка простая, но Лера смотрит на красную строку и боится нажать ещё хоть что-нибудь."
@@ -328,7 +328,7 @@ label help_newbie:
 label grind_norm:
     $ ps_efficiency += 2
     $ ps_humanity -= 1
-    $ ps_key_choices = ps_key_choices + ["Ты выбрал норму и не вмешался."]
+    $ ps_key_choices = ps_key_choices + [_("Ты выбрал норму и не вмешался.")]
     # новенькая больше не в фокусе - убираем, чтобы не висела в след. сцене
     hide newb
     with dissolve
@@ -349,7 +349,7 @@ label grind_norm:
 
 label take_pause:
     $ ps_endurance += 2
-    $ ps_key_choices = ps_key_choices + ["Ты позволил себе остановиться и восстановить дыхание."]
+    $ ps_key_choices = ps_key_choices + [_("Ты позволил себе остановиться и восстановить дыхание.")]
     # новенькая не нужна визуально в паузе - прячем
     hide newb
     with dissolve
@@ -514,7 +514,7 @@ label ending_light_path:
     $ ps_first_shift_path = "протянул руку"
     $ ps_humanity += 2
     $ ps_newbie_trust += 2
-    $ ps_key_choices = ps_key_choices + ["В финале первой смены ты помог восстановить поток."]
+    $ ps_key_choices = ps_key_choices + [_("В финале первой смены ты помог восстановить поток.")]
     n "Ты делаешь шаг вперёд."
     p "Давай. Вместе."
 
@@ -548,8 +548,8 @@ label ending_light_path:
 
 
     call screen ps_shift_report(
-        "Итоги первой смены",
-        "Ты выжил в потоке и не прошёл мимо чужой ошибки."
+        _("Итоги первой смены"),
+        _("Ты выжил в потоке и не прошёл мимо чужой ошибки.")
     )
 
     jump chapter2_after_shift
@@ -559,7 +559,7 @@ label ending_light_path:
 label ending_hard_path:
     $ ps_first_shift_path = "сохранил силы"
     $ ps_endurance += 2
-    $ ps_key_choices = ps_key_choices + ["В финале первой смены ты выбрал сохранить себя."]
+    $ ps_key_choices = ps_key_choices + [_("В финале первой смены ты выбрал сохранить себя.")]
     n "Ты остаёшься на месте. Ноги уже дрожат, и до конца смены ещё нужно простоять."
 
     n "Кто-то поднимает коробки без тебя. Ты слышишь шуршание, тяжёлые вдохи, короткие команды."
@@ -600,8 +600,8 @@ label ending_hard_path:
     with dissolve
 
     call screen ps_shift_report(
-        "Итоги первой смены",
-        "Ты сохранил силы. Иногда выживание - тоже честный выбор."
+        _("Итоги первой смены"),
+        _("Ты сохранил силы. Иногда выживание - тоже честный выбор.")
     )
 
     jump chapter2_after_shift
@@ -880,7 +880,7 @@ label chapter2_observe_continue:
 label chapter2_observe_support:
     $ ps_humanity += 2
     $ ps_newbie_trust += 2
-    $ ps_key_choices = ps_key_choices + ["После смены ты поддержал новичка."]
+    $ ps_key_choices = ps_key_choices + [_("После смены ты поддержал новичка.")]
     p "Первый раз всегда самый шумный. Но ты справилась."
 
     newb "Я там чуть не расплакалась. Потом получилось, и вроде отпустило."
