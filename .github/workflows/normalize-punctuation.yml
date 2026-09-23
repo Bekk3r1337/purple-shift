@@ -1,0 +1,48 @@
+name: Normalize dialogue punctuation
+
+on:
+  push:
+    branches:
+      - agent/full-en-localization
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/full-en-localization
+
+      - name: Replace long dashes in game scripts
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          changed = []
+          for path in Path("game").rglob("*.rpy"):
+              text = path.read_text(encoding="utf-8-sig")
+              fixed = text.replace("—", "-").replace("–", "-")
+              if fixed != text:
+                  path.write_text(fixed, encoding="utf-8")
+                  changed.append(str(path))
+
+          print(f"Normalized {len(changed)} files")
+          for path in changed:
+              print(path)
+          PY
+
+      - name: Commit punctuation normalization
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add game
+          if git diff --cached --quiet; then
+            echo "No long dashes found."
+            exit 0
+          fi
+          git commit -m "style: normalize dialogue dashes to hyphens"
+          git push origin HEAD:agent/full-en-localization
