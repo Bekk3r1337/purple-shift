@@ -11,6 +11,44 @@ LONG_DASHES = ("—", "–")
 problems = []
 english_old_strings = {}
 
+SOURCE_STRING_CALL = re.compile(r'_\(\s*("(?:\\.|[^"])*")\s*\)')
+RUNTIME_CATALOG_ASSIGNMENT = re.compile(
+    r'(?m)^\s*(ps[A-Za-z0-9_]*(?:catalog|messages|cgs|documents|achievements|events|hypotheses|items|profiles))\s*=\s*([\[\{])'
+)
+STRING_LITERAL = re.compile(r'"(?:\\.|[^"])*"|\'(?:\\.|[^\'])*\'')
+
+
+def extract_balanced_assignment(text, start_index, opening):
+    closing = "]" if opening == "[" else "}"
+    index = start_index
+    depth = 0
+    quote = None
+    escaped = False
+
+    while index < len(text):
+        char = text[index]
+
+        if quote is not None:
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == quote:
+                quote = None
+        else:
+            if char in ('"', "\'"):
+                quote = char
+            elif char == opening:
+                depth += 1
+            elif char == closing:
+                depth -= 1
+                if depth == 0:
+                    return text[start_index:index + 1]
+
+        index += 1
+
+    return text[start_index:]
+
 for path in sorted(GAME.rglob("*.rpy")):
     try:
         text = path.read_text(encoding="utf-8-sig")
@@ -57,10 +95,56 @@ for path in sorted(GAME.rglob("*.rpy")):
                     f"{path}:{lineno}: Cyrillic remains in active English localization: {stripped}"
                 )
 
+
+# Anything explicitly passed through _() needs a string-table entry.
+for path in sorted(GAME.rglob("*.rpy")):
+    if path.as_posix().startswith("game/tl/"):
+        continue
+
+    text = path.read_text(encoding="utf-8-sig")
+
+    for match in SOURCE_STRING_CALL.finditer(text):
+        try:
+            source_text = ast.literal_eval(match.group(1))
+        except (SyntaxError, ValueError):
+            continue
+
+        if CYRILLIC.search(source_text) and source_text not in english_old_strings:
+            lineno = text.count("\n", 0, match.start()) + 1
+            problems.append(
+                f"{path}:{lineno}: _() string has no English string translation: {source_text!r}"
+            )
+
+    # Runtime data catalogs are rendered dynamically, so Ren'Py cannot create
+    # translation blocks for them automatically. Every Cyrillic literal in
+    # these user-facing catalogs must have an explicit English string entry.
+    for assignment in RUNTIME_CATALOG_ASSIGNMENT.finditer(text):
+        variable_name = assignment.group(1)
+        opening = assignment.group(2)
+        block = extract_balanced_assignment(text, assignment.start(2), opening)
+
+        for literal_match in STRING_LITERAL.finditer(block):
+            try:
+                source_text = ast.literal_eval(literal_match.group(0))
+            except (SyntaxError, ValueError):
+                continue
+
+            if not isinstance(source_text, str) or not CYRILLIC.search(source_text):
+                continue
+
+            if source_text not in english_old_strings:
+                absolute_index = assignment.start(2) + literal_match.start()
+                lineno = text.count("\n", 0, absolute_index) + 1
+                problems.append(
+                    f"{path}:{lineno}: dynamic catalog {variable_name} has no English "
+                    f"string translation for {source_text!r}"
+                )
+
+
 if problems:
     print("Localization hygiene check failed:")
     for problem in problems:
         print(f" - {problem}")
     sys.exit(1)
 
-print("Localization hygiene check passed: no long dashes, no active Cyrillic in English, and no duplicate English string translations.")
+print("Localization hygiene check passed: no long dashes, no active Cyrillic in English, no duplicate translations, and dynamic runtime strings have English coverage.")
