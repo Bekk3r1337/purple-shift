@@ -781,12 +781,12 @@ screen ps_shift_assignment():
                             spacing 18
                             xfill True
 
-                            text plan["title"]:
+                            text _(plan["title"]):
                                 color plan["accent"]
                                 size 34
                                 xalign 0.5
 
-                            text plan["subtitle"]:
+                            text _(plan["subtitle"]):
                                 color "#ffffff"
                                 size 23
                                 xalign 0.5
@@ -794,7 +794,7 @@ screen ps_shift_assignment():
 
                             null height 12
 
-                            text plan["detail"]:
+                            text _(plan["detail"]):
                                 color "#c6b7cf"
                                 size 21
                                 text_align 0.0
