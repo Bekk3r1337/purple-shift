@@ -9,11 +9,11 @@ label start:
 
     if ps_player_name == "Сотрудник":
         $ ps_entered_name = renpy.input(
-            "Как к тебе обращаться?",
-            default="Сотрудник",
+            _("Как к тебе обращаться?"),
+            default=_("Сотрудник"),
             length=18,
         ).strip()
-        $ ps_player_name = ps_entered_name or "Сотрудник"
+        $ ps_player_name = ps_entered_name or _("Сотрудник")
 
     call screen ps_day_card(
         1,
