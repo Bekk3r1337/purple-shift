@@ -1280,156 +1280,156 @@ translate english strings:
 
     # game/chapter3.rpy:19
     old "Подтвердить смену сразу"
-    new "Подтвердить смену сразу"
+    new "Confirm the shift immediately"
 
     # game/chapter3.rpy:21
     old "Ты подтвердил вторую смену без колебаний."
-    new "Ты подтвердил вторую смену без колебаний."
+    new "You confirmed the second shift without hesitation."
 
     # game/chapter3.rpy:24
     old "Отложить телефон и дать себе ещё десять минут"
-    new "Отложить телефон и дать себе ещё десять минут"
+    new "Put the phone down and give yourself ten more minutes"
 
     # game/chapter3.rpy:26
     old "Ты отвоевал у системы десять минут тишины."
-    new "Ты отвоевал у системы десять минут тишины."
+    new "You reclaimed ten quiet minutes from the system."
 
     # game/chapter3.rpy:29
     old "Ответить новичку"
-    new "Ответить новичку"
+    new "Reply to the newcomer"
 
     # game/chapter3.rpy:32
     old "Перед второй сменой ты пообещал новичку быть рядом."
-    new "Перед второй сменой ты пообещал новичку быть рядом."
+    new "Before the second shift, you promised the newcomer you would be there."
 
     # game/chapter3.rpy:58
     old "Вторая смена"
-    new "Вторая смена"
+    new "Second Shift"
 
     # game/chapter3.rpy:58
     old "Дорогу до склада ты уже запомнил. Всё остальное придётся учить заново."
-    new "Дорогу до склада ты уже запомнил. Всё остальное придётся учить заново."
+    new "You already know the road to the warehouse. Everything else has to be learned again."
 
     # game/chapter3.rpy:179
     old "Предложить работать рядом"
-    new "Предложить работать рядом"
+    new "Suggest working side by side"
 
     # game/chapter3.rpy:186
     old "Сказать, что каждый отвечает за свой ТСД"
-    new "Сказать, что каждый отвечает за свой ТСД"
+    new "Say that everyone is responsible for their own scanner"
 
     # game/chapter3.rpy:192
     old "Снять напряжение шуткой"
-    new "Снять напряжение шуткой"
+    new "Break the tension with a joke"
 
     # game/chapter3.rpy:239
     old "ЯЧЕЙКА НЕ НАЙДЕНА"
-    new "ЯЧЕЙКА НЕ НАЙДЕНА"
+    new "BIN NOT FOUND"
 
     # game/chapter3.rpy:239
     old "Товар остаётся в активной задаче. Требуется ручная привязка."
-    new "Товар остаётся в активной задаче. Требуется ручная привязка."
+    new "The item remains in the active task. Manual binding is required."
 
     # game/chapter3.rpy:248
     old "Позвать супервайзера и сразу показать ошибку"
-    new "Позвать супервайзера и сразу показать ошибку"
+    new "Call the supervisor and show the error immediately"
 
     # game/chapter3.rpy:251
     old "Попросить ветерана объяснить"
-    new "Попросить ветерана объяснить"
+    new "Ask the veteran to explain"
 
     # game/chapter3.rpy:254
     old "Попробовать решить самому"
-    new "Попробовать решить самому"
+    new "Try to solve it yourself"
 
     # game/chapter3.rpy:336
     old "Спросить, почему нагрузку не разделят на всех"
-    new "Спросить, почему нагрузку не разделят на всех"
+    new "Ask why the workload is not being spread across everyone"
 
     # game/chapter3.rpy:342
     old "Молча взять дополнительный сектор"
-    new "Молча взять дополнительный сектор"
+    new "Silently take the extra section"
 
     # game/chapter3.rpy:373
     old "Забрать часть её задач"
-    new "Забрать часть её задач"
+    new "Take some of her tasks"
 
     # game/chapter3.rpy:382
     old "Научить её работать с проблемным потоком"
-    new "Научить её работать с проблемным потоком"
+    new "Teach her how to use the problem flow"
 
     # game/chapter3.rpy:390
     old "Сказать держать темп самостоятельно"
-    new "Сказать держать темп самостоятельно"
+    new "Tell her to keep pace on her own"
 
     # game/chapter3.rpy:435
     old "КОНТЕЙНЕР ПЕРЕПОЛНЕН"
-    new "КОНТЕЙНЕР ПЕРЕПОЛНЕН"
+    new "CONTAINER OVERFILLED"
 
     # game/chapter3.rpy:435
     old "Продолжение операции может привести к падению груза."
-    new "Продолжение операции может привести к падению груза."
+    new "Continuing the operation may cause the load to fall."
 
     # game/chapter3.rpy:442
     old "Нажать аварийную остановку"
-    new "Нажать аварийную остановку"
+    new "Press the emergency stop"
 
     # game/chapter3.rpy:445
     old "Не останавливать линию, но быстро собрать людей"
-    new "Не останавливать линию, но быстро собрать людей"
+    new "Do not stop the line, but quickly gather people"
 
     # game/chapter3.rpy:448
     old "Выполнить указание и продолжить работу"
-    new "Выполнить указание и продолжить работу"
+    new "Follow the instruction and keep working"
 
     # game/chapter3.rpy:456
     old "Ты остановил линию из-за опасного контейнера."
-    new "Ты остановил линию из-за опасного контейнера."
+    new "You stopped the line because of the dangerous container."
 
     # game/chapter3.rpy:497
     old "Ты собрал людей и разгрузил опасный контейнер."
-    new "Ты собрал людей и разгрузил опасный контейнер."
+    new "You gathered the team and unloaded the dangerous container."
 
     # game/chapter3.rpy:526
     old "Ты продолжил работу, несмотря на опасный контейнер."
-    new "Ты продолжил работу, несмотря на опасный контейнер."
+    new "You kept working despite the dangerous container."
 
     # game/chapter3.rpy:639
     old "Хочу, чтобы рядом со мной не боялись просить помощи"
-    new "Хочу, чтобы рядом со мной не боялись просить помощи"
+    new "I want people around me not to be afraid to ask for help"
 
     # game/chapter3.rpy:641
     old "Ты выбрал быть опорой для людей."
-    new "Ты выбрал быть опорой для людей."
+    new "You chose to be someone people can rely on."
 
     # game/chapter3.rpy:645
     old "Хочу научиться отвечать за участок"
-    new "Хочу научиться отвечать за участок"
+    new "I want to learn how to take responsibility for a section"
 
     # game/chapter3.rpy:648
     old "Ты решил расти и отвечать за участок."
-    new "Ты решил расти и отвечать за участок."
+    new "You chose to grow into responsibility for a section."
 
     # game/chapter3.rpy:652
     old "Хочу заметить, если эта работа начнёт меня ломать"
-    new "Хочу заметить, если эта работа начнёт меня ломать"
+    new "I want to notice if this job starts breaking me"
 
     # game/chapter3.rpy:654
     old "Ты пообещал себе не потерять выход."
-    new "Ты пообещал себе не потерять выход."
+    new "You promised yourself not to lose sight of the exit."
 
     # game/chapter3.rpy:658
     old "Хочу хотя бы не разучиться шутить"
-    new "Хочу хотя бы не разучиться шутить"
+    new "At least I don't want to forget how to joke"
 
     # game/chapter3.rpy:660
     old "Ты выбрал не отдавать смене свой голос."
-    new "Ты выбрал не отдавать смене свой голос."
+    new "You chose not to give your voice away to the shift."
 
     # game/chapter3.rpy:709
     old "Итоги второго дня"
-    new "Итоги второго дня"
+    new "Day Two Results"
 
     # game/chapter3.rpy:709
     old "Вторая смена закончена. То, что ты сделал у контейнера, заметили все."
-    new "Вторая смена закончена. То, что ты сделал у контейнера, заметили все."
+    new "The second shift is over. Everyone noticed what you did at the container."
