@@ -20,6 +20,35 @@ define mem = DynamicCharacter("ps_joker_name", color="#7ad7ff")
 define newb = DynamicCharacter("ps_newbie_name", color="#ff7ad7")
 define cur = DynamicCharacter("ps_curator_name", color="#ff9d66")
 
+init python:
+    def ps_sync_character_names():
+        global ps_player_name
+        global ps_newbie_name
+        global ps_veteran_name
+        global ps_joker_name
+        global ps_supervisor_name
+        global ps_curator_name
+
+        # Keep custom player names untouched, but localize the untouched default.
+        if ps_player_name in ("Сотрудник", "Employee"):
+            ps_player_name = _("Сотрудник")
+
+        if ps_names_revealed:
+            ps_newbie_name = _("Лера")
+            ps_veteran_name = _("Виктор")
+            ps_joker_name = _("Макс")
+            ps_supervisor_name = _("Артём")
+        else:
+            ps_newbie_name = _("Новичок")
+            ps_veteran_name = _("Ветеран")
+            ps_joker_name = _("Шутник")
+            ps_supervisor_name = _("Супервайзер")
+
+        if ps_curator_name in ("Морозов", "Morozov"):
+            ps_curator_name = _("Морозов")
+        else:
+            ps_curator_name = _("Куратор")
+
 image bg mainmenu = Solid("#120a1f")
 image ps_bg_base = Solid("#0c0614")
 image ps_bg_purple = Solid("#1b0f2a")
