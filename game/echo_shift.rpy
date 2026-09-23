@@ -464,7 +464,7 @@ screen ps_deep_investigation_board():
                                 text "[index + 1]. [event['stamp']]":
                                     color event["accent"]
                                     size 18
-                                text event["title"]:
+                                text _(event["title"]):
                                     color "#ffffff"
                                     size 22
                         else:
@@ -497,19 +497,19 @@ screen ps_deep_investigation_board():
 
                             hbox:
                                 xfill True
-                                text event["stamp"]:
+                                text _(event["stamp"]):
                                     color event["accent"]
                                     size 17
-                                text ("ФАКТ" if confirmed else "НЕ ПОДТВЕРЖДЕНО"):
+                                text (_("ФАКТ") if confirmed else _("НЕ ПОДТВЕРЖДЕНО")):
                                     color ("#82e5b7" if confirmed else "#8b7c92")
                                     size 15
                                     xalign 1.0
 
-                            text event["title"]:
+                            text _(event["title"]):
                                 color ("#ffffff" if not selected else "#625a68")
                                 size 23
 
-                            text event["detail"]:
+                            text _(event["detail"]):
                                 color ("#c9bdcf" if not selected else "#625a68")
                                 size 18
 
@@ -518,7 +518,7 @@ screen ps_deep_investigation_board():
                 xalign 0.5
 
                 for hypothesis_id, hypothesis_title, hypothesis_detail in ps_investigation_hypotheses:
-                    textbutton hypothesis_title:
+                    textbutton _(hypothesis_title):
                         id ("ps_deep_hypothesis_" + hypothesis_id)
                         action SetVariable("ps_investigation_hypothesis", hypothesis_id)
                         xsize 520
@@ -621,7 +621,7 @@ screen ps_storm_mimic():
 
                             hbox:
                                 xfill True
-                                text message["sender"]:
+                                text _(message["sender"]):
                                     color "#ffffff"
                                     size 24
                                 text message["time"]:
@@ -629,7 +629,7 @@ screen ps_storm_mimic():
                                     size 19
                                     xalign 1.0
 
-                            text message["text"]:
+                            text _(message["text"]):
                                 color "#d8cede"
                                 size 21
 
