@@ -395,13 +395,13 @@ screen ps_day_card(day, title, subtitle):
                 size 34
                 xalign 0.5
 
-            text title:
+            text _(title):
                 color "#ffffff"
                 size 64
                 text_align 0.5
                 xalign 0.5
 
-            text subtitle:
+            text _(subtitle):
                 color "#cdbde0"
                 size 27
                 text_align 0.5
@@ -455,7 +455,7 @@ screen ps_phone_stat(title, value, accent):
             hbox:
                 xfill True
 
-                text title:
+                text _(title):
                     color "#eee6f7"
                     size 23
 
@@ -485,7 +485,7 @@ screen ps_relation_row(name, value, accent, caption):
             hbox:
                 xfill True
 
-                text name:
+                text _(name):
                     color "#ffffff"
                     size 26
 
@@ -501,7 +501,7 @@ screen ps_relation_row(name, value, accent, caption):
                 left_bar Solid(accent)
                 right_bar Solid("#49345f")
 
-            text caption:
+            text _(caption):
                 color "#a997bf"
                 size 19
 
@@ -591,7 +591,7 @@ screen ps_phone(initial_tab="status"):
                     text_xalign 0.5
                     text_yalign 0.5
 
-                textbutton ("ЧАТЫ ({})".format(ps_unread_message_count()) if ps_unread_message_count() else "ЧАТЫ"):
+                textbutton (_("ЧАТЫ ({})").format(ps_unread_message_count()) if ps_unread_message_count() else _("ЧАТЫ")):
                     id "ps_phone_messages_tab"
                     action SetScreenVariable("tab", "messages")
                     background Solid("#7442a7" if tab == "messages" else "#291a38")
@@ -919,7 +919,7 @@ screen ps_phone(initial_tab="status"):
                                             color "#a98bc2"
                                             size 18
 
-                                        text ps_relationship_memories[-1]:
+                                        text _(ps_relationship_memories[-1]):
                                             color "#cfc2d9"
                                             size 20
 
@@ -961,11 +961,11 @@ screen ps_phone(initial_tab="status"):
                                     vbox:
                                         spacing 5
 
-                                        text (achievement_title if achievement_open else "???"):
+                                        text (_(achievement_title) if achievement_open else "???"):
                                             color ("#d7b4ff" if achievement_open else "#6f6678")
                                             size 26
 
-                                        text (achievement_desc if achievement_open else "Условие пока скрыто"):
+                                        text (_(achievement_desc) if achievement_open else _("Условие пока скрыто")):
                                             color ("#b9a8ca" if achievement_open else "#5f5865")
                                             size 20
 
@@ -999,11 +999,11 @@ screen ps_phone(initial_tab="status"):
                                             spacing 5
                                             xmaximum 970
 
-                                            text (ending_title if ending_open else "Неизвестный финал"):
+                                            text (_(ending_title) if ending_open else _("Неизвестный финал")):
                                                 color ("#d7b4ff" if ending_open else "#6f6678")
                                                 size 26
 
-                                            text (ending_desc if ending_open else "Продолжай принимать решения"):
+                                            text (_(ending_desc) if ending_open else _("Продолжай принимать решения")):
                                                 color ("#b9a8ca" if ending_open else "#5f5865")
                                                 size 20
 
@@ -1171,12 +1171,12 @@ screen ps_sort_challenge():
                         color "#718079"
                         size 22
 
-                    text "[ps_sort_item[0]]":
+                    text _(ps_sort_item[0]):
                         color "#ffffff"
                         size 53
                         xalign 0.5
 
-                    text "[ps_sort_item[2]]":
+                    text _(ps_sort_item[2]):
                         color "#aab8b0"
                         size 25
                         xalign 0.5
@@ -1191,7 +1191,7 @@ screen ps_sort_challenge():
                 xalign 0.5
 
                 for zone_id, zone_title in ps_sort_zones:
-                    textbutton zone_title:
+                    textbutton _(zone_title):
                         action Function(ps_sort_choose, zone_id)
                         xsize 350
                         ysize 125
@@ -1291,7 +1291,7 @@ screen ps_signal_challenge():
                                 size 18
                                 xalign 0.5
 
-                            text "[sequence_item[1]]":
+                            text _(sequence_item[1]):
                                 color "#ffffff"
                                 size 22
                                 xalign 0.5
@@ -1304,7 +1304,7 @@ screen ps_signal_challenge():
                 xalign 0.5
 
                 for signal_id, signal_title in ps_signal_buttons:
-                    textbutton signal_title:
+                    textbutton _(signal_title):
                         action Function(ps_signal_choose, signal_id)
                         xsize 520
                         ysize 150
