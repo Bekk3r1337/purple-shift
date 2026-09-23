@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2026-09-23 08:18
+# TODO: Translation updated at 2026-09-23 08:18
 
 # game/beyond_shift.rpy:640
 translate english ps2_pre_shift_400be6df:
@@ -63,7 +63,7 @@ translate english ps2_pre_shift_68482ac0:
 # game/beyond_shift.rpy:676
 translate english ps2_pre_shift_c2bf80c2:
 
-    # p "Сначала закрою смену. Остальное — после остановки линии."
+    # p "Сначала закрою смену. Остальное - после остановки линии."
     p "First I'll get the shift closed. Everything else comes after the line stops."
 
 # game/beyond_shift.rpy:682
@@ -381,7 +381,7 @@ translate english ps2_after_shift_1eaa2125:
 # game/beyond_shift.rpy:889
 translate english ps2_after_shift_ca614b88:
 
-    # vet "Возьмёшь весь тяжёлый сектор — к вечеру поменяемся местами. Давай лучше разделим."
+    # vet "Возьмёшь весь тяжёлый сектор - к вечеру поменяемся местами. Давай лучше разделим."
     vet "If you take the entire heavy section, we'll end up swapping by evening. Let's split it instead."
 
 # game/beyond_shift.rpy:917
@@ -399,7 +399,7 @@ translate english ps2_storm_echo_1c6f5db9:
 # game/beyond_shift.rpy:921
 translate english ps2_storm_echo_63a82171:
 
-    # n "Лента движется без коробок. На каждом пустом участке лежит карточка с одним из решений недели. Некоторые написаны твоим почерком, хотя ты их не писал. Последняя карточка пустая — система оставила место для финала."
+    # n "Лента движется без коробок. На каждом пустом участке лежит карточка с одним из решений недели. Некоторые написаны твоим почерком, хотя ты их не писал. Последняя карточка пустая - система оставила место для финала."
     n "The belt moves without boxes. On every empty section lies a card bearing one of the week's decisions. Some are written in your handwriting even though you never wrote them. The final card is blank - the system has left room for the ending."
 
 # game/beyond_shift.rpy:936
@@ -441,7 +441,7 @@ translate english ps2_final_convergence_8bd716f4:
 # game/beyond_shift.rpy:958
 translate english ps2_final_convergence_7467de2e:
 
-    # vet "Если что-то знаешь — сейчас самое время сказать."
+    # vet "Если что-то знаешь - сейчас самое время сказать."
     vet "If you know something, now is the time to say it."
 
 # game/beyond_shift.rpy:975

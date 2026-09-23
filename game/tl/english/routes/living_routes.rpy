@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2026-09-23 08:18
+# TODO: Translation updated at 2026-09-23 08:18
 
 # game/routes/living_routes.rpy:178
 translate english ps21_route_night_scene_fa568b59:
@@ -147,7 +147,7 @@ translate english ps21_route_night_scene_84749fee:
 # game/routes/living_routes.rpy:268
 translate english ps21_route_night_scene_b7c200fb:
 
-    # sv "Остановка тоже. Бумага — больше."
+    # sv "Остановка тоже. Бумага - больше."
     sv "The shutdown too. The paperwork more."
 
 # game/routes/living_routes.rpy:277
@@ -405,7 +405,7 @@ translate english ps21_route_epilogue_176a1698:
 # game/routes/living_routes.rpy:476
 translate english ps21_route_epilogue_e038911a:
 
-    # vet "Температура растёт — стоп. Рука болит и хват слабеет — тоже стоп. Запишите, повторять не буду."
+    # vet "Температура растёт - стоп. Рука болит и хват слабеет - тоже стоп. Запишите, повторять не буду."
     vet "Temperature rising - stop. Hand hurts and grip is weakening - also stop. Write it down, I won't repeat myself."
 
 # game/routes/living_routes.rpy:482

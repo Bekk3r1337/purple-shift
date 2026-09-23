@@ -1,9 +1,9 @@
-﻿# TODO: Translation updated at 2026-09-23 08:18
+# TODO: Translation updated at 2026-09-23 08:18
 
 # game/chapter3.rpy:11
 translate english chapter2_hook_57b3886c:
 
-    # n "Телефон коротко вибрирует и вытаскивает тебя из сна. На экране новое назначение: «Зона сортировки. Явка — 20:00. Подтвердить смену»."
+    # n "Телефон коротко вибрирует и вытаскивает тебя из сна. На экране новое назначение: «Зона сортировки. Явка - 20:00. Подтвердить смену»."
     n "The phone buzzes briefly and pulls you out of sleep. A new assignment is on the screen: \"Sorting Zone. Report at 20:00. Confirm shift.\""
 
 # game/chapter3.rpy:14
@@ -39,7 +39,7 @@ translate english chapter2_hook_e3fa5ade:
 # game/chapter3.rpy:33
 translate english chapter2_hook_912f5858:
 
-    # p "Буду. Если снова что-то зависнет — не стой одна."
+    # p "Буду. Если снова что-то зависнет - не стой одна."
     p "I will. If something freezes again, don't stand there alone."
 
 # game/chapter3.rpy:34
@@ -75,7 +75,7 @@ translate english chapter3_second_shift_e2b306ab:
 # game/chapter3.rpy:76
 translate english chapter3_second_shift_b2cd9514:
 
-    # n "Ты вспоминаешь, как Лера осталась поднимать коробки, а ты продолжил работать. Вчера на это не было времени. Сейчас — есть."
+    # n "Ты вспоминаешь, как Лера осталась поднимать коробки, а ты продолжил работать. Вчера на это не было времени. Сейчас - есть."
     n "You remember Lera staying behind to pick up the boxes while you kept working. Yesterday there was no time to think about it. Now there is."
 
 # game/chapter3.rpy:78
@@ -201,7 +201,7 @@ translate english chapter3_second_shift_839fb72e:
 # game/chapter3.rpy:158
 translate english chapter3_second_shift_7258ebcc:
 
-    # sv "Слушаем. На сортировке хвост — тридцать тысяч единиц сверх плана. Часть людей уже перекинули туда."
+    # sv "Слушаем. На сортировке хвост - тридцать тысяч единиц сверх плана. Часть людей уже перекинули туда."
     sv "Listen up. Sorting has a backlog - thirty thousand units over plan. Some people have already been moved there."
 
 # game/chapter3.rpy:160
@@ -213,7 +213,7 @@ translate english chapter3_second_shift_1e313ea3:
 # game/chapter3.rpy:162
 translate english chapter3_second_shift_b119b9d9:
 
-    # sv "Сегодня без обучения. Кто вчера понял — работает. Кто не понял — понимает по ходу."
+    # sv "Сегодня без обучения. Кто вчера понял - работает. Кто не понял - понимает по ходу."
     sv "No training today. If you understood yesterday, you work. If you didn't, you figure it out as you go."
 
 # game/chapter3.rpy:164
@@ -237,7 +237,7 @@ translate english chapter3_second_shift_a7a6c0d1:
 # game/chapter3.rpy:171
 translate english chapter3_second_shift_57bc082d:
 
-    # sv "Вопросы — до запуска линии."
+    # sv "Вопросы - до запуска линии."
     sv "Questions before the line starts."
 
 # game/chapter3.rpy:176
@@ -267,7 +267,7 @@ translate english chapter3_second_shift_5d0a571a:
 # game/chapter3.rpy:188
 translate english chapter3_second_shift_7d63ae37:
 
-    # p "Главное — следи за своим экраном. Тут каждый вытягивает свой участок."
+    # p "Главное - следи за своим экраном. Тут каждый вытягивает свой участок."
     p "Just watch your own screen. Everyone carries their own section here."
 
 # game/chapter3.rpy:189
@@ -285,7 +285,7 @@ translate english chapter3_second_shift_800b0fe3:
 # game/chapter3.rpy:195
 translate english chapter3_second_shift_0c035ae2:
 
-    # p "Если что — делаем умное лицо. Система боится уверенных."
+    # p "Если что - делаем умное лицо. Система боится уверенных."
     p "If anything happens, look confident. The system is afraid of confident people."
 
 # game/chapter3.rpy:196
@@ -489,7 +489,7 @@ translate english chapter3_error_resolved_b160f49a:
 # game/chapter3.rpy:339
 translate english chapter3_error_resolved_089c5727:
 
-    # p "Почему только на двоих? Если хвост общий — давайте раскидаем на линию."
+    # p "Почему только на двоих? Если хвост общий - давайте раскидаем на линию."
     p "Why put it on just two people? If the backlog is shared, spread it across the line."
 
 # game/chapter3.rpy:340
@@ -579,7 +579,7 @@ translate english chapter3_pressure_7e14ba2a:
 # game/chapter3.rpy:386
 translate english chapter3_pressure_cd176ec3:
 
-    # p "Не пытайся закрыть всё. Ошибку сразу вправо. Обычное — в ячейку. Сначала чистим простое."
+    # p "Не пытайся закрыть всё. Ошибку сразу вправо. Обычное - в ячейку. Сначала чистим простое."
     p "Don't try to clear everything. Errors go right immediately. Normal items go to the bin. Clear the easy ones first."
 
 # game/chapter3.rpy:387
@@ -663,7 +663,7 @@ translate english chapter3_incident_a55ce7c4:
 # game/chapter3.rpy:433
 translate english chapter3_incident_c59c172a:
 
-    # n "Лера тянется к следующей коробке, но смотрит не на супервайзера — на тебя."
+    # n "Лера тянется к следующей коробке, но смотрит не на супервайзера - на тебя."
     n "Lera reaches for the next box, but she is not looking at the supervisor - she is looking at you."
 
 # game/chapter3.rpy:458
@@ -969,7 +969,7 @@ translate english chapter3_supervisor_talk_6aac54ab:
 # game/chapter3.rpy:632
 translate english chapter3_supervisor_talk_0be50e4c:
 
-    # sv "Темп у тебя есть. Но склад — не только цифры. Если рядом падает контейнер, норма его не поднимет."
+    # sv "Темп у тебя есть. Но склад - не только цифры. Если рядом падает контейнер, норма его не поднимет."
     sv "You have pace. But the warehouse is not just numbers. If a container falls beside you, the target won't pick it back up."
 
 # game/chapter3.rpy:634
@@ -1065,7 +1065,7 @@ translate english chapter3_shift_end_0a321576:
 # game/chapter3.rpy:682
 translate english chapter3_shift_end_4030aa72:
 
-    # mem "Босс — это график. Его нельзя победить. Только временно закрыть."
+    # mem "Босс - это график. Его нельзя победить. Только временно закрыть."
     mem "The boss is the schedule. You can't beat it. You can only close it for a while."
 
 # game/chapter3.rpy:687
@@ -1125,7 +1125,7 @@ translate english chapter4_hook_d1fdeceb:
 # game/chapter3.rpy:733
 translate english chapter4_hook_913bf358:
 
-    # n "Под сообщением — файл. «Чек-лист старшего линии»."
+    # n "Под сообщением - файл. «Чек-лист старшего линии»."
     n "A file is attached to the message: \"Line Lead Checklist.\""
 
 # game/chapter3.rpy:735
@@ -1185,7 +1185,7 @@ translate english chapter4_hook_108cfedf:
 # game/chapter3.rpy:748
 translate english chapter4_hook_1d8cf7c5:
 
-    # n "Смена закончилась. До конца недели — пять дней."
+    # n "Смена закончилась. До конца недели - пять дней."
     n "The shift is over. Five days remain in the week."
 
 translate english strings:

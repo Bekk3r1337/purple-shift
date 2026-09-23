@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2026-09-23 08:18
+# TODO: Translation updated at 2026-09-23 08:18
 
 # game/director.rpy:1264
 translate english ps_personal_scene_442a2783:
@@ -105,7 +105,7 @@ translate english ps_personal_scene_83ed6fce:
 # game/director.rpy:1317
 translate english ps_personal_scene_4f37576c:
 
-    # p "Завтра рука заболела — говоришь сразу."
+    # p "Завтра рука заболела - говоришь сразу."
     p "If your hand hurts tomorrow, you say it right away."
 
 # game/director.rpy:1318
@@ -159,7 +159,7 @@ translate english ps_personal_scene_60864169:
 # game/director.rpy:1344
 translate english ps_personal_scene_9a307703:
 
-    # mem "Я её на зарядку поставил. Если сегодня всё пойдёт плохо — не пытайся один стать героем."
+    # mem "Я её на зарядку поставил. Если сегодня всё пойдёт плохо - не пытайся один стать героем."
     mem "I put it on charge. If everything goes wrong today, don't try to play the hero alone."
 
 # game/director.rpy:1345
@@ -177,7 +177,7 @@ translate english ps_personal_scene_a5801484:
 # game/director.rpy:1353
 translate english ps_personal_scene_c7c9bf2b:
 
-    # p "Если станет тихо — считаем вдвоём."
+    # p "Если станет тихо - считаем вдвоём."
     p "If it gets quiet, we count together."
 
 # game/director.rpy:1354
@@ -249,7 +249,7 @@ translate english ps_personal_scene_877049f2:
 # game/director.rpy:1382
 translate english ps_personal_scene_0804dfcb:
 
-    # sv "Если ты принесёшь факты — да."
+    # sv "Если ты принесёшь факты - да."
     sv "If you bring me the facts - yes."
 
 # game/director.rpy:1390

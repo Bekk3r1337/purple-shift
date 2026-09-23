@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Purple Shift 1.2 — режиссура, переписки и новые интерактивные сцены
+## Purple Shift 1.2 - режиссура, переписки и новые интерактивные сцены
 ################################################################################
 
 default ps_ambience_zone = None
@@ -91,8 +91,8 @@ init python:
                 },
                 {
                     "id": "rest",
-                    "title": "«Сейчас главное — поспать.»",
-                    "answer": "Сейчас главное — поспать. На усталости ошибок больше.",
+                    "title": "«Сейчас главное - поспать.»",
+                    "answer": "Сейчас главное - поспать. На усталости ошибок больше.",
                     "reaction": "Ладно. Спокойной... почти ночи.",
                     "effects": {"ps_endurance": 1, "ps_burnout": -1},
                 },
@@ -106,7 +106,7 @@ init python:
             "preview": "Про подъёмник никому не говори.",
             "incoming": [
                 "Про подъёмник пока никому не говори.",
-                "Но если увидишь код LIFT-09 — сфотографируй время. Потом пригодится.",
+                "Но если увидишь код LIFT-09 - сфотографируй время. Потом пригодится.",
             ],
             "replies": [
                 {
@@ -877,7 +877,7 @@ screen ps_director_settings():
                     text_xalign 0.5
                     text_yalign 0.5
 
-            textbutton "[u'✓' if persistent.ps_ambient_enabled else u'—'] Атмосфера склада":
+            textbutton "[u'✓' if persistent.ps_ambient_enabled else u'-'] Атмосфера склада":
                 action Function(ps_toggle_ambience)
                 xfill True
                 ysize 82
@@ -891,7 +891,7 @@ screen ps_director_settings():
                 color "#a99ab8"
                 size 20
 
-            textbutton "[u'✓' if persistent.ps_reduce_motion else u'—'] Уменьшить движение":
+            textbutton "[u'✓' if persistent.ps_reduce_motion else u'-'] Уменьшить движение":
                 action Function(ps_toggle_reduce_motion)
                 xfill True
                 ysize 82
@@ -901,7 +901,7 @@ screen ps_director_settings():
                 text_size 25
                 text_xalign 0.0
 
-            textbutton "[u'✓' if persistent.ps_reduce_flashes else u'—'] Уменьшить вспышки":
+            textbutton "[u'✓' if persistent.ps_reduce_flashes else u'-'] Уменьшить вспышки":
                 action Function(ps_toggle_reduce_flashes)
                 xfill True
                 ysize 82
@@ -911,7 +911,7 @@ screen ps_director_settings():
                 text_size 25
                 text_xalign 0.0
 
-            textbutton "[u'✓' if persistent.ps_minigame_assist else u'—'] Помощь в мини-играх":
+            textbutton "[u'✓' if persistent.ps_minigame_assist else u'-'] Помощь в мини-играх":
                 action Function(ps_toggle_minigame_assist)
                 xfill True
                 ysize 82
@@ -927,7 +927,7 @@ screen ps_director_settings():
 
 
 ################################################################################
-## Живая линия — день 5
+## Живая линия - день 5
 ################################################################################
 
 screen ps_flow_challenge():
@@ -1084,7 +1084,7 @@ screen ps_flow_challenge():
 
 
 ################################################################################
-## Доска происшествия — день 6
+## Доска происшествия - день 6
 ################################################################################
 
 screen ps_case_board():
@@ -1314,7 +1314,7 @@ label ps_personal_scene:
                 $ ps_endurance += 1
                 $ ps_team_unity += 1
 
-                p "Завтра рука заболела — говоришь сразу."
+                p "Завтра рука заболела - говоришь сразу."
                 vet "Командовать старшими некрасиво."
                 p "Тогда просто договорились."
                 vet "Ладно. Скажу."
@@ -1341,7 +1341,7 @@ label ps_personal_scene:
         with dissolve
 
         p "Странно видеть тебя без улыбки."
-        mem "Я её на зарядку поставил. Если сегодня всё пойдёт плохо — не пытайся один стать героем."
+        mem "Я её на зарядку поставил. Если сегодня всё пойдёт плохо - не пытайся один стать героем."
         p "Это сейчас была серьёзная мысль?"
         mem "Никому не рассказывай. Репутация."
 
@@ -1350,7 +1350,7 @@ label ps_personal_scene:
                 $ ps_add_route("joker", 2)
                 $ ps_team_unity += 2
 
-                p "Если станет тихо — считаем вдвоём."
+                p "Если станет тихо - считаем вдвоём."
                 mem "Романтика складского уровня."
                 p "Один, два, три, все на месте."
                 mem "Ужасно звучит. Но работает."
@@ -1379,7 +1379,7 @@ label ps_personal_scene:
         p "А ты что ответишь?"
         sv "Что вопрос неправильный. Нужно спрашивать, почему три предупреждения не остановили линию."
         p "И ты готов это подписать?"
-        sv "Если ты принесёшь факты — да."
+        sv "Если ты принесёшь факты - да."
 
         menu:
             "Напомнить, что его подпись важнее твоих доказательств":

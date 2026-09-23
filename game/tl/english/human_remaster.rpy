@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2026-09-23 08:18
+# TODO: Translation updated at 2026-09-23 08:18
 
 # game/human_remaster.rpy:476
 translate english ps_human_shift_scene_c11d548a:
@@ -45,7 +45,7 @@ translate english ps_human_shift_scene_2ed727d3:
 # game/human_remaster.rpy:494
 translate english ps_human_shift_scene_3eb0b63a:
 
-    # p "Давайте ничего. Четыре минуты — это не так много."
+    # p "Давайте ничего. Четыре минуты - это не так много."
     p "Let's do nothing. Four minutes isn't that long."
 
 # game/human_remaster.rpy:495
@@ -63,7 +63,7 @@ translate english ps_human_shift_scene_b8b00ce4:
 # game/human_remaster.rpy:512
 translate english ps_human_shift_scene_e13c3933:
 
-    # n "Разговор перескакивает с автобусов на дешёвый кофе, с кофе — на первую зарплату, а потом почему-то на то, кто хуже всех скрывает усталость. Побеждает Виктор. Он требует пересчёта."
+    # n "Разговор перескакивает с автобусов на дешёвый кофе, с кофе - на первую зарплату, а потом почему-то на то, кто хуже всех скрывает усталость. Побеждает Виктор. Он требует пересчёта."
     n "The conversation jumps from buses to cheap coffee, from coffee to first paychecks, and somehow ends up on who is worst at hiding exhaustion. Viktor wins. He demands a recount."
 
 # game/human_remaster.rpy:520
@@ -99,7 +99,7 @@ translate english ps_human_shift_scene_155bb54b:
 # game/human_remaster.rpy:543
 translate english ps_human_shift_scene_4eaeab20:
 
-    # n "К концу шестого дня на доске кроме кодов ошибок появляются имена. Рядом со временем остановки — заметка о руке Виктора. Возле удалённого журнала — фотография объяснительной Леры."
+    # n "К концу шестого дня на доске кроме кодов ошибок появляются имена. Рядом со временем остановки - заметка о руке Виктора. Возле удалённого журнала - фотография объяснительной Леры."
     n "By the end of Day Six, names appear on the board alongside the error codes. Next to the shutdown time is a note about Viktor's hand. Beside the deleted log is a photo of Lera's written statement."
 
 # game/human_remaster.rpy:544
@@ -135,7 +135,7 @@ translate english ps_human_shift_scene_e228d3da:
 # game/human_remaster.rpy:564
 translate english ps_human_shift_scene_3654120a:
 
-    # p "В официальной версии оставим проверяемое. Всё личное сфотографируем и сохраним отдельно — без фамилий в чужих руках."
+    # p "В официальной версии оставим проверяемое. Всё личное сфотографируем и сохраним отдельно - без фамилий в чужих руках."
     p "We'll keep only verifiable facts in the official version. Anything personal gets photographed and stored separately - no names in other people's hands."
 
 # game/human_remaster.rpy:565
@@ -171,13 +171,13 @@ translate english ps_shift_micro_event_dc5bbdef:
 # game/human_remaster.rpy:593
 translate english ps_shift_micro_event_84dd9cff:
 
-    # p "Сегодня — оборудование."
+    # p "Сегодня - оборудование."
     p "Today, it's equipment."
 
 # game/human_remaster.rpy:599
 translate english ps_shift_micro_event_37d485af:
 
-    # n "Через десять минут бутылка исчезает. Виктор ничего не говорит, но позже у рации появляется ещё одна — уже для Леры."
+    # n "Через десять минут бутылка исчезает. Виктор ничего не говорит, но позже у рации появляется ещё одна - уже для Леры."
     n "Ten minutes later the bottle is gone. Viktor says nothing, but later another one appears beside the radio - this one for Lera."
 
 # game/human_remaster.rpy:607
@@ -195,7 +195,7 @@ translate english ps_shift_micro_event_4ab2bcd7:
 # game/human_remaster.rpy:621
 translate english ps_shift_micro_event_ab61a724:
 
-    # sv "Без рывков. Кто меняется местами — говорит вслух."
+    # sv "Без рывков. Кто меняется местами - говорит вслух."
     sv "No rushing. Anyone switching positions says it out loud."
 
 # game/human_remaster.rpy:622
@@ -291,7 +291,7 @@ translate english ps_last_checkpoint_scene_b9250a89:
 # game/human_remaster.rpy:685
 translate english ps_last_checkpoint_scene_ba84071b:
 
-    # vet "Увидимся или нет — номера друг у друга есть. Этого достаточно."
+    # vet "Увидимся или нет - номера друг у друга есть. Этого достаточно."
     vet "Whether we meet again or not, we have each other's numbers. That's enough."
 
 translate english strings:

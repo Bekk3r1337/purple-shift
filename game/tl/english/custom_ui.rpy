@@ -71,7 +71,7 @@ translate english strings:
     old "Виктор: [u'в порядке' if ps_veteran_safe else u'травмирован']"
     new "Viktor: [u'okay' if ps_veteran_safe else u'injured']"
 
-    old "Вы пока знаете друг друга только по должностям. Иногда имя — первое настоящее действие против системы, которая видит в людях строки отчёта."
+    old "Вы пока знаете друг друга только по должностям. Иногда имя - первое настоящее действие против системы, которая видит в людях строки отчёта."
     new "For now, you know each other only by job titles. Sometimes a name is the first real act against a system that sees people as lines in a report."
 
     old "ЧТО НЕ ГОВОРИТ ВСЛУХ"
@@ -299,7 +299,7 @@ translate english strings:
     old "Открытые главы запускаются со сбалансированным набором прошлых решений."
     new "Unlocked chapters start with a balanced set of prior decisions."
 
-    old "ДЕНЬ [chapter_day] — [chapter_title]"
+    old "ДЕНЬ [chapter_day] - [chapter_title]"
     new "DAY [chapter_day] - [chapter_title]"
 
     old "НАЗАД"

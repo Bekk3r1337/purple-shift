@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2026-09-23 08:18
+# TODO: Translation updated at 2026-09-23 08:18
 
 # game/traces.rpy:1216
 translate english ps_trace_d2_break_6a584b3f:
@@ -63,7 +63,7 @@ translate english ps_trace_d2_break_3ff3ce43:
 # game/traces.rpy:1247
 translate english ps_trace_d2_break_98b4868a:
 
-    # n "Она отрывает половину листка и протягивает тебе. На обороте — время вчерашней передачи участка."
+    # n "Она отрывает половину листка и протягивает тебе. На обороте - время вчерашней передачи участка."
     n "She tears off half the sheet and hands it to you. On the back is the time of yesterday's section handoff."
 
 # game/traces.rpy:1265
@@ -75,7 +75,7 @@ translate english ps_trace_d2_mezzanine_4f32a9f5:
 # game/traces.rpy:1267
 translate english ps_trace_d2_mezzanine_66def5cc:
 
-    # vet "Запомни. Если эта лампа мигает дважды — платформа считает вес неправильно."
+    # vet "Запомни. Если эта лампа мигает дважды - платформа считает вес неправильно."
     vet "Remember this. If that light blinks twice, the platform is reading the weight incorrectly."
 
 # game/traces.rpy:1269
@@ -135,7 +135,7 @@ translate english ps_trace_d2_packing_8a195020:
 # game/traces.rpy:1310
 translate english ps_trace_d2_packing_2b9b43ab:
 
-    # sv "Раз пришёл — выбирай. Спасти время или освободить безопасный проход."
+    # sv "Раз пришёл - выбирай. Спасти время или освободить безопасный проход."
     sv "Since you're here - choose. Save time, or clear a safe passage."
 
 # game/traces.rpy:1320
@@ -165,7 +165,7 @@ translate english ps_trace_d2_packing_dd5ea3a5:
 # game/traces.rpy:1331
 translate english ps_trace_d2_packing_c2fb84c0:
 
-    # p "Мелкое — на свободный стол. Тяжёлое пока не двигаем."
+    # p "Мелкое - на свободный стол. Тяжёлое пока не двигаем."
     p "Small items go on the free table. Leave the heavy ones where they are for now."
 
 # game/traces.rpy:1332
@@ -243,7 +243,7 @@ translate english ps_trace_d2_dock_0c5729f3:
 # game/traces.rpy:1396
 translate english ps_trace_d2_dock_26f755ef:
 
-    # mem "Отлично. Если исчезнем — у полиции будет очень атмосферная улика."
+    # mem "Отлично. Если исчезнем - у полиции будет очень атмосферная улика."
     mem "Excellent. If we disappear, the police will have a very atmospheric piece of evidence."
 
 # game/traces.rpy:1403
@@ -303,7 +303,7 @@ translate english ps_trace_d3_break_6942fb5d:
 # game/traces.rpy:1450
 translate english ps_trace_d3_break_47867abc:
 
-    # p "Один тебе. Второй — твоей профессиональной репутации."
+    # p "Один тебе. Второй - твоей профессиональной репутации."
     p "One for you. The second is for your professional reputation."
 
 # game/traces.rpy:1451
@@ -363,7 +363,7 @@ translate english ps_trace_d3_packing_44d1bebe:
 # game/traces.rpy:1509
 translate english ps_trace_d3_packing_2bebfe5b:
 
-    # newb "ТСД говорит — электроника. На старой наклейке — хрупкое."
+    # newb "ТСД говорит - электроника. На старой наклейке - хрупкое."
     newb "The scanner says electronics. The old label says fragile."
 
 # game/traces.rpy:1518
@@ -417,19 +417,19 @@ translate english ps_trace_d3_control_220786b9:
 # game/traces.rpy:1550
 translate english ps_trace_d3_control_0572512a:
 
-    # p "Моё место — секрет?"
+    # p "Моё место - секрет?"
     p "Is my position classified?"
 
 # game/traces.rpy:1551
 translate english ps_trace_d3_control_3cd05bbe:
 
-    # sv "Нет. Способ расчёта — почти."
+    # sv "Нет. Способ расчёта - почти."
     sv "No. The calculation method almost is."
 
 # game/traces.rpy:1553
 translate english ps_trace_d3_control_83faf243:
 
-    # n "Он показывает вес показателей. Скорость учитывается сразу. Помощь другому участку — только после ручного подтверждения."
+    # n "Он показывает вес показателей. Скорость учитывается сразу. Помощь другому участку - только после ручного подтверждения."
     n "He shows you the weighting. Speed counts immediately. Helping another section counts only after manual confirmation."
 
 # game/traces.rpy:1562
@@ -507,25 +507,25 @@ translate english ps_trace_d3_dock_267218a7:
 # game/traces.rpy:1605
 translate english ps_trace_d3_dock_b688fcc3:
 
-    # mem "Главное — не начни проверять людей как таблицу."
+    # mem "Главное - не начни проверять людей как таблицу."
     mem "Just don't start checking people like a spreadsheet."
 
 # game/traces.rpy:1613
 translate english ps_trace_d3_dock_1eb44ba1:
 
-    # p "Первое место — тому, кто напомнил другому попить."
+    # p "Первое место - тому, кто напомнил другому попить."
     p "First place goes to whoever reminded someone else to drink water."
 
 # game/traces.rpy:1614
 translate english ps_trace_d3_dock_afb3faf7:
 
-    # mem "Второе — тому, кто не сказал «это не моя зона»."
+    # mem "Второе - тому, кто не сказал «это не моя зона»."
     mem "Second place goes to whoever didn't say \"not my area.\""
 
 # game/traces.rpy:1615
 translate english ps_trace_d3_dock_32a04b46:
 
-    # p "Третье — автомату, который иногда выдаёт два кофе."
+    # p "Третье - автомату, который иногда выдаёт два кофе."
     p "Third place goes to the machine that sometimes gives you two coffees."
 
 # game/traces.rpy:1635
@@ -537,13 +537,13 @@ translate english ps_trace_d4_break_207c6f4f:
 # game/traces.rpy:1637
 translate english ps_trace_d4_break_86adbe1f:
 
-    # newb "Если подпишу — отстанут?"
+    # newb "Если подпишу - отстанут?"
     newb "If I sign, will they leave me alone?"
 
 # game/traces.rpy:1638
 translate english ps_trace_d4_break_889bc898:
 
-    # p "Сегодня — может быть."
+    # p "Сегодня - может быть."
     p "Today - maybe."
 
 # game/traces.rpy:1639
@@ -591,7 +591,7 @@ translate english ps_trace_d4_break_aa1990a3:
 # game/traces.rpy:1676
 translate english ps_trace_d4_mezzanine_bb211d2c:
 
-    # n "Виктор раскладывает распечатки по времени. Семь операций принадлежат Лере; остальные сорок — аккаунту человека, которого сегодня нет."
+    # n "Виктор раскладывает распечатки по времени. Семь операций принадлежат Лере; остальные сорок - аккаунту человека, которого сегодня нет."
     n "Viktor sorts the printouts by time. Seven operations belong to Lera; the other forty belong to the account of someone who is not here today."
 
 # game/traces.rpy:1678
@@ -735,7 +735,7 @@ translate english ps_trace_d4_dock_f15b8cb5:
 # game/traces.rpy:1802
 translate english ps_trace_d4_dock_43c4f338:
 
-    # sv "Пока — всё, что могу сказать."
+    # sv "Пока - всё, что могу сказать."
     sv "For now, that's all I can say."
 
 # game/traces.rpy:1810
@@ -969,7 +969,7 @@ translate english ps_trace_d5_dock_b0681ba8:
 # game/traces.rpy:2004
 translate english ps_trace_d5_dock_ed29a38c:
 
-    # p "Главное — в правильном порядке."
+    # p "Главное - в правильном порядке."
     p "The important part is the order."
 
 # game/traces.rpy:2012
@@ -981,7 +981,7 @@ translate english ps_trace_d5_dock_699f430b:
 # game/traces.rpy:2013
 translate english ps_trace_d5_dock_b8ac5be4:
 
-    # p "Я — мезонин."
+    # p "Я - мезонин."
     p "I'll take the mezzanine."
 
 # game/traces.rpy:2014
@@ -1029,7 +1029,7 @@ translate english ps_trace_d6_break_709c9d02:
 # game/traces.rpy:2067
 translate english ps_trace_d6_mezzanine_4cd9af0a:
 
-    # n "За старой панелью лежит чёрный пластиковый конверт. На нём тот же знак, что был на пломбе. Внутри — накладная V-13. Пункт назначения: «Штормовой сектор»."
+    # n "За старой панелью лежит чёрный пластиковый конверт. На нём тот же знак, что был на пломбе. Внутри - накладная V-13. Пункт назначения: «Штормовой сектор»."
     n "A black plastic envelope lies behind the old panel. It bears the same symbol as the seal. Inside is a V-13 waybill. Destination: \"Storm Sector.\""
 
 # game/traces.rpy:2075
@@ -1329,7 +1329,7 @@ translate english ps_route_climax_75f244a4:
 # game/traces.rpy:2314
 translate english ps_route_climax_ecdbc46a:
 
-    # mem "Если люди смеются, я понимаю, что они ещё здесь. А когда никто не отвечает — начинаю считать головы."
+    # mem "Если люди смеются, я понимаю, что они ещё здесь. А когда никто не отвечает - начинаю считать головы."
     mem "If people laugh, I know they're still here. When nobody answers, I start counting heads."
 
 # game/traces.rpy:2321

@@ -1,15 +1,15 @@
-﻿# TODO: Translation updated at 2026-09-23 08:18
+# TODO: Translation updated at 2026-09-23 08:18
 
 # game/voices_shift.rpy:406
 translate english ps_team_names_75580843:
 
-    # newb "Мы второй день рядом, а я для всех всё ещё Новичок. Я Лера. Валерия — это если опять понадобится объяснительная."
+    # newb "Мы второй день рядом, а я для всех всё ещё Новичок. Я Лера. Валерия - это если опять понадобится объяснительная."
     newb "We've been working side by side for two days and I'm still just \"Newcomer\" to everyone. I'm Lera. Valeria if I ever need another written statement."
 
 # game/voices_shift.rpy:409
 translate english ps_team_names_35258f20:
 
-    # mem "Макс. Просто Макс. «Шутник» — это должность без доплаты и права на отпуск."
+    # mem "Макс. Просто Макс. «Шутник» - это должность без доплаты и права на отпуск."
     mem "Max. Just Max. \"Joker\" is a position with no extra pay and no vacation entitlement."
 
 # game/voices_shift.rpy:415
@@ -33,13 +33,13 @@ translate english ps_team_names_db69e36e:
 # game/voices_shift.rpy:424
 translate english ps_team_names_4d93ac8f:
 
-    # sv "Артём Волков. Раз уж у нас вечер знакомств — закончите его до запуска линии."
+    # sv "Артём Волков. Раз уж у нас вечер знакомств - закончите его до запуска линии."
     sv "Artyom Volkov. Since we're having an introduction night, finish it before the line starts."
 
 # game/voices_shift.rpy:427
 translate english ps_team_names_441a2a50:
 
-    # p "А я — [ps_player_name]."
+    # p "А я - [ps_player_name]."
     p "And I'm [ps_player_name]."
 
 # game/voices_shift.rpy:428
@@ -51,13 +51,13 @@ translate english ps_team_names_b1a770b3:
 # game/voices_shift.rpy:469
 translate english ps_route_week_scene_d7e5c8da:
 
-    # n "Перед запуском Лера прячет сложенный лист под перчатку. На нём в две колонки записаны ошибки: слева её действия, справа — то, что делал ТСД."
+    # n "Перед запуском Лера прячет сложенный лист под перчатку. На нём в две колонки записаны ошибки: слева её действия, справа - то, что делал ТСД."
     n "Before startup, Lera tucks a folded sheet under her glove. Errors are written in two columns: her actions on the left, what the scanner did on the right."
 
 # game/voices_shift.rpy:470
 translate english ps_route_week_scene_049b8c7e:
 
-    # newb "Я больше не хочу писать просто «ошиблась». Потом выходит, что всё случилось из-за меня, а что делал ТСД — уже неважно."
+    # newb "Я больше не хочу писать просто «ошиблась». Потом выходит, что всё случилось из-за меня, а что делал ТСД - уже неважно."
     newb "I don't want to write just \"made a mistake\" anymore. Then it looks like everything happened because of me, and what the scanner did stops mattering."
 
 # game/voices_shift.rpy:471
@@ -69,7 +69,7 @@ translate english ps_route_week_scene_a4c3abd3:
 # game/voices_shift.rpy:472
 translate english ps_route_week_scene_1cea23c6:
 
-    # newb "Поможешь проверить? Не исправлять за меня — просто проверить."
+    # newb "Поможешь проверить? Не исправлять за меня - просто проверить."
     newb "Will you help me check it? Not correct it for me - just check."
 
 # game/voices_shift.rpy:473
@@ -135,7 +135,7 @@ translate english ps_route_week_scene_99d02d5d:
 # game/voices_shift.rpy:498
 translate english ps_route_week_scene_f65114c1:
 
-    # mem "Когда вокруг тихо — да. Скажешь что-нибудь, тебе ответят, и вроде все ещё здесь. Господи, как это сейчас прозвучало."
+    # mem "Когда вокруг тихо - да. Скажешь что-нибудь, тебе ответят, и вроде все ещё здесь. Господи, как это сейчас прозвучало."
     mem "When it's quiet around me - yeah. You say something, someone answers, and it feels like everyone's still here. God, that sounded awful out loud."
 
 # game/voices_shift.rpy:499
@@ -339,7 +339,7 @@ translate english ps_route_week_scene_3f7a644e:
 # game/voices_shift.rpy:597
 translate english ps_route_week_scene_915956c0:
 
-    # vet "Когда-то я подписал похожую бумагу. Не потому что был виноват — просто хотел домой и думал, что одна подпись ничего не изменит."
+    # vet "Когда-то я подписал похожую бумагу. Не потому что был виноват - просто хотел домой и думал, что одна подпись ничего не изменит."
     vet "I signed a similar paper once. Not because I was guilty - I just wanted to go home and thought one signature would change nothing."
 
 # game/voices_shift.rpy:598
@@ -405,7 +405,7 @@ translate english ps_route_week_scene_b2a744ba:
 # game/voices_shift.rpy:622
 translate english ps_route_week_scene_648839ae:
 
-    # p "А от Леры — согласие с тем, что уже решили."
+    # p "А от Леры - согласие с тем, что уже решили."
     p "And from Lera - agreement with what they've already decided."
 
 # game/voices_shift.rpy:623
@@ -525,7 +525,7 @@ translate english ps_route_week_scene_58210ab4:
 # game/voices_shift.rpy:675
 translate english ps_route_week_scene_68ca0847:
 
-    # p "Если решение примешь ты — останусь."
+    # p "Если решение примешь ты - останусь."
     p "If you make the decision yourself - I'll stay."
 
 # game/voices_shift.rpy:687
@@ -561,7 +561,7 @@ translate english ps_route_week_scene_8f03764a:
 # game/voices_shift.rpy:698
 translate english ps_route_week_scene_93eb27ed:
 
-    # vet "Если начну геройствовать — напомни про старого дурака."
+    # vet "Если начну геройствовать - напомни про старого дурака."
     vet "If I start playing hero, remind me about that old fool."
 
 # game/voices_shift.rpy:699
@@ -603,7 +603,7 @@ translate english ps_route_week_scene_88befc24:
 # game/voices_shift.rpy:717
 translate english ps_route_week_scene_64c8c6cb:
 
-    # sv "Через минуту мне придётся отдать приказ. Если он будет неправильным — останови меня."
+    # sv "Через минуту мне придётся отдать приказ. Если он будет неправильным - останови меня."
     sv "In a minute I'll have to give an order. If it's the wrong one, stop me."
 
 # game/voices_shift.rpy:718
@@ -615,7 +615,7 @@ translate english ps_route_week_scene_89a85d87:
 # game/voices_shift.rpy:719
 translate english ps_route_week_scene_7d09ca89:
 
-    # sv "При всех. Если я снова начну повторять куратора — тем более."
+    # sv "При всех. Если я снова начну повторять куратора - тем более."
     sv "In front of everyone. Especially if I start repeating the Curator again."
 
 # game/voices_shift.rpy:720
@@ -777,7 +777,7 @@ translate english ps_storm_day_intrusion_86351deb:
 # game/voices_shift.rpy:920
 translate english ps_storm_day_intrusion_0038a4a6:
 
-    # n "Последним появляется твоё имя — [ps_player_name]. Вместо номера участка под ним короткое сообщение: «СМЕНА УЗНАЛА ТЕБЯ»."
+    # n "Последним появляется твоё имя - [ps_player_name]. Вместо номера участка под ним короткое сообщение: «СМЕНА УЗНАЛА ТЕБЯ»."
     n "Your name appears last - [ps_player_name]. Instead of a section number, a short message appears beneath it: \"THE SHIFT RECOGNIZES YOU.\""
 
 # game/voices_shift.rpy:923
@@ -801,7 +801,7 @@ translate english ps_storm_day_intrusion_416908b8:
 # game/voices_shift.rpy:929
 translate english ps_storm_day_intrusion_6750274f:
 
-    # sv "Отключаем табло физически. Если система хочет говорить — пусть сначала переживёт выдернутый кабель."
+    # sv "Отключаем табло физически. Если система хочет говорить - пусть сначала переживёт выдернутый кабель."
     sv "We disconnect the board physically. If the system wants to talk, let it survive an unplugged cable first."
 
 translate english strings:
