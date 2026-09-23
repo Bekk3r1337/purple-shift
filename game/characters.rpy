@@ -4,12 +4,12 @@
 ## Персонажи и изображения
 ################################################################################
 
-default ps_player_name = "Сотрудник"
-default ps_newbie_name = "Новичок"
-default ps_veteran_name = "Ветеран"
-default ps_joker_name = "Шутник"
-default ps_supervisor_name = "Супервайзер"
-default ps_curator_name = "Куратор"
+default ps_player_name = _("Сотрудник")
+default ps_newbie_name = _("Новичок")
+default ps_veteran_name = _("Ветеран")
+default ps_joker_name = _("Шутник")
+default ps_supervisor_name = _("Супервайзер")
+default ps_curator_name = _("Куратор")
 default ps_names_revealed = False
 
 define p = DynamicCharacter("ps_player_name", color="#c8a2ff")
@@ -30,8 +30,8 @@ init python:
         global ps_curator_name
 
         # Keep custom player names untouched, but localize the untouched default.
-        if ps_player_name in ("Сотрудник", "Employee"):
-            ps_player_name = _("Сотрудник")
+        if ps_player_name in (_("Сотрудник"), "Employee"):
+            ps_player_name = _(_("Сотрудник"))
 
         if ps_names_revealed:
             ps_newbie_name = _("Лера")
@@ -39,15 +39,15 @@ init python:
             ps_joker_name = _("Макс")
             ps_supervisor_name = _("Артём")
         else:
-            ps_newbie_name = _("Новичок")
-            ps_veteran_name = _("Ветеран")
-            ps_joker_name = _("Шутник")
-            ps_supervisor_name = _("Супервайзер")
+            ps_newbie_name = _(_("Новичок"))
+            ps_veteran_name = _(_("Ветеран"))
+            ps_joker_name = _(_("Шутник"))
+            ps_supervisor_name = _(_("Супервайзер"))
 
         if ps_curator_name in ("Морозов", "Morozov"):
             ps_curator_name = _("Морозов")
         else:
-            ps_curator_name = _("Куратор")
+            ps_curator_name = _(_("Куратор"))
 
 image bg mainmenu = Solid("#120a1f")
 image ps_bg_base = Solid("#0c0614")
@@ -136,10 +136,10 @@ init -5 python:
 
 init 35 python:
     ps_curated_cgs = [
-        ("team_break_cinematic", "Пять минут вместе", "images/cg/team_break_cinematic.jpg"),
-        ("v13_false_memory", "Лишний человек", "images/cg/v13_false_memory.jpg"),
-        ("zero_shift_v2", "Нулевая смена - ремастер", "images/cg/zero_shift_v2.jpg"),
-        ("storm_first_contact", "Первый разрез Шторма", "images/cg/storm_first_contact.jpg"),
+        ("team_break_cinematic", _("Пять минут вместе"), "images/cg/team_break_cinematic.jpg"),
+        ("v13_false_memory", _("Лишний человек"), "images/cg/v13_false_memory.jpg"),
+        ("zero_shift_v2", _("Нулевая смена - ремастер"), "images/cg/zero_shift_v2.jpg"),
+        ("storm_first_contact", _("Первый разрез Шторма"), "images/cg/storm_first_contact.jpg"),
     ]
 
     if "ps_cg_catalog" in globals():
