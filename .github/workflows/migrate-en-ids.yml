@@ -1,0 +1,200 @@
+name: Migrate English translation IDs
+
+on:
+  push:
+    branches:
+      - agent/full-en-localization
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/full-en-localization
+
+      - name: Reattach existing English translations to regenerated RenPy IDs
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          CYR = re.compile(r"[А-Яа-яЁё]")
+          LOC = re.compile(r"^# (game/[^\n]+:\d+)\s*$")
+          STMT = re.compile(r"^translate english (?!strings\s*:)([^:]+):\s*$")
+          OLD = re.compile(r'^\s*old\s+"((?:\\.|[^"\\])*)"\s*$')
+          NEW = re.compile(r'^\s*new\s+"((?:\\.|[^"\\])*)"\s*$')
+
+          def active_has_cyr(body_lines):
+              for line in body_lines:
+                  s = line.strip()
+                  if not s or s.startswith("#"):
+                      continue
+                  if CYR.search(s):
+                      return True
+              return False
+
+          def migrate_statements(lines):
+              blocks = []
+              i = 0
+              while i < len(lines):
+                  mloc = LOC.match(lines[i])
+                  if mloc and i + 1 < len(lines) and STMT.match(lines[i + 1]):
+                      start = i
+                      loc = mloc.group(1)
+                      header = i + 1
+                      j = i + 2
+                      while j < len(lines):
+                          if LOC.match(lines[j]) and j + 1 < len(lines) and STMT.match(lines[j + 1]):
+                              break
+                          if lines[j].startswith("translate english strings:"):
+                              break
+                          j += 1
+                      blocks.append({
+                          "start": start, "header": header, "end": j,
+                          "loc": loc,
+                          "body": lines[i + 2:j],
+                          "cyr": active_has_cyr(lines[i + 2:j]),
+                      })
+                      i = j
+                  else:
+                      i += 1
+
+              by_loc = {}
+              for b in blocks:
+                  by_loc.setdefault(b["loc"], []).append(b)
+
+              remove = set()
+              replacements = {}
+              migrated = 0
+              for loc, group in by_loc.items():
+                  if len(group) < 2:
+                      continue
+                  english = [b for b in group if not b["cyr"]]
+                  stubs = [b for b in group if b["cyr"]]
+                  if not english or not stubs:
+                      continue
+
+                  # IDs regenerated after punctuation normalization are appended
+                  # later in the file. Pair old English blocks with later stubs
+                  # at the same source line in source order.
+                  for old_b, new_b in zip(english, stubs):
+                      if old_b["start"] > new_b["start"]:
+                          continue
+                      replacements[new_b["start"]] = old_b["body"]
+                      remove.add(old_b["start"])
+                      migrated += 1
+
+              out = []
+              start_to_block = {b["start"]: b for b in blocks}
+              i = 0
+              while i < len(lines):
+                  b = start_to_block.get(i)
+                  if not b:
+                      out.append(lines[i])
+                      i += 1
+                      continue
+                  if b["start"] in remove:
+                      i = b["end"]
+                      while i < len(lines) and not lines[i].strip():
+                          i += 1
+                      continue
+                  out.append(lines[b["start"]])
+                  out.append(lines[b["header"]])
+                  if b["start"] in replacements:
+                      out.extend(replacements[b["start"]])
+                  else:
+                      out.extend(b["body"])
+                  i = b["end"]
+              return out, migrated
+
+          def migrate_strings(lines):
+              entries = []
+              for i in range(len(lines) - 2):
+                  mloc = LOC.match(lines[i])
+                  if not mloc:
+                      continue
+                  mold = OLD.match(lines[i + 1])
+                  mnew = NEW.match(lines[i + 2])
+                  if not mold or not mnew:
+                      continue
+                  entries.append({
+                      "loc": mloc.group(1),
+                      "i": i,
+                      "old": mold.group(1),
+                      "new": mnew.group(1),
+                  })
+
+              by_loc = {}
+              for e in entries:
+                  by_loc.setdefault(e["loc"], []).append(e)
+
+              remove = set()
+              replace_new = {}
+              migrated = 0
+              for loc, group in by_loc.items():
+                  stubs = [
+                      e for e in group
+                      if CYR.search(e["old"]) and e["new"] == e["old"]
+                  ]
+                  if not stubs:
+                      continue
+                  candidates = [
+                      e for e in group
+                      if not CYR.search(e["new"])
+                      and e["i"] < stubs[-1]["i"]
+                  ]
+                  if not candidates:
+                      continue
+
+                  # Preserve ordering for multiple translatable args sharing
+                  # one source line.
+                  candidates = candidates[-len(stubs):]
+                  for old_e, stub in zip(candidates, stubs):
+                      replace_new[stub["i"] + 2] = lines[old_e["i"] + 2]
+                      remove.update({old_e["i"], old_e["i"] + 1, old_e["i"] + 2})
+                      migrated += 1
+
+              out = []
+              for i, line in enumerate(lines):
+                  if i in remove:
+                      continue
+                  if i in replace_new:
+                      indent = re.match(r"^\s*", line).group(0)
+                      translated = re.sub(r"^\s*new\s+", "", replace_new[i])
+                      out.append(indent + "new " + translated)
+                  else:
+                      out.append(line)
+              return out, migrated
+
+          total_stmt = total_strings = 0
+          for path in sorted(Path("game/tl/english").rglob("*.rpy")):
+              text = path.read_text(encoding="utf-8-sig")
+              lines = text.splitlines()
+              lines, a = migrate_statements(lines)
+              lines, b = migrate_strings(lines)
+              if a or b:
+                  path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+                  print(f"{path}: statements={a}, strings={b}")
+                  total_stmt += a
+                  total_strings += b
+
+          print(f"Migrated statement blocks: {total_stmt}")
+          print(f"Migrated string entries: {total_strings}")
+          PY
+
+      - name: Commit migrated translations
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add game/tl/english
+          if git diff --cached --quiet; then
+            echo "No translation IDs needed migration."
+            exit 0
+          fi
+          git commit -m "fix(i18n): reattach English translations after punctuation normalization"
+          git push origin HEAD:agent/full-en-localization
