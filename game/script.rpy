@@ -3,6 +3,7 @@
 label start:
     $ ps_chapter = 1
     $ ps_begin_day(1)
+    $ ps_sync_character_names()
 
     scene bg black
     with fade
@@ -10,10 +11,10 @@ label start:
     if ps_player_name in ("Сотрудник", "Employee"):
         $ ps_entered_name = renpy.input(
             _("Как к тебе обращаться?"),
-            default=_("Сотрудник"),
+            default=ps_default_player_name(),
             length=18,
         ).strip()
-        $ ps_player_name = ps_entered_name or _("Сотрудник")
+        $ ps_player_name = ps_entered_name or ps_default_player_name()
 
     call screen ps_day_card(
         1,
