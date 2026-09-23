@@ -60,7 +60,7 @@ screen ps_language_gate():
                     ysize 78
                     text_xalign 0.5
 
-                textbutton "ENGLISH":
+                textbutton "ENGLISH (BETA)":
                     action Function(ps_select_language, "english")
                     xsize 330
                     ysize 78
