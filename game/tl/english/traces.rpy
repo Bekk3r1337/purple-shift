@@ -604,601 +604,601 @@ translate english ps_trace_d4_mezzanine_5477a79c:
 translate english ps_trace_d4_mezzanine_e2b61499:
 
     # p "Сначала буфер, потом повторная привязка."
-    p "Сначала буфер, потом повторная привязка."
+    p "Buffer first, then re-bind."
 
 # game/traces.rpy:1688
 translate english ps_trace_d4_mezzanine_9c9ffe82:
 
     # vet "И сорок единиц возвращаются к старому аккаунту."
-    vet "И сорок единиц возвращаются к старому аккаунту."
+    vet "And forty units go back to the old account."
 
 # game/traces.rpy:1696
 translate english ps_trace_d4_mezzanine_94959ea9:
 
     # vet "Я подпишу."
-    vet "Я подпишу."
+    vet "I'll sign it."
 
 # game/traces.rpy:1697
 translate english ps_trace_d4_mezzanine_86e5514c:
 
     # p "Это может ударить по тебе."
-    p "Это может ударить по тебе."
+    p "This could come back on you."
 
 # game/traces.rpy:1698
 translate english ps_trace_d4_mezzanine_1f873f8e:
 
     # vet "По ней уже ударило."
-    vet "По ней уже ударило."
+    vet "It already came back on her."
 
 # game/traces.rpy:1711
 translate english ps_trace_d4_packing_43c1f7ec:
 
     # n "Под упаковочным столом находится коробка с остатками старых этикеток. Одна из них содержит номер пропавшей партии. Сорок семь единиц ушли в буфер во время общего сбоя."
-    n "Под упаковочным столом находится коробка с остатками старых этикеток. Одна из них содержит номер пропавшей партии. Сорок семь единиц ушли в буфер во время общего сбоя."
+    n "Under the packing table is a box with leftover old labels. One of them contains the missing batch number. Forty-seven units went into the buffer during the full system failure."
 
 # game/traces.rpy:1720
 translate english ps_trace_d4_packing_d7b9f295:
 
     # n "По номерам видно: все сорок семь единиц ушли в буфер во время общего сбоя, до входа Леры в систему."
-    n "По номерам видно: все сорок семь единиц ушли в буфер во время общего сбоя, до входа Леры в систему."
+    n "The numbers show that all forty-seven units went into the buffer during the system-wide failure, before Lera logged in."
 
 # game/traces.rpy:1728
 translate english ps_trace_d4_packing_09a37e3a:
 
     # newb "Это та партия."
-    newb "Это та партия."
+    newb "That's the batch."
 
 # game/traces.rpy:1729
 translate english ps_trace_d4_packing_477da003:
 
     # p "Теперь у нас есть этикетка с номером партии."
-    p "Теперь у нас есть этикетка с номером партии."
+    p "Now we have a label with the batch number."
 
 # game/traces.rpy:1741
 translate english ps_trace_d4_control_8ec0558f:
 
     # n "Камеры показывают склад с задержкой в несколько секунд. На канале V-13 изображение внезапно становится фиолетовым."
-    n "Камеры показывают склад с задержкой в несколько секунд. На канале V-13 изображение внезапно становится фиолетовым."
+    n "The cameras show the warehouse with a delay of several seconds. On channel V-13, the image suddenly turns violet."
 
 # game/traces.rpy:1747
 translate english ps_trace_d4_control_3eb2da66:
 
     # n "На один кадр появляется коридор, которого нет на плане. Подпись канала: «СЕКТОР V // ШТОРМОВОЙ ДОПУСК». Потом экран возвращается к обычной ленте."
-    n "На один кадр появляется коридор, которого нет на плане. Подпись канала: «СЕКТОР V // ШТОРМОВОЙ ДОПУСК». Потом экран возвращается к обычной ленте."
+    n "For a single frame, a corridor appears that does not exist on the floor plan. The channel label reads: \"SECTOR V // STORM CLEARANCE.\" Then the screen returns to the normal conveyor."
 
 # game/traces.rpy:1755
 translate english ps_trace_d4_control_6f641d0f:
 
     # p "03:17. Канал V-13."
-    p "03:17. Канал V-13."
+    p "03:17. Channel V-13."
 
 # game/traces.rpy:1756
 translate english ps_trace_d4_control_ab5b7a7e:
 
     # n "На повторе в архиве этого кадра уже нет."
-    n "На повторе в архиве этого кадра уже нет."
+    n "When you replay the archive, the frame is already gone."
 
 # game/traces.rpy:1767
 translate english ps_trace_d4_control_ce9c15d4:
 
     # mem "Я сейчас должен пошутить?"
-    mem "Я сейчас должен пошутить?"
+    mem "Am I supposed to make a joke now?"
 
 # game/traces.rpy:1768
 translate english ps_trace_d4_control_bd46d2b6:
 
     # p "Лучше запомни."
-    p "Лучше запомни."
+    p "Better remember it."
 
 # game/traces.rpy:1769
 translate english ps_trace_d4_control_bfca0f64:
 
     # mem "Уже."
-    mem "Уже."
+    mem "Already did."
 
 # game/traces.rpy:1787
 translate english ps_trace_d4_dock_d81f3edc:
 
     # n "Артём стоит у закрытых ворот с выключенной рацией."
-    n "Артём стоит у закрытых ворот с выключенной рацией."
+    n "Artyom stands by the closed gate with his radio switched off."
 
 # game/traces.rpy:1789
 translate english ps_trace_d4_dock_64c6e28e:
 
     # sv "Ты хотел спросить, почему готовые объяснительные появляются раньше проверки."
-    sv "Ты хотел спросить, почему готовые объяснительные появляются раньше проверки."
+    sv "You wanted to ask why completed statements appear before the investigation starts."
 
 # game/traces.rpy:1790
 translate english ps_trace_d4_dock_48fa238f:
 
     # p "Хотел."
-    p "Хотел."
+    p "I did."
 
 # game/traces.rpy:1791
 translate english ps_trace_d4_dock_21fd7626:
 
     # sv "Потому что закрытый инцидент выглядит лучше открытого."
-    sv "Потому что закрытый инцидент выглядит лучше открытого."
+    sv "Because a closed incident looks better than an open one."
 
 # game/traces.rpy:1800
 translate english ps_trace_d4_dock_620c1069:
 
     # sv "Достаточно."
-    sv "Достаточно."
+    sv "Enough."
 
 # game/traces.rpy:1801
 translate english ps_trace_d4_dock_f15b8cb5:
 
     # p "Это не число."
-    p "Это не число."
+    p "That's not a number."
 
 # game/traces.rpy:1802
 translate english ps_trace_d4_dock_43c4f338:
 
     # sv "Пока — всё, что могу сказать."
-    sv "Пока — всё, что могу сказать."
+    sv "For now, that's all I can say."
 
 # game/traces.rpy:1810
 translate english ps_trace_d4_dock_f6069fc4:
 
     # sv "Я заберу бланк."
-    sv "Я заберу бланк."
+    sv "I'll take the form."
 
 # game/traces.rpy:1811
 translate english ps_trace_d4_dock_2eaa2fb8:
 
     # p "И?"
-    p "И?"
+    p "And?"
 
 # game/traces.rpy:1812
 translate english ps_trace_d4_dock_c04bbfc0:
 
     # sv "Открою проверку привязки аккаунтов."
-    sv "Открою проверку привязки аккаунтов."
+    sv "I'll open an account-binding investigation."
 
 # game/traces.rpy:1832
 translate english ps_trace_d5_break_c1f0d3e2:
 
     # n "Виктор затягивает бинт на запястье зубами."
-    n "Виктор затягивает бинт на запястье зубами."
+    n "Viktor tightens the bandage on his wrist with his teeth."
 
 # game/traces.rpy:1834
 translate english ps_trace_d5_break_ad639eea:
 
     # vet "Не смотри так."
-    vet "Не смотри так."
+    vet "Don't look at me like that."
 
 # game/traces.rpy:1835
 translate english ps_trace_d5_break_ba4663d4:
 
     # p "Как?"
-    p "Как?"
+    p "Like what?"
 
 # game/traces.rpy:1836
 translate english ps_trace_d5_break_b9a67fb6:
 
     # vet "Будто сейчас скажешь разумную вещь."
-    vet "Будто сейчас скажешь разумную вещь."
+    vet "Like you're about to say something reasonable."
 
 # game/traces.rpy:1846
 translate english ps_trace_d5_break_3262875e:
 
     # p "Сегодня ты не работаешь с подъёмником."
-    p "Сегодня ты не работаешь с подъёмником."
+    p "You're not working the lift today."
 
 # game/traces.rpy:1847
 translate english ps_trace_d5_break_ded68562:
 
     # vet "Ты мне уже начальник?"
-    vet "Ты мне уже начальник?"
+    vet "You're my boss now?"
 
 # game/traces.rpy:1848
 translate english ps_trace_d5_break_f1d55f20:
 
     # p "Нет. Поэтому могу попросить как человек."
-    p "Нет. Поэтому могу попросить как человек."
+    p "No. Which means I can ask you as a person."
 
 # game/traces.rpy:1849
 translate english ps_trace_d5_break_1240e4f5:
 
     # vet "Это хуже."
-    vet "Это хуже."
+    vet "That's worse."
 
 # game/traces.rpy:1857
 translate english ps_trace_d5_break_a948434d:
 
     # vet "Не держишь вес. Держишь направление, в котором он не должен упасть."
-    vet "Не держишь вес. Держишь направление, в котором он не должен упасть."
+    vet "You're not holding the weight. You're controlling the direction it must not fall."
 
 # game/traces.rpy:1870
 translate english ps_trace_d5_mezzanine_fcb5746c:
 
     # n "За щитом управления подъёмником застряла сложенная заявка. Статус: «Ожидает остановки участка». Ниже новая строка: «Отменено в связи с производственной необходимостью»."
-    n "За щитом управления подъёмником застряла сложенная заявка. Статус: «Ожидает остановки участка». Ниже новая строка: «Отменено в связи с производственной необходимостью»."
+    n "A folded repair ticket is wedged behind the lift control panel. Status: \"Awaiting section shutdown.\" Below it, a newer line: \"Cancelled due to production necessity.\""
 
 # game/traces.rpy:1879
 translate english ps_trace_d5_mezzanine_faf12ba6:
 
     # n "Заявка создана за девять дней до твоей первой смены. Неисправность не была неожиданностью."
-    n "Заявка создана за девять дней до твоей первой смены. Неисправность не была неожиданностью."
+    n "The ticket was created nine days before your first shift. The failure was not unexpected."
 
 # game/traces.rpy:1890
 translate english ps_trace_d5_mezzanine_6e1c64de:
 
     # p "Она была отменена не техниками."
-    p "Она была отменена не техниками."
+    p "It wasn't cancelled by technicians."
 
 # game/traces.rpy:1891
 translate english ps_trace_d5_mezzanine_3cd994ad:
 
     # sv "Вижу."
-    sv "Вижу."
+    sv "I see."
 
 # game/traces.rpy:1892
 translate english ps_trace_d5_mezzanine_493ec713:
 
     # p "Пусть остальные тоже увидят."
-    p "Пусть остальные тоже увидят."
+    p "Let the others see it too."
 
 # game/traces.rpy:1893
 translate english ps_trace_d5_mezzanine_81a06f9c:
 
     # sv "Не убирай."
-    sv "Не убирай."
+    sv "Don't remove it."
 
 # game/traces.rpy:1911
 translate english ps_trace_d5_packing_bf98ffdc:
 
     # n "Поток ускорился, и Лера начинает повторять каждое действие вслух."
-    n "Поток ускорился, и Лера начинает повторять каждое действие вслух."
+    n "The flow speeds up, and Lera starts saying every action out loud."
 
 # game/traces.rpy:1913
 translate english ps_trace_d5_packing_e10314b7:
 
     # newb "Код. Ячейка. Вес. Подтверждение."
-    newb "Код. Ячейка. Вес. Подтверждение."
+    newb "Code. Bin. Weight. Confirm."
 
 # game/traces.rpy:1923
 translate english ps_trace_d5_packing_8a5cae2f:
 
     # p "Я беру левую ленту."
-    p "Я беру левую ленту."
+    p "I'll take the left belt."
 
 # game/traces.rpy:1924
 translate english ps_trace_d5_packing_b8d82b29:
 
     # newb "У тебя своя зона."
-    newb "У тебя своя зона."
+    newb "You have your own area."
 
 # game/traces.rpy:1925
 translate english ps_trace_d5_packing_456b9410:
 
     # p "Теперь у нас общая."
-    p "Теперь у нас общая."
+    p "Now we share one."
 
 # game/traces.rpy:1933
 translate english ps_trace_d5_packing_392ba963:
 
     # p "Сначала тяжёлое в стоп. Потом хрупкое. Остальное ждёт."
-    p "Сначала тяжёлое в стоп. Потом хрупкое. Остальное ждёт."
+    p "Heavy items to stop first. Fragile second. Everything else waits."
 
 # game/traces.rpy:1934
 translate english ps_trace_d5_packing_3081d1b1:
 
     # newb "Не всё одновременно."
-    newb "Не всё одновременно."
+    newb "Not everything at once."
 
 # game/traces.rpy:1935
 translate english ps_trace_d5_packing_d32eb974:
 
     # p "Никогда всё одновременно."
-    p "Никогда всё одновременно."
+    p "Never everything at once."
 
 # game/traces.rpy:1951
 translate english ps_trace_d5_control_f50cc302:
 
     # n "На центральном экране две цифры. План: 91%%. Риск перегруза: высокий."
-    n "На центральном экране две цифры. План: 91%%. Риск перегруза: высокий."
+    n "Two figures are on the central screen. Target: 91%%. Overload risk: high."
 
 # game/traces.rpy:1953
 translate english ps_trace_d5_control_674fe924:
 
     # sv "Если остановлю сейчас, участок не закроет ночь."
-    sv "Если остановлю сейчас, участок не закроет ночь."
+    sv "If I stop now, the section won't make the night target."
 
 # game/traces.rpy:1963
 translate english ps_trace_d5_control_50d23db6:
 
     # p "Останавливаем подъёмник, не весь участок. Мелкое уходит через левую линию."
-    p "Останавливаем подъёмник, не весь участок. Мелкое уходит через левую линию."
+    p "We stop the lift, not the whole section. Small items go through the left line."
 
 # game/traces.rpy:1964
 translate english ps_trace_d5_control_2a96409e:
 
     # sv "Потеряем четыре процента."
-    sv "Потеряем четыре процента."
+    sv "We'll lose four percent."
 
 # game/traces.rpy:1965
 translate english ps_trace_d5_control_2b070b80:
 
     # p "Не человека."
-    p "Не человека."
+    p "Not a person."
 
 # game/traces.rpy:1973
 translate english ps_trace_d5_control_2383f074:
 
     # sv "Они начнут спорить."
-    sv "Они начнут спорить."
+    sv "They'll argue."
 
 # game/traces.rpy:1974
 translate english ps_trace_d5_control_5c41e7bb:
 
     # p "Зато будут знать, почему мы замедляемся."
-    p "Зато будут знать, почему мы замедляемся."
+    p "At least they'll know why we're slowing down."
 
 # game/traces.rpy:1975
 translate english ps_trace_d5_control_91f414ef:
 
     # sv "Хорошо. Рацию."
-    sv "Хорошо. Рацию."
+    sv "All right. Radio."
 
 # game/traces.rpy:1991
 translate english ps_trace_d5_dock_68b05564:
 
     # n "Макс рисует пальцем схему линий на пыльной двери."
-    n "Макс рисует пальцем схему линий на пыльной двери."
+    n "Max draws a map of the lines with his finger on a dusty door."
 
 # game/traces.rpy:1993
 translate english ps_trace_d5_dock_be6495fd:
 
     # mem "Если связь ляжет, люди услышат только тех, кто рядом."
-    mem "Если связь ляжет, люди услышат только тех, кто рядом."
+    mem "If communications go down, people will only hear whoever is physically nearby."
 
 # game/traces.rpy:2002
 translate english ps_trace_d5_dock_b3055525:
 
     # p "Левая. Буфер. Правая. Стоп."
-    p "Левая. Буфер. Правая. Стоп."
+    p "Left. Buffer. Right. Stop."
 
 # game/traces.rpy:2003
 translate english ps_trace_d5_dock_b0681ba8:
 
     # mem "Четыре слова."
-    mem "Четыре слова."
+    mem "Four words."
 
 # game/traces.rpy:2004
 translate english ps_trace_d5_dock_ed29a38c:
 
     # p "Главное — в правильном порядке."
-    p "Главное — в правильном порядке."
+    p "The important part is the order."
 
 # game/traces.rpy:2012
 translate english ps_trace_d5_dock_699f430b:
 
     # mem "Я беру упаковку."
-    mem "Я беру упаковку."
+    mem "I'll take packing."
 
 # game/traces.rpy:2013
 translate english ps_trace_d5_dock_b8ac5be4:
 
     # p "Я — мезонин."
-    p "Я — мезонин."
+    p "I'll take the mezzanine."
 
 # game/traces.rpy:2014
 translate english ps_trace_d5_dock_34aaa97c:
 
     # mem "А если ничего не случится?"
-    mem "А если ничего не случится?"
+    mem "And if nothing happens?"
 
 # game/traces.rpy:2015
 translate english ps_trace_d5_dock_b5436a7f:
 
     # p "Тогда зря поговорили пять минут. Переживём."
-    p "Тогда зря поговорили пять минут. Переживём."
+    p "Then we wasted five minutes talking. We'll survive."
 
 # game/traces.rpy:2035
 translate english ps_trace_d6_break_55677ede:
 
     # n "Лера переписывает старую памятку: строку «не ошибаться» зачёркивает и вместо неё пишет «остановиться и проверить»."
-    n "Лера переписывает старую памятку: строку «не ошибаться» зачёркивает и вместо неё пишет «остановиться и проверить»."
+    n "Lera rewrites the old memo: she crosses out \"do not make mistakes\" and writes \"stop and check\" instead."
 
 # game/traces.rpy:2044
 translate english ps_trace_d6_break_c7bd0b1f:
 
     # newb "Мне?"
-    newb "Мне?"
+    newb "Me?"
 
 # game/traces.rpy:2045
 translate english ps_trace_d6_break_f4b55da8:
 
     # p "Ты замечаешь то, что опытные давно перестали видеть."
-    p "Ты замечаешь то, что опытные давно перестали видеть."
+    p "You notice things experienced workers stopped seeing long ago."
 
 # game/traces.rpy:2053
 translate english ps_trace_d6_break_7d598e69:
 
     # newb "А если будут смеяться?"
-    newb "А если будут смеяться?"
+    newb "What if they laugh?"
 
 # game/traces.rpy:2054
 translate english ps_trace_d6_break_709c9d02:
 
     # p "Макс будет. Остальные сохранят."
-    p "Макс будет. Остальные сохранят."
+    p "Max will. Everyone else will save it."
 
 # game/traces.rpy:2067
 translate english ps_trace_d6_mezzanine_4cd9af0a:
 
     # n "За старой панелью лежит чёрный пластиковый конверт. На нём тот же знак, что был на пломбе. Внутри — накладная V-13. Пункт назначения: «Штормовой сектор»."
-    n "За старой панелью лежит чёрный пластиковый конверт. На нём тот же знак, что был на пломбе. Внутри — накладная V-13. Пункт назначения: «Штормовой сектор»."
+    n "A black plastic envelope lies behind the old panel. It bears the same symbol as the seal. Inside is a V-13 waybill. Destination: \"Storm Sector.\""
 
 # game/traces.rpy:2075
 translate english ps_trace_d6_mezzanine_1bed226a:
 
     # n "При попытке сканирования ТСД отвечает:"
-    n "При попытке сканирования ТСД отвечает:"
+    n "When you try to scan it, the scanner responds:"
 
 # game/traces.rpy:2076
 translate english ps_trace_d6_mezzanine_856333ee:
 
     # n "«Объект отсутствует»."
-    n "«Объект отсутствует»."
+    n "\"Object does not exist.\""
 
 # game/traces.rpy:2086
 translate english ps_trace_d6_mezzanine_5f21e0c5:
 
     # mem "Та же пломба."
-    mem "Та же пломба."
+    mem "Same seal."
 
 # game/traces.rpy:2087
 translate english ps_trace_d6_mezzanine_dc11bb00:
 
     # p "И тот же несуществующий сектор."
-    p "И тот же несуществующий сектор."
+    p "And the same nonexistent sector."
 
 # game/traces.rpy:2088
 translate english ps_trace_d6_mezzanine_dd1e88b8:
 
     # mem "Значит, существует он очень старательно."
-    mem "Значит, существует он очень старательно."
+    mem "Then it is trying very hard to exist."
 
 # game/traces.rpy:2107
 translate english ps_trace_d6_packing_f3f9edd1:
 
     # n "Макс наклеивает на пустую коробку этикетку «ЧЕСТНЫЙ ОТЧЁТ»."
-    n "Макс наклеивает на пустую коробку этикетку «ЧЕСТНЫЙ ОТЧЁТ»."
+    n "Max sticks a label reading \"HONEST REPORT\" on an empty box."
 
 # game/traces.rpy:2109
 translate english ps_trace_d6_packing_cac8122c:
 
     # p "Что внутри?"
-    p "Что внутри?"
+    p "What's inside?"
 
 # game/traces.rpy:2110
 translate english ps_trace_d6_packing_cf8d7390:
 
     # mem "Пока воздух."
-    mem "Пока воздух."
+    mem "Air, for now."
 
 # game/traces.rpy:2119
 translate english ps_trace_d6_packing_56711ba6:
 
     # p "Контейнер. Сорок семь единиц. Подъёмник."
-    p "Контейнер. Сорок семь единиц. Подъёмник."
+    p "Container. Forty-seven units. Lift."
 
 # game/traces.rpy:2120
 translate english ps_trace_d6_packing_afab5175:
 
     # mem "И Викторова рука. И объяснительная Леры. Это тоже кладём."
-    mem "И Викторова рука. И объяснительная Леры. Это тоже кладём."
+    mem "And Viktor's hand. And Lera's written statement. Those go in too."
 
 # game/traces.rpy:2128
 translate english ps_trace_d6_packing_6d1a45b5:
 
     # mem "Архив высочайшей секретности."
-    mem "Архив высочайшей секретности."
+    mem "Top-secret archive."
 
 # game/traces.rpy:2129
 translate english ps_trace_d6_packing_1ab8f18f:
 
     # p "Почему коробка из-под печенья?"
-    p "Почему коробка из-под печенья?"
+    p "Why a cookie box?"
 
 # game/traces.rpy:2130
 translate english ps_trace_d6_packing_81399701:
 
     # mem "Потому что её никто не отдаст Куратору."
-    mem "Потому что её никто не отдаст Куратору."
+    mem "Because nobody will hand it over to the Curator."
 
 # game/traces.rpy:2146
 translate english ps_trace_d6_control_6c4b0ff6:
 
     # n "Артём открывает локальный архив камер. Запись остановки ещё существует в кэше терминала."
-    n "Артём открывает локальный архив камер. Запись остановки ещё существует в кэше терминала."
+    n "Artyom opens the local camera archive. The shutdown recording still exists in the terminal cache."
 
 # game/traces.rpy:2148
 translate english ps_trace_d6_control_1f68d6d2:
 
     # sv "После закрытия отчёта кэш очистится."
-    sv "После закрытия отчёта кэш очистится."
+    sv "The cache will be cleared once the report is closed."
 
 # game/traces.rpy:2158
 translate english ps_trace_d6_control_28cf8061:
 
     # p "Теперь изменение файла будет видно."
-    p "Теперь изменение файла будет видно."
+    p "Now any change to the file will be visible."
 
 # game/traces.rpy:2159
 translate english ps_trace_d6_control_d697d512:
 
     # sv "Куратор это понимает."
-    sv "Куратор это понимает."
+    sv "The Curator understands that."
 
 # game/traces.rpy:2160
 translate english ps_trace_d6_control_b39becf0:
 
     # p "Поэтому и делаем."
-    p "Поэтому и делаем."
+    p "That's why we're doing it."
 
 # game/traces.rpy:2168
 translate english ps_trace_d6_control_4886623d:
 
     # sv "Если подпишу, назад не отойду."
-    sv "Если подпишу, назад не отойду."
+    sv "If I sign, I can't step back afterward."
 
 # game/traces.rpy:2169
 translate english ps_trace_d6_control_83e57c19:
 
     # p "Поэтому я и спрашиваю."
-    p "Поэтому я и спрашиваю."
+    p "That's why I'm asking."
 
 # game/traces.rpy:2170
 translate english ps_trace_d6_control_ef7ca61f:
 
     # sv "Давай."
-    sv "Давай."
+    sv "Do it."
 
 # game/traces.rpy:2188
 translate english ps_trace_d6_dock_cec6313f:
 
     # n "Виктор стоит у открытых ворот. Холодный воздух двигает край бинта на его руке."
-    n "Виктор стоит у открытых ворот. Холодный воздух двигает край бинта на его руке."
+    n "Viktor stands by the open gate. Cold air lifts the edge of the bandage on his hand."
 
 # game/traces.rpy:2190
 translate english ps_trace_d6_dock_9e8a5feb:
 
     # vet "После отчёта либо быстро всё закроют, либо начнут нормальную проверку."
-    vet "После отчёта либо быстро всё закроют, либо начнут нормальную проверку."
+    vet "After the report, they'll either shut everything down fast or start a real investigation."
 
 # game/traces.rpy:2191
 translate english ps_trace_d6_dock_6e72e146:
 
     # p "На что ставишь?"
-    p "На что ставишь?"
+    p "What's your bet?"
 
 # game/traces.rpy:2192
 translate english ps_trace_d6_dock_9498e6b9:
 
     # vet "Поэтому и стою здесь с копией заявки."
-    vet "Поэтому и стою здесь с копией заявки."
+    vet "That's why I'm standing here with a copy of the ticket."
 
 # game/traces.rpy:2201
 translate english ps_trace_d6_dock_9e56b00b:
 
     # vet "Не ради меня."
-    vet "Не ради меня."
+    vet "Not for me."
 
 # game/traces.rpy:2202
 translate english ps_trace_d6_dock_809ff384:
 
     # p "Ради следующего, кто увидит LIFT-09."
-    p "Ради следующего, кто увидит LIFT-09."
+    p "For the next person who sees LIFT-09."
 
 # game/traces.rpy:2210
 translate english ps_trace_d6_dock_a81be93c:
 
     # vet "Потому что кто-то должен был встречать новых."
-    vet "Потому что кто-то должен был встречать новых."
+    vet "Because someone had to be there when newcomers arrived."
 
 # game/traces.rpy:2211
 translate english ps_trace_d6_dock_75e23b8c:
@@ -1288,7 +1288,7 @@ translate english ps_route_climax_91719c4b:
 translate english ps_route_climax_2eaa2fb8:
 
     # p "И?"
-    p "И?"
+    p "And?"
 
 # game/traces.rpy:2288
 translate english ps_route_climax_c0e3983f:
