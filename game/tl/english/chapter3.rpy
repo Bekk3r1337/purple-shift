@@ -496,217 +496,217 @@ translate english chapter3_error_resolved_089c5727:
 translate english chapter3_error_resolved_3e469b66:
 
     # sv "Потому что там уже распределено. Но вопрос правильный. Дам вам ещё одного человека после запуска."
-    sv "Потому что там уже распределено. Но вопрос правильный. Дам вам ещё одного человека после запуска."
+    sv "Because it's already assigned there. But it's a fair question. I'll give you one more person after startup."
 
 # game/chapter3.rpy:345
 translate english chapter3_error_resolved_e1cdc612:
 
     # p "Понял."
-    p "Понял."
+    p "Got it."
 
 # game/chapter3.rpy:346
 translate english chapter3_error_resolved_6bef94cc:
 
     # sv "Вот и хорошо."
-    sv "Вот и хорошо."
+    sv "Good."
 
 # game/chapter3.rpy:347
 translate english chapter3_error_resolved_eeb66a57:
 
     # n "На экране появляется ещё одна очередь. Цифры растут быстрее, чем ты успеваешь их читать."
-    n "На экране появляется ещё одна очередь. Цифры растут быстрее, чем ты успеваешь их читать."
+    n "Another queue appears on the screen. The numbers grow faster than you can read them."
 
 # game/chapter3.rpy:351
 translate english chapter3_error_resolved_ee99ab49:
 
     # p "А премиальный сектор будет?"
-    p "А премиальный сектор будет?"
+    p "Do we get a premium sector?"
 
 # game/chapter3.rpy:352
 translate english chapter3_error_resolved_42c5f6d9:
 
     # sv "Будет. В следующей жизни."
-    sv "Будет. В следующей жизни."
+    sv "Sure. In the next life."
 
 # game/chapter3.rpy:353
 translate english chapter3_error_resolved_872b9929:
 
     # mem "Подтверждаю. Там же нормальный ТСД и оплачиваемый перерыв."
-    mem "Подтверждаю. Там же нормальный ТСД и оплачиваемый перерыв."
+    mem "Confirmed. That's also where the good scanners and paid breaks are."
 
 # game/chapter3.rpy:365
 translate english chapter3_pressure_c2f017bf:
 
     # n "Дополнительный сектор начинает мигать. Одна задача. Три. Семь."
-    n "Дополнительный сектор начинает мигать. Одна задача. Три. Семь."
+    n "The extra sector starts flashing. One task. Three. Seven."
 
 # game/chapter3.rpy:368
 translate english chapter3_pressure_bb4c7f79:
 
     # newb "Я не успеваю. Я сейчас опять всё перепутаю."
-    newb "Я не успеваю. Я сейчас опять всё перепутаю."
+    newb "I can't keep up. I'm going to mix everything up again."
 
 # game/chapter3.rpy:370
 translate english chapter3_pressure_e78eba9f:
 
     # n "Лера ничего не говорит, но её движения становятся рваными."
-    n "Лера ничего не говорит, но её движения становятся рваными."
+    n "Lera says nothing, but her movements become jerky."
 
 # game/chapter3.rpy:377
 translate english chapter3_pressure_3bd20769:
 
     # p "Скидывай половину на меня."
-    p "Скидывай половину на меня."
+    p "Send half of it to me."
 
 # game/chapter3.rpy:378
 translate english chapter3_pressure_886e0caa:
 
     # newb "Но у тебя и так два сектора."
-    newb "Но у тебя и так два сектора."
+    newb "You already have two sectors."
 
 # game/chapter3.rpy:379
 translate english chapter3_pressure_98ec1215:
 
     # p "Разберёмся."
-    p "Разберёмся."
+    p "We'll manage."
 
 # game/chapter3.rpy:380
 translate english chapter3_pressure_7e14ba2a:
 
     # n "На твоём экране прибавляется очередь. Лера делает глубокий вдох и снова берётся за работу."
-    n "На твоём экране прибавляется очередь. Лера делает глубокий вдох и снова берётся за работу."
+    n "Your queue grows. Lera takes a deep breath and starts working again."
 
 # game/chapter3.rpy:386
 translate english chapter3_pressure_cd176ec3:
 
     # p "Не пытайся закрыть всё. Ошибку сразу вправо. Обычное — в ячейку. Сначала чистим простое."
-    p "Не пытайся закрыть всё. Ошибку сразу вправо. Обычное — в ячейку. Сначала чистим простое."
+    p "Don't try to clear everything. Errors go right immediately. Normal items go to the bin. Clear the easy ones first."
 
 # game/chapter3.rpy:387
 translate english chapter3_pressure_f0b7224b:
 
     # newb "Хорошо."
-    newb "Хорошо."
+    newb "Okay."
 
 # game/chapter3.rpy:388
 translate english chapter3_pressure_4e5aadbb:
 
     # n "Через минуту её очередь впервые уменьшается."
-    n "Через минуту её очередь впервые уменьшается."
+    n "A minute later, her queue shrinks for the first time."
 
 # game/chapter3.rpy:393
 translate english chapter3_pressure_8a909913:
 
     # p "Не смотри на общее число. Просто работай дальше."
-    p "Не смотри на общее число. Просто работай дальше."
+    p "Don't look at the total. Just keep working."
 
 # game/chapter3.rpy:394
 translate english chapter3_pressure_06361e1d:
 
     # newb "Ладно."
-    newb "Ладно."
+    newb "All right."
 
 # game/chapter3.rpy:395
 translate english chapter3_pressure_c026889c:
 
     # n "Она кивает, но дважды подряд кладёт товар не в ту ячейку и возвращает его обратно."
-    n "Она кивает, но дважды подряд кладёт товар не в ту ячейку и возвращает его обратно."
+    n "She nods, but twice in a row puts an item into the wrong bin and has to take it back."
 
 # game/chapter3.rpy:397
 translate english chapter3_pressure_445ae57c:
 
     # n "Табло показывает минус шесть процентов. Линия понемногу догоняет план."
-    n "Табло показывает минус шесть процентов. Линия понемногу догоняет план."
+    n "The board shows minus six percent. The line is slowly catching up to target."
 
 # game/chapter3.rpy:399
 translate english chapter3_pressure_6efa1df1:
 
     # n "Со стороны контейнера раздаётся металлический скрежет."
-    n "Со стороны контейнера раздаётся металлический скрежет."
+    n "A metallic scrape comes from the container."
 
 # game/chapter3.rpy:412
 translate english chapter3_incident_fa6753c2:
 
     # n "Контейнер у края линии накренился: его забили выше отметки, и теперь верхние коробки держатся друг за друга только за счёт собственного веса."
-    n "Контейнер у края линии накренился: его забили выше отметки, и теперь верхние коробки держатся друг за друга только за счёт собственного веса."
+    n "The container at the edge of the line has tilted: it was stacked above the limit, and now the top boxes are holding each other up only by their own weight."
 
 # game/chapter3.rpy:417
 translate english chapter3_incident_dd79422f:
 
     # vet "Стой. Его больше нельзя грузить."
-    vet "Стой. Его больше нельзя грузить."
+    vet "Stop. We can't load it any further."
 
 # game/chapter3.rpy:422
 translate english chapter3_incident_91f45f4e:
 
     # sv "До смены контейнера две минуты. Не останавливаемся."
-    sv "До смены контейнера две минуты. Не останавливаемся."
+    sv "Two minutes until the container change. We keep going."
 
 # game/chapter3.rpy:424
 translate english chapter3_incident_7c1e8290:
 
     # vet "Он не выдержит две минуты."
-    vet "Он не выдержит две минуты."
+    vet "It won't last two minutes."
 
 # game/chapter3.rpy:426
 translate english chapter3_incident_1eb104ab:
 
     # sv "У нас отставание."
-    sv "У нас отставание."
+    sv "We're behind."
 
 # game/chapter3.rpy:431
 translate english chapter3_incident_a55ce7c4:
 
     # mem "Отлично. Физика против показателей. Ставки принимаются до падения."
-    mem "Отлично. Физика против показателей. Ставки принимаются до падения."
+    mem "Great. Physics versus metrics. Place your bets before it falls."
 
 # game/chapter3.rpy:433
 translate english chapter3_incident_c59c172a:
 
     # n "Лера тянется к следующей коробке, но смотрит не на супервайзера — на тебя."
-    n "Лера тянется к следующей коробке, но смотрит не на супервайзера — на тебя."
+    n "Lera reaches for the next box, but she is not looking at the supervisor - she is looking at you."
 
 # game/chapter3.rpy:458
 translate english chapter3_incident_stop_1dd0ae7c:
 
     # n "Ты нажимаешь кнопку."
-    n "Ты нажимаешь кнопку."
+    n "You press the button."
 
 # game/chapter3.rpy:462
 translate english chapter3_incident_stop_127fd578:
 
     # n "Гул обрывается. После нескольких часов рядом с лентой в ушах продолжает звенеть."
-    n "Гул обрывается. После нескольких часов рядом с лентой в ушах продолжает звенеть."
+    n "The roar cuts out. After hours beside the belt, your ears keep ringing."
 
 # game/chapter3.rpy:464
 translate english chapter3_incident_stop_5b60701b:
 
     # sv "Ты что сделал?"
-    sv "Ты что сделал?"
+    sv "What did you do?"
 
 # game/chapter3.rpy:466
 translate english chapter3_incident_stop_58f78399:
 
     # p "Контейнер падает."
-    p "Контейнер падает."
+    p "The container is falling."
 
 # game/chapter3.rpy:468
 translate english chapter3_incident_stop_1baaafcd:
 
     # n "Секунда."
-    n "Секунда."
+    n "One second."
 
 # game/chapter3.rpy:469
 translate english chapter3_incident_stop_93374f94:
 
     # n "Металлическая стенка прогибается."
-    n "Металлическая стенка прогибается."
+    n "The metal wall buckles."
 
 # game/chapter3.rpy:474
 translate english chapter3_incident_stop_47953352:
 
     # n "Верхняя коробка срывается. И падает ровно туда, где секунду назад стояла новичок."
-    n "Верхняя коробка срывается. И падает ровно туда, где секунду назад стояла новичок."
+    n "The top box breaks loose and falls exactly where the newcomer was standing a second ago."
 
 # game/chapter3.rpy:476
 translate english chapter3_incident_stop_463b3d00:
@@ -718,73 +718,73 @@ translate english chapter3_incident_stop_463b3d00:
 translate english chapter3_incident_stop_35367977:
 
     # vet "Вот поэтому."
-    vet "Вот поэтому."
+    vet "That's why."
 
 # game/chapter3.rpy:481
 translate english chapter3_incident_stop_a56672d1:
 
     # sv "Ладно. Остановка обоснована. Перегружаем и запускаемся."
-    sv "Ладно. Остановка обоснована. Перегружаем и запускаемся."
+    sv "All right. The stop was justified. Repack it and restart."
 
 # game/chapter3.rpy:484
 translate english chapter3_incident_stop_f7554bbb:
 
     # sv "В следующий раз сначала кричишь. Но кнопку нажал правильно."
-    sv "В следующий раз сначала кричишь. Но кнопку нажал правильно."
+    sv "Next time, shout first. But pressing the button was the right call."
 
 # game/chapter3.rpy:499
 translate english chapter3_incident_team_991d2616:
 
     # p "Не грузим. Виктор, держи стенку, я сниму верх. Лера, отводи коробки."
-    p "Не грузим. Виктор, держи стенку, я сниму верх. Лера, отводи коробки."
+    p "Stop loading. Viktor, hold the wall. I'll take the top row. Lera, move the boxes away."
 
 # game/chapter3.rpy:501
 translate english chapter3_incident_team_192ade3f:
 
     # mem "А я?"
-    mem "А я?"
+    mem "And me?"
 
 # game/chapter3.rpy:503
 translate english chapter3_incident_team_50ffd38d:
 
     # p "Ты тоже работаешь."
-    p "Ты тоже работаешь."
+    p "You're working too."
 
 # game/chapter3.rpy:505
 translate english chapter3_incident_team_da02bc6b:
 
     # mem "Вот теперь ситуация действительно аварийная."
-    mem "Вот теперь ситуация действительно аварийная."
+    mem "Now this is officially an emergency."
 
 # game/chapter3.rpy:507
 translate english chapter3_incident_team_28d83ad9:
 
     # n "Вы разбираете верхний ряд без команды сверху. Пока стенка медленно выгибается наружу, половина коробок уже оказывается на полу."
-    n "Вы разбираете верхний ряд без команды сверху. Пока стенка медленно выгибается наружу, половина коробок уже оказывается на полу."
+    n "You unload the top row without waiting for orders. By the time the wall slowly bends outward, half the boxes are already on the floor."
 
 # game/chapter3.rpy:509
 translate english chapter3_incident_team_c25140c6:
 
     # sv "Ладно. Сработали."
-    sv "Ладно. Сработали."
+    sv "All right. That worked."
 
 # game/chapter3.rpy:512
 translate english chapter3_incident_team_fef38614:
 
     # sv "И линию почти не потеряли."
-    sv "И линию почти не потеряли."
+    sv "And we barely lost any line time."
 
 # game/chapter3.rpy:515
 translate english chapter3_incident_team_3cd15ad9:
 
     # sv "Теперь возвращаем темп."
-    sv "Теперь возвращаем темп."
+    sv "Now recover the pace."
 
 # game/chapter3.rpy:528
 translate english chapter3_incident_norm_ce943dce:
 
     # n "Ты берёшь следующую коробку и сканируешь."
-    n "Ты берёшь следующую коробку и сканируешь."
+    n "You take the next box and scan it."
 
 # game/chapter3.rpy:532
 translate english chapter3_incident_norm_e9747b95:
@@ -796,43 +796,43 @@ translate english chapter3_incident_norm_e9747b95:
 translate english chapter3_incident_norm_85c0bcc7:
 
     # n "Лера повторяет за тобой."
-    n "Лера повторяет за тобой."
+    n "Lera follows your lead."
 
 # game/chapter3.rpy:536
 translate english chapter3_incident_norm_edcd1fe2:
 
     # n "Контейнер выдерживает ещё один товар. Второй. На третьем стенка уходит вбок."
-    n "Контейнер выдерживает ещё один товар. Второй. На третьем стенка уходит вбок."
+    n "The container holds for one more item. Then another. On the third, the wall gives way."
 
 # game/chapter3.rpy:541
 translate english chapter3_incident_norm_515178b1:
 
     # n "Коробки падают на пол и перекрывают проход. Линию всё равно приходится остановить."
-    n "Коробки падают на пол и перекрывают проход. Линию всё равно приходится остановить."
+    n "Boxes crash to the floor and block the passage. The line has to stop anyway."
 
 # game/chapter3.rpy:543
 translate english chapter3_incident_norm_4eca3516:
 
     # sv "Все целы?"
-    sv "Все целы?"
+    sv "Everyone okay?"
 
 # game/chapter3.rpy:545
 translate english chapter3_incident_norm_d44e2b21:
 
     # vet "Целы. Пока."
-    vet "Целы. Пока."
+    vet "Okay. For now."
 
 # game/chapter3.rpy:547
 translate english chapter3_incident_norm_d9d0bde7:
 
     # sv "Почему не остановили?"
-    sv "Почему не остановили?"
+    sv "Why didn't you stop?"
 
 # game/chapter3.rpy:549
 translate english chapter3_incident_norm_5f55c1f5:
 
     # n "Макс опускает сканер. Лера смотрит в пол."
-    n "Макс опускает сканер. Лера смотрит в пол."
+    n "Max lowers his scanner. Lera looks at the floor."
 
 # game/chapter3.rpy:551
 translate english chapter3_incident_norm_4efba44d:
