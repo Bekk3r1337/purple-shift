@@ -911,3 +911,23 @@ translate english strings:
     # game/voices_shift.rpy:591
     old "Сразу взять разговор на себя"
     new "Сразу взять разговор на себя"
+# TODO: Translation updated at 2026-09-23 09:17
+
+# game/voices_shift.rpy:432
+translate english ps_team_names_b1a770b3:
+
+    # newb "Вот. Теперь хотя бы знаем, как друг друга звать."
+    newb "Вот. Теперь хотя бы знаем, как друг друга звать."
+
+# game/voices_shift.rpy:477
+translate english ps_route_week_scene_50ba0100:
+
+    # p "Договорились."
+    p "Договорились."
+
+# game/voices_shift.rpy:506
+translate english ps_route_week_scene_50853714:
+
+    # mem "Опасное предложение, [ps_player_name]. Ещё привыкну."
+    mem "Опасное предложение, [ps_player_name]. Ещё привыкну."
+
