@@ -18,63 +18,100 @@ init python:
 
 
 screen ps_language_gate():
-    # Dedicated first-launch selector. Keep both languages visible before a
-    # preference exists, but do not cover the screen with an oversized panel.
+    # Dedicated first-launch screen. It deliberately covers the main menu
+    # instead of appearing as a dialog on top of navigation.
     modal True
-    zorder 300
+    zorder 1000
 
-    add Solid("#05020bcc")
+    add "images/ui/v2/main_menu_bg.jpg"
+    add "images/ui/v2/main_menu_overlay.png"
+    add Solid("#05020bd9")
 
-    frame:
+    # Quiet framing lines keep the selector in the Purple Shift visual language
+    # without turning it into a giant modal window.
+    add Solid("#9f5be0") xpos 318 ypos 255 xsize 1284 ysize 2 alpha 0.55
+    add Solid("#6f399e") xpos 474 ypos 820 xsize 972 ysize 1 alpha 0.45
+
+    vbox:
         xalign 0.5
-        yalign 0.5
-        xsize 760
-        padding (44, 36)
-        background Solid("#0d0717f2")
+        yalign 0.43
+        xsize 1100
+        spacing 14
 
-        vbox:
-            xfill True
-            spacing 14
+        text "PURPLE SHIFT":
+            xalign 0.5
+            size 30
+            kerning 7
+            color "#8e6baa"
 
-            text "PURPLE SHIFT":
-                xalign 0.5
-                size 20
-                color "#9a75be"
-                kerning 4
+        text "ВЫБЕРИТЕ ЯЗЫК / SELECT LANGUAGE":
+            xalign 0.5
+            text_align 0.5
+            size 45
+            color "#d5a8ff"
 
-            text "ЯЗЫК / LANGUAGE":
-                xalign 0.5
-                size 34
-                color "#c99cff"
+        text "Язык интерфейса и истории можно изменить позже в настройках.\nYou can change the interface and story language later in Settings.":
+            xalign 0.5
+            text_align 0.5
+            size 21
+            color "#c6b8d4"
+            line_spacing 5
 
-            text "Выберите язык / Choose your language":
-                xalign 0.5
-                text_align 0.5
-                size 20
-                color "#ded2ea"
+        null height 34
 
-            null height 12
+        hbox:
+            xalign 0.5
+            spacing 24
 
-            hbox:
-                xalign 0.5
-                spacing 18
+            button:
+                action Function(ps_select_language, None)
+                xsize 390
+                ysize 104
+                background Solid("#12091dcc")
+                hover_background Solid("#50236fe8")
 
-                textbutton "РУССКИЙ":
-                    action Function(ps_select_language, None)
-                    xsize 290
-                    ysize 64
-                    text_xalign 0.5
+                fixed:
+                    xfill True
+                    yfill True
+                    add Solid("#a65dec") xpos 0 ypos 0 xsize 5 ysize 104
+                    text "РУССКИЙ":
+                        xalign 0.5
+                        yalign 0.43
+                        size 28
+                        color "#ffffff"
+                    text "Оригинал":
+                        xalign 0.5
+                        yalign 0.73
+                        size 16
+                        color "#a997bd"
 
-                textbutton "ENGLISH":
-                    action Function(ps_select_language, "english")
-                    xsize 290
-                    ysize 64
-                    text_xalign 0.5
+            button:
+                action Function(ps_select_language, "english")
+                xsize 390
+                ysize 104
+                background Solid("#12091dcc")
+                hover_background Solid("#50236fe8")
 
-            null height 6
+                fixed:
+                    xfill True
+                    yfill True
+                    add Solid("#a65dec") xpos 385 ypos 0 xsize 5 ysize 104
+                    text "ENGLISH":
+                        xalign 0.5
+                        yalign 0.43
+                        size 28
+                        color "#ffffff"
+                    text "Full localization":
+                        xalign 0.5
+                        yalign 0.73
+                        size 16
+                        color "#a997bd"
 
-            text "Язык можно изменить в настройках / Language can be changed in Settings":
-                xalign 0.5
-                text_align 0.5
-                size 16
-                color "#9f90b2"
+        null height 18
+
+        text "RU  /  EN":
+            xalign 0.5
+            size 15
+            kerning 5
+            color "#776786"
+
