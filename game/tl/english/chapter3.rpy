@@ -1215,62 +1215,62 @@ translate english strings:
     new "Break the tension with a joke"
 
     # game/chapter3.rpy:248
-    old "Позвать супервайзера и сразу показать ошибку"
-    new "Позвать супервайзера и сразу показать ошибку"
+    old "Call the supervisor and show the error immediately"
+    new "Call the supervisor and show the error immediately"
 
     # game/chapter3.rpy:251
-    old "Попросить ветерана объяснить"
-    new "Попросить ветерана объяснить"
+    old "Ask the veteran to explain"
+    new "Ask the veteran to explain"
 
     # game/chapter3.rpy:254
-    old "Попробовать решить самому"
-    new "Попробовать решить самому"
+    old "Try to solve it yourself"
+    new "Try to solve it yourself"
 
     # game/chapter3.rpy:336
-    old "Спросить, почему нагрузку не разделят на всех"
-    new "Спросить, почему нагрузку не разделят на всех"
+    old "Ask why the workload is not being spread across everyone"
+    new "Ask why the workload is not being spread across everyone"
 
     # game/chapter3.rpy:342
-    old "Молча взять дополнительный сектор"
-    new "Молча взять дополнительный сектор"
+    old "Silently take the extra sector"
+    new "Silently take the extra sector"
 
     # game/chapter3.rpy:373
-    old "Забрать часть её задач"
-    new "Забрать часть её задач"
+    old "Take some of her tasks"
+    new "Take some of her tasks"
 
     # game/chapter3.rpy:382
-    old "Научить её работать с проблемным потоком"
-    new "Научить её работать с проблемным потоком"
+    old "Teach her how to use the problem flow"
+    new "Teach her how to use the problem flow"
 
     # game/chapter3.rpy:390
-    old "Сказать держать темп самостоятельно"
-    new "Сказать держать темп самостоятельно"
+    old "Tell her to keep pace on her own"
+    new "Tell her to keep pace on her own"
 
     # game/chapter3.rpy:442
-    old "Нажать аварийную остановку"
-    new "Нажать аварийную остановку"
+    old "Press the emergency stop"
+    new "Press the emergency stop"
 
     # game/chapter3.rpy:445
-    old "Не останавливать линию, но быстро собрать людей"
-    new "Не останавливать линию, но быстро собрать людей"
+    old "Do not stop the line, but quickly gather people"
+    new "Do not stop the line, but quickly gather people"
 
     # game/chapter3.rpy:448
-    old "Выполнить указание и продолжить работу"
-    new "Выполнить указание и продолжить работу"
+    old "Follow the instruction and keep working"
+    new "Follow the instruction and keep working"
 
     # game/chapter3.rpy:639
-    old "Хочу, чтобы рядом со мной не боялись просить помощи"
-    new "Хочу, чтобы рядом со мной не боялись просить помощи"
+    old "I want people around me not to be afraid to ask for help"
+    new "I want people around me not to be afraid to ask for help"
 
     # game/chapter3.rpy:645
-    old "Хочу научиться отвечать за участок"
-    new "Хочу научиться отвечать за участок"
+    old "I want to learn how to take responsibility for a section"
+    new "I want to learn how to take responsibility for a section"
 
     # game/chapter3.rpy:652
-    old "Хочу заметить, если эта работа начнёт меня ломать"
-    new "Хочу заметить, если эта работа начнёт меня ломать"
+    old "I want to notice if this job starts breaking me"
+    new "I want to notice if this job starts breaking me"
 
     # game/chapter3.rpy:658
-    old "Хочу хотя бы не разучиться шутить"
-    new "Хочу хотя бы не разучиться шутить"
+    old "At least I don't want to forget how to joke"
+    new "At least I don't want to forget how to joke"
 
