@@ -799,7 +799,9 @@ testsuite purple_shift:
         assert eval (not ps_english_message_cyrillic)
 
         $ ps_english_archive_texts = [ps_runtime_text(title) for _item_id, title, _path in ps_cg_catalog] + [ps_runtime_text(title) for _item_id, title, _desc in ps_document_catalog] + [ps_runtime_text(desc) for _item_id, _title, desc in ps_document_catalog] + [ps_runtime_text(title) for _item_id, title, _desc in ps_achievement_catalog] + [ps_runtime_text(desc) for _item_id, _title, desc in ps_achievement_catalog]
-        assert eval (not any(any("\u0400" <= char <= "\u04ff" for char in value) for value in ps_english_archive_texts if value))
+        $ ps_english_archive_cyrillic = [value for value in ps_english_archive_texts if value and any("\u0400" <= char <= "\u04ff" for char in value)]
+        $ print("ENGLISH_ARCHIVE_CYRILLIC_LEAKS:", repr(ps_english_archive_cyrillic))
+        assert eval (not ps_english_archive_cyrillic)
 
         $ ps_english_ending_texts = [ps_ending_title(ending_id) for ending_id in ("truth", "people", "voice", "leader", "employee", "exit", "silence")] + [ps_ending_description(ending_id) for ending_id in ("truth", "people", "voice", "leader", "employee", "exit", "silence")]
         assert eval (not any(any("\u0400" <= char <= "\u04ff" for char in value) for value in ps_english_ending_texts if value))
