@@ -212,7 +212,7 @@ init python:
                 for item in ps_achievement_catalog
                 if item[0] == achievement_id
             )
-            renpy.notify(_("Достижение: {}").format(title))
+            renpy.notify(_("Достижение: {}").format(ps_runtime_text(title)))
 
         return True
 
