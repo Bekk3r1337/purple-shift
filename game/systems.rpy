@@ -115,7 +115,7 @@ init python:
             "silence": "Тишина после сигнала",
         }
 
-        return titles[ending_id]
+        return _(titles[ending_id])
 
     def ps_ending_description(ending_id=None):
         ending_id = ending_id or ps_ending_id()
@@ -130,7 +130,7 @@ init python:
             "silence": "Рейтинг аннулирован. Решение о следующей смене пока не принято.",
         }
 
-        return descriptions[ending_id]
+        return _(descriptions[ending_id])
 
 
 ################################################################################
@@ -150,7 +150,7 @@ screen ps_stat_card(title, value, accent):
             hbox:
                 xfill True
 
-                text title:
+                text _(title):
                     color "#efeaff"
                     size 28
 
@@ -187,12 +187,12 @@ screen ps_shift_report(title, subtitle):
             spacing 20
             xfill True
 
-            text title:
+            text _(title):
                 color "#c8a2ff"
                 size 52
                 xalign 0.5
 
-            text subtitle:
+            text _(subtitle):
                 color "#d8c7ff"
                 size 27
                 xalign 0.5
@@ -204,10 +204,10 @@ screen ps_shift_report(title, subtitle):
                 spacing 22
                 xalign 0.5
 
-                use ps_stat_card("Человечность", ps_humanity, "#ff86c8")
-                use ps_stat_card("Выносливость", ps_endurance, "#7fd9ff")
-                use ps_stat_card("Эффективность", ps_efficiency, "#8dff9b")
-                use ps_stat_card("Юмор", ps_humor, "#ffd36f")
+                use ps_stat_card(_("Человечность"), ps_humanity, "#ff86c8")
+                use ps_stat_card(_("Выносливость"), ps_endurance, "#7fd9ff")
+                use ps_stat_card(_("Эффективность"), ps_efficiency, "#8dff9b")
+                use ps_stat_card(_("Юмор"), ps_humor, "#ffd36f")
 
             frame:
                 xfill True
@@ -237,7 +237,7 @@ screen ps_shift_report(title, subtitle):
                         size 23
 
                     for choice in ps_key_choices[-3:]:
-                        text "• [choice]":
+                        text ("• " + _(choice)):
                             color "#e7ddf7"
                             size 23
 
@@ -282,13 +282,13 @@ screen ps_final_report(title, subtitle):
                 size 26
                 xalign 0.5
 
-            text title:
+            text _(title):
                 color "#d2adff"
                 size 55
                 text_align 0.5
                 xalign 0.5
 
-            text subtitle:
+            text _(subtitle):
                 color "#eee8f7"
                 size 29
                 text_align 0.5
@@ -374,14 +374,14 @@ screen ps_tsd_alert(code, message, hint):
                 padding (35, 30)
                 background Solid("#090b0ddd")
 
-                text message:
+                text _(message):
                     color "#ffffff"
                     size 40
                     text_align 0.5
                     xalign 0.5
                     yalign 0.5
 
-            text hint:
+            text _(hint):
                 color "#aeb5ba"
                 size 25
                 text_align 0.5
