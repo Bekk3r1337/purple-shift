@@ -321,7 +321,7 @@ screen ps_final_report(title, subtitle):
                     xalign 0.5
 
                 for choice in ps_key_choices[-3:]:
-                    text "• [choice]":
+                    text ("• " + _(choice)):
                         color "#e7ddf7"
                         size 23
                         xalign 0.5
