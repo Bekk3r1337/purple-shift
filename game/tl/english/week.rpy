@@ -664,211 +664,211 @@ translate english chapter4_day_four_cc60bc40:
 translate english chapter4_day_four_b9ac95c6:
 
     # n "Ты остаёшься у двери. Бланк шуршит, когда Лера берёт ручку."
-    n "Ты остаёшься у двери. Бланк шуршит, когда Лера берёт ручку."
+    n "You stay by the door. The form rustles as Lera picks up the pen."
 
 # game/week.rpy:437
 translate english chapter4_day_four_74f6ce60:
 
     # newb "Мне написать, что я была невнимательна?"
-    newb "Мне написать, что я была невнимательна?"
+    newb "Should I write that I was careless?"
 
 # game/week.rpy:439
 translate english chapter4_day_four_105f316d:
 
     # sv "Если не можешь объяснить иначе."
-    sv "Если не можешь объяснить иначе."
+    sv "If you can't explain it any other way."
 
 # game/week.rpy:441
 translate english chapter4_day_four_8b66ab49:
 
     # n "Она смотрит на тебя, ожидая хоть слова. Ты переводишь взгляд на рейтинг: твоё имя поднялось ещё на одну строку."
-    n "Она смотрит на тебя, ожидая хоть слова. Ты переводишь взгляд на рейтинг: твоё имя поднялось ещё на одну строку."
+    n "She looks at you, waiting for even one word. You look away toward the ranking: your name has climbed another line."
 
 # game/week.rpy:463
 translate english chapter4_day_four_905c0561:
 
     # n "К началу смены про сорок семь единиц знают уже на соседнем участке. Каждый пересказывает историю немного по-своему."
-    n "К началу смены про сорок семь единиц знают уже на соседнем участке. Каждый пересказывает историю немного по-своему."
+    n "By the start of the shift, the neighboring section already knows about the forty-seven units. Everyone retells the story a little differently."
 
 # game/week.rpy:465
 translate english chapter4_day_four_5bd66f39:
 
     # n "Через два часа ТСД разрешает десятиминутный перерыв. Сегодня ты впервые сам выбираешь, с кем его провести."
-    n "Через два часа ТСД разрешает десятиминутный перерыв. Сегодня ты впервые сам выбираешь, с кем его провести."
+    n "Two hours later, the scanner grants a ten-minute break. Today, for the first time, you choose who to spend it with."
 
 # game/week.rpy:476
 translate english chapter4_day_four_0475b40f:
 
     # n "В комнате отдыха все оказываются за одним столом. Никто не спорит, но пауза между фразами уже звучит как начало разговора."
-    n "В комнате отдыха все оказываются за одним столом. Никто не спорит, но пауза между фразами уже звучит как начало разговора."
+    n "Everyone ends up at the same table in the break room. Nobody argues, but the pauses between sentences already sound like the beginning of a conversation."
 
 # game/week.rpy:492
 translate english chapter4_day_four_19d68dc9:
 
     # p "Как ты?"
-    p "Как ты?"
+    p "How are you?"
 
 # game/week.rpy:495
 translate english chapter4_day_four_114d74b8:
 
     # newb "Нормально."
-    newb "Нормально."
+    newb "Fine."
 
 # game/week.rpy:496
 translate english chapter4_day_four_4a064cef:
 
     # n "Она отвечает, глядя в стакан."
-    n "Она отвечает, глядя в стакан."
+    n "She answers while looking into her cup."
 
 # game/week.rpy:497
 translate english chapter4_day_four_72179988:
 
     # p "Прости, что не вмешался."
-    p "Прости, что не вмешался."
+    p "I'm sorry I didn't step in."
 
 # game/week.rpy:498
 translate english chapter4_day_four_ce72ddcc:
 
     # newb "Я запомню."
-    newb "Я запомню."
+    newb "I'll remember that."
 
 # game/week.rpy:499
 translate english chapter4_day_four_060fbd8c:
 
     # n "Лера не отвечает, но и не уходит до конца перерыва."
-    n "Лера не отвечает, но и не уходит до конца перерыва."
+    n "Lera does not answer, but she also does not leave until the break ends."
 
 # game/week.rpy:503
 translate english chapter4_day_four_6318a37d:
 
     # newb "Злюсь."
-    newb "Злюсь."
+    newb "I'm angry."
 
 # game/week.rpy:504
 translate english chapter4_day_four_7f1c4499:
 
     # p "Это лучше, чем бояться."
-    p "Это лучше, чем бояться."
+    p "That's better than being afraid."
 
 # game/week.rpy:505
 translate english chapter4_day_four_248fed8d:
 
     # newb "Гораздо."
-    newb "Гораздо."
+    newb "Much better."
 
 # game/week.rpy:517
 translate english chapter4_day_four_55fa9f12:
 
     # p "Что с подъёмником?"
-    p "Что с подъёмником?"
+    p "What's wrong with the lift?"
 
 # game/week.rpy:518
 translate english chapter4_day_four_4da7b4bc:
 
     # vet "Датчик перегруза врёт вторую неделю. Заявку закрывают, потому что после перезапуска ошибка исчезает."
-    vet "Датчик перегруза врёт вторую неделю. Заявку закрывают, потому что после перезапуска ошибка исчезает."
+    vet "The overload sensor has been lying for two weeks. They close the ticket because the error disappears after a restart."
 
 # game/week.rpy:519
 translate english chapter4_day_four_a32ec5b7:
 
     # p "А неисправность?"
-    p "А неисправность?"
+    p "And the fault?"
 
 # game/week.rpy:520
 translate english chapter4_day_four_bb6fd85e:
 
     # vet "Она читать отчёты не умеет."
-    vet "Она читать отчёты не умеет."
+    vet "It can't read reports."
 
 # game/week.rpy:521
 translate english chapter4_day_four_b3865519:
 
     # n "Ты сохраняешь номер старой заявки."
-    n "Ты сохраняешь номер старой заявки."
+    n "You save the old ticket number."
 
 # game/week.rpy:533
 translate english chapter4_day_four_b27d5825:
 
     # mem "У меня важный вопрос. Если склад потерял сорок семь товаров, а потом нашёл — это инвентаризация или квест?"
-    mem "У меня важный вопрос. Если склад потерял сорок семь товаров, а потом нашёл — это инвентаризация или квест?"
+    mem "Important question. If the warehouse loses forty-seven items and then finds them, is that inventory control or a quest?"
 
 # game/week.rpy:534
 translate english chapter4_day_four_aa485e94:
 
     # p "Зависит от награды."
-    p "Зависит от награды."
+    p "Depends on the reward."
 
 # game/week.rpy:535
 translate english chapter4_day_four_62259934:
 
     # mem "Награда — ещё одна смена."
-    mem "Награда — ещё одна смена."
+    mem "The reward is another shift."
 
 # game/week.rpy:536
 translate english chapter4_day_four_7071f1e5:
 
     # p "Худший квест."
-    p "Худший квест."
+    p "Worst quest ever."
 
 # game/week.rpy:537
 translate english chapter4_day_four_09521e33:
 
     # n "Десять минут проходят быстрее."
-    n "Десять минут проходят быстрее."
+    n "The ten minutes pass faster."
 
 # game/week.rpy:546
 translate english chapter4_day_four_8865a7f7:
 
     # n "Ты садишься у стены, убираешь телефон в карман и десять минут смотришь, как остывает чай в пластиковом стакане."
-    n "Ты садишься у стены, убираешь телефон в карман и десять минут смотришь, как остывает чай в пластиковом стакане."
+    n "You sit by the wall, put your phone in your pocket, and spend ten minutes watching tea cool in a plastic cup."
 
 # game/week.rpy:557
 translate english chapter4_day_four_601dfdd2:
 
     # mem "Говорят, ты сегодня адвокат."
-    mem "Говорят, ты сегодня адвокат."
+    mem "I hear you're a lawyer today."
 
 # game/week.rpy:558
 translate english chapter4_day_four_25319f3c:
 
     # p "Почасовая оплата."
-    p "Почасовая оплата."
+    p "Hourly rate."
 
 # game/week.rpy:559
 translate english chapter4_day_four_b0c74846:
 
     # mem "Тогда ты выбрал худшее место для практики."
-    mem "Тогда ты выбрал худшее место для практики."
+    mem "Then you picked the worst place to practice."
 
 # game/week.rpy:561
 translate english chapter4_day_four_41c70ee7:
 
     # mem "Буфер B-04. Сорок семь единиц. Красиво."
-    mem "Буфер B-04. Сорок семь единиц. Красиво."
+    mem "Buffer B-04. Forty-seven units. Beautiful."
 
 # game/week.rpy:562
 translate english chapter4_day_four_ab11936c:
 
     # p "Что именно?"
-    p "Что именно?"
+    p "What exactly?"
 
 # game/week.rpy:563
 translate english chapter4_day_four_a270f847:
 
     # mem "Когда виноват всё-таки компьютер. Редкий жанр производственной фантастики."
-    mem "Когда виноват всё-таки компьютер. Редкий жанр производственной фантастики."
+    mem "When the computer really is to blame. Rare genre of industrial science fiction."
 
 # game/week.rpy:565
 translate english chapter4_day_four_8569c269:
 
     # mem "Она подписала."
-    mem "Она подписала."
+    mem "She signed it."
 
 # game/week.rpy:566
 translate english chapter4_day_four_0c4bc1fe:
 
     # p "Я видел."
-    p "Я видел."
+    p "I saw."
 
 # game/week.rpy:567
 translate english chapter4_day_four_ce9d6275:
@@ -880,391 +880,391 @@ translate english chapter4_day_four_ce9d6275:
 translate english chapter4_day_four_7ece26af:
 
     # mem "Я спрашиваю: ты видел?"
-    mem "Я спрашиваю: ты видел?"
+    mem "I'm asking: did you really see it?"
 
 # game/week.rpy:576
 translate english chapter4_day_four_b2512957:
 
     # vet "Программу в объяснительную не впишешь. Начальство — тоже. Вот и берут фамилию из смены."
-    vet "Программу в объяснительную не впишешь. Начальство — тоже. Вот и берут фамилию из смены."
+    vet "You can't put \"the software\" in a written statement. You can't put management either. So they take a surname from the shift."
 
 # game/week.rpy:579
 translate english chapter4_day_four_c017c9c1:
 
     # p "Я не мог доказать."
-    p "Я не мог доказать."
+    p "I couldn't prove it."
 
 # game/week.rpy:580
 translate english chapter4_day_four_d9017511:
 
     # vet "Доказательства можно было поискать. Ты решил не искать."
-    vet "Доказательства можно было поискать. Ты решил не искать."
+    vet "You could have looked for evidence. You chose not to."
 
 # game/week.rpy:582
 translate english chapter4_day_four_2e734bab:
 
     # p "Сегодня не получилось."
-    p "Сегодня не получилось."
+    p "Not today."
 
 # game/week.rpy:583
 translate english chapter4_day_four_649f40de:
 
     # vet "Сегодня."
-    vet "Сегодня."
+    vet "Today."
 
 # game/week.rpy:585
 translate english chapter4_day_four_80f6c1c6:
 
     # n "Он кивает на дальнюю часть склада. Там стоит старый подъёмник. На его стойке мигает жёлтая лампа."
-    n "Он кивает на дальнюю часть склада. Там стоит старый подъёмник. На его стойке мигает жёлтая лампа."
+    n "He nods toward the far end of the warehouse. The old lift stands there, a yellow light blinking on its frame."
 
 # game/week.rpy:587
 translate english chapter4_day_four_bed960eb:
 
     # vet "Завтра приёмка. И этот красавец снова будет делать вид, что исправен."
-    vet "Завтра приёмка. И этот красавец снова будет делать вид, что исправен."
+    vet "Receiving tomorrow. And this beauty will pretend to be working again."
 
 # game/week.rpy:589
 translate english chapter4_day_four_1c6fa287:
 
     # p "А он исправен?"
-    p "А он исправен?"
+    p "Is it working?"
 
 # game/week.rpy:591
 translate english chapter4_day_four_a3d1d256:
 
     # vet "Я же сказал. Делает вид."
-    vet "Я же сказал. Делает вид."
+    vet "I told you. It's pretending."
 
 # game/week.rpy:596
 translate english chapter4_day_four_f9ead534:
 
     # n "Перед выходом рейтинг обновляется."
-    n "Перед выходом рейтинг обновляется."
+    n "The ranking updates before you leave."
 
 # game/week.rpy:599
 translate english chapter4_day_four_f0f28784:
 
     # n "Ты уже в первой пятёрке."
-    n "Ты уже в первой пятёрке."
+    n "You're already in the top five."
 
 # game/week.rpy:601
 translate english chapter4_day_four_dc036b2c:
 
     # n "Ты всё ещё в середине списка. Зато несколько человек кивают тебе, когда проходят мимо."
-    n "Ты всё ещё в середине списка. Зато несколько человек кивают тебе, когда проходят мимо."
+    n "You're still in the middle of the list. But several people nod to you as they pass."
 
 # game/week.rpy:603
 translate english chapter4_day_four_92ad3aa1:
 
     # n "За последний час твоё имя трижды меняет место и остаётся в середине списка."
-    n "За последний час твоё имя трижды меняет место и остаётся в середине списка."
+    n "Your name changes position three times in the final hour and ends up in the middle of the list."
 
 # game/week.rpy:641
 translate english chapter5_day_five_0cb1abcf:
 
     # n "На пятый день идёт дождь. У входа все по очереди вытирают обувь об один и тот же мокрый коврик."
-    n "На пятый день идёт дождь. У входа все по очереди вытирают обувь об один и тот же мокрый коврик."
+    n "It rains on Day Five. At the entrance, everyone wipes their shoes on the same soaked mat."
 
 # game/week.rpy:650
 translate english chapter5_day_five_af4fbd34:
 
     # n "Виктор перематывает запястье эластичным бинтом."
-    n "Виктор перематывает запястье эластичным бинтом."
+    n "Viktor wraps his wrist with an elastic bandage."
 
 # game/week.rpy:652
 translate english chapter5_day_five_8603dcab:
 
     # p "Что случилось?"
-    p "Что случилось?"
+    p "What happened?"
 
 # game/week.rpy:654
 translate english chapter5_day_five_d7480c89:
 
     # vet "Ничего."
-    vet "Ничего."
+    vet "Nothing."
 
 # game/week.rpy:656
 translate english chapter5_day_five_1d89aa3d:
 
     # newb "Он вчера разгружал один."
-    newb "Он вчера разгружал один."
+    newb "He unloaded alone yesterday."
 
 # game/week.rpy:658
 translate english chapter5_day_five_fc2b14c0:
 
     # vet "Предатель."
-    vet "Предатель."
+    vet "Traitor."
 
 # game/week.rpy:660
 translate english chapter5_day_five_69f081d8:
 
     # newb "Я просто сказала."
-    newb "Я просто сказала."
+    newb "I just said it."
 
 # game/week.rpy:663
 translate english chapter5_day_five_ae622974:
 
     # n "Она говорит тихо, но не отступает, когда Виктор хмурится."
-    n "Она говорит тихо, но не отступает, когда Виктор хмурится."
+    n "She speaks quietly, but does not back down when Viktor frowns."
 
 # game/week.rpy:665
 translate english chapter5_day_five_b60257b4:
 
     # n "Сказав это, она сразу отворачивается к шкафчику и начинает перекладывать вещи."
-    n "Сказав это, она сразу отворачивается к шкафчику и начинает перекладывать вещи."
+    n "After saying it, she immediately turns to her locker and starts rearranging her things."
 
 # game/week.rpy:670
 translate english chapter5_day_five_b8082204:
 
     # mem "Хорошие новости. Сегодня объём всего в полтора раза выше."
-    mem "Хорошие новости. Сегодня объём всего в полтора раза выше."
+    mem "Good news. Today's volume is only fifty percent higher."
 
 # game/week.rpy:672
 translate english chapter5_day_five_262b4496:
 
     # p "А плохие?"
-    p "А плохие?"
+    p "And the bad news?"
 
 # game/week.rpy:674
 translate english chapter5_day_five_51b04e27:
 
     # mem "Это и были оптимистичные."
-    mem "Это и были оптимистичные."
+    mem "That was the optimistic version."
 
 # game/week.rpy:684
 translate english chapter5_day_five_ff7b046a:
 
     # sv "Приёмка забита. Основной подъёмник выдаёт ошибку, но работает. До ремонта — используем."
-    sv "Приёмка забита. Основной подъёмник выдаёт ошибку, но работает. До ремонта — используем."
+    sv "Receiving is packed. The main lift reports an error but still runs. We use it until repairs."
 
 # game/week.rpy:686
 translate english chapter5_day_five_438d88b3:
 
     # p "Какую ошибку?"
-    p "Какую ошибку?"
+    p "What error?"
 
 # game/week.rpy:688
 translate english chapter5_day_five_290b7d2d:
 
     # sv "Датчик перегруза."
-    sv "Датчик перегруза."
+    sv "Overload sensor."
 
 # game/week.rpy:690
 translate english chapter5_day_five_11ac8686:
 
     # n "В раздевалке становится тише."
-    n "В раздевалке становится тише."
+    n "The locker room gets quieter."
 
 # game/week.rpy:692
 translate english chapter5_day_five_a056f84b:
 
     # sv "Не грузить выше отметки. Не стоять под платформой. Не устраивать обсуждение на двадцать минут."
-    sv "Не грузить выше отметки. Не стоять под платформой. Не устраивать обсуждение на двадцать минут."
+    sv "Do not load above the mark. Do not stand under the platform. Do not turn this into a twenty-minute discussion."
 
 # game/week.rpy:695
 translate english chapter5_day_five_60b2fdfc:
 
     # p "Если датчик врёт, откуда мы знаем вес?"
-    p "Если датчик врёт, откуда мы знаем вес?"
+    p "If the sensor lies, how do we know the weight?"
 
 # game/week.rpy:696
 translate english chapter5_day_five_3658f41e:
 
     # sv "По инструкции — визуально."
-    sv "По инструкции — визуально."
+    sv "According to procedure - visually."
 
 # game/week.rpy:697
 translate english chapter5_day_five_4877f796:
 
     # mem "Глазами сертифицированного грузовика."
-    mem "Глазами сертифицированного грузовика."
+    mem "With the eyes of a certified forklift."
 
 # game/week.rpy:699
 translate english chapter5_day_five_637a8a5a:
 
     # n "Ты смотришь на забинтованную руку Виктора. Определять перегруз на глаз сегодня придётся ему и остальным."
-    n "Ты смотришь на забинтованную руку Виктора. Определять перегруз на глаз сегодня придётся ему и остальным."
+    n "You look at Viktor's bandaged hand. Today he and everyone else are supposed to judge overload by eye."
 
 # game/week.rpy:726
 translate english chapter5_day_five_6f0526c5:
 
     # n "Основной объём ещё не дошёл до приёмки, а на упаковке уже копится очередь. В рации одновременно спорят три участка, на ТСД мигают новые задачи."
-    n "Основной объём ещё не дошёл до приёмки, а на упаковке уже копится очередь. В рации одновременно спорят три участка, на ТСД мигают новые задачи."
+    n "The main volume has not even reached receiving yet, and packing is already building a queue. Three sections argue over the radio at once while new tasks flash on the scanner."
 
 # game/week.rpy:738
 translate english chapter5_day_five_98e2964e:
 
     # n "Очередь перестаёт расти. Когда у кого-то загорается красный экран, рядом сразу находится человек со свободными руками."
-    n "Очередь перестаёт расти. Когда у кого-то загорается красный экран, рядом сразу находится человек со свободными руками."
+    n "The queue stops growing. Whenever someone's screen turns red, someone with free hands immediately appears nearby."
 
 # game/week.rpy:743
 translate english chapter5_day_five_c1f4d49e:
 
     # n "План начинает догонять норму. Зато каждое предупреждение приходится закрывать не читая."
-    n "План начинает догонять норму. Зато каждое предупреждение приходится закрывать не читая."
+    n "The plan starts catching up to target. But every warning has to be dismissed without reading it."
 
 # game/week.rpy:747
 translate english chapter5_day_five_7e25669c:
 
     # n "Линия идёт медленнее. Люди дважды успевают снять застрявшую коробку и один раз ловят пересорт до отправки."
-    n "Линия идёт медленнее. Люди дважды успевают снять застрявшую коробку и один раз ловят пересорт до отправки."
+    n "The line runs more slowly. Twice people remove a jammed box in time, and once they catch a mis-sort before dispatch."
 
 # game/week.rpy:751
 translate english chapter5_day_five_5e031d72:
 
     # n "Ты раздаёшь команды одну за другой. Только после окрика Виктора замечаешь, что отправил двоих людей на разные концы одной задачи."
-    n "Ты раздаёшь команды одну за другой. Только после окрика Виктора замечаешь, что отправил двоих людей на разные концы одной задачи."
+    n "You give orders one after another. Only after Viktor shouts do you realize you sent two people to opposite ends of the same task."
 
 # game/week.rpy:759
 translate english chapter5_day_five_72de525d:
 
     # n "Первый час подъёмник работает. Второй — тоже. На третьем платформа останавливается между уровнями."
-    n "Первый час подъёмник работает. Второй — тоже. На третьем платформа останавливается между уровнями."
+    n "The lift works for the first hour. And the second. In the third, the platform stops between levels."
 
 # game/week.rpy:766
 translate english chapter5_day_five_21ddbfaa:
 
     # n "Линия продолжает двигаться ещё несколько секунд, хотя подъёмник уже стоит. Виктор тянет Леру назад от края платформы."
-    n "Линия продолжает двигаться ещё несколько секунд, хотя подъёмник уже стоит. Виктор тянет Леру назад от края платформы."
+    n "The line keeps moving for several seconds even though the lift has stopped. Viktor pulls Lera back from the edge of the platform."
 
 # game/week.rpy:784
 translate english chapter5_day_five_71c2e805:
 
     # vet "Всё. Дальше нельзя."
-    vet "Всё. Дальше нельзя."
+    vet "That's it. We can't keep using it."
 
 # game/week.rpy:789
 translate english chapter5_day_five_7494d969:
 
     # sv "Снимите верхний ряд. Перезапустите."
-    sv "Снимите верхний ряд. Перезапустите."
+    sv "Remove the top row. Restart it."
 
 # game/week.rpy:791
 translate english chapter5_day_five_c7dcbde4:
 
     # vet "Датчик мёртвый."
-    vet "Датчик мёртвый."
+    vet "The sensor is dead."
 
 # game/week.rpy:793
 translate english chapter5_day_five_e177d22d:
 
     # sv "Платформа держится."
-    sv "Платформа держится."
+    sv "The platform is holding."
 
 # game/week.rpy:795
 translate english chapter5_day_five_756fdf6b:
 
     # n "На верхнем уровне ждут палеты. Внизу растёт очередь. Табло показывает минус восемнадцать процентов."
-    n "На верхнем уровне ждут палеты. Внизу растёт очередь. Табло показывает минус восемнадцать процентов."
+    n "Pallets are waiting on the upper level. The queue below is growing. The board shows minus eighteen percent."
 
 # game/week.rpy:800
 translate english chapter5_day_five_1db37810:
 
     # newb "Она дёрнулась."
-    newb "Она дёрнулась."
+    newb "It jerked."
 
 # game/week.rpy:802
 translate english chapter5_day_five_93e92be0:
 
     # sv "Никто под неё не лезет. Продолжаем."
-    sv "Никто под неё не лезет. Продолжаем."
+    sv "Nobody goes under it. Keep going."
 
 # game/week.rpy:804
 translate english chapter5_day_five_26f72d3a:
 
     # n "Виктор берётся за ручку платформы больной рукой."
-    n "Виктор берётся за ручку платформы больной рукой."
+    n "Viktor grabs the platform handle with his injured hand."
 
 # game/week.rpy:817
 translate english chapter5_day_five_4b7b0772:
 
     # p "Нет. Второй опасный механизм за неделю — уже не случайность. Останавливаем."
-    p "Нет. Второй опасный механизм за неделю — уже не случайность. Останавливаем."
+    p "No. A second dangerous machine in one week is no longer an accident. We stop."
 
 # game/week.rpy:819
 translate english chapter5_day_five_5da50a1b:
 
     # sv "Ты не старший."
-    sv "Ты не старший."
+    sv "You're not the lead."
 
 # game/week.rpy:821
 translate english chapter5_day_five_466e6809:
 
     # p "Тогда будь старшим. И подпиши запуск неисправного оборудования."
-    p "Тогда будь старшим. И подпиши запуск неисправного оборудования."
+    p "Then be the lead. And sign off on running faulty equipment."
 
 # game/week.rpy:823
 translate english chapter5_day_five_d118e88b:
 
     # n "Артём смотрит на мигающую лампу, потом — на людей, которые перестали двигаться."
-    n "Артём смотрит на мигающую лампу, потом — на людей, которые перестали двигаться."
+    n "Artyom looks at the blinking light, then at the people who have stopped moving."
 
 # game/week.rpy:825
 translate english chapter5_day_five_bb76ceb0:
 
     # sv "Ставим блокировку. Переходим на ручную разгрузку с ворот."
-    sv "Ставим блокировку. Переходим на ручную разгрузку с ворот."
+    sv "Lock it out. Switch to manual unloading from the gate."
 
 # game/week.rpy:827
 translate english chapter5_day_five_e986ffea:
 
     # vet "Наконец-то правильная команда."
-    vet "Наконец-то правильная команда."
+    vet "Finally, the right order."
 
 # game/week.rpy:838
 translate english chapter5_day_five_a4b1b615:
 
     # p "Подъёмник не трогаем. Растягиваем цепочку от ворот. Тяжёлое — вдвоём."
-    p "Подъёмник не трогаем. Растягиваем цепочку от ворот. Тяжёлое — вдвоём."
+    p "Nobody touches the lift. Form a chain from the gate. Heavy items in pairs."
 
 # game/week.rpy:840
 translate english chapter5_day_five_d3fd1335:
 
     # sv "Так мы потеряем темп."
-    sv "Так мы потеряем темп."
+    sv "We'll lose pace."
 
 # game/week.rpy:842
 translate english chapter5_day_five_819164a8:
 
     # p "Меньше, чем если потеряем человека."
-    p "Меньше, чем если потеряем человека."
+    p "Less than if we lose a person."
 
 # game/week.rpy:844
 translate english chapter5_day_five_a730de8b:
 
     # newb "Я в цепочку."
-    newb "Я в цепочку."
+    newb "I'm on the chain."
 
 # game/week.rpy:845
 translate english chapter5_day_five_1d5eec86:
 
     # vet "Я на маркировку."
-    vet "Я на маркировку."
+    vet "I'm on labeling."
 
 # game/week.rpy:846
 translate english chapter5_day_five_b06a3dea:
 
     # mem "Я на моральное разложение."
-    mem "Я на моральное разложение."
+    mem "I'm on moral decay."
 
 # game/week.rpy:848
 translate english chapter5_day_five_2d846f0e:
 
     # p "Ты таскаешь лёгкое."
-    p "Ты таскаешь лёгкое."
+    p "You're carrying light items."
 
 # game/week.rpy:850
 translate english chapter5_day_five_d22f825e:
 
     # mem "Жестокий менеджмент."
-    mem "Жестокий менеджмент."
+    mem "Cruel management."
 
 # game/week.rpy:852
 translate english chapter5_day_five_8c931319:
 
     # n "Через минуту люди выстраиваются от ворот. Коробки идут из рук в руки; тяжёлые перехватывают вдвоём."
-    n "Через минуту люди выстраиваются от ворот. Коробки идут из рук в руки; тяжёлые перехватывают вдвоём."
+    n "A minute later, people form a chain from the gate. Boxes pass from hand to hand; heavy ones are caught by two people at a time."
 
 # game/week.rpy:864
 translate english chapter5_day_five_6d6cdc77:
@@ -1876,7 +1876,7 @@ translate english chapter6_day_six_f0b7224b:
 translate english chapter6_day_six_ab11936c:
 
     # p "Что именно?"
-    p "Что именно?"
+    p "What exactly?"
 
 # game/week.rpy:1278
 translate english chapter6_day_six_0e8851f7:
