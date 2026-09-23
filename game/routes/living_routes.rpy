@@ -94,10 +94,11 @@ init 45 python:
         return "{}:{}".format(ps_route_target(), ps21_route_variant())
 
     def ps21_route_outcome_data():
-        return ps21_route_outcome_catalog.get(
+        title, description = ps21_route_outcome_catalog.get(
             ps21_route_outcome_key(),
             ("Маршрут продолжается", "Последствие ещё не определилось."),
         )
+        return _(title), _(description)
 
     def ps21_unlock_route_outcome(outcome_key):
         outcomes = list(persistent.ps21_route_outcomes or [])
@@ -265,7 +266,7 @@ label ps21_route_night_scene:
 
         sv "Морозов завтра будет на связи лично. Если участок встанет, решение запишут на меня. Не на регламент и не на общий чат."
         p "Тебя пугает остановка или бумага после неё?"
-        sv "Остановка тоже. Бумага — больше."
+        sv "Остановка тоже. Бумага - больше."
 
         menu:
             "Потребовать, чтобы он назвал решение своим":
@@ -473,7 +474,7 @@ label ps21_route_epilogue:
         show vet injured at ps_center
         with dissolve
         n "Виктор приходит без рабочей формы и проводит короткий разбор для смены. На доске всего три пункта: температура, боль и право остановиться."
-        vet "Температура растёт — стоп. Рука болит и хват слабеет — тоже стоп. Запишите, повторять не буду."
+        vet "Температура растёт - стоп. Рука болит и хват слабеет - тоже стоп. Запишите, повторять не буду."
         hide vet
 
     elif ps21_outcome == "veteran:shadow":

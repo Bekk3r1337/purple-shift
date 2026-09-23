@@ -25,178 +25,178 @@ init python:
     ps_achievement_catalog = [
         (
             "first_shift",
-            "Первая есть",
-            "Завершить первый рабочий день.",
+            _("Первая есть"),
+            _("Завершить первый рабочий день."),
         ),
         (
             "red_button",
-            "Красная кнопка",
-            "Остановить линию до того, как опасность станет происшествием.",
+            _("Красная кнопка"),
+            _("Остановить линию до того, как опасность станет происшествием."),
         ),
         (
             "archive",
-            "Склад помнит",
-            "Собрать не меньше трёх доказательств.",
+            _("Склад помнит"),
+            _("Собрать не меньше трёх доказательств."),
         ),
         (
             "team",
-            "Одна смена",
-            "Поднять единство команды до пяти.",
+            _("Одна смена"),
+            _("Поднять единство команды до пяти."),
         ),
         (
             "specialist",
-            "Свой маршрут",
-            "Развить одну из характеристик до двенадцати.",
+            _("Свой маршрут"),
+            _("Развить одну из характеристик до двенадцати."),
         ),
         (
             "clean_sort",
-            "Без пересорта",
-            "Пройти проверку ТСД без единой ошибки.",
+            _("Без пересорта"),
+            _("Пройти проверку ТСД без единой ошибки."),
         ),
         (
             "dispatcher",
-            "Ручное управление",
-            "Без ошибок передать команды при отказе системы.",
+            _("Ручное управление"),
+            _("Без ошибок передать команды при отказе системы."),
         ),
         (
             "seven_days",
-            "Семь дней спустя",
-            "Дойти до финала рабочей недели.",
+            _("Семь дней спустя"),
+            _("Дойти до финала рабочей недели."),
         ),
         (
             "connected",
-            "На связи",
-            "Ответить как минимум в трёх переписках.",
+            _("На связи"),
+            _("Ответить как минимум в трёх переписках."),
         ),
         (
             "flow_keeper",
-            "Живая линия",
-            "Удержать безопасность, результат и команду во время перегруза.",
+            _("Живая линия"),
+            _("Удержать безопасность, результат и команду во время перегруза."),
         ),
         (
             "investigator",
-            "Только факты",
-            "Собрать безошибочное дело по происшествию.",
+            _("Только факты"),
+            _("Собрать безошибочное дело по происшествию."),
         ),
         (
             "wanderer",
-            "Знаю каждый проход",
-            "Посетить все пять зон свободной смены.",
+            _("Знаю каждый проход"),
+            _("Посетить все пять зон свободной смены."),
         ),
         (
             "confidant",
-            "Личный маршрут",
-            "Открыть кульминацию отношений с одним из персонажей.",
+            _("Личный маршрут"),
+            _("Открыть кульминацию отношений с одним из персонажей."),
         ),
         (
             "archive_master",
-            "Полная цепочка",
-            "Собрать все документы архива за несколько прохождений.",
+            _("Полная цепочка"),
+            _("Собрать все документы архива за несколько прохождений."),
         ),
         (
             "purple_signal",
-            "Сектор V",
-            "Найти три базовых следа Фиолетового Шторма за одно прохождение.",
+            _("Сектор V"),
+            _("Найти три базовых следа Фиолетового Шторма за одно прохождение."),
         ),
         (
             "observer",
-            "Не проходи мимо",
-            "Осмотреть восемь интерактивных точек склада.",
+            _("Не проходи мимо"),
+            _("Осмотреть восемь интерактивных точек склада."),
         ),
         (
             "storm_decoder",
-            "Шторм на линии",
-            "Восстановить скрытую последовательность канала V-13.",
+            _("Шторм на линии"),
+            _("Восстановить скрытую последовательность канала V-13."),
         ),
         (
             "names",
-            "По именам",
-            "Узнать людей смены не только по их должностям.",
+            _("По именам"),
+            _("Узнать людей смены не только по их должностям."),
         ),
         (
             "planner",
-            "Люди — не ресурс",
-            "Самостоятельно составить расстановку ночной смены.",
+            _("Люди - не ресурс"),
+            _("Самостоятельно составить расстановку ночной смены."),
         ),
         (
             "known_by_storm",
-            "Смена узнала тебя",
-            "Увидеть своё имя на отключённом табло V-13.",
+            _("Смена узнала тебя"),
+            _("Увидеть своё имя на отключённом табло V-13."),
         ),
     ]
 
     ps_ending_catalog = [
         (
             "truth",
-            "Свет над складом",
-            "Сделать скрытые нарушения видимыми.",
+            _("Свет над складом"),
+            _("Сделать скрытые нарушения видимыми."),
             "ending_truth",
         ),
         (
             "people",
-            "Смена, в которой остались люди",
-            "Поставить команду выше последней зелёной цифры.",
+            _("Смена, в которой остались люди"),
+            _("Поставить команду выше последней зелёной цифры."),
             "ending_people",
         ),
         (
             "voice",
-            "Голос в шуме",
-            "Собрать людей в единый ритм.",
+            _("Голос в шуме"),
+            _("Собрать людей в единый ритм."),
             "ending_voice",
         ),
         (
             "leader",
-            "Старший линии",
-            "Принять ответственность, не продав безопасность.",
+            _("Старший линии"),
+            _("Принять ответственность, не продав безопасность."),
             "ending_leader",
         ),
         (
             "employee",
-            "Сотрудник месяца",
-            "Получить первое место и увидеть его настоящую цену.",
+            _("Сотрудник месяца"),
+            _("Получить первое место и увидеть его настоящую цену."),
             "ending_employee",
         ),
         (
             "exit",
-            "Выход существует",
-            "Уйти до того, как смена заберёт право решать.",
+            _("Выход существует"),
+            _("Уйти до того, как смена заберёт право решать."),
             "ending_exit",
         ),
         (
             "silence",
-            "Тишина после сигнала",
-            "Закончить неделю без окончательного ответа.",
+            _("Тишина после сигнала"),
+            _("Закончить неделю без окончательного ответа."),
             "ending_silence",
         ),
     ]
 
     ps_sort_items = [
-        ("Футболка", "light", "Мягкая упаковка"),
-        ("Набор кружек", "fragile", "Хрупкий товар"),
-        ("Пауэрбанк", "tech", "Электроника"),
-        ("Плед", "light", "Мягкая упаковка"),
-        ("Стеклянная ваза", "fragile", "Хрупкий товар"),
-        ("Наушники", "tech", "Электроника"),
+        (_("Футболка"), "light", _("Мягкая упаковка")),
+        (_("Набор кружек"), "fragile", _("Хрупкий товар")),
+        (_("Пауэрбанк"), "tech", _("Электроника")),
+        (_("Плед"), "light", _("Мягкая упаковка")),
+        (_("Стеклянная ваза"), "fragile", _("Хрупкий товар")),
+        (_("Наушники"), "tech", _("Электроника")),
     ]
 
     ps_sort_zones = [
-        ("light", "A-12\nМЯГКОЕ"),
-        ("fragile", "F-07\nХРУПКОЕ"),
-        ("tech", "T-03\nТЕХНИКА"),
+        ("light", _("A-12\\nМЯГКОЕ")),
+        ("fragile", _("F-07\\nХРУПКОЕ")),
+        ("tech", _("T-03\\nТЕХНИКА")),
     ]
 
     ps_signal_sequence = [
-        ("left", "ЛЕВАЯ ЛИНИЯ"),
-        ("buffer", "БУФЕР B-04"),
-        ("right", "ПРАВАЯ ЛИНИЯ"),
-        ("stop", "ОБЩИЙ СТОП"),
+        ("left", _("ЛЕВАЯ ЛИНИЯ")),
+        ("buffer", _("БУФЕР B-04")),
+        ("right", _("ПРАВАЯ ЛИНИЯ")),
+        ("stop", _("ОБЩИЙ СТОП")),
     ]
 
     ps_signal_buttons = [
-        ("right", "ПРАВАЯ"),
-        ("stop", "СТОП"),
-        ("left", "ЛЕВАЯ"),
-        ("buffer", "БУФЕР"),
+        ("right", _("ПРАВАЯ")),
+        ("stop", _("СТОП")),
+        ("left", _("ЛЕВАЯ")),
+        ("buffer", _("БУФЕР")),
     ]
 
     def ps_unlock_achievement(achievement_id, notify=True):
@@ -212,7 +212,7 @@ init python:
                 for item in ps_achievement_catalog
                 if item[0] == achievement_id
             )
-            renpy.notify("Достижение: {}".format(title))
+            renpy.notify(_("Достижение: {}").format(title))
 
         return True
 
@@ -222,7 +222,7 @@ init python:
 
         persistent.ps_unlocked_endings.append(ending_id)
         renpy.save_persistent()
-        renpy.notify("Открыт финал: {}".format(ps_ending_title(ending_id)))
+        renpy.notify(_("Открыт финал: {}").format(ps_ending_title(ending_id)))
         return True
 
     def ps_evaluate_achievements():
@@ -395,13 +395,13 @@ screen ps_day_card(day, title, subtitle):
                 size 34
                 xalign 0.5
 
-            text title:
+            text _(title):
                 color "#ffffff"
                 size 64
                 text_align 0.5
                 xalign 0.5
 
-            text subtitle:
+            text _(subtitle):
                 color "#cdbde0"
                 size 27
                 text_align 0.5
@@ -455,7 +455,7 @@ screen ps_phone_stat(title, value, accent):
             hbox:
                 xfill True
 
-                text title:
+                text _(title):
                     color "#eee6f7"
                     size 23
 
@@ -485,7 +485,7 @@ screen ps_relation_row(name, value, accent, caption):
             hbox:
                 xfill True
 
-                text name:
+                text _(name):
                     color "#ffffff"
                     size 26
 
@@ -501,7 +501,7 @@ screen ps_relation_row(name, value, accent, caption):
                 left_bar Solid(accent)
                 right_bar Solid("#49345f")
 
-            text caption:
+            text _(caption):
                 color "#a997bf"
                 size 19
 
@@ -591,7 +591,7 @@ screen ps_phone(initial_tab="status"):
                     text_xalign 0.5
                     text_yalign 0.5
 
-                textbutton ("ЧАТЫ ({})".format(ps_unread_message_count()) if ps_unread_message_count() else "ЧАТЫ"):
+                textbutton (_("ЧАТЫ ({})").format(ps_unread_message_count()) if ps_unread_message_count() else _("ЧАТЫ")):
                     id "ps_phone_messages_tab"
                     action SetScreenVariable("tab", "messages")
                     background Solid("#7442a7" if tab == "messages" else "#291a38")
@@ -679,10 +679,10 @@ screen ps_phone(initial_tab="status"):
                             spacing 16
                             xalign 0.5
 
-                            use ps_phone_stat("Человечность", ps_humanity, "#ff86c8")
-                            use ps_phone_stat("Выносливость", ps_endurance, "#7fd9ff")
-                            use ps_phone_stat("Эффективность", ps_efficiency, "#8dff9b")
-                            use ps_phone_stat("Юмор", ps_humor, "#ffd36f")
+                            use ps_phone_stat(_("Человечность"), ps_humanity, "#ff86c8")
+                            use ps_phone_stat(_("Выносливость"), ps_endurance, "#7fd9ff")
+                            use ps_phone_stat(_("Эффективность"), ps_efficiency, "#8dff9b")
+                            use ps_phone_stat(_("Юмор"), ps_humor, "#ffd36f")
 
                         frame:
                             xfill True
@@ -837,7 +837,7 @@ screen ps_phone(initial_tab="status"):
                                         size 38
                                         xalign 0.5
 
-                                    text "Вы пока знаете друг друга только по должностям. Иногда имя — первое настоящее действие против системы, которая видит в людях строки отчёта.":
+                                    text "Вы пока знаете друг друга только по должностям. Иногда имя - первое настоящее действие против системы, которая видит в людях строки отчёта.":
                                         color "#bbaaca"
                                         size 24
                                         text_align 0.5
@@ -919,7 +919,7 @@ screen ps_phone(initial_tab="status"):
                                             color "#a98bc2"
                                             size 18
 
-                                        text ps_relationship_memories[-1]:
+                                        text _(ps_relationship_memories[-1]):
                                             color "#cfc2d9"
                                             size 20
 
@@ -961,11 +961,11 @@ screen ps_phone(initial_tab="status"):
                                     vbox:
                                         spacing 5
 
-                                        text (achievement_title if achievement_open else "???"):
+                                        text (_(achievement_title) if achievement_open else "???"):
                                             color ("#d7b4ff" if achievement_open else "#6f6678")
                                             size 26
 
-                                        text (achievement_desc if achievement_open else "Условие пока скрыто"):
+                                        text (_(achievement_desc) if achievement_open else _("Условие пока скрыто")):
                                             color ("#b9a8ca" if achievement_open else "#5f5865")
                                             size 20
 
@@ -999,11 +999,11 @@ screen ps_phone(initial_tab="status"):
                                             spacing 5
                                             xmaximum 970
 
-                                            text (ending_title if ending_open else "Неизвестный финал"):
+                                            text (_(ending_title) if ending_open else _("Неизвестный финал")):
                                                 color ("#d7b4ff" if ending_open else "#6f6678")
                                                 size 26
 
-                                            text (ending_desc if ending_open else "Продолжай принимать решения"):
+                                            text (_(ending_desc) if ending_open else _("Продолжай принимать решения")):
                                                 color ("#b9a8ca" if ending_open else "#5f5865")
                                                 size 20
 
@@ -1171,12 +1171,12 @@ screen ps_sort_challenge():
                         color "#718079"
                         size 22
 
-                    text "[ps_sort_item[0]]":
+                    text _(ps_sort_item[0]):
                         color "#ffffff"
                         size 53
                         xalign 0.5
 
-                    text "[ps_sort_item[2]]":
+                    text _(ps_sort_item[2]):
                         color "#aab8b0"
                         size 25
                         xalign 0.5
@@ -1191,7 +1191,7 @@ screen ps_sort_challenge():
                 xalign 0.5
 
                 for zone_id, zone_title in ps_sort_zones:
-                    textbutton zone_title:
+                    textbutton _(zone_title):
                         action Function(ps_sort_choose, zone_id)
                         xsize 350
                         ysize 125
@@ -1291,7 +1291,7 @@ screen ps_signal_challenge():
                                 size 18
                                 xalign 0.5
 
-                            text "[sequence_item[1]]":
+                            text _(sequence_item[1]):
                                 color "#ffffff"
                                 size 22
                                 xalign 0.5
@@ -1304,7 +1304,7 @@ screen ps_signal_challenge():
                 xalign 0.5
 
                 for signal_id, signal_title in ps_signal_buttons:
-                    textbutton signal_title:
+                    textbutton _(signal_title):
                         action Function(ps_signal_choose, signal_id)
                         xsize 520
                         ysize 150

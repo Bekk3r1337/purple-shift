@@ -21,6 +21,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Localization hygiene
+        run: python tools/check_localization_hygiene.py
+
       - name: Cache Ren'Py SDK
         id: renpy-cache
         uses: actions/cache@v4

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Purple Shift 1.2 — режиссура, переписки и новые интерактивные сцены
+## Purple Shift 1.2 - режиссура, переписки и новые интерактивные сцены
 ################################################################################
 
 default ps_ambience_zone = None
@@ -55,45 +55,45 @@ init python:
         {
             "id": "system",
             "day": 1,
-            "sender": "Система",
+            "sender": _("Система"),
             "time": "22:41",
-            "preview": "Профиль смены активирован.",
+            "preview": _("Профиль смены активирован."),
             "incoming": [
-                "Профиль сотрудника подключён к ночной смене.",
-                "Здесь будут появляться рабочие сообщения и личные переписки.",
+                _("Профиль сотрудника подключён к ночной смене."),
+                _("Здесь будут появляться рабочие сообщения и личные переписки."),
             ],
             "replies": [],
         },
         {
             "id": "newbie",
             "day": 2,
-            "sender": "Новичок",
+            "sender": _("Новичок"),
             "time": "05:18",
-            "preview": "Ты ещё не спишь?",
+            "preview": _("Ты ещё не спишь?"),
             "incoming": [
-                "Ты ещё не спишь?",
-                "Я всё думаю про ту ошибку. Вдруг завтра снова не замечу?",
+                _("Ты ещё не спишь?"),
+                _("Я всё думаю про ту ошибку. Вдруг завтра снова не замечу?"),
             ],
             "replies": [
                 {
                     "id": "support",
-                    "title": "«Напиши мне код ошибки. Разберём вместе.»",
-                    "answer": "Напиши мне код ошибки. Завтра разберём вместе.",
-                    "reaction": "Спасибо. Тогда хотя бы не одна.",
+                    "title": _("«Напиши мне код ошибки. Разберём вместе.»"),
+                    "answer": _("Напиши мне код ошибки. Завтра разберём вместе."),
+                    "reaction": _("Спасибо. Тогда хотя бы не одна."),
                     "effects": {"ps_humanity": 1, "ps_newbie_trust": 2},
                 },
                 {
                     "id": "procedure",
-                    "title": "«Сверяй ячейку перед подтверждением.»",
-                    "answer": "Сверяй ячейку до подтверждения. Так надёжнее.",
-                    "reaction": "Поняла. Сделаю себе короткую памятку.",
+                    "title": _("«Сверяй ячейку перед подтверждением.»"),
+                    "answer": _("Сверяй ячейку до подтверждения. Так надёжнее."),
+                    "reaction": _("Поняла. Сделаю себе короткую памятку."),
                     "effects": {"ps_efficiency": 1, "ps_newbie_trust": 1},
                 },
                 {
                     "id": "rest",
-                    "title": "«Сейчас главное — поспать.»",
-                    "answer": "Сейчас главное — поспать. На усталости ошибок больше.",
-                    "reaction": "Ладно. Спокойной... почти ночи.",
+                    "title": _("«Сейчас главное - поспать.»"),
+                    "answer": _("Сейчас главное - поспать. На усталости ошибок больше."),
+                    "reaction": _("Ладно. Спокойной... почти ночи."),
                     "effects": {"ps_endurance": 1, "ps_burnout": -1},
                 },
             ],
@@ -101,26 +101,26 @@ init python:
         {
             "id": "veteran",
             "day": 3,
-            "sender": "Ветеран",
+            "sender": _("Ветеран"),
             "time": "06:02",
-            "preview": "Про подъёмник никому не говори.",
+            "preview": _("Про подъёмник никому не говори."),
             "incoming": [
-                "Про подъёмник пока никому не говори.",
-                "Но если увидишь код LIFT-09 — сфотографируй время. Потом пригодится.",
+                _("Про подъёмник пока никому не говори."),
+                _("Но если увидишь код LIFT-09 - сфотографируй время. Потом пригодится."),
             ],
             "replies": [
                 {
                     "id": "record",
-                    "title": "«Сохраню код и время.»",
-                    "answer": "Сохраню код, время и номер участка.",
-                    "reaction": "Хорошо. Потом пришли копию мне.",
+                    "title": _("«Сохраню код и время.»"),
+                    "answer": _("Сохраню код, время и номер участка."),
+                    "reaction": _("Хорошо. Потом пришли копию мне."),
                     "effects": {"ps_evidence": 1, "ps_integrity": 1},
                 },
                 {
                     "id": "protect",
-                    "title": "«Сначала убедимся, что ты цел.»",
-                    "answer": "Сначала убедимся, что ты цел. Бумаги потом.",
-                    "reaction": "Упрямый. Правильный, но упрямый.",
+                    "title": _("«Сначала убедимся, что ты цел.»"),
+                    "answer": _("Сначала убедимся, что ты цел. Бумаги потом."),
+                    "reaction": _("Упрямый. Правильный, но упрямый."),
                     "effects": {"ps_humanity": 1, "ps_team_unity": 1},
                 },
             ],
@@ -128,26 +128,26 @@ init python:
         {
             "id": "joker",
             "day": 4,
-            "sender": "Шутник",
+            "sender": _("Шутник"),
             "time": "05:47",
-            "preview": "Срочный вопрос.",
+            "preview": _("Срочный вопрос."),
             "incoming": [
-                "Срочный вопрос.",
-                "Если склад когда-нибудь остановится, мы тоже автоматически выключимся?",
+                _("Срочный вопрос."),
+                _("Если склад когда-нибудь остановится, мы тоже автоматически выключимся?"),
             ],
             "replies": [
                 {
                     "id": "joke",
-                    "title": "«Тебя придётся выключать вручную.»",
-                    "answer": "Тебя придётся выключать вручную. И по инструкции.",
-                    "reaction": "Значит, бессмертие официально подтверждено.",
+                    "title": _("«Тебя придётся выключать вручную.»"),
+                    "answer": _("Тебя придётся выключать вручную. И по инструкции."),
+                    "reaction": _("Значит, бессмертие официально подтверждено."),
                     "effects": {"ps_humor": 2},
                 },
                 {
                     "id": "honest",
-                    "title": "«Ты ведь не просто шутишь?»",
-                    "answer": "Ты ведь не просто шутишь?",
-                    "reaction": "Нет. Если замолчу, начну накручивать себя.",
+                    "title": _("«Ты ведь не просто шутишь?»"),
+                    "answer": _("Ты ведь не просто шутишь?"),
+                    "reaction": _("Нет. Если замолчу, начну накручивать себя."),
                     "effects": {"ps_humanity": 1, "ps_team_unity": 1},
                 },
             ],
@@ -155,26 +155,26 @@ init python:
         {
             "id": "supervisor",
             "day": 6,
-            "sender": "Супервайзер",
+            "sender": _("Супервайзер"),
             "time": "19:36",
-            "preview": "Перед сменой зайди в диспетчерскую.",
+            "preview": _("Перед сменой зайди в диспетчерскую."),
             "incoming": [
-                "Перед сменой зайди в диспетчерскую.",
-                "Куратор будет давить на цифры. Мне нужен человек, который помнит факты.",
+                _("Перед сменой зайди в диспетчерскую."),
+                _("Куратор будет давить на цифры. Мне нужен человек, который помнит факты."),
             ],
             "replies": [
                 {
                     "id": "conditions",
-                    "title": "«Помогу, если ничего не будем скрывать.»",
-                    "answer": "Помогу. Но ничего не подписываю задним числом.",
-                    "reaction": "Справедливо. На этот раз работаем по фактам.",
+                    "title": _("«Помогу, если ничего не будем скрывать.»"),
+                    "answer": _("Помогу. Но ничего не подписываю задним числом."),
+                    "reaction": _("Справедливо. На этот раз работаем по фактам."),
                     "effects": {"ps_supervisor_respect": 2, "ps_integrity": 1},
                 },
                 {
                     "id": "distance",
-                    "title": "«Я не хочу участвовать в вашей игре.»",
-                    "answer": "Я принесу журнал. В ваши договорённости не полезу.",
-                    "reaction": "Понимаю. Журнал всё равно возьми.",
+                    "title": _("«Я не хочу участвовать в вашей игре.»"),
+                    "answer": _("Я принесу журнал. В ваши договорённости не полезу."),
+                    "reaction": _("Понимаю. Журнал всё равно возьми."),
                     "effects": {"ps_evidence": 1, "ps_endurance": 1},
                 },
             ],
@@ -183,53 +183,53 @@ init python:
 
     ps_flow_events = [
         {
-            "title": "УПАКОВКА // СТЕКЛО",
-            "detail": "Хрупкая коробка идёт без защитного вкладыша.",
+            "title": _("УПАКОВКА // СТЕКЛО"),
+            "detail": _("Хрупкая коробка идёт без защитного вкладыша."),
             "ideal": "safety",
             "choices": [
-                ("safety", "Снять коробку с линии", "Безопасность +2", 2, 0, 0),
-                ("result", "Пропустить ради темпа", "Результат +2", -1, 2, 0),
-                ("people", "Позвать Леру", "Команда +1", 0, 0, 1),
+                ("safety", _("Снять коробку с линии"), _("Безопасность +2"), 2, 0, 0),
+                ("result", _("Пропустить ради темпа"), _("Результат +2"), -1, 2, 0),
+                ("people", _("Позвать Леру"), _("Команда +1"), 0, 0, 1),
             ],
         },
         {
-            "title": "ЛИНИЯ // ЗАТОР",
-            "detail": "На левом сходе растёт очередь из мелких заказов.",
+            "title": _("ЛИНИЯ // ЗАТОР"),
+            "detail": _("На левом сходе растёт очередь из мелких заказов."),
             "ideal": "result",
             "choices": [
-                ("safety", "Остановить весь поток", "Безопасность +1", 1, -1, 0),
-                ("result", "Перебросить мелкое вправо", "Результат +2", 0, 2, 0),
-                ("people", "Попросить людей ускориться", "Команда −1", 0, 1, -1),
+                ("safety", _("Остановить весь поток"), _("Безопасность +1"), 1, -1, 0),
+                ("result", _("Перебросить мелкое вправо"), _("Результат +2"), 0, 2, 0),
+                ("people", _("Попросить людей ускориться"), _("Команда −1"), 0, 1, -1),
             ],
         },
         {
-            "title": "РАЦИЯ // ЛЕРА",
-            "detail": "Лера сообщает о неизвестном коде ошибки.",
+            "title": _("РАЦИЯ // ЛЕРА"),
+            "detail": _("Лера сообщает о неизвестном коде ошибки."),
             "ideal": "people",
             "choices": [
-                ("safety", "Поставить её сектор в стоп", "Безопасность +1", 1, -1, 0),
-                ("result", "Сбросить ошибку удалённо", "Результат +1", -1, 1, 0),
-                ("people", "Подойти и проверить вместе", "Команда +2", 1, 0, 2),
+                ("safety", _("Поставить её сектор в стоп"), _("Безопасность +1"), 1, -1, 0),
+                ("result", _("Сбросить ошибку удалённо"), _("Результат +1"), -1, 1, 0),
+                ("people", _("Подойти и проверить вместе"), _("Команда +2"), 1, 0, 2),
             ],
         },
         {
-            "title": "ПОДЪЁМНИК // LIFT-09",
-            "detail": "На панели снова появляется знакомый код.",
+            "title": _("ПОДЪЁМНИК // LIFT-09"),
+            "detail": _("На панели снова появляется знакомый код."),
             "ideal": "safety",
             "choices": [
-                ("safety", "Заблокировать подъёмник", "Безопасность +2", 2, -1, 0),
-                ("result", "Закрыть ошибку и продолжить", "Результат +2", -2, 2, 0),
-                ("people", "Отправить туда Виктора", "Риск для Виктора", -1, 1, -1),
+                ("safety", _("Заблокировать подъёмник"), _("Безопасность +2"), 2, -1, 0),
+                ("result", _("Закрыть ошибку и продолжить"), _("Результат +2"), -2, 2, 0),
+                ("people", _("Отправить туда Виктора"), _("Риск для Виктора"), -1, 1, -1),
             ],
         },
         {
-            "title": "ФИНИШ // ТРИ МИНУТЫ",
-            "detail": "До закрытия рейтинга остаётся три минуты.",
+            "title": _("ФИНИШ // ТРИ МИНУТЫ"),
+            "detail": _("До закрытия рейтинга остаётся три минуты."),
             "ideal": "people",
             "choices": [
-                ("safety", "Снизить скорость линии", "Безопасность +1", 1, -1, 1),
-                ("result", "Выжать максимум", "Результат +3", -2, 3, -1),
-                ("people", "Сверить готовность команды", "Команда +2", 1, 0, 2),
+                ("safety", _("Снизить скорость линии"), _("Безопасность +1"), 1, -1, 1),
+                ("result", _("Выжать максимум"), _("Результат +3"), -2, 3, -1),
+                ("people", _("Сверить готовность команды"), _("Команда +2"), 1, 0, 2),
             ],
         },
     ]
@@ -237,78 +237,78 @@ init python:
     ps_case_items = [
         (
             "terminal",
-            "Журнал ТСД",
-            "STOP-04 и LIFT-09 с точным временем.",
+            _("Журнал ТСД"),
+            _("STOP-04 и LIFT-09 с точным временем."),
             True,
         ),
         (
             "camera",
-            "Камера сектора",
-            "Видно остановку и положение сотрудников.",
+            _("Камера сектора"),
+            _("Видно остановку и положение сотрудников."),
             True,
         ),
         (
             "lift",
-            "Бирка подъёмника",
-            "Дата последнего осмотра просрочена.",
+            _("Бирка подъёмника"),
+            _("Дата последнего осмотра просрочена."),
             True,
         ),
         (
             "rating",
-            "Скриншот рейтинга",
-            "Доказывает только итоговый процент.",
+            _("Скриншот рейтинга"),
+            _("Доказывает только итоговый процент."),
             False,
         ),
         (
             "rumor",
-            "Слух из курилки",
-            "Источник неизвестен, времени нет.",
+            _("Слух из курилки"),
+            _("Источник неизвестен, времени нет."),
             False,
         ),
     ]
 
     ps_epilogue_catalog = {
         "truth": {
-            "tag": "ПОСЛЕ ПРОВЕРКИ",
+            "tag": _("ПОСЛЕ ПРОВЕРКИ"),
             "background": "images/bg/control_room.jpg",
             "accent": "#e0b5ff",
-            "line": "Через три недели подъёмник отремонтировали, а удалённые остановки вернули в журнал.",
+            "line": _("Через три недели подъёмник отремонтировали, а удалённые остановки вернули в журнал."),
         },
         "people": {
-            "tag": "СЛЕДУЮЩАЯ СМЕНА",
+            "tag": _("СЛЕДУЮЩАЯ СМЕНА"),
             "background": "images/cg/team_dawn.jpg",
             "accent": "#91f0c0",
-            "line": "Перед следующим запуском смена проверила выходы и договорилась, кто считает людей.",
+            "line": _("Перед следующим запуском смена проверила выходы и договорилась, кто считает людей."),
         },
         "voice": {
-            "tag": "ПОСЛЕ СМЕНЫ",
+            "tag": _("ПОСЛЕ СМЕНЫ"),
             "background": "images/bg/break_room.jpg",
             "accent": "#8fdcff",
-            "line": "На следующей тренировке короткие команды снова передавали от участка к участку.",
+            "line": _("На следующей тренировке короткие команды снова передавали от участка к участку."),
         },
         "leader": {
-            "tag": "ПЕРВЫЙ ДЕНЬ СТАРШЕГО",
+            "tag": _("ПЕРВЫЙ ДЕНЬ СТАРШЕГО"),
             "background": "images/bg/packing_zone.jpg",
             "accent": "#a7ffad",
-            "line": "В первый день ты подписал заявку на ремонт и проверил доступ к аварийной кнопке.",
+            "line": _("В первый день ты подписал заявку на ремонт и проверил доступ к аварийной кнопке."),
         },
         "employee": {
-            "tag": "СЕРТИФИКАТ",
+            "tag": _("СЕРТИФИКАТ"),
             "background": "images/bg/room_morning.jpg",
             "accent": "#ffd37d",
-            "line": "Сертификат остался открыт на телефоне. Рядом уже стояла следующая смена.",
+            "line": _("Сертификат остался открыт на телефоне. Рядом уже стояла следующая смена."),
         },
         "exit": {
-            "tag": "ВОСЬМОЙ ДЕНЬ",
+            "tag": _("ВОСЬМОЙ ДЕНЬ"),
             "background": "images/bg/street_night.jpg",
             "accent": "#ff9fcf",
-            "line": "В 18:40 будильник прозвенел по старому расписанию. Ты выключил его и снова лёг.",
+            "line": _("В 18:40 будильник прозвенел по старому расписанию. Ты выключил его и снова лёг."),
         },
         "silence": {
-            "tag": "НЕЗАКРЫТЫЙ ВОПРОС",
+            "tag": _("НЕЗАКРЫТЫЙ ВОПРОС"),
             "background": "images/bg/locker_room.jpg",
             "accent": "#b0a4bd",
-            "line": "Следующая смена осталась в приложении неподтверждённой.",
+            "line": _("Следующая смена осталась в приложении неподтверждённой."),
         },
     }
 
@@ -362,9 +362,31 @@ init python:
         renpy.save_persistent()
         renpy.restart_interaction()
 
+    def ps_localize_message(message):
+        localized = dict(message)
+
+        for field in ("sender", "preview", "status", "attachment_caption", "voice_caption"):
+            if localized.get(field):
+                localized[field] = _(localized[field])
+
+        localized["incoming"] = [
+            _(line) for line in localized.get("incoming", [])
+        ]
+
+        localized_replies = []
+        for reply in localized.get("replies", []):
+            item = dict(reply)
+            for field in ("title", "answer", "reaction"):
+                if item.get(field):
+                    item[field] = _(item[field])
+            localized_replies.append(item)
+        localized["replies"] = localized_replies
+
+        return localized
+
     def ps_available_messages():
         return [
-            message
+            ps_localize_message(message)
             for message in ps_message_catalog
             if message["day"] <= ps_chapter
         ]
@@ -372,8 +394,8 @@ init python:
     def ps_message_data(message_id):
         for message in ps_message_catalog:
             if message["id"] == message_id:
-                return message
-        return ps_message_catalog[0]
+                return ps_localize_message(message)
+        return ps_localize_message(ps_message_catalog[0])
 
     def ps_read_message(message_id):
         global ps_message_reads
@@ -403,7 +425,7 @@ init python:
         ps_phone_replies = dict(ps_phone_replies)
         ps_phone_replies[message_id] = reply_id
         ps_key_choices = ps_key_choices + [
-            "Ты ответил на сообщение: {}.".format(message["sender"])
+            _("Ты ответил на сообщение: {}.").format(message["sender"])
         ]
 
         route_by_message = {
@@ -605,7 +627,7 @@ screen ps_message_bubble(message_text, outgoing=False):
         padding (20, 13)
         background Solid("#633b83" if outgoing else "#2b1b3c")
 
-        text message_text:
+        text _(message_text):
             color "#ffffff"
             size 21
 
@@ -683,11 +705,11 @@ screen ps_phone_messages_panel():
                                     yalign 0.5
                                     xmaximum 260
 
-                                    text message["sender"]:
+                                    text _(message["sender"]):
                                         color ("#ffffff" if message_unread else "#cbbdd8")
                                         size 19
 
-                                    text message["preview"]:
+                                    text _(message["preview"]):
                                         color "#a998b7"
                                         size 16
 
@@ -752,7 +774,7 @@ screen ps_phone_messages_panel():
                                         ysize 220
                                         fit "cover"
 
-                                    text selected_data.get("attachment_caption", "Вложение"):
+                                    text _(selected_data.get("attachment_caption", "Вложение")):
                                         color "#bba9c7"
                                         size 16
 
@@ -781,7 +803,7 @@ screen ps_phone_messages_panel():
                                         text_xalign 0.5
                                         text_yalign 0.5
 
-                                    text selected_data.get("voice_caption", ""):
+                                    text _(selected_data.get("voice_caption", "")):
                                         color "#bba9c7"
                                         size 17
 
@@ -798,7 +820,7 @@ screen ps_phone_messages_panel():
                                 size 19
 
                             for reply in selected_data["replies"]:
-                                textbutton reply["title"]:
+                                textbutton _(reply["title"]):
                                     action Function(
                                         ps_reply_message,
                                         selected_data["id"],
@@ -877,7 +899,7 @@ screen ps_director_settings():
                     text_xalign 0.5
                     text_yalign 0.5
 
-            textbutton "[u'✓' if persistent.ps_ambient_enabled else u'—'] Атмосфера склада":
+            textbutton "[u'✓' if persistent.ps_ambient_enabled else u'-'] Атмосфера склада":
                 action Function(ps_toggle_ambience)
                 xfill True
                 ysize 82
@@ -891,7 +913,7 @@ screen ps_director_settings():
                 color "#a99ab8"
                 size 20
 
-            textbutton "[u'✓' if persistent.ps_reduce_motion else u'—'] Уменьшить движение":
+            textbutton "[u'✓' if persistent.ps_reduce_motion else u'-'] Уменьшить движение":
                 action Function(ps_toggle_reduce_motion)
                 xfill True
                 ysize 82
@@ -901,7 +923,7 @@ screen ps_director_settings():
                 text_size 25
                 text_xalign 0.0
 
-            textbutton "[u'✓' if persistent.ps_reduce_flashes else u'—'] Уменьшить вспышки":
+            textbutton "[u'✓' if persistent.ps_reduce_flashes else u'-'] Уменьшить вспышки":
                 action Function(ps_toggle_reduce_flashes)
                 xfill True
                 ysize 82
@@ -911,7 +933,7 @@ screen ps_director_settings():
                 text_size 25
                 text_xalign 0.0
 
-            textbutton "[u'✓' if persistent.ps_minigame_assist else u'—'] Помощь в мини-играх":
+            textbutton "[u'✓' if persistent.ps_minigame_assist else u'-'] Помощь в мини-играх":
                 action Function(ps_toggle_minigame_assist)
                 xfill True
                 ysize 82
@@ -927,7 +949,7 @@ screen ps_director_settings():
 
 
 ################################################################################
-## Живая линия — день 5
+## Живая линия - день 5
 ################################################################################
 
 screen ps_flow_challenge():
@@ -979,7 +1001,7 @@ screen ps_flow_challenge():
                         size 22
 
                 text (
-                    "БЕЗ ТАЙМЕРА"
+                    _("БЕЗ ТАЙМЕРА")
                     if persistent.ps_minigame_assist
                     else "00:{:02d}".format(ps_flow_time)
                 ):
@@ -1030,12 +1052,12 @@ screen ps_flow_challenge():
                         color "#81728e"
                         size 19
 
-                    text "[flow_event['title']]":
+                    text _(flow_event["title"]):
                         color "#ffffff"
                         size 42
                         xalign 0.5
 
-                    text "[flow_event['detail']]":
+                    text _(flow_event["detail"]):
                         color "#c7bacf"
                         size 25
                         xalign 0.5
@@ -1051,10 +1073,10 @@ screen ps_flow_challenge():
                     )
 
                     textbutton (
-                        (u"РЕКОМЕНДОВАНО // " if recommended else u"")
-                        + choice[1]
+                        (_("РЕКОМЕНДОВАНО // ") if recommended else u"")
+                        + _(choice[1])
                         + u"\n"
-                        + choice[2]
+                        + _(choice[2])
                     ):
                         id ("ps_flow_" + choice[0])
                         action Function(ps_flow_choose, choice[0])
@@ -1084,7 +1106,7 @@ screen ps_flow_challenge():
 
 
 ################################################################################
-## Доска происшествия — день 6
+## Доска происшествия - день 6
 ################################################################################
 
 screen ps_case_board():
@@ -1136,10 +1158,10 @@ screen ps_case_board():
                     )
 
                     textbutton (
-                        (u"НАДЁЖНО // " if reliable_hint else u"")
-                        + item_title
+                        (_("НАДЁЖНО // ") if reliable_hint else u"")
+                        + _(item_title)
                         + u"\n"
-                        + item_desc
+                        + _(item_desc)
                     ):
                         action Function(ps_case_toggle, item_id)
                         xsize 630
@@ -1221,13 +1243,13 @@ screen ps_ending_epilogue(ending_id):
             spacing 16
             xfill True
 
-            text "[epilogue['tag']]":
+            text _(epilogue["tag"]):
                 color epilogue["accent"]
                 size 24
                 kerning 3
                 xalign 0.5
 
-            text "[epilogue['line']]":
+            text _(epilogue["line"]):
                 color "#ffffff"
                 size 34
                 text_align 0.5
@@ -1296,7 +1318,7 @@ label ps_personal_scene:
 
         $ ps_newbie_trust += 2
         $ ps_humanity += 1
-        $ ps_key_choices = ps_key_choices + ["Лера перестала бояться говорить об ошибках."]
+        $ ps_key_choices = ps_key_choices + [_("Лера перестала бояться говорить об ошибках.")]
 
         hide newb
 
@@ -1314,7 +1336,7 @@ label ps_personal_scene:
                 $ ps_endurance += 1
                 $ ps_team_unity += 1
 
-                p "Завтра рука заболела — говоришь сразу."
+                p "Завтра рука заболела - говоришь сразу."
                 vet "Командовать старшими некрасиво."
                 p "Тогда просто договорились."
                 vet "Ладно. Скажу."
@@ -1332,7 +1354,7 @@ label ps_personal_scene:
         $ ps_endurance += 1
         $ ps_evidence += 1
         $ ps_team_unity += 1
-        $ ps_key_choices = ps_key_choices + ["Виктор доверил тебе историю подъёмника."]
+        $ ps_key_choices = ps_key_choices + [_("Виктор доверил тебе историю подъёмника.")]
 
         hide vet
 
@@ -1341,7 +1363,7 @@ label ps_personal_scene:
         with dissolve
 
         p "Странно видеть тебя без улыбки."
-        mem "Я её на зарядку поставил. Если сегодня всё пойдёт плохо — не пытайся один стать героем."
+        mem "Я её на зарядку поставил. Если сегодня всё пойдёт плохо - не пытайся один стать героем."
         p "Это сейчас была серьёзная мысль?"
         mem "Никому не рассказывай. Репутация."
 
@@ -1350,7 +1372,7 @@ label ps_personal_scene:
                 $ ps_add_route("joker", 2)
                 $ ps_team_unity += 2
 
-                p "Если станет тихо — считаем вдвоём."
+                p "Если станет тихо - считаем вдвоём."
                 mem "Романтика складского уровня."
                 p "Один, два, три, все на месте."
                 mem "Ужасно звучит. Но работает."
@@ -1367,7 +1389,7 @@ label ps_personal_scene:
 
         $ ps_humor += 1
         $ ps_team_unity += 2
-        $ ps_key_choices = ps_key_choices + ["Макс впервые попросил тебя не геройствовать в одиночку."]
+        $ ps_key_choices = ps_key_choices + [_("Макс впервые попросил тебя не геройствовать в одиночку.")]
 
         hide mem
 
@@ -1379,7 +1401,7 @@ label ps_personal_scene:
         p "А ты что ответишь?"
         sv "Что вопрос неправильный. Нужно спрашивать, почему три предупреждения не остановили линию."
         p "И ты готов это подписать?"
-        sv "Если ты принесёшь факты — да."
+        sv "Если ты принесёшь факты - да."
 
         menu:
             "Напомнить, что его подпись важнее твоих доказательств":
@@ -1404,7 +1426,7 @@ label ps_personal_scene:
 
         $ ps_supervisor_respect += 2
         $ ps_integrity += 1
-        $ ps_key_choices = ps_key_choices + ["Артём перевёл разговор с поиска виноватого на причину аварии."]
+        $ ps_key_choices = ps_key_choices + [_("Артём перевёл разговор с поиска виноватого на причину аварии.")]
 
         hide sv
 

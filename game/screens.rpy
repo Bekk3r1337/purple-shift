@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Инициализация
 ################################################################################
 
@@ -85,7 +85,7 @@ style frame:
 ## Экран разговора #############################################################
 ##
 ## Экран разговора используется для показа диалога игроку. Он использует два
-## параметра — who и what — что, соответственно, имя говорящего персонажа и
+## параметра - who и what - что, соответственно, имя говорящего персонажа и
 ## показываемый текст. (Параметр who может быть None, если имя не задано.)
 ##
 ## Этот экран должен создать текст с id "what", чтобы Ren'Py могла показать
@@ -125,7 +125,7 @@ screen say(who, what):
 
 
     ## Если есть боковое изображение ("голова"), показывает её поверх текста.
-    ## По стандарту не показывается на варианте для мобильных устройств — мало
+    ## По стандарту не показывается на варианте для мобильных устройств - мало
     ## места.
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
@@ -510,32 +510,34 @@ screen main_menu():
         text ps_main_menu_status() size 17 color "#c7b7d8" xalign 1.0
     add Transform(dust, alpha=0.35)
     # --- КНОПКИ слева ---
-    frame:
-        background None
-        xpos 56
-        ypos 158
-        xsize 470
-        ysize 760
-        padding (0, 0)
+    # Keep the normal navigation hidden until the first-launch language has
+    # been selected. This makes language selection a clean launch step instead
+    # of a modal floating over an already-active menu.
+    if persistent.ps_language_chosen:
+        frame:
+            background None
+            xpos 56
+            ypos 158
+            xsize 470
+            ysize 760
+            padding (0, 0)
 
-        vbox:
-            xalign 0.0
-            spacing 16
+            vbox:
+                xalign 0.0
+                spacing 16
 
-            use ps_main_menu_item(_("Начать"), Start())
-            if persistent.ps2_new_shift_plus_unlocked:
-                use ps_main_menu_item(_("Новая смена+"), Start("ps2_new_shift_plus_start"))
-                use ps_main_menu_item(_("Карта решений"), Show("ps2_decision_map"))
-            use ps_main_menu_item(_("Загрузить"), ShowMenu("load"))
-            use ps_main_menu_item(_("Главы"), ShowMenu("ps_chapter_select"))
-            use ps_main_menu_item(_("Коллекция"), Show("ps_phone", initial_tab="archive"))
-            use ps_main_menu_item(_("Настройки"), ShowMenu("preferences"))
-            use ps_main_menu_item(_("Об игре"), ShowMenu("about"))
-            use ps_main_menu_item(_("Помощь"), ShowMenu("help"))
-            use ps_main_menu_item(_("Выход"), Quit(confirm=True))
-
-    # Ask once on first launch. Existing players will see this after updating.
-    if not persistent.ps_language_chosen:
+                use ps_main_menu_item(_("Начать"), Start())
+                if persistent.ps2_new_shift_plus_unlocked:
+                    use ps_main_menu_item(_("Новая смена+"), Start("ps2_new_shift_plus_start"))
+                    use ps_main_menu_item(_("Карта решений"), Show("ps2_decision_map"))
+                use ps_main_menu_item(_("Загрузить"), ShowMenu("load"))
+                use ps_main_menu_item(_("Главы"), ShowMenu("ps_chapter_select"))
+                use ps_main_menu_item(_("Коллекция"), Show("ps_phone", initial_tab="archive"))
+                use ps_main_menu_item(_("Настройки"), ShowMenu("preferences"))
+                use ps_main_menu_item(_("Об игре"), ShowMenu("about"))
+                use ps_main_menu_item(_("Помощь"), ShowMenu("help"))
+                use ps_main_menu_item(_("Выход"), Quit(confirm=True))
+    else:
         use ps_language_gate
 
 
@@ -725,7 +727,7 @@ screen about():
 
             null height 25
 
-            # Короткое “о чем игра” — можно править как хочешь
+            # Короткое “о чем игра” - можно править как хочешь
             text _("Визуальная новелла о смене, которая не заканчивается даже после выхода со склада.")
             text _("Тишина, шум системы и люди, которые учатся выживать в потоке.")
 
@@ -760,7 +762,7 @@ style about_label_text:
 ## Экраны загрузки и сохранения ################################################
 ##
 ## Эти экраны ответственны за возможность сохранять и загружать игру. Так
-## как они почти одинаковые, оба реализованы по правилам третьего экрана —
+## как они почти одинаковые, оба реализованы по правилам третьего экрана -
 ## file_slots.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#save 
@@ -941,7 +943,7 @@ screen preferences():
                     textbutton _("Русский"):
                         action Function(ps_select_language, None)
                         selected (_preferences.language is None)
-                    textbutton "English (Beta)":
+                    textbutton "English":
                         action Function(ps_select_language, "english")
                         selected (_preferences.language == "english")
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Purple Shift 1.3 — «Следы смены»
+## Purple Shift 1.3 - «Следы смены»
 ## Карта склада, маршруты персонажей, архив и скрытая линия Шторма
 ################################################################################
 
@@ -46,36 +46,36 @@ init python:
     ps_map_zone_catalog = [
         {
             "id": "break",
-            "title": "Комната отдыха",
-            "subtitle": "Люди говорят тише, когда рядом нет табло.",
+            "title": _("Комната отдыха"),
+            "subtitle": _("Люди говорят тише, когда рядом нет табло."),
             "image": "images/bg/break_room.jpg",
             "accent": "#ff86c8",
         },
         {
             "id": "mezzanine",
-            "title": "Мезонин",
-            "subtitle": "Наверху лучше видно поток и его слабые места.",
+            "title": _("Мезонин"),
+            "subtitle": _("Наверху лучше видно поток и его слабые места."),
             "image": "images/bg/mezzanine.jpg",
             "accent": "#ffd083",
         },
         {
             "id": "packing",
-            "title": "Упаковка",
-            "subtitle": "Здесь цифры получают вес, ленту и чужие руки.",
+            "title": _("Упаковка"),
+            "subtitle": _("Здесь цифры получают вес, ленту и чужие руки."),
             "image": "images/bg/packing_zone.jpg",
             "accent": "#8dff9b",
         },
         {
             "id": "control",
-            "title": "Диспетчерская",
-            "subtitle": "Экраны знают больше, чем написано в отчётах.",
+            "title": _("Диспетчерская"),
+            "subtitle": _("Экраны знают больше, чем написано в отчётах."),
             "image": "images/bg/control_room.jpg",
             "accent": "#c99cff",
         },
         {
             "id": "dock",
-            "title": "Погрузочный док",
-            "subtitle": "На краю склада остаётся место для воздуха.",
+            "title": _("Погрузочный док"),
+            "subtitle": _("На краю склада остаётся место для воздуха."),
             "image": "images/bg/loading_dock.jpg",
             "accent": "#7fd9ff",
         },
@@ -84,26 +84,26 @@ init python:
     ps_route_catalog = [
         (
             "newbie",
-            "Маршрут Леры",
-            "Не дать чужой ошибке превратиться в имя человека.",
+            _("Маршрут Леры"),
+            _("Не дать чужой ошибке превратиться в имя человека."),
             "#ff7ad7",
         ),
         (
             "veteran",
-            "Маршрут Виктора",
-            "Научиться останавливать работу раньше, чем тело остановит её само.",
+            _("Маршрут Виктора"),
+            _("Научиться останавливать работу раньше, чем тело остановит её само."),
             "#ffd27a",
         ),
         (
             "joker",
-            "Маршрут Макса",
-            "Услышать серьёзное между двумя шутками.",
+            _("Маршрут Макса"),
+            _("Услышать серьёзное между двумя шутками."),
             "#7ad7ff",
         ),
         (
             "supervisor",
-            "Маршрут Артёма",
-            "Понять цену приказа и ответственность за тех, кто его выполняет.",
+            _("Маршрут Артёма"),
+            _("Понять цену приказа и ответственность за тех, кто его выполняет."),
             "#7cff7c",
         ),
     ]
@@ -111,100 +111,100 @@ init python:
     ps_document_catalog = [
         (
             "handover_note",
-            "Ночная передача участка",
-            "В журнале передачи есть остановка, которой нет в цифровой истории.",
+            _("Ночная передача участка"),
+            _("В журнале передачи есть остановка, которой нет в цифровой истории."),
         ),
         (
             "lift_marking",
-            "Метка LIFT-09",
-            "Датчик перегруза отмечали неисправным ещё до начала недели.",
+            _("Метка LIFT-09"),
+            _("Датчик перегруза отмечали неисправным ещё до начала недели."),
         ),
         (
             "account_trace",
-            "Цепочка сорока семи",
-            "Недостача прошла через буфер после сбоя привязки аккаунтов.",
+            _("Цепочка сорока семи"),
+            _("Недостача прошла через буфер после сбоя привязки аккаунтов."),
         ),
         (
             "maintenance_ticket",
-            "Заявка на ремонт",
-            "Подъёмник разрешили использовать после отменённой заявки.",
+            _("Заявка на ремонт"),
+            _("Подъёмник разрешили использовать после отменённой заявки."),
         ),
         (
             "camera_copy",
-            "Копия с камеры",
-            "Запись подтверждает время остановки и присутствие всей смены.",
+            _("Копия с камеры"),
+            _("Запись подтверждает время остановки и присутствие всей смены."),
         ),
         (
             "sealed_manifest",
-            "Накладная V-13",
-            "Груз из закрытого сектора отсутствует в обычном реестре.",
+            _("Накладная V-13"),
+            _("Груз из закрытого сектора отсутствует в обычном реестре."),
         ),
     ]
 
     ps_cg_catalog = [
         (
             "emergency_stop",
-            "Красная кнопка",
+            _("Красная кнопка"),
             "images/cg/emergency_stop.jpg",
         ),
         (
             "report_pressure",
-            "Цена подписи",
+            _("Цена подписи"),
             "images/cg/report_pressure.jpg",
         ),
         (
             "team_dawn",
-            "После смены",
+            _("После смены"),
             "images/cg/team_dawn.jpg",
         ),
         (
             "route_newbie",
-            "Не ошибка",
+            _("Не ошибка"),
             "images/cg/route_newbie.jpg",
         ),
         (
             "route_veteran",
-            "Опыт не обязан болеть",
+            _("Опыт не обязан болеть"),
             "images/cg/route_veteran.jpg",
         ),
         (
             "route_joker",
-            "Пока смеёмся",
+            _("Пока смеёмся"),
             "images/cg/route_joker.jpg",
         ),
         (
             "route_supervisor",
-            "Правильный вопрос",
+            _("Правильный вопрос"),
             "images/cg/route_supervisor.jpg",
         ),
         (
             "storm_signal",
-            "Сектор V",
+            _("Сектор V"),
             "images/cg/storm_signal.jpg",
         ),
         (
             "team_names",
-            "Больше не должности",
+            _("Больше не должности"),
             "images/cg/team_names.jpg",
         ),
         (
             "shift_plan",
-            "Цена расстановки",
+            _("Цена расстановки"),
             "images/cg/shift_plan.jpg",
         ),
         (
             "monitor_guest",
-            "Лишний сотрудник",
+            _("Лишний сотрудник"),
             "images/cg/monitor_guest.jpg",
         ),
         (
             "future_message",
-            "Сообщение из завтра",
+            _("Сообщение из завтра"),
             "images/cg/future_message.jpg",
         ),
         (
             "named_shift",
-            "Смена узнала тебя",
+            _("Смена узнала тебя"),
             "images/cg/named_shift.jpg",
         ),
     ]
@@ -212,56 +212,56 @@ init python:
     ps_music_catalog = [
         (
             "menu",
-            "Фиолетовая смена",
+            _("Фиолетовая смена"),
             "audio/menu_theme.mp3",
             1,
         ),
         (
             "home",
-            "До выхода",
+            _("До выхода"),
             "audio/home_ambient.mp3",
             1,
         ),
         (
             "city",
-            "Город идёт домой",
+            _("Город идёт домой"),
             "audio/city_night.mp3",
             2,
         ),
         (
             "walk",
-            "Ночной маршрут",
+            _("Ночной маршрут"),
             "audio/night_walk.mp3",
             2,
         ),
         (
             "shift",
-            "Начало потока",
+            _("Начало потока"),
             "audio/night_shift.mp3",
             3,
         ),
         (
             "warehouse",
-            "Ритм линии",
+            _("Ритм линии"),
             "audio/warehouse_chill.mp3",
             3,
         ),
         (
             "after",
-            "После сигнала",
+            _("После сигнала"),
             "audio/after_shift_ambient.mp3",
             4,
         ),
     ]
 
     ps_chapter_catalog = [
-        (1, "Первая смена", "start"),
-        (2, "Вторая смена", "ps_replay_day_2"),
-        (3, "Чужие цифры", "ps_replay_day_3"),
-        (4, "Чужая ошибка", "ps_replay_day_4"),
-        (5, "Предел нагрузки", "ps_replay_day_5"),
-        (6, "Цена подписи", "ps_replay_day_6"),
-        (7, "Последняя смена", "ps_replay_day_7"),
+        (1, _("Первая смена"), "start"),
+        (2, _("Вторая смена"), "ps_replay_day_2"),
+        (3, _("Чужие цифры"), "ps_replay_day_3"),
+        (4, _("Чужая ошибка"), "ps_replay_day_4"),
+        (5, _("Предел нагрузки"), "ps_replay_day_5"),
+        (6, _("Цена подписи"), "ps_replay_day_6"),
+        (7, _("Последняя смена"), "ps_replay_day_7"),
     ]
 
     def ps_append_unique_persistent(attribute_name, item_id):
@@ -332,7 +332,7 @@ init python:
         for item_id, title, description, accent in ps_route_catalog:
             if item_id == route_id:
                 return title
-        return "Маршрут смены"
+        return _("Маршрут смены")
 
     def ps_record_consequence(text):
         global ps_consequence_log
@@ -356,7 +356,7 @@ init python:
                 for item in ps_document_catalog
                 if item[0] == document_id
             )
-            renpy.notify("Архив пополнен: {}".format(title))
+            renpy.notify(_("Архив пополнен: {}").format(title))
 
         if len(persistent.ps_unlocked_documents) >= len(ps_document_catalog):
             ps_unlock_achievement("archive_master")
@@ -369,7 +369,7 @@ init python:
         if fragment_id not in ps_storm_fragments:
             ps_storm_fragments = ps_storm_fragments + [fragment_id]
             renpy.notify(
-                "Неизвестный сигнал: {}/{}".format(
+                _("Неизвестный сигнал: {}/{}").format(
                     len(ps_storm_fragments),
                     len(ps_storm_fragment_catalog),
                 )
@@ -390,12 +390,12 @@ init python:
                 for item in ps_cg_catalog
                 if item[0] == cg_id
             )
-            renpy.notify("Открыт CG: {}".format(title))
+            renpy.notify(_("Открыт CG: {}").format(title))
         return unlocked
 
     def ps_unlock_route(route_id):
         if ps_append_unique_persistent("ps_completed_routes", route_id):
-            renpy.notify("Открыт {}".format(ps_route_title(route_id)))
+            renpy.notify(_("Открыт {}").format(ps_route_title(route_id)))
         ps_unlock_achievement("confidant")
 
     def ps_finish_run():
@@ -412,7 +412,7 @@ init python:
         for item_id, title, image_path in ps_cg_catalog:
             if item_id == cg_id:
                 return (title, image_path)
-        return ("Неизвестный кадр", "images/bg/bg_black.jpg")
+        return (_("Неизвестный кадр"), "images/bg/bg_black.jpg")
 
     def ps_completion_percent():
         ending_part = len(persistent.ps_unlocked_endings)
@@ -526,7 +526,7 @@ init python:
         ps_veteran_safe = True
         ps_signed_false_report = False
         ps_key_choices = [
-            "Выбор главы восстановил сбалансированный путь до этого дня."
+            _("Выбор главы восстановил сбалансированный путь до этого дня.")
         ]
         ps_chapter_replay_mode = True
 
@@ -680,7 +680,7 @@ screen ps_warehouse_map(day, remaining):
                                 xysize=(420, 205),
                             )
 
-                            text zone["title"]:
+                            text _(zone["title"]):
                                 color (
                                     zone["accent"]
                                     if not zone_visited
@@ -689,9 +689,9 @@ screen ps_warehouse_map(day, remaining):
                                 size 27
 
                             text (
-                                zone["subtitle"]
+                                _(zone["subtitle"])
                                 if not zone_visited
-                                else "Событие этой зоны уже прожито."
+                                else _("Событие этой зоны уже прожито.")
                             ):
                                 color (
                                     "#c7bbd3"
@@ -742,7 +742,7 @@ screen ps_consequence_echo(day):
                     padding (26, 18)
                     background Solid("#25163ae8")
 
-                    text "• [consequence]":
+                    text ("• " + _(consequence)):
                         color "#ded4e9"
                         size 24
 
@@ -823,7 +823,7 @@ screen ps_archive_panel():
                 ("music", "МУЗЫКА"),
                 ("routes", "МАРШРУТЫ"),
             ]:
-                textbutton section_title:
+                textbutton _(section_title):
                     id ("ps_archive_" + section_id)
                     action SetVariable("ps_archive_section", section_id)
                     xsize 285
@@ -865,9 +865,9 @@ screen ps_archive_panel():
                                 spacing 5
 
                                 text (
-                                    document_title
+                                    _(document_title)
                                     if document_open
-                                    else "ЗАКРЫТЫЙ ДОКУМЕНТ"
+                                    else _("ЗАКРЫТЫЙ ДОКУМЕНТ")
                                 ):
                                     color (
                                         "#d7b4ff"
@@ -877,9 +877,9 @@ screen ps_archive_panel():
                                     size 24
 
                                 text (
-                                    document_desc
+                                    _(document_desc)
                                     if document_open
-                                    else "Исследуй склад между сюжетными сценами."
+                                    else _("Исследуй склад между сюжетными сценами.")
                                 ):
                                     color (
                                         "#b9a8ca"
@@ -905,7 +905,7 @@ screen ps_archive_panel():
                             hbox:
                                 xfill True
 
-                                text (cg_title if cg_open else "Неизвестный кадр"):
+                                text (_(cg_title) if cg_open else _("Неизвестный кадр")):
                                     color (
                                         "#d7b4ff"
                                         if cg_open
@@ -948,9 +948,9 @@ screen ps_archive_panel():
                                 xfill True
 
                                 text (
-                                    track_title
+                                    _(track_title)
                                     if track_open
-                                    else "Неизвестная композиция"
+                                    else _("Неизвестная композиция")
                                 ):
                                     color (
                                         "#d7b4ff"
@@ -1007,9 +1007,9 @@ screen ps_archive_panel():
                                 spacing 5
 
                                 text (
-                                    route_title
+                                    _(route_title)
                                     if route_open
-                                    else "Неизвестный маршрут"
+                                    else _("Неизвестный маршрут")
                                 ):
                                     color (
                                         route_accent
@@ -1019,9 +1019,9 @@ screen ps_archive_panel():
                                     size 24
 
                                 text (
-                                    route_desc
+                                    _(route_desc)
                                     if route_open
-                                    else "Проведи больше свободного времени с одним персонажем."
+                                    else _("Проведи больше свободного времени с одним персонажем.")
                                 ):
                                     color (
                                         "#b9a8ca"
@@ -1060,7 +1060,7 @@ screen ps_gallery_viewer(asset_id):
         hbox:
             xfill True
 
-            text gallery_title:
+            text _(gallery_title):
                 color "#ffffff"
                 size 27
                 yalign 0.5
@@ -1124,7 +1124,7 @@ screen ps_chapter_select_content():
                     for chapter_day, chapter_title, chapter_label in ps_chapter_catalog:
                         $ chapter_open = chapter_day in persistent.ps_unlocked_chapters
 
-                        textbutton "ДЕНЬ [chapter_day] — [chapter_title]":
+                        textbutton "ДЕНЬ [chapter_day] - [chapter_title]":
                             id (
                                 "ps_chapter_{}".format(chapter_day)
                                 if chapter_day == 1
@@ -1201,7 +1201,7 @@ label ps_replay_day_7:
 
 
 ################################################################################
-## Исследование — день 2
+## Исследование - день 2
 ################################################################################
 
 label ps_trace_d2_break:
@@ -1244,7 +1244,7 @@ label ps_trace_d2_break:
             newb "А с номерами?"
             p "Тогда им придётся придумать что-нибудь сложнее."
 
-    n "Она отрывает половину листка и протягивает тебе. На обороте — время вчерашней передачи участка."
+    n "Она отрывает половину листка и протягивает тебе. На обороте - время вчерашней передачи участка."
 
     $ ps_collect_document("handover_note")
 
@@ -1264,7 +1264,7 @@ label ps_trace_d2_mezzanine:
 
     n "Виктор проверяет ограждение у грузового подъёмника. На металлической панели выцарапано: LIFT-09."
 
-    vet "Запомни. Если эта лампа мигает дважды — платформа считает вес неправильно."
+    vet "Запомни. Если эта лампа мигает дважды - платформа считает вес неправильно."
 
     p "Почему её не ремонтируют?"
     vet "Потому что пока она едет."
@@ -1307,7 +1307,7 @@ label ps_trace_d2_packing:
 
     n "На упаковке копится очередь нестандартных товаров. Артём один переставляет приоритеты на терминале."
 
-    sv "Раз пришёл — выбирай. Спасти время или освободить безопасный проход."
+    sv "Раз пришёл - выбирай. Спасти время или освободить безопасный проход."
 
     menu:
         "Сначала убрать тяжёлые коробки из прохода":
@@ -1328,7 +1328,7 @@ label ps_trace_d2_packing:
             $ ps_supervisor_respect += 1
             $ ps_record_consequence("Ты помог Артёму разгрузить очередь без остановки участка.")
 
-            p "Мелкое — на свободный стол. Тяжёлое пока не двигаем."
+            p "Мелкое - на свободный стол. Тяжёлое пока не двигаем."
             sv "Быстро понял схему."
             p "Она несложная."
             sv "Схемы обычно несложные. Люди устают."
@@ -1393,7 +1393,7 @@ label ps_trace_d2_dock:
             $ ps_record_consequence("На доке вы с Максом нашли пломбу несуществующего сектора.")
 
             p "Теперь хотя бы есть фотография."
-            mem "Отлично. Если исчезнем — у полиции будет очень атмосферная улика."
+            mem "Отлично. Если исчезнем - у полиции будет очень атмосферная улика."
 
         "Спрятать пломбу в карман":
             $ ps_add_route("joker", 1)
@@ -1411,7 +1411,7 @@ label ps_trace_d2_dock:
 
 
 ################################################################################
-## Исследование — день 3
+## Исследование - день 3
 ################################################################################
 
 label ps_trace_d3_break:
@@ -1447,7 +1447,7 @@ label ps_trace_d3_break:
             $ ps_team_unity += 1
             $ ps_record_consequence("Короткий перерыв вернул Максу голос перед тяжёлой сменой.")
 
-            p "Один тебе. Второй — твоей профессиональной репутации."
+            p "Один тебе. Второй - твоей профессиональной репутации."
             mem "Репутации без сахара."
 
     hide mem
@@ -1506,7 +1506,7 @@ label ps_trace_d3_packing:
 
     n "Лера держит коробку с двумя разными этикетками."
 
-    newb "ТСД говорит — электроника. На старой наклейке — хрупкое."
+    newb "ТСД говорит - электроника. На старой наклейке - хрупкое."
 
     menu:
         "Остановить операцию и проверить карточку товара":
@@ -1547,10 +1547,10 @@ label ps_trace_d3_control:
 
     n "Артём закрывает таблицу рейтинга, когда ты входишь."
 
-    p "Моё место — секрет?"
-    sv "Нет. Способ расчёта — почти."
+    p "Моё место - секрет?"
+    sv "Нет. Способ расчёта - почти."
 
-    n "Он показывает вес показателей. Скорость учитывается сразу. Помощь другому участку — только после ручного подтверждения."
+    n "Он показывает вес показателей. Скорость учитывается сразу. Помощь другому участку - только после ручного подтверждения."
 
     menu:
         "Попросить учитывать остановки по безопасности":
@@ -1602,7 +1602,7 @@ label ps_trace_d3_dock:
             $ ps_record_consequence("На доке ты впервые вслух признал, что рейтинг меняет тебя.")
 
             p "Я проверяю место чаще, чем хочу."
-            mem "Главное — не начни проверять людей как таблицу."
+            mem "Главное - не начни проверять людей как таблицу."
 
         "Предложить собственный рейтинг смены":
             $ ps_add_route("joker", 1)
@@ -1610,9 +1610,9 @@ label ps_trace_d3_dock:
             $ ps_team_unity += 1
             $ ps_record_consequence("Вы с Максом придумали рейтинг вещей, которые система не умеет считать.")
 
-            p "Первое место — тому, кто напомнил другому попить."
-            mem "Второе — тому, кто не сказал «это не моя зона»."
-            p "Третье — автомату, который иногда выдаёт два кофе."
+            p "Первое место - тому, кто напомнил другому попить."
+            mem "Второе - тому, кто не сказал «это не моя зона»."
+            p "Третье - автомату, который иногда выдаёт два кофе."
 
     hide mem
     with dissolve
@@ -1620,7 +1620,7 @@ label ps_trace_d3_dock:
 
 
 ################################################################################
-## Исследование — день 4
+## Исследование - день 4
 ################################################################################
 
 label ps_trace_d4_break:
@@ -1634,8 +1634,8 @@ label ps_trace_d4_break:
 
     n "Бланк объяснительной лежит перед Новичком рядом с нетронутым чаем."
 
-    newb "Если подпишу — отстанут?"
-    p "Сегодня — может быть."
+    newb "Если подпишу - отстанут?"
+    p "Сегодня - может быть."
     newb "А завтра?"
 
     menu:
@@ -1673,7 +1673,7 @@ label ps_trace_d4_mezzanine:
     show vet neutral at ps_left
     with dissolve
 
-    n "Виктор раскладывает распечатки по времени. Семь операций принадлежат Лере; остальные сорок — аккаунту человека, которого сегодня нет."
+    n "Виктор раскладывает распечатки по времени. Семь операций принадлежат Лере; остальные сорок - аккаунту человека, которого сегодня нет."
 
     vet "Учёт задвоился. Но виноватым назначат того, кто рядом."
 
@@ -1799,7 +1799,7 @@ label ps_trace_d4_dock:
 
             sv "Достаточно."
             p "Это не число."
-            sv "Пока — всё, что могу сказать."
+            sv "Пока - всё, что могу сказать."
 
         "Потребовать исправить документ Новичка":
             $ ps_add_route("supervisor", 1)
@@ -1817,7 +1817,7 @@ label ps_trace_d4_dock:
 
 
 ################################################################################
-## Исследование — день 5
+## Исследование - день 5
 ################################################################################
 
 label ps_trace_d5_break:
@@ -2001,7 +2001,7 @@ label ps_trace_d5_dock:
 
             p "Левая. Буфер. Правая. Стоп."
             mem "Четыре слова."
-            p "Главное — в правильном порядке."
+            p "Главное - в правильном порядке."
 
         "Распределить, кто кого предупредит":
             $ ps_add_route("joker", 1)
@@ -2010,7 +2010,7 @@ label ps_trace_d5_dock:
             $ ps_record_consequence("У смены появилась живая цепочка оповещения.")
 
             mem "Я беру упаковку."
-            p "Я — мезонин."
+            p "Я - мезонин."
             mem "А если ничего не случится?"
             p "Тогда зря поговорили пять минут. Переживём."
 
@@ -2020,7 +2020,7 @@ label ps_trace_d5_dock:
 
 
 ################################################################################
-## Исследование — день 6
+## Исследование - день 6
 ################################################################################
 
 label ps_trace_d6_break:
@@ -2064,7 +2064,7 @@ label ps_trace_d6_mezzanine:
 
     $ ps_set_ambience("quiet")
 
-    n "За старой панелью лежит чёрный пластиковый конверт. На нём тот же знак, что был на пломбе. Внутри — накладная V-13. Пункт назначения: «Штормовой сектор»."
+    n "За старой панелью лежит чёрный пластиковый конверт. На нём тот же знак, что был на пломбе. Внутри - накладная V-13. Пункт назначения: «Штормовой сектор»."
 
     menu:
         "Сохранить накладную и не сообщать системе":
@@ -2260,7 +2260,7 @@ label ps_route_climax:
         $ ps_humanity += 2
         $ ps_team_unity += 1
         $ ps_record_consequence("Лера подписала собственную правду вместо готового признания.")
-        $ ps_key_choices = ps_key_choices + ["Ты помог Новичку перестать считать себя системной ошибкой."]
+        $ ps_key_choices = ps_key_choices + [_("Ты помог Новичку перестать считать себя системной ошибкой.")]
 
     elif ps_route_scene_id == "veteran":
         scene bg loading_dock
@@ -2294,7 +2294,7 @@ label ps_route_climax:
         $ ps_team_unity += 2
         $ ps_veteran_safe = True
         $ ps_record_consequence("Виктор выбрал остановиться раньше, чем работа остановила бы его.")
-        $ ps_key_choices = ps_key_choices + ["Виктор позволил команде стать его опорой."]
+        $ ps_key_choices = ps_key_choices + [_("Виктор позволил команде стать его опорой.")]
 
     elif ps_route_scene_id == "joker":
         scene bg loading_dock
@@ -2311,7 +2311,7 @@ label ps_route_climax:
 
         n "Он смотрит на тёмные окна склада."
 
-        mem "Если люди смеются, я понимаю, что они ещё здесь. А когда никто не отвечает — начинаю считать головы."
+        mem "Если люди смеются, я понимаю, что они ещё здесь. А когда никто не отвечает - начинаю считать головы."
 
         scene cg route_joker at ps_cg_reveal
         with ps_violet_cut
@@ -2328,7 +2328,7 @@ label ps_route_climax:
         $ ps_humanity += 1
         $ ps_team_unity += 2
         $ ps_record_consequence("Макс доверил тебе причину, по которой продолжает смеяться.")
-        $ ps_key_choices = ps_key_choices + ["Ты услышал серьёзный голос Макса и не заставил его снова спрятаться за шуткой."]
+        $ ps_key_choices = ps_key_choices + [_("Ты услышал серьёзный голос Макса и не заставил его снова спрятаться за шуткой.")]
 
     else:
         scene bg control_room
@@ -2362,7 +2362,7 @@ label ps_route_climax:
         $ ps_integrity += 2
         $ ps_team_unity += 1
         $ ps_record_consequence("Артём выбрал полный отчёт и принял ответственность за участок.")
-        $ ps_key_choices = ps_key_choices + ["Артём перестал прятать решения за формулировками системы."]
+        $ ps_key_choices = ps_key_choices + [_("Артём перестал прятать решения за формулировками системы.")]
 
 label ps_route_climax_end:
     scene black
@@ -2375,7 +2375,7 @@ label ps_route_climax_end:
 
 
 ################################################################################
-## Скрытая линия — «Фиолетовый Шторм»
+## Скрытая линия - «Фиолетовый Шторм»
 ################################################################################
 
 label ps_storm_teaser:

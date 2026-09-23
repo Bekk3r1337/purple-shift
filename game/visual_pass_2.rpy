@@ -59,16 +59,16 @@ transform ps_vp2_terminal_breathe:
 
 init 45 python:
     ps_vp2_cgs = [
-        ("breakroom_preconflict", "Перед разговором", "images/cg/breakroom_preconflict.jpg"),
-        ("conveyor_incident", "Линия идёт неправильно", "images/cg/conveyor_incident.jpg"),
-        ("artem_curator_private", "Разговор за закрытой дверью", "images/cg/artem_curator_private.jpg"),
-        ("lera_locker_alone", "После тяжёлой смены", "images/cg/lera_locker_alone.jpg"),
-        ("first_impossible_reflection", "Отражение опоздало", "images/cg/first_impossible_reflection.jpg"),
-        ("max_terminal_night", "Экран после полуночи", "images/cg/max_terminal_night.jpg"),
-        ("viktor_protective_moment", "Шаг назад", "images/cg/viktor_protective_moment.jpg"),
-        ("empty_shift_aftershock", "После сигнала", "images/cg/empty_shift_aftershock.jpg"),
-        ("artem_emergency_stop", "Красная кнопка - Артём", "images/cg/artem_emergency_stop.jpg"),
-        ("team_after_gates", "За воротами", "images/cg/team_after_gates.jpg"),
+        ("breakroom_preconflict", _("Перед разговором"), "images/cg/breakroom_preconflict.jpg"),
+        ("conveyor_incident", _("Линия идёт неправильно"), "images/cg/conveyor_incident.jpg"),
+        ("artem_curator_private", _("Разговор за закрытой дверью"), "images/cg/artem_curator_private.jpg"),
+        ("lera_locker_alone", _("После тяжёлой смены"), "images/cg/lera_locker_alone.jpg"),
+        ("first_impossible_reflection", _("Отражение опоздало"), "images/cg/first_impossible_reflection.jpg"),
+        ("max_terminal_night", _("Экран после полуночи"), "images/cg/max_terminal_night.jpg"),
+        ("viktor_protective_moment", _("Шаг назад"), "images/cg/viktor_protective_moment.jpg"),
+        ("empty_shift_aftershock", _("После сигнала"), "images/cg/empty_shift_aftershock.jpg"),
+        ("artem_emergency_stop", _("Красная кнопка - Артём"), "images/cg/artem_emergency_stop.jpg"),
+        ("team_after_gates", _("За воротами"), "images/cg/team_after_gates.jpg"),
     ]
 
     if "ps_cg_catalog" in globals():

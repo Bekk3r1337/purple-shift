@@ -4,12 +4,12 @@
 ## Персонажи и изображения
 ################################################################################
 
-default ps_player_name = "Сотрудник"
-default ps_newbie_name = "Новичок"
-default ps_veteran_name = "Ветеран"
-default ps_joker_name = "Шутник"
-default ps_supervisor_name = "Супервайзер"
-default ps_curator_name = "Куратор"
+default ps_player_name = _("Сотрудник")
+default ps_newbie_name = _("Новичок")
+default ps_veteran_name = _("Ветеран")
+default ps_joker_name = _("Шутник")
+default ps_supervisor_name = _("Супервайзер")
+default ps_curator_name = _("Куратор")
 default ps_names_revealed = False
 
 define p = DynamicCharacter("ps_player_name", color="#c8a2ff")
@@ -19,6 +19,35 @@ define vet = DynamicCharacter("ps_veteran_name", color="#ffd27a")
 define mem = DynamicCharacter("ps_joker_name", color="#7ad7ff")
 define newb = DynamicCharacter("ps_newbie_name", color="#ff7ad7")
 define cur = DynamicCharacter("ps_curator_name", color="#ff9d66")
+
+init python:
+    def ps_sync_character_names():
+        global ps_player_name
+        global ps_newbie_name
+        global ps_veteran_name
+        global ps_joker_name
+        global ps_supervisor_name
+        global ps_curator_name
+
+        # Keep custom player names untouched, but localize the untouched default.
+        if ps_player_name in (_("Сотрудник"), "Employee"):
+            ps_player_name = _(_("Сотрудник"))
+
+        if ps_names_revealed:
+            ps_newbie_name = _("Лера")
+            ps_veteran_name = _("Виктор")
+            ps_joker_name = _("Макс")
+            ps_supervisor_name = _("Артём")
+        else:
+            ps_newbie_name = _(_("Новичок"))
+            ps_veteran_name = _(_("Ветеран"))
+            ps_joker_name = _(_("Шутник"))
+            ps_supervisor_name = _(_("Супервайзер"))
+
+        if ps_curator_name in ("Морозов", "Morozov"):
+            ps_curator_name = _("Морозов")
+        else:
+            ps_curator_name = _(_("Куратор"))
 
 image bg mainmenu = Solid("#120a1f")
 image ps_bg_base = Solid("#0c0614")
@@ -107,10 +136,10 @@ init -5 python:
 
 init 35 python:
     ps_curated_cgs = [
-        ("team_break_cinematic", "Пять минут вместе", "images/cg/team_break_cinematic.jpg"),
-        ("v13_false_memory", "Лишний человек", "images/cg/v13_false_memory.jpg"),
-        ("zero_shift_v2", "Нулевая смена - ремастер", "images/cg/zero_shift_v2.jpg"),
-        ("storm_first_contact", "Первый разрез Шторма", "images/cg/storm_first_contact.jpg"),
+        ("team_break_cinematic", _("Пять минут вместе"), "images/cg/team_break_cinematic.jpg"),
+        ("v13_false_memory", _("Лишний человек"), "images/cg/v13_false_memory.jpg"),
+        ("zero_shift_v2", _("Нулевая смена - ремастер"), "images/cg/zero_shift_v2.jpg"),
+        ("storm_first_contact", _("Первый разрез Шторма"), "images/cg/storm_first_contact.jpg"),
     ]
 
     if "ps_cg_catalog" in globals():
@@ -128,9 +157,19 @@ init python:
     import math
 
     def ps_character_breathe(trans, shown_time, animation_time):
-        # Do not overwrite the transform's baseline. This function used to
-        # force yoffset every frame, which cancelled all grounding fixes.
-        return None
+        # Keep the sprite grounded and animate around the bottom anchor.
+        # The old implementation animated yoffset, which made feet float.
+        # A tiny squash/stretch gives the character a living breathing motion
+        # without changing the authored screen position.
+        if persistent.ps_reduce_motion:
+            trans.xzoom = 1.0
+            trans.yzoom = 1.0
+            return None
+
+        breath = math.sin(shown_time * 1.75)
+        trans.xzoom = 1.0 - breath * 0.0015
+        trans.yzoom = 1.0 + breath * 0.0040
+        return 0.05
 
 
 transform ps_center:

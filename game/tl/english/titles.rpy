@@ -260,7 +260,7 @@ translate english strings:
     old "«Не уйду. Но и ты не исчезай в шутках.»"
     new "“I won't leave. But don't disappear into jokes either.”"
 
-    old "«Если накроет — напиши прямо.»"
+    old "«Если накроет - напиши прямо.»"
     new "“If it gets too much, tell me directly.”"
 
     old "«Ставим ротацию и записываем причину.»"
@@ -275,7 +275,7 @@ translate english strings:
     old "«Сверяй ячейку перед подтверждением.»"
     new "“Check the bin before confirming.”"
 
-    old "«Сейчас главное — поспать.»"
+    old "«Сейчас главное - поспать.»"
     new "“Right now, the important thing is to sleep.”"
 
     old "«Сохраню код и время.»"
