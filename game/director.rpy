@@ -1001,7 +1001,7 @@ screen ps_flow_challenge():
                         size 22
 
                 text (
-                    "БЕЗ ТАЙМЕРА"
+                    _("БЕЗ ТАЙМЕРА")
                     if persistent.ps_minigame_assist
                     else "00:{:02d}".format(ps_flow_time)
                 ):
@@ -1052,12 +1052,12 @@ screen ps_flow_challenge():
                         color "#81728e"
                         size 19
 
-                    text "[flow_event['title']]":
+                    text _(flow_event["title"]):
                         color "#ffffff"
                         size 42
                         xalign 0.5
 
-                    text "[flow_event['detail']]":
+                    text _(flow_event["detail"]):
                         color "#c7bacf"
                         size 25
                         xalign 0.5
@@ -1073,10 +1073,10 @@ screen ps_flow_challenge():
                     )
 
                     textbutton (
-                        (u"РЕКОМЕНДОВАНО // " if recommended else u"")
-                        + choice[1]
+                        (_("РЕКОМЕНДОВАНО // ") if recommended else u"")
+                        + _(choice[1])
                         + u"\n"
-                        + choice[2]
+                        + _(choice[2])
                     ):
                         id ("ps_flow_" + choice[0])
                         action Function(ps_flow_choose, choice[0])
@@ -1158,10 +1158,10 @@ screen ps_case_board():
                     )
 
                     textbutton (
-                        (u"НАДЁЖНО // " if reliable_hint else u"")
-                        + item_title
+                        (_("НАДЁЖНО // ") if reliable_hint else u"")
+                        + _(item_title)
                         + u"\n"
-                        + item_desc
+                        + _(item_desc)
                     ):
                         action Function(ps_case_toggle, item_id)
                         xsize 630
@@ -1243,13 +1243,13 @@ screen ps_ending_epilogue(ending_id):
             spacing 16
             xfill True
 
-            text "[epilogue['tag']]":
+            text _(epilogue["tag"]):
                 color epilogue["accent"]
                 size 24
                 kerning 3
                 xalign 0.5
 
-            text "[epilogue['line']]":
+            text _(epilogue["line"]):
                 color "#ffffff"
                 size 34
                 text_align 0.5
