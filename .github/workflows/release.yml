@@ -3,6 +3,8 @@ name: Build desktop release
 on:
   workflow_dispatch:
   push:
+    branches:
+      - "agent/windows-build"
     tags:
       - "v*"
 
