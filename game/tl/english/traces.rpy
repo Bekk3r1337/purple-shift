@@ -1204,85 +1204,85 @@ translate english ps_trace_d6_dock_a81be93c:
 translate english ps_trace_d6_dock_75e23b8c:
 
     # p "Теперь новых можем встречать и мы."
-    p "Теперь новых можем встречать и мы."
+    p "Now we can be there for the newcomers too."
 
 # game/traces.rpy:2212
 translate english ps_trace_d6_dock_378a5c20:
 
     # vet "Вот поэтому завтра, может быть, уйду вовремя."
-    vet "Вот поэтому завтра, может быть, уйду вовремя."
+    vet "That's why tomorrow I might actually leave on time."
 
 # game/traces.rpy:2242
 translate english ps_route_climax_0cd3e7ef:
 
     # newb "Я переписала объяснительную. Не так, как они оставили в шаблоне."
-    newb "Я переписала объяснительную. Не так, как они оставили в шаблоне."
+    newb "I rewrote the statement. Not the way they left it in the template."
 
 # game/traces.rpy:2244
 translate english ps_route_climax_ea64bf7e:
 
     # p "Страшно?"
-    p "Страшно?"
+    p "Scared?"
 
 # game/traces.rpy:2245
 translate english ps_route_climax_a1748742:
 
     # newb "Да."
-    newb "Да."
+    newb "Yes."
 
 # game/traces.rpy:2246
 translate english ps_route_climax_1ee61498:
 
     # newb "Но раньше мне было страшно даже сказать, что экран завис."
-    newb "Но раньше мне было страшно даже сказать, что экран завис."
+    newb "But before, I was scared even to say that the screen had frozen."
 
 # game/traces.rpy:2248
 translate english ps_route_climax_5341efcd:
 
     # n "Она протягивает тебе лист. Внизу нет признания в невнимательности. Есть время, номер операции и просьба проверить систему."
-    n "Она протягивает тебе лист. Внизу нет признания в невнимательности. Есть время, номер операции и просьба проверить систему."
+    n "She hands you the sheet. There is no admission of carelessness at the bottom. There is a time, an operation number, and a request to inspect the system."
 
 # game/traces.rpy:2255
 translate english ps_route_climax_7c9be7ae:
 
     # newb "Раньше я видела красный экран и сразу извинялась. А сейчас сначала записала, что произошло."
-    newb "Раньше я видела красный экран и сразу извинялась. А сейчас сначала записала, что произошло."
+    newb "I used to see a red screen and apologize immediately. This time I wrote down what happened first."
 
 # game/traces.rpy:2257
 translate english ps_route_climax_3645180c:
 
     # p "Подписывай. Здесь всё по фактам."
-    p "Подписывай. Здесь всё по фактам."
+    p "Sign it. Everything here is factual."
 
 # game/traces.rpy:2274
 translate english ps_route_climax_c5183da9:
 
     # vet "Я снял заявку на дополнительный час."
-    vet "Я снял заявку на дополнительный час."
+    vet "I cancelled my extra-hour request."
 
 # game/traces.rpy:2276
 translate english ps_route_climax_7a1c90ce:
 
     # p "Ты?"
-    p "Ты?"
+    p "You?"
 
 # game/traces.rpy:2277
 translate english ps_route_climax_b2dda686:
 
     # vet "Не делай такое лицо. Опытный человек тоже может однажды поступить разумно."
-    vet "Не делай такое лицо. Опытный человек тоже может однажды поступить разумно."
+    vet "Don't make that face. Even an experienced worker can make a sensible choice once in a while."
 
 # game/traces.rpy:2279
 translate english ps_route_climax_123ff616:
 
     # n "Он снимает бинт. Запястье всё ещё болит, но сегодня на нём нет следов новой нагрузки."
-    n "Он снимает бинт. Запястье всё ещё болит, но сегодня на нём нет следов новой нагрузки."
+    n "He removes the bandage. The wrist still hurts, but today there are no signs of fresh strain."
 
 # game/traces.rpy:2286
 translate english ps_route_climax_91719c4b:
 
     # vet "Раньше думал, что если я остановлюсь, всё рухнет."
-    vet "Раньше думал, что если я остановлюсь, всё рухнет."
+    vet "I used to think everything would collapse if I stopped."
 
 # game/traces.rpy:2287
 translate english ps_route_climax_2eaa2fb8:
@@ -1294,375 +1294,375 @@ translate english ps_route_climax_2eaa2fb8:
 translate english ps_route_climax_c0e3983f:
 
     # vet "Ничего. Линия пережила. Люди подхватили."
-    vet "Ничего. Линия пережила. Люди подхватили."
+    vet "It didn't. The line survived. People stepped in."
 
 # game/traces.rpy:2290
 translate english ps_route_climax_66046011:
 
     # p "Значит, зря думал, что без тебя никто не справится."
-    p "Значит, зря думал, что без тебя никто не справится."
+    p "So maybe you were wrong to think nobody could manage without you."
 
 # game/traces.rpy:2308
 translate english ps_route_climax_ce47618f:
 
     # mem "Знаешь, почему я всё время говорю?"
-    mem "Знаешь, почему я всё время говорю?"
+    mem "Do you know why I talk all the time?"
 
 # game/traces.rpy:2309
 translate english ps_route_climax_2206c796:
 
     # p "Потому что тишина боится конкуренции?"
-    p "Потому что тишина боится конкуренции?"
+    p "Because silence is afraid of competition?"
 
 # game/traces.rpy:2310
 translate english ps_route_climax_e96583b0:
 
     # mem "Хорошая версия."
-    mem "Хорошая версия."
+    mem "Good theory."
 
 # game/traces.rpy:2312
 translate english ps_route_climax_75f244a4:
 
     # n "Он смотрит на тёмные окна склада."
-    n "Он смотрит на тёмные окна склада."
+    n "He looks at the dark warehouse windows."
 
 # game/traces.rpy:2314
 translate english ps_route_climax_ecdbc46a:
 
     # mem "Если люди смеются, я понимаю, что они ещё здесь. А когда никто не отвечает — начинаю считать головы."
-    mem "Если люди смеются, я понимаю, что они ещё здесь. А когда никто не отвечает — начинаю считать головы."
+    mem "If people laugh, I know they're still here. When nobody answers, I start counting heads."
 
 # game/traces.rpy:2321
 translate english ps_route_climax_08476058:
 
     # p "Тогда завтра считай вслух. Но не один."
-    p "Тогда завтра считай вслух. Но не один."
+    p "Then count out loud tomorrow. But not alone."
 
 # game/traces.rpy:2323
 translate english ps_route_climax_73ba6d34:
 
     # mem "Это сейчас был приказ?"
-    mem "Это сейчас был приказ?"
+    mem "Was that an order?"
 
 # game/traces.rpy:2324
 translate english ps_route_climax_d0abe23c:
 
     # p "По инструкции."
-    p "По инструкции."
+    p "According to procedure."
 
 # game/traces.rpy:2325
 translate english ps_route_climax_c84efe46:
 
     # mem "Тогда спорить нельзя."
-    mem "Тогда спорить нельзя."
+    mem "Then I can't argue."
 
 # game/traces.rpy:2342
 translate english ps_route_climax_bf382524:
 
     # sv "Я подготовил две версии отчёта."
-    sv "Я подготовил две версии отчёта."
+    sv "I prepared two versions of the report."
 
 # game/traces.rpy:2344
 translate english ps_route_climax_949964ce:
 
     # p "Удобную и настоящую?"
-    p "Удобную и настоящую?"
+    p "The convenient one and the real one?"
 
 # game/traces.rpy:2345
 translate english ps_route_climax_088c2f73:
 
     # sv "Раньше я бы назвал их краткой и полной."
-    sv "Раньше я бы назвал их краткой и полной."
+    sv "I used to call them the short version and the full one."
 
 # game/traces.rpy:2347
 translate english ps_route_climax_f8b9eddb:
 
     # n "Он кладёт короткую версию в выключенный измельчитель и оставляет там."
-    n "Он кладёт короткую версию в выключенный измельчитель и оставляет там."
+    n "He puts the short version into the switched-off shredder and leaves it there."
 
 # game/traces.rpy:2354
 translate english ps_route_climax_3e7c311d:
 
     # sv "Куратор снова спросит, кто виноват."
-    sv "Куратор снова спросит, кто виноват."
+    sv "The Curator will ask again who's to blame."
 
 # game/traces.rpy:2355
 translate english ps_route_climax_74ea6202:
 
     # p "А ты?"
-    p "А ты?"
+    p "And you?"
 
 # game/traces.rpy:2356
 translate english ps_route_climax_4363b4c4:
 
     # sv "Покажу отменённую заявку, удалённую остановку и время сбоя. Пусть сначала ответит на это."
-    sv "Покажу отменённую заявку, удалённую остановку и время сбоя. Пусть сначала ответит на это."
+    sv "I'll show the cancelled ticket, the deleted stop, and the failure time. Let him answer those first."
 
 # game/traces.rpy:2358
 translate english ps_route_climax_4dd3b761:
 
     # p "Подпишешь?"
-    p "Подпишешь?"
+    p "Will you sign it?"
 
 # game/traces.rpy:2359
 translate english ps_route_climax_fd58539c:
 
     # sv "Подпишу."
-    sv "Подпишу."
+    sv "I will."
 
 # game/traces.rpy:2395
 translate english ps_storm_teaser_8edff35b:
 
     # n "Экран уже должен погаснуть. Но где-то за комнатой отдыха щёлкает реле."
-    n "Экран уже должен погаснуть. Но где-то за комнатой отдыха щёлкает реле."
+    n "The screen should already be dark. But somewhere behind the break room, a relay clicks."
 
 # game/traces.rpy:2401
 translate english ps_storm_teaser_d12ad1cc:
 
     # n "На телефоне появляется сеть без названия. Один входящий файл. V-13 // НАКЛАДНАЯ ПРИНЯТА."
-    n "На телефоне появляется сеть без названия. Один входящий файл. V-13 // НАКЛАДНАЯ ПРИНЯТА."
+    n "An unnamed network appears on the phone. One incoming file. V-13 // WAYBILL ACCEPTED."
 
 # game/traces.rpy:2406
 translate english ps_storm_teaser_da6b6128:
 
     # n "За технической дверью вспыхивает фиолетовый свет. Не складской. Слишком глубокий, будто коридор продолжается намного дальше стены."
-    n "За технической дверью вспыхивает фиолетовый свет. Не складской. Слишком глубокий, будто коридор продолжается намного дальше стены."
+    n "Violet light flares behind the service door. Not warehouse lighting. Too deep, as if the corridor continues far beyond the wall."
 
 # game/traces.rpy:2408
 translate english ps_storm_teaser_e99a871a:
 
     # n "На секунду слышен незнакомый голос:"
-    n "На секунду слышен незнакомый голос:"
+    n "For one second, an unfamiliar voice is heard:"
 
 # game/traces.rpy:2409
 translate english ps_storm_teaser_37658b68:
 
     # n "«Штормовой сектор проснулся»."
-    n "«Штормовой сектор проснулся»."
+    n "\"The Storm Sector has awakened.\""
 
 # game/traces.rpy:2412
 translate english ps_storm_teaser_8e72fd74:
 
     # n "Помехи не обрываются. В восстановленном канале появляется вторая строка:"
-    n "Помехи не обрываются. В восстановленном канале появляется вторая строка:"
+    n "The interference does not stop. A second line appears in the restored channel:"
 
 # game/traces.rpy:2413
 translate english ps_storm_teaser_09b59cb9:
 
     # n "«BERRY // STORM. ТОЧКА ВХОДА ПОДТВЕРЖДЕНА». Ты не знаешь, что находится по ту сторону двери. Но теперь дверь знает, кто находится по эту."
-    n "«BERRY // STORM. ТОЧКА ВХОДА ПОДТВЕРЖДЕНА». Ты не знаешь, что находится по ту сторону двери. Но теперь дверь знает, кто находится по эту."
+    n "\"BERRY // STORM. ENTRY POINT CONFIRMED.\" You do not know what is on the other side of the door. But now the door knows who is on this side."
 
 # game/traces.rpy:2415
 translate english ps_storm_teaser_49eb0d56:
 
     # centered "ФИОЛЕТОВЫЙ ШТОРМ\n\nСИГНАЛ ПРИНЯТ"
-    centered "ФИОЛЕТОВЫЙ ШТОРМ\n\nСИГНАЛ ПРИНЯТ"
+    centered "PURPLE STORM\\n\\nSIGNAL RECEIVED"
 
 # game/traces.rpy:2417
 translate english ps_storm_teaser_c1dda71c:
 
     # n "Потом связь исчезает. Утро снаружи остаётся прежним. Но теперь ты знаешь: смена была только первой дверью."
-    n "Потом связь исчезает. Утро снаружи остаётся прежним. Но теперь ты знаешь: смена была только первой дверью."
+    n "Then the connection disappears. Morning outside remains unchanged. But now you know: the shift was only the first door."
 
 translate english strings:
 
     # game/traces.rpy:1225
-    old "Помочь превратить записи в понятный чек-лист"
-    new "Помочь превратить записи в понятный чек-лист"
+    old "Help turn the notes into a clear checklist"
+    new "Help turn the notes into a clear checklist"
 
     # game/traces.rpy:1236
-    old "Добавить к записям номера операций"
-    new "Добавить к записям номера операций"
+    old "Add operation numbers to the notes"
+    new "Add operation numbers to the notes"
 
     # game/traces.rpy:1273
-    old "Спросить, сколько раз это уже происходило"
-    new "Спросить, сколько раз это уже происходило"
+    old "Ask how many times this has happened"
+    new "Ask how many times this has happened"
 
     # game/traces.rpy:1284
-    old "Проверить аварийную кнопку рядом"
-    new "Проверить аварийную кнопку рядом"
+    old "Check the nearby emergency button"
+    new "Check the nearby emergency button"
 
     # game/traces.rpy:1313
-    old "Сначала убрать тяжёлые коробки из прохода"
-    new "Сначала убрать тяжёлые коробки из прохода"
+    old "Clear the heavy boxes from the passage first"
+    new "Clear the heavy boxes from the passage first"
 
     # game/traces.rpy:1325
-    old "Перенаправить мелкие заказы и разгрузить очередь"
-    new "Перенаправить мелкие заказы и разгрузить очередь"
+    old "Reroute small orders and reduce the queue"
+    new "Reroute small orders and reduce the queue"
 
     # game/traces.rpy:1350
-    old "Сохранить номер передачи и время"
-    new "Сохранить номер передачи и время"
+    old "Save the handoff number and time"
+    new "Save the handoff number and time"
 
     # game/traces.rpy:1358
-    old "Проверить, кто подтвердил передачу"
-    new "Проверить, кто подтвердил передачу"
+    old "Check who confirmed the handoff"
+    new "Check who confirmed the handoff"
 
     # game/traces.rpy:1389
-    old "Сфотографировать пломбу"
-    new "Сфотографировать пломбу"
+    old "Photograph the seal"
+    new "Photograph the seal"
 
     # game/traces.rpy:1398
-    old "Спрятать пломбу в карман"
-    new "Спрятать пломбу в карман"
+    old "Hide the seal in your pocket"
+    new "Hide the seal in your pocket"
 
     # game/traces.rpy:1432
-    old "Сесть рядом и не торопить"
-    new "Сесть рядом и не торопить"
+    old "Sit beside him and do not rush him"
+    new "Sit beside him and do not rush him"
 
     # game/traces.rpy:1444
-    old "Купить два кофе и перевести всё в шутку"
-    new "Купить два кофе и перевести всё в шутку"
+    old "Buy two coffees and turn it into a joke"
+    new "Buy two coffees and turn it into a joke"
 
     # game/traces.rpy:1472
-    old "Снять обе маркировки одним кадром"
-    new "Снять обе маркировки одним кадром"
+    old "Capture both markings in one photo"
+    new "Capture both markings in one photo"
 
     # game/traces.rpy:1481
-    old "Попросить Виктора больше не пользоваться подъёмником"
-    new "Попросить Виктора больше не пользоваться подъёмником"
+    old "Ask Viktor not to use the lift anymore"
+    new "Ask Viktor not to use the lift anymore"
 
     # game/traces.rpy:1512
-    old "Остановить операцию и проверить карточку товара"
-    new "Остановить операцию и проверить карточку товара"
+    old "Stop the operation and check the item record"
+    new "Stop the operation and check the item record"
 
     # game/traces.rpy:1524
-    old "Показать быстрый способ перепривязать этикетку"
-    new "Показать быстрый способ перепривязать этикетку"
+    old "Show a quick way to re-bind the label"
+    new "Show a quick way to re-bind the label"
 
     # game/traces.rpy:1556
-    old "Попросить учитывать остановки по безопасности"
-    new "Попросить учитывать остановки по безопасности"
+    old "Ask for safety stops to be counted properly"
+    new "Ask for safety stops to be counted properly"
 
     # game/traces.rpy:1567
-    old "Разобраться, как честно поднять эффективность"
-    new "Разобраться, как честно поднять эффективность"
+    old "Figure out how to improve efficiency honestly"
+    new "Figure out how to improve efficiency honestly"
 
     # game/traces.rpy:1598
-    old "Признаться, что рейтинг уже начал давить"
-    new "Признаться, что рейтинг уже начал давить"
+    old "Admit that the ranking is already getting to you"
+    new "Admit that the ranking is already getting to you"
 
     # game/traces.rpy:1607
-    old "Предложить собственный рейтинг смены"
-    new "Предложить собственный рейтинг смены"
+    old "Propose your own shift ranking"
+    new "Propose your own shift ranking"
 
     # game/traces.rpy:1642
-    old "Разобрать каждую строку вместе"
-    new "Разобрать каждую строку вместе"
+    old "Go through every line together"
+    new "Go through every line together"
 
     # game/traces.rpy:1652
-    old "Предложить собственную формулировку о сбое"
-    new "Предложить собственную формулировку о сбое"
+    old "Suggest your own wording for the failure"
+    new "Suggest your own wording for the failure"
 
     # game/traces.rpy:1681
-    old "Помочь восстановить цепочку"
-    new "Помочь восстановить цепочку"
+    old "Help reconstruct the chain"
+    new "Help reconstruct the chain"
 
     # game/traces.rpy:1690
-    old "Попросить Виктора выступить свидетелем"
-    new "Попросить Виктора выступить свидетелем"
+    old "Ask Viktor to act as a witness"
+    new "Ask Viktor to act as a witness"
 
     # game/traces.rpy:1714
-    old "Снять полную последовательность кодов"
-    new "Снять полную последовательность кодов"
+    old "Record the full sequence of codes"
+    new "Record the full sequence of codes"
 
     # game/traces.rpy:1722
-    old "Сразу отнести этикетку Новичку"
-    new "Сразу отнести этикетку Новичку"
+    old "Take the label to the Newcomer immediately"
+    new "Take the label to the Newcomer immediately"
 
     # game/traces.rpy:1750
-    old "Записать время и номер канала"
-    new "Записать время и номер канала"
+    old "Record the time and channel number"
+    new "Record the time and channel number"
 
     # game/traces.rpy:1758
-    old "Позвать Макса как свидетеля"
-    new "Позвать Макса как свидетеля"
+    old "Call Max as a witness"
+    new "Call Max as a witness"
 
     # game/traces.rpy:1794
-    old "Спросить, сколько раз он это подписывал"
-    new "Спросить, сколько раз он это подписывал"
+    old "Ask how many times he has signed this"
+    new "Ask how many times he has signed this"
 
     # game/traces.rpy:1804
-    old "Потребовать исправить документ Новичка"
-    new "Потребовать исправить документ Новичка"
+    old "Demand that the Newcomer's document be corrected"
+    new "Demand that the Newcomer's document be corrected"
 
     # game/traces.rpy:1839
-    old "Настоять, чтобы он снялся с тяжёлых операций"
-    new "Настоять, чтобы он снялся с тяжёлых операций"
+    old "Insist that he step away from heavy operations"
+    new "Insist that he step away from heavy operations"
 
     # game/traces.rpy:1851
-    old "Попросить показать, как правильно страховать груз"
-    new "Попросить показать, как правильно страховать груз"
+    old "Ask him to show you how to secure the load properly"
+    new "Ask him to show you how to secure the load properly"
 
     # game/traces.rpy:1873
-    old "Сохранить обе версии заявки"
-    new "Сохранить обе версии заявки"
+    old "Keep both versions of the ticket"
+    new "Keep both versions of the ticket"
 
     # game/traces.rpy:1881
-    old "Передать заявку Артёму при свидетелях"
-    new "Передать заявку Артёму при свидетелях"
+    old "Hand the ticket to Artyom in front of witnesses"
+    new "Hand the ticket to Artyom in front of witnesses"
 
     # game/traces.rpy:1916
-    old "Встать рядом и принять часть очереди"
-    new "Встать рядом и принять часть очереди"
+    old "Stand beside her and take part of the queue"
+    new "Stand beside her and take part of the queue"
 
     # game/traces.rpy:1927
-    old "Помочь ей выстроить приоритеты"
-    new "Помочь ей выстроить приоритеты"
+    old "Help her set priorities"
+    new "Help her set priorities"
 
     # game/traces.rpy:1956
-    old "Предложить частичную остановку опасной линии"
-    new "Предложить частичную остановку опасной линии"
+    old "Propose a partial stop of the dangerous line"
+    new "Propose a partial stop of the dangerous line"
 
     # game/traces.rpy:1967
-    old "Попросить его честно объявить риск смене"
-    new "Попросить его честно объявить риск смене"
+    old "Ask him to announce the risk to the shift honestly"
+    new "Ask him to announce the risk to the shift honestly"
 
     # game/traces.rpy:1996
-    old "Придумать короткие голосовые команды"
-    new "Придумать короткие голосовые команды"
+    old "Create short voice commands"
+    new "Create short voice commands"
 
     # game/traces.rpy:2006
-    old "Распределить, кто кого предупредит"
-    new "Распределить, кто кого предупредит"
+    old "Decide who will warn whom"
+    new "Decide who will warn whom"
 
     # game/traces.rpy:2038
-    old "Сказать, что она уже может помогать другим"
-    new "Сказать, что она уже может помогать другим"
+    old "Tell her she can already help others"
+    new "Tell her she can already help others"
 
     # game/traces.rpy:2047
-    old "Попросить добавить памятку в общий чат"
-    new "Попросить добавить памятку в общий чат"
+    old "Ask her to post the memo in the group chat"
+    new "Ask her to post the memo in the group chat"
 
     # game/traces.rpy:2070
-    old "Сохранить накладную и не сообщать системе"
-    new "Сохранить накладную и не сообщать системе"
+    old "Keep the waybill without reporting it to the system"
+    new "Keep the waybill without reporting it to the system"
 
     # game/traces.rpy:2078
-    old "Позвать Макса и сверить знак"
-    new "Позвать Макса и сверить знак"
+    old "Call Max and compare the symbol"
+    new "Call Max and compare the symbol"
 
     # game/traces.rpy:2113
-    old "Перечислить вслух всё, что нельзя потерять в отчёте"
-    new "Перечислить вслух всё, что нельзя потерять в отчёте"
+    old "List out loud everything that must not be lost from the report"
+    new "List out loud everything that must not be lost from the report"
 
     # game/traces.rpy:2122
-    old "Спрятать в коробку копии документов"
-    new "Спрятать в коробку копии документов"
+    old "Hide document copies in the box"
+    new "Hide document copies in the box"
 
     # game/traces.rpy:2151
-    old "Сделать копию вместе с контрольной суммой"
-    new "Сделать копию вместе с контрольной суммой"
+    old "Make a copy with a checksum"
+    new "Make a copy with a checksum"
 
     # game/traces.rpy:2162
-    old "Попросить Артёма подписать время выгрузки"
-    new "Попросить Артёма подписать время выгрузки"
+    old "Ask Artyom to sign the export time"
+    new "Ask Artyom to sign the export time"
 
     # game/traces.rpy:2195
-    old "Пообещать не оставлять его историю без подписи"
-    new "Пообещать не оставлять его историю без подписи"
+    old "Promise not to leave his story unsigned"
+    new "Promise not to leave his story unsigned"
 
     # game/traces.rpy:2204
-    old "Спросить, почему он всё ещё остаётся"
-    new "Спросить, почему он всё ещё остаётся"
+    old "Ask why he is still staying"
+    new "Ask why he is still staying"
 
