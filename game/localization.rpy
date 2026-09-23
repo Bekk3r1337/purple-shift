@@ -18,58 +18,63 @@ init python:
 
 
 screen ps_language_gate():
-    # First-launch gate. The bilingual copy is intentionally not translated:
-    # both choices must remain understandable before a language is selected.
-    button:
-        xfill True
-        yfill True
-        background Solid("#030106f2")
-        action NullAction()
+    # Dedicated first-launch selector. Keep both languages visible before a
+    # preference exists, but do not cover the screen with an oversized panel.
+    modal True
+    zorder 300
+
+    add Solid("#05020bcc")
 
     frame:
         xalign 0.5
         yalign 0.5
-        xsize 920
-        padding (58, 48)
-        background Solid("#0d0717f5")
+        xsize 760
+        padding (44, 36)
+        background Solid("#0d0717f2")
 
         vbox:
             xfill True
-            spacing 18
+            spacing 14
+
+            text "PURPLE SHIFT":
+                xalign 0.5
+                size 20
+                color "#9a75be"
+                kerning 4
 
             text "ЯЗЫК / LANGUAGE":
                 xalign 0.5
-                size 42
+                size 34
                 color "#c99cff"
 
-            text "Выберите язык интерфейса и текста / Choose your language":
+            text "Выберите язык / Choose your language":
                 xalign 0.5
                 text_align 0.5
-                size 24
+                size 20
                 color "#ded2ea"
 
-            null height 16
+            null height 12
 
             hbox:
                 xalign 0.5
-                spacing 28
+                spacing 18
 
                 textbutton "РУССКИЙ":
                     action Function(ps_select_language, None)
-                    xsize 330
-                    ysize 78
+                    xsize 290
+                    ysize 64
                     text_xalign 0.5
 
-                textbutton "ENGLISH (BETA)":
+                textbutton "ENGLISH":
                     action Function(ps_select_language, "english")
-                    xsize 330
-                    ysize 78
+                    xsize 290
+                    ysize 64
                     text_xalign 0.5
 
-            null height 4
+            null height 6
 
-            text "Язык можно изменить позже в настройках. / You can change it later in Settings.":
+            text "Язык можно изменить в настройках / Language can be changed in Settings":
                 xalign 0.5
                 text_align 0.5
-                size 19
-                color "#a997bd"
+                size 16
+                color "#9f90b2"
