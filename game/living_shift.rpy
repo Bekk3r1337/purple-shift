@@ -631,7 +631,7 @@ init 12 python:
         for item_id, title, description in ps_storm_fragment_catalog:
             if item_id == fragment_id:
                 return title
-        return "Неизвестный след"
+        return _("Неизвестный след")
 
     def ps_storm_pressure():
         base = int(80.0 * len(set(ps_storm_fragments)) / len(ps_storm_fragment_catalog))
@@ -936,11 +936,11 @@ screen ps_storm_signal_panel():
                                 vbox:
                                     spacing 4
 
-                                    text (fragment_title if fragment_open else "НЕИЗВЕСТНЫЙ СЛЕД"):
+                                    text (_(fragment_title) if fragment_open else _("НЕИЗВЕСТНЫЙ СЛЕД")):
                                         color ("#ddaaff" if fragment_open else "#625a69")
                                         size 22
 
-                                    text (fragment_desc if fragment_open else "Нет данных"):
+                                    text (_(fragment_desc) if fragment_open else _("Нет данных")):
                                         color ("#b9a8c7" if fragment_open else "#554f59")
                                         size 18
 
@@ -1081,7 +1081,7 @@ screen ps_storm_decoder():
                                 size 18
                                 xalign 0.5
 
-                            text sequence_item[1]:
+                            text _(sequence_item[1]):
                                 color "#ffffff"
                                 size 20
                                 xalign 0.5
@@ -1094,7 +1094,7 @@ screen ps_storm_decoder():
                 xalign 0.5
 
                 for channel_id, channel_title in ps_storm_decoder_buttons:
-                    textbutton channel_title:
+                    textbutton _(channel_title):
                         action Function(ps_storm_decoder_choose, channel_id)
                         xsize 370
                         ysize 150
