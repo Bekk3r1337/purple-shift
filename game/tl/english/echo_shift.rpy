@@ -36,13 +36,6 @@ translate english ps_route_turning_point_1d68948a:
     # newb "Хорошо. Тогда не подсказывай раньше времени."
     newb "Okay. Then don't prompt me too early."
 
-# game/echo_shift.rpy:752
-translate english ps_route_turning_point_0ecc8c59:
-
-    # p "Посмотри на меня - и я продолжу. Не будем давать им время задавить тебя."
-    p "Look at me and I'll continue. We won't give them time to steamroll you."
-
-# game/echo_shift.rpy:753
 translate english ps_route_turning_point_610288bc:
 
     # newb "Спасибо. Только я тогда, наверное, опять ничего не скажу."
@@ -60,13 +53,6 @@ translate english ps_route_turning_point_8a4ba267:
     # n "Лера быстро кивает и убирает лист с заготовленной первой фразой в карман."
     n "Lera nods quickly and puts the sheet with her prepared opening line into her pocket."
 
-# game/echo_shift.rpy:763
-translate english ps_route_turning_point_73d5f4ac:
-
-    # n "Виктор держит кружку двумя руками. Когда думает, что ты отвернулся, переносит её в левую - правое запястье снова отзывается болью."
-    n "Viktor holds the mug with both hands. When he thinks you have looked away, he shifts it to his left - his right wrist is hurting again."
-
-# game/echo_shift.rpy:764
 translate english ps_route_turning_point_d44e2d7e:
 
     # vet "Не смотри так. До конца смены дотяну."
@@ -114,13 +100,6 @@ translate english ps_route_turning_point_702e261c:
     # n "Виктор кивает и снова берёт кружку правой рукой."
     n "Viktor nods and takes the mug in his right hand again."
 
-# game/echo_shift.rpy:790
-translate english ps_route_turning_point_33e2dd0f:
-
-    # n "Макс сидит напротив и крутит бумажный стакан. Обычно к этому моменту он успевает дать стакану имя и должность. Сегодня - ничего."
-    n "Max sits opposite you, turning a paper cup in his hands. Usually by now he has given the cup a name and a job title. Today - nothing."
-
-# game/echo_shift.rpy:791
 translate english ps_route_turning_point_03afaa9b:
 
     # mem "Ты сейчас обязан спросить, почему я молчу. По сценарию."
@@ -282,13 +261,6 @@ translate english ps_route_turning_point_7209d466:
     # vet "Бирку повесили, но ручной режим оставили. Могу показать, как закончить партию без датчика. Потом точно блокируем."
     vet "They put up the tag, but left manual mode enabled. I can show you how to finish the batch without the sensor. Then we definitely lock it out."
 
-# game/echo_shift.rpy:881
-translate english ps_route_turning_point_a3cdfdbb:
-
-    # p "Нет. Передай ключ Артёму сам. Не мне и не технику - сам."
-    p "No. Hand the key to Artyom yourself. Not to me, not to a technician - you."
-
-# game/echo_shift.rpy:882
 translate english ps_route_turning_point_f2195f72:
 
     # vet "Чтобы потом не забрать обратно?"
@@ -396,13 +368,6 @@ translate english ps_route_turning_point_5dd5cd5a:
     # p "Лишнюю запустим снова после проверки."
     p "We can restart an unnecessary stop after checking."
 
-# game/echo_shift.rpy:935
-translate english ps_route_turning_point_9b0373c5:
-
-    # sv "Хорошо. Стоп - общий. Запуск - через меня."
-    sv "Fine. Everyone can call a stop. Restart goes through me."
-
-# game/echo_shift.rpy:942
 translate english ps_route_turning_point_ceb1a75d:
 
     # sv "Тогда мне нужен доступ ко всем терминалам."
@@ -420,13 +385,6 @@ translate english ps_route_turning_point_b2d92d0c:
     # n "Артём отключает ручной стоп на остальных терминалах. Теперь кнопка остаётся только у него."
     n "Artyom disables the manual stop on the other terminals. Now only he has the button."
 
-# game/echo_shift.rpy:970
-translate english ps_team_conflict_scene_d7877f90:
-
-    # mem "Красная стрелка рядом с Лерой - просто система наконец выбрала фирменный цвет тревоги."
-    mem "The red arrow next to Lera just means the system finally picked a brand color for panic."
-
-# game/echo_shift.rpy:971
 translate english ps_team_conflict_scene_31beefcd:
 
     # newb "Можешь хотя бы раз не делать из меня объявление для всей комнаты?"
@@ -588,13 +546,6 @@ translate english ps_team_conflict_scene_1937cb2c:
     # sv "Нет. Ты отдашь ключ сейчас."
     sv "No. You hand over the key now."
 
-# game/echo_shift.rpy:1067
-translate english ps_team_conflict_scene_f6b97c9c:
-
-    # vet "А ты закроешь остаток чем - должностной инструкцией?"
-    vet "And what will you finish the remainder with - a job description?"
-
-# game/echo_shift.rpy:1068
 translate english ps_team_conflict_scene_18f762db:
 
     # sv "Если понадобится, остановлю участок."
@@ -618,13 +569,6 @@ translate english ps_team_conflict_scene_58b0007e:
     # sv "Чтобы решение не исчезло."
     sv "So the decision doesn't disappear."
 
-# game/echo_shift.rpy:1087
-translate english ps_team_conflict_scene_87c29982:
-
-    # p "Одна партия. Артём стоит у панели, Виктор не подходит к механизму. После - полная блокировка."
-    p "One batch. Artyom stays at the panel, Viktor does not touch the mechanism. After that - full lockout."
-
-# game/echo_shift.rpy:1088
 translate english ps_team_conflict_scene_46a17a67:
 
     # vet "Договорились."
@@ -768,13 +712,6 @@ translate english ps_reactive_echo_scene_8d6c4f33:
     # p "А в отчёте это указали?"
     p "Did the report mention that?"
 
-# game/echo_shift.rpy:1182
-translate english ps_reactive_echo_scene_da8718d0:
-
-    # sv "Теперь - да. Я добавил отдельную причину: «остановлено сотрудником до происшествия»."
-    sv "Now it does. I added a separate reason: \"stopped by employee before incident.\""
-
-# game/echo_shift.rpy:1205
 translate english ps_reactive_echo_scene_61b4739e:
 
     # newb "Вчера я начала сама. Сегодня в служебной записке впервые есть моя фраза. Раньше начальник пересказывал всё за меня."
@@ -810,13 +747,6 @@ translate english ps_reactive_echo_scene_7b0e969c:
     # p "Значит, проверять людей через час было поздно."
     p "Then checking on people after an hour was too late."
 
-# game/echo_shift.rpy:1238
-translate english ps_reactive_echo_scene_d85d5d38:
-
-    # mem "Хвост выбили за сорок минут. Потом два часа никто не разговаривал - воздуха не хватало. Зато план зелёный."
-    mem "We cleared the backlog in forty minutes. Then nobody spoke for two hours - we barely had air to breathe. But the target is green."
-
-# game/echo_shift.rpy:1252
 translate english ps_reactive_echo_scene_43009be0:
 
     # newb "Сегодня не жди от меня сигнала. Если что-то будет не так, я скажу первой. Ты всё равно услышишь."
@@ -882,13 +812,6 @@ translate english ps_deep_investigation_scene_152ab552:
     # cur "Ты называешь это системой?"
     cur "You call that a system?"
 
-# game/echo_shift.rpy:1320
-translate english ps_deep_investigation_scene_300d447e:
-
-    # p "Я называю это хронологией. Система - ваше слово."
-    p "I call it a timeline. \"System\" is your word."
-
-# game/echo_shift.rpy:1321
 translate english ps_deep_investigation_scene_0b281db5:
 
     # sv "Все четыре события подтверждаются независимо."
@@ -912,25 +835,11 @@ translate english ps_deep_investigation_scene_e62c4cf6:
     # n "Два события подтверждены. Для остальных куратор требует отдельный источник и точное время."
     n "Two events are confirmed. For the others, the Curator demands a separate source and an exact time."
 
-# game/echo_shift.rpy:1333
-translate english ps_deep_investigation_scene_4f0f341c:
-
-    # cur "Подозрение - не последовательность. Вы принесли четыре отдельных тревоги и назвали их причиной."
-    cur "Suspicion is not a sequence. You brought four separate warning signs and called them a cause."
-
-# game/echo_shift.rpy:1334
 translate english ps_deep_investigation_scene_2e2730be:
 
     # n "На доске много связей, но ты не можешь назвать источник ни для одной из них."
     n "There are many connections on the board, but you cannot name a source for any of them."
 
-# game/echo_shift.rpy:1360
-translate english ps_storm_mimic_scene_99523810:
-
-    # n "На долю секунды память подсовывает лишнего человека в знакомой сцене. Отводишь взгляд - и остаётся только экран телефона."
-    n "For a fraction of a second, your memory inserts an extra person into a familiar scene. You look away - only the phone screen remains."
-
-# game/echo_shift.rpy:1365
 translate english ps_storm_mimic_scene_eaec00f6:
 
     # n "На одном из восстановленных кадров Макс сидит у терминала один. На его лице впервые нет привычной шутки."
@@ -960,13 +869,6 @@ translate english ps_storm_mimic_scene_e49d88be:
     # n "Отмеченное сообщение гаснет. Через секунду возвращается с обычным временем и отметкой «прочитано». Настоящий автор отвечает коротко: «Это был я». Поддельный голос остаётся в списке."
     n "The marked message goes dark. A second later it returns with a normal timestamp and a \"read\" mark. The real author replies briefly: \"That was me.\" The forged voice remains in the list."
 
-# game/echo_shift.rpy:1430
-translate english ps_route_resolution_scene_8303b680:
-
-    # newb "Я уже отправила свою хронологию. Не тебе на проверку - сразу в дело."
-    newb "I've already submitted my timeline. Not to you for review - straight into the case."
-
-# game/echo_shift.rpy:1431
 translate english ps_route_resolution_scene_ea64bf7e:
 
     # p "Страшно?"
@@ -1128,13 +1030,6 @@ translate english ps_zero_shift_5162fb84:
     # centered "ПОСЛЕ ТИТРОВ\n\nНУЛЕВАЯ СМЕНА"
     centered "POST-CREDITS\\n\\nZERO SHIFT"
 
-# game/echo_shift.rpy:1520
-translate english ps_zero_shift_409961d3:
-
-    # n "Проходная уже закрыла вашу неделю, но телефон показывает незавершённую операцию. Время начала - 00:00. Время окончания отсутствует. В карточке нет номера сотрудника. Только строка: «СМЕНА 0 // НЕ ПЕРЕДАНА»."
-    n "The gate has already closed out your week, but the phone shows an unfinished operation. Start time - 00:00. No end time. There is no employee number in the record. Only one line: \"SHIFT 0 // NOT HANDED OVER.\""
-
-# game/echo_shift.rpy:1527
 translate english ps_zero_shift_249963f4:
 
     # newb "Сообщение пришло всем. На этот раз текст одинаковый."
@@ -1170,19 +1065,6 @@ translate english ps_zero_shift_e8d50f04:
     # sv "В документах её нет. Но все отменённые заявки проходили через её код. V-13 был не сектором. Сначала это был номер смены."
     sv "It isn't in the documents. But every cancelled ticket passed through its code. V-13 wasn't a sector. At first, it was a shift number."
 
-# game/echo_shift.rpy:1542
-translate english ps_zero_shift_a0a2c8c7:
-
-    # n "За бетонной дверью щёлкает реле. По очереди загораются пять индикаторов - ровно столько, сколько людей стоит в коридоре."
-    n "A relay clicks behind the concrete door. Five indicators light up one after another - exactly as many as there are people standing in the corridor."
-
-# game/echo_shift.rpy:1551
-translate english ps_zero_shift_f75aa139:
-
-    # p "Мы. По очереди. Каждый - только то, что видел сам."
-    p "We will. One at a time. Each person says only what they saw themselves."
-
-# game/echo_shift.rpy:1552
 translate english ps_zero_shift_5c52457f:
 
     # n "Четыре голоса за спиной отвечают не одновременно, но одним решением."
