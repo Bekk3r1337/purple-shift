@@ -1,0 +1,45 @@
+name: Refresh English translation stubs
+
+on:
+  push:
+    branches:
+      - agent/full-en-localization
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    env:
+      RENPY_VERSION: "8.5.3"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/full-en-localization
+      - uses: actions/cache@v4
+        id: renpy-cache
+        with:
+          path: ${{ runner.temp }}/renpy-sdk
+          key: renpy-${{ runner.os }}-${{ env.RENPY_VERSION }}
+      - name: Download Ren'Py SDK
+        if: steps.renpy-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p "${RUNNER_TEMP}/renpy-sdk"
+          curl --fail --location "https://www.renpy.org/dl/${RENPY_VERSION}/renpy-${RENPY_VERSION}-sdk.tar.bz2" --output "${RUNNER_TEMP}/renpy-sdk.tar.bz2"
+          tar --no-same-owner --strip-components=1 -xjf "${RUNNER_TEMP}/renpy-sdk.tar.bz2" -C "${RUNNER_TEMP}/renpy-sdk"
+      - name: Refresh English translation files
+        run: |
+          "${RUNNER_TEMP}/renpy-sdk/renpy.sh" "${GITHUB_WORKSPACE}" translate english
+      - name: Commit translation stubs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add game/tl/english
+          if git diff --cached --quiet; then
+            echo "No new translation stubs."
+            exit 0
+          fi
+          git commit -m "chore(i18n): refresh English dynamic translation stubs"
+          git push origin HEAD:agent/full-en-localization
