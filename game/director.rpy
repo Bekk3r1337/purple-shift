@@ -899,7 +899,10 @@ screen ps_director_settings():
                     text_xalign 0.5
                     text_yalign 0.5
 
-            textbutton "[u'✓' if persistent.ps_ambient_enabled else u'-'] Атмосфера склада":
+            textbutton ("{} {}".format(
+                u"✓" if persistent.ps_ambient_enabled else u"-",
+                _("Атмосфера склада"),
+            )):
                 action Function(ps_toggle_ambience)
                 xfill True
                 ysize 82
@@ -913,7 +916,10 @@ screen ps_director_settings():
                 color "#a99ab8"
                 size 20
 
-            textbutton "[u'✓' if persistent.ps_reduce_motion else u'-'] Уменьшить движение":
+            textbutton ("{} {}".format(
+                u"✓" if persistent.ps_reduce_motion else u"-",
+                _("Уменьшить движение"),
+            )):
                 action Function(ps_toggle_reduce_motion)
                 xfill True
                 ysize 82
@@ -923,7 +929,10 @@ screen ps_director_settings():
                 text_size 25
                 text_xalign 0.0
 
-            textbutton "[u'✓' if persistent.ps_reduce_flashes else u'-'] Уменьшить вспышки":
+            textbutton ("{} {}".format(
+                u"✓" if persistent.ps_reduce_flashes else u"-",
+                _("Уменьшить вспышки"),
+            )):
                 action Function(ps_toggle_reduce_flashes)
                 xfill True
                 ysize 82
@@ -933,7 +942,10 @@ screen ps_director_settings():
                 text_size 25
                 text_xalign 0.0
 
-            textbutton "[u'✓' if persistent.ps_minigame_assist else u'-'] Помощь в мини-играх":
+            textbutton ("{} {}".format(
+                u"✓" if persistent.ps_minigame_assist else u"-",
+                _("Помощь в мини-играх"),
+            )):
                 action Function(ps_toggle_minigame_assist)
                 xfill True
                 ysize 82
