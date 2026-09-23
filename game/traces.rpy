@@ -526,7 +526,7 @@ init python:
         ps_veteran_safe = True
         ps_signed_false_report = False
         ps_key_choices = [
-            "Выбор главы восстановил сбалансированный путь до этого дня."
+            _("Выбор главы восстановил сбалансированный путь до этого дня.")
         ]
         ps_chapter_replay_mode = True
 
