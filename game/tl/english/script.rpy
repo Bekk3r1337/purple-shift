@@ -1312,241 +1312,241 @@ translate english chapter2_night_home_8207e12f:
 translate english chapter2_night_home_c4fb34f5:
 
     # n "Дома тепло и непривычно тихо."
-    n "Дома тепло и непривычно тихо."
+    n "Home is warm and unnaturally quiet."
 
 # game/script.rpy:936
 translate english chapter2_night_home_1c634752:
 
     # n "Ты снимаешь обувь, ставишь телефон на стол и ловишь себя на простой мысли: если не смотреть в приложение, может, ничего и не было."
-    n "Ты снимаешь обувь, ставишь телефон на стол и ловишь себя на простой мысли: если не смотреть в приложение, может, ничего и не было."
+    n "You take off your shoes, put the phone on the table, and catch yourself thinking something simple: if you do not look at the app, maybe none of it happened."
 
 # game/script.rpy:938
 translate english chapter2_night_home_1d77aca1:
 
     # n "Плечи ноют, пальцы всё ещё чувствуют края картона. В голове продолжают сменяться номера ячеек."
-    n "Плечи ноют, пальцы всё ещё чувствуют края картона. В голове продолжают сменяться номера ячеек."
+    n "Your shoulders ache. Your fingers still feel the edges of cardboard. Bin numbers keep cycling through your head."
 
 # game/script.rpy:940
 translate english chapter2_night_home_56c932bc:
 
     # n "Ты подходишь к раковине. Шум воды впервые за день не требует от тебя никакого действия."
-    n "Ты подходишь к раковине. Шум воды впервые за день не требует от тебя никакого действия."
+    n "You walk to the sink. For the first time all day, the sound of something does not demand an action from you."
 
 # game/script.rpy:952
 translate english chapter2_night_wash_346479eb:
 
     # n "Ты моешь руки, пока вода не становится прохладной. Запах картона исчезает, но пальцы всё ещё напряжены."
-    n "Ты моешь руки, пока вода не становится прохладной. Запах картона исчезает, но пальцы всё ещё напряжены."
+    n "You wash your hands until the water turns cool. The smell of cardboard fades, but your fingers are still tense."
 
 # game/script.rpy:960
 translate english chapter2_night_skip_wash_8a250093:
 
     # n "Ты проходишь мимо раковины и садишься на край кровати. Пальцы трутся друг о друга, продолжая по памяти перебирать коробки."
-    n "Ты проходишь мимо раковины и садишься на край кровати. Пальцы трутся друг о друга, продолжая по памяти перебирать коробки."
+    n "You pass the sink and sit on the edge of the bed. Your fingers rub against each other, still sorting imaginary boxes from memory."
 
 # game/script.rpy:967
 translate english chapter2_night_phone_9e301b40:
 
     # n "Телефон лежит на столе экраном вниз. Каждая вибрация напоминает, что график никуда не делся."
-    n "Телефон лежит на столе экраном вниз. Каждая вибрация напоминает, что график никуда не делся."
+    n "The phone lies face down on the table. Every vibration reminds you that the schedule has not gone anywhere."
 
 # game/script.rpy:979
 translate english chapter2_night_schedule_9639baac:
 
     # n "Ты переворачиваешь телефон. Приложение так и осталось открыто на графике: завтра снова смена. Ты машинально прикидываешь время будильника и чувствуешь, как возвращается раздражение."
-    n "Ты переворачиваешь телефон. Приложение так и осталось открыто на графике: завтра снова смена. Ты машинально прикидываешь время будильника и чувствуешь, как возвращается раздражение."
+    n "You turn the phone over. The app is still open on the schedule: another shift tomorrow. You automatically calculate the alarm time and feel the irritation returning."
 
 # game/script.rpy:981
 translate english chapter2_night_schedule_a513c003:
 
     # n "В голове появляется мысль:"
-    n "В голове появляется мысль:"
+    n "A thought appears in your head:"
 
 # game/script.rpy:982
 translate english chapter2_night_schedule_117b544a:
 
     # n "«Я уже не выбираю. Я только подтверждаю.»"
-    n "«Я уже не выбираю. Я только подтверждаю.»"
+    n "\"I'm not choosing anymore. I'm just confirming.\""
 
 # game/script.rpy:990
 translate english chapter2_night_denial_6dc470a7:
 
     # n "Ты не берёшь телефон. Сдвигаешь его чуть дальше, как опасный предмет."
-    n "Ты не берёшь телефон. Сдвигаешь его чуть дальше, как опасный предмет."
+    n "You do not pick up the phone. You slide it a little farther away, like something dangerous."
 
 # game/script.rpy:992
 translate english chapter2_night_denial_207db09e:
 
     # n "Ты знаешь — завтра всё равно наступит. Но следующие десять минут хочешь потратить на себя, без графиков и норм."
-    n "Ты знаешь — завтра всё равно наступит. Но следующие десять минут хочешь потратить на себя, без графиков и норм."
+    n "You know tomorrow will come anyway. But you want the next ten minutes for yourself, without schedules or targets."
 
 # game/script.rpy:994
 translate english chapter2_night_denial_34fe1799:
 
     # n "Без шума склада наконец слышно собственный вопрос: чего ты сам хочешь от этой работы?"
-    n "Без шума склада наконец слышно собственный вопрос: чего ты сам хочешь от этой работы?"
+    n "Without the warehouse noise, you can finally hear your own question: what do you want from this job?"
 
 # game/script.rpy:1004
 translate english chapter2_night_end_12a65623:
 
     # n "Ты долго ворочаешься. Перед сном успеваешь подумать: «Я справлюсь». И следом: «А если это и есть то самое привыкание?»"
-    n "Ты долго ворочаешься. Перед сном успеваешь подумать: «Я справлюсь». И следом: «А если это и есть то самое привыкание?»"
+    n "You toss and turn for a long time. Before sleep, you manage to think, \"I can handle this.\" Then: \"What if this is exactly what getting used to it feels like?\""
 
 translate english strings:
 
     # game/script.rpy:41
-    old "Подумать: «Ладно. Это просто работа»"
-    new "Подумать: «Ладно. Это просто работа»"
+    old "Think: \"All right. It's just a job\""
+    new "Think: \"All right. It's just a job\""
 
     # game/script.rpy:44
-    old "Подумать: «Ненадолго. Главное - пережить»"
-    new "Подумать: «Ненадолго. Главное - пережить»"
+    old "Think: \"Not for long. I just have to get through it\""
+    new "Think: \"Not for long. I just have to get through it\""
 
     # game/script.rpy:47
-    old "Отшутиться про себя"
-    new "Отшутиться про себя"
+    old "Make a joke to yourself"
+    new "Make a joke to yourself"
 
     # game/script.rpy:95
-    old "«Деньги здесь и сейчас»"
-    new "«Деньги здесь и сейчас»"
+    old "\"I need money right now\""
+    new "\"I need money right now\""
 
     # game/script.rpy:97
-    old "«Просто нужна точка опоры»"
-    new "«Просто нужна точка опоры»"
+    old "\"I just need something to hold on to\""
+    new "\"I just need something to hold on to\""
 
     # game/script.rpy:99
-    old "Отшутиться"
-    new "Отшутиться"
+    old "Make a joke"
+    new "Make a joke"
 
     # game/script.rpy:170
-    old "Сказать честно: «Я не понял, куда нажал»"
-    new "Сказать честно: «Я не понял, куда нажал»"
+    old "Be honest: \"I don't know what I pressed\""
+    new "Be honest: \"I don't know what I pressed\""
 
     # game/script.rpy:172
-    old "Попробовать отшутиться"
-    new "Попробовать отшутиться"
+    old "Try to joke it off"
+    new "Try to joke it off"
 
     # game/script.rpy:174
-    old "Свалить на устройство: «ТСД глючит»"
-    new "Свалить на устройство: «ТСД глючит»"
+    old "Blame the device: \"The scanner is glitching\""
+    new "Blame the device: \"The scanner is glitching\""
 
     # game/script.rpy:187
-    old "Кивнуть"
-    new "Кивнуть"
+    old "Nod"
+    new "Nod"
 
     # game/script.rpy:189
-    old "Спросить ещё раз, уточнить"
-    new "Спросить ещё раз, уточнить"
+    old "Ask again and make sure you understand"
+    new "Ask again and make sure you understand"
 
     # game/script.rpy:294
-    old "Подойти и помочь разобраться"
-    new "Подойти и помочь разобраться"
+    old "Go over and help"
+    new "Go over and help"
 
     # game/script.rpy:296
-    old "Не отвлекаться от своей нормы"
-    new "Не отвлекаться от своей нормы"
+    old "Stay focused on your own target"
+    new "Stay focused on your own target"
 
     # game/script.rpy:298
-    old "Выйти из линии на минуту и перевести дух"
-    new "Выйти из линии на минуту и перевести дух"
+    old "Step out of the line for a minute and catch your breath"
+    new "Step out of the line for a minute and catch your breath"
 
     # game/script.rpy:394
-    old "Сосредоточиться на своей линии"
-    new "Сосредоточиться на своей линии"
+    old "Focus on your own line"
+    new "Focus on your own line"
 
     # game/script.rpy:396
-    old "Оглядеться по сторонам"
-    new "Оглядеться по сторонам"
+    old "Look around"
+    new "Look around"
 
     # game/script.rpy:447
-    old "Сказать честно: «На пределе»"
-    new "Сказать честно: «На пределе»"
+    old "Be honest: \"I'm at my limit\""
+    new "Be honest: \"I'm at my limit\""
 
     # game/script.rpy:449
-    old "Сказать, что всё нормально"
-    new "Сказать, что всё нормально"
+    old "Say that everything is fine"
+    new "Say that everything is fine"
 
     # game/script.rpy:507
-    old "Подойти и помочь поднять коробки"
-    new "Подойти и помочь поднять коробки"
+    old "Go over and help pick up the boxes"
+    new "Go over and help pick up the boxes"
 
     # game/script.rpy:509
-    old "Остаться на своём месте"
-    new "Остаться на своём месте"
+    old "Stay at your station"
+    new "Stay at your station"
 
     # game/script.rpy:629
-    old "Спросить: «С каждым разом легче?»"
-    new "Спросить: «С каждым разом легче?»"
+    old "Ask: \"Does it get easier each time?\""
+    new "Ask: \"Does it get easier each time?\""
 
     # game/script.rpy:631
-    old "Кивнуть и промолчать"
-    new "Кивнуть и промолчать"
+    old "Nod and stay silent"
+    new "Nod and stay silent"
 
     # game/script.rpy:672
-    old "Ответить шуткой"
-    new "Ответить шуткой"
+    old "Answer with a joke"
+    new "Answer with a joke"
 
     # game/script.rpy:674
-    old "Сказать честно: «Я выжат»"
-    new "Сказать честно: «Я выжат»"
+    old "Be honest: \"I'm exhausted\""
+    new "Be honest: \"I'm exhausted\""
 
     # game/script.rpy:676
-    old "Сказать: «Нормально»"
-    new "Сказать: «Нормально»"
+    old "Say: \"Fine\""
+    new "Say: \"Fine\""
 
     # game/script.rpy:722
-    old "Идти домой молча"
-    new "Идти домой молча"
+    old "Walk home in silence"
+    new "Walk home in silence"
 
     # game/script.rpy:724
-    old "Задержаться на минуту и осмотреться"
-    new "Задержаться на минуту и осмотреться"
+    old "Stay for a minute and look around"
+    new "Stay for a minute and look around"
 
     # game/script.rpy:750
-    old "Проверить телефон"
-    new "Проверить телефон"
+    old "Check your phone"
+    new "Check your phone"
 
     # game/script.rpy:752
-    old "Не трогать телефон. Просто идти"
-    new "Не трогать телефон. Просто идти"
+    old "Do not touch the phone. Just walk"
+    new "Do not touch the phone. Just walk"
 
     # game/script.rpy:761
-    old "Разозлиться"
-    new "Разозлиться"
+    old "Get angry"
+    new "Get angry"
 
     # game/script.rpy:763
-    old "Принять как факт"
-    new "Принять как факт"
+    old "Accept it as a fact"
+    new "Accept it as a fact"
 
     # game/script.rpy:822
-    old "Спросить: «Ты давно здесь?»"
-    new "Спросить: «Ты давно здесь?»"
+    old "Ask: \"Have you been here long?\""
+    new "Ask: \"Have you been here long?\""
 
     # game/script.rpy:824
-    old "Сказать: «Не хочу привыкнуть»"
-    new "Сказать: «Не хочу привыкнуть»"
+    old "Say: \"I don't want to get used to it\""
+    new "Say: \"I don't want to get used to it\""
 
     # game/script.rpy:874
-    old "Сказать ей что-то поддерживающее"
-    new "Сказать ей что-то поддерживающее"
+    old "Say something supportive to her"
+    new "Say something supportive to her"
 
     # game/script.rpy:876
-    old "Сказать нейтрально: «Пора домой»"
-    new "Сказать нейтрально: «Пора домой»"
+    old "Say neutrally: \"Time to go home\""
+    new "Say neutrally: \"Time to go home\""
 
     # game/script.rpy:943
-    old "Долго отмывать руки после смены"
-    new "Долго отмывать руки после смены"
+    old "Wash your hands thoroughly after the shift"
+    new "Wash your hands thoroughly after the shift"
 
     # game/script.rpy:945
-    old "Не мыть. Просто лечь"
-    new "Не мыть. Просто лечь"
+    old "Do not wash them. Just lie down"
+    new "Do not wash them. Just lie down"
 
     # game/script.rpy:970
-    old "Проверить график на завтра"
-    new "Проверить график на завтра"
+    old "Check tomorrow's schedule"
+    new "Check tomorrow's schedule"
 
     # game/script.rpy:972
-    old "Не смотреть. Сделать вид, что завтра не существует"
-    new "Не смотреть. Сделать вид, что завтра не существует"
+    old "Do not look. Pretend tomorrow does not exist"
+    new "Do not look. Pretend tomorrow does not exist"
 
