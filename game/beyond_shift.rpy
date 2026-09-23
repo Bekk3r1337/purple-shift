@@ -473,8 +473,10 @@ screen ps2_journal():
 
                                 vbox:
                                     spacing 4
-                                    text "День [entry['day']] · [entry['phase']] · [entry['title']]" color "#e7d7f7" size 22
-                                    text entry["consequence"] color "#ab9bb8" size 19
+                                    $ entry_phase = ps_runtime_text(entry["phase"])
+                                    $ entry_title = ps_runtime_text(entry["title"])
+                                    text _("День [entry['day']] · [entry_phase] · [entry_title]") color "#e7d7f7" size 22
+                                    text ps_runtime_text(entry["consequence"]) color "#ab9bb8" size 19
                     else:
                         text "Здесь появятся решения, которые вернутся позже." color "#93869e" size 23 xalign 0.5
 
@@ -569,8 +571,10 @@ screen ps2_decision_map():
 
                                 if day_entries:
                                     for entry in day_entries:
-                                        text "[entry['phase']]: [entry['title']]" color "#f0e7f6" size 22
-                                        text entry["consequence"] color "#aa9ab7" size 18
+                                        $ entry_phase = ps_runtime_text(entry["phase"])
+                                        $ entry_title = ps_runtime_text(entry["title"])
+                                        text "[entry_phase]: [entry_title]" color "#f0e7f6" size 22
+                                        text ps_runtime_text(entry["consequence"]) color "#aa9ab7" size 18
                                 else:
                                     text "Эта часть недели ещё не оставила следа." color "#6e6575" size 19
 
