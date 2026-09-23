@@ -783,6 +783,8 @@ testsuite purple_shift:
         assert eval (ps_default_player_name() == "Employee")
         assert eval (ps_runtime_text("Ты поставил темп впереди сомнений. Смена это почувствовала.") == "You put pace ahead of doubt. The shift felt it.")
         assert eval (ps_runtime_text("Перехватить движение") == "Stop the Motion")
+        assert eval (ps_runtime_text("Человек в потоке") == "Human in the Flow")
+        assert eval (ps_runtime_text("Итоги первой смены") == "First Shift Results")
 
         $ persistent.ps_language_code = "russian"
         assert eval (ps_default_player_name() == "Сотрудник")

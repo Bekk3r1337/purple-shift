@@ -53,7 +53,7 @@ init python:
             "efficiency": "Тащер системы",
             "humor": "Голос в шуме",
         }
-        return _(names[ps_route_id()])
+        return ps_runtime_text(names[ps_route_id()])
 
     def ps_route_description():
         descriptions = {
@@ -62,7 +62,7 @@ init python:
             "efficiency": "Ты быстро разбираешься в правилах и держишь темп.",
             "humor": "Твои шутки помогают команде пережить тяжёлую смену.",
         }
-        return _(descriptions[ps_route_id()])
+        return ps_runtime_text(descriptions[ps_route_id()])
 
     def ps_ending_id():
         if ps_final_choice == "правда" and ps_evidence >= 3 and ps_integrity >= 3:
@@ -150,7 +150,7 @@ screen ps_stat_card(title, value, accent):
             hbox:
                 xfill True
 
-                text _(title):
+                text ps_runtime_text(title):
                     color "#efeaff"
                     size 28
 
@@ -187,12 +187,12 @@ screen ps_shift_report(title, subtitle):
             spacing 20
             xfill True
 
-            text _(title):
+            text ps_runtime_text(title):
                 color "#c8a2ff"
                 size 52
                 xalign 0.5
 
-            text _(subtitle):
+            text ps_runtime_text(subtitle):
                 color "#d8c7ff"
                 size 27
                 xalign 0.5
@@ -204,10 +204,10 @@ screen ps_shift_report(title, subtitle):
                 spacing 22
                 xalign 0.5
 
-                use ps_stat_card(_("Человечность"), ps_humanity, "#ff86c8")
-                use ps_stat_card(_("Выносливость"), ps_endurance, "#7fd9ff")
-                use ps_stat_card(_("Эффективность"), ps_efficiency, "#8dff9b")
-                use ps_stat_card(_("Юмор"), ps_humor, "#ffd36f")
+                use ps_stat_card(ps_runtime_text("Человечность"), ps_humanity, "#ff86c8")
+                use ps_stat_card(ps_runtime_text("Выносливость"), ps_endurance, "#7fd9ff")
+                use ps_stat_card(ps_runtime_text("Эффективность"), ps_efficiency, "#8dff9b")
+                use ps_stat_card(ps_runtime_text("Юмор"), ps_humor, "#ffd36f")
 
             frame:
                 xfill True
@@ -232,16 +232,16 @@ screen ps_shift_report(title, subtitle):
                 vbox:
                     spacing 7
 
-                    text "Что смена запомнила:":
+                    text ps_runtime_text("Что смена запомнила:"):
                         color "#a98fcf"
                         size 23
 
                     for choice in ps_key_choices[-3:]:
-                        text ("• " + _(choice)):
+                        text ("• " + ps_runtime_text(choice)):
                             color "#e7ddf7"
                             size 23
 
-            textbutton "ПРОДОЛЖИТЬ":
+            textbutton ps_runtime_text("ПРОДОЛЖИТЬ"):
                 id "ps_report_continue"
                 action Return()
                 xalign 0.5
@@ -277,18 +277,18 @@ screen ps_final_report(title, subtitle):
             spacing 26
             xfill True
 
-            text "ФИНАЛ":
+            text ps_runtime_text("ФИНАЛ"):
                 color "#8d64b8"
                 size 26
                 xalign 0.5
 
-            text _(title):
+            text ps_runtime_text(title):
                 color "#d2adff"
                 size 55
                 text_align 0.5
                 xalign 0.5
 
-            text _(subtitle):
+            text ps_runtime_text(subtitle):
                 color "#eee8f7"
                 size 29
                 text_align 0.5
@@ -315,7 +315,7 @@ screen ps_final_report(title, subtitle):
                         xalign 0.5
 
             if ps_key_choices:
-                text "Последнее, что запомнила смена:":
+                text ps_runtime_text("Последнее, что запомнила смена:"):
                     color "#a98fcf"
                     size 23
                     xalign 0.5
@@ -327,7 +327,7 @@ screen ps_final_report(title, subtitle):
                         xalign 0.5
                         text_align 0.5
 
-            textbutton "ЗАВЕРШИТЬ ИСТОРИЮ":
+            textbutton ps_runtime_text("ЗАВЕРШИТЬ ИСТОРИЮ"):
                 id "ps_final_continue"
                 action Return()
                 xalign 0.5
