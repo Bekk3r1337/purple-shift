@@ -3,6 +3,11 @@
 
 init -5 python:
     PS_RUNTIME_EN = {
+        "День": "Day",
+        "ДЕНЬ": "DAY",
+        "восстановлено": "restored",
+        "Сбалансированный путь": "Balanced Route",
+        "Выбор главы восстановил человеческий путь до этого дня.": "Chapter Select restored the human path up to this day.",
         "до смены": "before shift",
         "в смене": "during shift",
         "после смены": "after shift",
