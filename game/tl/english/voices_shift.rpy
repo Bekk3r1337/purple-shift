@@ -1,18 +1,5 @@
 # TODO: Translation updated at 2026-09-23 08:18
 
-# game/voices_shift.rpy:406
-translate english ps_team_names_75580843:
-
-    # newb "We've been working side by side for two days and I'm still just Newcomer to everyone. I'm Lera. Valeria if I ever need another written statement."
-    newb "We've been working side by side for two days and I'm still just \"Newcomer\" to everyone. I'm Lera. Valeria if I ever need another written statement."
-
-# game/voices_shift.rpy:409
-translate english ps_team_names_35258f20:
-
-    # mem "Max. Just Max. Joker is a position with no extra pay and no vacation entitlement."
-    mem "Max. Just Max. \"Joker\" is a position with no extra pay and no vacation entitlement."
-
-# game/voices_shift.rpy:415
 translate english ps_team_names_edbe7024:
 
     # vet "Виктор."
@@ -30,43 +17,11 @@ translate english ps_team_names_db69e36e:
     # vet "Савельев. Теперь торжественно иди переодеваться."
     vet "Savelyev. Now ceremoniously go get changed."
 
-# game/voices_shift.rpy:424
-translate english ps_team_names_4d93ac8f:
-
-    # sv "Артём Волков. Раз уж у нас вечер знакомств - закончите его до запуска линии."
-    sv "Artyom Volkov. Since we're having an introduction night, finish it before the line starts."
-
-# game/voices_shift.rpy:427
-translate english ps_team_names_441a2a50:
-
-    # p "And I'm [ps_player_name]."
-    p "And I'm [ps_player_name]."
-
-# game/voices_shift.rpy:469
-translate english ps_route_week_scene_d7e5c8da:
-
-    # n "Перед запуском Лера прячет сложенный лист под перчатку. На нём в две колонки записаны ошибки: слева её действия, справа - то, что делал ТСД."
-    n "Before startup, Lera tucks a folded sheet under her glove. Errors are written in two columns: her actions on the left, what the scanner did on the right."
-
-# game/voices_shift.rpy:470
-translate english ps_route_week_scene_049b8c7e:
-
-    # newb "I don't want to write just 'made a mistake' anymore. Then it looks like everything happened because of me, and what the scanner did stops mattering."
-    newb "I don't want to write just \"made a mistake\" anymore. Then it looks like everything happened because of me, and what the scanner did stops mattering."
-
-# game/voices_shift.rpy:471
 translate english ps_route_week_scene_a4c3abd3:
 
     # p "Тогда фиксируй шаги. Где нажала, что увидела и что произошло после."
     p "Then record the steps. What you pressed, what you saw, and what happened afterward."
 
-# game/voices_shift.rpy:472
-translate english ps_route_week_scene_1cea23c6:
-
-    # newb "Will you help me check it? Not correct it for me - just check."
-    newb "Will you help me check it? Not correct it for me - just check."
-
-# game/voices_shift.rpy:482
 translate english ps_route_week_scene_dcd4aa0d:
 
     # n "Виктор задерживается у двери и несколько раз сжимает и разжимает пальцы. Увидев твой взгляд, опускает руку."
@@ -120,13 +75,6 @@ translate english ps_route_week_scene_99d02d5d:
     # p "Ты всегда столько говоришь?"
     p "Do you always talk this much?"
 
-# game/voices_shift.rpy:498
-translate english ps_route_week_scene_f65114c1:
-
-    # mem "Когда вокруг тихо - да. Скажешь что-нибудь, тебе ответят, и вроде все ещё здесь. Господи, как это сейчас прозвучало."
-    mem "When it's quiet around me - yeah. You say something, someone answers, and it feels like everyone's still here. God, that sounded awful out loud."
-
-# game/voices_shift.rpy:499
 translate english ps_route_week_scene_fae630ad:
 
     # p "А если не отвечают?"
@@ -318,13 +266,6 @@ translate english ps_route_week_scene_3f7a644e:
     # newb "Спасибо. Только не дай им решить, что я вообще ничего не понимаю."
     newb "Thanks. Just don't let them decide that I understand nothing at all."
 
-# game/voices_shift.rpy:597
-translate english ps_route_week_scene_915956c0:
-
-    # vet "I signed a similar paper once. Not because I was guilty - I just wanted to go home and thought one signature would change nothing."
-    vet "I signed a similar paper once. Not because I was guilty - I just wanted to go home and thought one signature would change nothing."
-
-# game/voices_shift.rpy:598
 translate english ps_route_week_scene_7372464f:
 
     # p "Изменила?"
@@ -384,13 +325,6 @@ translate english ps_route_week_scene_b2a744ba:
     # sv "Это прислали сверху. От меня ждут подпись до конца смены."
     sv "This came from above. They expect my signature before the shift ends."
 
-# game/voices_shift.rpy:622
-translate english ps_route_week_scene_648839ae:
-
-    # p "And from Lera - agreement with what they've already decided."
-    p "And from Lera - agreement with what they've already decided."
-
-# game/voices_shift.rpy:623
 translate english ps_route_week_scene_72f4ec9e:
 
     # sv "Да."
@@ -504,13 +438,6 @@ translate english ps_route_week_scene_58210ab4:
     # sv "Зато требует объяснять. Останешься рядом, когда начнут спрашивать?"
     sv "That means questions. Will you stay when they start asking?"
 
-# game/voices_shift.rpy:675
-translate english ps_route_week_scene_68ca0847:
-
-    # p "If you make the decision yourself - I'll stay."
-    p "If you make the decision yourself - I'll stay."
-
-# game/voices_shift.rpy:687
 translate english ps_route_week_scene_faa0b7a4:
 
     # newb "В первый день я ждала, что ты решишь за меня. Сейчас... я знаю, что делать. Просто побудь рядом, ладно?"
@@ -540,13 +467,6 @@ translate english ps_route_week_scene_8f03764a:
     # p "Справишься?"
     p "Can you do that?"
 
-# game/voices_shift.rpy:698
-translate english ps_route_week_scene_93eb27ed:
-
-    # vet "If I start playing hero - remind me about that old fool."
-    vet "If I start playing hero, remind me about that old fool."
-
-# game/voices_shift.rpy:699
 translate english ps_route_week_scene_1981b109:
 
     # p "Про какого именно?"
@@ -582,25 +502,11 @@ translate english ps_route_week_scene_88befc24:
     # p "Один и не пойдёшь."
     p "You won't be going alone."
 
-# game/voices_shift.rpy:717
-translate english ps_route_week_scene_64c8c6cb:
-
-    # sv "In a minute I'll have to give an order. If it's the wrong one - stop me."
-    sv "In a minute I'll have to give an order. If it's the wrong one, stop me."
-
-# game/voices_shift.rpy:718
 translate english ps_route_week_scene_89a85d87:
 
     # p "При всех?"
     p "In front of everyone?"
 
-# game/voices_shift.rpy:719
-translate english ps_route_week_scene_7d09ca89:
-
-    # sv "In front of everyone. Especially if I start repeating the Curator again."
-    sv "In front of everyone. Especially if I start repeating the Curator again."
-
-# game/voices_shift.rpy:720
 translate english ps_route_week_scene_12b5d38c:
 
     # p "Тогда говори."
@@ -756,13 +662,6 @@ translate english ps_storm_day_intrusion_86351deb:
     # n "Во время общего сбоя табло по очереди выводит имена людей на линии: ЛЕРА. ВИКТОР. МАКС. АРТЁМ."
     n "During the full outage, the board displays the names of the people on the line one by one: LERA. VIKTOR. MAX. ARTYOM."
 
-# game/voices_shift.rpy:920
-translate english ps_storm_day_intrusion_0038a4a6:
-
-    # n "Your name appears last - [ps_player_name]. Instead of a section number, a short message appears beneath it: 'THE SHIFT RECOGNIZES YOU.'"
-    n "Your name appears last - [ps_player_name]. Instead of a section number, a short message appears beneath it: \"THE SHIFT RECOGNIZES YOU.\""
-
-# game/voices_shift.rpy:923
 translate english ps_storm_day_intrusion_5177c70e:
 
     # newb "Раньше система видела во мне только ошибку. Почему сейчас она знает наши имена?"
@@ -779,12 +678,6 @@ translate english ps_storm_day_intrusion_416908b8:
 
     # mem "Я хотел пошутить, но, кажется, оно именно этого и ждёт."
     mem "I wanted to make a joke, but I think that's exactly what it's waiting for."
-
-# game/voices_shift.rpy:929
-translate english ps_storm_day_intrusion_6750274f:
-
-    # sv "We disconnect the board physically. If the system wants to talk - let it survive an unplugged cable first."
-    sv "We disconnect the board physically. If the system wants to talk, let it survive an unplugged cable first."
 
 translate english strings:
 
