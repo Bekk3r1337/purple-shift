@@ -1888,61 +1888,61 @@ translate english chapter6_day_six_0e8851f7:
 translate english chapter6_day_six_fa2aab3d:
 
     # vet "Завтра будет тяжело."
-    vet "Завтра будет тяжело."
+    vet "Tomorrow will be hard."
 
 # game/week.rpy:1289
 translate english chapter6_day_six_f1063581:
 
     # p "Почему?"
-    p "Почему?"
+    p "Why?"
 
 # game/week.rpy:1290
 translate english chapter6_day_six_b621677f:
 
     # vet "Куратор захочет закрыть отчёт. Артём — выполнить план. Следи за тем, что тебе подсовывают под конец смены."
-    vet "Куратор захочет закрыть отчёт. Артём — выполнить план. Следи за тем, что тебе подсовывают под конец смены."
+    vet "The Curator will want to close the report. Artyom will want to hit the target. Watch what they put in front of you near the end of the shift."
 
 # game/week.rpy:1295
 translate english chapter6_day_six_8a104766:
 
     # n "Телефон вибрирует. Сообщение от ветерана:"
-    n "Телефон вибрирует. Сообщение от ветерана:"
+    n "Your phone buzzes. A message from the veteran:"
 
 # game/week.rpy:1296
 translate english chapter6_day_six_34fd405a:
 
     # vet "Рука цела. Почти. Завтра буду. Кто-то же должен не дать вам угробить вторую."
-    vet "Рука цела. Почти. Завтра буду. Кто-то же должен не дать вам угробить вторую."
+    vet "Hand intact. Mostly. I'll be there tomorrow. Someone has to stop you from ruining the other one."
 
 # game/week.rpy:1301
 translate english chapter6_day_six_98ee1389:
 
     # mem "Я составил план на финал."
-    mem "Я составил план на финал."
+    mem "I've made a plan for the finale."
 
 # game/week.rpy:1303
 translate english chapter6_day_six_a6deb8f8:
 
     # p "Какой?"
-    p "Какой?"
+    p "What plan?"
 
 # game/week.rpy:1305
 translate english chapter6_day_six_84900f87:
 
     # mem "Не умереть. Не уволиться до перерыва. И украсть печенье из комнаты куратора."
-    mem "Не умереть. Не уволиться до перерыва. И украсть печенье из комнаты куратора."
+    mem "Don't die. Don't quit before the break. And steal cookies from the Curator's room."
 
 # game/week.rpy:1307
 translate english chapter6_day_six_d6bf66b6:
 
     # p "Амбициозно."
-    p "Амбициозно."
+    p "Ambitious."
 
 # game/week.rpy:1309
 translate english chapter6_day_six_7a13208c:
 
     # mem "Мы росли всю неделю."
-    mem "Мы росли всю неделю."
+    mem "We've been growing all week."
 
 # game/week.rpy:1314
 translate english chapter6_day_six_7d9eed22:
