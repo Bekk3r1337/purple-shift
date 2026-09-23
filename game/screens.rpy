@@ -522,17 +522,21 @@ screen main_menu():
             xalign 0.0
             spacing 16
 
-            use ps_main_menu_item("Начать", Start())
+            use ps_main_menu_item(_("Начать"), Start())
             if persistent.ps2_new_shift_plus_unlocked:
-                use ps_main_menu_item("Новая смена+", Start("ps2_new_shift_plus_start"))
-                use ps_main_menu_item("Карта решений", Show("ps2_decision_map"))
-            use ps_main_menu_item("Загрузить", ShowMenu("load"))
-            use ps_main_menu_item("Главы", ShowMenu("ps_chapter_select"))
-            use ps_main_menu_item("Коллекция", Show("ps_phone", initial_tab="archive"))
-            use ps_main_menu_item("Настройки", ShowMenu("preferences"))
-            use ps_main_menu_item("Об игре", ShowMenu("about"))
-            use ps_main_menu_item("Помощь", ShowMenu("help"))
-            use ps_main_menu_item("Выход", Quit(confirm=True))
+                use ps_main_menu_item(_("Новая смена+"), Start("ps2_new_shift_plus_start"))
+                use ps_main_menu_item(_("Карта решений"), Show("ps2_decision_map"))
+            use ps_main_menu_item(_("Загрузить"), ShowMenu("load"))
+            use ps_main_menu_item(_("Главы"), ShowMenu("ps_chapter_select"))
+            use ps_main_menu_item(_("Коллекция"), Show("ps_phone", initial_tab="archive"))
+            use ps_main_menu_item(_("Настройки"), ShowMenu("preferences"))
+            use ps_main_menu_item(_("Об игре"), ShowMenu("about"))
+            use ps_main_menu_item(_("Помощь"), ShowMenu("help"))
+            use ps_main_menu_item(_("Выход"), Quit(confirm=True))
+
+    # Ask once on first launch. Existing players will see this after updating.
+    if not persistent.ps_language_chosen:
+        use ps_language_gate
 
 
 style main_menu_frame is empty
@@ -830,7 +834,7 @@ screen file_slots(title):
                         $ saved_route = FileJson(slot, "ps_route")
 
                         if saved_day:
-                            text "День [saved_day] • [saved_route]":
+                            text _("День [saved_day] • [saved_route]"):
                                 style "slot_name_text"
                                 color "#c99cff"
                                 size 17
@@ -930,6 +934,16 @@ screen preferences():
                         label _("Режим терминала")
                         textbutton _("Встроенный") action Preference("display", "window")
                         textbutton _("Основной") action Preference("display", "fullscreen")
+
+                vbox:
+                    style_prefix "radio"
+                    label _("Язык")
+                    textbutton _("Русский"):
+                        action Function(ps_select_language, None)
+                        selected (_preferences.language is None)
+                    textbutton "English":
+                        action Function(ps_select_language, "english")
+                        selected (_preferences.language == "english")
 
                 vbox:
                     style_prefix "check"
