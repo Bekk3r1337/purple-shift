@@ -464,3 +464,150 @@ translate english strings:
 
     old "Так и будет. Решение подпишу сам."
     new "That's how it'll be. I'll sign the decision myself."
+
+    old "Ты потерял темп, чтобы помочь новичку."
+    new "You lost pace to help the Newcomer."
+
+    old "Ты выбрал норму и не вмешался."
+    new "You chose to follow the quota and did not intervene."
+
+    old "Ты позволил себе остановиться и восстановить дыхание."
+    new "You let yourself stop and catch your breath."
+
+    old "В финале первой смены ты помог восстановить поток."
+    new "At the end of the first shift, you helped restore the flow."
+
+    old "В финале первой смены ты выбрал сохранить себя."
+    new "At the end of the first shift, you chose to protect yourself."
+
+    old "После смены ты поддержал новичка."
+    new "After the shift, you supported the Newcomer."
+
+    old "Ты подтвердил вторую смену без колебаний."
+    new "You confirmed the second shift without hesitation."
+
+    old "Ты отвоевал у системы десять минут тишины."
+    new "You won ten minutes of silence back from the system."
+
+    old "Перед второй сменой ты пообещал новичку быть рядом."
+    new "Before the second shift, you promised the Newcomer you would stay close."
+
+    old "Ты остановил линию из-за опасного контейнера."
+    new "You stopped the line because of the dangerous container."
+
+    old "Ты собрал людей и разгрузил опасный контейнер."
+    new "You gathered the team and unloaded the dangerous container."
+
+    old "Ты продолжил работу, несмотря на опасный контейнер."
+    new "You kept working despite the dangerous container."
+
+    old "Ты выбрал быть опорой для людей."
+    new "You chose to be someone people could rely on."
+
+    old "Ты решил расти и отвечать за участок."
+    new "You decided to move up and take responsibility for the section."
+
+    old "Ты пообещал себе не потерять выход."
+    new "You promised yourself not to lose sight of the exit."
+
+    old "Ты выбрал не отдавать смене свой голос."
+    new "You chose not to let the shift take your voice."
+
+    old "Ты прошёл контрольную серию ТСД без пересорта."
+    new "You completed the scanner control sequence without a mis-sort."
+
+    old "Ты сохранил исчезнувшую запись об опасном контейнере."
+    new "You preserved the missing record about the dangerous container."
+
+    old "Ты потребовал объяснить исчезновение записи."
+    new "You demanded an explanation for the missing record."
+
+    old "Ты закрыл пропавшую запись ради места в рейтинге."
+    new "You closed the missing-record issue to protect your ranking."
+
+    old "Ты не позволил списать системную ошибку на новичка."
+    new "You did not let the system error be pinned on the Newcomer."
+
+    old "Ты восстановил цепочку и нашёл настоящую причину недостачи."
+    new "You reconstructed the chain and found the real cause of the shortage."
+
+    old "Ты позволил системе назначить виноватую."
+    new "You let the system decide who was guilty."
+
+    old "Ты удержал живую линию, не превратив людей в расходник."
+    new "You kept the line running without treating people as expendable."
+
+    old "Ты остановил неисправный подъёмник, несмотря на план."
+    new "You stopped the faulty lift despite the target."
+
+    old "Ты собрал команду и вывел приёмку без опасного подъёмника."
+    new "You rallied the team and cleared receiving without using the dangerous lift."
+
+    old "Ты перезапустил неисправный подъёмник ради плана."
+    new "You restarted the faulty lift to protect the target."
+
+    old "Ты собрал дело только из проверяемых фактов."
+    new "You built the case using only verifiable facts."
+
+    old "Ты отказался подписывать чистый отчёт и внёс нарушения."
+    new "You refused to sign a clean report and recorded the violations."
+
+    old "Ты подписал чистый отчёт ради должности старшего."
+    new "You signed a clean report for the senior position."
+
+    old "Ты отказался от должности и сохранил копии документов."
+    new "You turned down the position and kept copies of the documents."
+
+    old "В финале ты поставил людей выше рейтинга."
+    new "In the finale, you put people above the ranking."
+
+    old "В финале ты взял управление потоком на себя."
+    new "In the finale, you took control of the flow."
+
+    old "В финале ты сделал нарушения видимыми для всех."
+    new "In the finale, you made the violations visible to everyone."
+
+    old "В финале твой голос удержал смену от паники."
+    new "In the finale, your voice kept the shift from panicking."
+
+    old "В финале ты выбрал выход и сохранил себя."
+    new "In the finale, you chose the exit and protected yourself."
+
+    old "Ты без ошибок передал аварийную последовательность."
+    new "You relayed the emergency sequence without mistakes."
+
+    old "Ты вернулся в смену с памятью о предыдущей неделе."
+    new "You returned to the shift carrying the memory of the previous week."
+
+    old "Ты помог Новичку перестать считать себя системной ошибкой."
+    new "You helped the Newcomer stop seeing herself as a system error."
+
+    old "Виктор позволил команде стать его опорой."
+    new "Viktor let the team become his support."
+
+    old "Ты услышал серьёзный голос Макса и не заставил его снова спрятаться за шуткой."
+    new "You heard Max's serious voice and did not make him hide behind a joke again."
+
+    old "Артём перестал прятать решения за формулировками системы."
+    new "Artyom stopped hiding decisions behind the system's wording."
+
+    old "Выбор главы восстановил сбалансированный путь до этого дня."
+    new "Chapter Select restored the balanced path up to this day."
+
+    old "Твой путь"
+    new "Your path"
+
+    old "Команда"
+    new "Team"
+
+    old "Честность"
+    new "Integrity"
+
+    old "Улики"
+    new "Evidence"
+
+    old "ТСД"
+    new "SCANNER"
+
+    old "ПРИНЯТЬ"
+    new "ACCEPT"
