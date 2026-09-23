@@ -1948,37 +1948,37 @@ translate english chapter6_day_six_7a13208c:
 translate english chapter6_day_six_7d9eed22:
 
     # n "Рейтинг обновляется в предпоследний раз. Завтра сверху останется одно имя."
-    n "Рейтинг обновляется в предпоследний раз. Завтра сверху останется одно имя."
+    n "The rankings update for the second-to-last time. Tomorrow, one name will remain at the top."
 
 # game/week.rpy:1351
 translate english chapter7_day_seven_2b916ac8:
 
     # n "На седьмой день будильник всё-таки орёт. Ты выключаешь его с первого движения."
-    n "На седьмой день будильник всё-таки орёт. Ты выключаешь его с первого движения."
+    n "On Day Seven, the alarm finally screams. You silence it with the first movement."
 
 # game/week.rpy:1353
 translate english chapter7_day_seven_8858895c:
 
     # n "Ты сидишь на кровати дольше обычного. На складе всё время хотелось домой; теперь до выхода остаётся двадцать минут."
-    n "Ты сидишь на кровати дольше обычного. На складе всё время хотелось домой; теперь до выхода остаётся двадцать минут."
+    n "You sit on the bed longer than usual. At the warehouse, you always wanted to go home; now there are twenty minutes until you have to leave."
 
 # game/week.rpy:1355
 translate english chapter7_day_seven_ea0f19dd:
 
     # n "На телефоне четыре уведомления."
-    n "На телефоне четыре уведомления."
+    n "There are four notifications on your phone."
 
 # game/week.rpy:1358
 translate english chapter7_day_seven_09b983b5:
 
     # newb "Я уже еду. Сегодня не потеряемся."
-    newb "Я уже еду. Сегодня не потеряемся."
+    newb "I'm already on my way. We won't lose anyone today."
 
 # game/week.rpy:1360
 translate english chapter7_day_seven_2eca90ed:
 
     # newb "Буду на смене."
-    newb "Буду на смене."
+    newb "I'll be on shift."
 
 # game/week.rpy:1363
 translate english chapter7_day_seven_c391ea62:
@@ -1990,511 +1990,511 @@ translate english chapter7_day_seven_c391ea62:
 translate english chapter7_day_seven_9fe2cb97:
 
     # vet "Рука в бинте. Но я приду."
-    vet "Рука в бинте. Но я приду."
+    vet "Hand's bandaged. But I'll come."
 
 # game/week.rpy:1367
 translate english chapter7_day_seven_ec3d775c:
 
     # mem "Печенье отменяется. Куратор унёс его с собой."
-    mem "Печенье отменяется. Куратор унёс его с собой."
+    mem "Cookie operation cancelled. The Curator took them with him."
 
 # game/week.rpy:1370
 translate english chapter7_day_seven_1f46b584:
 
     # sv "Подойди к линии за двадцать минут. Старший выходит раньше."
-    sv "Подойди к линии за двадцать минут. Старший выходит раньше."
+    sv "Come to the line twenty minutes early. The lead starts earlier."
 
 # game/week.rpy:1372
 translate english chapter7_day_seven_32120f17:
 
     # sv "Сегодня закрываем неделю. Нужны все."
-    sv "Сегодня закрываем неделю. Нужны все."
+    sv "We close out the week today. We need everyone."
 
 # game/week.rpy:1374
 translate english chapter7_day_seven_18d9919e:
 
     # n "Последнее уведомление — системное. «Пиковая нагрузка. Ожидается превышение плана на 34%%»."
-    n "Последнее уведомление — системное. «Пиковая нагрузка. Ожидается превышение плана на 34%%»."
+    n "The final notification is from the system. \"Peak load. Expected volume: 34%% above plan.\""
 
 # game/week.rpy:1380
 translate english chapter7_day_seven_c4429ee4:
 
     # p "Встретимся на линии."
-    p "Встретимся на линии."
+    p "See you on the line."
 
 # game/week.rpy:1381
 translate english chapter7_day_seven_fd8064e5:
 
     # n "Макс отвечает гифкой, Лера ставит реакцию, Виктор пишет: «Не опоздай». Артём сообщение читает, но не отвечает."
-    n "Макс отвечает гифкой, Лера ставит реакцию, Виктор пишет: «Не опоздай». Артём сообщение читает, но не отвечает."
+    n "Max replies with a GIF, Lera reacts, Viktor writes: \"Don't be late.\" Artyom reads the message but does not reply."
 
 # game/week.rpy:1386
 translate english chapter7_day_seven_9c924e6a:
 
     # n "Твоё имя в первой части списка. Точное место скрыто до конца смены; приложение предлагает включить уведомление о результате."
-    n "Твоё имя в первой части списка. Точное место скрыто до конца смены; приложение предлагает включить уведомление о результате."
+    n "Your name is in the upper part of the list. The exact position is hidden until the end of the shift; the app offers to notify you of the result."
 
 # game/week.rpy:1391
 translate english chapter7_day_seven_bf0c5b7b:
 
     # n "Ты ставишь таймер на минуту и просто сидишь, не открывая рейтинг и чаты. После сигнала убираешь телефон и начинаешь собираться."
-    n "Ты ставишь таймер на минуту и просто сидишь, не открывая рейтинг и чаты. После сигнала убираешь телефон и начинаешь собираться."
+    n "You set a one-minute timer and simply sit there without opening the rankings or chats. When it rings, you put the phone away and start getting ready."
 
 # game/week.rpy:1401
 translate english chapter7_day_seven_ed4a839f:
 
     # n "Ты выходишь на нужной остановке, проходишь через пустую парковку и автоматически достаёшь пропуск ещё до турникета."
-    n "Ты выходишь на нужной остановке, проходишь через пустую парковку и автоматически достаёшь пропуск ещё до турникета."
+    n "You get off at the right stop, cross the empty parking lot, and automatically take out your pass before reaching the turnstile."
 
 # game/week.rpy:1406
 translate english chapter7_day_seven_f8aa1686:
 
     # n "Фиолетовая линия горит ярче обычного. Сегодня под ней поставили баннер:"
-    n "Фиолетовая линия горит ярче обычного. Сегодня под ней поставили баннер:"
+    n "The violet line glows brighter than usual. Today a banner has been placed beneath it:"
 
 # game/week.rpy:1407
 translate english chapter7_day_seven_da8fc866:
 
     # n "«ЛЮДИ — НАШ ГЛАВНЫЙ РЕСУРС»."
-    n "«ЛЮДИ — НАШ ГЛАВНЫЙ РЕСУРС»."
+    n "\"PEOPLE - OUR MOST IMPORTANT RESOURCE.\""
 
 # game/week.rpy:1409
 translate english chapter7_day_seven_53d9515f:
 
     # p "Ресурс."
-    p "Ресурс."
+    p "Resource."
 
 # game/week.rpy:1411
 translate english chapter7_day_seven_89950610:
 
     # n "Под баннером стоят две сломанные тележки и палета с порванной плёнкой."
-    n "Под баннером стоят две сломанные тележки и палета с порванной плёнкой."
+    n "Under the banner sit two broken carts and a pallet with torn wrap."
 
 # game/week.rpy:1424
 translate english chapter7_day_seven_bf32d5f4:
 
     # newb "Ну что. Последний день."
-    newb "Ну что. Последний день."
+    newb "Well. Last day."
 
 # game/week.rpy:1426
 translate english chapter7_day_seven_4d5cba67:
 
     # mem "Не говори так. В хоррорах после этой фразы всегда выключается свет."
-    mem "Не говори так. В хоррорах после этой фразы всегда выключается свет."
+    mem "Don't say that. In horror stories, the lights always go out after that line."
 
 # game/week.rpy:1431
 translate english chapter7_day_seven_df34f869:
 
     # vet "Свет не выключится. Здесь генератор."
-    vet "Свет не выключится. Здесь генератор."
+    vet "The lights won't go out. We have a generator."
 
 # game/week.rpy:1433
 translate english chapter7_day_seven_b9624905:
 
     # mem "Спасибо. Теперь точно выключится."
-    mem "Спасибо. Теперь точно выключится."
+    mem "Thanks. Now they definitely will."
 
 # game/week.rpy:1435
 translate english chapter7_day_seven_a0a83fb9:
 
     # n "Ты смеёшься. Даже если не хотел."
-    n "Ты смеёшься. Даже если не хотел."
+    n "You laugh, even if you didn't mean to."
 
 # game/week.rpy:1438
 translate english chapter7_day_seven_c68d8b4a:
 
     # n "Лера придерживает Виктору дверцу шкафчика, Макс забирает у неё пустой стакан, а для тебя оставляют место на скамейке."
-    n "Лера придерживает Виктору дверцу шкафчика, Макс забирает у неё пустой стакан, а для тебя оставляют место на скамейке."
+    n "Lera holds Viktor's locker door, Max takes her empty cup, and they leave a place for you on the bench."
 
 # game/week.rpy:1440
 translate english chapter7_day_seven_141a48da:
 
     # n "Разговор заканчивается. Каждый молча проверяет свою экипировку."
-    n "Разговор заканчивается. Каждый молча проверяет свою экипировку."
+    n "The conversation ends. Everyone silently checks their gear."
 
 # game/week.rpy:1450
 translate english chapter7_day_seven_f3cf2042:
 
     # sv "Сегодня без длинных вводных. Объём видите. До конца периода — шесть часов."
-    sv "Сегодня без длинных вводных. Объём видите. До конца периода — шесть часов."
+    sv "No long introduction today. You can see the volume. Six hours until the period closes."
 
 # game/week.rpy:1453
 translate english chapter7_day_seven_59f2b907:
 
     # sv "Ты ведёшь правую линию. Решения по мелким остановкам — твои."
-    sv "Ты ведёшь правую линию. Решения по мелким остановкам — твои."
+    sv "You're leading the right line. Decisions on minor stops are yours."
 
 # game/week.rpy:1454
 translate english chapter7_day_seven_04b0374f:
 
     # n "Артём протягивает тебе второй ТСД. На экране слово: «СТАРШИЙ»."
-    n "Артём протягивает тебе второй ТСД. На экране слово: «СТАРШИЙ»."
+    n "Artyom hands you a second scanner. The screen reads: \"LEAD.\""
 
 # game/week.rpy:1456
 translate english chapter7_day_seven_1bc9b1ee:
 
     # sv "Если линия встанет — сначала докладываешь мне. Но людей рядом слушай."
-    sv "Если линия встанет — сначала докладываешь мне. Но людей рядом слушай."
+    sv "If the line stops, report to me first. But listen to the people around you."
 
 # game/week.rpy:1458
 translate english chapter7_day_seven_93ff15b6:
 
     # sv "Работаем по операции."
-    sv "Работаем по операции."
+    sv "Work by procedure."
 
 # game/week.rpy:1460
 translate english chapter7_day_seven_46ea04c5:
 
     # sv "Куратор вернётся к закрытию. И объявит результат."
-    sv "Куратор вернётся к закрытию. И объявит результат."
+    sv "The Curator will return for closing and announce the result."
 
 # game/week.rpy:1475
 translate english chapter7_day_seven_48cbcd4c:
 
     # n "Первые два часа проходят без остановок. Ячейки принимают товар, очередь на табло уменьшается."
-    n "Первые два часа проходят без остановок. Ячейки принимают товар, очередь на табло уменьшается."
+    n "The first two hours pass without stops. Bins accept items, and the queue on the board shrinks."
 
 # game/week.rpy:1478
 translate english chapter7_day_seven_9aacf94e:
 
     # n "Ты заранее отправляешь человека к забитой ячейке и успеваешь разобрать очередь до сигнала об отставании."
-    n "Ты заранее отправляешь человека к забитой ячейке и успеваешь разобрать очередь до сигнала об отставании."
+    n "You send someone to a jammed bin in advance and clear the queue before the delay alert appears."
 
 # game/week.rpy:1480
 translate english chapter7_day_seven_50acbc7b:
 
     # n "Ты замечаешь, что Лера снова задерживает дыхание у красного экрана, Виктор бережёт забинтованную руку, а Макс уже десять минут молчит."
-    n "Ты замечаешь, что Лера снова задерживает дыхание у красного экрана, Виктор бережёт забинтованную руку, а Макс уже десять минут молчит."
+    n "You notice Lera holding her breath at another red screen, Viktor protecting his bandaged hand, and Max having been silent for ten minutes."
 
 # game/week.rpy:1482
 translate english chapter7_day_seven_113b12de:
 
     # n "Ты держишь ровный темп, пьёшь воду по сигналу и не ускоряешься после каждого окрика из рации."
-    n "Ты держишь ровный темп, пьёшь воду по сигналу и не ускоряешься после каждого окрика из рации."
+    n "You keep a steady pace, drink water when the reminder sounds, and do not speed up after every shout over the radio."
 
 # game/week.rpy:1484
 translate english chapter7_day_seven_c622c421:
 
     # n "Ты просто продолжаешь. Иногда это всё, что возможно."
-    n "Ты просто продолжаешь. Иногда это всё, что возможно."
+    n "You simply continue. Sometimes that is all you can do."
 
 # game/week.rpy:1486
 translate english chapter7_day_seven_f8839a49:
 
     # n "На третьем часу приходит дополнительная машина. Её не было в плане. Потом вторая."
-    n "На третьем часу приходит дополнительная машина. Её не было в плане. Потом вторая."
+    n "In the third hour, an extra truck arrives. It was not in the plan. Then a second one."
 
 # game/week.rpy:1497
 translate english chapter7_day_seven_b05d1c88:
 
     # sv "Не останавливаемся. Закрываем всё до конца периода."
-    sv "Не останавливаемся. Закрываем всё до конца периода."
+    sv "We don't stop. We clear everything before the period closes."
 
 # game/week.rpy:1502
 translate english chapter7_day_seven_16d4f388:
 
     # newb "У меня ячейки не принимают."
-    newb "У меня ячейки не принимают."
+    newb "My bins aren't accepting items."
 
 # game/week.rpy:1507
 translate english chapter7_day_seven_1bd6e50a:
 
     # vet "Правый конвейер греется."
-    vet "Правый конвейер греется."
+    vet "The right conveyor is heating up."
 
 # game/week.rpy:1509
 translate english chapter7_day_seven_6d88e5f6:
 
     # sv "Пять минут. Нужно дотянуть пять минут."
-    sv "Пять минут. Нужно дотянуть пять минут."
+    sv "Five minutes. We need to make it five more minutes."
 
 # game/week.rpy:1511
 translate english chapter7_day_seven_610b9e52:
 
     # n "Эту фразу ты уже слышал. Тогда был контейнер."
-    n "Эту фразу ты уже слышал. Тогда был контейнер."
+    n "You've heard that sentence before. Last time, it was the container."
 
 # game/week.rpy:1525
 translate english chapter7_day_seven_856c33ce:
 
     # n "Свет моргает. Раз. Два. Фиолетовые лампы остаются гореть, когда белые гаснут."
-    n "Свет моргает. Раз. Два. Фиолетовые лампы остаются гореть, когда белые гаснут."
+    n "The lights flicker. Once. Twice. The violet lamps stay on when the white ones go dark."
 
 # game/week.rpy:1530
 translate english chapter7_day_seven_5c41a15d:
 
     # n "Конвейер не останавливается. ТСД один за другим уходят в красный экран. Табло продолжает считать, хотя люди больше не понимают, куда идёт товар."
-    n "Конвейер не останавливается. ТСД один за другим уходят в красный экран. Табло продолжает считать, хотя люди больше не понимают, куда идёт товар."
+    n "The conveyor does not stop. Scanner after scanner goes red. The board keeps counting even though nobody knows where the items are going anymore."
 
 # game/week.rpy:1544
 translate english chapter7_day_seven_a51fd016:
 
     # n "Лера первой замечает, что это уже не обычный сбой: фиолетовый разрез света остаётся на месте, даже когда лампы гаснут."
-    n "Лера первой замечает, что это уже не обычный сбой: фиолетовый разрез света остаётся на месте, даже когда лампы гаснут."
+    n "Lera is the first to realize this is no ordinary failure: the violet cut of light remains in place even when the lamps go out."
 
 # game/week.rpy:1549
 translate english chapter7_day_seven_43b7e390:
 
     # n "Когда разрез света дёргается ближе к линии, Виктор без раздумий оттаскивает Леру на шаг назад."
-    n "Когда разрез света дёргается ближе к линии, Виктор без раздумий оттаскивает Леру на шаг назад."
+    n "When the cut of light jerks closer to the line, Viktor pulls Lera a step back without hesitation."
 
 # game/week.rpy:1574
 translate english chapter7_day_seven_967b80dc:
 
     # mem "Ну. Финальный босс всё-таки пришёл."
-    mem "Ну. Финальный босс всё-таки пришёл."
+    mem "Well. The final boss showed up after all."
 
 # game/week.rpy:1576
 translate english chapter7_day_seven_a7242719:
 
     # n "У аварийной кнопки стоит Артём. В руке у него рация."
-    n "У аварийной кнопки стоит Артём. В руке у него рация."
+    n "Artyom stands by the emergency button, radio in hand."
 
 # game/week.rpy:1578
 translate english chapter7_day_seven_3d25779d:
 
     # cur "Линию не останавливать."
-    cur "Линию не останавливать."
+    cur "Do not stop the line."
 
 # game/week.rpy:1579
 translate english chapter7_day_seven_9b161c0a:
 
     # n "Голос куратора хрипит из динамика."
-    n "Голос куратора хрипит из динамика."
+    n "The Curator's voice crackles through the speaker."
 
 # game/week.rpy:1580
 translate english chapter7_day_seven_d53af2d9:
 
     # cur "До закрытия рейтинга три минуты."
-    cur "До закрытия рейтинга три минуты."
+    cur "Three minutes until the rankings close."
 
 # game/week.rpy:1582
 translate english chapter7_day_seven_2f150803:
 
     # vet "Без системы товар уйдёт не туда."
-    vet "Без системы товар уйдёт не туда."
+    vet "Without the system, the goods will go to the wrong place."
 
 # game/week.rpy:1583
 translate english chapter7_day_seven_8e903d23:
 
     # newb "Люди на правой линии не слышат команды."
-    newb "Люди на правой линии не слышат команды."
+    newb "People on the right line cannot hear the command."
 
 # game/week.rpy:1586
 translate english chapter7_day_seven_a133cd13:
 
     # n "В телефоне лежит вся неделя. Удалённые записи. Системные ошибки. Отчёт, который от тебя хотели получить."
-    n "В телефоне лежит вся неделя. Удалённые записи. Системные ошибки. Отчёт, который от тебя хотели получить."
+    n "Your phone contains the whole week. Deleted entries. System errors. The report they wanted from you."
 
 # game/week.rpy:1589
 translate english chapter7_day_seven_ece67b1b:
 
     # n "И твоя подпись."
-    n "И твоя подпись."
+    n "And your signature."
 
 # game/week.rpy:1591
 translate english chapter7_day_seven_cb88b2b6:
 
     # n "На табло твоё имя поднимается на первое место. Ещё три минуты — и оно останется там."
-    n "На табло твоё имя поднимается на первое место. Ещё три минуты — и оно останется там."
+    n "Your name rises to first place on the board. Three more minutes and it will stay there."
 
 # game/week.rpy:1601
 translate english chapter7_day_seven_d2be3192:
 
     # p "Останавливаем. Все отходят от линии."
-    p "Останавливаем. Все отходят от линии."
+    p "Stop. Everyone away from the line."
 
 # game/week.rpy:1603
 translate english chapter7_day_seven_ac0e4000:
 
     # cur "Не смей!"
-    cur "Не смей!"
+    cur "Don't you dare!"
 
 # game/week.rpy:1605
 translate english chapter7_day_seven_bea47f80:
 
     # p "Лера — уводи людей с правой стороны! Виктор — отключение! Макс — проверь дальний сектор!"
-    p "Лера — уводи людей с правой стороны! Виктор — отключение! Макс — проверь дальний сектор!"
+    p "Lera - move people off the right side! Viktor - shut it down! Max - check the far sector!"
 
 # game/week.rpy:1607
 translate english chapter7_day_seven_6bf68e5b:
 
     # mem "Вот теперь слышу: настоящая командная работа."
-    mem "Вот теперь слышу: настоящая командная работа."
+    mem "Now that sounds like real teamwork."
 
 # game/week.rpy:1609
 translate english chapter7_day_seven_1dd0ae7c:
 
     # n "Ты нажимаешь кнопку."
-    n "Ты нажимаешь кнопку."
+    n "You press the button."
 
 # game/week.rpy:1614
 translate english chapter7_day_seven_469af918:
 
     # n "Поток замирает. Табло краснеет. Люди отходят."
-    n "Поток замирает. Табло краснеет. Люди отходят."
+    n "The flow freezes. The board turns red. People step away."
 
 # game/week.rpy:1623
 translate english chapter7_day_seven_a670c3a7:
 
     # p "Виктор — отключи правую ленту вручную. Лера — все ошибки в буфер B-04. Остальные работают через левую линию."
-    p "Виктор — отключи правую ленту вручную. Лера — все ошибки в буфер B-04. Остальные работают через левую линию."
+    p "Viktor - shut down the right belt manually. Lera - send all errors to buffer B-04. Everyone else works through the left line."
 
 # game/week.rpy:1625
 translate english chapter7_day_seven_3dc6bdc2:
 
     # sv "Она не выдержит весь поток."
-    sv "Она не выдержит весь поток."
+    sv "It won't handle the full flow."
 
 # game/week.rpy:1627
 translate english chapter7_day_seven_6bfe96da:
 
     # p "Тогда делим по приоритету. Тяжёлое в стоп. Мелкое пропускаем."
-    p "Тогда делим по приоритету. Тяжёлое в стоп. Мелкое пропускаем."
+    p "Then split by priority. Heavy items stop. Small items pass through."
 
 # game/week.rpy:1629
 translate english chapter7_day_seven_701b7343:
 
     # n "Лера повторяет твою команду правой линии. Виктор вручную отключает ленту. Артём больше не спорит."
-    n "Лера повторяет твою команду правой линии. Виктор вручную отключает ленту. Артём больше не спорит."
+    n "Lera repeats your order to the right line. Viktor shuts the belt down manually. Artyom no longer argues."
 
 # game/week.rpy:1638
 translate english chapter7_day_seven_a3615b43:
 
     # p "Куратор, повторите."
-    p "Куратор, повторите."
+    p "Curator, repeat that."
 
 # game/week.rpy:1640
 translate english chapter7_day_seven_3d25779d_1:
 
     # cur "Линию не останавливать."
-    cur "Линию не останавливать."
+    cur "Do not stop the line."
 
 # game/week.rpy:1642
 translate english chapter7_day_seven_5a9f32c0:
 
     # p "Записано."
-    p "Записано."
+    p "Recorded."
 
 # game/week.rpy:1644
 translate english chapter7_day_seven_0cd3aee2:
 
     # n "Ты отправляешь журнал на общий экран. STOP-04. Сорок семь единиц. LIFT-09. Подписи. Время."
-    n "Ты отправляешь журнал на общий экран. STOP-04. Сорок семь единиц. LIFT-09. Подписи. Время."
+    n "You put the log on the shared screen. STOP-04. Forty-seven units. LIFT-09. Signatures. Times."
 
 # game/week.rpy:1646
 translate english chapter7_day_seven_2c112ea9:
 
     # p "И после всего этого вы снова просите нас продолжать."
-    p "И после всего этого вы снова просите нас продолжать."
+    p "And after all of this, you're asking us to keep going again."
 
 # game/week.rpy:1648
 translate english chapter7_day_seven_4cabbb74:
 
     # n "Люди один за другим прекращают работу: теперь все видят одно и то же."
-    n "Люди один за другим прекращают работу: теперь все видят одно и то же."
+    n "People stop working one after another. Now everyone sees the same thing."
 
 # game/week.rpy:1656
 translate english chapter7_day_seven_c7cb6cc4:
 
     # p "Так. Система решила взять перерыв. Мы — нет."
-    p "Так. Система решила взять перерыв. Мы — нет."
+    p "All right. The system decided to take a break. We didn't."
 
 # game/week.rpy:1658
 translate english chapter7_day_seven_f4cd81a6:
 
     # mem "Это моя реплика."
-    mem "Это моя реплика."
+    mem "That's my line."
 
 # game/week.rpy:1660
 translate english chapter7_day_seven_00b2648d:
 
     # p "Авторские права после смены. Лера, считай людей. Виктор, проверь безопасные ленты. Остальные — ничего не несём туда, где нас не слышат."
-    p "Авторские права после смены. Лера, считай людей. Виктор, проверь безопасные ленты. Остальные — ничего не несём туда, где нас не слышат."
+    p "Copyright dispute after the shift. Lera, count people. Viktor, check the safe belts. Everyone else - don't carry anything where we can't be heard."
 
 # game/week.rpy:1662
 translate english chapter7_day_seven_a51dda00:
 
     # n "С соседнего участка смеются, затем повторяют команду дальше. Через полминуты с дальнего сектора кричат, что людей пересчитали."
-    n "С соседнего участка смеются, затем повторяют команду дальше. Через полминуты с дальнего сектора кричат, что людей пересчитали."
+    n "The neighboring section laughs, then repeats the command onward. Half a minute later, the far sector shouts that everyone has been counted."
 
 # game/week.rpy:1670
 translate english chapter7_day_seven_18a03ae8:
 
     # n "Ты снимаешь жилет. Кладёшь ТСД на остановившуюся коробку."
-    n "Ты снимаешь жилет. Кладёшь ТСД на остановившуюся коробку."
+    n "You take off your vest and place the scanner on a stopped box."
 
 # game/week.rpy:1672
 translate english chapter7_day_seven_a0a78b10:
 
     # sv "Ты куда?"
-    sv "Ты куда?"
+    sv "Where are you going?"
 
 # game/week.rpy:1674
 translate english chapter7_day_seven_7f5c2c97:
 
     # p "Домой. И завтра меня здесь не будет."
-    p "Домой. И завтра меня здесь не будет."
+    p "Home. And I won't be here tomorrow."
 
 # game/week.rpy:1676
 translate english chapter7_day_seven_757f7f74:
 
     # n "Ты проходишь мимо Артёма и идёшь к раздевалке. Он не пытается остановить тебя второй раз."
-    n "Ты проходишь мимо Артёма и идёшь к раздевалке. Он не пытается остановить тебя второй раз."
+    n "You walk past Artyom toward the locker room. He does not try to stop you a second time."
 
 # game/week.rpy:1679
 translate english chapter7_day_seven_ffd43b80:
 
     # n "Связь всё ещё не работает. Последние команды придётся передать вручную."
-    n "Связь всё ещё не работает. Последние команды придётся передать вручную."
+    n "Communications are still down. The final commands will have to be passed by hand."
 
 # game/week.rpy:1690
 translate english chapter7_day_seven_27a4e3d9:
 
     # n "Четыре команды уходят в правильном порядке. Линии освобождаются до того, как система успевает вернуться."
-    n "Четыре команды уходят в правильном порядке. Линии освобождаются до того, как система успевает вернуться."
+    n "Four commands travel in the correct order. The lines clear before the system can return."
 
 # game/week.rpy:1693
 translate english chapter7_day_seven_8c791b69:
 
     # n "Одна команда теряется в шуме. Но люди переспрашивают. Последовательность удаётся закончить."
-    n "Одна команда теряется в шуме. Но люди переспрашивают. Последовательность удаётся закончить."
+    n "One command gets lost in the noise. But people ask again. The sequence is completed."
 
 # game/week.rpy:1697
 translate english chapter7_day_seven_63fc59da:
 
     # n "Сигналы накладываются друг на друга. Кто-то останавливается слишком рано. Кто-то продолжает дольше, чем нужно. Система возвращается раньше, чем вы успеваете договориться."
-    n "Сигналы накладываются друг на друга. Кто-то останавливается слишком рано. Кто-то продолжает дольше, чем нужно. Система возвращается раньше, чем вы успеваете договориться."
+    n "Signals overlap. Someone stops too early. Someone else keeps going too long. The system returns before you manage to coordinate."
 
 # game/week.rpy:1733
 translate english ending_truth_418e0192:
 
     # n "Общий экран гаснет. Потом включается снова. Но вместо рейтинга на нём — журнал."
-    n "Общий экран гаснет. Потом включается снова. Но вместо рейтинга на нём — журнал."
+    n "The shared screen goes dark, then lights up again. But instead of the rankings, it shows the log."
 
 # game/week.rpy:1739
 translate english ending_truth_5e66027f:
 
     # cur "Убери это."
-    cur "Убери это."
+    cur "Take that down."
 
 # game/week.rpy:1741
 translate english ending_truth_ef4f7a0b:
 
     # p "Запись уже отправлена. В отдел безопасности. И каждому, кто сейчас стоит на линии."
-    p "Запись уже отправлена. В отдел безопасности. И каждому, кто сейчас стоит на линии."
+    p "The record has already been sent. To safety. And to everyone standing on the line right now."
 
 # game/week.rpy:1743
 translate english ending_truth_19f3ef1e:
 
     # n "Артём медленно опускает рацию."
-    n "Артём медленно опускает рацию."
+    n "Artyom slowly lowers the radio."
 
 # game/week.rpy:1745
 translate english ending_truth_34f07786:
 
     # sv "Останавливаем участок. До восстановления системы и проверки оборудования."
-    sv "Останавливаем участок. До восстановления системы и проверки оборудования."
+    sv "Stop the section. Until the system is restored and the equipment is inspected."
 
 # game/week.rpy:1747
 translate english ending_truth_ae4a0e29:
