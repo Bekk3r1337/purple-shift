@@ -304,12 +304,17 @@ screen ps_final_report(title, subtitle):
                 vbox:
                     spacing 12
 
-                    text "Твой путь: [ps_route_name()]":
+                    $ ps_path_label = ps_runtime_text("Твой путь")
+                    $ ps_team_label = ps_runtime_text("Команда")
+                    $ ps_integrity_label = ps_runtime_text("Честность")
+                    $ ps_evidence_label = ps_runtime_text("Улики")
+
+                    text "[ps_path_label]: [ps_route_name()]":
                         color "#ffffff"
                         size 32
                         xalign 0.5
 
-                    text "Команда: [ps_team_unity]   Честность: [ps_integrity]   Улики: [ps_evidence]":
+                    text "[ps_team_label]: [ps_team_unity]   [ps_integrity_label]: [ps_integrity]   [ps_evidence_label]: [ps_evidence]":
                         color "#cbbce3"
                         size 24
                         xalign 0.5
@@ -321,7 +326,7 @@ screen ps_final_report(title, subtitle):
                     xalign 0.5
 
                 for choice in ps_key_choices[-3:]:
-                    text ("• " + _(choice)):
+                    text ("• " + ps_runtime_text(choice)):
                         color "#e7ddf7"
                         size 23
                         xalign 0.5
@@ -363,7 +368,8 @@ screen ps_tsd_alert(code, message, hint):
             spacing 30
             xfill True
 
-            text "ТСД // [code]":
+            $ ps_tsd_label = ps_runtime_text("ТСД")
+            text "[ps_tsd_label] // [code]":
                 color "#b8ffca"
                 size 32
                 xalign 0.5
@@ -387,7 +393,7 @@ screen ps_tsd_alert(code, message, hint):
                 text_align 0.5
                 xalign 0.5
 
-            textbutton "ПРИНЯТЬ":
+            textbutton ps_runtime_text("ПРИНЯТЬ"):
                 id "ps_tsd_accept"
                 action Return()
                 xalign 0.5
