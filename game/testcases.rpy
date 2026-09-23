@@ -785,6 +785,34 @@ testsuite purple_shift:
         assert eval (ps_migrate_loaded_save in config.after_load_callbacks)
 
 
+    testcase english_dynamic_localization:
+        $ ps_old_language_code = getattr(persistent, "ps_language_code", "russian")
+        $ persistent.ps_language_code = "english"
+        $ renpy.change_language("english", force=True, rebuild=True)
+        $ ps_chapter = 7
+
+        $ ps_english_messages = [ps_message_data(message["id"]) for message in ps_message_catalog]
+        $ ps_english_message_texts = [value for message in ps_english_messages for value in ([message.get("sender", ""), message.get("preview", ""), message.get("status", ""), message.get("attachment_caption", ""), message.get("voice_caption", "")] + list(message.get("incoming", [])) + [field for reply in message.get("replies", []) for field in (reply.get("title", ""), reply.get("answer", ""), reply.get("reaction", ""))])]
+        assert eval (not any(any("\u0400" <= char <= "\u04ff" for char in value) for value in ps_english_message_texts if value))
+
+        $ ps_english_archive_texts = [_(title) for _item_id, title, _path in ps_cg_catalog] + [_(title) for _item_id, title, _desc in ps_document_catalog] + [_(desc) for _item_id, _title, desc in ps_document_catalog] + [_(title) for _item_id, title, _desc in ps_achievement_catalog] + [_(desc) for _item_id, _title, desc in ps_achievement_catalog]
+        assert eval (not any(any("\u0400" <= char <= "\u04ff" for char in value) for value in ps_english_archive_texts if value))
+
+        $ ps_english_ending_texts = [ps_ending_title(ending_id) for ending_id in ("truth", "people", "voice", "leader", "employee", "exit", "silence")] + [ps_ending_description(ending_id) for ending_id in ("truth", "people", "voice", "leader", "employee", "exit", "silence")]
+        assert eval (not any(any("\u0400" <= char <= "\u04ff" for char in value) for value in ps_english_ending_texts if value))
+
+        $ ps_english_inspection_texts = [_(inspection["title"]) for inspection in ps_inspection_catalog.values()] + [_(inspection["subtitle"]) for inspection in ps_inspection_catalog.values()] + [_(hotspot["title"]) for inspection in ps_inspection_catalog.values() for hotspot in inspection["hotspots"]] + [_(hotspot["detail"]) for inspection in ps_inspection_catalog.values() for hotspot in inspection["hotspots"]]
+        assert eval (not any(any("\u0400" <= char <= "\u04ff" for char in value) for value in ps_english_inspection_texts if value))
+
+        assert eval (_("БЕЗ ТАЙМЕРА") == "NO TIMER")
+        assert eval (_("РЕКОМЕНДОВАНО // ") == "RECOMMENDED // ")
+        assert eval (_("НАДЁЖНО // ") == "RELIABLE // ")
+        assert eval (_("ТЕЛЕФОН") == "PHONE")
+
+        $ renpy.change_language(None, force=True, rebuild=True)
+        $ persistent.ps_language_code = ps_old_language_code
+
+
     testcase runtime_i18n_helpers:
         $ ps_old_language_code = getattr(persistent, "ps_language_code", "russian")
         $ persistent.ps_language_code = "english"
