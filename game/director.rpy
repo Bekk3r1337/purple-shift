@@ -1296,7 +1296,7 @@ label ps_personal_scene:
 
         $ ps_newbie_trust += 2
         $ ps_humanity += 1
-        $ ps_key_choices = ps_key_choices + ["Лера перестала бояться говорить об ошибках."]
+        $ ps_key_choices = ps_key_choices + [_("Лера перестала бояться говорить об ошибках.")]
 
         hide newb
 
@@ -1332,7 +1332,7 @@ label ps_personal_scene:
         $ ps_endurance += 1
         $ ps_evidence += 1
         $ ps_team_unity += 1
-        $ ps_key_choices = ps_key_choices + ["Виктор доверил тебе историю подъёмника."]
+        $ ps_key_choices = ps_key_choices + [_("Виктор доверил тебе историю подъёмника.")]
 
         hide vet
 
@@ -1367,7 +1367,7 @@ label ps_personal_scene:
 
         $ ps_humor += 1
         $ ps_team_unity += 2
-        $ ps_key_choices = ps_key_choices + ["Макс впервые попросил тебя не геройствовать в одиночку."]
+        $ ps_key_choices = ps_key_choices + [_("Макс впервые попросил тебя не геройствовать в одиночку.")]
 
         hide mem
 
@@ -1404,7 +1404,7 @@ label ps_personal_scene:
 
         $ ps_supervisor_respect += 2
         $ ps_integrity += 1
-        $ ps_key_choices = ps_key_choices + ["Артём перевёл разговор с поиска виноватого на причину аварии."]
+        $ ps_key_choices = ps_key_choices + [_("Артём перевёл разговор с поиска виноватого на причину аварии.")]
 
         hide sv
 
