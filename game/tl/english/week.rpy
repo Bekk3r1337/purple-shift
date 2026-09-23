@@ -2500,361 +2500,361 @@ translate english ending_truth_34f07786:
 translate english ending_truth_ae4a0e29:
 
     # cur "Ты понимаешь последствия?"
-    cur "Ты понимаешь последствия?"
+    cur "Do you understand the consequences?"
 
 # game/week.rpy:1749
 translate english ending_truth_550943fb:
 
     # sv "Да. Я внесу остановку под своим именем."
-    sv "Да. Я внесу остановку под своим именем."
+    sv "Yes. I'll record the stop under my own name."
 
 # game/week.rpy:1755
 translate english ending_truth_344797af:
 
     # n "Люди отходят от конвейера. Кто-то садится прямо на пол, кто-то тянется за водой."
-    n "Люди отходят от конвейера. Кто-то садится прямо на пол, кто-то тянется за водой."
+    n "People step away from the conveyor. Some sit directly on the floor, others reach for water."
 
 # game/week.rpy:1760
 translate english ending_truth_ddccffa0:
 
     # n "Проверка длится три недели. Подъёмник ремонтируют. Удалённые журналы восстанавливают. Правила остановки переписывают так, чтобы кнопку мог нажать не только старший."
-    n "Проверка длится три недели. Подъёмник ремонтируют. Удалённые журналы восстанавливают. Правила остановки переписывают так, чтобы кнопку мог нажать не только старший."
+    n "The investigation lasts three weeks. The lift is repaired. Deleted logs are restored. Stop rules are rewritten so the button can be pressed by more than just the lead."
 
 # game/week.rpy:1762
 translate english ending_truth_4e40a8d1:
 
     # n "Твоего имени нет на доске сотрудника месяца. Оно стоит под показаниями к внутренней проверке — рядом с датой и номером дела."
-    n "Твоего имени нет на доске сотрудника месяца. Оно стоит под показаниями к внутренней проверке — рядом с датой и номером дела."
+    n "Your name is not on the Employee of the Month board. It appears under testimony for the internal investigation - beside the date and case number."
 
 # game/week.rpy:1771
 translate english ending_people_7f48bad0:
 
     # n "После остановки склад погружается в тишину. Три минуты проходят. Рейтинг закрывается. Твоё имя падает с первого места."
-    n "После остановки склад погружается в тишину. Три минуты проходят. Рейтинг закрывается. Твоё имя падает с первого места."
+    n "After the stop, the warehouse sinks into silence. Three minutes pass. The rankings close. Your name falls from first place."
 
 # game/week.rpy:1778
 translate english ending_people_b9c65964:
 
     # newb "Все вышли."
-    newb "Все вышли."
+    newb "Everyone's out."
 
 # game/week.rpy:1779
 translate english ending_people_3f25bfda:
 
     # vet "Правая линия пустая."
-    vet "Правая линия пустая."
+    vet "Right line is clear."
 
 # game/week.rpy:1780
 translate english ending_people_2b286b52:
 
     # mem "Потери:"
-    mem "Потери:"
+    mem "Losses:"
 
 # game/week.rpy:1781
 translate english ending_people_9584c65d:
 
     # mem "Одна премия. Ноль человек."
-    mem "Одна премия. Ноль человек."
+    mem "One bonus. Zero people."
 
 # game/week.rpy:1783
 translate english ending_people_65597e2f:
 
     # n "Артём подходит к аварийной кнопке."
-    n "Артём подходит к аварийной кнопке."
+    n "Artyom walks to the emergency button."
 
 # game/week.rpy:1788
 translate english ending_people_a74a1982:
 
     # sv "Остановка обоснована. Я подтверждаю."
-    sv "Остановка обоснована. Я подтверждаю."
+    sv "The stop was justified. I confirm it."
 
 # game/week.rpy:1790
 translate english ending_people_16d139d1:
 
     # n "Морозов что-то говорит в рацию. Артём выключает её."
-    n "Морозов что-то говорит в рацию. Артём выключает её."
+    n "Morozov says something over the radio. Artyom switches it off."
 
 # game/week.rpy:1792
 translate english ending_people_12b31b8d:
 
     # sv "Потом."
-    sv "Потом."
+    sv "Later."
 
 # game/week.rpy:1803
 translate english ending_people_d75cf4eb:
 
     # n "Сотрудником месяца становится человек с другого участка. Ты никогда с ним не встречался."
-    n "Сотрудником месяца становится человек с другого участка. Ты никогда с ним не встречался."
+    n "Employee of the Month goes to someone from another section. You've never met them."
 
 # game/week.rpy:1805
 translate english ending_people_3ed85a00:
 
     # n "На следующей неделе у аварийной кнопки появляется новая табличка. «При угрозе безопасности остановить поток». Кто-то маркером дописывает:"
-    n "На следующей неделе у аварийной кнопки появляется новая табличка. «При угрозе безопасности остановить поток». Кто-то маркером дописывает:"
+    n "The following week, a new sign appears by the emergency button: \"If safety is threatened, stop the flow.\" Someone adds in marker:"
 
 # game/week.rpy:1806
 translate english ending_people_390ac275:
 
     # n "«Даже если до рейтинга три минуты»."
-    n "«Даже если до рейтинга три минуты»."
+    n "\"Even if the rankings close in three minutes.\""
 
 # game/week.rpy:1808
 translate english ending_people_4d5df4cf:
 
     # n "Лера выходит и на следующую смену. Когда у неё снова загорается красный экран, она сразу зовёт старшего и не извиняется за остановку."
-    n "Лера выходит и на следующую смену. Когда у неё снова загорается красный экран, она сразу зовёт старшего и не извиняется за остановку."
+    n "Lera comes in for the next shift too. When her screen turns red again, she calls the lead immediately and does not apologize for stopping."
 
 # game/week.rpy:1814
 translate english ending_people_df719932:
 
     # n "За воротами все ещё минуту стоят вместе, решая, в какую сторону идти к остановке."
-    n "За воротами все ещё минуту стоят вместе, решая, в какую сторону идти к остановке."
+    n "Outside the gate, everyone stands together for another minute, deciding which way to walk to the stop."
 
 # game/week.rpy:1823
 translate english ending_voice_7a5d6353:
 
     # n "Команды повторяют от человека к человеку. Правую линию освобождают. Тяжёлый товар остаётся на месте. Никто не спорит с красным экраном."
-    n "Команды повторяют от человека к человеку. Правую линию освобождают. Тяжёлый товар остаётся на месте. Никто не спорит с красным экраном."
+    n "Commands are repeated from person to person. The right line is cleared. Heavy goods stay where they are. Nobody argues with the red screen."
 
 # game/week.rpy:1828
 translate english ending_voice_3fa1b558:
 
     # mem "Левая чистая!"
-    mem "Левая чистая!"
+    mem "Left side clear!"
 
 # game/week.rpy:1833
 translate english ending_voice_139ac43c:
 
     # newb "Все на месте!"
-    newb "Все на месте!"
+    newb "Everyone accounted for!"
 
 # game/week.rpy:1838
 translate english ending_voice_a81bb567:
 
     # vet "Теперь стоп!"
-    vet "Теперь стоп!"
+    vet "Now stop!"
 
 # game/week.rpy:1840
 translate english ending_voice_f798fb06:
 
     # n "Ты поднимаешь руку. Десятки чужих голосов повторяют:"
-    n "Ты поднимаешь руку. Десятки чужих голосов повторяют:"
+    n "You raise your hand. Dozens of other voices repeat:"
 
 # game/week.rpy:1841
 translate english ending_voice_015863a7:
 
     # n "«Стоп!»"
-    n "«Стоп!»"
+    n "\"Stop!\""
 
 # game/week.rpy:1845
 translate english ending_voice_5960c596:
 
     # n "Команду слышит Артём и нажимает аварийную кнопку. Конвейер замирает."
-    n "Команду слышит Артём и нажимает аварийную кнопку. Конвейер замирает."
+    n "Artyom hears the command and presses the emergency button. The conveyor stops."
 
 # game/week.rpy:1852
 translate english ending_voice_59a83fde:
 
     # n "В рейтинге ты остаёшься третьим. На доске нет твоей фотографии."
-    n "В рейтинге ты остаёшься третьим. На доске нет твоей фотографии."
+    n "You finish third in the rankings. Your photo is not on the board."
 
 # game/week.rpy:1854
 translate english ending_voice_3169edee:
 
     # mem "И хорошо. У тебя там лицо было бы слишком серьёзное."
-    mem "И хорошо. У тебя там лицо было бы слишком серьёзное."
+    mem "Good. Your face would look too serious up there."
 
 # game/week.rpy:1856
 translate english ending_voice_6341a23a:
 
     # newb "А можно назвать тебя сотрудником недели?"
-    newb "А можно назвать тебя сотрудником недели?"
+    newb "Can we call you Employee of the Week?"
 
 # game/week.rpy:1858
 translate english ending_voice_a8c3bbb4:
 
     # p "Нельзя. Звучит как дополнительная обязанность."
-    p "Нельзя. Звучит как дополнительная обязанность."
+    p "No. Sounds like an extra responsibility."
 
 # game/week.rpy:1860
 translate english ending_voice_7c38cdc6:
 
     # n "Смеются все — даже Виктор и уже дошедший до двери Артём."
-    n "Смеются все — даже Виктор и уже дошедший до двери Артём."
+    n "Everyone laughs - even Viktor and Artyom, who has already reached the door."
 
 # game/week.rpy:1866
 translate english ending_voice_f63e5e28:
 
     # n "На рассвете вы выходите одной группой и продолжаете спорить, кому всё-таки досталось печенье куратора."
-    n "На рассвете вы выходите одной группой и продолжаете спорить, кому всё-таки досталось печенье куратора."
+    n "At dawn, you all leave together and keep arguing about who actually got the Curator's cookies."
 
 # game/week.rpy:1875
 translate english ending_leader_5032c244:
 
     # n "Левая линия принимает поток. Правую успевают отключить до перегрева. Буфер заполняется до последней ячейки. Но выдерживает."
-    n "Левая линия принимает поток. Правую успевают отключить до перегрева. Буфер заполняется до последней ячейки. Но выдерживает."
+    n "The left line takes the flow. The right one is shut down before it overheats. The buffer fills to the last bin, but it holds."
 
 # game/week.rpy:1877
 translate english ending_leader_54dd0e4f:
 
     # n "После восстановления связи на табло остаётся зелёный итоговый процент. В журнале травм — пусто."
-    n "После восстановления связи на табло остаётся зелёный итоговый процент. В журнале травм — пусто."
+    n "When communications return, the final percentage on the board is green. The injury log is empty."
 
 # game/week.rpy:1883
 translate english ending_leader_e54fb860:
 
     # cur "Кто принял схему?"
-    cur "Кто принял схему?"
+    cur "Who approved the plan?"
 
 # game/week.rpy:1885
 translate english ending_leader_399a2d9e:
 
     # sv "Он."
-    sv "Он."
+    sv "He did."
 
 # game/week.rpy:1887
 translate english ending_leader_2757d54c:
 
     # cur "Рискованно."
-    cur "Рискованно."
+    cur "Risky."
 
 # game/week.rpy:1889
 translate english ending_leader_133265a6:
 
     # p "Рискованно было продолжать вслепую. Мы остановили опасное и сохранили рабочее."
-    p "Рискованно было продолжать вслепую. Мы остановили опасное и сохранили рабочее."
+    p "Continuing blind was riskier. We stopped what was dangerous and kept what still worked."
 
 # game/week.rpy:1891
 translate english ending_leader_6a6d3b6f:
 
     # n "Куратор смотрит на итоговые цифры. Потом — на людей."
-    n "Куратор смотрит на итоговые цифры. Потом — на людей."
+    n "The Curator looks at the final numbers. Then at the people."
 
 # game/week.rpy:1893
 translate english ending_leader_fab1fdbb:
 
     # cur "С завтрашнего дня — старший линии."
-    cur "С завтрашнего дня — старший линии."
+    cur "Starting tomorrow - line lead."
 
 # game/week.rpy:1895
 translate english ending_leader_7c777651:
 
     # p "С правом остановки."
-    p "С правом остановки."
+    p "With the right to stop the line."
 
 # game/week.rpy:1897
 translate english ending_leader_c7260fc5:
 
     # cur "Что?"
-    cur "Что?"
+    cur "What?"
 
 # game/week.rpy:1899
 translate english ending_leader_1c78e37d:
 
     # p "Если я отвечаю за участок, я решаю, когда он опасен."
-    p "Если я отвечаю за участок, я решаю, когда он опасен."
+    p "If I'm responsible for the section, I decide when it's unsafe."
 
 # game/week.rpy:1901
 translate english ending_leader_46bdb9a4:
 
     # n "Пауза длится дольше, чем хотелось бы."
-    n "Пауза длится дольше, чем хотелось бы."
+    n "The pause lasts longer than you'd like."
 
 # game/week.rpy:1903
 translate english ending_leader_8c17c0f5:
 
     # cur "С правом остановки."
-    cur "С правом остановки."
+    cur "With the right to stop the line."
 
 # game/week.rpy:1912
 translate english ending_leader_f06ab33d:
 
     # n "Тебе выдают жилет старшего с дополнительным карманом под рацию. В первый же день Виктор просит подписать заявку на ремонт второй ленты."
-    n "Тебе выдают жилет старшего с дополнительным карманом под рацию. В первый же день Виктор просит подписать заявку на ремонт второй ленты."
+    n "They issue you a lead vest with an extra radio pocket. On the very first day, Viktor asks you to sign a repair ticket for the second belt."
 
 # game/week.rpy:1914
 translate english ending_leader_0e57207d:
 
     # vet "Не зазнавайся."
-    vet "Не зазнавайся."
+    vet "Don't get full of yourself."
 
 # game/week.rpy:1915
 translate english ending_leader_760c1679:
 
     # mem "Зазнавайся."
-    mem "Зазнавайся."
+    mem "Do get full of yourself."
 
 # game/week.rpy:1916
 translate english ending_leader_14c93fc2:
 
     # newb "Просто не забывай, как выглядел твой первый день."
-    newb "Просто не забывай, как выглядел твой первый день."
+    newb "Just don't forget what your first day looked like."
 
 # game/week.rpy:1918
 translate english ending_leader_6259f447:
 
     # p "Не забуду."
-    p "Не забуду."
+    p "I won't."
 
 # game/week.rpy:1927
 translate english ending_employee_0a220b29:
 
     # n "Ты держишь линию до последней секунды. Система возвращается. Часть товара уходит не в те ячейки. Но итоговый процент остаётся зелёным."
-    n "Ты держишь линию до последней секунды. Система возвращается. Часть товара уходит не в те ячейки. Но итоговый процент остаётся зелёным."
+    n "You keep the line running until the final second. The system returns. Some items go to the wrong bins. But the final percentage stays green."
 
 # game/week.rpy:1932
 translate english ending_employee_e742b67f:
 
     # cur "Период закрыт. Первое место. Поздравляю."
-    cur "Период закрыт. Первое место. Поздравляю."
+    cur "Period closed. First place. Congratulations."
 
 # game/week.rpy:1934
 translate english ending_employee_ca06a81e:
 
     # n "На большом экране появляется твоё имя. Фиолетовая рамка. Золотая надпись:"
-    n "На большом экране появляется твоё имя. Фиолетовая рамка. Золотая надпись:"
+    n "Your name appears on the large screen. Violet frame. Gold lettering:"
 
 # game/week.rpy:1935
 translate english ending_employee_1fab5c3e:
 
     # n "«СОТРУДНИК МЕСЯЦА»."
-    n "«СОТРУДНИК МЕСЯЦА»."
+    n "\"EMPLOYEE OF THE MONTH.\""
 
 # game/week.rpy:1937
 translate english ending_employee_b5813254:
 
     # n "Ты смотришь по сторонам."
-    n "Ты смотришь по сторонам."
+    n "You look around."
 
 # game/week.rpy:1940
 translate english ending_employee_522f8584:
 
     # n "Виктор стоит в дверях с забинтованной рукой."
-    n "Виктор стоит в дверях с забинтованной рукой."
+    n "Viktor stands in the doorway with his hand bandaged."
 
 # game/week.rpy:1943
 translate english ending_employee_9dfc32b6:
 
     # n "Лера уже ушла переодеваться. Завтра её не будет в графике."
-    n "Лера уже ушла переодеваться. Завтра её не будет в графике."
+    n "Lera has already gone to change. She is not on tomorrow's schedule."
 
 # game/week.rpy:1945
 translate english ending_employee_e7d6424c:
 
     # n "Лера смотрит на экран, но не улыбается."
-    n "Лера смотрит на экран, но не улыбается."
+    n "Lera looks at the screen but does not smile."
 
 # game/week.rpy:1947
 translate english ending_employee_98d1374a:
 
     # n "Макс молчит. Артём жмёт тебе руку."
-    n "Макс молчит. Артём жмёт тебе руку."
+    n "Max is silent. Artyom shakes your hand."
 
 # game/week.rpy:1949
 translate english ending_employee_4cf397ee:
 
     # cur "Хороший результат."
-    cur "Хороший результат."
+    cur "Good result."
 
 # game/week.rpy:1951
 translate english ending_employee_c7cc4dfa:
@@ -2866,43 +2866,43 @@ translate english ending_employee_c7cc4dfa:
 translate english ending_employee_1d61fda0:
 
     # n "Больше никто ничего не добавляет. В углу экрана уже идёт обратный отсчёт до следующего периода."
-    n "Больше никто ничего не добавляет. В углу экрана уже идёт обратный отсчёт до следующего периода."
+    n "Nobody adds anything else. In the corner of the screen, the countdown to the next period has already begun."
 
 # game/week.rpy:1958
 translate english ending_employee_1c8cba20:
 
     # n "Дома ты открываешь электронный сертификат. Приложение предлагает поделиться им в соцсетях; ты закрываешь окно."
-    n "Дома ты открываешь электронный сертификат. Приложение предлагает поделиться им в соцсетях; ты закрываешь окно."
+    n "At home, you open the digital certificate. The app offers to share it on social media; you close the window."
 
 # game/week.rpy:1960
 translate english ending_employee_685eb5e6:
 
     # n "В графике уже стоит следующая смена. Ты ставишь будильник и оставляешь телефон рядом с кроватью."
-    n "В графике уже стоит следующая смена. Ты ставишь будильник и оставляешь телефон рядом с кроватью."
+    n "The next shift is already on the schedule. You set the alarm and leave the phone beside the bed."
 
 # game/week.rpy:1972
 translate english ending_exit_c58c5549:
 
     # n "Дверь закрывается за спиной. Через стену по-прежнему слышен конвейер."
-    n "Дверь закрывается за спиной. Через стену по-прежнему слышен конвейер."
+    n "The door closes behind you. The conveyor can still be heard through the wall."
 
 # game/week.rpy:1974
 translate english ending_exit_61711c1d:
 
     # n "У ворот ты по привычке проверяешь время и только потом вспоминаешь, что возвращаться после перерыва уже не нужно."
-    n "У ворот ты по привычке проверяешь время и только потом вспоминаешь, что возвращаться после перерыва уже не нужно."
+    n "At the gate, you check the time out of habit and only then remember you do not need to return after the break."
 
 # game/week.rpy:1976
 translate english ending_exit_a263f716:
 
     # n "Телефон вибрирует."
-    n "Телефон вибрирует."
+    n "Your phone buzzes."
 
 # game/week.rpy:1979
 translate english ending_exit_a771f9f6:
 
     # newb "Ты правда ушёл?"
-    newb "Ты правда ушёл?"
+    newb "Did you really leave?"
 
 # game/week.rpy:1980
 translate english ending_exit_c7cc4dfa:
@@ -2914,79 +2914,79 @@ translate english ending_exit_c7cc4dfa:
 translate english ending_exit_f5e97edc:
 
     # newb "Я тоже думаю."
-    newb "Я тоже думаю."
+    newb "I'm thinking about it too."
 
 # game/week.rpy:1982
 translate english ending_exit_6db7bf83:
 
     # p "Решай спокойно. Только не подписывай ничего на ходу."
-    p "Решай спокойно. Только не подписывай ничего на ходу."
+    p "Take your time deciding. Just don't sign anything in a rush."
 
 # game/week.rpy:1984
 translate english ending_exit_5c38d1e8:
 
     # vet "Если решил уходить — оформляй всё письменно. И копию себе оставь."
-    vet "Если решил уходить — оформляй всё письменно. И копию себе оставь."
+    vet "If you've decided to leave, put everything in writing. Keep a copy for yourself."
 
 # game/week.rpy:1986
 translate english ending_exit_303e219c:
 
     # mem "Печенье всё-таки украл. Оставить тебе?"
-    mem "Печенье всё-таки украл. Оставить тебе?"
+    mem "I did steal the cookies after all. Want me to save you some?"
 
 # game/week.rpy:1988
 translate english ending_exit_33dc2d19:
 
     # p "Обязательно."
-    p "Обязательно."
+    p "Absolutely."
 
 # game/week.rpy:1990
 translate english ending_exit_ec7c579c:
 
     # n "Ты смеёшься, стоя у пустой остановки. Потом спрашиваешь, какое именно печенье он украл."
-    n "Ты смеёшься, стоя у пустой остановки. Потом спрашиваешь, какое именно печенье он украл."
+    n "You laugh while standing at the empty bus stop. Then you ask what kind of cookies he stole."
 
 # game/week.rpy:1992
 translate english ending_exit_aad9b3de:
 
     # n "Твоё имя исчезает из рейтинга. Остальные строки сдвигаются на одно место вверх."
-    n "Твоё имя исчезает из рейтинга. Остальные строки сдвигаются на одно место вверх."
+    n "Your name disappears from the rankings. Every other line moves up one place."
 
 # game/week.rpy:1994
 translate english ending_exit_e1ab6bbb:
 
     # n "На следующее утро будильник звонит в 18:40. Ты выключаешь его и продолжаешь спать."
-    n "На следующее утро будильник звонит в 18:40. Ты выключаешь его и продолжаешь спать."
+    n "The next morning, the alarm rings at 18:40. You switch it off and keep sleeping."
 
 # game/week.rpy:2003
 translate english ending_silence_422cb073:
 
     # n "Ты отдаёшь команду, но в шуме её слышат только двое."
-    n "Ты отдаёшь команду, но в шуме её слышат только двое."
+    n "You give the command, but only two people hear it through the noise."
 
 # game/week.rpy:2005
 translate english ending_silence_1d83979a:
 
     # n "Команды тонут в шуме. Люди отходят по одному. Линия останавливается сама — после того, как защита наконец замечает перегрев."
-    n "Команды тонут в шуме. Люди отходят по одному. Линия останавливается сама — после того, как защита наконец замечает перегрев."
+    n "Commands drown in the noise. People step away one by one. The line stops on its own - after the protection system finally notices the overheating."
 
 # game/week.rpy:2010
 translate english ending_silence_4eca3516:
 
     # sv "Все целы?"
-    sv "Все целы?"
+    sv "Everyone okay?"
 
 # game/week.rpy:2012
 translate english ending_silence_bcb5c3f7:
 
     # n "Тот же вопрос. Третья аварийная ситуация. Седьмой день."
-    n "Тот же вопрос. Третья аварийная ситуация. Седьмой день."
+    n "The same question. Third emergency. Day Seven."
 
 # game/week.rpy:2014
 translate english ending_silence_cc4a2afd:
 
     # p "Целы."
-    p "Целы."
+    p "Everyone's okay."
 
 # game/week.rpy:2016
 translate english ending_silence_9620b63f:
@@ -2998,165 +2998,165 @@ translate english ending_silence_9620b63f:
 translate english ending_silence_87423205:
 
     # n "Артём говорит это, не глядя на перегретую ленту."
-    n "Артём говорит это, не глядя на перегретую ленту."
+    n "Artyom says it without looking at the overheated belt."
 
 # game/week.rpy:2023
 translate english ending_silence_1c856b68:
 
     # n "Рейтинг аннулируют из-за технического сбоя. Сотрудника месяца сегодня не называют. Куратор обещает вернуться к вопросу позже."
-    n "Рейтинг аннулируют из-за технического сбоя. Сотрудника месяца сегодня не называют. Куратор обещает вернуться к вопросу позже."
+    n "The rankings are voided because of the technical failure. No Employee of the Month is named today. The Curator promises to revisit the matter later."
 
 # game/week.rpy:2025
 translate english ending_silence_51105ae2:
 
     # n "Люди расходятся. Кто-то останется. Кто-то уйдёт. Ты пока не знаешь, к кому относишься."
-    n "Люди расходятся. Кто-то останется. Кто-то уйдёт. Ты пока не знаешь, к кому относишься."
+    n "People drift apart. Some will stay. Some will leave. You do not yet know which group you belong to."
 
 # game/week.rpy:2027
 translate english ending_silence_104b1f9d:
 
     # n "Ты выходишь из комнаты отдыха вместе с остальными. Решение о следующей смене придётся принять позже, когда получится выспаться и спокойно вспомнить эту ночь."
-    n "Ты выходишь из комнаты отдыха вместе с остальными. Решение о следующей смене придётся принять позже, когда получится выспаться и спокойно вспомнить эту ночь."
+    n "You leave the break room with the others. The decision about the next shift will have to wait until you can sleep and remember this night clearly."
 
 # game/week.rpy:2051
 translate english ending_common_84cbafbd:
 
     # n "Когда шум стихает, склад впервые за неделю кажется по-настоящему пустым. На мокром металле всё ещё остаётся неправильный фиолетовый отблеск."
-    n "Когда шум стихает, склад впервые за неделю кажется по-настоящему пустым. На мокром металле всё ещё остаётся неправильный фиолетовый отблеск."
+    n "When the noise fades, the warehouse feels truly empty for the first time all week. The wrong violet reflection still lingers on the wet metal."
 
 # game/week.rpy:2078
 translate english ending_common_7e18c84d:
 
     # n "За воротами никто не расходится сразу. Четверо стоят под холодным светом и впервые не ждут команды, чтобы решить, куда идти дальше."
-    n "За воротами никто не расходится сразу. Четверо стоят под холодным светом и впервые не ждут команды, чтобы решить, куда идти дальше."
+    n "Outside the gate, nobody leaves immediately. Four people stand under the cold light and, for the first time, do not wait for an order before deciding where to go next."
 
 # game/week.rpy:2082
 translate english ending_common_8e92d1f8:
 
     # n "В стекле диспетчерской отражается вся смена. Когда Лера отходит за курткой, Макс придерживает дверь, а остальные ждут её у выхода."
-    n "В стекле диспетчерской отражается вся смена. Когда Лера отходит за курткой, Макс придерживает дверь, а остальные ждут её у выхода."
+    n "The whole shift is reflected in the control-room glass. When Lera goes back for her jacket, Max holds the door while the others wait by the exit."
 
 # game/week.rpy:2085
 translate english ending_common_cd0da5e6:
 
     # centered "Фиолетовая Смена\n\nСемь дней спустя"
-    centered "Фиолетовая Смена\n\nСемь дней спустя"
+    centered "PURPLE SHIFT\\n\\nSEVEN DAYS LATER"
 
 # game/week.rpy:2089
 translate english ending_common_c64f606b:
 
     # n "Неделя закончилась. В архиве остались твои решения и сообщения, а у проходной — люди, с которыми ты её прошёл."
-    n "Неделя закончилась. В архиве остались твои решения и сообщения, а у проходной — люди, с которыми ты её прошёл."
+    n "The week is over. Your decisions and messages remain in the archive, and by the gate are the people who went through it with you."
 
 # game/week.rpy:2097
 translate english ending_common_fc645053:
 
     # mem "Ты всё ещё здесь? Тогда спасибо, что не промотал титры. Я бы промотал. Но у меня, как обычно, уважительная причина."
-    mem "Ты всё ещё здесь? Тогда спасибо, что не промотал титры. Я бы промотал. Но у меня, как обычно, уважительная причина."
+    mem "Still here? Then thanks for not skipping the credits. I would have. But as usual, I have a perfectly valid excuse."
 
 translate english strings:
 
     # game/week.rpy:178
-    old "Сфотографировать журнал и открыть архив"
-    new "Сфотографировать журнал и открыть архив"
+    old "Photograph the log and open the archive"
+    new "Photograph the log and open the archive"
 
     # game/week.rpy:189
-    old "Сразу позвать супервайзера"
-    new "Сразу позвать супервайзера"
+    old "Call the supervisor immediately"
+    new "Call the supervisor immediately"
 
     # game/week.rpy:216
-    old "Закрыть журнал и сосредоточиться на рейтинге"
-    new "Закрыть журнал и сосредоточиться на рейтинге"
+    old "Close the log and focus on the rankings"
+    new "Close the log and focus on the rankings"
 
     # game/week.rpy:243
-    old "Ускориться и войти в первую десятку"
-    new "Ускориться и войти в первую десятку"
+    old "Speed up and make the top ten"
+    new "Speed up and make the top ten"
 
     # game/week.rpy:252
-    old "Держать ровный темп и следить за людьми"
-    new "Держать ровный темп и следить за людьми"
+    old "Keep a steady pace and watch the people around you"
+    new "Keep a steady pace and watch the people around you"
 
     # game/week.rpy:259
-    old "Объявить таблице личную войну шутками"
-    new "Объявить таблице личную войну шутками"
+    old "Declare a personal war on the rankings with jokes"
+    new "Declare a personal war on the rankings with jokes"
 
     # game/week.rpy:327
-    old "Ответить: «Ничего не подписывай без меня»"
-    new "Ответить: «Ничего не подписывай без меня»"
+    old "Reply: \"Don't sign anything without me\""
+    new "Reply: \"Don't sign anything without me\""
 
     # game/week.rpy:335
-    old "Попросить её прислать номер операции"
-    new "Попросить её прислать номер операции"
+    old "Ask her to send the operation number"
+    new "Ask her to send the operation number"
 
     # game/week.rpy:342
-    old "Посоветовать самой поговорить с супервайзером"
-    new "Посоветовать самой поговорить с супервайзером"
+    old "Tell her to speak to the supervisor herself"
+    new "Tell her to speak to the supervisor herself"
 
     # game/week.rpy:374
-    old "Показать архив и защищать новичка"
-    new "Показать архив и защищать новичка"
+    old "Show the archive and defend the newcomer"
+    new "Show the archive and defend the newcomer"
 
     # game/week.rpy:401
-    old "Молча восстановить цепочку операций"
-    new "Молча восстановить цепочку операций"
+    old "Silently reconstruct the chain of operations"
+    new "Silently reconstruct the chain of operations"
 
     # game/week.rpy:426
-    old "Не вмешиваться и сохранить место в рейтинге"
-    new "Не вмешиваться и сохранить место в рейтинге"
+    old "Stay out of it and protect your ranking"
+    new "Stay out of it and protect your ranking"
 
     # game/week.rpy:807
-    old "Остановить приёмку до ремонта"
-    new "Остановить приёмку до ремонта"
+    old "Stop receiving until repairs are done"
+    new "Stop receiving until repairs are done"
 
     # game/week.rpy:829
-    old "Собрать команду и разгружать вручную"
-    new "Собрать команду и разгружать вручную"
+    old "Gather the team and unload manually"
+    new "Gather the team and unload manually"
 
     # game/week.rpy:854
-    old "Перезапустить подъёмник и вернуть темп"
-    new "Перезапустить подъёмник и вернуть темп"
+    old "Restart the lift and recover the pace"
+    new "Restart the lift and recover the pace"
 
     # game/week.rpy:1178
-    old "Исправить отчёт и перечислить нарушения"
-    new "Исправить отчёт и перечислить нарушения"
+    old "Correct the report and list the violations"
+    new "Correct the report and list the violations"
 
     # game/week.rpy:1202
-    old "Подписать отчёт и принять роль старшего"
-    new "Подписать отчёт и принять роль старшего"
+    old "Sign the report and accept the lead role"
+    new "Sign the report and accept the lead role"
 
     # game/week.rpy:1220
-    old "Отказаться от роли и сохранить копии"
-    new "Отказаться от роли и сохранить копии"
+    old "Refuse the role and keep copies"
+    new "Refuse the role and keep copies"
 
     # game/week.rpy:1377
-    old "Ответить всем: «Встретимся на линии»"
-    new "Ответить всем: «Встретимся на линии»"
+    old "Reply to everyone: \"See you on the line\""
+    new "Reply to everyone: \"See you on the line\""
 
     # game/week.rpy:1383
-    old "Открыть рейтинг перед выходом"
-    new "Открыть рейтинг перед выходом"
+    old "Open the rankings before leaving"
+    new "Open the rankings before leaving"
 
     # game/week.rpy:1388
-    old "Выключить телефон и посидеть минуту в тишине"
-    new "Выключить телефон и посидеть минуту в тишине"
+    old "Turn off the phone and sit in silence for a minute"
+    new "Turn off the phone and sit in silence for a minute"
 
     # game/week.rpy:1594
-    old "Остановить поток и вывести людей"
-    new "Остановить поток и вывести людей"
+    old "Stop the flow and get people out"
+    new "Stop the flow and get people out"
 
     # game/week.rpy:1616
-    old "Взять управление линией и спасти результат"
-    new "Взять управление линией и спасти результат"
+    old "Take control of the line and save the result"
+    new "Take control of the line and save the result"
 
     # game/week.rpy:1631
-    old "Передать журнал нарушений и включить громкую связь"
-    new "Передать журнал нарушений и включить громкую связь"
+    old "Put the violations log on the shared screen and turn on the PA"
+    new "Put the violations log on the shared screen and turn on the PA"
 
     # game/week.rpy:1650
-    old "Собрать смену голосом"
-    new "Собрать смену голосом"
+    old "Coordinate the shift by voice"
+    new "Coordinate the shift by voice"
 
     # game/week.rpy:1664
-    old "Снять жилет и выйти из потока"
-    new "Снять жилет и выйти из потока"
+    old "Take off the vest and walk out of the flow"
+    new "Take off the vest and walk out of the flow"
 
