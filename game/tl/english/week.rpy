@@ -3166,280 +3166,280 @@ translate english strings:
 
     # game/week.rpy:14
     old "На табло считают скорость. Из журнала исчезла вчерашняя остановка."
-    new "На табло считают скорость. Из журнала исчезла вчерашняя остановка."
+    new "The board tracks speed. Yesterday's stop has vanished from the log."
 
     # game/week.rpy:131
     old "Ты прошёл контрольную серию ТСД без пересорта."
-    new "Ты прошёл контрольную серию ТСД без пересорта."
+    new "You completed the scanner control series without a mis-sort."
 
     # game/week.rpy:143
     old "ЗАПИСЬ ОБ ОСТАНОВКЕ НЕ НАЙДЕНА"
-    new "ЗАПИСЬ ОБ ОСТАНОВКЕ НЕ НАЙДЕНА"
+    new "STOP RECORD NOT FOUND"
 
     # game/week.rpy:143
     old "Событие STOP-04 отсутствует в журнале участка."
-    new "Событие STOP-04 отсутствует в журнале участка."
+    new "STOP-04 is missing from the section log."
 
     # game/week.rpy:178
     old "Сфотографировать журнал и открыть архив"
-    new "Сфотографировать журнал и открыть архив"
+    new "Photograph the log and open the archive"
 
     # game/week.rpy:182
     old "Ты сохранил исчезнувшую запись об опасном контейнере."
-    new "Ты сохранил исчезнувшую запись об опасном контейнере."
+    new "You preserved the vanished record of the dangerous container."
 
     # game/week.rpy:189
     old "Сразу позвать супервайзера"
-    new "Сразу позвать супервайзера"
+    new "Call the supervisor immediately"
 
     # game/week.rpy:194
     old "Ты потребовал объяснить исчезновение записи."
-    new "Ты потребовал объяснить исчезновение записи."
+    new "You demanded an explanation for the missing record."
 
     # game/week.rpy:216
     old "Закрыть журнал и сосредоточиться на рейтинге"
-    new "Закрыть журнал и сосредоточиться на рейтинге"
+    new "Close the log and focus on the ranking"
 
     # game/week.rpy:221
     old "Ты закрыл пропавшую запись ради места в рейтинге."
-    new "Ты закрыл пропавшую запись ради места в рейтинге."
+    new "You ignored the missing record for a place in the ranking."
 
     # game/week.rpy:243
     old "Ускориться и войти в первую десятку"
-    new "Ускориться и войти в первую десятку"
+    new "Speed up and make the top ten"
 
     # game/week.rpy:252
     old "Держать ровный темп и следить за людьми"
-    new "Держать ровный темп и следить за людьми"
+    new "Keep a steady pace and watch the people around you"
 
     # game/week.rpy:259
     old "Объявить таблице личную войну шутками"
-    new "Объявить таблице личную войну шутками"
+    new "Declare a personal war on the ranking with jokes"
 
     # game/week.rpy:272
     old "РЕЙТИНГ ОБНОВЛЁН"
-    new "РЕЙТИНГ ОБНОВЛЁН"
+    new "RANKING UPDATED"
 
     # game/week.rpy:272
     old "До закрытия периода осталось четыре дня."
-    new "До закрытия периода осталось четыре дня."
+    new "Four days remain until the period closes."
 
     # game/week.rpy:282
     old "Итоги третьего дня"
-    new "Итоги третьего дня"
+    new "Day Three Results"
 
     # game/week.rpy:282
     old "Третий день закончен. У тебя есть выбор - хранить копию записи или сделать вид, что её не было."
-    new "Третий день закончен. У тебя есть выбор - хранить копию записи или сделать вид, что её не было."
+    new "Day Three is over. You can keep a copy of the record or pretend it never existed."
 
     # game/week.rpy:302
     old "В системе недостача. В объяснительной уже напечатано имя Леры."
-    new "В системе недостача. В объяснительной уже напечатано имя Леры."
+    new "The system shows a shortage. Lera's name is already printed on the statement."
 
     # game/week.rpy:327
     old "Ответить: «Ничего не подписывай без меня»"
-    new "Ответить: «Ничего не подписывай без меня»"
+    new "Reply: 'Don't sign anything without me'"
 
     # game/week.rpy:335
     old "Попросить её прислать номер операции"
-    new "Попросить её прислать номер операции"
+    new "Ask her to send the operation number"
 
     # game/week.rpy:342
     old "Посоветовать самой поговорить с супервайзером"
-    new "Посоветовать самой поговорить с супервайзером"
+    new "Tell her to speak to the supervisor herself"
 
     # game/week.rpy:374
     old "Показать архив и защищать новичка"
-    new "Показать архив и защищать новичка"
+    new "Show the archive and defend the newcomer"
 
     # game/week.rpy:380
     old "Ты не позволил списать системную ошибку на новичка."
-    new "Ты не позволил списать системную ошибку на новичка."
+    new "You did not let them blame a system error on the newcomer."
 
     # game/week.rpy:401
     old "Молча восстановить цепочку операций"
-    new "Молча восстановить цепочку операций"
+    new "Quietly reconstruct the operation chain"
 
     # game/week.rpy:408
     old "Ты восстановил цепочку и нашёл настоящую причину недостачи."
-    new "Ты восстановил цепочку и нашёл настоящую причину недостачи."
+    new "You reconstructed the chain and found the real cause of the shortage."
 
     # game/week.rpy:426
     old "Не вмешиваться и сохранить место в рейтинге"
-    new "Не вмешиваться и сохранить место в рейтинге"
+    new "Stay out of it and protect your ranking position"
 
     # game/week.rpy:433
     old "Ты позволил системе назначить виноватую."
-    new "Ты позволил системе назначить виноватую."
+    new "You let the system assign someone to blame."
 
     # game/week.rpy:607
     old "Итоги четвёртого дня"
-    new "Итоги четвёртого дня"
+    new "Day Four Results"
 
     # game/week.rpy:607
     old "Недостача нашлась. Вопрос в том, кто остался виноватым в отчёте."
-    new "Недостача нашлась. Вопрос в том, кто остался виноватым в отчёте."
+    new "The shortage was found. The question is who remained guilty in the report."
 
     # game/week.rpy:627
     old "Датчик перегруза сломан. Приёмку всё равно решили запускать."
-    new "Датчик перегруза сломан. Приёмку всё равно решили запускать."
+    new "The overload sensor is broken. Receiving is being started anyway."
 
     # game/week.rpy:737
     old "Ты удержал живую линию, не превратив людей в расходник."
-    new "Ты удержал живую линию, не превратив людей в расходник."
+    new "You kept the line alive without turning people into expendable resources."
 
     # game/week.rpy:775
     old "ПЕРЕГРУЗ НЕ ОПРЕДЕЛЁН"
-    new "ПЕРЕГРУЗ НЕ ОПРЕДЕЛЁН"
+    new "OVERLOAD UNKNOWN"
 
     # game/week.rpy:775
     old "Датчик массы недоступен. Ручной режим активен."
-    new "Датчик массы недоступен. Ручной режим активен."
+    new "Weight sensor unavailable. Manual mode active."
 
     # game/week.rpy:807
     old "Остановить приёмку до ремонта"
-    new "Остановить приёмку до ремонта"
+    new "Stop receiving until repairs are completed"
 
     # game/week.rpy:815
     old "Ты остановил неисправный подъёмник, несмотря на план."
-    new "Ты остановил неисправный подъёмник, несмотря на план."
+    new "You stopped the faulty lift despite the target."
 
     # game/week.rpy:829
     old "Собрать команду и разгружать вручную"
-    new "Собрать команду и разгружать вручную"
+    new "Gather the team and unload manually"
 
     # game/week.rpy:836
     old "Ты собрал команду и вывел приёмку без опасного подъёмника."
-    new "Ты собрал команду и вывел приёмку без опасного подъёмника."
+    new "You organized the team and kept receiving moving without the dangerous lift."
 
     # game/week.rpy:854
     old "Перезапустить подъёмник и вернуть темп"
-    new "Перезапустить подъёмник и вернуть темп"
+    new "Restart the lift and recover the pace"
 
     # game/week.rpy:862
     old "Ты перезапустил неисправный подъёмник ради плана."
-    new "Ты перезапустил неисправный подъёмник ради плана."
+    new "You restarted the faulty lift for the sake of the target."
 
     # game/week.rpy:971
     old "Итоги пятого дня"
-    new "Итоги пятого дня"
+    new "Day Five Results"
 
     # game/week.rpy:971
     old "Подъёмник остановлен. Вопрос в том, успели ли вы сделать это до травмы."
-    new "Подъёмник остановлен. Вопрос в том, успели ли вы сделать это до травмы."
+    new "The lift was stopped. The question is whether you did it before someone got hurt."
 
     # game/week.rpy:991
     old "В отчёте всё штатно. Для закрытия не хватает только твоей подписи."
-    new "В отчёте всё штатно. Для закрытия не хватает только твоей подписи."
+    new "The report says everything was routine. All it needs to close is your signature."
 
     # game/week.rpy:1158
     old "Ты собрал дело только из проверяемых фактов."
-    new "Ты собрал дело только из проверяемых фактов."
+    new "You built the case using only verifiable facts."
 
     # game/week.rpy:1178
     old "Исправить отчёт и перечислить нарушения"
-    new "Исправить отчёт и перечислить нарушения"
+    new "Correct the report and list the violations"
 
     # game/week.rpy:1184
     old "Ты отказался подписывать чистый отчёт и внёс нарушения."
-    new "Ты отказался подписывать чистый отчёт и внёс нарушения."
+    new "You refused to sign a clean report and documented the violations."
 
     # game/week.rpy:1202
     old "Подписать отчёт и принять роль старшего"
-    new "Подписать отчёт и принять роль старшего"
+    new "Sign the report and accept the line lead role"
 
     # game/week.rpy:1210
     old "Ты подписал чистый отчёт ради должности старшего."
-    new "Ты подписал чистый отчёт ради должности старшего."
+    new "You signed the clean report for the line lead position."
 
     # game/week.rpy:1220
     old "Отказаться от роли и сохранить копии"
-    new "Отказаться от роли и сохранить копии"
+    new "Refuse the role and keep copies"
 
     # game/week.rpy:1228
     old "Ты отказался от должности и сохранил копии документов."
-    new "Ты отказался от должности и сохранил копии документов."
+    new "You refused the position and kept copies of the documents."
 
     # game/week.rpy:1318
     old "Итоги шестого дня"
-    new "Итоги шестого дня"
+    new "Day Six Results"
 
     # game/week.rpy:1318
     old "До конца недели одна смена. Отчёт пока открыт - или уже подписан тобой."
-    new "До конца недели одна смена. Отчёт пока открыт - или уже подписан тобой."
+    new "One shift remains in the week. The report is still open - or already signed by you."
 
     # game/week.rpy:1338
     old "Через шесть часов закроют рейтинг и назовут нового старшего линии."
-    new "Через шесть часов закроют рейтинг и назовут нового старшего линии."
+    new "In six hours, the ranking will close and a new line lead will be named."
 
     # game/week.rpy:1377
     old "Ответить всем: «Встретимся на линии»"
-    new "Ответить всем: «Встретимся на линии»"
+    new "Reply to everyone: 'See you on the line'"
 
     # game/week.rpy:1383
     old "Открыть рейтинг перед выходом"
-    new "Открыть рейтинг перед выходом"
+    new "Open the ranking before leaving"
 
     # game/week.rpy:1388
     old "Выключить телефон и посидеть минуту в тишине"
-    new "Выключить телефон и посидеть минуту в тишине"
+    new "Turn off the phone and sit in silence for a minute"
 
     # game/week.rpy:1488
     old "ВНЕПЛАНОВАЯ ПОСТАВКА"
-    new "ВНЕПЛАНОВАЯ ПОСТАВКА"
+    new "UNSCHEDULED DELIVERY"
 
     # game/week.rpy:1488
     old "Перенаправление невозможно. Все доступные линии назначены."
-    new "Перенаправление невозможно. Все доступные линии назначены."
+    new "Rerouting unavailable. All available lines are assigned."
 
     # game/week.rpy:1532
     old "СВЯЗЬ С СИСТЕМОЙ ПОТЕРЯНА"
-    new "СВЯЗЬ С СИСТЕМОЙ ПОТЕРЯНА"
+    new "SYSTEM CONNECTION LOST"
 
     # game/week.rpy:1532
     old "Автономный поток активен. Ручная остановка доступна старшему линии."
-    new "Автономный поток активен. Ручная остановка доступна старшему линии."
+    new "Autonomous flow active. Manual stop available to the line lead."
 
     # game/week.rpy:1594
     old "Остановить поток и вывести людей"
-    new "Остановить поток и вывести людей"
+    new "Stop the flow and evacuate the people"
 
     # game/week.rpy:1599
     old "В финале ты поставил людей выше рейтинга."
-    new "В финале ты поставил людей выше рейтинга."
+    new "In the finale, you put people above the ranking."
 
     # game/week.rpy:1616
     old "Взять управление линией и спасти результат"
-    new "Взять управление линией и спасти результат"
+    new "Take control of the line and save the result"
 
     # game/week.rpy:1621
     old "В финале ты взял управление потоком на себя."
-    new "В финале ты взял управление потоком на себя."
+    new "In the finale, you took control of the flow yourself."
 
     # game/week.rpy:1631
     old "Передать журнал нарушений и включить громкую связь"
-    new "Передать журнал нарушений и включить громкую связь"
+    new "Hand over the violations log and turn on the PA"
 
     # game/week.rpy:1636
     old "В финале ты сделал нарушения видимыми для всех."
-    new "В финале ты сделал нарушения видимыми для всех."
+    new "In the finale, you made the violations visible to everyone."
 
     # game/week.rpy:1650
     old "Собрать смену голосом"
-    new "Собрать смену голосом"
+    new "Pull the shift together with your voice"
 
     # game/week.rpy:1654
     old "В финале твой голос удержал смену от паники."
-    new "В финале твой голос удержал смену от паники."
+    new "In the finale, your voice kept the shift from panicking."
 
     # game/week.rpy:1664
     old "Снять жилет и выйти из потока"
-    new "Снять жилет и выйти из потока"
+    new "Take off the vest and step out of the flow"
 
     # game/week.rpy:1668
     old "В финале ты выбрал выход и сохранил себя."
-    new "В финале ты выбрал выход и сохранил себя."
+    new "In the finale, you chose the exit and preserved yourself."
 
     # game/week.rpy:1689
     old "Ты без ошибок передал аварийную последовательность."
-    new "Ты без ошибок передал аварийную последовательность."
+    new "You transmitted the emergency sequence without mistakes."
