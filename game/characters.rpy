@@ -128,9 +128,19 @@ init python:
     import math
 
     def ps_character_breathe(trans, shown_time, animation_time):
-        # Do not overwrite the transform's baseline. This function used to
-        # force yoffset every frame, which cancelled all grounding fixes.
-        return None
+        # Keep the sprite grounded and animate around the bottom anchor.
+        # The old implementation animated yoffset, which made feet float.
+        # A tiny squash/stretch gives the character a living breathing motion
+        # without changing the authored screen position.
+        if persistent.ps_reduce_motion:
+            trans.xzoom = 1.0
+            trans.yzoom = 1.0
+            return None
+
+        breath = math.sin(shown_time * 1.75)
+        trans.xzoom = 1.0 - breath * 0.0015
+        trans.yzoom = 1.0 + breath * 0.0040
+        return 0.05
 
 
 transform ps_center:
