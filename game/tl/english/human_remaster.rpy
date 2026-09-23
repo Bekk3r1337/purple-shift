@@ -358,59 +358,59 @@ translate english strings:
 
     # game/human_remaster.rpy:482
     old "Спросить, кем они бывают после смены[ps_choice_hint('узнать людей вне склада')]"
-    new "Спросить, кем они бывают после смены[ps_choice_hint('узнать людей вне склада')]"
+    new "Ask who they are after the shift[ps_choice_hint('get to know them outside the warehouse')]"
 
     # game/human_remaster.rpy:490
     old "Оставить четыре минуты без разговора[ps_choice_hint('дать команде безопасную тишину')]"
-    new "Оставить четыре минуты без разговора[ps_choice_hint('дать команде безопасную тишину')]"
+    new "Spend the four minutes in silence[ps_choice_hint('give the team a safe silence')]"
 
     # game/human_remaster.rpy:515
     old "Остаться до конца разговора[ps_choice_hint('поставить человеческий момент выше темпа')]"
-    new "Остаться до конца разговора[ps_choice_hint('поставить человеческий момент выше темпа')]"
+    new "Stay until the conversation ends[ps_choice_hint('put a human moment above pace')]"
 
     # game/human_remaster.rpy:524
     old "Мягко вернуть разговор к предстоящей смене[ps_choice_hint('сохранить тепло, но не терять контроль')]"
-    new "Мягко вернуть разговор к предстоящей смене[ps_choice_hint('сохранить тепло, но не терять контроль')]"
+    new "Gently steer the conversation back to the coming shift[ps_choice_hint('keep the warmth without losing control')]"
 
     # game/human_remaster.rpy:548
     old "Оставить на доске факты и человеческие последствия[ps_choice_hint('собрать полную память недели')]"
-    new "Оставить на доске факты и человеческие последствия[ps_choice_hint('собрать полную память недели')]"
+    new "Leave both facts and human consequences on the board[ps_choice_hint('preserve the full memory of the week')]"
 
     # game/human_remaster.rpy:559
     old "Снять личные пометки и сохранить их отдельной копией[ps_choice_hint('защитить людей, не потеряв память')]"
-    new "Снять личные пометки и сохранить их отдельной копией[ps_choice_hint('защитить людей, не потеряв память')]"
+    new "Remove the personal notes and save them in a separate copy[ps_choice_hint('protect people without losing the memory')]"
 
     # game/human_remaster.rpy:587
     old "Отнести бутылку Виктору[ps_choice_hint('заметить человека раньше проблемы')]"
-    new "Отнести бутылку Виктору[ps_choice_hint('заметить человека раньше проблемы')]"
+    new "Take the bottle to Viktor[ps_choice_hint('notice the person before the problem')]"
 
     # game/human_remaster.rpy:595
     old "Поставить бутылку у общей рации[ps_choice_hint('сделать заботу частью порядка')]"
-    new "Поставить бутылку у общей рации[ps_choice_hint('сделать заботу частью порядка')]"
+    new "Put the bottle by the shared radio[ps_choice_hint('make care part of the routine')]"
 
     # game/human_remaster.rpy:610
     old "Остановить участок и принести подходящие перчатки[ps_choice_hint('безопасность важнее семи минут')]"
-    new "Остановить участок и принести подходящие перчатки[ps_choice_hint('безопасность важнее семи минут')]"
+    new "Stop the section and fetch proper gloves[ps_choice_hint('safety matters more than seven minutes')]"
 
     # game/human_remaster.rpy:617
     old "Перераспределить людей с подходящими перчатками[ps_choice_hint('решить проблему без опасной спешки')]"
-    new "Перераспределить людей с подходящими перчатками[ps_choice_hint('решить проблему без опасной спешки')]"
+    new "Reassign people who have fitting gloves[ps_choice_hint('solve the problem without dangerous rushing')]"
 
     # game/human_remaster.rpy:634
     old "Сфотографировать табель для команды[ps_choice_hint('сохранить неофициальную память')]"
-    new "Сфотографировать табель для команды[ps_choice_hint('сохранить неофициальную память')]"
+    new "Photograph the roster for the team[ps_choice_hint('preserve the unofficial memory')]"
 
     # game/human_remaster.rpy:640
     old "Переписать важные пометки в общий план безопасности[ps_choice_hint('превратить заботу в работающий порядок')]"
-    new "Переписать важные пометки в общий план безопасности[ps_choice_hint('превратить заботу в работающий порядок')]"
+    new "Copy the important notes into the shared safety plan[ps_choice_hint('turn care into a working routine')]"
 
     # game/human_remaster.rpy:671
     old "Пойти длинной дорогой вместе[ps_choice_hint('оставить финалу человеческое послесловие')]"
-    new "Пойти длинной дорогой вместе[ps_choice_hint('оставить финалу человеческое послесловие')]"
+    new "Take the long way together[ps_choice_hint('give the ending a human epilogue')]"
 
     # game/human_remaster.rpy:680
     old "Попрощаться здесь, не обесценивая неделю[ps_choice_hint('дать каждому право уйти своим путём')]"
-    new "Попрощаться здесь, не обесценивая неделю[ps_choice_hint('дать каждому право уйти своим путём')]"
+    new "Say goodbye here without diminishing the week[ps_choice_hint('let everyone leave in their own way')]"
 
 # TODO: Translation updated at 2026-09-23 09:13
 
@@ -418,24 +418,24 @@ translate english strings:
 
     # game/human_remaster.rpy:200
     old "Люди держат смену вместе"
-    new "Люди держат смену вместе"
+    new "People are holding the shift together"
 
     # game/human_remaster.rpy:202
     old "Должности начинают становиться именами"
-    new "Должности начинают становиться именами"
+    new "Job titles are becoming names"
 
     # game/human_remaster.rpy:204
     old "Шум стал громче людей"
-    new "Шум стал громче людей"
+    new "The noise has become louder than the people"
 
     # game/human_remaster.rpy:205
     old "Смена пока присматривается к тебе"
-    new "Смена пока присматривается к тебе"
+    new "The shift is still watching you"
 
     # game/human_remaster.rpy:209
     old "Значимые мелочи появятся здесь после разговоров и бытовых остановок."
-    new "Значимые мелочи появятся здесь после разговоров и бытовых остановок."
+    new "Meaningful small moments will appear here after conversations and everyday pauses."
 
     # game/human_remaster.rpy:210
     old "Запомнено человеческих моментов: {}. Последние решения возвращаются не только цифрами, но и поведением команды."
-    new "Запомнено человеческих моментов: {}. Последние решения возвращаются не только цифрами, но и поведением команды."
+    new "Human moments remembered: {}. Recent decisions return not only as numbers, but through the team's behavior."
