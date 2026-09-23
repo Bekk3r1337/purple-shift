@@ -426,3 +426,11 @@ translate english strings:
     old "СОЕДИНЕНИЕ ПРОДОЛЖАЕТСЯ."
     new "СОЕДИНЕНИЕ ПРОДОЛЖАЕТСЯ."
 
+# TODO: Translation updated at 2026-09-23 09:14
+
+translate english strings:
+
+    # game/living_shift.rpy:634
+    old "Неизвестный след"
+    new "Неизвестный след"
+
