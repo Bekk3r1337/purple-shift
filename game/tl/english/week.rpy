@@ -1270,601 +1270,601 @@ translate english chapter5_day_five_8c931319:
 translate english chapter5_day_five_6d6cdc77:
 
     # p "Снимем верхний ряд и запустим."
-    p "Снимем верхний ряд и запустим."
+    p "We'll remove the top row and restart it."
 
 # game/week.rpy:866
 translate english chapter5_day_five_0a12761e:
 
     # sv "Работаем."
-    sv "Работаем."
+    sv "Get to work."
 
 # game/week.rpy:868
 translate english chapter5_day_five_a0304e2d:
 
     # n "Виктор нажимает ручной спуск. Платформа дёргается; он успевает убрать руку, но металлическая ручка всё равно бьёт по запястью."
-    n "Виктор нажимает ручной спуск. Платформа дёргается; он успевает убрать руку, но металлическая ручка всё равно бьёт по запястью."
+    n "Viktor presses the manual release. The platform jerks; he pulls his hand away in time, but the metal handle still slams into his wrist."
 
 # game/week.rpy:873
 translate english chapter5_day_five_f11cc40c:
 
     # vet "Твою…"
-    vet "Твою…"
+    vet "Damn..."
 
 # game/week.rpy:875
 translate english chapter5_day_five_419e079e:
 
     # newb "Стойте!"
-    newb "Стойте!"
+    newb "Stop!"
 
 # game/week.rpy:877
 translate english chapter5_day_five_1d97064e:
 
     # n "Работа всё равно останавливается. Только теперь ветеран сидит у стены, прижимая руку к груди."
-    n "Работа всё равно останавливается. Только теперь ветеран сидит у стены, прижимая руку к груди."
+    n "The work stops anyway. Only now the veteran is sitting against the wall, holding his hand to his chest."
 
 # game/week.rpy:879
 translate english chapter5_day_five_fa92265e:
 
     # sv "В медпункт."
-    sv "В медпункт."
+    sv "First aid."
 
 # game/week.rpy:881
 translate english chapter5_day_five_286d452e:
 
     # vet "Я дойду."
-    vet "Я дойду."
+    vet "I'll walk."
 
 # game/week.rpy:883
 translate english chapter5_day_five_8a334114:
 
     # n "Проходя мимо, он не смотрит на тебя."
-    n "Проходя мимо, он не смотрит на тебя."
+    n "He does not look at you as he passes."
 
 # game/week.rpy:892
 translate english chapter5_day_five_d633fdec:
 
     # n "Артём задерживает ладонь над аварийной кнопкой всего на секунду. Потом нажимает."
-    n "Артём задерживает ладонь над аварийной кнопкой всего на секунду. Потом нажимает."
+    n "Artyom holds his hand over the emergency button for only a second. Then he presses it."
 
 # game/week.rpy:897
 translate english chapter5_day_five_8c40ffe7:
 
     # n "После нажатия красной кнопки платформа замирает. Люди отходят от неё и пересчитываются по участкам."
-    n "После нажатия красной кнопки платформа замирает. Люди отходят от неё и пересчитываются по участкам."
+    n "After the red button is pressed, the platform freezes. People step away and count off by section."
 
 # game/week.rpy:910
 translate english chapter5_day_five_1756da31:
 
     # n "Оставшаяся часть смены превращается в длинную ручную цепочку: взять коробку, сделать шаг, передать и вернуться за следующей."
-    n "Оставшаяся часть смены превращается в длинную ручную цепочку: взять коробку, сделать шаг, передать и вернуться за следующей."
+    n "The rest of the shift turns into a long manual chain: take a box, step forward, pass it on, go back for the next one."
 
 # game/week.rpy:913
 translate english chapter5_day_five_5a18d9a9:
 
     # n "Ремонтник приезжает через два часа. Находит треснувшее крепление датчика. На его лице нет удивления."
-    n "Ремонтник приезжает через два часа. Находит треснувшее крепление датчика. На его лице нет удивления."
+    n "A repair technician arrives two hours later. He finds a cracked sensor mount. There is no surprise on his face."
 
 # game/week.rpy:916
 translate english chapter5_day_five_3fcb82c4:
 
     # n "К концу смены руки гудят. Но очередь почти разобрана. Ни один человек не остался один на тяжёлом."
-    n "К концу смены руки гудят. Но очередь почти разобрана. Ни один человек не остался один на тяжёлом."
+    n "By the end of the shift, your arms are buzzing. But the queue is almost cleared. Nobody was left alone on heavy work."
 
 # game/week.rpy:918
 translate english chapter5_day_five_dcbff55e:
 
     # n "Подъёмник опечатывают. В отчёте появляется формулировка:"
-    n "Подъёмник опечатывают. В отчёте появляется формулировка:"
+    n "The lift is sealed. A line appears in the report:"
 
 # game/week.rpy:919
 translate english chapter5_day_five_161805d2:
 
     # n "«Лёгкое растяжение при штатной операции». Ты перечитываешь формулировку дважды: про сломанный датчик в ней ничего нет."
-    n "«Лёгкое растяжение при штатной операции». Ты перечитываешь формулировку дважды: про сломанный датчик в ней ничего нет."
+    n "\"Minor sprain during normal operation.\" You read the wording twice: there is nothing about the broken sensor."
 
 # game/week.rpy:928
 translate english chapter5_day_five_6b9c385a:
 
     # n "На минуту Лера остаётся одна у шкафчиков. В металлической дверце за её плечом держится тонкий фиолетовый отблеск, хотя лампы над ней белые."
-    n "На минуту Лера остаётся одна у шкафчиков. В металлической дверце за её плечом держится тонкий фиолетовый отблеск, хотя лампы над ней белые."
+    n "For a minute, Lera is alone by the lockers. A thin violet reflection lingers in the metal door behind her shoulder even though the lights above are white."
 
 # game/week.rpy:937
 translate english chapter5_day_five_a82e0d1f:
 
     # newb "Он говорил, что нельзя."
-    newb "Он говорил, что нельзя."
+    newb "He said we couldn't."
 
 # game/week.rpy:938
 translate english chapter5_day_five_bb063a80:
 
     # p "Я слышал."
-    p "Я слышал."
+    p "I heard."
 
 # game/week.rpy:939
 translate english chapter5_day_five_5ef1b147:
 
     # newb "Тогда почему?"
-    newb "Тогда почему?"
+    newb "Then why?"
 
 # game/week.rpy:940
 translate english chapter5_day_five_ea992ea9:
 
     # n "Ты вспоминаешь минус восемнадцать процентов на табло, но вслух это не произносишь."
-    n "Ты вспоминаешь минус восемнадцать процентов на табло, но вслух это не произносишь."
+    n "You remember the minus eighteen percent on the board, but do not say it aloud."
 
 # game/week.rpy:942
 translate english chapter5_day_five_1423dcc6:
 
     # newb "Сегодня было тяжело."
-    newb "Сегодня было тяжело."
+    newb "Today was hard."
 
 # game/week.rpy:943
 translate english chapter5_day_five_c7cc4dfa:
 
     # p "Да."
-    p "Да."
+    p "Yeah."
 
 # game/week.rpy:944
 translate english chapter5_day_five_666595ef:
 
     # newb "Но не страшно."
-    newb "Но не страшно."
+    newb "But not scary."
 
 # game/week.rpy:945
 translate english chapter5_day_five_34ab3e0e:
 
     # n "Она смотрит на свои ладони."
-    n "Она смотрит на свои ладони."
+    n "She looks at her palms."
 
 # game/week.rpy:946
 translate english chapter5_day_five_369110c8:
 
     # newb "Когда рядом не торопят лезть под платформу — уже легче."
-    newb "Когда рядом не торопят лезть под платформу — уже легче."
+    newb "It's easier when nobody is rushing you to crawl under a platform."
 
 # game/week.rpy:954
 translate english chapter5_day_five_142cd51a:
 
     # sv "Завтра будет куратор. Посмотрит рейтинг и выберет кандидата на старшего."
-    sv "Завтра будет куратор. Посмотрит рейтинг и выберет кандидата на старшего."
+    sv "The Curator will be here tomorrow. He'll look at the rankings and choose a candidate for line lead."
 
 # game/week.rpy:957
 translate english chapter5_day_five_5b93cac2:
 
     # sv "Твоё имя там есть."
-    sv "Твоё имя там есть."
+    sv "Your name is on it."
 
 # game/week.rpy:959
 translate english chapter5_day_five_2aa66f5a:
 
     # sv "Не опаздывай."
-    sv "Не опаздывай."
+    sv "Don't be late."
 
 # game/week.rpy:961
 translate english chapter5_day_five_21d5c894:
 
     # p "Он спросит про подъёмник?"
-    p "Он спросит про подъёмник?"
+    p "Will he ask about the lift?"
 
 # game/week.rpy:963
 translate english chapter5_day_five_96b4861b:
 
     # sv "Он спросит про цифры."
-    sv "Он спросит про цифры."
+    sv "He'll ask about the numbers."
 
 # game/week.rpy:1005
 translate english chapter6_day_six_ef6016cd:
 
     # n "На шестой день у входа непривычно чисто. Лужи отогнали от дверей, старые палеты убрали, перегоревшую букву в вывеске заменили."
-    n "На шестой день у входа непривычно чисто. Лужи отогнали от дверей, старые палеты убрали, перегоревшую букву в вывеске заменили."
+    n "On Day Six, the entrance is unusually clean. Puddles have been swept away from the doors, old pallets removed, and the burned-out letter in the sign replaced."
 
 # game/week.rpy:1007
 translate english chapter6_day_six_bf990904:
 
     # n "Сегодня приезжает куратор. К его визиту даже разметку у ворот подкрасили."
-    n "Сегодня приезжает куратор. К его визиту даже разметку у ворот подкрасили."
+    n "The Curator arrives today. They even repainted the markings by the gate for his visit."
 
 # game/week.rpy:1023
 translate english chapter6_day_six_ceff95e4:
 
     # n "Морозов стоит перед экраном рейтинга в чистом пальто и с гостевым пропуском поверх рубашки."
-    n "Морозов стоит перед экраном рейтинга в чистом пальто и с гостевым пропуском поверх рубашки."
+    n "Morozov stands in front of the ranking screen in a clean coat, a visitor pass clipped over his shirt."
 
 # game/week.rpy:1025
 translate english chapter6_day_six_9e433ad6:
 
     # cur "Добрый вечер, команда. Я вижу отличный прогресс. Несмотря на локальные сложности, участок держит план."
-    cur "Добрый вечер, команда. Я вижу отличный прогресс. Несмотря на локальные сложности, участок держит план."
+    cur "Good evening, team. I see excellent progress. Despite local difficulties, the section is holding the target."
 
 # game/week.rpy:1028
 translate english chapter6_day_six_83149ad4:
 
     # n "Виктора сегодня нет. Его строка в графике подсвечена серым, но Морозов ни разу не смотрит в ту сторону."
-    n "Виктора сегодня нет. Его строка в графике подсвечена серым, но Морозов ни разу не смотрит в ту сторону."
+    n "Viktor is not here today. His line in the schedule is grayed out, but Morozov never looks that way."
 
 # game/week.rpy:1030
 translate english chapter6_day_six_49a16793:
 
     # cur "Остался один день. Завтра назовём сотрудника месяца. И определим, кто сможет временно вести линию."
-    cur "Остался один день. Завтра назовём сотрудника месяца. И определим, кто сможет временно вести линию."
+    cur "One day remains. Tomorrow we'll name Employee of the Month and decide who can temporarily lead the line."
 
 # game/week.rpy:1032
 translate english chapter6_day_six_2c7a94eb:
 
     # n "Его взгляд останавливается на тебе."
-    n "Его взгляд останавливается на тебе."
+    n "His gaze settles on you."
 
 # game/week.rpy:1035
 translate english chapter6_day_six_00e64d5c:
 
     # cur "Некоторые новички показывают особенно интересную динамику."
-    cur "Некоторые новички показывают особенно интересную динамику."
+    cur "Some newcomers are showing particularly interesting progress."
 
 # game/week.rpy:1037
 translate english chapter6_day_six_8d746c57:
 
     # cur "Некоторые сотрудники хорошо влияют на команду. Нам важно превратить это влияние в измеримый результат."
-    cur "Некоторые сотрудники хорошо влияют на команду. Нам важно превратить это влияние в измеримый результат."
+    cur "Some employees have a positive influence on the team. We need to turn that influence into measurable results."
 
 # game/week.rpy:1039
 translate english chapter6_day_six_60067afe:
 
     # cur "А некоторые помогают поддерживать атмосферу. Разумеется, без ущерба дисциплине."
-    cur "А некоторые помогают поддерживать атмосферу. Разумеется, без ущерба дисциплине."
+    cur "And some help maintain morale. Without compromising discipline, of course."
 
 # game/week.rpy:1041
 translate english chapter6_day_six_80c7fee9:
 
     # cur "У каждого ещё есть возможность показать себя."
-    cur "У каждого ещё есть возможность показать себя."
+    cur "Everyone still has a chance to prove themselves."
 
 # game/week.rpy:1046
 translate english chapter6_day_six_c46df324:
 
     # n "Смена начинается спокойно: на линии больше людей, проблемные товары заранее убраны, очередь почти пустая."
-    n "Смена начинается спокойно: на линии больше людей, проблемные товары заранее убраны, очередь почти пустая."
+    n "The shift starts calmly: more people are on the line, problem items were removed in advance, and the queue is almost empty."
 
 # game/week.rpy:1051
 translate english chapter6_day_six_4b48856e:
 
     # mem "Смотри. Когда начальство приезжает, даже коробки ведут себя прилично."
-    mem "Смотри. Когда начальство приезжает, даже коробки ведут себя прилично."
+    mem "Look. When management visits, even the boxes behave."
 
 # game/week.rpy:1053
 translate english chapter6_day_six_d3b2f766:
 
     # p "Может, оставить его здесь?"
-    p "Может, оставить его здесь?"
+    p "Maybe we should keep him here?"
 
 # game/week.rpy:1055
 translate english chapter6_day_six_b913803e:
 
     # mem "Нельзя. Экосистема нарушится."
-    mem "Нельзя. Экосистема нарушится."
+    mem "Can't. It would disrupt the ecosystem."
 
 # game/week.rpy:1069
 translate english chapter6_day_six_ddcd50d9:
 
     # n "По пути обратно отражение в тёмном стекле запаздывает на полшага. Когда ты останавливаешься, оно ещё мгновение продолжает идти."
-    n "По пути обратно отражение в тёмном стекле запаздывает на полшага. Когда ты останавливаешься, оно ещё мгновение продолжает идти."
+    n "On the way back, your reflection in the dark glass lags half a step behind. When you stop, it keeps walking for another instant."
 
 # game/week.rpy:1075
 translate english chapter6_day_six_2abb1b6f:
 
     # n "Через два часа тебя вызывают в маленькую комнату у линии."
-    n "Через два часа тебя вызывают в маленькую комнату у линии."
+    n "Two hours later, you're called into a small room by the line."
 
 # game/week.rpy:1095
 translate english chapter6_day_six_3a182f60:
 
     # n "Перед тем как войти, ты успеваешь увидеть Артёма и Куратора без свидетелей. Артём говорит тихо; Куратор отвечает ещё тише."
-    n "Перед тем как войти, ты успеваешь увидеть Артёма и Куратора без свидетелей. Артём говорит тихо; Куратор отвечает ещё тише."
+    n "Before entering, you catch a glimpse of Artyom and the Curator alone. Artyom speaks quietly; the Curator answers even more quietly."
 
 # game/week.rpy:1104
 translate english chapter6_day_six_30d84fba:
 
     # n "На столе три листа. Контейнер. Недостача. Подъёмник."
-    n "На столе три листа. Контейнер. Недостача. Подъёмник."
+    n "Three sheets lie on the table. Container. Shortage. Lift."
 
 # game/week.rpy:1106
 translate english chapter6_day_six_ead127a5:
 
     # cur "Ты был рядом со всеми тремя ситуациями. Это делает тебя ценным свидетелем."
-    cur "Ты был рядом со всеми тремя ситуациями. Это делает тебя ценным свидетелем."
+    cur "You were present for all three situations. That makes you a valuable witness."
 
 # game/week.rpy:1108
 translate english chapter6_day_six_cc0d0f28:
 
     # p "Или очень невезучим."
-    p "Или очень невезучим."
+    p "Or very unlucky."
 
 # game/week.rpy:1110
 translate english chapter6_day_six_86e7532c:
 
     # cur "С юмором всё хорошо. Теперь о деле."
-    cur "С юмором всё хорошо. Теперь о деле."
+    cur "Your sense of humor is fine. Now to business."
 
 # game/week.rpy:1112
 translate english chapter6_day_six_6fcf7522:
 
     # cur "В документах нет нарушений, требующих внешней проверки. Контейнер разгрузили. Товар нашли. Подъёмник остановили."
-    cur "В документах нет нарушений, требующих внешней проверки. Контейнер разгрузили. Товар нашли. Подъёмник остановили."
+    cur "The documents show no violations requiring external review. The container was unloaded. The goods were found. The lift was stopped."
 
 # game/week.rpy:1115
 translate english chapter6_day_six_8bd00bc4:
 
     # p "Человек получил травму."
-    p "Человек получил травму."
+    p "Someone was injured."
 
 # game/week.rpy:1116
 translate english chapter6_day_six_f7ac2773:
 
     # cur "Лёгкое растяжение. Медицинская помощь оказана."
-    cur "Лёгкое растяжение. Медицинская помощь оказана."
+    cur "Minor sprain. Medical assistance was provided."
 
 # game/week.rpy:1118
 translate english chapter6_day_six_836f796d:
 
     # cur "Нам нужен итоговый отчёт. Твоя подпись подтвердит, что процессы были штатными."
-    cur "Нам нужен итоговый отчёт. Твоя подпись подтвердит, что процессы были штатными."
+    cur "We need the final report. Your signature will confirm that operations were normal."
 
 # game/week.rpy:1120
 translate english chapter6_day_six_8240fa61:
 
     # n "Артём не смотрит на тебя."
-    n "Артём не смотрит на тебя."
+    n "Artyom does not look at you."
 
 # game/week.rpy:1122
 translate english chapter6_day_six_05e7e879:
 
     # cur "После этого обсудим твоё назначение старшим линии."
-    cur "После этого обсудим твоё назначение старшим линии."
+    cur "After that, we'll discuss appointing you as line lead."
 
 # game/week.rpy:1130
 translate english chapter6_day_six_bfd8577d:
 
     # n "Ручка лежит поверх строки для подписи. Остальные поля уже заполнены."
-    n "Ручка лежит поверх строки для подписи. Остальные поля уже заполнены."
+    n "A pen lies across the signature line. Every other field is already filled in."
 
 # game/week.rpy:1143
 translate english chapter6_day_six_884429c1:
 
     # n "В телефоне лежат фотографии журнала. Удалённая запись. Сбой буфера. Ошибка датчика."
-    n "В телефоне лежат фотографии журнала. Удалённая запись. Сбой буфера. Ошибка датчика."
+    n "Your phone holds photos of the log. Deleted entry. Buffer failure. Sensor error."
 
 # game/week.rpy:1145
 translate english chapter6_day_six_8c5c190a:
 
     # n "Куратор отодвигает готовый отчёт и даёт тебе минуту показать свои материалы."
-    n "Куратор отодвигает готовый отчёт и даёт тебе минуту показать свои материалы."
+    n "The Curator moves the prepared report aside and gives you a minute to show your materials."
 
 # game/week.rpy:1159
 translate english chapter6_day_six_efd09528:
 
     # n "В каждом материале есть время и номер операции. Вместе они подтверждают удаление записи, сбой буфера и ошибку датчика."
-    n "В каждом материале есть время и номер операции. Вместе они подтверждают удаление записи, сбой буфера и ошибку датчика."
+    n "Every item contains a time and operation number. Together they confirm the deleted entry, the buffer failure, and the sensor error."
 
 # game/week.rpy:1160
 translate english chapter6_day_six_0ac9a34f:
 
     # sv "Этого достаточно для внутренней проверки."
-    sv "Этого достаточно для внутренней проверки."
+    sv "That's enough for an internal investigation."
 
 # game/week.rpy:1163
 translate english chapter6_day_six_bc40423d:
 
     # n "Два материала подтверждают друг друга. Третий оставляет куратору место для сомнения."
-    n "Два материала подтверждают друг друга. Третий оставляет куратору место для сомнения."
+    n "Two pieces of evidence support each other. The third leaves the Curator room for doubt."
 
 # game/week.rpy:1166
 translate english chapter6_day_six_1369d6cb:
 
     # n "Материалов много, но в двух нет времени, а у третьего не указан источник."
-    n "Материалов много, но в двух нет времени, а у третьего не указан источник."
+    n "There is plenty of material, but two items have no time and the third has no source."
 
 # game/week.rpy:1167
 translate english chapter6_day_six_26dd18e9:
 
     # cur "Именно поэтому решения принимают по официальному отчёту."
-    cur "Именно поэтому решения принимают по официальному отчёту."
+    cur "That is exactly why decisions are based on the official report."
 
 # game/week.rpy:1186
 translate english chapter6_day_six_e770ae6b:
 
     # p "Процессы не были штатными. Запись удалили. Ошибку пытались списать на человека. Неисправный подъёмник запустили."
-    p "Процессы не были штатными. Запись удалили. Ошибку пытались списать на человека. Неисправный подъёмник запустили."
+    p "Operations were not normal. An entry was deleted. They tried to blame a system error on a person. A faulty lift was put into service."
 
 # game/week.rpy:1188
 translate english chapter6_day_six_140fc3e3:
 
     # cur "Ты понимаешь, что такая формулировка остановит участок на проверку?"
-    cur "Ты понимаешь, что такая формулировка остановит участок на проверку?"
+    cur "Do you understand that wording like this will shut the section down for investigation?"
 
 # game/week.rpy:1190
 translate english chapter6_day_six_645cb8e8:
 
     # p "Понимаю."
-    p "Понимаю."
+    p "I do."
 
 # game/week.rpy:1192
 translate english chapter6_day_six_bf90fcab:
 
     # cur "И лишит людей премии."
-    cur "И лишит людей премии."
+    cur "And cost people their bonuses."
 
 # game/week.rpy:1194
 translate english chapter6_day_six_5c7a6f97:
 
     # p "Премия не чинит датчик."
-    p "Премия не чинит датчик."
+    p "A bonus doesn't fix a sensor."
 
 # game/week.rpy:1196
 translate english chapter6_day_six_637676ac:
 
     # n "Артём наконец поднимает глаза."
-    n "Артём наконец поднимает глаза."
+    n "Artyom finally looks up."
 
 # game/week.rpy:1198
 translate english chapter6_day_six_9dd4b628:
 
     # sv "Это правда."
-    sv "Это правда."
+    sv "That's true."
 
 # game/week.rpy:1200
 translate english chapter6_day_six_43b26958:
 
     # cur "Подумайте до завтра. Отчёт пока не закрываю."
-    cur "Подумайте до завтра. Отчёт пока не закрываю."
+    cur "Think about it until tomorrow. I won't close the report yet."
 
 # game/week.rpy:1212
 translate english chapter6_day_six_c294820d:
 
     # n "Ты ставишь подпись. Чернила немного размазываются под ладонью."
-    n "Ты ставишь подпись. Чернила немного размазываются под ладонью."
+    n "You sign. The ink smears slightly under your palm."
 
 # game/week.rpy:1214
 translate english chapter6_day_six_6124da71:
 
     # cur "Разумный подход. Старший должен видеть результат целиком. Эмоции отдельных людей ему только мешают."
-    cur "Разумный подход. Старший должен видеть результат целиком. Эмоции отдельных людей ему только мешают."
+    cur "A reasonable approach. A lead has to see the result as a whole. Individual emotions only get in the way."
 
 # game/week.rpy:1216
 translate english chapter6_day_six_0cfcb951:
 
     # sv "Завтра встанешь рядом со мной. Будешь вести часть линии."
-    sv "Завтра встанешь рядом со мной. Будешь вести часть линии."
+    sv "Tomorrow you'll stand beside me and run part of the line."
 
 # game/week.rpy:1218
 translate english chapter6_day_six_4674bcbf:
 
     # n "Артём передаёт тебе запасную рацию и говорит прийти завтра на пятнадцать минут раньше."
-    n "Артём передаёт тебе запасную рацию и говорит прийти завтра на пятнадцать минут раньше."
+    n "Artyom hands you a spare radio and tells you to arrive fifteen minutes early tomorrow."
 
 # game/week.rpy:1230
 translate english chapter6_day_six_4bdfbbb3:
 
     # p "Я это не подпишу. И старшим на таких условиях не буду."
-    p "Я это не подпишу. И старшим на таких условиях не буду."
+    p "I won't sign this. And I won't become a lead on these terms."
 
 # game/week.rpy:1232
 translate english chapter6_day_six_a3f63a99:
 
     # cur "Ты отказываешься от возможности роста?"
-    cur "Ты отказываешься от возможности роста?"
+    cur "You're turning down an opportunity for advancement?"
 
 # game/week.rpy:1234
 translate english chapter6_day_six_5a0348d4:
 
     # p "Я отказываюсь называть это штатной работой."
-    p "Я отказываюсь называть это штатной работой."
+    p "I'm refusing to call this normal operation."
 
 # game/week.rpy:1236
 translate english chapter6_day_six_247d1d37:
 
     # n "Ты фотографируешь листы. Куратор не запрещает. Только запоминает."
-    n "Ты фотографируешь листы. Куратор не запрещает. Только запоминает."
+    n "You photograph the sheets. The Curator does not stop you. He simply remembers."
 
 # game/week.rpy:1238
 translate english chapter6_day_six_49df5a82:
 
     # cur "Тогда завтра ты выходишь как обычный сотрудник."
-    cur "Тогда завтра ты выходишь как обычный сотрудник."
+    cur "Then tomorrow you work as a regular employee."
 
 # game/week.rpy:1240
 translate english chapter6_day_six_64922a39:
 
     # p "Я им и был."
-    p "Я им и был."
+    p "That's what I was."
 
 # game/week.rpy:1255
 translate english chapter6_day_six_c854e3c2:
 
     # newb "Что они хотели?"
-    newb "Что они хотели?"
+    newb "What did they want?"
 
 # game/week.rpy:1258
 translate english chapter6_day_six_37da6381:
 
     # p "Предложили стать старшим."
-    p "Предложили стать старшим."
+    p "They offered to make me line lead."
 
 # game/week.rpy:1259
 translate english chapter6_day_six_b4e41d3d:
 
     # newb "И?"
-    newb "И?"
+    newb "And?"
 
 # game/week.rpy:1260
 translate english chapter6_day_six_34dc97ea:
 
     # p "Я согласился."
-    p "Я согласился."
+    p "I agreed."
 
 # game/week.rpy:1261
 translate english chapter6_day_six_a52fdd66:
 
     # n "Она ждёт продолжения. Ты не говоришь про подпись."
-    n "Она ждёт продолжения. Ты не говоришь про подпись."
+    n "She waits for more. You do not mention the signature."
 
 # game/week.rpy:1262
 translate english chapter6_day_six_81054b00:
 
     # newb "Поздравляю."
-    newb "Поздравляю."
+    newb "Congratulations."
 
 # game/week.rpy:1263
 translate english chapter6_day_six_eaac75fd:
 
     # n "Лера коротко кивает и начинает поправлять ремешок на перчатке."
-    n "Лера коротко кивает и начинает поправлять ремешок на перчатке."
+    n "Lera gives a short nod and starts adjusting the strap on her glove."
 
 # game/week.rpy:1265
 translate english chapter6_day_six_191c7645:
 
     # p "Чтобы я подтвердил, что всё было нормально."
-    p "Чтобы я подтвердил, что всё было нормально."
+    p "They wanted me to confirm that everything was normal."
 
 # game/week.rpy:1266
 translate english chapter6_day_six_4c0b95e5:
 
     # newb "Но нормально не было."
-    newb "Но нормально не было."
+    newb "But it wasn't."
 
 # game/week.rpy:1267
 translate english chapter6_day_six_678934a1:
 
     # p "Я так и написал."
-    p "Я так и написал."
+    p "That's what I wrote."
 
 # game/week.rpy:1271
 translate english chapter6_day_six_158ea3f7:
 
     # p "Должность в обмен на подпись."
-    p "Должность в обмен на подпись."
+    p "A position in exchange for a signature."
 
 # game/week.rpy:1272
 translate english chapter6_day_six_1e46be73:
 
     # newb "Ты отказался?"
-    newb "Ты отказался?"
+    newb "You refused?"
 
 # game/week.rpy:1273
 translate english chapter6_day_six_c7cc4dfa:
 
     # p "Да."
-    p "Да."
+    p "Yeah."
 
 # game/week.rpy:1274
 translate english chapter6_day_six_25945575:
 
     # newb "Страшно?"
-    newb "Страшно?"
+    newb "Scared?"
 
 # game/week.rpy:1275
 translate english chapter6_day_six_b54f13f4:
 
     # p "Очень."
-    p "Очень."
+    p "Very."
 
 # game/week.rpy:1276
 translate english chapter6_day_six_f0b7224b:
@@ -1882,7 +1882,7 @@ translate english chapter6_day_six_ab11936c:
 translate english chapter6_day_six_0e8851f7:
 
     # newb "Что тебе ещё страшно."
-    newb "Что тебе ещё страшно."
+    newb "What else are you afraid of?"
 
 # game/week.rpy:1288
 translate english chapter6_day_six_fa2aab3d:
@@ -1984,7 +1984,7 @@ translate english chapter7_day_seven_2eca90ed:
 translate english chapter7_day_seven_c391ea62:
 
     # vet "Не опаздывай."
-    vet "Не опаздывай."
+    vet "Don't be late."
 
 # game/week.rpy:1365
 translate english chapter7_day_seven_9fe2cb97:
@@ -2860,7 +2860,7 @@ translate english ending_employee_4cf397ee:
 translate english ending_employee_c7cc4dfa:
 
     # p "Да."
-    p "Да."
+    p "Yeah."
 
 # game/week.rpy:1953
 translate english ending_employee_1d61fda0:
@@ -2908,7 +2908,7 @@ translate english ending_exit_a771f9f6:
 translate english ending_exit_c7cc4dfa:
 
     # p "Да."
-    p "Да."
+    p "Yeah."
 
 # game/week.rpy:1981
 translate english ending_exit_f5e97edc:
