@@ -13,8 +13,8 @@ label chapter3_day_three:
 
     call screen ps_day_card(
         3,
-        "Чужие цифры",
-        "На табло считают скорость. Из журнала исчезла вчерашняя остановка."
+        _("Чужие цифры"),
+        _("На табло считают скорость. Из журнала исчезла вчерашняя остановка.")
     )
 
     call ps_show_consequence_echo(3)
@@ -128,7 +128,7 @@ label chapter3_day_three:
     if ps_sort_result[0] == len(ps_sort_items) and ps_sort_result[1] == 0:
         $ ps_efficiency += 2
         $ ps_unlock_achievement("clean_sort")
-        $ ps_key_choices = ps_key_choices + ["Ты прошёл контрольную серию ТСД без пересорта."]
+        $ ps_key_choices = ps_key_choices + [_("Ты прошёл контрольную серию ТСД без пересорта.")]
         n "Последний товар уходит в правильный сектор. Шесть из шести. Экран на секунду становится зелёным."
     elif ps_sort_result[0] >= 4:
         $ ps_efficiency += 1
@@ -142,8 +142,8 @@ label chapter3_day_three:
 
     call screen ps_tsd_alert(
         "LOG-00",
-        "ЗАПИСЬ ОБ ОСТАНОВКЕ НЕ НАЙДЕНА",
-        "Событие STOP-04 отсутствует в журнале участка."
+        _("ЗАПИСЬ ОБ ОСТАНОВКЕ НЕ НАЙДЕНА"),
+        _("Событие STOP-04 отсутствует в журнале участка.")
     )
 
     n "Ты обновляешь экран. Ничего. Вчера коробки падали на пол, а в журнале смена закрыта без происшествий."
@@ -179,7 +179,7 @@ label chapter3_day_three:
             $ ps_third_day_path = "сохранил журнал"
             $ ps_evidence += 2
             $ ps_integrity += 2
-            $ ps_key_choices = ps_key_choices + ["Ты сохранил исчезнувшую запись об опасном контейнере."]
+            $ ps_key_choices = ps_key_choices + [_("Ты сохранил исчезнувшую запись об опасном контейнере.")]
 
             n "Ты делаешь снимок экрана. Потом ещё один. В архиве находится строка STOP-04. Время совпадает. Статус: «Удалено оператором участка»."
 
@@ -191,7 +191,7 @@ label chapter3_day_three:
             $ ps_integrity += 2
             $ ps_supervisor_respect += 1
             $ ps_evidence += 1
-            $ ps_key_choices = ps_key_choices + ["Ты потребовал объяснить исчезновение записи."]
+            $ ps_key_choices = ps_key_choices + [_("Ты потребовал объяснить исчезновение записи.")]
 
             p "Событие удалено. Кем и почему?"
 
@@ -218,7 +218,7 @@ label chapter3_day_three:
             $ ps_efficiency += 3
             $ ps_integrity -= 2
             $ ps_burnout += 1
-            $ ps_key_choices = ps_key_choices + ["Ты закрыл пропавшую запись ради места в рейтинге."]
+            $ ps_key_choices = ps_key_choices + [_("Ты закрыл пропавшую запись ради места в рейтинге.")]
 
             n "Ты закрываешь окно. На его месте появляется очередь товаров. Зелёная цифра растёт."
 
@@ -271,8 +271,8 @@ label chapter3_day_three:
 
     call screen ps_tsd_alert(
         "RATE-03",
-        "РЕЙТИНГ ОБНОВЛЁН",
-        "До закрытия периода осталось четыре дня."
+        _("РЕЙТИНГ ОБНОВЛЁН"),
+        _("До закрытия периода осталось четыре дня.")
     )
 
     n "До закрытия периода четыре дня. Твоё имя уже появилось в таблице, а запись о падающем контейнере из журнала исчезла."
@@ -280,8 +280,8 @@ label chapter3_day_three:
     call ps2_after_shift(3)
 
     call screen ps_shift_report(
-        "Итоги третьего дня",
-        "Третий день закончен. У тебя есть выбор - хранить копию записи или сделать вид, что её не было."
+        _("Итоги третьего дня"),
+        _("Третий день закончен. У тебя есть выбор - хранить копию записи или сделать вид, что её не было.")
     )
 
     $ ps_stop_ambience()
@@ -301,8 +301,8 @@ label chapter4_day_four:
 
     call screen ps_day_card(
         4,
-        "Чужая ошибка",
-        "В системе недостача. В объяснительной уже напечатано имя Леры."
+        _("Чужая ошибка"),
+        _("В системе недостача. В объяснительной уже напечатано имя Леры.")
     )
 
     call ps_show_consequence_echo(4)
@@ -377,7 +377,7 @@ label chapter4_day_four:
             $ ps_integrity += 2
             $ ps_newbie_trust += 2
             $ ps_team_unity += 2
-            $ ps_key_choices = ps_key_choices + ["Ты не позволил списать системную ошибку на новичка."]
+            $ ps_key_choices = ps_key_choices + [_("Ты не позволил списать системную ошибку на новичка.")]
 
             p "Вот номер операции. Она прошла сразу после того, как из журнала удалили STOP-04."
 
@@ -405,7 +405,7 @@ label chapter4_day_four:
             $ ps_integrity += 1
             $ ps_newbie_trust += 1
             $ ps_supervisor_respect += 1
-            $ ps_key_choices = ps_key_choices + ["Ты восстановил цепочку и нашёл настоящую причину недостачи."]
+            $ ps_key_choices = ps_key_choices + [_("Ты восстановил цепочку и нашёл настоящую причину недостачи.")]
 
             p "Дайте ТСД."
             n "Ты открываешь историю. Сверяешь время. Сорок семь товаров ушли в буферную ячейку. После ночной перезагрузки она перестала отображаться."
@@ -430,7 +430,7 @@ label chapter4_day_four:
             $ ps_newbie_trust -= 3
             $ ps_team_unity -= 1
             $ ps_supervisor_respect += 1
-            $ ps_key_choices = ps_key_choices + ["Ты позволил системе назначить виноватую."]
+            $ ps_key_choices = ps_key_choices + [_("Ты позволил системе назначить виноватую.")]
 
             n "Ты остаёшься у двери. Бланк шуршит, когда Лера берёт ручку."
 
@@ -605,8 +605,8 @@ label chapter4_day_four:
     call ps2_after_shift(4)
 
     call screen ps_shift_report(
-        "Итоги четвёртого дня",
-        "Недостача нашлась. Вопрос в том, кто остался виноватым в отчёте."
+        _("Итоги четвёртого дня"),
+        _("Недостача нашлась. Вопрос в том, кто остался виноватым в отчёте.")
     )
 
     $ ps_stop_ambience()
@@ -626,8 +626,8 @@ label chapter5_day_five:
 
     call screen ps_day_card(
         5,
-        "Предел нагрузки",
-        "Датчик перегруза сломан. Приёмку всё равно решили запускать."
+        _("Предел нагрузки"),
+        _("Датчик перегруза сломан. Приёмку всё равно решили запускать.")
     )
 
     call ps_show_consequence_echo(5)
@@ -734,7 +734,7 @@ label chapter5_day_five:
         $ ps_humanity += 1
         $ ps_team_unity += 1
         $ ps_unlock_achievement("flow_keeper")
-        $ ps_key_choices = ps_key_choices + ["Ты удержал живую линию, не превратив людей в расходник."]
+        $ ps_key_choices = ps_key_choices + [_("Ты удержал живую линию, не превратив людей в расходник.")]
         n "Очередь перестаёт расти. Когда у кого-то загорается красный экран, рядом сразу находится человек со свободными руками."
     elif ps_flow_result >= 6 and ps_flow_safety < 3:
         $ ps_efficiency += 2
@@ -774,8 +774,8 @@ label chapter5_day_five:
 
     call screen ps_tsd_alert(
         "LIFT-09",
-        "ПЕРЕГРУЗ НЕ ОПРЕДЕЛЁН",
-        "Датчик массы недоступен. Ручной режим активен."
+        _("ПЕРЕГРУЗ НЕ ОПРЕДЕЛЁН"),
+        _("Датчик массы недоступен. Ручной режим активен.")
     )
 
     show vet neutral at ps_left
@@ -812,7 +812,7 @@ label chapter5_day_five:
             $ ps_supervisor_respect -= 1
             $ ps_team_unity += 2
             $ ps_evidence += 1
-            $ ps_key_choices = ps_key_choices + ["Ты остановил неисправный подъёмник, несмотря на план."]
+            $ ps_key_choices = ps_key_choices + [_("Ты остановил неисправный подъёмник, несмотря на план.")]
 
             p "Нет. Второй опасный механизм за неделю - уже не случайность. Останавливаем."
 
@@ -833,7 +833,7 @@ label chapter5_day_five:
             $ ps_endurance += 2
             $ ps_humanity += 1
             $ ps_burnout += 2
-            $ ps_key_choices = ps_key_choices + ["Ты собрал команду и вывел приёмку без опасного подъёмника."]
+            $ ps_key_choices = ps_key_choices + [_("Ты собрал команду и вывел приёмку без опасного подъёмника.")]
 
             p "Подъёмник не трогаем. Растягиваем цепочку от ворот. Тяжёлое - вдвоём."
 
@@ -859,7 +859,7 @@ label chapter5_day_five:
             $ ps_supervisor_respect += 2
             $ ps_newbie_trust -= 2
             $ ps_team_unity -= 2
-            $ ps_key_choices = ps_key_choices + ["Ты перезапустил неисправный подъёмник ради плана."]
+            $ ps_key_choices = ps_key_choices + [_("Ты перезапустил неисправный подъёмник ради плана.")]
 
             p "Снимем верхний ряд и запустим."
 
@@ -969,8 +969,8 @@ label chapter5_day_five:
     call ps2_after_shift(5)
 
     call screen ps_shift_report(
-        "Итоги пятого дня",
-        "Подъёмник остановлен. Вопрос в том, успели ли вы сделать это до травмы."
+        _("Итоги пятого дня"),
+        _("Подъёмник остановлен. Вопрос в том, успели ли вы сделать это до травмы.")
     )
 
     $ ps_stop_ambience()
@@ -990,8 +990,8 @@ label chapter6_day_six:
 
     call screen ps_day_card(
         6,
-        "Цена подписи",
-        "В отчёте всё штатно. Для закрытия не хватает только твоей подписи."
+        _("Цена подписи"),
+        _("В отчёте всё штатно. Для закрытия не хватает только твоей подписи.")
     )
 
     call ps_show_consequence_echo(6)
@@ -1155,7 +1155,7 @@ label chapter6_day_six:
         $ ps_integrity += 1
         $ ps_supervisor_respect += 1
         $ ps_unlock_achievement("investigator")
-        $ ps_key_choices = ps_key_choices + ["Ты собрал дело только из проверяемых фактов."]
+        $ ps_key_choices = ps_key_choices + [_("Ты собрал дело только из проверяемых фактов.")]
         n "В каждом материале есть время и номер операции. Вместе они подтверждают удаление записи, сбой буфера и ошибку датчика."
         sv "Этого достаточно для внутренней проверки."
     elif ps_case_result == 2:
@@ -1181,7 +1181,7 @@ label chapter6_day_six:
             $ ps_integrity += 3
             $ ps_evidence += 1
             $ ps_supervisor_respect += 1
-            $ ps_key_choices = ps_key_choices + ["Ты отказался подписывать чистый отчёт и внёс нарушения."]
+            $ ps_key_choices = ps_key_choices + [_("Ты отказался подписывать чистый отчёт и внёс нарушения.")]
 
             p "Процессы не были штатными. Запись удалили. Ошибку пытались списать на человека. Неисправный подъёмник запустили."
 
@@ -1207,7 +1207,7 @@ label chapter6_day_six:
             $ ps_supervisor_respect += 2
             $ ps_integrity -= 4
             $ ps_team_unity -= 1
-            $ ps_key_choices = ps_key_choices + ["Ты подписал чистый отчёт ради должности старшего."]
+            $ ps_key_choices = ps_key_choices + [_("Ты подписал чистый отчёт ради должности старшего.")]
 
             n "Ты ставишь подпись. Чернила немного размазываются под ладонью."
 
@@ -1225,7 +1225,7 @@ label chapter6_day_six:
             $ ps_evidence += 2
             $ ps_endurance += 2
             $ ps_supervisor_respect -= 1
-            $ ps_key_choices = ps_key_choices + ["Ты отказался от должности и сохранил копии документов."]
+            $ ps_key_choices = ps_key_choices + [_("Ты отказался от должности и сохранил копии документов.")]
 
             p "Я это не подпишу. И старшим на таких условиях не буду."
 
@@ -1316,8 +1316,8 @@ label chapter6_day_six:
     call ps2_after_shift(6)
 
     call screen ps_shift_report(
-        "Итоги шестого дня",
-        "До конца недели одна смена. Отчёт пока открыт - или уже подписан тобой."
+        _("Итоги шестого дня"),
+        _("До конца недели одна смена. Отчёт пока открыт - или уже подписан тобой.")
     )
 
     $ ps_stop_ambience()
@@ -1337,8 +1337,8 @@ label chapter7_day_seven:
 
     call screen ps_day_card(
         7,
-        "Последняя смена",
-        "Через шесть часов закроют рейтинг и назовут нового старшего линии."
+        _("Последняя смена"),
+        _("Через шесть часов закроют рейтинг и назовут нового старшего линии.")
     )
 
     call ps_show_consequence_echo(7)
@@ -1487,8 +1487,8 @@ label chapter7_day_seven:
 
     call screen ps_tsd_alert(
         "PEAK-34",
-        "ВНЕПЛАНОВАЯ ПОСТАВКА",
-        "Перенаправление невозможно. Все доступные линии назначены."
+        _("ВНЕПЛАНОВАЯ ПОСТАВКА"),
+        _("Перенаправление невозможно. Все доступные линии назначены.")
     )
 
     show sv stern at ps_left
@@ -1531,8 +1531,8 @@ label chapter7_day_seven:
 
     call screen ps_tsd_alert(
         "CORE-07",
-        "СВЯЗЬ С СИСТЕМОЙ ПОТЕРЯНА",
-        "Автономный поток активен. Ручная остановка доступна старшему линии."
+        _("СВЯЗЬ С СИСТЕМОЙ ПОТЕРЯНА"),
+        _("Автономный поток активен. Ручная остановка доступна старшему линии.")
     )
 
     $ ps_unlock_cg("storm_first_contact", True)
@@ -1596,7 +1596,7 @@ label chapter7_day_seven:
             $ ps_humanity += 3
             $ ps_team_unity += 2
             $ ps_integrity += 1
-            $ ps_key_choices = ps_key_choices + ["В финале ты поставил людей выше рейтинга."]
+            $ ps_key_choices = ps_key_choices + [_("В финале ты поставил людей выше рейтинга.")]
 
             p "Останавливаем. Все отходят от линии."
 
@@ -1618,7 +1618,7 @@ label chapter7_day_seven:
             $ ps_efficiency += 3
             $ ps_endurance += 1
             $ ps_burnout += 2
-            $ ps_key_choices = ps_key_choices + ["В финале ты взял управление потоком на себя."]
+            $ ps_key_choices = ps_key_choices + [_("В финале ты взял управление потоком на себя.")]
 
             p "Виктор - отключи правую ленту вручную. Лера - все ошибки в буфер B-04. Остальные работают через левую линию."
 
@@ -1633,7 +1633,7 @@ label chapter7_day_seven:
             $ ps_integrity += 3
             $ ps_evidence += 1
             $ ps_team_unity += 1
-            $ ps_key_choices = ps_key_choices + ["В финале ты сделал нарушения видимыми для всех."]
+            $ ps_key_choices = ps_key_choices + [_("В финале ты сделал нарушения видимыми для всех.")]
 
             p "Куратор, повторите."
 
@@ -1651,7 +1651,7 @@ label chapter7_day_seven:
             $ ps_final_choice = "голос"
             $ ps_humor += 3
             $ ps_team_unity += 2
-            $ ps_key_choices = ps_key_choices + ["В финале твой голос удержал смену от паники."]
+            $ ps_key_choices = ps_key_choices + [_("В финале твой голос удержал смену от паники.")]
 
             p "Так. Система решила взять перерыв. Мы - нет."
 
@@ -1665,7 +1665,7 @@ label chapter7_day_seven:
             $ ps_final_choice = "уйти"
             $ ps_endurance += 3
             $ ps_integrity += 1
-            $ ps_key_choices = ps_key_choices + ["В финале ты выбрал выход и сохранил себя."]
+            $ ps_key_choices = ps_key_choices + [_("В финале ты выбрал выход и сохранил себя.")]
 
             n "Ты снимаешь жилет. Кладёшь ТСД на остановившуюся коробку."
 
@@ -1686,7 +1686,7 @@ label chapter7_day_seven:
             $ ps_efficiency += 2
             $ ps_team_unity += 1
             $ ps_unlock_achievement("dispatcher")
-            $ ps_key_choices = ps_key_choices + ["Ты без ошибок передал аварийную последовательность."]
+            $ ps_key_choices = ps_key_choices + [_("Ты без ошибок передал аварийную последовательность.")]
             n "Четыре команды уходят в правильном порядке. Линии освобождаются до того, как система успевает вернуться."
         elif ps_signal_result[0] >= 3:
             $ ps_endurance += 1
