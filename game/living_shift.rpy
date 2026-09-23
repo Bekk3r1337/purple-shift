@@ -545,7 +545,7 @@ init 12 python:
                 continue
             if message.get("requires_storm_any") and not ps_storm_fragments:
                 continue
-            result.append(message)
+            result.append(ps_localize_message(message))
 
         return result
 
@@ -630,7 +630,7 @@ init 12 python:
     def ps_storm_fragment_title(fragment_id):
         for item_id, title, description in ps_storm_fragment_catalog:
             if item_id == fragment_id:
-                return title
+                return _(title)
         return _("Неизвестный след")
 
     def ps_storm_pressure():
@@ -762,11 +762,11 @@ screen ps_inspection_hotspots(scene_id):
         vbox:
             spacing 7
 
-            text inspection["title"]:
+            text _(inspection["title"]):
                 color "#e0b5ff"
                 size 31
 
-            text inspection["subtitle"]:
+            text _(inspection["subtitle"]):
                 color "#c4b3d1"
                 size 20
 
@@ -814,11 +814,11 @@ screen ps_inspection_hotspots(scene_id):
                 if ps_inspection_focus:
                     $ focused = ps_inspection_hotspot(scene_id, ps_inspection_focus)
 
-                    text focused["title"]:
+                    text _(focused["title"]):
                         color "#ffffff"
                         size 29
 
-                    text focused["detail"]:
+                    text _(focused["detail"]):
                         color "#cbbbd6"
                         size 22
                 else:
