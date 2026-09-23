@@ -1024,341 +1024,341 @@ translate english ps_route_resolution_scene_48044946:
 translate english ps_route_resolution_scene_0703ab8b:
 
     # newb "Я пока всё равно жду, что ты скажешь: правильно или нет."
-    newb "Я пока всё равно жду, что ты скажешь: правильно или нет."
+    newb "I'm still waiting for you to tell me whether it's right or wrong."
 
 # game/echo_shift.rpy:1438
 translate english ps_route_resolution_scene_6b85035c:
 
     # n "Она протягивает тебе телефон с открытым черновиком и кнопкой отправки."
-    n "Она протягивает тебе телефон с открытым черновиком и кнопкой отправки."
+    n "She holds out her phone with the draft open and the send button waiting."
 
 # game/echo_shift.rpy:1447
 translate english ps_route_resolution_scene_49382c5d:
 
     # vet "Я поставил себя на выходной. Сам. Без твоего приказа и без справки после падения."
-    vet "Я поставил себя на выходной. Сам. Без твоего приказа и без справки после падения."
+    vet "I put myself down for a day off. On my own. No order from you, no medical note after a collapse."
 
 # game/echo_shift.rpy:1448
 translate english ps_route_resolution_scene_5b289f90:
 
     # p "Склад переживёт?"
-    p "Склад переживёт?"
+    p "Will the warehouse survive?"
 
 # game/echo_shift.rpy:1449
 translate english ps_route_resolution_scene_0e2a4e37:
 
     # vet "Теперь это его проблема."
-    vet "Теперь это его проблема."
+    vet "That's its problem now."
 
 # game/echo_shift.rpy:1452
 translate english ps_route_resolution_scene_2280c7aa:
 
     # vet "После финального запуска уйду. До него не трогай меня и не смотри на руку."
-    vet "После финального запуска уйду. До него не трогай меня и не смотри на руку."
+    vet "I'll leave after the final startup. Until then, don't touch me and don't look at my hand."
 
 # game/echo_shift.rpy:1453
 translate english ps_route_resolution_scene_4e0f5d74:
 
     # p "Ты ведь сам просил остановить тебя."
-    p "Ты ведь сам просил остановить тебя."
+    p "You were the one who asked me to stop you."
 
 # game/echo_shift.rpy:1454
 translate english ps_route_resolution_scene_d6d25e86:
 
     # vet "Просил. А теперь прошу дать закончить. Видишь, какой я последовательный."
-    vet "Просил. А теперь прошу дать закончить. Видишь, какой я последовательный."
+    vet "I did. Now I'm asking you to let me finish. See how consistent I am?"
 
 # game/echo_shift.rpy:1455
 translate english ps_route_resolution_scene_a2624d68:
 
     # n "Он натягивает перчатку поверх бинта и прячет руку в карман."
-    n "Он натягивает перчатку поверх бинта и прячет руку в карман."
+    n "He pulls the glove over the bandage and hides his hand in his pocket."
 
 # game/echo_shift.rpy:1464
 translate english ps_route_resolution_scene_9ef5974e:
 
     # mem "Я не придумал, как сделать это смешным. Поэтому скажу как есть: если вы уйдёте, я не хочу оставаться здесь один."
-    mem "Я не придумал, как сделать это смешным. Поэтому скажу как есть: если вы уйдёте, я не хочу оставаться здесь один."
+    mem "I couldn't figure out how to make this funny. So I'll say it plainly: if you all leave, I don't want to stay here alone."
 
 # game/echo_shift.rpy:1465
 translate english ps_route_resolution_scene_e5ca67c8:
 
     # p "Вот и не оставайся."
-    p "Вот и не оставайся."
+    p "Then don't."
 
 # game/echo_shift.rpy:1466
 translate english ps_route_resolution_scene_4127f7ca:
 
     # mem "Невероятно короткий сценарий. Работает лучше моих."
-    mem "Невероятно короткий сценарий. Работает лучше моих."
+    mem "Incredibly short script. Works better than mine."
 
 # game/echo_shift.rpy:1469
 translate english ps_route_resolution_scene_d7db3d33:
 
     # mem "После смены устрою прощальный стендап. Тема вечера: «Как потерять всех коллег и всё равно закрыть план»."
-    mem "После смены устрою прощальный стендап. Тема вечера: «Как потерять всех коллег и всё равно закрыть план»."
+    mem "After the shift I'll do a farewell stand-up set. Tonight's theme: \"How to Lose All Your Coworkers and Still Hit the Target.\""
 
 # game/echo_shift.rpy:1470
 translate english ps_route_resolution_scene_8d10478a:
 
     # p "Макс."
-    p "Макс."
+    p "Max."
 
 # game/echo_shift.rpy:1471
 translate english ps_route_resolution_scene_bd852209:
 
     # mem "Не сейчас. Если перестану говорить, придётся услышать ответ."
-    mem "Не сейчас. Если перестану говорить, придётся услышать ответ."
+    mem "Not now. If I stop talking, I'll have to hear the answer."
 
 # game/echo_shift.rpy:1472
 translate english ps_route_resolution_scene_99ae2298:
 
     # n "Макс улыбается и сразу начинает говорить быстрее."
-    n "Макс улыбается и сразу начинает говорить быстрее."
+    n "Max smiles and immediately starts talking faster."
 
 # game/echo_shift.rpy:1481
 translate english ps_route_resolution_scene_27972617:
 
     # sv "Я открыл общий стоп всем терминалам. После смены за это придётся отвечать."
-    sv "Я открыл общий стоп всем терминалам. После смены за это придётся отвечать."
+    sv "I enabled the full-stop command on every terminal. I'll have to answer for that after the shift."
 
 # game/echo_shift.rpy:1482
 translate english ps_route_resolution_scene_9fafc453:
 
     # p "Своим именем?"
-    p "Своим именем?"
+    p "Under your own name?"
 
 # game/echo_shift.rpy:1483
 translate english ps_route_resolution_scene_1fefbd33:
 
     # sv "Да. В журнале уже стоит: Артём Волков."
-    sv "Да. В журнале уже стоит: Артём Волков."
+    sv "Yes. The log already says: Artyom Volkov."
 
 # game/echo_shift.rpy:1486
 translate english ps_route_resolution_scene_6c6ae5cf:
 
     # sv "До конца смены все команды идут через меня. Даже если я ошибусь, линия хотя бы ошибётся один раз, а не четырьмя разными способами."
-    sv "До конца смены все команды идут через меня. Даже если я ошибусь, линия хотя бы ошибётся один раз, а не четырьмя разными способами."
+    sv "Until the end of the shift, every command goes through me. Even if I'm wrong, at least the line will be wrong once instead of four different ways."
 
 # game/echo_shift.rpy:1487
 translate english ps_route_resolution_scene_43d7f123:
 
     # p "А если тебя не будет рядом?"
-    p "А если тебя не будет рядом?"
+    p "What if you're not nearby?"
 
 # game/echo_shift.rpy:1488
 translate english ps_route_resolution_scene_2cd67021:
 
     # sv "Значит, никто ничего не запускает."
-    sv "Значит, никто ничего не запускает."
+    sv "Then nobody starts anything."
 
 # game/echo_shift.rpy:1489
 translate english ps_route_resolution_scene_f10a9261:
 
     # n "На остальных терминалах кнопка запуска становится серой. Теперь без Артёма линию не включит никто."
-    n "На остальных терминалах кнопка запуска становится серой. Теперь без Артёма линию не включит никто."
+    n "The start button turns gray on the other terminals. Now nobody can restart the line without Artyom."
 
 # game/echo_shift.rpy:1515
 translate english ps_zero_shift_5162fb84:
 
     # centered "ПОСЛЕ ТИТРОВ\n\nНУЛЕВАЯ СМЕНА"
-    centered "ПОСЛЕ ТИТРОВ\n\nНУЛЕВАЯ СМЕНА"
+    centered "POST-CREDITS\\n\\nZERO SHIFT"
 
 # game/echo_shift.rpy:1520
 translate english ps_zero_shift_409961d3:
 
     # n "Проходная уже закрыла вашу неделю, но телефон показывает незавершённую операцию. Время начала — 00:00. Время окончания отсутствует. В карточке нет номера сотрудника. Только строка: «СМЕНА 0 // НЕ ПЕРЕДАНА»."
-    n "Проходная уже закрыла вашу неделю, но телефон показывает незавершённую операцию. Время начала — 00:00. Время окончания отсутствует. В карточке нет номера сотрудника. Только строка: «СМЕНА 0 // НЕ ПЕРЕДАНА»."
+    n "The gate has already closed out your week, but the phone shows an unfinished operation. Start time - 00:00. No end time. There is no employee number in the record. Only one line: \"SHIFT 0 // NOT HANDED OVER.\""
 
 # game/echo_shift.rpy:1527
 translate english ps_zero_shift_249963f4:
 
     # newb "Сообщение пришло всем. На этот раз текст одинаковый."
-    newb "Сообщение пришло всем. На этот раз текст одинаковый."
+    newb "Everyone received the message. This time, the text is identical."
 
 # game/echo_shift.rpy:1528
 translate english ps_zero_shift_7f17901e:
 
     # vet "Значит, либо настоящее, либо научилось не ошибаться."
-    vet "Значит, либо настоящее, либо научилось не ошибаться."
+    vet "Then it's either real, or it learned not to make mistakes."
 
 # game/echo_shift.rpy:1529
 translate english ps_zero_shift_eae06ae2:
 
     # mem "Очень успокаивающий выбор из двух вариантов."
-    mem "Очень успокаивающий выбор из двух вариантов."
+    mem "A very reassuring pair of options."
 
 # game/echo_shift.rpy:1537
 translate english ps_zero_shift_45e25d1c:
 
     # sv "Я нашёл старый журнал. До введения ночного рейтинга здесь была смена, которую выводили между закрытием одного отчётного дня и началом другого."
-    sv "Я нашёл старый журнал. До введения ночного рейтинга здесь была смена, которую выводили между закрытием одного отчётного дня и началом другого."
+    sv "I found an old log. Before the night ranking was introduced, there was a shift here that ran between the close of one reporting day and the start of the next."
 
 # game/echo_shift.rpy:1538
 translate english ps_zero_shift_52f65b3e:
 
     # p "Нулевая?"
-    p "Нулевая?"
+    p "Zero?"
 
 # game/echo_shift.rpy:1539
 translate english ps_zero_shift_e8d50f04:
 
     # sv "В документах её нет. Но все отменённые заявки проходили через её код. V-13 был не сектором. Сначала это был номер смены."
-    sv "В документах её нет. Но все отменённые заявки проходили через её код. V-13 был не сектором. Сначала это был номер смены."
+    sv "It isn't in the documents. But every cancelled ticket passed through its code. V-13 wasn't a sector. At first, it was a shift number."
 
 # game/echo_shift.rpy:1542
 translate english ps_zero_shift_a0a2c8c7:
 
     # n "За бетонной дверью щёлкает реле. По очереди загораются пять индикаторов — ровно столько, сколько людей стоит в коридоре."
-    n "За бетонной дверью щёлкает реле. По очереди загораются пять индикаторов — ровно столько, сколько людей стоит в коридоре."
+    n "A relay clicks behind the concrete door. Five indicators light up one after another - exactly as many as there are people standing in the corridor."
 
 # game/echo_shift.rpy:1548
 translate english ps_zero_shift_393c0a98:
 
     # n "На старом табло появляются фамилии сотрудников, которых давно нет в графике. Последняя строка остаётся пустой, пока ты не подходишь ближе. Система вписывает твоё имя и задаёт первый вопрос без готового ответа: «КТО ПЕРЕДАСТ ЭТУ СМЕНУ?»"
-    n "На старом табло появляются фамилии сотрудников, которых давно нет в графике. Последняя строка остаётся пустой, пока ты не подходишь ближе. Система вписывает твоё имя и задаёт первый вопрос без готового ответа: «КТО ПЕРЕДАСТ ЭТУ СМЕНУ?»"
+    n "The old display fills with surnames of employees who have long since disappeared from the schedule. The final line stays blank until you step closer. The system writes in your name and asks its first question without a prepared answer: \"WHO WILL HAND OVER THIS SHIFT?\""
 
 # game/echo_shift.rpy:1551
 translate english ps_zero_shift_f75aa139:
 
     # p "Мы. По очереди. Каждый — только то, что видел сам."
-    p "Мы. По очереди. Каждый — только то, что видел сам."
+    p "We will. One at a time. Each person says only what they saw themselves."
 
 # game/echo_shift.rpy:1552
 translate english ps_zero_shift_5c52457f:
 
     # n "Четыре голоса за спиной отвечают не одновременно, но одним решением."
-    n "Четыре голоса за спиной отвечают не одновременно, но одним решением."
+    n "Four voices behind you answer at different moments, but with one decision."
 
 # game/echo_shift.rpy:1554
 translate english ps_zero_shift_44d1cde6:
 
     # p "Сначала открой дверь."
-    p "Сначала открой дверь."
+    p "Open the door first."
 
 # game/echo_shift.rpy:1555
 translate english ps_zero_shift_a957f46b:
 
     # n "Замок отвечает зелёным светом и приглашает продолжить спор с другой стороны."
-    n "Замок отвечает зелёным светом и приглашает продолжить спор с другой стороны."
+    n "The lock answers with a green light, inviting you to continue the argument on the other side."
 
 # game/echo_shift.rpy:1557
 translate english ps_zero_shift_3920775d:
 
     # centered "PURPLE SHIFT\n\nНУЛЕВАЯ СМЕНА ОТКРЫТА"
-    centered "PURPLE SHIFT\n\nНУЛЕВАЯ СМЕНА ОТКРЫТА"
+    centered "PURPLE SHIFT\\n\\nZERO SHIFT UNLOCKED"
 
 translate english strings:
 
     # game/echo_shift.rpy:739
-    old "Попросить её начать самой и вмешаться только при необходимости"
-    new "Попросить её начать самой и вмешаться только при необходимости"
+    old "Ask her to start herself and step in only if necessary"
+    new "Ask her to start herself and step in only if necessary"
 
     # game/echo_shift.rpy:748
-    old "Предложить дать знак и сразу взять разговор на себя"
-    new "Предложить дать знак и сразу взять разговор на себя"
+    old "Offer her a signal and take over the conversation immediately"
+    new "Offer her a signal and take over the conversation immediately"
 
     # game/echo_shift.rpy:767
-    old "Попросить сообщить о боли Артёму сейчас"
-    new "Попросить сообщить о боли Артёму сейчас"
+    old "Ask him to tell Artyom about the pain now"
+    new "Ask him to tell Artyom about the pain now"
 
     # game/echo_shift.rpy:776
-    old "Согласиться закончить участок и никому не говорить"
-    new "Согласиться закончить участок и никому не говорить"
+    old "Agree to finish the section and tell nobody"
+    new "Agree to finish the section and tell nobody"
 
     # game/echo_shift.rpy:794
-    old "Остаться рядом без требования развлекать тебя"
-    new "Остаться рядом без требования развлекать тебя"
+    old "Stay beside him without expecting him to entertain you"
+    new "Stay beside him without expecting him to entertain you"
 
     # game/echo_shift.rpy:803
-    old "Попросить его вернуть настроение команде"
-    new "Попросить его вернуть настроение команде"
+    old "Ask him to lift the team's mood"
+    new "Ask him to lift the team's mood"
 
     # game/echo_shift.rpy:820
-    old "Потребовать назвать решения своими именами"
-    new "Потребовать назвать решения своими именами"
+    old "Insist on naming the decisions for what they are"
+    new "Insist on naming the decisions for what they are"
 
     # game/echo_shift.rpy:829
-    old "Предложить жёстче контролировать решения команды"
-    new "Предложить жёстче контролировать решения команды"
+    old "Suggest tighter control over the team's decisions"
+    new "Suggest tighter control over the team's decisions"
 
     # game/echo_shift.rpy:851
-    old "Отдать Лере документы и войти следом"
-    new "Отдать Лере документы и войти следом"
+    old "Give Lera the documents and follow her in"
+    new "Give Lera the documents and follow her in"
 
     # game/echo_shift.rpy:860
-    old "Войти первым и представить её версию"
-    new "Войти первым и представить её версию"
+    old "Go in first and present her version"
+    new "Go in first and present her version"
 
     # game/echo_shift.rpy:877
-    old "Попросить Виктора самому передать ключ блокировки"
-    new "Попросить Виктора самому передать ключ блокировки"
+    old "Ask Viktor to hand over the lockout key himself"
+    new "Ask Viktor to hand over the lockout key himself"
 
     # game/echo_shift.rpy:886
-    old "Попросить показать ручной режим в последний раз"
-    new "Попросить показать ручной режим в последний раз"
+    old "Ask him to demonstrate manual mode one last time"
+    new "Ask him to demonstrate manual mode one last time"
 
     # game/echo_shift.rpy:903
-    old "Пересчитать вместе и спросить прямо, страшно ли ему"
-    new "Пересчитать вместе и спросить прямо, страшно ли ему"
+    old "Count together and ask directly whether he is scared"
+    new "Count together and ask directly whether he is scared"
 
     # game/echo_shift.rpy:912
-    old "Подыграть и вернуть привычную шутку"
-    new "Подыграть и вернуть привычную шутку"
+    old "Play along and bring back the usual joke"
+    new "Play along and bring back the usual joke"
 
     # game/echo_shift.rpy:928
-    old "Потребовать право команды остановить опасную операцию"
-    new "Потребовать право команды остановить опасную операцию"
+    old "Demand that the team have the right to stop a dangerous operation"
+    new "Demand that the team have the right to stop a dangerous operation"
 
     # game/echo_shift.rpy:937
-    old "Поддержать единый центр управления"
-    new "Поддержать единый центр управления"
+    old "Support a single control authority"
+    new "Support a single control authority"
 
     # game/echo_shift.rpy:976
-    old "Дать Лере договорить, а Макса попросить услышать ответ"
-    new "Дать Лере договорить, а Макса попросить услышать ответ"
+    old "Let Lera finish and ask Max to listen to the answer"
+    new "Let Lera finish and ask Max to listen to the answer"
 
     # game/echo_shift.rpy:985
-    old "Поддержать шутку, чтобы снять напряжение"
-    new "Поддержать шутку, чтобы снять напряжение"
+    old "Join the joke to ease the tension"
+    new "Join the joke to ease the tension"
 
     # game/echo_shift.rpy:995
-    old "Резко оборвать Макса"
-    new "Резко оборвать Макса"
+    old "Cut Max off sharply"
+    new "Cut Max off sharply"
 
     # game/echo_shift.rpy:1019
-    old "Попросить Артёма сначала выслушать Леру"
-    new "Попросить Артёма сначала выслушать Леру"
+    old "Ask Artyom to hear Lera out first"
+    new "Ask Artyom to hear Lera out first"
 
     # game/echo_shift.rpy:1029
-    old "Согласиться с планом Артёма"
-    new "Согласиться с планом Артёма"
+    old "Agree with Artyom's plan"
+    new "Agree with Artyom's plan"
 
     # game/echo_shift.rpy:1038
-    old "Самому представить общую версию"
-    new "Самому представить общую версию"
+    old "Present the common version yourself"
+    new "Present the common version yourself"
 
     # game/echo_shift.rpy:1071
-    old "Остановить участок и записать причину вместе"
-    new "Остановить участок и записать причину вместе"
+    old "Stop the section and record the reason together"
+    new "Stop the section and record the reason together"
 
     # game/echo_shift.rpy:1081
-    old "Дать Виктору закончить одну партию под контролем Артёма"
-    new "Дать Виктору закончить одну партию под контролем Артёма"
+    old "Let Viktor finish one batch under Artyom's supervision"
+    new "Let Viktor finish one batch under Artyom's supervision"
 
     # game/echo_shift.rpy:1092
-    old "Поддержать приказ Артёма без обсуждения"
-    new "Поддержать приказ Артёма без обсуждения"
+    old "Back Artyom's order without discussion"
+    new "Back Artyom's order without discussion"
 
     # game/echo_shift.rpy:1119
-    old "Собрать одну хронологию, но дать каждому говорить за себя"
-    new "Собрать одну хронологию, но дать каждому говорить за себя"
+    old "Build one timeline, but let everyone speak for themselves"
+    new "Build one timeline, but let everyone speak for themselves"
 
     # game/echo_shift.rpy:1132
-    old "Взять общий разговор на себя"
-    new "Взять общий разговор на себя"
+    old "Take over the whole conversation"
+    new "Take over the whole conversation"
 
     # game/echo_shift.rpy:1143
-    old "Попросить всех говорить отдельно"
-    new "Попросить всех говорить отдельно"
+    old "Ask everyone to speak separately"
+    new "Ask everyone to speak separately"
 
