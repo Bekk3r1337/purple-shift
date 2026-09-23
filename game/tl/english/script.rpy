@@ -4,91 +4,91 @@
 translate english morning_home_82969c1a:
 
     # n "Будильник вибрирует где-то под подушкой. Ты находишь телефон не с первого раза и ещё несколько секунд лежишь с закрытыми глазами. Сегодня снова на смену."
-    n "Будильник вибрирует где-то под подушкой. Ты находишь телефон не с первого раза и ещё несколько секунд лежишь с закрытыми глазами. Сегодня снова на смену."
+    n "The alarm vibrates somewhere under the pillow. It takes you a moment to find the phone, and you lie there with your eyes closed for a few more seconds. Another shift today."
 
 # game/script.rpy:36
 translate english morning_home_3b74431a:
 
     # n "В комнате только кровать, стол и зарядка у розетки. На экране 06:12. До выхода сорок минут - нормально, если прямо сейчас встать, умыться и не зависнуть с телефоном."
-    n "В комнате только кровать, стол и зарядка у розетки. На экране 06:12. До выхода сорок минут - нормально, если прямо сейчас встать, умыться и не зависнуть с телефоном."
+    n "The room has only a bed, a desk, and a charger by the outlet. The screen says 06:12. Forty minutes until you have to leave - enough, if you get up now, wash, and do not get stuck on your phone."
 
 # game/script.rpy:38
 translate english morning_home_b7dedbcc:
 
     # n "Ты садишься, ставишь ноги на холодный пол и сразу начинаешь считать: десять минут на душ, пять на завтрак, ещё двадцать на дорогу до остановки."
-    n "Ты садишься, ставишь ноги на холодный пол и сразу начинаешь считать: десять минут на душ, пять на завтрак, ещё двадцать на дорогу до остановки."
+    n "You sit up, put your feet on the cold floor, and start counting immediately: ten minutes for a shower, five for breakfast, another twenty to the bus stop."
 
 # game/script.rpy:51
 translate english mindset_work_bfadcaa2:
 
     # n "Ты пожимаешь плечами. Работа как работа — не первая и, скорее всего, не последняя."
-    n "Ты пожимаешь плечами. Работа как работа — не первая и, скорее всего, не последняя."
+    n "You shrug. A job is a job - not your first and probably not your last."
 
 # game/script.rpy:56
 translate english mindset_survive_b54ef16c:
 
     # n "Главное — не заглядывать дальше сегодняшнего дня. Одну смену ты точно вывезешь, а с остальным разберёшься потом."
-    n "Главное — не заглядывать дальше сегодняшнего дня. Одну смену ты точно вывезешь, а с остальным разберёшься потом."
+    n "The important thing is not to look past today. You can definitely survive one shift; the rest can wait."
 
 # game/script.rpy:61
 translate english mindset_joke_91b25610:
 
     # n "Если жизнь действительно симулятор, тебе досталась сложность повыше и почему-то без обучения. Остаётся надеяться, что хотя бы сохранения работают."
-    n "Если жизнь действительно симулятор, тебе досталась сложность повыше и почему-то без обучения. Остаётся надеяться, что хотя бы сохранения работают."
+    n "If life really is a simulator, you got a higher difficulty setting and somehow no tutorial. You can only hope the save system works."
 
 # game/script.rpy:70
 translate english leaving_home_278e04ea:
 
     # n "Ты умываешься, натягиваешь одежду и на автомате проверяешь телефон, ключи и пропуск. Дверь закрывается тихо."
-    n "Ты умываешься, натягиваешь одежду и на автомате проверяешь телефон, ключи и пропуск. Дверь закрывается тихо."
+    n "You wash up, pull on your clothes, and automatically check your phone, keys, and pass. The door closes quietly."
 
 # game/script.rpy:74
 translate english leaving_home_dfd608c4:
 
     # n "На улице начинает светать. Автобус почти пустой, и всю дорогу ты стараешься не уснуть."
-    n "На улице начинает светать. Автобус почти пустой, и всю дорогу ты стараешься не уснуть."
+    n "Dawn is starting outside. The bus is nearly empty, and you spend the whole ride trying not to fall asleep."
 
 # game/script.rpy:87
 translate english leaving_home_98b92eb2:
 
     # n "Склад видно ещё с остановки: фиолетовая подсветка, открытые ворота и люди в одинаковой форме у проходной. Внутри шумят ленты, пищат сканеры и кто-то уже раздаёт короткие команды."
-    n "Склад видно ещё с остановки: фиолетовая подсветка, открытые ворота и люди в одинаковой форме у проходной. Внутри шумят ленты, пищат сканеры и кто-то уже раздаёт короткие команды."
+    n "You can see the warehouse from the stop: violet lighting, open gates, and people in identical uniforms by the entrance. Inside, belts rumble, scanners beep, and someone is already barking short commands."
 
 # game/script.rpy:92
 translate english leaving_home_dc36ec5f:
 
     # sv "Ты новенький? Тогда сразу к делу: зачем пришёл?"
-    sv "Ты новенький? Тогда сразу к делу: зачем пришёл?"
+    sv "You new? Then let's get straight to it: why are you here?"
 
 # game/script.rpy:105
 translate english money_95f026a4:
 
     # p "Деньги. Мне сейчас без них никак."
-    p "Деньги. Мне сейчас без них никак."
+    p "Money. I really need it right now."
 
 # game/script.rpy:106
 translate english money_89934952:
 
     # sv "Честно. Ладно."
-    sv "Честно. Ладно."
+    sv "Honest. Fine."
 
 # game/script.rpy:111
 translate english anchor_ffc46897:
 
     # p "Нужна работа, за которую платят вовремя. Хочу хоть за что-то зацепиться."
-    p "Нужна работа, за которую платят вовремя. Хочу хоть за что-то зацепиться."
+    p "I need a job that pays on time. I want something I can hold on to."
 
 # game/script.rpy:112
 translate english anchor_1f4997c7:
 
     # sv "Понял. Тут многие так."
-    sv "Понял. Тут многие так."
+    sv "I get it. A lot of people here are like that."
 
 # game/script.rpy:117
 translate english joke_a259d371:
 
     # p "Я пришёл за романтикой. Фиолетовый свет - как в клубе."
-    p "Я пришёл за романтикой. Фиолетовый свет - как в клубе."
+    p "I came for the romance. Violet lights - just like a club."
 
 # game/script.rpy:118
 translate english joke_d827d877:
@@ -100,151 +100,151 @@ translate english joke_d827d877:
 translate english joke_0bb4ea2b:
 
     # sv "Клуб закончится минут через пять. Когда ТСД умрёт."
-    sv "Клуб закончится минут через пять. Когда ТСД умрёт."
+    sv "The club ends in about five minutes. When your scanner dies."
 
 # game/script.rpy:125
 translate english first_mistake_95ac7449:
 
     # n "Тебе выдают ТСД. Корпус ещё тёплый после прошлого сотрудника."
-    n "Тебе выдают ТСД. Корпус ещё тёплый после прошлого сотрудника."
+    n "They hand you a scanner. Its casing is still warm from the previous worker."
 
 # game/script.rpy:129
 translate english first_mistake_e9747b95:
 
     # n "Пиип."
-    n "Пиип."
+    n "Beep."
 
 # game/script.rpy:130
 translate english first_mistake_a978af03:
 
     # n "Первый скан проходит. Ты почти радуешься."
-    n "Первый скан проходит. Ты почти радуешься."
+    n "The first scan goes through. You almost feel happy."
 
 # game/script.rpy:134
 translate english first_mistake_f67fcf90:
 
     # n "Второй скан. Экран моргает. Секунда. Две."
-    n "Второй скан. Экран моргает. Секунда. Две."
+    n "Second scan. The screen flickers. One second. Two."
 
 # game/script.rpy:157
 translate english first_mistake_50779901:
 
     # n "ТСД резко пищит — так, что ты сразу чувствуешь себя виноватым."
-    n "ТСД резко пищит — так, что ты сразу чувствуешь себя виноватым."
+    n "The scanner lets out a sharp beep - the kind that makes you feel guilty immediately."
 
 # game/script.rpy:159
 translate english first_mistake_577d370b:
 
     # sv "Стоим. Покажи."
-    sv "Стоим. Покажи."
+    sv "Stop. Show me."
 
 # game/script.rpy:161
 translate english first_mistake_5e8975ca:
 
     # n "Ты тянешь ему экран. Пальцы почему-то ватные."
-    n "Ты тянешь ему экран. Пальцы почему-то ватные."
+    n "You hold the screen out to him. For some reason, your fingers feel numb."
 
 # game/script.rpy:163
 translate english first_mistake_488cfd4f:
 
     # sv "Ну конечно. Классика первой ночи."
-    sv "Ну конечно. Классика первой ночи."
+    sv "Of course. First-night classic."
 
 # game/script.rpy:165
 translate english first_mistake_7e40c007:
 
     # sv "Скан ушёл не туда. Или не ушёл вообще. Теперь заказ будет {b}висеть{/b}, пока мы не найдём его вручную."
-    sv "Скан ушёл не туда. Или не ушёл вообще. Теперь заказ будет {b}висеть{/b}, пока мы не найдём его вручную."
+    sv "The scan went to the wrong place. Or nowhere at all. Now the order will {b}hang{/b} there until we find it manually."
 
 # game/script.rpy:167
 translate english first_mistake_8af0c820:
 
     # n "Он говорит без крика, но ты уже представляешь, как вся линия ждёт из-за одного нажатия."
-    n "Он говорит без крика, но ты уже представляешь, как вся линия ждёт из-за одного нажатия."
+    n "He does not raise his voice, but you can already imagine the whole line waiting because of one press."
 
 # game/script.rpy:180
 translate english mistake_honest_f210f10c:
 
     # p "Я не понял, куда нажал..."
-    p "Я не понял, куда нажал..."
+    p "I don't know what I pressed..."
 
 # game/script.rpy:181
 translate english mistake_honest_bdbf4a10:
 
     # sv "Хорошо. Плохая новость: тут некогда понимать. Хорошая: сейчас покажу один раз. Второй раз - сам."
-    sv "Хорошо. Плохая новость: тут некогда понимать. Хорошая: сейчас покажу один раз. Второй раз - сам."
+    sv "All right. Bad news: there is no time here to figure things out slowly. Good news: I'll show you once. Second time, you're on your own."
 
 # game/script.rpy:183
 translate english mistake_honest_4ad14d0d:
 
     # n "Он забирает ТСД и за пару секунд пробегает по меню. Пальцы двигаются быстрее, чем ты успеваешь следить."
-    n "Он забирает ТСД и за пару секунд пробегает по меню. Пальцы двигаются быстрее, чем ты успеваешь следить."
+    n "He takes the scanner and flies through the menu in seconds. His fingers move faster than you can follow."
 
 # game/script.rpy:185
 translate english mistake_honest_4a4f37c8:
 
     # sv "Запомнил?"
-    sv "Запомнил?"
+    sv "Remember it?"
 
 # game/script.rpy:195
 translate english mistake_joke_812b99ae:
 
     # p "Он просто… нервничает. Как и я."
-    p "Он просто… нервничает. Как и я."
+    p "It's just... nervous. Like me."
 
 # game/script.rpy:196
 translate english mistake_joke_a1d3f0e4:
 
     # sv "Очень смешно. Здесь шутки стоят времени. А время - это деньги. Не твои, правда."
-    sv "Очень смешно. Здесь шутки стоят времени. А время - это деньги. Не твои, правда."
+    sv "Very funny. Jokes cost time here. And time is money. Not yours, admittedly."
 
 # game/script.rpy:198
 translate english mistake_joke_111391e2:
 
     # n "Ты проглатываешь улыбку. Она застревает где-то в горле."
-    n "Ты проглатываешь улыбку. Она застревает где-то в горле."
+    n "You swallow the smile. It gets stuck somewhere in your throat."
 
 # game/script.rpy:204
 translate english mistake_tsd_b7fe149c:
 
     # p "ТСД глючит, честно. Он моргнул сам."
-    p "ТСД глючит, честно. Он моргнул сам."
+    p "The scanner is glitching, seriously. It flickered on its own."
 
 # game/script.rpy:205
 translate english mistake_tsd_893161db:
 
     # sv "ТСД глючит всегда. Разница в том, в чьих он руках."
-    sv "ТСД глючит всегда. Разница в том, в чьих он руках."
+    sv "The scanner always glitches. The difference is whose hands it's in."
 
 # game/script.rpy:207
 translate english mistake_tsd_29d511c8:
 
     # n "Он внимательно смотрит на тебя, прикидывая: сломаешься или останешься."
-    n "Он внимательно смотрит на тебя, прикидывая: сломаешься или останешься."
+    n "He studies you, weighing whether you will break or stay."
 
 # game/script.rpy:211
 translate english after_fix_9bc477cb:
 
     # n "Супервайзер возвращает ТСД."
-    n "Супервайзер возвращает ТСД."
+    n "The supervisor hands the scanner back."
 
 # game/script.rpy:212
 translate english after_fix_aeb6be92:
 
     # sv "Дальше сам. Линия не ждёт."
-    sv "Дальше сам. Линия не ждёт."
+    sv "You're on your own from here. The line doesn't wait."
 
 # game/script.rpy:213
 translate english after_fix_f4a63b19:
 
     # n "Ты снова берёшь ТСД. Теперь хотя бы понятно, где открывать проблемный поток."
-    n "Ты снова берёшь ТСД. Теперь хотя бы понятно, где открывать проблемный поток."
+    n "You take the scanner again. At least now you know where to open the problem flow."
 
 # game/script.rpy:224
 translate english after_fix_brave_0d8e843a:
 
     # p "Можно ещё раз? Я реально хочу не косячить."
-    p "Можно ещё раз? Я реально хочу не косячить."
+    p "Can you show me one more time? I really don't want to screw this up."
 
 # game/script.rpy:225
 translate english after_fix_brave_d827d877:
@@ -256,391 +256,391 @@ translate english after_fix_brave_d827d877:
 translate english after_fix_brave_82ec61d0:
 
     # sv "Ладно. Уважение за попытку."
-    sv "Ладно. Уважение за попытку."
+    sv "All right. Respect for trying."
 
 # game/script.rpy:227
 translate english after_fix_brave_caa1491b:
 
     # n "Он показывает медленнее. Всё равно быстро."
-    n "Он показывает медленнее. Всё равно быстро."
+    n "He shows you more slowly. It is still fast."
 
 # game/script.rpy:228
 translate english after_fix_brave_008402bd:
 
     # sv "Всё. В работу."
-    sv "Всё. В работу."
+    sv "That's it. Get to work."
 
 # game/script.rpy:236
 translate english after_fix_cold_c6d91466:
 
     # n "Супервайзер возвращает ТСД без лишних слов."
-    n "Супервайзер возвращает ТСД без лишних слов."
+    n "The supervisor gives the scanner back without another word."
 
 # game/script.rpy:237
 translate english after_fix_cold_81a0d3e1:
 
     # sv "За работу."
-    sv "За работу."
+    sv "Get to work."
 
 # game/script.rpy:238
 translate english after_fix_cold_78e87736:
 
     # n "На этом разговор закончен. Разбираться с ошибкой дальше придётся самому."
-    n "На этом разговор закончен. Разбираться с ошибкой дальше придётся самому."
+    n "The conversation is over. You will have to deal with the error yourself from here."
 
 # game/script.rpy:247
 translate english shift_continues_3d8b2374:
 
     # n "Ты встаёшь в поток. Слева кто-то шепчет: «Главное — не залипнуть на ошибке». Справа без остановки пищат чужие сканеры."
-    n "Ты встаёшь в поток. Слева кто-то шепчет: «Главное — не залипнуть на ошибке». Справа без остановки пищат чужие сканеры."
+    n "You step into the flow. Someone on the left whispers, \"The main thing is not to get stuck on one error.\" Scanners beep nonstop on your right."
 
 # game/script.rpy:249
 translate english shift_continues_5a36bfc1:
 
     # n "Лента не замедляется, пока ты пытаешься встроиться. Стоит задержаться у одной коробки — перед тобой сразу вырастает очередь."
-    n "Лента не замедляется, пока ты пытаешься встроиться. Стоит задержаться у одной коробки — перед тобой сразу вырастает очередь."
+    n "The belt does not slow down while you try to find the rhythm. Pause over one box and a queue immediately grows in front of you."
 
 # game/script.rpy:255
 translate english shift_continues_4c9bd363:
 
     # n "Рядом в линию становится мужчина постарше. Движения экономные, лицо усталое."
-    n "Рядом в линию становится мужчина постарше. Движения экономные, лицо усталое."
+    n "An older man takes a place on the line beside you. His movements are economical, his face tired."
 
 # game/script.rpy:256
 translate english shift_continues_4ab68a8d:
 
     # vet "Первый раз?"
-    vet "Первый раз?"
+    vet "First time?"
 
 # game/script.rpy:257
 translate english shift_continues_fb271dec:
 
     # p "Ага."
-    p "Ага."
+    p "Yeah."
 
 # game/script.rpy:258
 translate english shift_continues_a328124b:
 
     # vet "Дыши ровнее. Зажмёшь плечи — через час руки отвалятся. Остальное потом."
-    vet "Дыши ровнее. Зажмёшь плечи — через час руки отвалятся. Остальное потом."
+    vet "Breathe evenly. Keep your shoulders tense and your arms will fall off in an hour. Everything else can wait."
 
 # game/script.rpy:264
 translate english shift_continues_8c92626e:
 
     # n "С другой стороны пристраивается парень примерно твоего возраста. Он успевает взять коробку, отсканировать её и вставить комментарий раньше, чем ты поворачиваешь голову."
-    n "С другой стороны пристраивается парень примерно твоего возраста. Он успевает взять коробку, отсканировать её и вставить комментарий раньше, чем ты поворачиваешь голову."
+    n "A guy about your age takes a spot on the other side. He manages to grab a box, scan it, and make a comment before you even turn your head."
 
 # game/script.rpy:265
 translate english shift_continues_5061e513:
 
     # mem "Смена - это как игра. Только сохранений нет, а баги платные."
-    mem "Смена - это как игра. Только сохранений нет, а баги платные."
+    mem "A shift is like a game. Except there are no saves and bugs cost money."
 
 # game/script.rpy:267
 translate english shift_continues_f90638ab:
 
     # n "Ты хочешь улыбнуться, но улыбка выходит маленькая."
-    n "Ты хочешь улыбнуться, но улыбка выходит маленькая."
+    n "You try to smile, but it comes out small."
 
 # game/script.rpy:270
 translate english shift_continues_ee492a57:
 
     # n "Поток начинается. Коробка. Скан. Переложил."
-    n "Поток начинается. Коробка. Скан. Переложил."
+    n "The flow begins. Box. Scan. Move it."
 
 # game/script.rpy:272
 translate english shift_continues_e9747b95:
 
     # n "Пиип."
-    n "Пиип."
+    n "Beep."
 
 # game/script.rpy:274
 translate english shift_continues_a7bb7cd9:
 
     # n "Ещё коробка."
-    n "Ещё коробка."
+    n "Another box."
 
 # game/script.rpy:276
 translate english shift_continues_e9747b95_1:
 
     # n "Пиип."
-    n "Пиип."
+    n "Beep."
 
 # game/script.rpy:278
 translate english shift_continues_6834c8db:
 
     # n "Где-то сзади коротко: «Быстрее!» Где-то спереди ещё короче: «Норма!»"
-    n "Где-то сзади коротко: «Быстрее!» Где-то спереди ещё короче: «Норма!»"
+    n "Somewhere behind you: \"Faster!\" Somewhere ahead, even shorter: \"Target!\""
 
 # game/script.rpy:280
 translate english shift_continues_0197a4f9:
 
     # n "Через пару минут движения сливаются с конвейером. Руки сами хватают, сканируют, откладывают; ты только пытаешься не отстать."
-    n "Через пару минут движения сливаются с конвейером. Руки сами хватают, сканируют, откладывают; ты только пытаешься не отстать."
+    n "After a few minutes, your movements merge with the conveyor. Your hands grab, scan, and place on their own; you are just trying not to fall behind."
 
 # game/script.rpy:283
 translate english shift_continues_5b8e5310:
 
     # n "Слева от тебя девчонка-новичок путается с коробками. В её руках дрожит ТСД. На секунду она замирает и выпадает из общего ритма."
-    n "Слева от тебя девчонка-новичок путается с коробками. В её руках дрожит ТСД. На секунду она замирает и выпадает из общего ритма."
+    n "The new girl on your left gets tangled up with the boxes. The scanner trembles in her hands. For a second she freezes and drops out of the shared rhythm."
 
 # game/script.rpy:288
 translate english shift_continues_ddd28410:
 
     # newb "У меня… не то… кажется…"
-    newb "У меня… не то… кажется…"
+    newb "I... I think... this isn't right..."
 
 # game/script.rpy:289
 translate english shift_continues_143d5911:
 
     # mem "Поздравляю. Ты поймала классический квест «ошибка без подсказки»."
-    mem "Поздравляю. Ты поймала классический квест «ошибка без подсказки»."
+    mem "Congratulations. You've found the classic quest: \"error with no hint.\""
 
 # game/script.rpy:291
 translate english shift_continues_4055364c:
 
     # vet "Тише. Пусть человек разберётся."
-    vet "Тише. Пусть человек разберётся."
+    vet "Easy. Let her figure it out."
 
 # game/script.rpy:306
 translate english help_newbie_f572f03e:
 
     # n "Ты наклоняешься ближе к её экрану."
-    n "Ты наклоняешься ближе к её экрану."
+    n "You lean closer to her screen."
 
 # game/script.rpy:307
 translate english help_newbie_7fcacd9c:
 
     # p "Покажи. Не дёргайся."
-    p "Покажи. Не дёргайся."
+    p "Show me. Don't panic."
 
 # game/script.rpy:308
 translate english help_newbie_453655e9:
 
     # n "Она показывает экран. Ошибка простая, но Лера смотрит на красную строку и боится нажать ещё хоть что-нибудь."
-    n "Она показывает экран. Ошибка простая, но Лера смотрит на красную строку и боится нажать ещё хоть что-нибудь."
+    n "She shows you the screen. The error is simple, but Lera stares at the red line, afraid to press anything else."
 
 # game/script.rpy:310
 translate english help_newbie_518ce53a:
 
     # p "Вот тут. Смотри: сначала это, потом подтверждение."
-    p "Вот тут. Смотри: сначала это, потом подтверждение."
+    p "Here. Look: this first, then confirm."
 
 # game/script.rpy:311
 translate english help_newbie_3e489c30:
 
     # n "Ты сам только что путался в этом меню, поэтому показываешь медленно и дважды повторяешь порядок."
-    n "Ты сам только что путался в этом меню, поэтому показываешь медленно и дважды повторяешь порядок."
+    n "You were just getting lost in the same menu yourself, so you go slowly and repeat the order twice."
 
 # game/script.rpy:315
 translate english help_newbie_c2399558:
 
     # newb "…О! Получилось. Спасибо."
-    newb "…О! Получилось. Спасибо."
+    newb "...Oh! It worked. Thank you."
 
 # game/script.rpy:320
 translate english help_newbie_9c2bb45d:
 
     # mem "О, редкий дроп: помощь коллеге. Всё, молчу."
-    mem "О, редкий дроп: помощь коллеге. Всё, молчу."
+    mem "Oh, rare drop: helping a coworker. Fine, I'll shut up."
 
 # game/script.rpy:322
 translate english help_newbie_09dae5ca:
 
     # vet "Нормально сделал."
-    vet "Нормально сделал."
+    vet "You did fine."
 
 # game/script.rpy:323
 translate english help_newbie_bb5b910e:
 
     # n "За это время перед твоим местом успела вырасти очередь."
-    n "За это время перед твоим местом успела вырасти очередь."
+    n "In the meantime, a queue has formed in front of your station."
 
 # game/script.rpy:336
 translate english grind_norm_26e33653:
 
     # n "Ты делаешь вид, что не слышишь. Берёшь. Сканируешь. Кладёшь."
-    n "Ты делаешь вид, что не слышишь. Берёшь. Сканируешь. Кладёшь."
+    n "You pretend not to hear. Grab. Scan. Place."
 
 # game/script.rpy:338
 translate english grind_norm_e9747b95:
 
     # n "Пиип."
-    n "Пиип."
+    n "Beep."
 
 # game/script.rpy:340
 translate english grind_norm_83e588cc:
 
     # n "Новичок рядом шепчет что-то себе под нос. А потом - тихое «блин». Ты не поворачиваешься."
-    n "Новичок рядом шепчет что-то себе под нос. А потом - тихое «блин». Ты не поворачиваешься."
+    n "The newcomer beside you mutters something under her breath. Then comes a quiet \"damn.\" You do not turn around."
 
 # game/script.rpy:342
 translate english grind_norm_7e5b588f:
 
     # mem "Без осуждения. Я в первый день тоже выбрал коробки. Они хотя бы помощи не просили."
-    mem "Без осуждения. Я в первый день тоже выбрал коробки. Они хотя бы помощи не просили."
+    mem "No judgment. On my first day I chose the boxes too. At least they don't ask for help."
 
 # game/script.rpy:344
 translate english grind_norm_22c77d48:
 
     # vet "Смотри не перегрейся."
-    vet "Смотри не перегрейся."
+    vet "Don't burn yourself out."
 
 # game/script.rpy:345
 translate english grind_norm_a397b838:
 
     # n "Темп держится. Слева Лера всё ещё возится с ошибкой, и смотреть туда становится неловко."
-    n "Темп держится. Слева Лера всё ещё возится с ошибкой, и смотреть туда становится неловко."
+    n "The pace holds. To your left, Lera is still struggling with the error, and it is becoming uncomfortable to look over there."
 
 # game/script.rpy:357
 translate english take_pause_2c6b1eef:
 
     # n "Ты на секунду выходишь из линии под предлогом поправить перчатку. Глубокий вдох. Ещё один."
-    n "Ты на секунду выходишь из линии под предлогом поправить перчатку. Глубокий вдох. Ещё один."
+    n "You step out of the line for a second under the excuse of fixing your glove. Deep breath. Another one."
 
 # game/script.rpy:359
 translate english take_pause_8c260114:
 
     # n "После двух глубоких вдохов пальцы перестают дрожать."
-    n "После двух глубоких вдохов пальцы перестают дрожать."
+    n "After two deep breaths, your fingers stop shaking."
 
 # game/script.rpy:361
 translate english take_pause_51863101:
 
     # mem "Пауза без разрешения? Смело. Запиши мне потом этот билд."
-    mem "Пауза без разрешения? Смело. Запиши мне потом этот билд."
+    mem "A break without permission? Bold. Send me that build later."
 
 # game/script.rpy:363
 translate english take_pause_ef86379f:
 
     # vet "Нормально. Главное - возвращайся."
-    vet "Нормально. Главное - возвращайся."
+    vet "Fine. Just make sure you come back."
 
 # game/script.rpy:369
 translate english supervisor_pressure_018fbaf5:
 
     # n "Ты возвращаешься в ритм. И ровно в этот момент рядом появляется супервайзер."
-    n "Ты возвращаешься в ритм. И ровно в этот момент рядом появляется супервайзер."
+    n "You fall back into rhythm. At that exact moment, the supervisor appears beside you."
 
 # game/script.rpy:374
 translate english supervisor_pressure_b69ed8d8:
 
     # sv "Так. Смотрю темп."
-    sv "Так. Смотрю темп."
+    sv "All right. Let's see your pace."
 
 # game/script.rpy:376
 translate english supervisor_pressure_ae007b0f:
 
     # n "Он молча смотрит на счётчик в твоём ТСД. Ждать замечания оказывается хуже, чем услышать его сразу."
-    n "Он молча смотрит на счётчик в твоём ТСД. Ждать замечания оказывается хуже, чем услышать его сразу."
+    n "He silently studies the counter on your scanner. Waiting for the criticism turns out to be worse than hearing it immediately."
 
 # game/script.rpy:378
 translate english supervisor_pressure_c6dc24ed:
 
     # sv "Либо втягиваешься, либо начинаешь отставать. А отставание здесь быстро делают твоей личной проблемой."
-    sv "Либо втягиваешься, либо начинаешь отставать. А отставание здесь быстро делают твоей личной проблемой."
+    sv "Either you get into the rhythm, or you start falling behind. And around here, falling behind quickly becomes your personal problem."
 
 # game/script.rpy:380
 translate english supervisor_pressure_a3e27a95:
 
     # mem "Экономика простая: отстал — виноват. Успел — мог быстрее. Удобно, да?"
-    mem "Экономика простая: отстал — виноват. Успел — мог быстрее. Удобно, да?"
+    mem "Simple economics: fall behind - your fault. Keep up - you could have gone faster. Convenient, right?"
 
 # game/script.rpy:382
 translate english supervisor_pressure_184b2463:
 
     # sv "Ты кто такой?"
-    sv "Ты кто такой?"
+    sv "Who are you?"
 
 # game/script.rpy:383
 translate english supervisor_pressure_58b65810:
 
     # mem "Я? Я моральная поддержка."
-    mem "Я? Я моральная поддержка."
+    mem "Me? Moral support."
 
 # game/script.rpy:384
 translate english supervisor_pressure_3735bf9d:
 
     # sv "Понял. Молчи."
-    sv "Понял. Молчи."
+    sv "Got it. Be quiet."
 
 # game/script.rpy:386
 translate english supervisor_pressure_5b3c4b48:
 
     # n "Макс усмехается, а Артём уже идёт проверять следующий участок."
-    n "Макс усмехается, а Артём уже идёт проверять следующий участок."
+    n "Max smirks while Artyom is already moving on to inspect the next section."
 
 # game/script.rpy:391
 translate english supervisor_pressure_7165989d:
 
     # n "Очередь на экране снова растёт. До конца смены ещё несколько часов."
-    n "Очередь на экране снова растёт. До конца смены ещё несколько часов."
+    n "The queue on the screen starts growing again. There are still several hours left in the shift."
 
 # game/script.rpy:401
 translate english mid_shift_9c3e9dab:
 
     # n "Ты перестаёшь считать коробки и следишь только за дыханием. Время дробится на короткие серии между ошибками и новыми стопками."
-    n "Ты перестаёшь считать коробки и следишь только за дыханием. Время дробится на короткие серии между ошибками и новыми стопками."
+    n "You stop counting boxes and focus only on your breathing. Time breaks into short stretches between errors and fresh stacks."
 
 # game/script.rpy:405
 translate english observe_5de926cd:
 
     # n "Ты на секунду смотришь по сторонам. Уставшие лица, одни и те же движения, поднятые плечи. У тебя уже получается почти так же."
-    n "Ты на секунду смотришь по сторонам. Уставшие лица, одни и те же движения, поднятые плечи. У тебя уже получается почти так же."
+    n "You glance around for a second. Tired faces, the same movements, raised shoulders. You are already starting to look the same."
 
 # game/script.rpy:410
 translate english toward_end_70329435:
 
     # n "ТСД пищит, лента гудит. На часах проходит всего несколько минут."
-    n "ТСД пищит, лента гудит. На часах проходит всего несколько минут."
+    n "The scanner beeps, the belt hums. Only a few minutes pass on the clock."
 
 # game/script.rpy:412
 translate english toward_end_dd22eb7b:
 
     # n "До конца остаётся меньше часа, и на линию как раз подают новую партию."
-    n "До конца остаётся меньше часа, и на линию как раз подают новую партию."
+    n "Less than an hour remains, and a fresh batch is fed onto the line."
 
 # game/script.rpy:418
 translate english final_stretch_5c8d6aea:
 
     # n "Пальцы хватают следующую коробку раньше, чем ты успеваешь прочитать маркировку."
-    n "Пальцы хватают следующую коробку раньше, чем ты успеваешь прочитать маркировку."
+    n "Your fingers grab the next box before you have time to read the label."
 
 # game/script.rpy:420
 translate english final_stretch_92534d20:
 
     # n "Скан. Переложил."
-    n "Скан. Переложил."
+    n "Scan. Move it."
 
 # game/script.rpy:422
 translate english final_stretch_e9747b95:
 
     # n "Пиип."
-    n "Пиип."
+    n "Beep."
 
 # game/script.rpy:424
 translate english final_stretch_92534d20_1:
 
     # n "Скан. Переложил."
-    n "Скан. Переложил."
+    n "Scan. Move it."
 
 # game/script.rpy:426
 translate english final_stretch_e1a3f412:
 
     # n "Пииип."
-    n "Пииип."
+    n "Beeep."
 
 # game/script.rpy:428
 translate english final_stretch_52732fcb:
 
     # n "В какой-то момент ты пропускаешь знакомый сигнал и несколько секунд смотришь на коробку, не понимая, куда её класть."
-    n "В какой-то момент ты пропускаешь знакомый сигнал и несколько секунд смотришь на коробку, не понимая, куда её класть."
+    n "At some point, you miss a familiar tone and stare at a box for several seconds, unable to remember where it goes."
 
 # game/script.rpy:431
 translate english final_stretch_f5fd476e:
 
     # mem "Эй. Если тебя сейчас вырубит - упади красиво. Сделай вид, что это катсцена."
-    mem "Эй. Если тебя сейчас вырубит - упади красиво. Сделай вид, что это катсцена."
+    mem "Hey. If you pass out now, fall dramatically. Pretend it's a cutscene."
 
 # game/script.rpy:433
 translate english final_stretch_57262f7c:
@@ -874,7 +874,7 @@ translate english ending_hard_path_538349d4:
 translate english ending_hard_path_e9747b95:
 
     # n "Пиип."
-    n "Пиип."
+    n "Beep."
 
 # game/script.rpy:579
 translate english ending_hard_path_b3f3cd7f:
@@ -1072,19 +1072,19 @@ translate english chapter2_home_f29b74c1:
 translate english chapter2_home_e9747b95:
 
     # n "Пиип."
-    n "Пиип."
+    n "Beep."
 
 # game/script.rpy:744
 translate english chapter2_home_e9747b95_1:
 
     # n "Пиип."
-    n "Пиип."
+    n "Beep."
 
 # game/script.rpy:745
 translate english chapter2_home_e9747b95_2:
 
     # n "Пиип."
-    n "Пиип."
+    n "Beep."
 
 # game/script.rpy:747
 translate english chapter2_home_64be6326:
