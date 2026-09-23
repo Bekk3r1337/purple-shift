@@ -17,67 +17,67 @@ init -5 python:
         "before_shift": {
             "path": "audio/ost/02_before_shift.mp3",
             "fallback": "audio/home_ambient.mp3",
-            "title": "До смены",
+            "title": _("До смены"),
         },
         "city_night": {
             "path": "audio/ost/03_city_after_midnight.mp3",
             "fallback": "audio/city_night.mp3",
-            "title": "Город после полуночи",
+            "title": _("Город после полуночи"),
         },
         "walk_to_shift": {
             "path": "audio/ost/04_walk_to_shift.mp3",
             "fallback": "audio/night_walk.mp3",
-            "title": "Дорога на смену",
+            "title": _("Дорога на смену"),
         },
         "ordinary_shift": {
             "path": "audio/ost/05_ordinary_shift.mp3",
             "fallback": "audio/night_shift.mp3",
-            "title": "Обычная смена",
+            "title": _("Обычная смена"),
         },
         "cold_line": {
             "path": "audio/ost/06_cold_line.mp3",
             "fallback": "audio/warehouse_chill.mp3",
-            "title": "Холодная линия",
+            "title": _("Холодная линия"),
         },
         "after_shift": {
             "path": "audio/ost/07_after_shift.mp3",
             "fallback": "audio/after_shift_ambient.mp3",
-            "title": "После смены",
+            "title": _("После смены"),
         },
         "v13_memory": {
             "path": "audio/ost/08_v13_memory.mp3",
             "fallback": "audio/warehouse_chill.mp3",
-            "title": "V-13 // Память",
+            "title": _("V-13 // Память"),
         },
         "human_pressure": {
             "path": "audio/ost/09_human_pressure.mp3",
             "fallback": "audio/after_shift_ambient.mp3",
-            "title": "Давление",
+            "title": _("Давление"),
         },
         "red_button": {
             "path": "audio/ost/10_red_button.mp3",
             "fallback": "audio/warehouse_chill.mp3",
-            "title": "Красная кнопка",
+            "title": _("Красная кнопка"),
         },
         "purple_intrusion": {
             "path": "audio/ost/11_purple_intrusion.mp3",
             "fallback": "audio/night_shift.mp3",
-            "title": "Фиолетовое вмешательство",
+            "title": _("Фиолетовое вмешательство"),
         },
         "seven_days_later": {
             "path": "audio/ost/12_seven_days_later.mp3",
             "fallback": "audio/after_shift_ambient.mp3",
-            "title": "Семь дней спустя",
+            "title": _("Семь дней спустя"),
         },
         "opening_song": {
             "path": "audio/ost/13_shift_remembers.mp3",
             "fallback": "audio/menu_theme.mp3",
-            "title": "Смена помнит",
+            "title": _("Смена помнит"),
         },
         "ending_song": {
             "path": "audio/ost/14_afterglow.mp3",
             "fallback": "audio/after_shift_ambient.mp3",
-            "title": "После света",
+            "title": _("После света"),
         },
     }
 
