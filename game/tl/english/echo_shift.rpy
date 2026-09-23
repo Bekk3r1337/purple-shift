@@ -1314,25 +1314,25 @@ translate english strings:
 translate english ps_route_turning_point_d55b2e8e:
 
     # p "Посмотри на меня - и я продолжу. Не будем давать им время задавить тебя."
-    p "Посмотри на меня - и я продолжу. Не будем давать им время задавить тебя."
+    p "Look at me and I'll continue. We won't give them time to steamroll you."
 
 # game/echo_shift.rpy:769
 translate english ps_route_turning_point_c06dd288:
 
     # n "Виктор держит кружку двумя руками. Когда думает, что ты отвернулся, переносит её в левую - правое запястье снова отзывается болью."
-    n "Виктор держит кружку двумя руками. Когда думает, что ты отвернулся, переносит её в левую - правое запястье снова отзывается болью."
+    n "Viktor holds the mug with both hands. When he thinks you have looked away, he shifts it to his left - his right wrist is hurting again."
 
 # game/echo_shift.rpy:796
 translate english ps_route_turning_point_dd5ac20b:
 
     # n "Макс сидит напротив и крутит бумажный стакан. Обычно к этому моменту он успевает дать стакану имя и должность. Сегодня - ничего."
-    n "Макс сидит напротив и крутит бумажный стакан. Обычно к этому моменту он успевает дать стакану имя и должность. Сегодня - ничего."
+    n "Max sits opposite you, turning a paper cup in his hands. Usually by now he has given the cup a name and a job title. Today - nothing."
 
 # game/echo_shift.rpy:887
 translate english ps_route_turning_point_9fd2f10e:
 
     # p "Нет. Передай ключ Артёму сам. Не мне и не технику - сам."
-    p "Нет. Передай ключ Артёму сам. Не мне и не технику - сам."
+    p "No. Hand the key to Artyom yourself. Not to me, not to a technician - you."
 
 # game/echo_shift.rpy:941
 translate english ps_route_turning_point_d1b47dd4:
@@ -1344,19 +1344,19 @@ translate english ps_route_turning_point_d1b47dd4:
 translate english ps_team_conflict_scene_2c1d291f:
 
     # mem "Красная стрелка рядом с Лерой - просто система наконец выбрала фирменный цвет тревоги."
-    mem "Красная стрелка рядом с Лерой - просто система наконец выбрала фирменный цвет тревоги."
+    mem "The red arrow next to Lera just means the system finally picked a brand color for panic."
 
 # game/echo_shift.rpy:1073
 translate english ps_team_conflict_scene_e206eefd:
 
     # vet "А ты закроешь остаток чем - должностной инструкцией?"
-    vet "А ты закроешь остаток чем - должностной инструкцией?"
+    vet "And what will you finish the remainder with - a job description?"
 
 # game/echo_shift.rpy:1093
 translate english ps_team_conflict_scene_378994bb:
 
     # p "Одна партия. Артём стоит у панели, Виктор не подходит к механизму. После - полная блокировка."
-    p "Одна партия. Артём стоит у панели, Виктор не подходит к механизму. После - полная блокировка."
+    p "One batch. Artyom stays at the panel, Viktor does not touch the mechanism. After that - full lockout."
 
 # game/echo_shift.rpy:1188
 translate english ps_reactive_echo_scene_2a76f184:
@@ -1368,7 +1368,7 @@ translate english ps_reactive_echo_scene_2a76f184:
 translate english ps_reactive_echo_scene_611032d5:
 
     # mem "Хвост выбили за сорок минут. Потом два часа никто не разговаривал - воздуха не хватало. Зато план зелёный."
-    mem "Хвост выбили за сорок минут. Потом два часа никто не разговаривал - воздуха не хватало. Зато план зелёный."
+    mem "We cleared the backlog in forty minutes. Then nobody spoke for two hours - we barely had air to breathe. But the target is green."
 
 # game/echo_shift.rpy:1326
 translate english ps_deep_investigation_scene_ed074d94:
@@ -1380,13 +1380,13 @@ translate english ps_deep_investigation_scene_ed074d94:
 translate english ps_deep_investigation_scene_795e3d58:
 
     # cur "Подозрение - не последовательность. Вы принесли четыре отдельных тревоги и назвали их причиной."
-    cur "Подозрение - не последовательность. Вы принесли четыре отдельных тревоги и назвали их причиной."
+    cur "Suspicion is not a sequence. You brought four separate warning signs and called them a cause."
 
 # game/echo_shift.rpy:1366
 translate english ps_storm_mimic_scene_a8beed24:
 
     # n "На долю секунды память подсовывает лишнего человека в знакомой сцене. Отводишь взгляд - и остаётся только экран телефона."
-    n "На долю секунды память подсовывает лишнего человека в знакомой сцене. Отводишь взгляд - и остаётся только экран телефона."
+    n "For a fraction of a second, your memory inserts an extra person into a familiar scene. You look away - only the phone screen remains."
 
 # game/echo_shift.rpy:1436
 translate english ps_route_resolution_scene_74ba0a1c:
@@ -1398,7 +1398,7 @@ translate english ps_route_resolution_scene_74ba0a1c:
 translate english ps_zero_shift_9687551a:
 
     # n "Проходная уже закрыла вашу неделю, но телефон показывает незавершённую операцию. Время начала - 00:00. Время окончания отсутствует. В карточке нет номера сотрудника. Только строка: «СМЕНА 0 // НЕ ПЕРЕДАНА»."
-    n "Проходная уже закрыла вашу неделю, но телефон показывает незавершённую операцию. Время начала - 00:00. Время окончания отсутствует. В карточке нет номера сотрудника. Только строка: «СМЕНА 0 // НЕ ПЕРЕДАНА»."
+    n "The gate has already closed out your week, but the phone shows an unfinished operation. Start time - 00:00. No end time. There is no employee number in the record. Only one line: \"SHIFT 0 // NOT HANDED OVER.\""
 
 # game/echo_shift.rpy:1548
 translate english ps_zero_shift_a28df72e:
@@ -1547,7 +1547,7 @@ translate english strings:
 translate english ps_route_turning_point_b353d7f7:
 
     # p "После аварии импровизация опаснее задержки. Все решения идут через тебя."
-    p "После аварии импровизация опаснее задержки. Все решения идут через тебя."
+    p "After the accident, improvisation is more dangerous than delay. Every decision goes through you."
 
 # game/echo_shift.rpy:1194
 translate english ps_reactive_echo_scene_b668ca4e:
@@ -1565,7 +1565,7 @@ translate english ps_deep_investigation_scene_67ab79d5:
 translate english ps_route_resolution_scene_48044946:
 
     # p "А твоим?"
-    p "А твоим?"
+    p "What about yours?"
 
 # game/echo_shift.rpy:1554
 translate english ps_zero_shift_393c0a98:
@@ -1577,4 +1577,4 @@ translate english ps_zero_shift_393c0a98:
 translate english ps_zero_shift_3920775d:
 
     # centered "PURPLE SHIFT\n\nНУЛЕВАЯ СМЕНА ОТКРЫТА"
-    centered "PURPLE SHIFT\n\nНУЛЕВАЯ СМЕНА ОТКРЫТА"
+    centered "PURPLE SHIFT\\n\\nZERO SHIFT UNLOCKED"
