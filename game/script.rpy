@@ -7,7 +7,7 @@ label start:
     scene bg black
     with fade
 
-    if ps_player_name == "Сотрудник":
+    if ps_player_name in ("Сотрудник", "Employee"):
         $ ps_entered_name = renpy.input(
             _("Как к тебе обращаться?"),
             default=_("Сотрудник"),
