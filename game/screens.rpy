@@ -317,7 +317,7 @@ screen choice(items):
                             add Solid("#1a0d29e8"):
                                 xpos 5
                                 ypos 0
-                                xfill True
+                                xsize 1427
                                 ysize 110
 
                             text i.caption:
