@@ -6,12 +6,6 @@ translate english chapter3_day_three_eaa2d3a5:
     # n "На третий день ты проходишь знакомый поворот, переход и серую дверь почти не глядя. Только у входа вспоминаешь вчерашнее сообщение."
     n "On Day Three, you pass the familiar turn, walkway, and gray door almost without looking. Only at the entrance do you remember yesterday's message."
 
-# game/week.rpy:31
-translate english chapter3_day_three_ef4f0339:
-
-    # n "В телефоне всё ещё лежит файл «Чек-лист старшего линии». Сорок семь пунктов: запуск, остановка, отчёты, штрафы. Про разговор с испуганным человеком - ничего."
-    n "The file \"Line Lead Checklist\" is still on your phone. Forty-seven items: startup, shutdown, reports, penalties. Nothing about talking to a frightened person."
-
 # game/week.rpy:33
 translate english chapter3_day_three_92feac09:
 
@@ -96,23 +90,11 @@ translate english chapter3_day_three_be324a32:
     # vet "За самовольную остановку. Правильной её назовут, только если это удобно в отчёте."
     vet "For stopping the line without permission. They'll call it the right thing only if that looks good in the report."
 
-# game/week.rpy:77
-translate english chapter3_day_three_b71c9f54:
-
-    # sv "Перед запуском - минута внимания. В конце недели закрывают месячный рейтинг. Лучший показатель получит премию и отметку «Сотрудник месяца»."
-    sv "One minute before startup. The monthly ranking closes at the end of the week. The top score gets a bonus and the title \"Employee of the Month.\""
-
 # game/week.rpy:79
 translate english chapter3_day_three_1c91de22:
 
     # n "На стене загорается экран с фамилиями, процентами и зелёными или красными стрелками."
     n "A wall display lights up with surnames, percentages, and green or red arrows."
-
-# game/week.rpy:81
-translate english chapter3_day_three_2f9b3773:
-
-    # sv "Скорость, ошибки, соблюдение операций - считается всё."
-    sv "Speed, mistakes, procedure compliance - everything counts."
 
 # game/week.rpy:83
 translate english chapter3_day_three_df4b018e:
@@ -221,12 +203,6 @@ translate english chapter3_day_three_e0395f1a:
 
     # newb "Коробки упали. Я их потом собирала."
     newb "The boxes fell. I picked them up afterward."
-
-# game/week.rpy:168
-translate english chapter3_day_three_08895876:
-
-    # vet "Потому что с происшествием показатели хуже. Запись убрали - отчёт снова чистый."
-    vet "Because an incident makes the numbers look worse. Remove the record and the report is clean again."
 
 # game/week.rpy:170
 translate english chapter3_day_three_889f28dc:
@@ -348,12 +324,6 @@ translate english chapter3_day_three_5c911148:
     # n "К середине смены таблицу обсуждают на каждом участке. Одни обновляют её каждые пять минут. Другие говорят, что им всё равно, и проверяют ещё чаще."
     n "By the middle of the shift, every section is talking about the ranking. Some refresh it every five minutes. Others say they do not care and check even more often."
 
-# game/week.rpy:240
-translate english chapter3_day_three_2eec277e:
-
-    # mem "Ты уже на четырнадцатом месте. Ещё немного - и твою фотографию повесят там, где никто не смотрит."
-    mem "You're already in fourteenth place. A little more and they'll hang your photo somewhere nobody looks."
-
 # game/week.rpy:248
 translate english chapter3_day_three_0bc31c6f:
 
@@ -425,12 +395,6 @@ translate english chapter4_day_four_74a8410f:
 
     # newb "Меня вызывают раньше. Пишут, что вчера на моём аккаунте недостача. Сорок семь единиц."
     newb "They're calling me in early. They say my account has a shortage from yesterday. Forty-seven units."
-
-# game/week.rpy:319
-translate english chapter4_day_four_16436e81:
-
-    # n "Сорок семь - то же число, что было в удалённом журнале."
-    n "Forty-seven - the same number that was in the deleted log."
 
 # game/week.rpy:322
 translate english chapter4_day_four_a43da013:
@@ -557,12 +521,6 @@ translate english chapter4_day_four_01897e45:
 
     # p "Из системы."
     p "From the system."
-
-# game/week.rpy:389
-translate english chapter4_day_four_c9b7b802:
-
-    # sv "Я вижу. Спрашиваю - зачем сохранил?"
-    sv "I can see that. I'm asking why you saved it."
 
 # game/week.rpy:390
 translate english chapter4_day_four_54c64d02:
@@ -786,23 +744,11 @@ translate english chapter4_day_four_b3865519:
     # n "Ты сохраняешь номер старой заявки."
     n "You save the old ticket number."
 
-# game/week.rpy:533
-translate english chapter4_day_four_b27d5825:
-
-    # mem "У меня важный вопрос. Если склад потерял сорок семь товаров, а потом нашёл - это инвентаризация или квест?"
-    mem "Important question. If the warehouse loses forty-seven items and then finds them, is that inventory control or a quest?"
-
 # game/week.rpy:534
 translate english chapter4_day_four_aa485e94:
 
     # p "Зависит от награды."
     p "Depends on the reward."
-
-# game/week.rpy:535
-translate english chapter4_day_four_62259934:
-
-    # mem "Награда - ещё одна смена."
-    mem "The reward is another shift."
 
 # game/week.rpy:536
 translate english chapter4_day_four_7071f1e5:
@@ -881,12 +827,6 @@ translate english chapter4_day_four_7ece26af:
 
     # mem "Я спрашиваю: ты видел?"
     mem "I'm asking: did you really see it?"
-
-# game/week.rpy:576
-translate english chapter4_day_four_b2512957:
-
-    # vet "Программу в объяснительную не впишешь. Начальство - тоже. Вот и берут фамилию из смены."
-    vet "You can't put \"the software\" in a written statement. You can't put management either. So they take a surname from the shift."
 
 # game/week.rpy:579
 translate english chapter4_day_four_c017c9c1:
@@ -1032,12 +972,6 @@ translate english chapter5_day_five_51b04e27:
     # mem "Это и были оптимистичные."
     mem "That was the optimistic version."
 
-# game/week.rpy:684
-translate english chapter5_day_five_ff7b046a:
-
-    # sv "Приёмка забита. Основной подъёмник выдаёт ошибку, но работает. До ремонта - используем."
-    sv "Receiving is packed. The main lift reports an error but still runs. We use it until repairs."
-
 # game/week.rpy:686
 translate english chapter5_day_five_438d88b3:
 
@@ -1067,12 +1001,6 @@ translate english chapter5_day_five_60b2fdfc:
 
     # p "Если датчик врёт, откуда мы знаем вес?"
     p "If the sensor lies, how do we know the weight?"
-
-# game/week.rpy:696
-translate english chapter5_day_five_3658f41e:
-
-    # sv "По инструкции - визуально."
-    sv "According to procedure - visually."
 
 # game/week.rpy:697
 translate english chapter5_day_five_4877f796:
@@ -1115,12 +1043,6 @@ translate english chapter5_day_five_5e031d72:
 
     # n "Ты раздаёшь команды одну за другой. Только после окрика Виктора замечаешь, что отправил двоих людей на разные концы одной задачи."
     n "You give orders one after another. Only after Viktor shouts do you realize you sent two people to opposite ends of the same task."
-
-# game/week.rpy:759
-translate english chapter5_day_five_72de525d:
-
-    # n "Первый час подъёмник работает. Второй - тоже. На третьем платформа останавливается между уровнями."
-    n "The lift works for the first hour. And the second. In the third, the platform stops between levels."
 
 # game/week.rpy:766
 translate english chapter5_day_five_21ddbfaa:
@@ -1176,12 +1098,6 @@ translate english chapter5_day_five_26f72d3a:
     # n "Виктор берётся за ручку платформы больной рукой."
     n "Viktor grabs the platform handle with his injured hand."
 
-# game/week.rpy:817
-translate english chapter5_day_five_4b7b0772:
-
-    # p "Нет. Второй опасный механизм за неделю - уже не случайность. Останавливаем."
-    p "No. A second dangerous machine in one week is no longer an accident. We stop."
-
 # game/week.rpy:819
 translate english chapter5_day_five_5da50a1b:
 
@@ -1194,12 +1110,6 @@ translate english chapter5_day_five_466e6809:
     # p "Тогда будь старшим. И подпиши запуск неисправного оборудования."
     p "Then be the lead. And sign off on running faulty equipment."
 
-# game/week.rpy:823
-translate english chapter5_day_five_d118e88b:
-
-    # n "Артём смотрит на мигающую лампу, потом - на людей, которые перестали двигаться."
-    n "Artyom looks at the blinking light, then at the people who have stopped moving."
-
 # game/week.rpy:825
 translate english chapter5_day_five_bb76ceb0:
 
@@ -1211,12 +1121,6 @@ translate english chapter5_day_five_e986ffea:
 
     # vet "Наконец-то правильная команда."
     vet "Finally, the right order."
-
-# game/week.rpy:838
-translate english chapter5_day_five_a4b1b615:
-
-    # p "Подъёмник не трогаем. Растягиваем цепочку от ворот. Тяжёлое - вдвоём."
-    p "Nobody touches the lift. Form a chain from the gate. Heavy items in pairs."
 
 # game/week.rpy:840
 translate english chapter5_day_five_d3fd1335:
@@ -1415,12 +1319,6 @@ translate english chapter5_day_five_34ab3e0e:
 
     # n "Она смотрит на свои ладони."
     n "She looks at her palms."
-
-# game/week.rpy:946
-translate english chapter5_day_five_369110c8:
-
-    # newb "Когда рядом не торопят лезть под платформу - уже легче."
-    newb "It's easier when nobody is rushing you to crawl under a platform."
 
 # game/week.rpy:954
 translate english chapter5_day_five_142cd51a:
@@ -1896,12 +1794,6 @@ translate english chapter6_day_six_f1063581:
     # p "Почему?"
     p "Why?"
 
-# game/week.rpy:1290
-translate english chapter6_day_six_b621677f:
-
-    # vet "Куратор захочет закрыть отчёт. Артём - выполнить план. Следи за тем, что тебе подсовывают под конец смены."
-    vet "The Curator will want to close the report. Artyom will want to hit the target. Watch what they put in front of you near the end of the shift."
-
 # game/week.rpy:1295
 translate english chapter6_day_six_8a104766:
 
@@ -2010,12 +1902,6 @@ translate english chapter7_day_seven_32120f17:
     # sv "Сегодня закрываем неделю. Нужны все."
     sv "We close out the week today. We need everyone."
 
-# game/week.rpy:1374
-translate english chapter7_day_seven_18d9919e:
-
-    # n "Последнее уведомление - системное. «Пиковая нагрузка. Ожидается превышение плана на 34%%»."
-    n "The final notification is from the system. \"Peak load. Expected volume: 34%% above plan.\""
-
 # game/week.rpy:1380
 translate english chapter7_day_seven_c4429ee4:
 
@@ -2051,12 +1937,6 @@ translate english chapter7_day_seven_f8aa1686:
 
     # n "Фиолетовая линия горит ярче обычного. Сегодня под ней поставили баннер:"
     n "The violet line glows brighter than usual. Today a banner has been placed beneath it:"
-
-# game/week.rpy:1407
-translate english chapter7_day_seven_da8fc866:
-
-    # n "«ЛЮДИ - НАШ ГЛАВНЫЙ РЕСУРС»."
-    n "\"PEOPLE - OUR MOST IMPORTANT RESOURCE.\""
 
 # game/week.rpy:1409
 translate english chapter7_day_seven_53d9515f:
@@ -2112,29 +1992,11 @@ translate english chapter7_day_seven_141a48da:
     # n "Разговор заканчивается. Каждый молча проверяет свою экипировку."
     n "The conversation ends. Everyone silently checks their gear."
 
-# game/week.rpy:1450
-translate english chapter7_day_seven_f3cf2042:
-
-    # sv "Сегодня без длинных вводных. Объём видите. До конца периода - шесть часов."
-    sv "No long introduction today. You can see the volume. Six hours until the period closes."
-
-# game/week.rpy:1453
-translate english chapter7_day_seven_59f2b907:
-
-    # sv "Ты ведёшь правую линию. Решения по мелким остановкам - твои."
-    sv "You're leading the right line. Decisions on minor stops are yours."
-
 # game/week.rpy:1454
 translate english chapter7_day_seven_04b0374f:
 
     # n "Артём протягивает тебе второй ТСД. На экране слово: «СТАРШИЙ»."
     n "Artyom hands you a second scanner. The screen reads: \"LEAD.\""
-
-# game/week.rpy:1456
-translate english chapter7_day_seven_1bc9b1ee:
-
-    # sv "Если линия встанет - сначала докладываешь мне. Но людей рядом слушай."
-    sv "If the line stops, report to me first. But listen to the people around you."
 
 # game/week.rpy:1458
 translate english chapter7_day_seven_93ff15b6:
@@ -2292,12 +2154,6 @@ translate english chapter7_day_seven_ece67b1b:
     # n "И твоя подпись."
     n "And your signature."
 
-# game/week.rpy:1591
-translate english chapter7_day_seven_cb88b2b6:
-
-    # n "На табло твоё имя поднимается на первое место. Ещё три минуты - и оно останется там."
-    n "Your name rises to first place on the board. Three more minutes and it will stay there."
-
 # game/week.rpy:1601
 translate english chapter7_day_seven_d2be3192:
 
@@ -2309,12 +2165,6 @@ translate english chapter7_day_seven_ac0e4000:
 
     # cur "Не смей!"
     cur "Don't you dare!"
-
-# game/week.rpy:1605
-translate english chapter7_day_seven_bea47f80:
-
-    # p "Лера - уводи людей с правой стороны! Виктор - отключение! Макс - проверь дальний сектор!"
-    p "Lera - move people off the right side! Viktor - shut it down! Max - check the far sector!"
 
 # game/week.rpy:1607
 translate english chapter7_day_seven_6bf68e5b:
@@ -2333,12 +2183,6 @@ translate english chapter7_day_seven_469af918:
 
     # n "Поток замирает. Табло краснеет. Люди отходят."
     n "The flow freezes. The board turns red. People step away."
-
-# game/week.rpy:1623
-translate english chapter7_day_seven_a670c3a7:
-
-    # p "Виктор - отключи правую ленту вручную. Лера - все ошибки в буфер B-04. Остальные работают через левую линию."
-    p "Viktor - shut down the right belt manually. Lera - send all errors to buffer B-04. Everyone else works through the left line."
 
 # game/week.rpy:1625
 translate english chapter7_day_seven_3dc6bdc2:
@@ -2394,23 +2238,11 @@ translate english chapter7_day_seven_4cabbb74:
     # n "Люди один за другим прекращают работу: теперь все видят одно и то же."
     n "People stop working one after another. Now everyone sees the same thing."
 
-# game/week.rpy:1656
-translate english chapter7_day_seven_c7cb6cc4:
-
-    # p "Так. Система решила взять перерыв. Мы - нет."
-    p "All right. The system decided to take a break. We didn't."
-
 # game/week.rpy:1658
 translate english chapter7_day_seven_f4cd81a6:
 
     # mem "Это моя реплика."
     mem "That's my line."
-
-# game/week.rpy:1660
-translate english chapter7_day_seven_00b2648d:
-
-    # p "Авторские права после смены. Лера, считай людей. Виктор, проверь безопасные ленты. Остальные - ничего не несём туда, где нас не слышат."
-    p "Copyright dispute after the shift. Lera, count people. Viktor, check the safe belts. Everyone else - don't carry anything where we can't be heard."
 
 # game/week.rpy:1662
 translate english chapter7_day_seven_a51dda00:
@@ -2466,12 +2298,6 @@ translate english chapter7_day_seven_63fc59da:
     # n "Сигналы накладываются друг на друга. Кто-то останавливается слишком рано. Кто-то продолжает дольше, чем нужно. Система возвращается раньше, чем вы успеваете договориться."
     n "Signals overlap. Someone stops too early. Someone else keeps going too long. The system returns before you manage to coordinate."
 
-# game/week.rpy:1733
-translate english ending_truth_418e0192:
-
-    # n "Общий экран гаснет. Потом включается снова. Но вместо рейтинга на нём - журнал."
-    n "The shared screen goes dark, then lights up again. But instead of the rankings, it shows the log."
-
 # game/week.rpy:1739
 translate english ending_truth_5e66027f:
 
@@ -2519,12 +2345,6 @@ translate english ending_truth_ddccffa0:
 
     # n "Проверка длится три недели. Подъёмник ремонтируют. Удалённые журналы восстанавливают. Правила остановки переписывают так, чтобы кнопку мог нажать не только старший."
     n "The investigation lasts three weeks. The lift is repaired. Deleted logs are restored. Stop rules are rewritten so the button can be pressed by more than just the lead."
-
-# game/week.rpy:1762
-translate english ending_truth_4e40a8d1:
-
-    # n "Твоего имени нет на доске сотрудника месяца. Оно стоит под показаниями к внутренней проверке - рядом с датой и номером дела."
-    n "Your name is not on the Employee of the Month board. It appears under testimony for the internal investigation - beside the date and case number."
 
 # game/week.rpy:1771
 translate english ending_people_7f48bad0:
@@ -2676,12 +2496,6 @@ translate english ending_voice_a8c3bbb4:
     # p "Нельзя. Звучит как дополнительная обязанность."
     p "No. Sounds like an extra responsibility."
 
-# game/week.rpy:1860
-translate english ending_voice_7c38cdc6:
-
-    # n "Смеются все - даже Виктор и уже дошедший до двери Артём."
-    n "Everyone laughs - even Viktor and Artyom, who has already reached the door."
-
 # game/week.rpy:1866
 translate english ending_voice_f63e5e28:
 
@@ -2693,12 +2507,6 @@ translate english ending_leader_5032c244:
 
     # n "Левая линия принимает поток. Правую успевают отключить до перегрева. Буфер заполняется до последней ячейки. Но выдерживает."
     n "The left line takes the flow. The right one is shut down before it overheats. The buffer fills to the last bin, but it holds."
-
-# game/week.rpy:1877
-translate english ending_leader_54dd0e4f:
-
-    # n "После восстановления связи на табло остаётся зелёный итоговый процент. В журнале травм - пусто."
-    n "When communications return, the final percentage on the board is green. The injury log is empty."
 
 # game/week.rpy:1883
 translate english ending_leader_e54fb860:
@@ -2723,18 +2531,6 @@ translate english ending_leader_133265a6:
 
     # p "Рискованно было продолжать вслепую. Мы остановили опасное и сохранили рабочее."
     p "Continuing blind was riskier. We stopped what was dangerous and kept what still worked."
-
-# game/week.rpy:1891
-translate english ending_leader_6a6d3b6f:
-
-    # n "Куратор смотрит на итоговые цифры. Потом - на людей."
-    n "The Curator looks at the final numbers. Then at the people."
-
-# game/week.rpy:1893
-translate english ending_leader_fab1fdbb:
-
-    # cur "С завтрашнего дня - старший линии."
-    cur "Starting tomorrow - line lead."
 
 # game/week.rpy:1895
 translate english ending_leader_7c777651:
@@ -2922,12 +2718,6 @@ translate english ending_exit_6db7bf83:
     # p "Решай спокойно. Только не подписывай ничего на ходу."
     p "Take your time deciding. Just don't sign anything in a rush."
 
-# game/week.rpy:1984
-translate english ending_exit_5c38d1e8:
-
-    # vet "Если решил уходить - оформляй всё письменно. И копию себе оставь."
-    vet "If you've decided to leave, put everything in writing. Keep a copy for yourself."
-
 # game/week.rpy:1986
 translate english ending_exit_303e219c:
 
@@ -2963,12 +2753,6 @@ translate english ending_silence_422cb073:
 
     # n "Ты отдаёшь команду, но в шуме её слышат только двое."
     n "You give the command, but only two people hear it through the noise."
-
-# game/week.rpy:2005
-translate english ending_silence_1d83979a:
-
-    # n "Команды тонут в шуме. Люди отходят по одному. Линия останавливается сама - после того, как защита наконец замечает перегрев."
-    n "Commands drown in the noise. People step away one by one. The line stops on its own - after the protection system finally notices the overheating."
 
 # game/week.rpy:2010
 translate english ending_silence_4eca3516:
@@ -3041,12 +2825,6 @@ translate english ending_common_cd0da5e6:
 
     # centered "Фиолетовая Смена\n\nСемь дней спустя"
     centered "PURPLE SHIFT\\n\\nSEVEN DAYS LATER"
-
-# game/week.rpy:2089
-translate english ending_common_c64f606b:
-
-    # n "Неделя закончилась. В архиве остались твои решения и сообщения, а у проходной - люди, с которыми ты её прошёл."
-    n "The week is over. Your decisions and messages remain in the archive, and by the gate are the people who went through it with you."
 
 # game/week.rpy:2097
 translate english ending_common_fc645053:
@@ -3166,223 +2944,223 @@ translate english strings:
 translate english chapter3_day_three_18877754:
 
     # n "В телефоне всё ещё лежит файл «Чек-лист старшего линии». Сорок семь пунктов: запуск, остановка, отчёты, штрафы. Про разговор с испуганным человеком - ничего."
-    n "В телефоне всё ещё лежит файл «Чек-лист старшего линии». Сорок семь пунктов: запуск, остановка, отчёты, штрафы. Про разговор с испуганным человеком - ничего."
+    n "The file \"Line Lead Checklist\" is still on your phone. Forty-seven items: startup, shutdown, reports, penalties. Nothing about talking to a frightened person."
 
 # game/week.rpy:77
 translate english chapter3_day_three_12d7cb8f:
 
     # sv "Перед запуском - минута внимания. В конце недели закрывают месячный рейтинг. Лучший показатель получит премию и отметку «Сотрудник месяца»."
-    sv "Перед запуском - минута внимания. В конце недели закрывают месячный рейтинг. Лучший показатель получит премию и отметку «Сотрудник месяца»."
+    sv "One minute before startup. The monthly ranking closes at the end of the week. The top score gets a bonus and the title \"Employee of the Month.\""
 
 # game/week.rpy:81
 translate english chapter3_day_three_e25fccc1:
 
     # sv "Скорость, ошибки, соблюдение операций - считается всё."
-    sv "Скорость, ошибки, соблюдение операций - считается всё."
+    sv "Speed, mistakes, procedure compliance - everything counts."
 
 # game/week.rpy:168
 translate english chapter3_day_three_20eb680d:
 
     # vet "Потому что с происшествием показатели хуже. Запись убрали - отчёт снова чистый."
-    vet "Потому что с происшествием показатели хуже. Запись убрали - отчёт снова чистый."
+    vet "Because an incident makes the numbers look worse. Remove the record and the report is clean again."
 
 # game/week.rpy:240
 translate english chapter3_day_three_135dd3b9:
 
     # mem "Ты уже на четырнадцатом месте. Ещё немного - и твою фотографию повесят там, где никто не смотрит."
-    mem "Ты уже на четырнадцатом месте. Ещё немного - и твою фотографию повесят там, где никто не смотрит."
+    mem "You're already in fourteenth place. A little more and they'll hang your photo somewhere nobody looks."
 
 # game/week.rpy:319
 translate english chapter4_day_four_fab9f96b:
 
     # n "Сорок семь - то же число, что было в удалённом журнале."
-    n "Сорок семь - то же число, что было в удалённом журнале."
+    n "Forty-seven - the same number that was in the deleted log."
 
 # game/week.rpy:389
 translate english chapter4_day_four_078e39a3:
 
     # sv "Я вижу. Спрашиваю - зачем сохранил?"
-    sv "Я вижу. Спрашиваю - зачем сохранил?"
+    sv "I can see that. I'm asking why you saved it."
 
 # game/week.rpy:533
 translate english chapter4_day_four_fcc74a9c:
 
     # mem "У меня важный вопрос. Если склад потерял сорок семь товаров, а потом нашёл - это инвентаризация или квест?"
-    mem "У меня важный вопрос. Если склад потерял сорок семь товаров, а потом нашёл - это инвентаризация или квест?"
+    mem "Important question. If the warehouse loses forty-seven items and then finds them, is that inventory control or a quest?"
 
 # game/week.rpy:535
 translate english chapter4_day_four_1fc2909c:
 
     # mem "Награда - ещё одна смена."
-    mem "Награда - ещё одна смена."
+    mem "The reward is another shift."
 
 # game/week.rpy:576
 translate english chapter4_day_four_284c7d8e:
 
     # vet "Программу в объяснительную не впишешь. Начальство - тоже. Вот и берут фамилию из смены."
-    vet "Программу в объяснительную не впишешь. Начальство - тоже. Вот и берут фамилию из смены."
+    vet "You can't put \"the software\" in a written statement. You can't put management either. So they take a surname from the shift."
 
 # game/week.rpy:684
 translate english chapter5_day_five_469818d7:
 
     # sv "Приёмка забита. Основной подъёмник выдаёт ошибку, но работает. До ремонта - используем."
-    sv "Приёмка забита. Основной подъёмник выдаёт ошибку, но работает. До ремонта - используем."
+    sv "Receiving is packed. The main lift reports an error but still runs. We use it until repairs."
 
 # game/week.rpy:696
 translate english chapter5_day_five_21483690:
 
     # sv "По инструкции - визуально."
-    sv "По инструкции - визуально."
+    sv "According to procedure - visually."
 
 # game/week.rpy:759
 translate english chapter5_day_five_ac7a6610:
 
     # n "Первый час подъёмник работает. Второй - тоже. На третьем платформа останавливается между уровнями."
-    n "Первый час подъёмник работает. Второй - тоже. На третьем платформа останавливается между уровнями."
+    n "The lift works for the first hour. And the second. In the third, the platform stops between levels."
 
 # game/week.rpy:817
 translate english chapter5_day_five_04da0b28:
 
     # p "Нет. Второй опасный механизм за неделю - уже не случайность. Останавливаем."
-    p "Нет. Второй опасный механизм за неделю - уже не случайность. Останавливаем."
+    p "No. A second dangerous machine in one week is no longer an accident. We stop."
 
 # game/week.rpy:823
 translate english chapter5_day_five_50d7a0d5:
 
     # n "Артём смотрит на мигающую лампу, потом - на людей, которые перестали двигаться."
-    n "Артём смотрит на мигающую лампу, потом - на людей, которые перестали двигаться."
+    n "Artyom looks at the blinking light, then at the people who have stopped moving."
 
 # game/week.rpy:838
 translate english chapter5_day_five_76bfc1f1:
 
     # p "Подъёмник не трогаем. Растягиваем цепочку от ворот. Тяжёлое - вдвоём."
-    p "Подъёмник не трогаем. Растягиваем цепочку от ворот. Тяжёлое - вдвоём."
+    p "Nobody touches the lift. Form a chain from the gate. Heavy items in pairs."
 
 # game/week.rpy:946
 translate english chapter5_day_five_1e8c8c33:
 
     # newb "Когда рядом не торопят лезть под платформу - уже легче."
-    newb "Когда рядом не торопят лезть под платформу - уже легче."
+    newb "It's easier when nobody is rushing you to crawl under a platform."
 
 # game/week.rpy:1290
 translate english chapter6_day_six_c4a4870b:
 
     # vet "Куратор захочет закрыть отчёт. Артём - выполнить план. Следи за тем, что тебе подсовывают под конец смены."
-    vet "Куратор захочет закрыть отчёт. Артём - выполнить план. Следи за тем, что тебе подсовывают под конец смены."
+    vet "The Curator will want to close the report. Artyom will want to hit the target. Watch what they put in front of you near the end of the shift."
 
 # game/week.rpy:1374
 translate english chapter7_day_seven_2958d6ab:
 
     # n "Последнее уведомление - системное. «Пиковая нагрузка. Ожидается превышение плана на 34%%»."
-    n "Последнее уведомление - системное. «Пиковая нагрузка. Ожидается превышение плана на 34%%»."
+    n "The final notification is from the system. \"Peak load. Expected volume: 34%% above plan.\""
 
 # game/week.rpy:1407
 translate english chapter7_day_seven_734e2c49:
 
     # n "«ЛЮДИ - НАШ ГЛАВНЫЙ РЕСУРС»."
-    n "«ЛЮДИ - НАШ ГЛАВНЫЙ РЕСУРС»."
+    n "\"PEOPLE - OUR MOST IMPORTANT RESOURCE.\""
 
 # game/week.rpy:1450
 translate english chapter7_day_seven_77e371ae:
 
     # sv "Сегодня без длинных вводных. Объём видите. До конца периода - шесть часов."
-    sv "Сегодня без длинных вводных. Объём видите. До конца периода - шесть часов."
+    sv "No long introduction today. You can see the volume. Six hours until the period closes."
 
 # game/week.rpy:1453
 translate english chapter7_day_seven_e1e3e85a:
 
     # sv "Ты ведёшь правую линию. Решения по мелким остановкам - твои."
-    sv "Ты ведёшь правую линию. Решения по мелким остановкам - твои."
+    sv "You're leading the right line. Decisions on minor stops are yours."
 
 # game/week.rpy:1456
 translate english chapter7_day_seven_30b89f92:
 
     # sv "Если линия встанет - сначала докладываешь мне. Но людей рядом слушай."
-    sv "Если линия встанет - сначала докладываешь мне. Но людей рядом слушай."
+    sv "If the line stops, report to me first. But listen to the people around you."
 
 # game/week.rpy:1591
 translate english chapter7_day_seven_e0cbbc10:
 
     # n "На табло твоё имя поднимается на первое место. Ещё три минуты - и оно останется там."
-    n "На табло твоё имя поднимается на первое место. Ещё три минуты - и оно останется там."
+    n "Your name rises to first place on the board. Three more minutes and it will stay there."
 
 # game/week.rpy:1605
 translate english chapter7_day_seven_130f777c:
 
     # p "Лера - уводи людей с правой стороны! Виктор - отключение! Макс - проверь дальний сектор!"
-    p "Лера - уводи людей с правой стороны! Виктор - отключение! Макс - проверь дальний сектор!"
+    p "Lera - move people off the right side! Viktor - shut it down! Max - check the far sector!"
 
 # game/week.rpy:1623
 translate english chapter7_day_seven_6442ae74:
 
     # p "Виктор - отключи правую ленту вручную. Лера - все ошибки в буфер B-04. Остальные работают через левую линию."
-    p "Виктор - отключи правую ленту вручную. Лера - все ошибки в буфер B-04. Остальные работают через левую линию."
+    p "Viktor - shut down the right belt manually. Lera - send all errors to buffer B-04. Everyone else works through the left line."
 
 # game/week.rpy:1656
 translate english chapter7_day_seven_e60e0cd4:
 
     # p "Так. Система решила взять перерыв. Мы - нет."
-    p "Так. Система решила взять перерыв. Мы - нет."
+    p "All right. The system decided to take a break. We didn't."
 
 # game/week.rpy:1660
 translate english chapter7_day_seven_237c1b3d:
 
     # p "Авторские права после смены. Лера, считай людей. Виктор, проверь безопасные ленты. Остальные - ничего не несём туда, где нас не слышат."
-    p "Авторские права после смены. Лера, считай людей. Виктор, проверь безопасные ленты. Остальные - ничего не несём туда, где нас не слышат."
+    p "Copyright dispute after the shift. Lera, count people. Viktor, check the safe belts. Everyone else - don't carry anything where we can't be heard."
 
 # game/week.rpy:1733
 translate english ending_truth_e512578c:
 
     # n "Общий экран гаснет. Потом включается снова. Но вместо рейтинга на нём - журнал."
-    n "Общий экран гаснет. Потом включается снова. Но вместо рейтинга на нём - журнал."
+    n "The shared screen goes dark, then lights up again. But instead of the rankings, it shows the log."
 
 # game/week.rpy:1762
 translate english ending_truth_725bfe15:
 
     # n "Твоего имени нет на доске сотрудника месяца. Оно стоит под показаниями к внутренней проверке - рядом с датой и номером дела."
-    n "Твоего имени нет на доске сотрудника месяца. Оно стоит под показаниями к внутренней проверке - рядом с датой и номером дела."
+    n "Your name is not on the Employee of the Month board. It appears under testimony for the internal investigation - beside the date and case number."
 
 # game/week.rpy:1860
 translate english ending_voice_60e14063:
 
     # n "Смеются все - даже Виктор и уже дошедший до двери Артём."
-    n "Смеются все - даже Виктор и уже дошедший до двери Артём."
+    n "Everyone laughs - even Viktor and Artyom, who has already reached the door."
 
 # game/week.rpy:1877
 translate english ending_leader_e9482ec7:
 
     # n "После восстановления связи на табло остаётся зелёный итоговый процент. В журнале травм - пусто."
-    n "После восстановления связи на табло остаётся зелёный итоговый процент. В журнале травм - пусто."
+    n "When communications return, the final percentage on the board is green. The injury log is empty."
 
 # game/week.rpy:1891
 translate english ending_leader_fbd6386c:
 
     # n "Куратор смотрит на итоговые цифры. Потом - на людей."
-    n "Куратор смотрит на итоговые цифры. Потом - на людей."
+    n "The Curator looks at the final numbers. Then at the people."
 
 # game/week.rpy:1893
 translate english ending_leader_5497ccfc:
 
     # cur "С завтрашнего дня - старший линии."
-    cur "С завтрашнего дня - старший линии."
+    cur "Starting tomorrow - line lead."
 
 # game/week.rpy:1984
 translate english ending_exit_2c18b3b1:
 
     # vet "Если решил уходить - оформляй всё письменно. И копию себе оставь."
-    vet "Если решил уходить - оформляй всё письменно. И копию себе оставь."
+    vet "If you've decided to leave, put everything in writing. Keep a copy for yourself."
 
 # game/week.rpy:2005
 translate english ending_silence_f3ef1e01:
 
     # n "Команды тонут в шуме. Люди отходят по одному. Линия останавливается сама - после того, как защита наконец замечает перегрев."
-    n "Команды тонут в шуме. Люди отходят по одному. Линия останавливается сама - после того, как защита наконец замечает перегрев."
+    n "Commands drown in the noise. People step away one by one. The line stops on its own - after the protection system finally notices the overheating."
 
 # game/week.rpy:2089
 translate english ending_common_b55b6bcf:
 
     # n "Неделя закончилась. В архиве остались твои решения и сообщения, а у проходной - люди, с которыми ты её прошёл."
-    n "Неделя закончилась. В архиве остались твои решения и сообщения, а у проходной - люди, с которыми ты её прошёл."
+    n "The week is over. Your decisions and messages remain in the archive, and by the gate are the people who went through it with you."
 
 translate english strings:
 
@@ -3665,4 +3443,3 @@ translate english strings:
     # game/week.rpy:1689
     old "Ты без ошибок передал аварийную последовательность."
     new "Ты без ошибок передал аварийную последовательность."
-

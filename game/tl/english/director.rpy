@@ -102,12 +102,6 @@ translate english ps_personal_scene_83ed6fce:
     # vet "Теперь неделю хожу с бинтом. Видимо, плохое было правило."
     vet "Now I've been wearing a bandage for a week. Guess it was a bad rule."
 
-# game/director.rpy:1317
-translate english ps_personal_scene_4f37576c:
-
-    # p "Завтра рука заболела - говоришь сразу."
-    p "If your hand hurts tomorrow, you say it right away."
-
 # game/director.rpy:1318
 translate english ps_personal_scene_1e467538:
 
@@ -156,12 +150,6 @@ translate english ps_personal_scene_60864169:
     # p "Странно видеть тебя без улыбки."
     p "It's strange seeing you without a smile."
 
-# game/director.rpy:1344
-translate english ps_personal_scene_9a307703:
-
-    # mem "Я её на зарядку поставил. Если сегодня всё пойдёт плохо - не пытайся один стать героем."
-    mem "I put it on charge. If everything goes wrong today, don't try to play the hero alone."
-
 # game/director.rpy:1345
 translate english ps_personal_scene_b4bb5161:
 
@@ -173,12 +161,6 @@ translate english ps_personal_scene_a5801484:
 
     # mem "Никому не рассказывай. Репутация."
     mem "Don't tell anyone. I have a reputation."
-
-# game/director.rpy:1353
-translate english ps_personal_scene_c7c9bf2b:
-
-    # p "Если станет тихо - считаем вдвоём."
-    p "If it gets quiet, we count together."
 
 # game/director.rpy:1354
 translate english ps_personal_scene_932aeeec:
@@ -245,12 +227,6 @@ translate english ps_personal_scene_877049f2:
 
     # p "И ты готов это подписать?"
     p "And you're ready to sign that?"
-
-# game/director.rpy:1382
-translate english ps_personal_scene_0804dfcb:
-
-    # sv "Если ты принесёшь факты - да."
-    sv "If you bring me the facts - yes."
 
 # game/director.rpy:1390
 translate english ps_personal_scene_310ae951:
@@ -340,25 +316,25 @@ translate english strings:
 translate english ps_personal_scene_75ecef07:
 
     # p "Завтра рука заболела - говоришь сразу."
-    p "Завтра рука заболела - говоришь сразу."
+    p "If your hand hurts tomorrow, you say it right away."
 
 # game/director.rpy:1344
 translate english ps_personal_scene_c98f7b61:
 
     # mem "Я её на зарядку поставил. Если сегодня всё пойдёт плохо - не пытайся один стать героем."
-    mem "Я её на зарядку поставил. Если сегодня всё пойдёт плохо - не пытайся один стать героем."
+    mem "I put it on charge. If everything goes wrong today, don't try to play the hero alone."
 
 # game/director.rpy:1353
 translate english ps_personal_scene_306175b2:
 
     # p "Если станет тихо - считаем вдвоём."
-    p "Если станет тихо - считаем вдвоём."
+    p "If it gets quiet, we count together."
 
 # game/director.rpy:1382
 translate english ps_personal_scene_e26fb38f:
 
     # sv "Если ты принесёшь факты - да."
-    sv "Если ты принесёшь факты - да."
+    sv "If you bring me the facts - yes."
 
 translate english strings:
 
@@ -749,4 +725,3 @@ translate english strings:
     # game/director.rpy:1407
     old "Артём перевёл разговор с поиска виноватого на причину аварии."
     new "Артём перевёл разговор с поиска виноватого на причину аварии."
-

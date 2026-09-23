@@ -144,12 +144,6 @@ translate english ps21_route_night_scene_84749fee:
     # p "Тебя пугает остановка или бумага после неё?"
     p "Are you more afraid of the shutdown or the paperwork afterward?"
 
-# game/routes/living_routes.rpy:268
-translate english ps21_route_night_scene_b7c200fb:
-
-    # sv "Остановка тоже. Бумага - больше."
-    sv "The shutdown too. The paperwork more."
-
 # game/routes/living_routes.rpy:277
 translate english ps21_route_night_scene_c2e00c3c:
 
@@ -402,12 +396,6 @@ translate english ps21_route_epilogue_176a1698:
     # n "Виктор приходит без рабочей формы и проводит короткий разбор для смены. На доске всего три пункта: температура, боль и право остановиться."
     n "Viktor comes in without his work uniform and gives the shift a short briefing. There are only three points on the board: temperature, pain, and the right to stop."
 
-# game/routes/living_routes.rpy:476
-translate english ps21_route_epilogue_e038911a:
-
-    # vet "Температура растёт - стоп. Рука болит и хват слабеет - тоже стоп. Запишите, повторять не буду."
-    vet "Temperature rising - stop. Hand hurts and grip is weakening - also stop. Write it down, I won't repeat myself."
-
 # game/routes/living_routes.rpy:482
 translate english ps21_route_epilogue_c78a8bf6:
 
@@ -516,13 +504,13 @@ translate english strings:
 translate english ps21_route_night_scene_e86a4e37:
 
     # sv "Остановка тоже. Бумага - больше."
-    sv "Остановка тоже. Бумага - больше."
+    sv "The shutdown too. The paperwork more."
 
 # game/routes/living_routes.rpy:476
 translate english ps21_route_epilogue_e4954e0f:
 
     # vet "Температура растёт - стоп. Рука болит и хват слабеет - тоже стоп. Запишите, повторять не буду."
-    vet "Температура растёт - стоп. Рука болит и хват слабеет - тоже стоп. Запишите, повторять не буду."
+    vet "Temperature rising - stop. Hand hurts and grip is weakening - also stop. Write it down, I won't repeat myself."
 
 translate english strings:
 
@@ -589,4 +577,3 @@ translate english strings:
     # game/routes/living_routes.rpy:436
     old "Согласиться оформить решение как коллективное"
     new "Согласиться оформить решение как коллективное"
-

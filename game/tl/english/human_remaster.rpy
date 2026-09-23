@@ -42,12 +42,6 @@ translate english ps_human_shift_scene_2ed727d3:
     # mem "Вот и познакомились. Про тебя, кстати, вопрос остаётся открытым."
     mem "There. Now we know each other. The question about you is still open, by the way."
 
-# game/human_remaster.rpy:494
-translate english ps_human_shift_scene_3eb0b63a:
-
-    # p "Давайте ничего. Четыре минуты - это не так много."
-    p "Let's do nothing. Four minutes isn't that long."
-
 # game/human_remaster.rpy:495
 translate english ps_human_shift_scene_def5dcbe:
 
@@ -59,12 +53,6 @@ translate english ps_human_shift_scene_b8b00ce4:
 
     # n "В комнате отдыха впервые собираются все четверо. Их свёл вместе обычный чайник: он закипел ровно тогда, когда у каждого нашлось пять свободных минут."
     n "For the first time, all four of them end up in the break room together. An ordinary kettle brought them there: it boiled at the exact moment each of them found five free minutes."
-
-# game/human_remaster.rpy:512
-translate english ps_human_shift_scene_e13c3933:
-
-    # n "Разговор перескакивает с автобусов на дешёвый кофе, с кофе - на первую зарплату, а потом почему-то на то, кто хуже всех скрывает усталость. Побеждает Виктор. Он требует пересчёта."
-    n "The conversation jumps from buses to cheap coffee, from coffee to first paychecks, and somehow ends up on who is worst at hiding exhaustion. Viktor wins. He demands a recount."
 
 # game/human_remaster.rpy:520
 translate english ps_human_shift_scene_9aed6928:
@@ -96,12 +84,6 @@ translate english ps_human_shift_scene_155bb54b:
     # n "Макс сначала шутит, но потом каждый всё-таки называет одну вещь. Артём записывает их на обратной стороне старого графика без фамилий."
     n "Max jokes at first, but eventually everyone names one thing. Artyom writes them on the back of an old schedule without any names."
 
-# game/human_remaster.rpy:543
-translate english ps_human_shift_scene_4eaeab20:
-
-    # n "К концу шестого дня на доске кроме кодов ошибок появляются имена. Рядом со временем остановки - заметка о руке Виктора. Возле удалённого журнала - фотография объяснительной Леры."
-    n "By the end of Day Six, names appear on the board alongside the error codes. Next to the shutdown time is a note about Viktor's hand. Beside the deleted log is a photo of Lera's written statement."
-
 # game/human_remaster.rpy:544
 translate english ps_human_shift_scene_d525cfd7:
 
@@ -131,12 +113,6 @@ translate english ps_human_shift_scene_e228d3da:
 
     # p "Пусть в этот раз внесут."
     p "This time, they will."
-
-# game/human_remaster.rpy:564
-translate english ps_human_shift_scene_3654120a:
-
-    # p "В официальной версии оставим проверяемое. Всё личное сфотографируем и сохраним отдельно - без фамилий в чужих руках."
-    p "We'll keep only verifiable facts in the official version. Anything personal gets photographed and stored separately - no names in other people's hands."
 
 # game/human_remaster.rpy:565
 translate english ps_human_shift_scene_0e99595a:
@@ -168,18 +144,6 @@ translate english ps_shift_micro_event_dc5bbdef:
     # vet "Это вода."
     vet "It's water."
 
-# game/human_remaster.rpy:593
-translate english ps_shift_micro_event_84dd9cff:
-
-    # p "Сегодня - оборудование."
-    p "Today, it's equipment."
-
-# game/human_remaster.rpy:599
-translate english ps_shift_micro_event_37d485af:
-
-    # n "Через десять минут бутылка исчезает. Виктор ничего не говорит, но позже у рации появляется ещё одна - уже для Леры."
-    n "Ten minutes later the bottle is gone. Viktor says nothing, but later another one appears beside the radio - this one for Lera."
-
 # game/human_remaster.rpy:607
 translate english ps_shift_micro_event_861107e4:
 
@@ -191,12 +155,6 @@ translate english ps_shift_micro_event_4ab2bcd7:
 
     # p "Стоп на семь минут. Принесём нормальные перчатки и продолжим."
     p "Seven-minute stop. We'll get proper gloves and continue."
-
-# game/human_remaster.rpy:621
-translate english ps_shift_micro_event_ab61a724:
-
-    # sv "Без рывков. Кто меняется местами - говорит вслух."
-    sv "No rushing. Anyone switching positions says it out loud."
 
 # game/human_remaster.rpy:622
 translate english ps_shift_micro_event_ea212790:
@@ -288,12 +246,6 @@ translate english ps_last_checkpoint_scene_b9250a89:
     # newb "Хорошо. Тогда без «ещё увидимся», если не знаем."
     newb "All right. Then no \"see you again\" if we don't know that we will."
 
-# game/human_remaster.rpy:685
-translate english ps_last_checkpoint_scene_ba84071b:
-
-    # vet "Увидимся или нет - номера друг у друга есть. Этого достаточно."
-    vet "Whether we meet again or not, we have each other's numbers. That's enough."
-
 translate english strings:
 
     # game/human_remaster.rpy:482
@@ -358,49 +310,49 @@ translate english strings:
 translate english ps_human_shift_scene_e3f8c32f:
 
     # p "Давайте ничего. Четыре минуты - это не так много."
-    p "Давайте ничего. Четыре минуты - это не так много."
+    p "Let's do nothing. Four minutes isn't that long."
 
 # game/human_remaster.rpy:512
 translate english ps_human_shift_scene_ade7c670:
 
     # n "Разговор перескакивает с автобусов на дешёвый кофе, с кофе - на первую зарплату, а потом почему-то на то, кто хуже всех скрывает усталость. Побеждает Виктор. Он требует пересчёта."
-    n "Разговор перескакивает с автобусов на дешёвый кофе, с кофе - на первую зарплату, а потом почему-то на то, кто хуже всех скрывает усталость. Побеждает Виктор. Он требует пересчёта."
+    n "The conversation jumps from buses to cheap coffee, from coffee to first paychecks, and somehow ends up on who is worst at hiding exhaustion. Viktor wins. He demands a recount."
 
 # game/human_remaster.rpy:543
 translate english ps_human_shift_scene_3ce08541:
 
     # n "К концу шестого дня на доске кроме кодов ошибок появляются имена. Рядом со временем остановки - заметка о руке Виктора. Возле удалённого журнала - фотография объяснительной Леры."
-    n "К концу шестого дня на доске кроме кодов ошибок появляются имена. Рядом со временем остановки - заметка о руке Виктора. Возле удалённого журнала - фотография объяснительной Леры."
+    n "By the end of Day Six, names appear on the board alongside the error codes. Next to the shutdown time is a note about Viktor's hand. Beside the deleted log is a photo of Lera's written statement."
 
 # game/human_remaster.rpy:564
 translate english ps_human_shift_scene_04dfd4ea:
 
     # p "В официальной версии оставим проверяемое. Всё личное сфотографируем и сохраним отдельно - без фамилий в чужих руках."
-    p "В официальной версии оставим проверяемое. Всё личное сфотографируем и сохраним отдельно - без фамилий в чужих руках."
+    p "We'll keep only verifiable facts in the official version. Anything personal gets photographed and stored separately - no names in other people's hands."
 
 # game/human_remaster.rpy:593
 translate english ps_shift_micro_event_82ee918f:
 
     # p "Сегодня - оборудование."
-    p "Сегодня - оборудование."
+    p "Today, it's equipment."
 
 # game/human_remaster.rpy:599
 translate english ps_shift_micro_event_134da73c:
 
     # n "Через десять минут бутылка исчезает. Виктор ничего не говорит, но позже у рации появляется ещё одна - уже для Леры."
-    n "Через десять минут бутылка исчезает. Виктор ничего не говорит, но позже у рации появляется ещё одна - уже для Леры."
+    n "Ten minutes later the bottle is gone. Viktor says nothing, but later another one appears beside the radio - this one for Lera."
 
 # game/human_remaster.rpy:621
 translate english ps_shift_micro_event_6a91261b:
 
     # sv "Без рывков. Кто меняется местами - говорит вслух."
-    sv "Без рывков. Кто меняется местами - говорит вслух."
+    sv "No rushing. Anyone switching positions says it out loud."
 
 # game/human_remaster.rpy:685
 translate english ps_last_checkpoint_scene_f91bb776:
 
     # vet "Увидимся или нет - номера друг у друга есть. Этого достаточно."
-    vet "Увидимся или нет - номера друг у друга есть. Этого достаточно."
+    vet "Whether we meet again or not, we have each other's numbers. That's enough."
 
 translate english strings:
 
@@ -487,4 +439,3 @@ translate english strings:
     # game/human_remaster.rpy:210
     old "Запомнено человеческих моментов: {}. Последние решения возвращаются не только цифрами, но и поведением команды."
     new "Запомнено человеческих моментов: {}. Последние решения возвращаются не только цифрами, но и поведением команды."
-

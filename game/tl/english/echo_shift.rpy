@@ -402,12 +402,6 @@ translate english ps_route_turning_point_9b0373c5:
     # sv "Хорошо. Стоп - общий. Запуск - через меня."
     sv "Fine. Everyone can call a stop. Restart goes through me."
 
-# game/echo_shift.rpy:941
-translate english ps_route_turning_point_b353d7f7:
-
-    # p "После аварии импровизация опаснее задержки. Все решения идут через тебя."
-    p "After the accident, improvisation is more dangerous than delay. Every decision goes through you."
-
 # game/echo_shift.rpy:942
 translate english ps_route_turning_point_ceb1a75d:
 
@@ -780,12 +774,6 @@ translate english ps_reactive_echo_scene_da8718d0:
     # sv "Теперь - да. Я добавил отдельную причину: «остановлено сотрудником до происшествия»."
     sv "Now it does. I added a separate reason: \"stopped by employee before incident.\""
 
-# game/echo_shift.rpy:1188
-translate english ps_reactive_echo_scene_b668ca4e:
-
-    # newb "Сегодня у контейнера сразу позвали людей. Никто даже не начал искать виноватого."
-    newb "Today, people called for help at the container immediately. Nobody even started looking for someone to blame."
-
 # game/echo_shift.rpy:1194
 translate english ps_reactive_echo_scene_ffaf7c16:
 
@@ -918,12 +906,6 @@ translate english ps_deep_investigation_scene_3ab092fa:
     # p "Часть событий связана. Но между удалённой записью и готовым отчётом остаётся разрыв."
     p "Some events are connected. But there is still a gap between the deleted record and the finished report."
 
-# game/echo_shift.rpy:1326
-translate english ps_deep_investigation_scene_67ab79d5:
-
-    # cur "Разрыв, в который вы поместили удобное объяснение."
-    cur "A gap you filled with a convenient explanation."
-
 # game/echo_shift.rpy:1327
 translate english ps_deep_investigation_scene_95eb91bc:
 
@@ -1013,12 +995,6 @@ translate english ps_route_resolution_scene_dd06d9ea:
 
     # newb "Я написала черновик. Посмотришь и отправишь от своего имени? Твоим словам поверят быстрее."
     newb "I wrote a draft. Will you review it and send it under your name? They'll believe your words faster."
-
-# game/echo_shift.rpy:1436
-translate english ps_route_resolution_scene_48044946:
-
-    # p "А твоим?"
-    p "What about yours?"
 
 # game/echo_shift.rpy:1437
 translate english ps_route_resolution_scene_0703ab8b:
@@ -1212,12 +1188,6 @@ translate english ps_zero_shift_a0a2c8c7:
     # n "За бетонной дверью щёлкает реле. По очереди загораются пять индикаторов - ровно столько, сколько людей стоит в коридоре."
     n "A relay clicks behind the concrete door. Five indicators light up one after another - exactly as many as there are people standing in the corridor."
 
-# game/echo_shift.rpy:1548
-translate english ps_zero_shift_393c0a98:
-
-    # n "На старом табло появляются фамилии сотрудников, которых давно нет в графике. Последняя строка остаётся пустой, пока ты не подходишь ближе. Система вписывает твоё имя и задаёт первый вопрос без готового ответа: «КТО ПЕРЕДАСТ ЭТУ СМЕНУ?»"
-    n "The old display fills with surnames of employees who have long since disappeared from the schedule. The final line stays blank until you step closer. The system writes in your name and asks its first question without a prepared answer: \"WHO WILL HAND OVER THIS SHIFT?\""
-
 # game/echo_shift.rpy:1551
 translate english ps_zero_shift_f75aa139:
 
@@ -1241,12 +1211,6 @@ translate english ps_zero_shift_a957f46b:
 
     # n "Замок отвечает зелёным светом и приглашает продолжить спор с другой стороны."
     n "The lock answers with a green light, inviting you to continue the argument on the other side."
-
-# game/echo_shift.rpy:1557
-translate english ps_zero_shift_3920775d:
-
-    # centered "PURPLE SHIFT\n\nНУЛЕВАЯ СМЕНА ОТКРЫТА"
-    centered "PURPLE SHIFT\\n\\nZERO SHIFT UNLOCKED"
 
 translate english strings:
 
@@ -1391,8 +1355,8 @@ translate english ps_route_turning_point_9fd2f10e:
 # game/echo_shift.rpy:941
 translate english ps_route_turning_point_d1b47dd4:
 
-    # sv "Хорошо. Стоп - общий. Запуск - через меня."
-    sv "Хорошо. Стоп - общий. Запуск - через меня."
+    # p "После аварии импровизация опаснее задержки. Все решения идут через тебя."
+    p "After the accident, improvisation is more dangerous than delay. Every decision goes through you."
 
 # game/echo_shift.rpy:976
 translate english ps_team_conflict_scene_2c1d291f:
@@ -1415,8 +1379,8 @@ translate english ps_team_conflict_scene_378994bb:
 # game/echo_shift.rpy:1188
 translate english ps_reactive_echo_scene_2a76f184:
 
-    # sv "Теперь - да. Я добавил отдельную причину: «остановлено сотрудником до происшествия»."
-    sv "Теперь - да. Я добавил отдельную причину: «остановлено сотрудником до происшествия»."
+    # newb "Сегодня у контейнера сразу позвали людей. Никто даже не начал искать виноватого."
+    newb "Today, people called for help at the container immediately. Nobody even started looking for someone to blame."
 
 # game/echo_shift.rpy:1244
 translate english ps_reactive_echo_scene_611032d5:
@@ -1427,8 +1391,8 @@ translate english ps_reactive_echo_scene_611032d5:
 # game/echo_shift.rpy:1326
 translate english ps_deep_investigation_scene_ed074d94:
 
-    # p "Я называю это хронологией. Система - ваше слово."
-    p "Я называю это хронологией. Система - ваше слово."
+    # cur "Разрыв, в который вы поместили удобное объяснение."
+    cur "A gap you filled with a convenient explanation."
 
 # game/echo_shift.rpy:1339
 translate english ps_deep_investigation_scene_795e3d58:
@@ -1445,8 +1409,8 @@ translate english ps_storm_mimic_scene_a8beed24:
 # game/echo_shift.rpy:1436
 translate english ps_route_resolution_scene_74ba0a1c:
 
-    # newb "Я уже отправила свою хронологию. Не тебе на проверку - сразу в дело."
-    newb "Я уже отправила свою хронологию. Не тебе на проверку - сразу в дело."
+    # p "А твоим?"
+    p "What about yours?"
 
 # game/echo_shift.rpy:1526
 translate english ps_zero_shift_9687551a:
@@ -1457,14 +1421,14 @@ translate english ps_zero_shift_9687551a:
 # game/echo_shift.rpy:1548
 translate english ps_zero_shift_a28df72e:
 
-    # n "За бетонной дверью щёлкает реле. По очереди загораются пять индикаторов - ровно столько, сколько людей стоит в коридоре."
-    n "За бетонной дверью щёлкает реле. По очереди загораются пять индикаторов - ровно столько, сколько людей стоит в коридоре."
+    # n "На старом табло появляются фамилии сотрудников, которых давно нет в графике. Последняя строка остаётся пустой, пока ты не подходишь ближе. Система вписывает твоё имя и задаёт первый вопрос без готового ответа: «КТО ПЕРЕДАСТ ЭТУ СМЕНУ?»"
+    n "The old display fills with surnames of employees who have long since disappeared from the schedule. The final line stays blank until you step closer. The system writes in your name and asks its first question without a prepared answer: \"WHO WILL HAND OVER THIS SHIFT?\""
 
 # game/echo_shift.rpy:1557
 translate english ps_zero_shift_b6e8c0d8:
 
-    # p "Мы. По очереди. Каждый - только то, что видел сам."
-    p "Мы. По очереди. Каждый - только то, что видел сам."
+    # centered "PURPLE SHIFT\n\nНУЛЕВАЯ СМЕНА ОТКРЫТА"
+    centered "PURPLE SHIFT\\n\\nZERO SHIFT UNLOCKED"
 
 translate english strings:
 
@@ -1595,4 +1559,3 @@ translate english strings:
     # game/echo_shift.rpy:1149
     old "Попросить всех говорить отдельно"
     new "Попросить всех говорить отдельно"
-

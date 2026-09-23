@@ -42,12 +42,6 @@ translate english ps_team_names_441a2a50:
     # p "А я - [ps_player_name]."
     p "And I'm [ps_player_name]."
 
-# game/voices_shift.rpy:428
-translate english ps_team_names_b1a770b3:
-
-    # newb "Вот. Теперь хотя бы знаем, как друг друга звать."
-    newb "There. Now we at least know what to call each other."
-
 # game/voices_shift.rpy:469
 translate english ps_route_week_scene_d7e5c8da:
 
@@ -71,12 +65,6 @@ translate english ps_route_week_scene_1cea23c6:
 
     # newb "Поможешь проверить? Не исправлять за меня - просто проверить."
     newb "Will you help me check it? Not correct it for me - just check."
-
-# game/voices_shift.rpy:473
-translate english ps_route_week_scene_50ba0100:
-
-    # p "Договорились."
-    p "Deal."
 
 # game/voices_shift.rpy:482
 translate english ps_route_week_scene_dcd4aa0d:
@@ -155,12 +143,6 @@ translate english ps_route_week_scene_3ed92d67:
 
     # p "Сегодня можешь иногда молчать. Я всё равно рядом."
     p "You can be quiet sometimes today. I'm still here."
-
-# game/voices_shift.rpy:502
-translate english ps_route_week_scene_50853714:
-
-    # mem "Опасное предложение, [ps_player_name]. Ещё привыкну."
-    mem "Dangerous offer, [ps_player_name]. I might get used to it."
 
 # game/voices_shift.rpy:510
 translate english ps_route_week_scene_9e85b6e3:
@@ -831,8 +813,8 @@ translate english ps_team_names_7a017e44:
 # game/voices_shift.rpy:428
 translate english ps_team_names_1c0e6c68:
 
-    # sv "Артём Волков. Раз уж у нас вечер знакомств - закончите его до запуска линии."
-    sv "Артём Волков. Раз уж у нас вечер знакомств - закончите его до запуска линии."
+    # newb "Вот. Теперь хотя бы знаем, как друг друга звать."
+    newb "There. Now we at least know what to call each other."
 
 # game/voices_shift.rpy:431
 translate english ps_team_names_1c8aa9ad:
@@ -843,8 +825,8 @@ translate english ps_team_names_1c8aa9ad:
 # game/voices_shift.rpy:473
 translate english ps_route_week_scene_43a4ec67:
 
-    # n "Перед запуском Лера прячет сложенный лист под перчатку. На нём в две колонки записаны ошибки: слева её действия, справа - то, что делал ТСД."
-    n "Перед запуском Лера прячет сложенный лист под перчатку. На нём в две колонки записаны ошибки: слева её действия, справа - то, что делал ТСД."
+    # p "Договорились."
+    p "Deal."
 
 # game/voices_shift.rpy:474
 translate english ps_route_week_scene_f4599050:
@@ -861,8 +843,8 @@ translate english ps_route_week_scene_2615077c:
 # game/voices_shift.rpy:502
 translate english ps_route_week_scene_033b9084:
 
-    # mem "Когда вокруг тихо - да. Скажешь что-нибудь, тебе ответят, и вроде все ещё здесь. Господи, как это сейчас прозвучало."
-    mem "Когда вокруг тихо - да. Скажешь что-нибудь, тебе ответят, и вроде все ещё здесь. Господи, как это сейчас прозвучало."
+    # mem "Опасное предложение, [ps_player_name]. Ещё привыкну."
+    mem "Dangerous offer, [ps_player_name]. I might get used to it."
 
 # game/voices_shift.rpy:601
 translate english ps_route_week_scene_1677cd43:
@@ -929,4 +911,3 @@ translate english strings:
     # game/voices_shift.rpy:591
     old "Сразу взять разговор на себя"
     new "Сразу взять разговор на себя"
-

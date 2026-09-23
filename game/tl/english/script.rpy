@@ -18,18 +18,6 @@ translate english morning_home_b7dedbcc:
     # n "Ты садишься, ставишь ноги на холодный пол и сразу начинаешь считать: десять минут на душ, пять на завтрак, ещё двадцать на дорогу до остановки."
     n "You sit up, put your feet on the cold floor, and start counting immediately: ten minutes for a shower, five for breakfast, another twenty to the bus stop."
 
-# game/script.rpy:51
-translate english mindset_work_bfadcaa2:
-
-    # n "Ты пожимаешь плечами. Работа как работа - не первая и, скорее всего, не последняя."
-    n "You shrug. A job is a job - not your first and probably not your last."
-
-# game/script.rpy:56
-translate english mindset_survive_b54ef16c:
-
-    # n "Главное - не заглядывать дальше сегодняшнего дня. Одну смену ты точно вывезешь, а с остальным разберёшься потом."
-    n "The important thing is not to look past today. You can definitely survive one shift; the rest can wait."
-
 # game/script.rpy:61
 translate english mindset_joke_91b25610:
 
@@ -125,12 +113,6 @@ translate english first_mistake_f67fcf90:
 
     # n "Второй скан. Экран моргает. Секунда. Две."
     n "Second scan. The screen flickers. One second. Two."
-
-# game/script.rpy:157
-translate english first_mistake_50779901:
-
-    # n "ТСД резко пищит - так, что ты сразу чувствуешь себя виноватым."
-    n "The scanner lets out a sharp beep - the kind that makes you feel guilty immediately."
 
 # game/script.rpy:159
 translate english first_mistake_577d370b:
@@ -288,18 +270,6 @@ translate english after_fix_cold_78e87736:
     # n "На этом разговор закончен. Разбираться с ошибкой дальше придётся самому."
     n "The conversation is over. You will have to deal with the error yourself from here."
 
-# game/script.rpy:247
-translate english shift_continues_3d8b2374:
-
-    # n "Ты встаёшь в поток. Слева кто-то шепчет: «Главное - не залипнуть на ошибке». Справа без остановки пищат чужие сканеры."
-    n "You step into the flow. Someone on the left whispers, \"The main thing is not to get stuck on one error.\" Scanners beep nonstop on your right."
-
-# game/script.rpy:249
-translate english shift_continues_5a36bfc1:
-
-    # n "Лента не замедляется, пока ты пытаешься встроиться. Стоит задержаться у одной коробки - перед тобой сразу вырастает очередь."
-    n "The belt does not slow down while you try to find the rhythm. Pause over one box and a queue immediately grows in front of you."
-
 # game/script.rpy:255
 translate english shift_continues_4c9bd363:
 
@@ -317,12 +287,6 @@ translate english shift_continues_fb271dec:
 
     # p "Ага."
     p "Yeah."
-
-# game/script.rpy:258
-translate english shift_continues_a328124b:
-
-    # vet "Дыши ровнее. Зажмёшь плечи - через час руки отвалятся. Остальное потом."
-    vet "Breathe evenly. Keep your shoulders tense and your arms will fall off in an hour. Everything else can wait."
 
 # game/script.rpy:264
 translate english shift_continues_8c92626e:
@@ -540,12 +504,6 @@ translate english supervisor_pressure_c6dc24ed:
     # sv "Либо втягиваешься, либо начинаешь отставать. А отставание здесь быстро делают твоей личной проблемой."
     sv "Either you get into the rhythm, or you start falling behind. And around here, falling behind quickly becomes your personal problem."
 
-# game/script.rpy:380
-translate english supervisor_pressure_a3e27a95:
-
-    # mem "Экономика простая: отстал - виноват. Успел - мог быстрее. Удобно, да?"
-    mem "Simple economics: fall behind - your fault. Keep up - you could have gone faster. Convenient, right?"
-
 # game/script.rpy:382
 translate english supervisor_pressure_184b2463:
 
@@ -653,12 +611,6 @@ translate english final_stretch_46c56366:
 
     # n "Ты моргаешь. Фиолетовый свет в глазах плывёт от усталости."
     n "You blink. The violet light blurs in your tired eyes."
-
-# game/script.rpy:441
-translate english final_stretch_332ebf88:
-
-    # sv "До конца пятьдесят минут. Сейчас главное - без рывков."
-    sv "Fifty minutes left. The important thing now is no sudden pushes."
 
 # game/script.rpy:443
 translate english final_stretch_44d970da:
@@ -899,12 +851,6 @@ translate english ending_hard_path_343b56ed:
 
     # mem "Поздравляю. Ты выжил. Это, кстати, главный навык."
     mem "Congratulations. You survived. That's the main skill here, by the way."
-
-# game/script.rpy:588
-translate english ending_hard_path_c8081312:
-
-    # vet "Домой придёшь - поешь и выспись. График сразу не открывай."
-    vet "When you get home, eat and sleep. Don't open the schedule right away."
 
 # game/script.rpy:592
 translate english ending_hard_path_676ead1a:
@@ -1200,12 +1146,6 @@ translate english chapter2_observe_fear_0898713d:
     # p "Я не хочу привыкнуть."
     p "I don't want to get used to it."
 
-# game/script.rpy:845
-translate english chapter2_observe_fear_eed40831:
-
-    # mem "Привыкание приходит без уведомлений. Однажды поймаешь себя на слове «нормально» - вот и всё."
-    mem "Getting used to it comes without notifications. One day you'll catch yourself saying \"normal\" - and that's it."
-
 # game/script.rpy:847
 translate english chapter2_observe_fear_d571326f:
 
@@ -1265,12 +1205,6 @@ translate english chapter2_observe_support_12daa4a5:
 
     # mem "Ну вот. Ещё один человек пережил обучение без инструкции."
     mem "There. Another person survived training without instructions."
-
-# game/script.rpy:890
-translate english chapter2_observe_support_9eec7cf3:
-
-    # n "Её улыбка едва заметна - на большее сил не осталось."
-    n "Her smile is barely visible. She has no energy for more."
 
 # game/script.rpy:897
 translate english chapter2_observe_neutral_4a2627db:
@@ -1373,12 +1307,6 @@ translate english chapter2_night_denial_6dc470a7:
 
     # n "Ты не берёшь телефон. Сдвигаешь его чуть дальше, как опасный предмет."
     n "You do not pick up the phone. You slide it a little farther away, like something dangerous."
-
-# game/script.rpy:992
-translate english chapter2_night_denial_207db09e:
-
-    # n "Ты знаешь - завтра всё равно наступит. Но следующие десять минут хочешь потратить на себя, без графиков и норм."
-    n "You know tomorrow will come anyway. But you want the next ten minutes for yourself, without schedules or targets."
 
 # game/script.rpy:994
 translate english chapter2_night_denial_34fe1799:
@@ -1556,73 +1484,73 @@ translate english strings:
 translate english mindset_work_bcdaa853:
 
     # n "Ты пожимаешь плечами. Работа как работа - не первая и, скорее всего, не последняя."
-    n "Ты пожимаешь плечами. Работа как работа - не первая и, скорее всего, не последняя."
+    n "You shrug. A job is a job - not your first and probably not your last."
 
 # game/script.rpy:56
 translate english mindset_survive_fdac752c:
 
     # n "Главное - не заглядывать дальше сегодняшнего дня. Одну смену ты точно вывезешь, а с остальным разберёшься потом."
-    n "Главное - не заглядывать дальше сегодняшнего дня. Одну смену ты точно вывезешь, а с остальным разберёшься потом."
+    n "The important thing is not to look past today. You can definitely survive one shift; the rest can wait."
 
 # game/script.rpy:157
 translate english first_mistake_5e37fc2f:
 
     # n "ТСД резко пищит - так, что ты сразу чувствуешь себя виноватым."
-    n "ТСД резко пищит - так, что ты сразу чувствуешь себя виноватым."
+    n "The scanner lets out a sharp beep - the kind that makes you feel guilty immediately."
 
 # game/script.rpy:247
 translate english shift_continues_98e06d68:
 
     # n "Ты встаёшь в поток. Слева кто-то шепчет: «Главное - не залипнуть на ошибке». Справа без остановки пищат чужие сканеры."
-    n "Ты встаёшь в поток. Слева кто-то шепчет: «Главное - не залипнуть на ошибке». Справа без остановки пищат чужие сканеры."
+    n "You step into the flow. Someone on the left whispers, \"The main thing is not to get stuck on one error.\" Scanners beep nonstop on your right."
 
 # game/script.rpy:249
 translate english shift_continues_4bdcf259:
 
     # n "Лента не замедляется, пока ты пытаешься встроиться. Стоит задержаться у одной коробки - перед тобой сразу вырастает очередь."
-    n "Лента не замедляется, пока ты пытаешься встроиться. Стоит задержаться у одной коробки - перед тобой сразу вырастает очередь."
+    n "The belt does not slow down while you try to find the rhythm. Pause over one box and a queue immediately grows in front of you."
 
 # game/script.rpy:258
 translate english shift_continues_9f455114:
 
     # vet "Дыши ровнее. Зажмёшь плечи - через час руки отвалятся. Остальное потом."
-    vet "Дыши ровнее. Зажмёшь плечи - через час руки отвалятся. Остальное потом."
+    vet "Breathe evenly. Keep your shoulders tense and your arms will fall off in an hour. Everything else can wait."
 
 # game/script.rpy:380
 translate english supervisor_pressure_12930e70:
 
     # mem "Экономика простая: отстал - виноват. Успел - мог быстрее. Удобно, да?"
-    mem "Экономика простая: отстал - виноват. Успел - мог быстрее. Удобно, да?"
+    mem "Simple economics: fall behind - your fault. Keep up - you could have gone faster. Convenient, right?"
 
 # game/script.rpy:441
 translate english final_stretch_7b778f92:
 
     # sv "До конца пятьдесят минут. Сейчас главное - без рывков."
-    sv "До конца пятьдесят минут. Сейчас главное - без рывков."
+    sv "Fifty minutes left. The important thing now is no sudden pushes."
 
 # game/script.rpy:588
 translate english ending_hard_path_f302a270:
 
     # vet "Домой придёшь - поешь и выспись. График сразу не открывай."
-    vet "Домой придёшь - поешь и выспись. График сразу не открывай."
+    vet "When you get home, eat and sleep. Don't open the schedule right away."
 
 # game/script.rpy:845
 translate english chapter2_observe_fear_33df5604:
 
     # mem "Привыкание приходит без уведомлений. Однажды поймаешь себя на слове «нормально» - вот и всё."
-    mem "Привыкание приходит без уведомлений. Однажды поймаешь себя на слове «нормально» - вот и всё."
+    mem "Getting used to it comes without notifications. One day you'll catch yourself saying \"normal\" - and that's it."
 
 # game/script.rpy:890
 translate english chapter2_observe_support_0aaa989f:
 
     # n "Её улыбка едва заметна - на большее сил не осталось."
-    n "Её улыбка едва заметна - на большее сил не осталось."
+    n "Her smile is barely visible. She has no energy for more."
 
 # game/script.rpy:992
 translate english chapter2_night_denial_6fa3d0a7:
 
     # n "Ты знаешь - завтра всё равно наступит. Но следующие десять минут хочешь потратить на себя, без графиков и норм."
-    n "Ты знаешь - завтра всё равно наступит. Но следующие десять минут хочешь потратить на себя, без графиков и норм."
+    n "You know tomorrow will come anyway. But you want the next ten minutes for yourself, without schedules or targets."
 
 translate english strings:
 
@@ -1833,4 +1761,3 @@ translate english strings:
     # game/script.rpy:972
     old "Не смотреть. Сделать вид, что завтра не существует"
     new "Не смотреть. Сделать вид, что завтра не существует"
-
