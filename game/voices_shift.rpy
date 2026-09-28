@@ -432,7 +432,7 @@ label ps_team_names:
     $ ps_supervisor_name = _("Артём")
 
     p "А я — [ps_player_name]." id ps_team_names_1c8aa9ad
-    newb "Вот. Теперь хотя бы знаем, как друг друга звать."
+    newb "Вот. Теперь хотя бы знаем, как друг друга звать." id ps_team_names_1c0e6c68
 
     $ ps_names_revealed = True
     $ ps_add_relationship_memory("Вы перестали быть должностями и назвали друг другу имена.")
