@@ -681,8 +681,8 @@ translate english final_hide_524717de:
 # game/script.rpy:482
 translate english final_joke_7b3f698b:
 
-    # p "Я в порядке. Просто морально уже домой вышел."
-    p "I'm fine. Mentally, I've already clocked out."
+    # p "Чувствую себя как на курорте. Только домой почему-то не отпускают."
+    p "Feels like a resort. Except they won't let me go home."
 
 # game/script.rpy:483
 translate english final_joke_80606e93:
@@ -1525,8 +1525,8 @@ translate english supervisor_pressure_12930e70:
 # game/script.rpy:441
 translate english final_stretch_7b778f92:
 
-    # sv "До конца пятьдесят минут. Сейчас главное - без рывков."
-    sv "Fifty minutes left. The important thing now is no sudden pushes."
+    # sv "До конца пятьдесят минут. Работаем без ошибок, тогда быстрее уйдём."
+    sv "Fifty minutes left. Keep it clean and we'll get out of here faster."
 
 # game/script.rpy:588
 translate english ending_hard_path_f302a270:
