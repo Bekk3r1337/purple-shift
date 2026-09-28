@@ -708,7 +708,7 @@ label after_shift_joke:
 
 label after_shift_honest:
     $ ps_endurance += 1
-    p "Если честно — я выжат."
+    p "Если честно — я выжат." id after_shift_honest_36de408b
 
     mem "Тоже. Я уже минуту пытаюсь закрыть пустой шкафчик." id after_shift_honest_f7059875
 
