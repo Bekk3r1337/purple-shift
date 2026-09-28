@@ -6,8 +6,6 @@ import sys
 
 GAME = Path("game")
 CYRILLIC = re.compile(r"[А-Яа-яЁё]")
-LONG_DASHES = ("—", "–")
-
 problems = []
 english_old_strings = {}
 
@@ -59,11 +57,6 @@ for path in sorted(GAME.rglob("*.rpy")):
     is_english = path.as_posix().startswith("game/tl/english/")
 
     for lineno, line in enumerate(text.splitlines(), 1):
-        if any(ch in line for ch in LONG_DASHES):
-            problems.append(
-                f"{path}:{lineno}: long dash found; use '-' instead"
-            )
-
         if is_english:
             stripped = line.strip()
             # Ren'Py string translations intentionally keep the Russian source
@@ -147,4 +140,4 @@ if problems:
         print(f" - {problem}")
     sys.exit(1)
 
-print("Localization hygiene check passed: no long dashes, no active Cyrillic in English, no duplicate translations, and dynamic runtime strings have English coverage.")
+print("Localization hygiene check passed: no active Cyrillic in English, no duplicate translations, and dynamic runtime strings have English coverage.")

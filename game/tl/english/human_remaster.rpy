@@ -33,8 +33,14 @@ translate english ps_human_shift_scene_5a84ac96:
 # game/human_remaster.rpy:487
 translate english ps_human_shift_scene_a7ce3fbc:
 
-    # n "Сначала все молчат. Потом Виктор рассказывает про старый мотоцикл, который уже три года не заводится. Лера учится фотографировать город до рассвета. Макс пишет заметки и никому их не показывает."
-    n "At first everyone is quiet. Then Viktor talks about an old motorcycle that has not started in three years. Lera is learning to photograph the city before dawn. Max writes notes and never shows them to anyone."
+    # n "Сначала все молчат. Потом Виктор рассказывает про старый мотоцикл, который уже три года не заводится."
+    n "At first everyone is quiet. Then Viktor talks about an old motorcycle that has not started in three years."
+
+
+translate english ps_human_shift_scene_after_hours_2:
+
+    # n "Лера учится фотографировать город до рассвета. Макс пишет заметки и никому их не показывает."
+    n "Lera is learning to photograph the city before dawn. Max writes notes and never shows them to anyone."
 
 # game/human_remaster.rpy:488
 translate english ps_human_shift_scene_2ed727d3:

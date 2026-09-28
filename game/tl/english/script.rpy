@@ -333,8 +333,8 @@ translate english shift_continues_e9747b95_1:
 # game/script.rpy:278
 translate english shift_continues_6834c8db:
 
-    # n "Где-то сзади коротко: «Быстрее!» Где-то спереди ещё короче: «Норма!»"
-    n "Somewhere behind you: \"Faster!\" Somewhere ahead, even shorter: \"Target!\""
+    # n "Где-то сзади коротко кричат: «Быстрее!», а спереди ещё короче: «Норма!»"
+    n "Somewhere behind, someone shouts, \"Faster!\", while ahead it is even shorter: \"Target!\""
 
 # game/script.rpy:280
 translate english shift_continues_0197a4f9:
@@ -381,8 +381,8 @@ translate english help_newbie_7fcacd9c:
 # game/script.rpy:308
 translate english help_newbie_453655e9:
 
-    # n "Она показывает экран. Ошибка простая, но Лера смотрит на красную строку и боится нажать ещё хоть что-нибудь."
-    n "She shows you the screen. The error is simple, but Lera stares at the red line, afraid to press anything else."
+    # n "Она показывает экран. Ошибка простая, но девушка смотрит на красную строку и боится нажать ещё хоть что-нибудь."
+    n "She shows you the screen. The error is simple, but the girl stares at the red line, afraid to press anything else."
 
 # game/script.rpy:310
 translate english help_newbie_518ce53a:
@@ -453,8 +453,8 @@ translate english grind_norm_22c77d48:
 # game/script.rpy:345
 translate english grind_norm_a397b838:
 
-    # n "Темп держится. Слева Лера всё ещё возится с ошибкой, и смотреть туда становится неловко."
-    n "The pace holds. To your left, Lera is still struggling with the error, and it is becoming uncomfortable to look over there."
+    # n "Темп держится. Слева новичок всё ещё возится с ошибкой, и смотреть туда становится неловко."
+    n "The pace holds. To your left, the newcomer is still struggling with the error, and it becomes awkward to look that way."
 
 # game/script.rpy:357
 translate english take_pause_2c6b1eef:
@@ -525,8 +525,8 @@ translate english supervisor_pressure_3735bf9d:
 # game/script.rpy:386
 translate english supervisor_pressure_5b3c4b48:
 
-    # n "Макс усмехается, а Артём уже идёт проверять следующий участок."
-    n "Max smirks while Artyom is already moving on to inspect the next section."
+    # n "Шутник усмехается, а супервайзер уже идёт проверять следующий участок."
+    n "The Joker smirks while the Supervisor is already moving on to inspect the next section."
 
 # game/script.rpy:391
 translate english supervisor_pressure_7165989d:
@@ -681,8 +681,8 @@ translate english final_hide_524717de:
 # game/script.rpy:482
 translate english final_joke_7b3f698b:
 
-    # p "Я в порядке. Просто морально уже домой вышел."
-    p "I'm fine. Mentally, I've already clocked out."
+    # p "Чувствую себя как на курорте. Только домой почему-то не отпускают."
+    p "Feels like a resort. Except they won't let me go home."
 
 # game/script.rpy:483
 translate english final_joke_80606e93:
@@ -765,8 +765,8 @@ translate english ending_light_path_a76a1c3e:
 # game/script.rpy:537
 translate english ending_light_path_7cc50608:
 
-    # n "Ты возвращаешься в линию. Руки дрожат, зато Лера уже снова сканирует рядом."
-    n "You return to the line. Your hands are shaking, but Lera is scanning beside you again."
+    # n "Ты возвращаешься в линию. Руки дрожат, зато девушка уже снова сканирует рядом."
+    n "You return to the line. Your hands are shaking, but the girl beside you is already scanning again."
 
 # game/script.rpy:539
 translate english ending_light_path_f033776b:
@@ -831,8 +831,8 @@ translate english ending_hard_path_e9747b95:
 # game/script.rpy:579
 translate english ending_hard_path_b3f3cd7f:
 
-    # n "Падение коробок остаётся за спиной. Через минуту ты уже почти не слышишь, как Лера извиняется."
-    n "The fallen boxes are left behind. A minute later, you can barely hear Lera apologizing anymore."
+    # n "Падение коробок остаётся за спиной. Через минуту ты уже почти не слышишь, как новичок извиняется."
+    n "The fallen boxes recede behind you. A minute later you can barely hear the newcomer apologizing."
 
 # game/script.rpy:581
 translate english ending_hard_path_94a6f3b2:
@@ -861,8 +861,8 @@ translate english ending_hard_path_676ead1a:
 # game/script.rpy:616
 translate english chapter2_after_shift_31487be0:
 
-    # n "Лента замедляется, и Артём отправляет людей в раздевалку. Пальцы ещё повторяют движение сканера, пока ты убираешь ТСД."
-    n "The belt slows, and Artyom sends everyone to the locker room. Your fingers keep repeating the scanning motion while you put the scanner away."
+    # n "Лента замедляется, и супервайзер отправляет людей в раздевалку. Пальцы ещё повторяют движение сканера, пока ты убираешь ТСД."
+    n "The belt slows down, and the Supervisor sends everyone to the locker room. Your fingers still repeat the scanner motion as you put the device away."
 
 # game/script.rpy:618
 translate english chapter2_after_shift_b2dbeeb7:
@@ -879,8 +879,8 @@ translate english chapter2_after_shift_c56c9221:
 # game/script.rpy:626
 translate english chapter2_after_shift_6fe3e331:
 
-    # n "Виктор снимает перчатки и по очереди разминает пальцы."
-    n "Viktor removes his gloves and flexes his fingers one hand at a time."
+    # n "Ветеран снимает перчатки и по очереди разминает пальцы."
+    n "The Veteran takes off his gloves and flexes his fingers one hand at a time."
 
 # game/script.rpy:637
 translate english after_shift_ask_cb8af0b2:
@@ -951,14 +951,14 @@ translate english after_shift_joke_422ccb85:
 # game/script.rpy:693
 translate english after_shift_honest_36de408b:
 
-    # p "Если честно - я выжат."
+    # p "Если честно — я выжат."
     p "Honestly, I'm exhausted."
 
 # game/script.rpy:695
 translate english after_shift_honest_f7059875:
 
-    # mem "Тоже. Я уже минуту пытаюсь застегнуть пустой шкафчик."
-    mem "Same. I've been trying to lock an empty locker for a full minute."
+    # mem "Тоже. Я уже минуту пытаюсь закрыть пустой шкафчик."
+    mem "Same. I've been trying to close an empty locker for a full minute."
 
 # game/script.rpy:702
 translate english after_shift_mask_764d4b26:
@@ -1119,8 +1119,8 @@ translate english chapter2_observe_a8da4808:
 # game/script.rpy:819
 translate english chapter2_observe_6b5a5277:
 
-    # n "Он смотрит туда же. Привычная улыбка пропала, и теперь видно, насколько Макс устал."
-    n "He looks the same way. His usual smile is gone, and now you can see how tired Max really is."
+    # n "Он смотрит туда же. Привычная улыбка пропала, и теперь видно, насколько он устал."
+    n "He looks the same way. His usual smile is gone, and now you can see how tired he is."
 
 # game/script.rpy:832
 translate english chapter2_observe_ask_203e7108:
@@ -1155,8 +1155,8 @@ translate english chapter2_observe_fear_d571326f:
 # game/script.rpy:853
 translate english chapter2_observe_silent_c5f805e4:
 
-    # n "Ты молчишь. Макс ждёт ответа, потом кивает."
-    n "You stay silent. Max waits for an answer, then nods."
+    # n "Ты молчишь. Парень ждёт ответа, потом кивает."
+    n "You stay silent. The guy waits for an answer, then nods."
 
 # game/script.rpy:855
 translate english chapter2_observe_silent_9b9a0157:
@@ -1185,8 +1185,8 @@ translate english chapter2_observe_continue_234fe079:
 # game/script.rpy:871
 translate english chapter2_observe_continue_88f96081:
 
-    # n "Она сначала смотрит на Макса, потом на тебя, но уходить не спешит."
-    n "She looks at Max first, then at you, but does not hurry away."
+    # n "Она сначала смотрит на парня, потом на тебя, но уходить не спешит."
+    n "She looks at the guy first, then at you, but does not hurry to leave."
 
 # game/script.rpy:884
 translate english chapter2_observe_support_5b1a9772:
@@ -1501,8 +1501,8 @@ translate english first_mistake_5e37fc2f:
 # game/script.rpy:247
 translate english shift_continues_98e06d68:
 
-    # n "Ты встаёшь в поток. Слева кто-то шепчет: «Главное - не залипнуть на ошибке». Справа без остановки пищат чужие сканеры."
-    n "You step into the flow. Someone on the left whispers, \"The main thing is not to get stuck on one error.\" Scanners beep nonstop on your right."
+    # n "Ты встаёшь в поток. Слева кто-то шепчет: «Не паникуй, если будет ошибка». Справа без остановки пищат чужие сканеры."
+    n "You step into the flow. Someone to your left whispers, \"Don't panic if there's an error.\" Scanners keep beeping to your right without stopping."
 
 # game/script.rpy:249
 translate english shift_continues_4bdcf259:
@@ -1525,8 +1525,8 @@ translate english supervisor_pressure_12930e70:
 # game/script.rpy:441
 translate english final_stretch_7b778f92:
 
-    # sv "До конца пятьдесят минут. Сейчас главное - без рывков."
-    sv "Fifty minutes left. The important thing now is no sudden pushes."
+    # sv "До конца пятьдесят минут. Работаем без ошибок, тогда быстрее уйдём."
+    sv "Fifty minutes left. Keep it clean and we'll get out of here faster."
 
 # game/script.rpy:588
 translate english ending_hard_path_f302a270:

@@ -105,7 +105,7 @@ translate english ps2_shift_event_ab70998a:
 # game/beyond_shift.rpy:708
 translate english ps2_shift_event_baff00f5:
 
-    # n "В буфере остаётся одна тяжёлая коробка без читаемой маркировки. Если вернуть её в поток, план не пострадает. Если остановить - участок уйдёт в минус."
+    # n "В буфере остаётся одна тяжёлая коробка без читаемой маркировки. Если вернуть её в поток, план не пострадает. Если остановить, участок уйдёт в минус."
     n "One heavy box remains in the buffer with an unreadable label. If you return it to the flow, the target stays on track. If you stop, the section falls behind."
 
 # game/beyond_shift.rpy:713

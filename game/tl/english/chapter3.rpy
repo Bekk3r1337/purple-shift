@@ -135,8 +135,8 @@ translate english chapter3_second_shift_64c15fc6:
 # game/chapter3.rpy:131
 translate english chapter3_second_shift_8f290364:
 
-    # n "Лера стоит у турникета с бумажным стаканом. Под глазами тени; пока охранник проверяет пропуск, она дважды зевает."
-    n "Lera is standing by the turnstile with a paper cup. There are shadows under her eyes; while the guard checks her pass, she yawns twice."
+    # n "Новичок стоит у турникета с бумажным стаканом. Под глазами тени; пока охранник проверяет пропуск, она дважды зевает."
+    n "The newcomer is standing by the turnstile with a paper cup. There are shadows under her eyes; while the guard checks her pass, she yawns twice."
 
 # game/chapter3.rpy:134
 translate english chapter3_second_shift_cc1b91a4:
@@ -195,8 +195,8 @@ translate english chapter3_second_shift_4597f5e1:
 # game/chapter3.rpy:167
 translate english chapter3_second_shift_a73e6c0a:
 
-    # sv "Ты вчера спрашивал, если не понимал. Продолжай."
-    sv "Yesterday you asked when you didn't understand. Keep doing that."
+    # sv "Ты вчера не молчал, когда что-то было непонятно. Продолжай в том же духе."
+    sv "Yesterday, you spoke up when something wasn't clear. Keep doing that."
 
 # game/chapter3.rpy:169
 translate english chapter3_second_shift_a7a6c0d1:
@@ -207,8 +207,8 @@ translate english chapter3_second_shift_a7a6c0d1:
 # game/chapter3.rpy:176
 translate english chapter3_second_shift_4b00b2be:
 
-    # n "Лера поправляет одну перчатку, потом вторую и снова возвращается к первой."
-    n "Lera adjusts one glove, then the other, then goes back to the first."
+    # n "Лера заходит следом, останавливается у соседнего шкафчика и поправляет одну перчатку, потом вторую и снова возвращается к первой."
+    n "Lera comes in right behind you, stops by the next locker, adjusts one glove, then the other, then goes back to the first."
 
 # game/chapter3.rpy:182
 translate english chapter3_second_shift_2524a12c:
@@ -1201,8 +1201,8 @@ translate english chapter2_hook_01d529bf:
 # game/chapter3.rpy:76
 translate english chapter3_second_shift_b7139fdb:
 
-    # n "Ты вспоминаешь, как Лера осталась поднимать коробки, а ты продолжил работать. Вчера на это не было времени. Сейчас - есть."
-    n "You remember Lera staying behind to pick up the boxes while you kept working. Yesterday there was no time to think about it. Now there is."
+    # n "Ты вспоминаешь, как девушка осталась поднимать коробки, а ты продолжил работать. Вчера на это не было времени. Сейчас оно есть."
+    n "You remember the girl staying behind to pick up the boxes while you kept working. Yesterday there was no time to think about it. Now there is."
 
 # game/chapter3.rpy:158
 translate english chapter3_second_shift_66867b61:
