@@ -135,8 +135,8 @@ translate english chapter3_second_shift_64c15fc6:
 # game/chapter3.rpy:131
 translate english chapter3_second_shift_8f290364:
 
-    # n "Лера стоит у турникета с бумажным стаканом. Под глазами тени; пока охранник проверяет пропуск, она дважды зевает."
-    n "Lera is standing by the turnstile with a paper cup. There are shadows under her eyes; while the guard checks her pass, she yawns twice."
+    # n "Новичок стоит у турникета с бумажным стаканом. Под глазами тени; пока охранник проверяет пропуск, она дважды зевает."
+    n "The newcomer is standing by the turnstile with a paper cup. There are shadows under her eyes; while the guard checks her pass, she yawns twice."
 
 # game/chapter3.rpy:134
 translate english chapter3_second_shift_cc1b91a4:
@@ -1201,8 +1201,8 @@ translate english chapter2_hook_01d529bf:
 # game/chapter3.rpy:76
 translate english chapter3_second_shift_b7139fdb:
 
-    # n "Ты вспоминаешь, как Лера осталась поднимать коробки, а ты продолжил работать. Вчера на это не было времени. Сейчас - есть."
-    n "You remember Lera staying behind to pick up the boxes while you kept working. Yesterday there was no time to think about it. Now there is."
+    # n "Ты вспоминаешь, как девушка осталась поднимать коробки, а ты продолжил работать. Вчера на это не было времени. Сейчас оно есть."
+    n "You remember the girl staying behind to pick up the boxes while you kept working. Yesterday there was no time to think about it. Now there is."
 
 # game/chapter3.rpy:158
 translate english chapter3_second_shift_66867b61:
