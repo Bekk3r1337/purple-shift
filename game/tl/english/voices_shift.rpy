@@ -694,13 +694,13 @@ translate english strings:
 # game/voices_shift.rpy:410
 translate english ps_team_names_96a73346:
 
-    # newb "We've been working side by side for two days and I'm still just Newcomer to everyone. I'm Lera. Valeria if I ever need another written statement."
+    # newb "Мы второй день рядом, а я для всех всё ещё Новичок. Я Лера. Валерия — это если опять понадобится объяснительная."
     newb "We've been working side by side for two days and I'm still just Newcomer to everyone. I'm Lera. Valeria if I ever need another written statement."
 
 # game/voices_shift.rpy:413
 translate english ps_team_names_7a017e44:
 
-    # mem "Max. Just Max. Joker is a position with no extra pay and no vacation entitlement."
+    # mem "Макс. Просто Макс. «Шутник» — это должность без доплаты и права на отпуск."
     mem "Max. Just Max. Joker is a position with no extra pay and no vacation entitlement."
 
 # game/voices_shift.rpy:428
@@ -712,8 +712,14 @@ translate english ps_team_names_1c0e6c68:
 # game/voices_shift.rpy:431
 translate english ps_team_names_1c8aa9ad:
 
-    # p "And I'm [ps_player_name]."
+    # p "А я — [ps_player_name]."
     p "And I'm [ps_player_name]."
+
+
+translate english ps_team_names_artem_intro:
+
+    # sv "Артём Волков. Раз уж у нас вечер знакомств, закончите его до запуска линии."
+    sv "Artyom Volkov. Since this is apparently introduction night, finish it before the line starts."
 
 # game/voices_shift.rpy:473
 translate english ps_route_week_scene_43a4ec67:
