@@ -410,10 +410,10 @@ label ps_team_names:
     show mem grin at ps_left
     with dissolve
 
-    newb "Мы второй день рядом, а я для всех всё ещё Новичок. Я Лера. Валерия - это если опять понадобится объяснительная."
+    newb "Мы второй день рядом, а я для всех всё ещё Новичок. Я Лера. Валерия — это если опять понадобится объяснительная." id ps_team_names_96a73346
     $ ps_newbie_name = _("Лера")
 
-    mem "Макс. Просто Макс. «Шутник» - это должность без доплаты и права на отпуск."
+    mem "Макс. Просто Макс. «Шутник» — это должность без доплаты и права на отпуск." id ps_team_names_7a017e44
     $ ps_joker_name = _("Макс")
 
     show vet neutral at ps_center
@@ -428,10 +428,10 @@ label ps_team_names:
     show sv neutral at ps_righter
     with dissolve
 
-    sv "Артём Волков. Раз уж у нас вечер знакомств - закончите его до запуска линии."
+    sv "Артём Волков. Раз уж у нас вечер знакомств, закончите его до запуска линии." id ps_team_names_artem_intro
     $ ps_supervisor_name = _("Артём")
 
-    p "А я - [ps_player_name]."
+    p "А я — [ps_player_name]." id ps_team_names_1c8aa9ad
     newb "Вот. Теперь хотя бы знаем, как друг друга звать."
 
     $ ps_names_revealed = True
