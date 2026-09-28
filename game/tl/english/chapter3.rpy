@@ -195,8 +195,8 @@ translate english chapter3_second_shift_4597f5e1:
 # game/chapter3.rpy:167
 translate english chapter3_second_shift_a73e6c0a:
 
-    # sv "Ты вчера спрашивал, если не понимал. Продолжай."
-    sv "Yesterday you asked when you didn't understand. Keep doing that."
+    # sv "Ты вчера не молчал, когда что-то было непонятно. Продолжай в том же духе."
+    sv "Yesterday, you spoke up when something wasn't clear. Keep doing that."
 
 # game/chapter3.rpy:169
 translate english chapter3_second_shift_a7a6c0d1:
@@ -207,8 +207,8 @@ translate english chapter3_second_shift_a7a6c0d1:
 # game/chapter3.rpy:176
 translate english chapter3_second_shift_4b00b2be:
 
-    # n "Лера поправляет одну перчатку, потом вторую и снова возвращается к первой."
-    n "Lera adjusts one glove, then the other, then goes back to the first."
+    # n "Лера заходит следом, останавливается у соседнего шкафчика и поправляет одну перчатку, потом вторую и снова возвращается к первой."
+    n "Lera comes in right behind you, stops by the next locker, adjusts one glove, then the other, then goes back to the first."
 
 # game/chapter3.rpy:182
 translate english chapter3_second_shift_2524a12c:
