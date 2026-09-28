@@ -730,8 +730,8 @@ translate english ps_route_week_scene_f4599050:
 # game/voices_shift.rpy:476
 translate english ps_route_week_scene_2615077c:
 
-    # newb "Will you help me check it? Not correct it for me - just check."
-    newb "Will you help me check it? Not correct it for me - just check."
+    # newb "Поможешь проверить? Не исправлять за меня, просто проверить."
+    newb "Will you help me check it? Don\'t fix it for me, just check."
 
 # game/voices_shift.rpy:502
 translate english ps_route_week_scene_033b9084:
