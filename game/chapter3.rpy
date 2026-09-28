@@ -164,7 +164,7 @@ label chapter3_second_shift:
     n "Его взгляд на секунду задерживается на тебе."
 
     if ps_supervisor_respect >= 2:
-        sv "Ты вчера спрашивал, если не понимал. Продолжай."
+        sv "Ты вчера не молчал, когда что-то было непонятно. Продолжай в том же духе." id chapter3_second_shift_a73e6c0a
     elif ps_supervisor_respect < 0:
         sv "И без историй про глючный ТСД."
     else:
@@ -173,7 +173,11 @@ label chapter3_second_shift:
     hide sv
     with dissolve
 
-    n "Лера поправляет одну перчатку, потом вторую и снова возвращается к первой."
+    show newb tired at ps_left
+    show mem grin at ps_right
+    with dissolve
+
+    n "Лера заходит следом, останавливается у соседнего шкафчика и поправляет одну перчатку, потом вторую и снова возвращается к первой." id chapter3_second_shift_4b00b2be
 
     menu:
         "Предложить работать рядом":
