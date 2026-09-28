@@ -812,12 +812,6 @@ translate english strings:
     new "Take over the conversation immediately"
 # TODO: Translation updated at 2026-09-23 09:17
 
-# game/voices_shift.rpy:432
-translate english ps_team_names_b1a770b3:
-
-    # newb "There. Now we at least know what to call each other."
-    newb "There. Now we at least know what to call each other."
-
 # game/voices_shift.rpy:477
 translate english ps_route_week_scene_50ba0100:
 
